@@ -97,6 +97,10 @@ func (c *ConversationClient) Delete(ctx context.Context, conversationID string) 
 
 // Complete sends a complete request to continue the conversation with AI.
 // This is the main method for having conversations with bots.
+//
+// If conversationID is empty, this uses the stateless endpoint that doesn't
+// require a pre-existing conversation. When conversationID is provided, it
+// continues an existing conversation.
 func (c *ConversationClient) Complete(ctx context.Context, conversationID string, req types.ConversationCompleteRequest) (*types.ConversationCompleteResponse, error) {
 	var path string
 	if conversationID != "" {

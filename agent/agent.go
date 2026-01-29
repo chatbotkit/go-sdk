@@ -18,6 +18,7 @@ package agent
 
 import (
 	"context"
+	"strings"
 
 	"github.com/chatbotkit/go-sdk/sdk"
 	"github.com/chatbotkit/go-sdk/types"
@@ -55,8 +56,14 @@ type CompleteResult struct {
 	Text string
 }
 
-// Complete runs a conversation completion with the ChatBotKit API.
-// This is a simplified synchronous version that returns the final response.
+// Complete runs a stateless conversation completion with the ChatBotKit API.
+// This uses the stateless /api/v1/conversation/complete endpoint that doesn't
+// require a pre-existing conversation. The messages array contains the full
+// conversation history.
+//
+// Note: This function only returns the text response. For access to conversation
+// IDs, message metadata, or other details, use the SDK's Conversation.Complete
+// method directly.
 func Complete(ctx context.Context, client *sdk.Client, opts CompleteOptions) (*CompleteResult, error) {
 	// Convert messages to API format
 	apiMessages := make([]types.ConversationCompleteRequest1_Message, 0, len(opts.Messages))
@@ -188,27 +195,17 @@ When you have completed the task, clearly indicate that you are done.
 
 // containsCompletionIndicator checks if the response indicates completion.
 func containsCompletionIndicator(text string) bool {
-	// Simple heuristic - can be enhanced
+	lowerText := strings.ToLower(text)
 	completionPhrases := []string{
-		"I'm done",
-		"I am done",
+		"i'm done",
+		"i am done",
 		"task complete",
-		"Task complete",
 		"completed",
 		"finished",
+		"all done",
 	}
 	for _, phrase := range completionPhrases {
-		if contains(text, phrase) {
-			return true
-		}
-	}
-	return false
-}
-
-// contains checks if s contains substr (case-insensitive).
-func contains(s, substr string) bool {
-	for i := 0; i <= len(s)-len(substr); i++ {
-		if s[i:i+len(substr)] == substr {
+		if strings.Contains(lowerText, phrase) {
 			return true
 		}
 	}

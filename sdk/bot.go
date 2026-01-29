@@ -24,7 +24,7 @@ func NewBotClient(httpClient *httpclient.Client) *BotClient {
 	}
 }
 
-// ListOptions are options for listing bots.
+// BotListOptions are options for listing bots.
 type BotListOptions struct {
 	Cursor *string
 	Order  *string

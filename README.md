@@ -116,8 +116,13 @@ conv, err := client.Conversation.Create(ctx, types.ConversationCreateRequest{})
 // List conversations
 convs, err := client.Conversation.List(ctx, nil)
 
-// Send a message and complete
+// Continue an existing conversation
 resp, err := client.Conversation.Complete(ctx, "conversation-id", types.ConversationCompleteRequest{
+	Text: "Hello!",
+})
+
+// Or use the stateless endpoint with empty conversation ID
+resp, err := client.Conversation.Complete(ctx, "", types.ConversationCompleteRequest{
 	Text: "Hello!",
 })
 ```
@@ -207,14 +212,13 @@ pnpm script:generate-api-types --output ../../sdks/go/types/types.go --package t
 
 ## Error Handling
 
-API errors are returned as `*httpclient.Error`:
+API errors are returned with a message and code:
 
 ```go
 bot, err := client.Bot.Fetch(ctx, "invalid-id")
 if err != nil {
-	if apiErr, ok := err.(*httpclient.Error); ok {
-		fmt.Printf("API Error: %s (code: %s)\n", apiErr.Message, apiErr.Code)
-	}
+	// Error includes message and optional code from the API
+	fmt.Printf("Error: %v\n", err)
 }
 ```
 
