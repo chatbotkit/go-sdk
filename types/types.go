@@ -2043,6 +2043,14 @@ import "time"
 
 import "encoding/json"
 
+// Type aliases for visibility types that quicktype collapsed
+// These are all the same underlying enum (private, protected, public)
+type BlueprintVisibility = SecretVisibility
+type BotVisibility = SecretVisibility
+type DatasetVisibility = SecretVisibility
+type SkillsetVisibility = SecretVisibility
+type FileVisibility = SecretVisibility
+
 func UnmarshalGraphqlRequest(data []byte) (GraphqlRequest, error) {
 	var r GraphqlRequest
 	err := json.Unmarshal(data, &r)
@@ -2331,9 +2339,7 @@ func UnmarshalBotCloneRequest(data []byte) (BotCloneRequest, error) {
 	return r, err
 }
 
-func (r *BotCloneRequest) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
+// BotCloneRequest.Marshal cannot be defined (interface type)
 
 func UnmarshalBotCloneResponse(data []byte) (BotCloneResponse, error) {
 	var r BotCloneResponse
@@ -8653,9 +8659,7 @@ func UnmarshalBlueprintVisibility(data []byte) (BlueprintVisibility, error) {
 	return r, err
 }
 
-func (r *BlueprintVisibility) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
+// BlueprintVisibility.Marshal is provided by SecretVisibility.Marshal (type alias)
 
 func UnmarshalBotVisibility(data []byte) (BotVisibility, error) {
 	var r BotVisibility
@@ -8663,9 +8667,7 @@ func UnmarshalBotVisibility(data []byte) (BotVisibility, error) {
 	return r, err
 }
 
-func (r *BotVisibility) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
+// BotVisibility.Marshal is provided by SecretVisibility.Marshal (type alias)
 
 func UnmarshalDatasetVisibility(data []byte) (DatasetVisibility, error) {
 	var r DatasetVisibility
@@ -8673,9 +8675,7 @@ func UnmarshalDatasetVisibility(data []byte) (DatasetVisibility, error) {
 	return r, err
 }
 
-func (r *DatasetVisibility) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
+// DatasetVisibility.Marshal is provided by SecretVisibility.Marshal (type alias)
 
 func UnmarshalDatasetFileAttachmentType(data []byte) (DatasetFileAttachmentType, error) {
 	var r DatasetFileAttachmentType
@@ -8705,9 +8705,7 @@ func UnmarshalSkillsetVisibility(data []byte) (SkillsetVisibility, error) {
 	return r, err
 }
 
-func (r *SkillsetVisibility) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
+// SkillsetVisibility.Marshal is provided by SecretVisibility.Marshal (type alias)
 
 func UnmarshalFileVisibility(data []byte) (FileVisibility, error) {
 	var r FileVisibility
@@ -8715,9 +8713,7 @@ func UnmarshalFileVisibility(data []byte) (FileVisibility, error) {
 	return r, err
 }
 
-func (r *FileVisibility) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
+// FileVisibility.Marshal is provided by SecretVisibility.Marshal (type alias)
 
 func UnmarshalSecretType(data []byte) (SecretType, error) {
 	var r SecretType

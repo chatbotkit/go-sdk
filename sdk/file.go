@@ -1,0 +1,104 @@
+package sdk
+
+import (
+	"context"
+	"fmt"
+	"net/url"
+
+	"github.com/chatbotkit/go-sdk/internal/httpclient"
+	"github.com/chatbotkit/go-sdk/types"
+)
+
+// FileClient provides access to file resources.
+type FileClient struct {
+	httpClient *httpclient.Client
+}
+
+// NewFileClient creates a new FileClient.
+func NewFileClient(httpClient *httpclient.Client) *FileClient {
+	return &FileClient{
+		httpClient: httpClient,
+	}
+}
+
+// FileListOptions are options for listing files.
+type FileListOptions struct {
+	Cursor *string
+	Order  *string
+	Take   *int
+}
+
+// List retrieves a list of all files.
+func (c *FileClient) List(ctx context.Context, opts *FileListOptions) (*types.FileListResponse, error) {
+	query := url.Values{}
+	if opts != nil {
+		if opts.Cursor != nil {
+			query.Set("cursor", *opts.Cursor)
+		}
+		if opts.Order != nil {
+			query.Set("order", *opts.Order)
+		}
+		if opts.Take != nil {
+			query.Set("take", fmt.Sprintf("%d", *opts.Take))
+		}
+	}
+
+	var result types.FileListResponse
+	if err := c.httpClient.Get(ctx, "/api/v1/file/list", query, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Fetch retrieves a single file by ID.
+func (c *FileClient) Fetch(ctx context.Context, fileID string) (*types.FileFetchResponse, error) {
+	path := fmt.Sprintf("/api/v1/file/%s/fetch", fileID)
+
+	var result types.FileFetchResponse
+	if err := c.httpClient.Get(ctx, path, nil, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Create creates a new file.
+func (c *FileClient) Create(ctx context.Context, req types.FileCreateRequest) (*types.FileCreateResponse, error) {
+	var result types.FileCreateResponse
+	if err := c.httpClient.Post(ctx, "/api/v1/file/create", req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Update updates an existing file.
+func (c *FileClient) Update(ctx context.Context, fileID string, req types.FileUpdateRequest) (*types.FileUpdateResponse, error) {
+	path := fmt.Sprintf("/api/v1/file/%s/update", fileID)
+
+	var result types.FileUpdateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Delete deletes a file.
+func (c *FileClient) Delete(ctx context.Context, fileID string) (*types.FileDeleteResponse, error) {
+	path := fmt.Sprintf("/api/v1/file/%s/delete", fileID)
+
+	var result types.FileDeleteResponse
+	if err := c.httpClient.Post(ctx, path, types.FileDeleteRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Sync syncs a file.
+func (c *FileClient) Sync(ctx context.Context, fileID string) (*types.FileSyncResponse, error) {
+	path := fmt.Sprintf("/api/v1/file/%s/sync", fileID)
+
+	var result types.FileSyncResponse
+	if err := c.httpClient.Post(ctx, path, types.FileSyncRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
