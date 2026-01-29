@@ -46,11 +46,12 @@ func main() {
 ## SDK Structure
 
 ```
-go.mod           # Single Go module
-├── sdk/         # Main SDK client
-├── agent/       # Agent execution functionality
-├── types/       # Generated API types
-└── internal/    # Internal HTTP client
+go.mod                    # Single Go module
+├── sdk/                  # Main SDK client
+│   └── integration/      # Integration clients (Widget, Slack, Discord, WhatsApp)
+├── agent/                # Agent execution functionality
+├── types/                # Generated API types
+└── internal/httpclient/  # Internal HTTP client with streaming support
 ```
 
 ## SDK Client
@@ -66,18 +67,22 @@ client := sdk.New(sdk.Options{
 })
 
 // Access resources
-client.Bot          // Bot management
-client.Conversation // Conversation management
-client.Dataset      // Dataset management
-client.Skillset     // Skillset management
-client.File         // File management
-client.Contact      // Contact management
-client.Secret       // Secret management
-client.Channel      // Channel operations
-client.Blueprint    // Blueprint management
-client.Integration  // Integration management
-client.Team         // Team management
-client.Task         // Task management
+client.Bot                    // Bot management
+client.Conversation           // Conversation management
+client.Dataset                // Dataset management
+client.Skillset               // Skillset management
+client.File                   // File management
+client.Contact                // Contact management
+client.Secret                 // Secret management
+client.Channel                // Channel operations
+client.Blueprint              // Blueprint management
+client.Integration            // Integration management
+client.Integration.Widget     // Widget integrations
+client.Integration.Slack      // Slack integrations
+client.Integration.Discord    // Discord integrations
+client.Integration.WhatsApp   // WhatsApp integrations
+client.Team                   // Team management
+client.Task                   // Task management
 ```
 
 ## Resource Operations
@@ -183,6 +188,64 @@ for _, response := range result.Responses {
 }
 fmt.Printf("Exit: %d - %s\n", result.Exit.Code, result.Exit.Message)
 ```
+
+## Streaming
+
+The SDK supports streaming responses for real-time processing of AI responses. This is useful for showing tokens as they arrive or processing events incrementally.
+
+### Streaming with Conversation Client
+
+```go
+events, errs := client.Conversation.CompleteStream(ctx, conversationID, types.ConversationCompleteRequest{
+	Text: "Tell me a story",
+})
+
+// Process events as they arrive
+for event := range events {
+	switch event.Type {
+	case "token":
+		// A partial token has arrived
+		fmt.Print(".")
+	case "result":
+		// The final result
+		fmt.Println("\nDone!")
+	}
+}
+
+// Check for errors after the stream closes
+if err := <-errs; err != nil {
+	log.Fatal(err)
+}
+```
+
+### Streaming with Agent Package
+
+```go
+events, errs := agent.CompleteStream(ctx, client, agent.CompleteOptions{
+	Model: "gpt-4o",
+	Messages: []agent.Message{
+		{Type: "user", Text: "Write a poem"},
+	},
+})
+
+for event := range events {
+	// Process streaming events
+	fmt.Printf("Event type: %s\n", event.Type)
+}
+
+if err := <-errs; err != nil {
+	log.Fatal(err)
+}
+```
+
+### Available Streaming Methods
+
+| Method | Description |
+|--------|-------------|
+| `Conversation.CompleteStream` | Stream a conversation completion |
+| `Conversation.SendStream` | Stream a send message operation |
+| `Conversation.ReceiveStream` | Stream a receive message operation |
+| `agent.CompleteStream` | Stream agent completion |
 
 ## Types Package
 

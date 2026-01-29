@@ -2,6 +2,7 @@
 package httpclient
 
 import (
+	"bufio"
 	"bytes"
 	"context"
 	"encoding/json"
@@ -17,6 +18,8 @@ const (
 	DefaultBaseURL = "https://api.chatbotkit.com"
 	// DefaultTimeout is the default request timeout.
 	DefaultTimeout = 30 * time.Second
+	// StreamTimeout is the timeout for streaming requests (longer to allow for full response).
+	StreamTimeout = 5 * time.Minute
 )
 
 // Client is the low-level HTTP client for making API requests.
@@ -215,4 +218,161 @@ func (c *Client) Post(ctx context.Context, path string, body interface{}, result
 		Path:   path,
 		Body:   body,
 	}, result)
+}
+
+// StreamEvent represents an event from a streaming response.
+type StreamEvent struct {
+	// Type is the event type (e.g., "token", "result", "end").
+	Type string `json:"type"`
+	// Data is the raw JSON data for the event.
+	Data json.RawMessage `json:"-"`
+}
+
+// UnmarshalJSON implements custom unmarshaling for StreamEvent.
+// The event type is extracted from the raw JSON, and the full data is preserved.
+func (e *StreamEvent) UnmarshalJSON(data []byte) error {
+	// First, extract just the type field
+	var typeOnly struct {
+		Type string `json:"type"`
+	}
+	if err := json.Unmarshal(data, &typeOnly); err != nil {
+		return err
+	}
+	e.Type = typeOnly.Type
+	e.Data = data
+	return nil
+}
+
+// StreamOptions configure a streaming request.
+type StreamOptions struct {
+	// Path is the API path.
+	Path string
+	// Body is the request body (will be JSON encoded).
+	Body interface{}
+}
+
+// Stream performs a streaming POST request and returns a channel of events.
+// The channel is closed when the stream ends or an error occurs.
+// The caller should check the error channel for any errors that occurred during streaming.
+func (c *Client) Stream(ctx context.Context, opts StreamOptions) (<-chan StreamEvent, <-chan error) {
+	events := make(chan StreamEvent)
+	errs := make(chan error, 1)
+
+	go func() {
+		defer close(events)
+		defer close(errs)
+
+		// Build URL
+		u, err := url.Parse(c.BaseURL)
+		if err != nil {
+			errs <- fmt.Errorf("invalid base URL: %w", err)
+			return
+		}
+		u.Path = opts.Path
+
+		// Build request body
+		var body io.Reader
+		if opts.Body != nil {
+			data, err := json.Marshal(opts.Body)
+			if err != nil {
+				errs <- fmt.Errorf("failed to encode request body: %w", err)
+				return
+			}
+			body = bytes.NewReader(data)
+		}
+
+		// Create request
+		req, err := http.NewRequestWithContext(ctx, http.MethodPost, u.String(), body)
+		if err != nil {
+			errs <- fmt.Errorf("failed to create request: %w", err)
+			return
+		}
+
+		// Set headers for streaming
+		req.Header.Set("Accept", "application/jsonl")
+		if opts.Body != nil {
+			req.Header.Set("Content-Type", "application/json")
+		}
+		if c.Secret != "" {
+			req.Header.Set("Authorization", "Bearer "+c.Secret)
+		}
+		if c.RunAsUserID != "" {
+			req.Header.Set("X-RunAs-User-ID", c.RunAsUserID)
+		}
+		if c.Timezone != "" {
+			req.Header.Set("X-Timezone", c.Timezone)
+		}
+
+		// Add client headers
+		for k, v := range c.Headers {
+			req.Header.Set(k, v)
+		}
+
+		// Create a client with a longer timeout for streaming
+		streamClient := &http.Client{
+			Timeout: StreamTimeout,
+		}
+
+		// Execute request
+		resp, err := streamClient.Do(req)
+		if err != nil {
+			errs <- fmt.Errorf("request failed: %w", err)
+			return
+		}
+		defer resp.Body.Close()
+
+		// Check for errors
+		if resp.StatusCode >= 400 {
+			respBody, _ := io.ReadAll(resp.Body)
+			var apiErr Error
+			if err := json.Unmarshal(respBody, &apiErr); err != nil {
+				errs <- &Error{
+					Message: fmt.Sprintf("HTTP %d: %s", resp.StatusCode, string(respBody)),
+					Code:    fmt.Sprintf("HTTP_%d", resp.StatusCode),
+				}
+			} else {
+				errs <- &apiErr
+			}
+			return
+		}
+
+		// Read JSONL stream line by line
+		scanner := bufio.NewScanner(resp.Body)
+		// Increase buffer size for potentially large JSON lines
+		scanner.Buffer(make([]byte, 64*1024), 1024*1024)
+
+		for scanner.Scan() {
+			line := scanner.Bytes()
+			if len(line) == 0 {
+				continue
+			}
+
+			var event StreamEvent
+			if err := json.Unmarshal(line, &event); err != nil {
+				errs <- fmt.Errorf("failed to decode event: %w", err)
+				return
+			}
+
+			select {
+			case events <- event:
+			case <-ctx.Done():
+				errs <- ctx.Err()
+				return
+			}
+		}
+
+		if err := scanner.Err(); err != nil {
+			errs <- fmt.Errorf("stream read error: %w", err)
+		}
+	}()
+
+	return events, errs
+}
+
+// PostStream performs a streaming POST request.
+func (c *Client) PostStream(ctx context.Context, path string, body interface{}) (<-chan StreamEvent, <-chan error) {
+	return c.Stream(ctx, StreamOptions{
+		Path: path,
+		Body: body,
+	})
 }

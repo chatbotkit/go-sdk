@@ -45,6 +45,18 @@ func TestNewClient(t *testing.T) {
 	if client.Integration == nil {
 		t.Error("expected non-nil Integration client")
 	}
+	if client.Integration.Widget == nil {
+		t.Error("expected non-nil Integration.Widget client")
+	}
+	if client.Integration.Slack == nil {
+		t.Error("expected non-nil Integration.Slack client")
+	}
+	if client.Integration.Discord == nil {
+		t.Error("expected non-nil Integration.Discord client")
+	}
+	if client.Integration.WhatsApp == nil {
+		t.Error("expected non-nil Integration.WhatsApp client")
+	}
 	if client.Team == nil {
 		t.Error("expected non-nil Team client")
 	}

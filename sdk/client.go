@@ -19,6 +19,7 @@ package sdk
 
 import (
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
+	"github.com/chatbotkit/go-sdk/sdk/integration"
 )
 
 // Options configures the ChatBotKit SDK client.
@@ -57,7 +58,7 @@ type Client struct {
 	// Blueprint provides access to blueprint resources.
 	Blueprint *BlueprintClient
 	// Integration provides access to integration resources.
-	Integration *IntegrationClient
+	Integration *integration.Client
 	// Team provides access to team resources.
 	Team *TeamClient
 	// Task provides access to task resources.
@@ -84,7 +85,7 @@ func New(opts Options) *Client {
 		Contact:      NewContactClient(httpClient),
 		Channel:      NewChannelClient(httpClient),
 		Blueprint:    NewBlueprintClient(httpClient),
-		Integration:  NewIntegrationClient(httpClient),
+		Integration:  integration.NewClient(httpClient),
 		Team:         NewTeamClient(httpClient),
 		Task:         NewTaskClient(httpClient),
 	}

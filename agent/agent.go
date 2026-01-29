@@ -14,12 +14,28 @@
 //	})
 //
 //	fmt.Println(result.Text)
+//
+// Streaming example:
+//
+//	events, errs := agent.CompleteStream(ctx, client, opts)
+//	for event := range events {
+//	    switch event.Type {
+//	    case "token":
+//	        // Handle token event
+//	    case "result":
+//	        // Handle final result
+//	    }
+//	}
+//	if err := <-errs; err != nil {
+//	    // Handle error
+//	}
 package agent
 
 import (
 	"context"
 	"strings"
 
+	"github.com/chatbotkit/go-sdk/internal/httpclient"
 	"github.com/chatbotkit/go-sdk/sdk"
 	"github.com/chatbotkit/go-sdk/types"
 )
@@ -105,6 +121,62 @@ func Complete(ctx context.Context, client *sdk.Client, opts CompleteOptions) (*C
 	return &CompleteResult{
 		Text: result.Text,
 	}, nil
+}
+
+// CompleteStream runs a streaming conversation completion with the ChatBotKit API.
+// Events are emitted as they arrive, allowing for real-time processing.
+//
+// Returns two channels: one for events and one for errors.
+// The events channel is closed when the stream ends.
+// The error channel will receive at most one error if something goes wrong.
+//
+// Example:
+//
+//	events, errs := agent.CompleteStream(ctx, client, opts)
+//	for event := range events {
+//	    switch event.Type {
+//	    case "token":
+//	        // Handle streaming token
+//	    case "result":
+//	        // Handle final result
+//	    }
+//	}
+//	if err := <-errs; err != nil {
+//	    log.Fatal(err)
+//	}
+func CompleteStream(ctx context.Context, client *sdk.Client, opts CompleteOptions) (<-chan httpclient.StreamEvent, <-chan error) {
+	// Convert messages to API format
+	apiMessages := make([]types.ConversationCompleteRequest1_Message, 0, len(opts.Messages))
+	for _, msg := range opts.Messages {
+		apiMessages = append(apiMessages, types.ConversationCompleteRequest1_Message{
+			Type: types.MessageType(msg.Type),
+			Text: msg.Text,
+			Meta: msg.Meta,
+		})
+	}
+
+	// Build request
+	req := types.ConversationCompleteRequest1{
+		Messages: apiMessages,
+	}
+
+	if opts.Model != "" {
+		req.Model = &opts.Model
+	}
+	if opts.Backstory != "" {
+		req.Backstory = &opts.Backstory
+	}
+	if opts.BotID != "" {
+		req.BotID = &opts.BotID
+	}
+	if opts.DatasetID != "" {
+		req.DatasetID = &opts.DatasetID
+	}
+	if opts.SkillsetID != "" {
+		req.SkillsetID = &opts.SkillsetID
+	}
+
+	return client.HTTPClient().PostStream(ctx, "/api/v1/conversation/complete", req)
 }
 
 // ExecuteOptions configures the execute operation.

@@ -116,6 +116,36 @@ func (c *ConversationClient) Complete(ctx context.Context, conversationID string
 	return &result, nil
 }
 
+// CompleteStream sends a complete request and returns a stream of events.
+// This allows processing events as they arrive rather than waiting for the full response.
+//
+// If conversationID is empty, this uses the stateless endpoint.
+//
+// Example usage:
+//
+//	events, errs := client.Conversation.CompleteStream(ctx, convID, req)
+//	for event := range events {
+//	    switch event.Type {
+//	    case "token":
+//	        // Process partial token
+//	    case "result":
+//	        // Final result
+//	    }
+//	}
+//	if err := <-errs; err != nil {
+//	    // Handle error
+//	}
+func (c *ConversationClient) CompleteStream(ctx context.Context, conversationID string, req types.ConversationCompleteRequest) (<-chan httpclient.StreamEvent, <-chan error) {
+	var path string
+	if conversationID != "" {
+		path = fmt.Sprintf("/api/v1/conversation/%s/complete", conversationID)
+	} else {
+		path = "/api/v1/conversation/complete"
+	}
+
+	return c.httpClient.PostStream(ctx, path, req)
+}
+
 // Send sends a user message to the conversation.
 func (c *ConversationClient) Send(ctx context.Context, conversationID string, req types.ConversationSendRequest) (*types.ConversationSendResponse, error) {
 	path := fmt.Sprintf("/api/v1/conversation/%s/send", conversationID)
@@ -127,6 +157,12 @@ func (c *ConversationClient) Send(ctx context.Context, conversationID string, re
 	return &result, nil
 }
 
+// SendStream sends a user message and returns a stream of events.
+func (c *ConversationClient) SendStream(ctx context.Context, conversationID string, req types.ConversationSendRequest) (<-chan httpclient.StreamEvent, <-chan error) {
+	path := fmt.Sprintf("/api/v1/conversation/%s/send", conversationID)
+	return c.httpClient.PostStream(ctx, path, req)
+}
+
 // Receive receives the latest bot response from the conversation.
 func (c *ConversationClient) Receive(ctx context.Context, conversationID string, req types.ConversationReceiveRequest) (*types.ConversationReceiveResponse, error) {
 	path := fmt.Sprintf("/api/v1/conversation/%s/receive", conversationID)
@@ -136,6 +172,12 @@ func (c *ConversationClient) Receive(ctx context.Context, conversationID string,
 		return nil, err
 	}
 	return &result, nil
+}
+
+// ReceiveStream receives the latest bot response and returns a stream of events.
+func (c *ConversationClient) ReceiveStream(ctx context.Context, conversationID string, req types.ConversationReceiveRequest) (<-chan httpclient.StreamEvent, <-chan error) {
+	path := fmt.Sprintf("/api/v1/conversation/%s/receive", conversationID)
+	return c.httpClient.PostStream(ctx, path, req)
 }
 
 // Upvote upvotes a conversation.
