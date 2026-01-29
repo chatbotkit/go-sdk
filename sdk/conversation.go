@@ -158,6 +158,21 @@ func (c *ConversationClient) Send(ctx context.Context, conversationID string, re
 }
 
 // SendStream sends a user message and returns a stream of events.
+// This allows processing events as they arrive rather than waiting for the full response.
+//
+// Returns two channels: one for events and one for errors.
+// The events channel is closed when the stream ends.
+// The error channel will receive at most one error if something goes wrong.
+//
+// Example:
+//
+//	events, errs := client.Conversation.SendStream(ctx, convID, req)
+//	for event := range events {
+//	    // Process event
+//	}
+//	if err := <-errs; err != nil {
+//	    log.Fatal(err)
+//	}
 func (c *ConversationClient) SendStream(ctx context.Context, conversationID string, req types.ConversationSendRequest) (<-chan httpclient.StreamEvent, <-chan error) {
 	path := fmt.Sprintf("/api/v1/conversation/%s/send", conversationID)
 	return c.httpClient.PostStream(ctx, path, req)
@@ -175,6 +190,21 @@ func (c *ConversationClient) Receive(ctx context.Context, conversationID string,
 }
 
 // ReceiveStream receives the latest bot response and returns a stream of events.
+// This allows processing events as they arrive rather than waiting for the full response.
+//
+// Returns two channels: one for events and one for errors.
+// The events channel is closed when the stream ends.
+// The error channel will receive at most one error if something goes wrong.
+//
+// Example:
+//
+//	events, errs := client.Conversation.ReceiveStream(ctx, convID, req)
+//	for event := range events {
+//	    // Process event
+//	}
+//	if err := <-errs; err != nil {
+//	    log.Fatal(err)
+//	}
 func (c *ConversationClient) ReceiveStream(ctx context.Context, conversationID string, req types.ConversationReceiveRequest) (<-chan httpclient.StreamEvent, <-chan error) {
 	path := fmt.Sprintf("/api/v1/conversation/%s/receive", conversationID)
 	return c.httpClient.PostStream(ctx, path, req)

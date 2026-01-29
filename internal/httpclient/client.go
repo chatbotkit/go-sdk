@@ -342,10 +342,13 @@ func (c *Client) Stream(ctx context.Context, opts StreamOptions) (<-chan StreamE
 		scanner.Buffer(make([]byte, 64*1024), 1024*1024)
 
 		for scanner.Scan() {
-			line := scanner.Bytes()
-			if len(line) == 0 {
+			// Copy the line since scanner.Bytes() is only valid until next Scan()
+			lineBytes := scanner.Bytes()
+			if len(lineBytes) == 0 {
 				continue
 			}
+			line := make([]byte, len(lineBytes))
+			copy(line, lineBytes)
 
 			var event StreamEvent
 			if err := json.Unmarshal(line, &event); err != nil {
