@@ -94,7 +94,7 @@ func main() {
 
 		var responseText strings.Builder
 
-		// Process streaming events - clean typed API, no manual JSON parsing!
+		// Process streaming events
 		for event := range events {
 			switch e := event.(type) {
 			case *sdk.TokenEvent:
