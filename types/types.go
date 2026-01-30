@@ -7,1919 +7,1919 @@
 //    graphqlResponse, err := UnmarshalGraphqlResponse(bytes)
 //    bytes, err = graphqlResponse.Marshal()
 //
-//    platformReportListParams, err := UnmarshalPlatformReportListParams(bytes)
-//    bytes, err = platformReportListParams.Marshal()
+//    listPlatformReportsParams, err := UnmarshalListPlatformReportsParams(bytes)
+//    bytes, err = listPlatformReportsParams.Marshal()
 //
-//    platformReportListResponse, err := UnmarshalPlatformReportListResponse(bytes)
-//    bytes, err = platformReportListResponse.Marshal()
+//    listPlatformReportsResponse, err := UnmarshalListPlatformReportsResponse(bytes)
+//    bytes, err = listPlatformReportsResponse.Marshal()
 //
-//    reportGenerateParams, err := UnmarshalReportGenerateParams(bytes)
-//    bytes, err = reportGenerateParams.Marshal()
+//    generateReportParams, err := UnmarshalGenerateReportParams(bytes)
+//    bytes, err = generateReportParams.Marshal()
 //
-//    reportGenerateRequest, err := UnmarshalReportGenerateRequest(bytes)
-//    bytes, err = reportGenerateRequest.Marshal()
+//    generateReportRequest, err := UnmarshalGenerateReportRequest(bytes)
+//    bytes, err = generateReportRequest.Marshal()
 //
-//    reportGenerateResponse, err := UnmarshalReportGenerateResponse(bytes)
-//    bytes, err = reportGenerateResponse.Marshal()
+//    generateReportResponse, err := UnmarshalGenerateReportResponse(bytes)
+//    bytes, err = generateReportResponse.Marshal()
 //
-//    reportGenerateRequest1, err := UnmarshalReportGenerateRequest1(bytes)
-//    bytes, err = reportGenerateRequest1.Marshal()
+//    generateReportsRequest, err := UnmarshalGenerateReportsRequest(bytes)
+//    bytes, err = generateReportsRequest.Marshal()
 //
-//    reportGenerateResponse1, err := UnmarshalReportGenerateResponse1(bytes)
-//    bytes, err = reportGenerateResponse1.Marshal()
+//    generateReportsResponse, err := UnmarshalGenerateReportsResponse(bytes)
+//    bytes, err = generateReportsResponse.Marshal()
 //
-//    blueprintCloneParams, err := UnmarshalBlueprintCloneParams(bytes)
-//    bytes, err = blueprintCloneParams.Marshal()
+//    cloneBlueprintParams, err := UnmarshalCloneBlueprintParams(bytes)
+//    bytes, err = cloneBlueprintParams.Marshal()
 //
-//    blueprintCloneRequest, err := UnmarshalBlueprintCloneRequest(bytes)
-//    bytes, err = blueprintCloneRequest.Marshal()
+//    cloneBlueprintRequest, err := UnmarshalCloneBlueprintRequest(bytes)
+//    bytes, err = cloneBlueprintRequest.Marshal()
 //
-//    blueprintCloneResponse, err := UnmarshalBlueprintCloneResponse(bytes)
-//    bytes, err = blueprintCloneResponse.Marshal()
+//    cloneBlueprintResponse, err := UnmarshalCloneBlueprintResponse(bytes)
+//    bytes, err = cloneBlueprintResponse.Marshal()
 //
-//    blueprintDeleteParams, err := UnmarshalBlueprintDeleteParams(bytes)
-//    bytes, err = blueprintDeleteParams.Marshal()
+//    deleteBlueprintParams, err := UnmarshalDeleteBlueprintParams(bytes)
+//    bytes, err = deleteBlueprintParams.Marshal()
 //
-//    blueprintDeleteRequest, err := UnmarshalBlueprintDeleteRequest(bytes)
-//    bytes, err = blueprintDeleteRequest.Marshal()
+//    deleteBlueprintRequest, err := UnmarshalDeleteBlueprintRequest(bytes)
+//    bytes, err = deleteBlueprintRequest.Marshal()
 //
-//    blueprintDeleteResponse, err := UnmarshalBlueprintDeleteResponse(bytes)
-//    bytes, err = blueprintDeleteResponse.Marshal()
+//    deleteBlueprintResponse, err := UnmarshalDeleteBlueprintResponse(bytes)
+//    bytes, err = deleteBlueprintResponse.Marshal()
 //
-//    blueprintFetchParams, err := UnmarshalBlueprintFetchParams(bytes)
-//    bytes, err = blueprintFetchParams.Marshal()
+//    fetchBlueprintParams, err := UnmarshalFetchBlueprintParams(bytes)
+//    bytes, err = fetchBlueprintParams.Marshal()
 //
-//    blueprintFetchResponse, err := UnmarshalBlueprintFetchResponse(bytes)
-//    bytes, err = blueprintFetchResponse.Marshal()
+//    fetchBlueprintResponse, err := UnmarshalFetchBlueprintResponse(bytes)
+//    bytes, err = fetchBlueprintResponse.Marshal()
 //
-//    blueprintResourceListParams, err := UnmarshalBlueprintResourceListParams(bytes)
-//    bytes, err = blueprintResourceListParams.Marshal()
+//    listBlueprintResourcesParams, err := UnmarshalListBlueprintResourcesParams(bytes)
+//    bytes, err = listBlueprintResourcesParams.Marshal()
 //
-//    blueprintResourceListResponse, err := UnmarshalBlueprintResourceListResponse(bytes)
-//    bytes, err = blueprintResourceListResponse.Marshal()
+//    listBlueprintResourcesResponse, err := UnmarshalListBlueprintResourcesResponse(bytes)
+//    bytes, err = listBlueprintResourcesResponse.Marshal()
 //
-//    blueprintUpdateParams, err := UnmarshalBlueprintUpdateParams(bytes)
-//    bytes, err = blueprintUpdateParams.Marshal()
+//    updateBlueprintParams, err := UnmarshalUpdateBlueprintParams(bytes)
+//    bytes, err = updateBlueprintParams.Marshal()
 //
-//    blueprintUpdateRequest, err := UnmarshalBlueprintUpdateRequest(bytes)
-//    bytes, err = blueprintUpdateRequest.Marshal()
+//    updateBlueprintRequest, err := UnmarshalUpdateBlueprintRequest(bytes)
+//    bytes, err = updateBlueprintRequest.Marshal()
 //
-//    blueprintUpdateResponse, err := UnmarshalBlueprintUpdateResponse(bytes)
-//    bytes, err = blueprintUpdateResponse.Marshal()
+//    updateBlueprintResponse, err := UnmarshalUpdateBlueprintResponse(bytes)
+//    bytes, err = updateBlueprintResponse.Marshal()
 //
-//    blueprintCreateRequest, err := UnmarshalBlueprintCreateRequest(bytes)
-//    bytes, err = blueprintCreateRequest.Marshal()
+//    createBlueprintRequest, err := UnmarshalCreateBlueprintRequest(bytes)
+//    bytes, err = createBlueprintRequest.Marshal()
 //
-//    blueprintCreateResponse, err := UnmarshalBlueprintCreateResponse(bytes)
-//    bytes, err = blueprintCreateResponse.Marshal()
+//    createBlueprintResponse, err := UnmarshalCreateBlueprintResponse(bytes)
+//    bytes, err = createBlueprintResponse.Marshal()
 //
-//    blueprintListParams, err := UnmarshalBlueprintListParams(bytes)
-//    bytes, err = blueprintListParams.Marshal()
+//    listBlueprintsParams, err := UnmarshalListBlueprintsParams(bytes)
+//    bytes, err = listBlueprintsParams.Marshal()
 //
-//    blueprintListResponse, err := UnmarshalBlueprintListResponse(bytes)
-//    bytes, err = blueprintListResponse.Marshal()
+//    listBlueprintsResponse, err := UnmarshalListBlueprintsResponse(bytes)
+//    bytes, err = listBlueprintsResponse.Marshal()
 //
-//    botCloneParams, err := UnmarshalBotCloneParams(bytes)
-//    bytes, err = botCloneParams.Marshal()
+//    cloneBotParams, err := UnmarshalCloneBotParams(bytes)
+//    bytes, err = cloneBotParams.Marshal()
 //
-//    botCloneRequest, err := UnmarshalBotCloneRequest(bytes)
-//    bytes, err = botCloneRequest.Marshal()
+//    cloneBotRequest, err := UnmarshalCloneBotRequest(bytes)
+//    bytes, err = cloneBotRequest.Marshal()
 //
-//    botCloneResponse, err := UnmarshalBotCloneResponse(bytes)
-//    bytes, err = botCloneResponse.Marshal()
+//    cloneBotResponse, err := UnmarshalCloneBotResponse(bytes)
+//    bytes, err = cloneBotResponse.Marshal()
 //
-//    botDeleteParams, err := UnmarshalBotDeleteParams(bytes)
-//    bytes, err = botDeleteParams.Marshal()
+//    deleteBotParams, err := UnmarshalDeleteBotParams(bytes)
+//    bytes, err = deleteBotParams.Marshal()
 //
-//    botDeleteRequest, err := UnmarshalBotDeleteRequest(bytes)
-//    bytes, err = botDeleteRequest.Marshal()
+//    deleteBotRequest, err := UnmarshalDeleteBotRequest(bytes)
+//    bytes, err = deleteBotRequest.Marshal()
 //
-//    botDeleteResponse, err := UnmarshalBotDeleteResponse(bytes)
-//    bytes, err = botDeleteResponse.Marshal()
+//    deleteBotResponse, err := UnmarshalDeleteBotResponse(bytes)
+//    bytes, err = deleteBotResponse.Marshal()
 //
-//    botDownvoteParams, err := UnmarshalBotDownvoteParams(bytes)
-//    bytes, err = botDownvoteParams.Marshal()
+//    downvoteBotParams, err := UnmarshalDownvoteBotParams(bytes)
+//    bytes, err = downvoteBotParams.Marshal()
 //
-//    botDownvoteRequest, err := UnmarshalBotDownvoteRequest(bytes)
-//    bytes, err = botDownvoteRequest.Marshal()
+//    downvoteBotRequest, err := UnmarshalDownvoteBotRequest(bytes)
+//    bytes, err = downvoteBotRequest.Marshal()
 //
-//    botDownvoteResponse, err := UnmarshalBotDownvoteResponse(bytes)
-//    bytes, err = botDownvoteResponse.Marshal()
+//    downvoteBotResponse, err := UnmarshalDownvoteBotResponse(bytes)
+//    bytes, err = downvoteBotResponse.Marshal()
 //
-//    botFetchParams, err := UnmarshalBotFetchParams(bytes)
-//    bytes, err = botFetchParams.Marshal()
+//    fetchBotParams, err := UnmarshalFetchBotParams(bytes)
+//    bytes, err = fetchBotParams.Marshal()
 //
-//    botFetchResponse, err := UnmarshalBotFetchResponse(bytes)
-//    bytes, err = botFetchResponse.Marshal()
+//    fetchBotResponse, err := UnmarshalFetchBotResponse(bytes)
+//    bytes, err = fetchBotResponse.Marshal()
 //
-//    botMemorySearchParams, err := UnmarshalBotMemorySearchParams(bytes)
-//    bytes, err = botMemorySearchParams.Marshal()
+//    searchBotMemoryParams, err := UnmarshalSearchBotMemoryParams(bytes)
+//    bytes, err = searchBotMemoryParams.Marshal()
 //
-//    botMemorySearchRequest, err := UnmarshalBotMemorySearchRequest(bytes)
-//    bytes, err = botMemorySearchRequest.Marshal()
+//    searchBotMemoryRequest, err := UnmarshalSearchBotMemoryRequest(bytes)
+//    bytes, err = searchBotMemoryRequest.Marshal()
 //
-//    botMemorySearchResponse, err := UnmarshalBotMemorySearchResponse(bytes)
-//    bytes, err = botMemorySearchResponse.Marshal()
+//    searchBotMemoryResponse, err := UnmarshalSearchBotMemoryResponse(bytes)
+//    bytes, err = searchBotMemoryResponse.Marshal()
 //
-//    botSessionCreateParams, err := UnmarshalBotSessionCreateParams(bytes)
-//    bytes, err = botSessionCreateParams.Marshal()
+//    createBotSessionParams, err := UnmarshalCreateBotSessionParams(bytes)
+//    bytes, err = createBotSessionParams.Marshal()
 //
-//    botSessionCreateRequest, err := UnmarshalBotSessionCreateRequest(bytes)
-//    bytes, err = botSessionCreateRequest.Marshal()
+//    createBotSessionRequest, err := UnmarshalCreateBotSessionRequest(bytes)
+//    bytes, err = createBotSessionRequest.Marshal()
 //
-//    botSessionCreateResponse, err := UnmarshalBotSessionCreateResponse(bytes)
-//    bytes, err = botSessionCreateResponse.Marshal()
+//    createBotSessionResponse, err := UnmarshalCreateBotSessionResponse(bytes)
+//    bytes, err = createBotSessionResponse.Marshal()
 //
-//    botUpdateParams, err := UnmarshalBotUpdateParams(bytes)
-//    bytes, err = botUpdateParams.Marshal()
+//    updateBotParams, err := UnmarshalUpdateBotParams(bytes)
+//    bytes, err = updateBotParams.Marshal()
 //
-//    botUpdateRequest, err := UnmarshalBotUpdateRequest(bytes)
-//    bytes, err = botUpdateRequest.Marshal()
+//    updateBotRequest, err := UnmarshalUpdateBotRequest(bytes)
+//    bytes, err = updateBotRequest.Marshal()
 //
-//    botUpdateResponse, err := UnmarshalBotUpdateResponse(bytes)
-//    bytes, err = botUpdateResponse.Marshal()
+//    updateBotResponse, err := UnmarshalUpdateBotResponse(bytes)
+//    bytes, err = updateBotResponse.Marshal()
 //
-//    botUpvoteParams, err := UnmarshalBotUpvoteParams(bytes)
-//    bytes, err = botUpvoteParams.Marshal()
+//    upvoteBotParams, err := UnmarshalUpvoteBotParams(bytes)
+//    bytes, err = upvoteBotParams.Marshal()
 //
-//    botUpvoteRequest, err := UnmarshalBotUpvoteRequest(bytes)
-//    bytes, err = botUpvoteRequest.Marshal()
+//    upvoteBotRequest, err := UnmarshalUpvoteBotRequest(bytes)
+//    bytes, err = upvoteBotRequest.Marshal()
 //
-//    botUpvoteResponse, err := UnmarshalBotUpvoteResponse(bytes)
-//    bytes, err = botUpvoteResponse.Marshal()
+//    upvoteBotResponse, err := UnmarshalUpvoteBotResponse(bytes)
+//    bytes, err = upvoteBotResponse.Marshal()
 //
-//    botUsageFetchParams, err := UnmarshalBotUsageFetchParams(bytes)
-//    bytes, err = botUsageFetchParams.Marshal()
+//    fetchBotUsageParams, err := UnmarshalFetchBotUsageParams(bytes)
+//    bytes, err = fetchBotUsageParams.Marshal()
 //
-//    botUsageFetchResponse, err := UnmarshalBotUsageFetchResponse(bytes)
-//    bytes, err = botUsageFetchResponse.Marshal()
+//    fetchBotUsageResponse, err := UnmarshalFetchBotUsageResponse(bytes)
+//    bytes, err = fetchBotUsageResponse.Marshal()
 //
-//    botCreateRequest, err := UnmarshalBotCreateRequest(bytes)
-//    bytes, err = botCreateRequest.Marshal()
+//    createBotRequest, err := UnmarshalCreateBotRequest(bytes)
+//    bytes, err = createBotRequest.Marshal()
 //
-//    botCreateResponse, err := UnmarshalBotCreateResponse(bytes)
-//    bytes, err = botCreateResponse.Marshal()
+//    createBotResponse, err := UnmarshalCreateBotResponse(bytes)
+//    bytes, err = createBotResponse.Marshal()
 //
-//    botListParams, err := UnmarshalBotListParams(bytes)
-//    bytes, err = botListParams.Marshal()
+//    listBotsParams, err := UnmarshalListBotsParams(bytes)
+//    bytes, err = listBotsParams.Marshal()
 //
-//    botListResponse, err := UnmarshalBotListResponse(bytes)
-//    bytes, err = botListResponse.Marshal()
+//    listBotsResponse, err := UnmarshalListBotsResponse(bytes)
+//    bytes, err = listBotsResponse.Marshal()
 //
-//    channelPublishParams, err := UnmarshalChannelPublishParams(bytes)
-//    bytes, err = channelPublishParams.Marshal()
+//    publishChannelMessageParams, err := UnmarshalPublishChannelMessageParams(bytes)
+//    bytes, err = publishChannelMessageParams.Marshal()
 //
-//    channelPublishRequest, err := UnmarshalChannelPublishRequest(bytes)
-//    bytes, err = channelPublishRequest.Marshal()
+//    publishChannelMessageRequest, err := UnmarshalPublishChannelMessageRequest(bytes)
+//    bytes, err = publishChannelMessageRequest.Marshal()
 //
-//    channelPublishResponse, err := UnmarshalChannelPublishResponse(bytes)
-//    bytes, err = channelPublishResponse.Marshal()
+//    publishChannelMessageResponse, err := UnmarshalPublishChannelMessageResponse(bytes)
+//    bytes, err = publishChannelMessageResponse.Marshal()
 //
-//    channelSubscribeParams, err := UnmarshalChannelSubscribeParams(bytes)
-//    bytes, err = channelSubscribeParams.Marshal()
+//    subscribeChannelMessagesParams, err := UnmarshalSubscribeChannelMessagesParams(bytes)
+//    bytes, err = subscribeChannelMessagesParams.Marshal()
 //
-//    channelSubscribeRequest, err := UnmarshalChannelSubscribeRequest(bytes)
-//    bytes, err = channelSubscribeRequest.Marshal()
+//    subscribeChannelMessagesRequest, err := UnmarshalSubscribeChannelMessagesRequest(bytes)
+//    bytes, err = subscribeChannelMessagesRequest.Marshal()
 //
-//    contactConversationListParams, err := UnmarshalContactConversationListParams(bytes)
-//    bytes, err = contactConversationListParams.Marshal()
+//    listContactConversationsParams, err := UnmarshalListContactConversationsParams(bytes)
+//    bytes, err = listContactConversationsParams.Marshal()
 //
-//    contactConversationListResponse, err := UnmarshalContactConversationListResponse(bytes)
-//    bytes, err = contactConversationListResponse.Marshal()
+//    listContactConversationsResponse, err := UnmarshalListContactConversationsResponse(bytes)
+//    bytes, err = listContactConversationsResponse.Marshal()
 //
-//    contactDeleteParams, err := UnmarshalContactDeleteParams(bytes)
-//    bytes, err = contactDeleteParams.Marshal()
+//    deleteContactParams, err := UnmarshalDeleteContactParams(bytes)
+//    bytes, err = deleteContactParams.Marshal()
 //
-//    contactDeleteRequest, err := UnmarshalContactDeleteRequest(bytes)
-//    bytes, err = contactDeleteRequest.Marshal()
+//    deleteContactRequest, err := UnmarshalDeleteContactRequest(bytes)
+//    bytes, err = deleteContactRequest.Marshal()
 //
-//    contactDeleteResponse, err := UnmarshalContactDeleteResponse(bytes)
-//    bytes, err = contactDeleteResponse.Marshal()
+//    deleteContactResponse, err := UnmarshalDeleteContactResponse(bytes)
+//    bytes, err = deleteContactResponse.Marshal()
 //
-//    contactFetchParams, err := UnmarshalContactFetchParams(bytes)
-//    bytes, err = contactFetchParams.Marshal()
+//    fetchContactParams, err := UnmarshalFetchContactParams(bytes)
+//    bytes, err = fetchContactParams.Marshal()
 //
-//    contactFetchResponse, err := UnmarshalContactFetchResponse(bytes)
-//    bytes, err = contactFetchResponse.Marshal()
+//    fetchContactResponse, err := UnmarshalFetchContactResponse(bytes)
+//    bytes, err = fetchContactResponse.Marshal()
 //
-//    contactMemoryListParams, err := UnmarshalContactMemoryListParams(bytes)
-//    bytes, err = contactMemoryListParams.Marshal()
+//    listContactMemoriesParams, err := UnmarshalListContactMemoriesParams(bytes)
+//    bytes, err = listContactMemoriesParams.Marshal()
 //
-//    contactMemoryListResponse, err := UnmarshalContactMemoryListResponse(bytes)
-//    bytes, err = contactMemoryListResponse.Marshal()
+//    listContactMemoriesResponse, err := UnmarshalListContactMemoriesResponse(bytes)
+//    bytes, err = listContactMemoriesResponse.Marshal()
 //
-//    contactMemorySearchParams, err := UnmarshalContactMemorySearchParams(bytes)
-//    bytes, err = contactMemorySearchParams.Marshal()
+//    searchContactMemoryParams, err := UnmarshalSearchContactMemoryParams(bytes)
+//    bytes, err = searchContactMemoryParams.Marshal()
 //
-//    contactMemorySearchRequest, err := UnmarshalContactMemorySearchRequest(bytes)
-//    bytes, err = contactMemorySearchRequest.Marshal()
+//    searchContactMemoryRequest, err := UnmarshalSearchContactMemoryRequest(bytes)
+//    bytes, err = searchContactMemoryRequest.Marshal()
 //
-//    contactMemorySearchResponse, err := UnmarshalContactMemorySearchResponse(bytes)
-//    bytes, err = contactMemorySearchResponse.Marshal()
+//    searchContactMemoryResponse, err := UnmarshalSearchContactMemoryResponse(bytes)
+//    bytes, err = searchContactMemoryResponse.Marshal()
 //
-//    contactSecretAuthenticateParams, err := UnmarshalContactSecretAuthenticateParams(bytes)
-//    bytes, err = contactSecretAuthenticateParams.Marshal()
+//    authenticateContactSecretParams, err := UnmarshalAuthenticateContactSecretParams(bytes)
+//    bytes, err = authenticateContactSecretParams.Marshal()
 //
-//    contactSecretAuthenticateRequest, err := UnmarshalContactSecretAuthenticateRequest(bytes)
-//    bytes, err = contactSecretAuthenticateRequest.Marshal()
+//    authenticateContactSecretRequest, err := UnmarshalAuthenticateContactSecretRequest(bytes)
+//    bytes, err = authenticateContactSecretRequest.Marshal()
 //
-//    contactSecretAuthenticateResponse, err := UnmarshalContactSecretAuthenticateResponse(bytes)
-//    bytes, err = contactSecretAuthenticateResponse.Marshal()
+//    authenticateContactSecretResponse, err := UnmarshalAuthenticateContactSecretResponse(bytes)
+//    bytes, err = authenticateContactSecretResponse.Marshal()
 //
-//    contactSecretRevokeParams, err := UnmarshalContactSecretRevokeParams(bytes)
-//    bytes, err = contactSecretRevokeParams.Marshal()
+//    revokeContactSecretParams, err := UnmarshalRevokeContactSecretParams(bytes)
+//    bytes, err = revokeContactSecretParams.Marshal()
 //
-//    contactSecretRevokeRequest, err := UnmarshalContactSecretRevokeRequest(bytes)
-//    bytes, err = contactSecretRevokeRequest.Marshal()
+//    revokeContactSecretRequest, err := UnmarshalRevokeContactSecretRequest(bytes)
+//    bytes, err = revokeContactSecretRequest.Marshal()
 //
-//    contactSecretRevokeResponse, err := UnmarshalContactSecretRevokeResponse(bytes)
-//    bytes, err = contactSecretRevokeResponse.Marshal()
+//    revokeContactSecretResponse, err := UnmarshalRevokeContactSecretResponse(bytes)
+//    bytes, err = revokeContactSecretResponse.Marshal()
 //
-//    contactSecretVerifyParams, err := UnmarshalContactSecretVerifyParams(bytes)
-//    bytes, err = contactSecretVerifyParams.Marshal()
+//    verifyContactSecretParams, err := UnmarshalVerifyContactSecretParams(bytes)
+//    bytes, err = verifyContactSecretParams.Marshal()
 //
-//    contactSecretVerifyRequest, err := UnmarshalContactSecretVerifyRequest(bytes)
-//    bytes, err = contactSecretVerifyRequest.Marshal()
+//    verifyContactSecretRequest, err := UnmarshalVerifyContactSecretRequest(bytes)
+//    bytes, err = verifyContactSecretRequest.Marshal()
 //
-//    contactSecretVerifyResponse, err := UnmarshalContactSecretVerifyResponse(bytes)
-//    bytes, err = contactSecretVerifyResponse.Marshal()
+//    verifyContactSecretResponse, err := UnmarshalVerifyContactSecretResponse(bytes)
+//    bytes, err = verifyContactSecretResponse.Marshal()
 //
-//    contactSecretListParams, err := UnmarshalContactSecretListParams(bytes)
-//    bytes, err = contactSecretListParams.Marshal()
+//    listContactSecretsParams, err := UnmarshalListContactSecretsParams(bytes)
+//    bytes, err = listContactSecretsParams.Marshal()
 //
-//    contactSecretListResponse, err := UnmarshalContactSecretListResponse(bytes)
-//    bytes, err = contactSecretListResponse.Marshal()
+//    listContactSecretsResponse, err := UnmarshalListContactSecretsResponse(bytes)
+//    bytes, err = listContactSecretsResponse.Marshal()
 //
-//    contactSpaceListParams, err := UnmarshalContactSpaceListParams(bytes)
-//    bytes, err = contactSpaceListParams.Marshal()
+//    listContactSpacesParams, err := UnmarshalListContactSpacesParams(bytes)
+//    bytes, err = listContactSpacesParams.Marshal()
 //
-//    contactSpaceListResponse, err := UnmarshalContactSpaceListResponse(bytes)
-//    bytes, err = contactSpaceListResponse.Marshal()
+//    listContactSpacesResponse, err := UnmarshalListContactSpacesResponse(bytes)
+//    bytes, err = listContactSpacesResponse.Marshal()
 //
-//    contactTaskListParams, err := UnmarshalContactTaskListParams(bytes)
-//    bytes, err = contactTaskListParams.Marshal()
+//    listContactTasksParams, err := UnmarshalListContactTasksParams(bytes)
+//    bytes, err = listContactTasksParams.Marshal()
 //
-//    contactTaskListResponse, err := UnmarshalContactTaskListResponse(bytes)
-//    bytes, err = contactTaskListResponse.Marshal()
+//    listContactTasksResponse, err := UnmarshalListContactTasksResponse(bytes)
+//    bytes, err = listContactTasksResponse.Marshal()
 //
-//    contactUpdateParams, err := UnmarshalContactUpdateParams(bytes)
-//    bytes, err = contactUpdateParams.Marshal()
+//    updateContactParams, err := UnmarshalUpdateContactParams(bytes)
+//    bytes, err = updateContactParams.Marshal()
 //
-//    contactUpdateRequest, err := UnmarshalContactUpdateRequest(bytes)
-//    bytes, err = contactUpdateRequest.Marshal()
+//    updateContactRequest, err := UnmarshalUpdateContactRequest(bytes)
+//    bytes, err = updateContactRequest.Marshal()
 //
-//    contactUpdateResponse, err := UnmarshalContactUpdateResponse(bytes)
-//    bytes, err = contactUpdateResponse.Marshal()
+//    updateContactResponse, err := UnmarshalUpdateContactResponse(bytes)
+//    bytes, err = updateContactResponse.Marshal()
 //
-//    contactCreateRequest, err := UnmarshalContactCreateRequest(bytes)
-//    bytes, err = contactCreateRequest.Marshal()
+//    createContactRequest, err := UnmarshalCreateContactRequest(bytes)
+//    bytes, err = createContactRequest.Marshal()
 //
-//    contactCreateResponse, err := UnmarshalContactCreateResponse(bytes)
-//    bytes, err = contactCreateResponse.Marshal()
+//    createContactResponse, err := UnmarshalCreateContactResponse(bytes)
+//    bytes, err = createContactResponse.Marshal()
 //
-//    contactEnsureRequest, err := UnmarshalContactEnsureRequest(bytes)
-//    bytes, err = contactEnsureRequest.Marshal()
+//    ensureContactRequest, err := UnmarshalEnsureContactRequest(bytes)
+//    bytes, err = ensureContactRequest.Marshal()
 //
-//    contactEnsureResponse, err := UnmarshalContactEnsureResponse(bytes)
-//    bytes, err = contactEnsureResponse.Marshal()
+//    ensureContactResponse, err := UnmarshalEnsureContactResponse(bytes)
+//    bytes, err = ensureContactResponse.Marshal()
 //
-//    contactExportParams, err := UnmarshalContactExportParams(bytes)
-//    bytes, err = contactExportParams.Marshal()
+//    exportContactsParams, err := UnmarshalExportContactsParams(bytes)
+//    bytes, err = exportContactsParams.Marshal()
 //
-//    contactExportResponse, err := UnmarshalContactExportResponse(bytes)
-//    bytes, err = contactExportResponse.Marshal()
+//    exportContactsResponse, err := UnmarshalExportContactsResponse(bytes)
+//    bytes, err = exportContactsResponse.Marshal()
 //
-//    contactListParams, err := UnmarshalContactListParams(bytes)
-//    bytes, err = contactListParams.Marshal()
+//    listContactsParams, err := UnmarshalListContactsParams(bytes)
+//    bytes, err = listContactsParams.Marshal()
 //
-//    contactListResponse, err := UnmarshalContactListResponse(bytes)
-//    bytes, err = contactListResponse.Marshal()
+//    listContactsResponse, err := UnmarshalListContactsResponse(bytes)
+//    bytes, err = listContactsResponse.Marshal()
 //
-//    conversationAttachmentUploadParams, err := UnmarshalConversationAttachmentUploadParams(bytes)
-//    bytes, err = conversationAttachmentUploadParams.Marshal()
+//    uploadConversationAttachmentParams, err := UnmarshalUploadConversationAttachmentParams(bytes)
+//    bytes, err = uploadConversationAttachmentParams.Marshal()
 //
-//    conversationAttachmentUploadRequest, err := UnmarshalConversationAttachmentUploadRequest(bytes)
-//    bytes, err = conversationAttachmentUploadRequest.Marshal()
+//    uploadConversationAttachmentRequest, err := UnmarshalUploadConversationAttachmentRequest(bytes)
+//    bytes, err = uploadConversationAttachmentRequest.Marshal()
 //
-//    conversationAttachmentUploadResponse, err := UnmarshalConversationAttachmentUploadResponse(bytes)
-//    bytes, err = conversationAttachmentUploadResponse.Marshal()
+//    uploadConversationAttachmentResponse, err := UnmarshalUploadConversationAttachmentResponse(bytes)
+//    bytes, err = uploadConversationAttachmentResponse.Marshal()
 //
-//    conversationCompleteParams, err := UnmarshalConversationCompleteParams(bytes)
-//    bytes, err = conversationCompleteParams.Marshal()
+//    completeConversationMessageParams, err := UnmarshalCompleteConversationMessageParams(bytes)
+//    bytes, err = completeConversationMessageParams.Marshal()
 //
-//    conversationCompleteRequest, err := UnmarshalConversationCompleteRequest(bytes)
-//    bytes, err = conversationCompleteRequest.Marshal()
+//    completeConversationMessageRequest, err := UnmarshalCompleteConversationMessageRequest(bytes)
+//    bytes, err = completeConversationMessageRequest.Marshal()
 //
-//    conversationCompleteResponse, err := UnmarshalConversationCompleteResponse(bytes)
-//    bytes, err = conversationCompleteResponse.Marshal()
+//    completeConversationMessageResponse, err := UnmarshalCompleteConversationMessageResponse(bytes)
+//    bytes, err = completeConversationMessageResponse.Marshal()
 //
-//    conversationContactUpsertParams, err := UnmarshalConversationContactUpsertParams(bytes)
-//    bytes, err = conversationContactUpsertParams.Marshal()
+//    upsertConversationContactParams, err := UnmarshalUpsertConversationContactParams(bytes)
+//    bytes, err = upsertConversationContactParams.Marshal()
 //
-//    conversationContactUpsertRequest, err := UnmarshalConversationContactUpsertRequest(bytes)
-//    bytes, err = conversationContactUpsertRequest.Marshal()
+//    upsertConversationContactRequest, err := UnmarshalUpsertConversationContactRequest(bytes)
+//    bytes, err = upsertConversationContactRequest.Marshal()
 //
-//    conversationContactUpsertResponse, err := UnmarshalConversationContactUpsertResponse(bytes)
-//    bytes, err = conversationContactUpsertResponse.Marshal()
+//    upsertConversationContactResponse, err := UnmarshalUpsertConversationContactResponse(bytes)
+//    bytes, err = upsertConversationContactResponse.Marshal()
 //
-//    conversationDeleteParams, err := UnmarshalConversationDeleteParams(bytes)
-//    bytes, err = conversationDeleteParams.Marshal()
+//    deleteConversationParams, err := UnmarshalDeleteConversationParams(bytes)
+//    bytes, err = deleteConversationParams.Marshal()
 //
-//    conversationDeleteRequest, err := UnmarshalConversationDeleteRequest(bytes)
-//    bytes, err = conversationDeleteRequest.Marshal()
+//    deleteConversationRequest, err := UnmarshalDeleteConversationRequest(bytes)
+//    bytes, err = deleteConversationRequest.Marshal()
 //
-//    conversationDeleteResponse, err := UnmarshalConversationDeleteResponse(bytes)
-//    bytes, err = conversationDeleteResponse.Marshal()
+//    deleteConversationResponse, err := UnmarshalDeleteConversationResponse(bytes)
+//    bytes, err = deleteConversationResponse.Marshal()
 //
-//    conversationDispatchRequest, err := UnmarshalConversationDispatchRequest(bytes)
-//    bytes, err = conversationDispatchRequest.Marshal()
+//    dispatchStatefulConversationRequest, err := UnmarshalDispatchStatefulConversationRequest(bytes)
+//    bytes, err = dispatchStatefulConversationRequest.Marshal()
 //
-//    conversationDispatchResponse, err := UnmarshalConversationDispatchResponse(bytes)
-//    bytes, err = conversationDispatchResponse.Marshal()
+//    dispatchStatefulConversationResponse, err := UnmarshalDispatchStatefulConversationResponse(bytes)
+//    bytes, err = dispatchStatefulConversationResponse.Marshal()
 //
-//    conversationDownvoteParams, err := UnmarshalConversationDownvoteParams(bytes)
-//    bytes, err = conversationDownvoteParams.Marshal()
+//    downvoteConversationParams, err := UnmarshalDownvoteConversationParams(bytes)
+//    bytes, err = downvoteConversationParams.Marshal()
 //
-//    conversationDownvoteRequest, err := UnmarshalConversationDownvoteRequest(bytes)
-//    bytes, err = conversationDownvoteRequest.Marshal()
+//    downvoteConversationRequest, err := UnmarshalDownvoteConversationRequest(bytes)
+//    bytes, err = downvoteConversationRequest.Marshal()
 //
-//    conversationDownvoteResponse, err := UnmarshalConversationDownvoteResponse(bytes)
-//    bytes, err = conversationDownvoteResponse.Marshal()
+//    downvoteConversationResponse, err := UnmarshalDownvoteConversationResponse(bytes)
+//    bytes, err = downvoteConversationResponse.Marshal()
 //
-//    conversationFetchParams, err := UnmarshalConversationFetchParams(bytes)
-//    bytes, err = conversationFetchParams.Marshal()
+//    fetchConversationParams, err := UnmarshalFetchConversationParams(bytes)
+//    bytes, err = fetchConversationParams.Marshal()
 //
-//    conversationFetchResponse, err := UnmarshalConversationFetchResponse(bytes)
-//    bytes, err = conversationFetchResponse.Marshal()
+//    fetchConversationResponse, err := UnmarshalFetchConversationResponse(bytes)
+//    bytes, err = fetchConversationResponse.Marshal()
 //
-//    conversationMessageDeleteParams, err := UnmarshalConversationMessageDeleteParams(bytes)
-//    bytes, err = conversationMessageDeleteParams.Marshal()
+//    deleteConversationMessageParams, err := UnmarshalDeleteConversationMessageParams(bytes)
+//    bytes, err = deleteConversationMessageParams.Marshal()
 //
-//    conversationMessageDeleteRequest, err := UnmarshalConversationMessageDeleteRequest(bytes)
-//    bytes, err = conversationMessageDeleteRequest.Marshal()
+//    deleteConversationMessageRequest, err := UnmarshalDeleteConversationMessageRequest(bytes)
+//    bytes, err = deleteConversationMessageRequest.Marshal()
 //
-//    conversationMessageDeleteResponse, err := UnmarshalConversationMessageDeleteResponse(bytes)
-//    bytes, err = conversationMessageDeleteResponse.Marshal()
+//    deleteConversationMessageResponse, err := UnmarshalDeleteConversationMessageResponse(bytes)
+//    bytes, err = deleteConversationMessageResponse.Marshal()
 //
-//    conversationMessageDownvoteParams, err := UnmarshalConversationMessageDownvoteParams(bytes)
-//    bytes, err = conversationMessageDownvoteParams.Marshal()
+//    downvoteConversationMessageParams, err := UnmarshalDownvoteConversationMessageParams(bytes)
+//    bytes, err = downvoteConversationMessageParams.Marshal()
 //
-//    conversationMessageDownvoteRequest, err := UnmarshalConversationMessageDownvoteRequest(bytes)
-//    bytes, err = conversationMessageDownvoteRequest.Marshal()
+//    downvoteConversationMessageRequest, err := UnmarshalDownvoteConversationMessageRequest(bytes)
+//    bytes, err = downvoteConversationMessageRequest.Marshal()
 //
-//    conversationMessageDownvoteResponse, err := UnmarshalConversationMessageDownvoteResponse(bytes)
-//    bytes, err = conversationMessageDownvoteResponse.Marshal()
+//    downvoteConversationMessageResponse, err := UnmarshalDownvoteConversationMessageResponse(bytes)
+//    bytes, err = downvoteConversationMessageResponse.Marshal()
 //
-//    conversationMessageFetchParams, err := UnmarshalConversationMessageFetchParams(bytes)
-//    bytes, err = conversationMessageFetchParams.Marshal()
+//    fetchConversationMessageParams, err := UnmarshalFetchConversationMessageParams(bytes)
+//    bytes, err = fetchConversationMessageParams.Marshal()
 //
-//    conversationMessageFetchResponse, err := UnmarshalConversationMessageFetchResponse(bytes)
-//    bytes, err = conversationMessageFetchResponse.Marshal()
+//    fetchConversationMessageResponse, err := UnmarshalFetchConversationMessageResponse(bytes)
+//    bytes, err = fetchConversationMessageResponse.Marshal()
 //
-//    conversationMessageSynthesizeParams, err := UnmarshalConversationMessageSynthesizeParams(bytes)
-//    bytes, err = conversationMessageSynthesizeParams.Marshal()
+//    synthesizeConversationMessageParams, err := UnmarshalSynthesizeConversationMessageParams(bytes)
+//    bytes, err = synthesizeConversationMessageParams.Marshal()
 //
-//    conversationMessageSynthesizeRequest, err := UnmarshalConversationMessageSynthesizeRequest(bytes)
-//    bytes, err = conversationMessageSynthesizeRequest.Marshal()
+//    synthesizeConversationMessageRequest, err := UnmarshalSynthesizeConversationMessageRequest(bytes)
+//    bytes, err = synthesizeConversationMessageRequest.Marshal()
 //
-//    conversationMessageSynthesizeResponse, err := UnmarshalConversationMessageSynthesizeResponse(bytes)
-//    bytes, err = conversationMessageSynthesizeResponse.Marshal()
+//    synthesizeConversationMessageResponse, err := UnmarshalSynthesizeConversationMessageResponse(bytes)
+//    bytes, err = synthesizeConversationMessageResponse.Marshal()
 //
-//    conversationMessageUpdateParams, err := UnmarshalConversationMessageUpdateParams(bytes)
-//    bytes, err = conversationMessageUpdateParams.Marshal()
+//    updateConversationMessageParams, err := UnmarshalUpdateConversationMessageParams(bytes)
+//    bytes, err = updateConversationMessageParams.Marshal()
 //
-//    conversationMessageUpdateRequest, err := UnmarshalConversationMessageUpdateRequest(bytes)
-//    bytes, err = conversationMessageUpdateRequest.Marshal()
+//    updateConversationMessageRequest, err := UnmarshalUpdateConversationMessageRequest(bytes)
+//    bytes, err = updateConversationMessageRequest.Marshal()
 //
-//    conversationMessageUpdateResponse, err := UnmarshalConversationMessageUpdateResponse(bytes)
-//    bytes, err = conversationMessageUpdateResponse.Marshal()
+//    updateConversationMessageResponse, err := UnmarshalUpdateConversationMessageResponse(bytes)
+//    bytes, err = updateConversationMessageResponse.Marshal()
 //
-//    conversationMessageUpvoteParams, err := UnmarshalConversationMessageUpvoteParams(bytes)
-//    bytes, err = conversationMessageUpvoteParams.Marshal()
+//    upvoteConversationMessageParams, err := UnmarshalUpvoteConversationMessageParams(bytes)
+//    bytes, err = upvoteConversationMessageParams.Marshal()
 //
-//    conversationMessageUpvoteRequest, err := UnmarshalConversationMessageUpvoteRequest(bytes)
-//    bytes, err = conversationMessageUpvoteRequest.Marshal()
+//    upvoteConversationMessageRequest, err := UnmarshalUpvoteConversationMessageRequest(bytes)
+//    bytes, err = upvoteConversationMessageRequest.Marshal()
 //
-//    conversationMessageUpvoteResponse, err := UnmarshalConversationMessageUpvoteResponse(bytes)
-//    bytes, err = conversationMessageUpvoteResponse.Marshal()
+//    upvoteConversationMessageResponse, err := UnmarshalUpvoteConversationMessageResponse(bytes)
+//    bytes, err = upvoteConversationMessageResponse.Marshal()
 //
-//    conversationMessageCreateParams, err := UnmarshalConversationMessageCreateParams(bytes)
-//    bytes, err = conversationMessageCreateParams.Marshal()
+//    createConversationMessageParams, err := UnmarshalCreateConversationMessageParams(bytes)
+//    bytes, err = createConversationMessageParams.Marshal()
 //
-//    conversationMessageCreateRequest, err := UnmarshalConversationMessageCreateRequest(bytes)
-//    bytes, err = conversationMessageCreateRequest.Marshal()
+//    createConversationMessageRequest, err := UnmarshalCreateConversationMessageRequest(bytes)
+//    bytes, err = createConversationMessageRequest.Marshal()
 //
-//    conversationMessageCreateResponse, err := UnmarshalConversationMessageCreateResponse(bytes)
-//    bytes, err = conversationMessageCreateResponse.Marshal()
+//    createConversationMessageResponse, err := UnmarshalCreateConversationMessageResponse(bytes)
+//    bytes, err = createConversationMessageResponse.Marshal()
 //
-//    conversationMessageListParams, err := UnmarshalConversationMessageListParams(bytes)
-//    bytes, err = conversationMessageListParams.Marshal()
+//    listConversationMessagesParams, err := UnmarshalListConversationMessagesParams(bytes)
+//    bytes, err = listConversationMessagesParams.Marshal()
 //
-//    conversationMessageListResponse, err := UnmarshalConversationMessageListResponse(bytes)
-//    bytes, err = conversationMessageListResponse.Marshal()
+//    listConversationMessagesResponse, err := UnmarshalListConversationMessagesResponse(bytes)
+//    bytes, err = listConversationMessagesResponse.Marshal()
 //
-//    conversationReceiveParams, err := UnmarshalConversationReceiveParams(bytes)
-//    bytes, err = conversationReceiveParams.Marshal()
+//    receiveConversationMessageParams, err := UnmarshalReceiveConversationMessageParams(bytes)
+//    bytes, err = receiveConversationMessageParams.Marshal()
 //
-//    conversationReceiveRequest, err := UnmarshalConversationReceiveRequest(bytes)
-//    bytes, err = conversationReceiveRequest.Marshal()
+//    receiveConversationMessageRequest, err := UnmarshalReceiveConversationMessageRequest(bytes)
+//    bytes, err = receiveConversationMessageRequest.Marshal()
 //
-//    conversationReceiveResponse, err := UnmarshalConversationReceiveResponse(bytes)
-//    bytes, err = conversationReceiveResponse.Marshal()
+//    receiveConversationMessageResponse, err := UnmarshalReceiveConversationMessageResponse(bytes)
+//    bytes, err = receiveConversationMessageResponse.Marshal()
 //
-//    conversationSendParams, err := UnmarshalConversationSendParams(bytes)
-//    bytes, err = conversationSendParams.Marshal()
+//    sendConversationMessageParams, err := UnmarshalSendConversationMessageParams(bytes)
+//    bytes, err = sendConversationMessageParams.Marshal()
 //
-//    conversationSendRequest, err := UnmarshalConversationSendRequest(bytes)
-//    bytes, err = conversationSendRequest.Marshal()
+//    sendConversationMessageRequest, err := UnmarshalSendConversationMessageRequest(bytes)
+//    bytes, err = sendConversationMessageRequest.Marshal()
 //
-//    conversationSendResponse, err := UnmarshalConversationSendResponse(bytes)
-//    bytes, err = conversationSendResponse.Marshal()
+//    sendConversationMessageResponse, err := UnmarshalSendConversationMessageResponse(bytes)
+//    bytes, err = sendConversationMessageResponse.Marshal()
 //
-//    conversationSessionCreateParams, err := UnmarshalConversationSessionCreateParams(bytes)
-//    bytes, err = conversationSessionCreateParams.Marshal()
+//    createConversationSessionParams, err := UnmarshalCreateConversationSessionParams(bytes)
+//    bytes, err = createConversationSessionParams.Marshal()
 //
-//    conversationSessionCreateRequest, err := UnmarshalConversationSessionCreateRequest(bytes)
-//    bytes, err = conversationSessionCreateRequest.Marshal()
+//    createConversationSessionRequest, err := UnmarshalCreateConversationSessionRequest(bytes)
+//    bytes, err = createConversationSessionRequest.Marshal()
 //
-//    conversationSessionCreateResponse, err := UnmarshalConversationSessionCreateResponse(bytes)
-//    bytes, err = conversationSessionCreateResponse.Marshal()
+//    createConversationSessionResponse, err := UnmarshalCreateConversationSessionResponse(bytes)
+//    bytes, err = createConversationSessionResponse.Marshal()
 //
-//    conversationUpdateParams, err := UnmarshalConversationUpdateParams(bytes)
-//    bytes, err = conversationUpdateParams.Marshal()
+//    updateConversationParams, err := UnmarshalUpdateConversationParams(bytes)
+//    bytes, err = updateConversationParams.Marshal()
 //
-//    conversationUpdateRequest, err := UnmarshalConversationUpdateRequest(bytes)
-//    bytes, err = conversationUpdateRequest.Marshal()
+//    updateConversationRequest, err := UnmarshalUpdateConversationRequest(bytes)
+//    bytes, err = updateConversationRequest.Marshal()
 //
-//    conversationUpdateResponse, err := UnmarshalConversationUpdateResponse(bytes)
-//    bytes, err = conversationUpdateResponse.Marshal()
+//    updateConversationResponse, err := UnmarshalUpdateConversationResponse(bytes)
+//    bytes, err = updateConversationResponse.Marshal()
 //
-//    conversationUpvoteParams, err := UnmarshalConversationUpvoteParams(bytes)
-//    bytes, err = conversationUpvoteParams.Marshal()
+//    upvoteConversationParams, err := UnmarshalUpvoteConversationParams(bytes)
+//    bytes, err = upvoteConversationParams.Marshal()
 //
-//    conversationUpvoteRequest, err := UnmarshalConversationUpvoteRequest(bytes)
-//    bytes, err = conversationUpvoteRequest.Marshal()
+//    upvoteConversationRequest, err := UnmarshalUpvoteConversationRequest(bytes)
+//    bytes, err = upvoteConversationRequest.Marshal()
 //
-//    conversationUpvoteResponse, err := UnmarshalConversationUpvoteResponse(bytes)
-//    bytes, err = conversationUpvoteResponse.Marshal()
+//    upvoteConversationResponse, err := UnmarshalUpvoteConversationResponse(bytes)
+//    bytes, err = upvoteConversationResponse.Marshal()
 //
-//    conversationUsageFetchParams, err := UnmarshalConversationUsageFetchParams(bytes)
-//    bytes, err = conversationUsageFetchParams.Marshal()
+//    fetchConversationUsageParams, err := UnmarshalFetchConversationUsageParams(bytes)
+//    bytes, err = fetchConversationUsageParams.Marshal()
 //
-//    conversationUsageFetchResponse, err := UnmarshalConversationUsageFetchResponse(bytes)
-//    bytes, err = conversationUsageFetchResponse.Marshal()
+//    fetchConversationUsageResponse, err := UnmarshalFetchConversationUsageResponse(bytes)
+//    bytes, err = fetchConversationUsageResponse.Marshal()
 //
-//    conversationCompleteRequest1, err := UnmarshalConversationCompleteRequest1(bytes)
-//    bytes, err = conversationCompleteRequest1.Marshal()
+//    completeConversationRequest, err := UnmarshalCompleteConversationRequest(bytes)
+//    bytes, err = completeConversationRequest.Marshal()
 //
-//    conversationCompleteResponse1, err := UnmarshalConversationCompleteResponse1(bytes)
-//    bytes, err = conversationCompleteResponse1.Marshal()
+//    completeConversationResponse, err := UnmarshalCompleteConversationResponse(bytes)
+//    bytes, err = completeConversationResponse.Marshal()
 //
-//    conversationCreateRequest, err := UnmarshalConversationCreateRequest(bytes)
-//    bytes, err = conversationCreateRequest.Marshal()
+//    createConversationRequest, err := UnmarshalCreateConversationRequest(bytes)
+//    bytes, err = createConversationRequest.Marshal()
 //
-//    conversationCreateResponse, err := UnmarshalConversationCreateResponse(bytes)
-//    bytes, err = conversationCreateResponse.Marshal()
+//    createConversationResponse, err := UnmarshalCreateConversationResponse(bytes)
+//    bytes, err = createConversationResponse.Marshal()
 //
-//    conversationDispatchRequest1, err := UnmarshalConversationDispatchRequest1(bytes)
-//    bytes, err = conversationDispatchRequest1.Marshal()
+//    dispatchConversationRequest, err := UnmarshalDispatchConversationRequest(bytes)
+//    bytes, err = dispatchConversationRequest.Marshal()
 //
-//    conversationDispatchResponse1, err := UnmarshalConversationDispatchResponse1(bytes)
-//    bytes, err = conversationDispatchResponse1.Marshal()
+//    dispatchConversationResponse, err := UnmarshalDispatchConversationResponse(bytes)
+//    bytes, err = dispatchConversationResponse.Marshal()
 //
-//    conversationExportParams, err := UnmarshalConversationExportParams(bytes)
-//    bytes, err = conversationExportParams.Marshal()
+//    exportConversationsParams, err := UnmarshalExportConversationsParams(bytes)
+//    bytes, err = exportConversationsParams.Marshal()
 //
-//    conversationExportResponse, err := UnmarshalConversationExportResponse(bytes)
-//    bytes, err = conversationExportResponse.Marshal()
+//    exportConversationsResponse, err := UnmarshalExportConversationsResponse(bytes)
+//    bytes, err = exportConversationsResponse.Marshal()
 //
-//    conversationListParams, err := UnmarshalConversationListParams(bytes)
-//    bytes, err = conversationListParams.Marshal()
+//    listConversationsParams, err := UnmarshalListConversationsParams(bytes)
+//    bytes, err = listConversationsParams.Marshal()
 //
-//    conversationListResponse, err := UnmarshalConversationListResponse(bytes)
-//    bytes, err = conversationListResponse.Marshal()
+//    listConversationsResponse, err := UnmarshalListConversationsResponse(bytes)
+//    bytes, err = listConversationsResponse.Marshal()
 //
-//    datasetDeleteParams, err := UnmarshalDatasetDeleteParams(bytes)
-//    bytes, err = datasetDeleteParams.Marshal()
+//    deleteDatasetParams, err := UnmarshalDeleteDatasetParams(bytes)
+//    bytes, err = deleteDatasetParams.Marshal()
 //
-//    datasetDeleteRequest, err := UnmarshalDatasetDeleteRequest(bytes)
-//    bytes, err = datasetDeleteRequest.Marshal()
+//    deleteDatasetRequest, err := UnmarshalDeleteDatasetRequest(bytes)
+//    bytes, err = deleteDatasetRequest.Marshal()
 //
-//    datasetDeleteResponse, err := UnmarshalDatasetDeleteResponse(bytes)
-//    bytes, err = datasetDeleteResponse.Marshal()
+//    deleteDatasetResponse, err := UnmarshalDeleteDatasetResponse(bytes)
+//    bytes, err = deleteDatasetResponse.Marshal()
 //
-//    datasetFetchParams, err := UnmarshalDatasetFetchParams(bytes)
-//    bytes, err = datasetFetchParams.Marshal()
+//    fetchDatasetParams, err := UnmarshalFetchDatasetParams(bytes)
+//    bytes, err = fetchDatasetParams.Marshal()
 //
-//    datasetFetchResponse, err := UnmarshalDatasetFetchResponse(bytes)
-//    bytes, err = datasetFetchResponse.Marshal()
+//    fetchDatasetResponse, err := UnmarshalFetchDatasetResponse(bytes)
+//    bytes, err = fetchDatasetResponse.Marshal()
 //
-//    datasetFileAttachParams, err := UnmarshalDatasetFileAttachParams(bytes)
-//    bytes, err = datasetFileAttachParams.Marshal()
+//    attachDatasetFileParams, err := UnmarshalAttachDatasetFileParams(bytes)
+//    bytes, err = attachDatasetFileParams.Marshal()
 //
-//    datasetFileAttachRequest, err := UnmarshalDatasetFileAttachRequest(bytes)
-//    bytes, err = datasetFileAttachRequest.Marshal()
+//    attachDatasetFileRequest, err := UnmarshalAttachDatasetFileRequest(bytes)
+//    bytes, err = attachDatasetFileRequest.Marshal()
 //
-//    datasetFileAttachResponse, err := UnmarshalDatasetFileAttachResponse(bytes)
-//    bytes, err = datasetFileAttachResponse.Marshal()
+//    attachDatasetFileResponse, err := UnmarshalAttachDatasetFileResponse(bytes)
+//    bytes, err = attachDatasetFileResponse.Marshal()
 //
-//    datasetFileDetachParams, err := UnmarshalDatasetFileDetachParams(bytes)
-//    bytes, err = datasetFileDetachParams.Marshal()
+//    detachDatasetFileParams, err := UnmarshalDetachDatasetFileParams(bytes)
+//    bytes, err = detachDatasetFileParams.Marshal()
 //
-//    datasetFileDetachRequest, err := UnmarshalDatasetFileDetachRequest(bytes)
-//    bytes, err = datasetFileDetachRequest.Marshal()
+//    detachDatasetFileRequest, err := UnmarshalDetachDatasetFileRequest(bytes)
+//    bytes, err = detachDatasetFileRequest.Marshal()
 //
-//    datasetFileDetachResponse, err := UnmarshalDatasetFileDetachResponse(bytes)
-//    bytes, err = datasetFileDetachResponse.Marshal()
+//    detachDatasetFileResponse, err := UnmarshalDetachDatasetFileResponse(bytes)
+//    bytes, err = detachDatasetFileResponse.Marshal()
 //
-//    datasetFileSyncParams, err := UnmarshalDatasetFileSyncParams(bytes)
-//    bytes, err = datasetFileSyncParams.Marshal()
+//    syncDatasetFileParams, err := UnmarshalSyncDatasetFileParams(bytes)
+//    bytes, err = syncDatasetFileParams.Marshal()
 //
-//    datasetFileSyncRequest, err := UnmarshalDatasetFileSyncRequest(bytes)
-//    bytes, err = datasetFileSyncRequest.Marshal()
+//    syncDatasetFileRequest, err := UnmarshalSyncDatasetFileRequest(bytes)
+//    bytes, err = syncDatasetFileRequest.Marshal()
 //
-//    datasetFileSyncResponse, err := UnmarshalDatasetFileSyncResponse(bytes)
-//    bytes, err = datasetFileSyncResponse.Marshal()
+//    syncDatasetFileResponse, err := UnmarshalSyncDatasetFileResponse(bytes)
+//    bytes, err = syncDatasetFileResponse.Marshal()
 //
-//    datasetFileListParams, err := UnmarshalDatasetFileListParams(bytes)
-//    bytes, err = datasetFileListParams.Marshal()
+//    listDatasetFilesParams, err := UnmarshalListDatasetFilesParams(bytes)
+//    bytes, err = listDatasetFilesParams.Marshal()
 //
-//    datasetFileListResponse, err := UnmarshalDatasetFileListResponse(bytes)
-//    bytes, err = datasetFileListResponse.Marshal()
+//    listDatasetFilesResponse, err := UnmarshalListDatasetFilesResponse(bytes)
+//    bytes, err = listDatasetFilesResponse.Marshal()
 //
-//    datasetRecordDeleteParams, err := UnmarshalDatasetRecordDeleteParams(bytes)
-//    bytes, err = datasetRecordDeleteParams.Marshal()
+//    deleteDatasetRecordParams, err := UnmarshalDeleteDatasetRecordParams(bytes)
+//    bytes, err = deleteDatasetRecordParams.Marshal()
 //
-//    datasetRecordDeleteRequest, err := UnmarshalDatasetRecordDeleteRequest(bytes)
-//    bytes, err = datasetRecordDeleteRequest.Marshal()
+//    deleteDatasetRecordRequest, err := UnmarshalDeleteDatasetRecordRequest(bytes)
+//    bytes, err = deleteDatasetRecordRequest.Marshal()
 //
-//    datasetRecordDeleteResponse, err := UnmarshalDatasetRecordDeleteResponse(bytes)
-//    bytes, err = datasetRecordDeleteResponse.Marshal()
+//    deleteDatasetRecordResponse, err := UnmarshalDeleteDatasetRecordResponse(bytes)
+//    bytes, err = deleteDatasetRecordResponse.Marshal()
 //
-//    datasetRecordFetchParams, err := UnmarshalDatasetRecordFetchParams(bytes)
-//    bytes, err = datasetRecordFetchParams.Marshal()
+//    fetchDatasetRecordParams, err := UnmarshalFetchDatasetRecordParams(bytes)
+//    bytes, err = fetchDatasetRecordParams.Marshal()
 //
-//    datasetRecordFetchResponse, err := UnmarshalDatasetRecordFetchResponse(bytes)
-//    bytes, err = datasetRecordFetchResponse.Marshal()
+//    fetchDatasetRecordResponse, err := UnmarshalFetchDatasetRecordResponse(bytes)
+//    bytes, err = fetchDatasetRecordResponse.Marshal()
 //
-//    datasetRecordUpdateParams, err := UnmarshalDatasetRecordUpdateParams(bytes)
-//    bytes, err = datasetRecordUpdateParams.Marshal()
+//    updateDatasetRecordParams, err := UnmarshalUpdateDatasetRecordParams(bytes)
+//    bytes, err = updateDatasetRecordParams.Marshal()
 //
-//    datasetRecordUpdateRequest, err := UnmarshalDatasetRecordUpdateRequest(bytes)
-//    bytes, err = datasetRecordUpdateRequest.Marshal()
+//    updateDatasetRecordRequest, err := UnmarshalUpdateDatasetRecordRequest(bytes)
+//    bytes, err = updateDatasetRecordRequest.Marshal()
 //
-//    datasetRecordUpdateResponse, err := UnmarshalDatasetRecordUpdateResponse(bytes)
-//    bytes, err = datasetRecordUpdateResponse.Marshal()
+//    updateDatasetRecordResponse, err := UnmarshalUpdateDatasetRecordResponse(bytes)
+//    bytes, err = updateDatasetRecordResponse.Marshal()
 //
-//    datasetRecordCreateParams, err := UnmarshalDatasetRecordCreateParams(bytes)
-//    bytes, err = datasetRecordCreateParams.Marshal()
+//    createDatasetRecordParams, err := UnmarshalCreateDatasetRecordParams(bytes)
+//    bytes, err = createDatasetRecordParams.Marshal()
 //
-//    datasetRecordCreateRequest, err := UnmarshalDatasetRecordCreateRequest(bytes)
-//    bytes, err = datasetRecordCreateRequest.Marshal()
+//    createDatasetRecordRequest, err := UnmarshalCreateDatasetRecordRequest(bytes)
+//    bytes, err = createDatasetRecordRequest.Marshal()
 //
-//    datasetRecordCreateResponse, err := UnmarshalDatasetRecordCreateResponse(bytes)
-//    bytes, err = datasetRecordCreateResponse.Marshal()
+//    createDatasetRecordResponse, err := UnmarshalCreateDatasetRecordResponse(bytes)
+//    bytes, err = createDatasetRecordResponse.Marshal()
 //
-//    datasetRecordExportParams, err := UnmarshalDatasetRecordExportParams(bytes)
-//    bytes, err = datasetRecordExportParams.Marshal()
+//    exportDatasetRecordsParams, err := UnmarshalExportDatasetRecordsParams(bytes)
+//    bytes, err = exportDatasetRecordsParams.Marshal()
 //
-//    datasetRecordExportResponse, err := UnmarshalDatasetRecordExportResponse(bytes)
-//    bytes, err = datasetRecordExportResponse.Marshal()
+//    exportDatasetRecordsResponse, err := UnmarshalExportDatasetRecordsResponse(bytes)
+//    bytes, err = exportDatasetRecordsResponse.Marshal()
 //
-//    datasetRecordListParams, err := UnmarshalDatasetRecordListParams(bytes)
-//    bytes, err = datasetRecordListParams.Marshal()
+//    listDatasetRecordsParams, err := UnmarshalListDatasetRecordsParams(bytes)
+//    bytes, err = listDatasetRecordsParams.Marshal()
 //
-//    datasetRecordListResponse, err := UnmarshalDatasetRecordListResponse(bytes)
-//    bytes, err = datasetRecordListResponse.Marshal()
+//    listDatasetRecordsResponse, err := UnmarshalListDatasetRecordsResponse(bytes)
+//    bytes, err = listDatasetRecordsResponse.Marshal()
 //
-//    datasetSearchParams, err := UnmarshalDatasetSearchParams(bytes)
-//    bytes, err = datasetSearchParams.Marshal()
+//    searchDatasetParams, err := UnmarshalSearchDatasetParams(bytes)
+//    bytes, err = searchDatasetParams.Marshal()
 //
-//    datasetSearchRequest, err := UnmarshalDatasetSearchRequest(bytes)
-//    bytes, err = datasetSearchRequest.Marshal()
+//    searchDatasetRequest, err := UnmarshalSearchDatasetRequest(bytes)
+//    bytes, err = searchDatasetRequest.Marshal()
 //
-//    datasetSearchResponse, err := UnmarshalDatasetSearchResponse(bytes)
-//    bytes, err = datasetSearchResponse.Marshal()
+//    searchDatasetResponse, err := UnmarshalSearchDatasetResponse(bytes)
+//    bytes, err = searchDatasetResponse.Marshal()
 //
-//    datasetUpdateParams, err := UnmarshalDatasetUpdateParams(bytes)
-//    bytes, err = datasetUpdateParams.Marshal()
+//    updateDatasetParams, err := UnmarshalUpdateDatasetParams(bytes)
+//    bytes, err = updateDatasetParams.Marshal()
 //
-//    datasetUpdateRequest, err := UnmarshalDatasetUpdateRequest(bytes)
-//    bytes, err = datasetUpdateRequest.Marshal()
+//    updateDatasetRequest, err := UnmarshalUpdateDatasetRequest(bytes)
+//    bytes, err = updateDatasetRequest.Marshal()
 //
-//    datasetUpdateResponse, err := UnmarshalDatasetUpdateResponse(bytes)
-//    bytes, err = datasetUpdateResponse.Marshal()
+//    updateDatasetResponse, err := UnmarshalUpdateDatasetResponse(bytes)
+//    bytes, err = updateDatasetResponse.Marshal()
 //
-//    datasetCreateRequest, err := UnmarshalDatasetCreateRequest(bytes)
-//    bytes, err = datasetCreateRequest.Marshal()
+//    createDatasetRequest, err := UnmarshalCreateDatasetRequest(bytes)
+//    bytes, err = createDatasetRequest.Marshal()
 //
-//    datasetCreateResponse, err := UnmarshalDatasetCreateResponse(bytes)
-//    bytes, err = datasetCreateResponse.Marshal()
+//    createDatasetResponse, err := UnmarshalCreateDatasetResponse(bytes)
+//    bytes, err = createDatasetResponse.Marshal()
 //
-//    datasetListParams, err := UnmarshalDatasetListParams(bytes)
-//    bytes, err = datasetListParams.Marshal()
+//    listDatasetsParams, err := UnmarshalListDatasetsParams(bytes)
+//    bytes, err = listDatasetsParams.Marshal()
 //
-//    datasetListResponse, err := UnmarshalDatasetListResponse(bytes)
-//    bytes, err = datasetListResponse.Marshal()
+//    listDatasetsResponse, err := UnmarshalListDatasetsResponse(bytes)
+//    bytes, err = listDatasetsResponse.Marshal()
 //
-//    eventLogExportParams, err := UnmarshalEventLogExportParams(bytes)
-//    bytes, err = eventLogExportParams.Marshal()
+//    exportEventLogsParams, err := UnmarshalExportEventLogsParams(bytes)
+//    bytes, err = exportEventLogsParams.Marshal()
 //
-//    eventLogExportResponse, err := UnmarshalEventLogExportResponse(bytes)
-//    bytes, err = eventLogExportResponse.Marshal()
+//    exportEventLogsResponse, err := UnmarshalExportEventLogsResponse(bytes)
+//    bytes, err = exportEventLogsResponse.Marshal()
 //
-//    eventLogListParams, err := UnmarshalEventLogListParams(bytes)
-//    bytes, err = eventLogListParams.Marshal()
+//    listEventLogsParams, err := UnmarshalListEventLogsParams(bytes)
+//    bytes, err = listEventLogsParams.Marshal()
 //
-//    eventLogListResponse, err := UnmarshalEventLogListResponse(bytes)
-//    bytes, err = eventLogListResponse.Marshal()
+//    listEventLogsResponse, err := UnmarshalListEventLogsResponse(bytes)
+//    bytes, err = listEventLogsResponse.Marshal()
 //
-//    eventLogSubscribeRequest, err := UnmarshalEventLogSubscribeRequest(bytes)
-//    bytes, err = eventLogSubscribeRequest.Marshal()
+//    subscribeEventLogsRequest, err := UnmarshalSubscribeEventLogsRequest(bytes)
+//    bytes, err = subscribeEventLogsRequest.Marshal()
 //
-//    fileDeleteParams, err := UnmarshalFileDeleteParams(bytes)
-//    bytes, err = fileDeleteParams.Marshal()
+//    deleteFileParams, err := UnmarshalDeleteFileParams(bytes)
+//    bytes, err = deleteFileParams.Marshal()
 //
-//    fileDeleteRequest, err := UnmarshalFileDeleteRequest(bytes)
-//    bytes, err = fileDeleteRequest.Marshal()
+//    deleteFileRequest, err := UnmarshalDeleteFileRequest(bytes)
+//    bytes, err = deleteFileRequest.Marshal()
 //
-//    fileDeleteResponse, err := UnmarshalFileDeleteResponse(bytes)
-//    bytes, err = fileDeleteResponse.Marshal()
+//    deleteFileResponse, err := UnmarshalDeleteFileResponse(bytes)
+//    bytes, err = deleteFileResponse.Marshal()
 //
-//    fileDownloadParams, err := UnmarshalFileDownloadParams(bytes)
-//    bytes, err = fileDownloadParams.Marshal()
+//    downloadFileParams, err := UnmarshalDownloadFileParams(bytes)
+//    bytes, err = downloadFileParams.Marshal()
 //
-//    fileDownloadResponse, err := UnmarshalFileDownloadResponse(bytes)
-//    bytes, err = fileDownloadResponse.Marshal()
+//    downloadFileResponse, err := UnmarshalDownloadFileResponse(bytes)
+//    bytes, err = downloadFileResponse.Marshal()
 //
-//    fileFetchParams, err := UnmarshalFileFetchParams(bytes)
-//    bytes, err = fileFetchParams.Marshal()
+//    fetchFileParams, err := UnmarshalFetchFileParams(bytes)
+//    bytes, err = fetchFileParams.Marshal()
 //
-//    fileFetchResponse, err := UnmarshalFileFetchResponse(bytes)
-//    bytes, err = fileFetchResponse.Marshal()
+//    fetchFileResponse, err := UnmarshalFetchFileResponse(bytes)
+//    bytes, err = fetchFileResponse.Marshal()
 //
-//    fileSyncParams, err := UnmarshalFileSyncParams(bytes)
-//    bytes, err = fileSyncParams.Marshal()
+//    syncFileParams, err := UnmarshalSyncFileParams(bytes)
+//    bytes, err = syncFileParams.Marshal()
 //
-//    fileSyncRequest, err := UnmarshalFileSyncRequest(bytes)
-//    bytes, err = fileSyncRequest.Marshal()
+//    syncFileRequest, err := UnmarshalSyncFileRequest(bytes)
+//    bytes, err = syncFileRequest.Marshal()
 //
-//    fileSyncResponse, err := UnmarshalFileSyncResponse(bytes)
-//    bytes, err = fileSyncResponse.Marshal()
+//    syncFileResponse, err := UnmarshalSyncFileResponse(bytes)
+//    bytes, err = syncFileResponse.Marshal()
 //
-//    fileUpdateParams, err := UnmarshalFileUpdateParams(bytes)
-//    bytes, err = fileUpdateParams.Marshal()
+//    updateFileParams, err := UnmarshalUpdateFileParams(bytes)
+//    bytes, err = updateFileParams.Marshal()
 //
-//    fileUpdateRequest, err := UnmarshalFileUpdateRequest(bytes)
-//    bytes, err = fileUpdateRequest.Marshal()
+//    updateFileRequest, err := UnmarshalUpdateFileRequest(bytes)
+//    bytes, err = updateFileRequest.Marshal()
 //
-//    fileUpdateResponse, err := UnmarshalFileUpdateResponse(bytes)
-//    bytes, err = fileUpdateResponse.Marshal()
+//    updateFileResponse, err := UnmarshalUpdateFileResponse(bytes)
+//    bytes, err = updateFileResponse.Marshal()
 //
-//    fileUploadParams, err := UnmarshalFileUploadParams(bytes)
-//    bytes, err = fileUploadParams.Marshal()
+//    uploadFileParams, err := UnmarshalUploadFileParams(bytes)
+//    bytes, err = uploadFileParams.Marshal()
 //
-//    fileUploadRequest, err := UnmarshalFileUploadRequest(bytes)
-//    bytes, err = fileUploadRequest.Marshal()
+//    uploadFileRequest, err := UnmarshalUploadFileRequest(bytes)
+//    bytes, err = uploadFileRequest.Marshal()
 //
-//    fileUploadResponse, err := UnmarshalFileUploadResponse(bytes)
-//    bytes, err = fileUploadResponse.Marshal()
+//    uploadFileResponse, err := UnmarshalUploadFileResponse(bytes)
+//    bytes, err = uploadFileResponse.Marshal()
 //
-//    fileCreateRequest, err := UnmarshalFileCreateRequest(bytes)
-//    bytes, err = fileCreateRequest.Marshal()
+//    createFileRequest, err := UnmarshalCreateFileRequest(bytes)
+//    bytes, err = createFileRequest.Marshal()
 //
-//    fileCreateResponse, err := UnmarshalFileCreateResponse(bytes)
-//    bytes, err = fileCreateResponse.Marshal()
+//    createFileResponse, err := UnmarshalCreateFileResponse(bytes)
+//    bytes, err = createFileResponse.Marshal()
 //
-//    fileListParams, err := UnmarshalFileListParams(bytes)
-//    bytes, err = fileListParams.Marshal()
+//    listFilesParams, err := UnmarshalListFilesParams(bytes)
+//    bytes, err = listFilesParams.Marshal()
 //
-//    fileListResponse, err := UnmarshalFileListResponse(bytes)
-//    bytes, err = fileListResponse.Marshal()
+//    listFilesResponse, err := UnmarshalListFilesResponse(bytes)
+//    bytes, err = listFilesResponse.Marshal()
 //
-//    integrationDiscordDeleteParams, err := UnmarshalIntegrationDiscordDeleteParams(bytes)
-//    bytes, err = integrationDiscordDeleteParams.Marshal()
+//    deleteDiscordIntegrationParams, err := UnmarshalDeleteDiscordIntegrationParams(bytes)
+//    bytes, err = deleteDiscordIntegrationParams.Marshal()
 //
-//    integrationDiscordDeleteRequest, err := UnmarshalIntegrationDiscordDeleteRequest(bytes)
-//    bytes, err = integrationDiscordDeleteRequest.Marshal()
+//    deleteDiscordIntegrationRequest, err := UnmarshalDeleteDiscordIntegrationRequest(bytes)
+//    bytes, err = deleteDiscordIntegrationRequest.Marshal()
 //
-//    integrationDiscordDeleteResponse, err := UnmarshalIntegrationDiscordDeleteResponse(bytes)
-//    bytes, err = integrationDiscordDeleteResponse.Marshal()
+//    deleteDiscordIntegrationResponse, err := UnmarshalDeleteDiscordIntegrationResponse(bytes)
+//    bytes, err = deleteDiscordIntegrationResponse.Marshal()
 //
-//    integrationDiscordFetchParams, err := UnmarshalIntegrationDiscordFetchParams(bytes)
-//    bytes, err = integrationDiscordFetchParams.Marshal()
+//    fetchDiscordIntegrationParams, err := UnmarshalFetchDiscordIntegrationParams(bytes)
+//    bytes, err = fetchDiscordIntegrationParams.Marshal()
 //
-//    integrationDiscordFetchResponse, err := UnmarshalIntegrationDiscordFetchResponse(bytes)
-//    bytes, err = integrationDiscordFetchResponse.Marshal()
+//    fetchDiscordIntegrationResponse, err := UnmarshalFetchDiscordIntegrationResponse(bytes)
+//    bytes, err = fetchDiscordIntegrationResponse.Marshal()
 //
-//    integrationDiscordSetupParams, err := UnmarshalIntegrationDiscordSetupParams(bytes)
-//    bytes, err = integrationDiscordSetupParams.Marshal()
+//    setupDiscordIntegrationParams, err := UnmarshalSetupDiscordIntegrationParams(bytes)
+//    bytes, err = setupDiscordIntegrationParams.Marshal()
 //
-//    integrationDiscordSetupRequest, err := UnmarshalIntegrationDiscordSetupRequest(bytes)
-//    bytes, err = integrationDiscordSetupRequest.Marshal()
+//    setupDiscordIntegrationRequest, err := UnmarshalSetupDiscordIntegrationRequest(bytes)
+//    bytes, err = setupDiscordIntegrationRequest.Marshal()
 //
-//    integrationDiscordSetupResponse, err := UnmarshalIntegrationDiscordSetupResponse(bytes)
-//    bytes, err = integrationDiscordSetupResponse.Marshal()
+//    setupDiscordIntegrationResponse, err := UnmarshalSetupDiscordIntegrationResponse(bytes)
+//    bytes, err = setupDiscordIntegrationResponse.Marshal()
 //
-//    integrationDiscordUpdateParams, err := UnmarshalIntegrationDiscordUpdateParams(bytes)
-//    bytes, err = integrationDiscordUpdateParams.Marshal()
+//    updateDiscordIntegrationParams, err := UnmarshalUpdateDiscordIntegrationParams(bytes)
+//    bytes, err = updateDiscordIntegrationParams.Marshal()
 //
-//    integrationDiscordUpdateRequest, err := UnmarshalIntegrationDiscordUpdateRequest(bytes)
-//    bytes, err = integrationDiscordUpdateRequest.Marshal()
+//    updateDiscordIntegrationRequest, err := UnmarshalUpdateDiscordIntegrationRequest(bytes)
+//    bytes, err = updateDiscordIntegrationRequest.Marshal()
 //
-//    integrationDiscordUpdateResponse, err := UnmarshalIntegrationDiscordUpdateResponse(bytes)
-//    bytes, err = integrationDiscordUpdateResponse.Marshal()
+//    updateDiscordIntegrationResponse, err := UnmarshalUpdateDiscordIntegrationResponse(bytes)
+//    bytes, err = updateDiscordIntegrationResponse.Marshal()
 //
-//    integrationDiscordCreateRequest, err := UnmarshalIntegrationDiscordCreateRequest(bytes)
-//    bytes, err = integrationDiscordCreateRequest.Marshal()
+//    createDiscordIntegrationRequest, err := UnmarshalCreateDiscordIntegrationRequest(bytes)
+//    bytes, err = createDiscordIntegrationRequest.Marshal()
 //
-//    integrationDiscordCreateResponse, err := UnmarshalIntegrationDiscordCreateResponse(bytes)
-//    bytes, err = integrationDiscordCreateResponse.Marshal()
+//    createDiscordIntegrationResponse, err := UnmarshalCreateDiscordIntegrationResponse(bytes)
+//    bytes, err = createDiscordIntegrationResponse.Marshal()
 //
-//    integrationDiscordListParams, err := UnmarshalIntegrationDiscordListParams(bytes)
-//    bytes, err = integrationDiscordListParams.Marshal()
+//    listDiscordIntegrationsParams, err := UnmarshalListDiscordIntegrationsParams(bytes)
+//    bytes, err = listDiscordIntegrationsParams.Marshal()
 //
-//    integrationDiscordListResponse, err := UnmarshalIntegrationDiscordListResponse(bytes)
-//    bytes, err = integrationDiscordListResponse.Marshal()
+//    listDiscordIntegrationsResponse, err := UnmarshalListDiscordIntegrationsResponse(bytes)
+//    bytes, err = listDiscordIntegrationsResponse.Marshal()
 //
-//    integrationEmailDeleteParams, err := UnmarshalIntegrationEmailDeleteParams(bytes)
-//    bytes, err = integrationEmailDeleteParams.Marshal()
+//    deleteEmailIntegrationParams, err := UnmarshalDeleteEmailIntegrationParams(bytes)
+//    bytes, err = deleteEmailIntegrationParams.Marshal()
 //
-//    integrationEmailDeleteRequest, err := UnmarshalIntegrationEmailDeleteRequest(bytes)
-//    bytes, err = integrationEmailDeleteRequest.Marshal()
+//    deleteEmailIntegrationRequest, err := UnmarshalDeleteEmailIntegrationRequest(bytes)
+//    bytes, err = deleteEmailIntegrationRequest.Marshal()
 //
-//    integrationEmailDeleteResponse, err := UnmarshalIntegrationEmailDeleteResponse(bytes)
-//    bytes, err = integrationEmailDeleteResponse.Marshal()
+//    deleteEmailIntegrationResponse, err := UnmarshalDeleteEmailIntegrationResponse(bytes)
+//    bytes, err = deleteEmailIntegrationResponse.Marshal()
 //
-//    integrationEmailFetchParams, err := UnmarshalIntegrationEmailFetchParams(bytes)
-//    bytes, err = integrationEmailFetchParams.Marshal()
+//    fetchEmailIntegrationParams, err := UnmarshalFetchEmailIntegrationParams(bytes)
+//    bytes, err = fetchEmailIntegrationParams.Marshal()
 //
-//    integrationEmailFetchResponse, err := UnmarshalIntegrationEmailFetchResponse(bytes)
-//    bytes, err = integrationEmailFetchResponse.Marshal()
+//    fetchEmailIntegrationResponse, err := UnmarshalFetchEmailIntegrationResponse(bytes)
+//    bytes, err = fetchEmailIntegrationResponse.Marshal()
 //
-//    integrationEmailSetupParams, err := UnmarshalIntegrationEmailSetupParams(bytes)
-//    bytes, err = integrationEmailSetupParams.Marshal()
+//    setupEmailIntegrationParams, err := UnmarshalSetupEmailIntegrationParams(bytes)
+//    bytes, err = setupEmailIntegrationParams.Marshal()
 //
-//    integrationEmailSetupRequest, err := UnmarshalIntegrationEmailSetupRequest(bytes)
-//    bytes, err = integrationEmailSetupRequest.Marshal()
+//    setupEmailIntegrationRequest, err := UnmarshalSetupEmailIntegrationRequest(bytes)
+//    bytes, err = setupEmailIntegrationRequest.Marshal()
 //
-//    integrationEmailSetupResponse, err := UnmarshalIntegrationEmailSetupResponse(bytes)
-//    bytes, err = integrationEmailSetupResponse.Marshal()
+//    setupEmailIntegrationResponse, err := UnmarshalSetupEmailIntegrationResponse(bytes)
+//    bytes, err = setupEmailIntegrationResponse.Marshal()
 //
-//    integrationEmailUpdateParams, err := UnmarshalIntegrationEmailUpdateParams(bytes)
-//    bytes, err = integrationEmailUpdateParams.Marshal()
+//    updateEmailIntegrationParams, err := UnmarshalUpdateEmailIntegrationParams(bytes)
+//    bytes, err = updateEmailIntegrationParams.Marshal()
 //
-//    integrationEmailUpdateRequest, err := UnmarshalIntegrationEmailUpdateRequest(bytes)
-//    bytes, err = integrationEmailUpdateRequest.Marshal()
+//    updateEmailIntegrationRequest, err := UnmarshalUpdateEmailIntegrationRequest(bytes)
+//    bytes, err = updateEmailIntegrationRequest.Marshal()
 //
-//    integrationEmailUpdateResponse, err := UnmarshalIntegrationEmailUpdateResponse(bytes)
-//    bytes, err = integrationEmailUpdateResponse.Marshal()
+//    updateEmailIntegrationResponse, err := UnmarshalUpdateEmailIntegrationResponse(bytes)
+//    bytes, err = updateEmailIntegrationResponse.Marshal()
 //
-//    integrationEmailCreateRequest, err := UnmarshalIntegrationEmailCreateRequest(bytes)
-//    bytes, err = integrationEmailCreateRequest.Marshal()
+//    createEmailIntegrationRequest, err := UnmarshalCreateEmailIntegrationRequest(bytes)
+//    bytes, err = createEmailIntegrationRequest.Marshal()
 //
-//    integrationEmailCreateResponse, err := UnmarshalIntegrationEmailCreateResponse(bytes)
-//    bytes, err = integrationEmailCreateResponse.Marshal()
+//    createEmailIntegrationResponse, err := UnmarshalCreateEmailIntegrationResponse(bytes)
+//    bytes, err = createEmailIntegrationResponse.Marshal()
 //
-//    integrationEmailListParams, err := UnmarshalIntegrationEmailListParams(bytes)
-//    bytes, err = integrationEmailListParams.Marshal()
+//    listEmailIntegrationsParams, err := UnmarshalListEmailIntegrationsParams(bytes)
+//    bytes, err = listEmailIntegrationsParams.Marshal()
 //
-//    integrationEmailListResponse, err := UnmarshalIntegrationEmailListResponse(bytes)
-//    bytes, err = integrationEmailListResponse.Marshal()
+//    listEmailIntegrationsResponse, err := UnmarshalListEmailIntegrationsResponse(bytes)
+//    bytes, err = listEmailIntegrationsResponse.Marshal()
 //
-//    integrationExtractDeleteParams, err := UnmarshalIntegrationExtractDeleteParams(bytes)
-//    bytes, err = integrationExtractDeleteParams.Marshal()
+//    deleteExtractIntegrationParams, err := UnmarshalDeleteExtractIntegrationParams(bytes)
+//    bytes, err = deleteExtractIntegrationParams.Marshal()
 //
-//    integrationExtractDeleteRequest, err := UnmarshalIntegrationExtractDeleteRequest(bytes)
-//    bytes, err = integrationExtractDeleteRequest.Marshal()
+//    deleteExtractIntegrationRequest, err := UnmarshalDeleteExtractIntegrationRequest(bytes)
+//    bytes, err = deleteExtractIntegrationRequest.Marshal()
 //
-//    integrationExtractDeleteResponse, err := UnmarshalIntegrationExtractDeleteResponse(bytes)
-//    bytes, err = integrationExtractDeleteResponse.Marshal()
+//    deleteExtractIntegrationResponse, err := UnmarshalDeleteExtractIntegrationResponse(bytes)
+//    bytes, err = deleteExtractIntegrationResponse.Marshal()
 //
-//    integrationExtractFetchParams, err := UnmarshalIntegrationExtractFetchParams(bytes)
-//    bytes, err = integrationExtractFetchParams.Marshal()
+//    fetchExtractIntegrationParams, err := UnmarshalFetchExtractIntegrationParams(bytes)
+//    bytes, err = fetchExtractIntegrationParams.Marshal()
 //
-//    integrationExtractFetchResponse, err := UnmarshalIntegrationExtractFetchResponse(bytes)
-//    bytes, err = integrationExtractFetchResponse.Marshal()
+//    fetchExtractIntegrationResponse, err := UnmarshalFetchExtractIntegrationResponse(bytes)
+//    bytes, err = fetchExtractIntegrationResponse.Marshal()
 //
-//    integrationExtractUpdateParams, err := UnmarshalIntegrationExtractUpdateParams(bytes)
-//    bytes, err = integrationExtractUpdateParams.Marshal()
+//    updateExtractIntegrationParams, err := UnmarshalUpdateExtractIntegrationParams(bytes)
+//    bytes, err = updateExtractIntegrationParams.Marshal()
 //
-//    integrationExtractUpdateRequest, err := UnmarshalIntegrationExtractUpdateRequest(bytes)
-//    bytes, err = integrationExtractUpdateRequest.Marshal()
+//    updateExtractIntegrationRequest, err := UnmarshalUpdateExtractIntegrationRequest(bytes)
+//    bytes, err = updateExtractIntegrationRequest.Marshal()
 //
-//    integrationExtractUpdateResponse, err := UnmarshalIntegrationExtractUpdateResponse(bytes)
-//    bytes, err = integrationExtractUpdateResponse.Marshal()
+//    updateExtractIntegrationResponse, err := UnmarshalUpdateExtractIntegrationResponse(bytes)
+//    bytes, err = updateExtractIntegrationResponse.Marshal()
 //
-//    integrationExtractCreateRequest, err := UnmarshalIntegrationExtractCreateRequest(bytes)
-//    bytes, err = integrationExtractCreateRequest.Marshal()
+//    createExtractIntegrationRequest, err := UnmarshalCreateExtractIntegrationRequest(bytes)
+//    bytes, err = createExtractIntegrationRequest.Marshal()
 //
-//    integrationExtractCreateResponse, err := UnmarshalIntegrationExtractCreateResponse(bytes)
-//    bytes, err = integrationExtractCreateResponse.Marshal()
+//    createExtractIntegrationResponse, err := UnmarshalCreateExtractIntegrationResponse(bytes)
+//    bytes, err = createExtractIntegrationResponse.Marshal()
 //
-//    integrationExtractListParams, err := UnmarshalIntegrationExtractListParams(bytes)
-//    bytes, err = integrationExtractListParams.Marshal()
+//    listExtractIntegrationsParams, err := UnmarshalListExtractIntegrationsParams(bytes)
+//    bytes, err = listExtractIntegrationsParams.Marshal()
 //
-//    integrationExtractListResponse, err := UnmarshalIntegrationExtractListResponse(bytes)
-//    bytes, err = integrationExtractListResponse.Marshal()
+//    listExtractIntegrationsResponse, err := UnmarshalListExtractIntegrationsResponse(bytes)
+//    bytes, err = listExtractIntegrationsResponse.Marshal()
 //
-//    integrationInstagramDeleteParams, err := UnmarshalIntegrationInstagramDeleteParams(bytes)
-//    bytes, err = integrationInstagramDeleteParams.Marshal()
+//    deleteInstagramIntegrationParams, err := UnmarshalDeleteInstagramIntegrationParams(bytes)
+//    bytes, err = deleteInstagramIntegrationParams.Marshal()
 //
-//    integrationInstagramDeleteRequest, err := UnmarshalIntegrationInstagramDeleteRequest(bytes)
-//    bytes, err = integrationInstagramDeleteRequest.Marshal()
+//    deleteInstagramIntegrationRequest, err := UnmarshalDeleteInstagramIntegrationRequest(bytes)
+//    bytes, err = deleteInstagramIntegrationRequest.Marshal()
 //
-//    integrationInstagramDeleteResponse, err := UnmarshalIntegrationInstagramDeleteResponse(bytes)
-//    bytes, err = integrationInstagramDeleteResponse.Marshal()
+//    deleteInstagramIntegrationResponse, err := UnmarshalDeleteInstagramIntegrationResponse(bytes)
+//    bytes, err = deleteInstagramIntegrationResponse.Marshal()
 //
-//    integrationInstagramFetchParams, err := UnmarshalIntegrationInstagramFetchParams(bytes)
-//    bytes, err = integrationInstagramFetchParams.Marshal()
+//    fetchInstagramIntegrationParams, err := UnmarshalFetchInstagramIntegrationParams(bytes)
+//    bytes, err = fetchInstagramIntegrationParams.Marshal()
 //
-//    integrationInstagramFetchResponse, err := UnmarshalIntegrationInstagramFetchResponse(bytes)
-//    bytes, err = integrationInstagramFetchResponse.Marshal()
+//    fetchInstagramIntegrationResponse, err := UnmarshalFetchInstagramIntegrationResponse(bytes)
+//    bytes, err = fetchInstagramIntegrationResponse.Marshal()
 //
-//    integrationInstagramSetupParams, err := UnmarshalIntegrationInstagramSetupParams(bytes)
-//    bytes, err = integrationInstagramSetupParams.Marshal()
+//    setupInstagramIntegrationParams, err := UnmarshalSetupInstagramIntegrationParams(bytes)
+//    bytes, err = setupInstagramIntegrationParams.Marshal()
 //
-//    integrationInstagramSetupRequest, err := UnmarshalIntegrationInstagramSetupRequest(bytes)
-//    bytes, err = integrationInstagramSetupRequest.Marshal()
+//    setupInstagramIntegrationRequest, err := UnmarshalSetupInstagramIntegrationRequest(bytes)
+//    bytes, err = setupInstagramIntegrationRequest.Marshal()
 //
-//    integrationInstagramSetupResponse, err := UnmarshalIntegrationInstagramSetupResponse(bytes)
-//    bytes, err = integrationInstagramSetupResponse.Marshal()
+//    setupInstagramIntegrationResponse, err := UnmarshalSetupInstagramIntegrationResponse(bytes)
+//    bytes, err = setupInstagramIntegrationResponse.Marshal()
 //
-//    integrationInstagramUpdateParams, err := UnmarshalIntegrationInstagramUpdateParams(bytes)
-//    bytes, err = integrationInstagramUpdateParams.Marshal()
+//    updateInstagramIntegrationParams, err := UnmarshalUpdateInstagramIntegrationParams(bytes)
+//    bytes, err = updateInstagramIntegrationParams.Marshal()
 //
-//    integrationInstagramUpdateRequest, err := UnmarshalIntegrationInstagramUpdateRequest(bytes)
-//    bytes, err = integrationInstagramUpdateRequest.Marshal()
+//    updateInstagramIntegrationRequest, err := UnmarshalUpdateInstagramIntegrationRequest(bytes)
+//    bytes, err = updateInstagramIntegrationRequest.Marshal()
 //
-//    integrationInstagramUpdateResponse, err := UnmarshalIntegrationInstagramUpdateResponse(bytes)
-//    bytes, err = integrationInstagramUpdateResponse.Marshal()
+//    updateInstagramIntegrationResponse, err := UnmarshalUpdateInstagramIntegrationResponse(bytes)
+//    bytes, err = updateInstagramIntegrationResponse.Marshal()
 //
-//    integrationInstagramCreateRequest, err := UnmarshalIntegrationInstagramCreateRequest(bytes)
-//    bytes, err = integrationInstagramCreateRequest.Marshal()
+//    createInstagramIntegrationRequest, err := UnmarshalCreateInstagramIntegrationRequest(bytes)
+//    bytes, err = createInstagramIntegrationRequest.Marshal()
 //
-//    integrationInstagramCreateResponse, err := UnmarshalIntegrationInstagramCreateResponse(bytes)
-//    bytes, err = integrationInstagramCreateResponse.Marshal()
+//    createInstagramIntegrationResponse, err := UnmarshalCreateInstagramIntegrationResponse(bytes)
+//    bytes, err = createInstagramIntegrationResponse.Marshal()
 //
-//    integrationInstagramListParams, err := UnmarshalIntegrationInstagramListParams(bytes)
-//    bytes, err = integrationInstagramListParams.Marshal()
+//    listInstagramIntegrationsParams, err := UnmarshalListInstagramIntegrationsParams(bytes)
+//    bytes, err = listInstagramIntegrationsParams.Marshal()
 //
-//    integrationInstagramListResponse, err := UnmarshalIntegrationInstagramListResponse(bytes)
-//    bytes, err = integrationInstagramListResponse.Marshal()
+//    listInstagramIntegrationsResponse, err := UnmarshalListInstagramIntegrationsResponse(bytes)
+//    bytes, err = listInstagramIntegrationsResponse.Marshal()
 //
-//    integrationMcpserverDeleteParams, err := UnmarshalIntegrationMcpserverDeleteParams(bytes)
-//    bytes, err = integrationMcpserverDeleteParams.Marshal()
+//    deleteMCPServerIntegrationParams, err := UnmarshalDeleteMCPServerIntegrationParams(bytes)
+//    bytes, err = deleteMCPServerIntegrationParams.Marshal()
 //
-//    integrationMcpserverDeleteRequest, err := UnmarshalIntegrationMcpserverDeleteRequest(bytes)
-//    bytes, err = integrationMcpserverDeleteRequest.Marshal()
+//    deleteMCPServerIntegrationRequest, err := UnmarshalDeleteMCPServerIntegrationRequest(bytes)
+//    bytes, err = deleteMCPServerIntegrationRequest.Marshal()
 //
-//    integrationMcpserverDeleteResponse, err := UnmarshalIntegrationMcpserverDeleteResponse(bytes)
-//    bytes, err = integrationMcpserverDeleteResponse.Marshal()
+//    deleteMCPServerIntegrationResponse, err := UnmarshalDeleteMCPServerIntegrationResponse(bytes)
+//    bytes, err = deleteMCPServerIntegrationResponse.Marshal()
 //
-//    integrationMcpserverFetchParams, err := UnmarshalIntegrationMcpserverFetchParams(bytes)
-//    bytes, err = integrationMcpserverFetchParams.Marshal()
+//    fetchMCPServerIntegrationParams, err := UnmarshalFetchMCPServerIntegrationParams(bytes)
+//    bytes, err = fetchMCPServerIntegrationParams.Marshal()
 //
-//    integrationMcpserverFetchResponse, err := UnmarshalIntegrationMcpserverFetchResponse(bytes)
-//    bytes, err = integrationMcpserverFetchResponse.Marshal()
+//    fetchMCPServerIntegrationResponse, err := UnmarshalFetchMCPServerIntegrationResponse(bytes)
+//    bytes, err = fetchMCPServerIntegrationResponse.Marshal()
 //
-//    integrationMcpserverUpdateParams, err := UnmarshalIntegrationMcpserverUpdateParams(bytes)
-//    bytes, err = integrationMcpserverUpdateParams.Marshal()
+//    updateMCPServerIntegrationParams, err := UnmarshalUpdateMCPServerIntegrationParams(bytes)
+//    bytes, err = updateMCPServerIntegrationParams.Marshal()
 //
-//    integrationMcpserverUpdateRequest, err := UnmarshalIntegrationMcpserverUpdateRequest(bytes)
-//    bytes, err = integrationMcpserverUpdateRequest.Marshal()
+//    updateMCPServerIntegrationRequest, err := UnmarshalUpdateMCPServerIntegrationRequest(bytes)
+//    bytes, err = updateMCPServerIntegrationRequest.Marshal()
 //
-//    integrationMcpserverUpdateResponse, err := UnmarshalIntegrationMcpserverUpdateResponse(bytes)
-//    bytes, err = integrationMcpserverUpdateResponse.Marshal()
+//    updateMCPServerIntegrationResponse, err := UnmarshalUpdateMCPServerIntegrationResponse(bytes)
+//    bytes, err = updateMCPServerIntegrationResponse.Marshal()
 //
-//    integrationMcpserverCreateRequest, err := UnmarshalIntegrationMcpserverCreateRequest(bytes)
-//    bytes, err = integrationMcpserverCreateRequest.Marshal()
+//    createMCPServerIntegrationRequest, err := UnmarshalCreateMCPServerIntegrationRequest(bytes)
+//    bytes, err = createMCPServerIntegrationRequest.Marshal()
 //
-//    integrationMcpserverCreateResponse, err := UnmarshalIntegrationMcpserverCreateResponse(bytes)
-//    bytes, err = integrationMcpserverCreateResponse.Marshal()
+//    createMCPServerIntegrationResponse, err := UnmarshalCreateMCPServerIntegrationResponse(bytes)
+//    bytes, err = createMCPServerIntegrationResponse.Marshal()
 //
-//    integrationMcpserverListParams, err := UnmarshalIntegrationMcpserverListParams(bytes)
-//    bytes, err = integrationMcpserverListParams.Marshal()
+//    listMCPServerIntegrationsParams, err := UnmarshalListMCPServerIntegrationsParams(bytes)
+//    bytes, err = listMCPServerIntegrationsParams.Marshal()
 //
-//    integrationMcpserverListResponse, err := UnmarshalIntegrationMcpserverListResponse(bytes)
-//    bytes, err = integrationMcpserverListResponse.Marshal()
+//    listMCPServerIntegrationsResponse, err := UnmarshalListMCPServerIntegrationsResponse(bytes)
+//    bytes, err = listMCPServerIntegrationsResponse.Marshal()
 //
-//    integrationMessengerDeleteParams, err := UnmarshalIntegrationMessengerDeleteParams(bytes)
-//    bytes, err = integrationMessengerDeleteParams.Marshal()
+//    deleteMessengerIntegrationParams, err := UnmarshalDeleteMessengerIntegrationParams(bytes)
+//    bytes, err = deleteMessengerIntegrationParams.Marshal()
 //
-//    integrationMessengerDeleteRequest, err := UnmarshalIntegrationMessengerDeleteRequest(bytes)
-//    bytes, err = integrationMessengerDeleteRequest.Marshal()
+//    deleteMessengerIntegrationRequest, err := UnmarshalDeleteMessengerIntegrationRequest(bytes)
+//    bytes, err = deleteMessengerIntegrationRequest.Marshal()
 //
-//    integrationMessengerDeleteResponse, err := UnmarshalIntegrationMessengerDeleteResponse(bytes)
-//    bytes, err = integrationMessengerDeleteResponse.Marshal()
+//    deleteMessengerIntegrationResponse, err := UnmarshalDeleteMessengerIntegrationResponse(bytes)
+//    bytes, err = deleteMessengerIntegrationResponse.Marshal()
 //
-//    integrationMessengerFetchParams, err := UnmarshalIntegrationMessengerFetchParams(bytes)
-//    bytes, err = integrationMessengerFetchParams.Marshal()
+//    fetchMessengerIntegrationParams, err := UnmarshalFetchMessengerIntegrationParams(bytes)
+//    bytes, err = fetchMessengerIntegrationParams.Marshal()
 //
-//    integrationMessengerFetchResponse, err := UnmarshalIntegrationMessengerFetchResponse(bytes)
-//    bytes, err = integrationMessengerFetchResponse.Marshal()
+//    fetchMessengerIntegrationResponse, err := UnmarshalFetchMessengerIntegrationResponse(bytes)
+//    bytes, err = fetchMessengerIntegrationResponse.Marshal()
 //
-//    integrationMessengerSetupParams, err := UnmarshalIntegrationMessengerSetupParams(bytes)
-//    bytes, err = integrationMessengerSetupParams.Marshal()
+//    setupMessengerIntegrationParams, err := UnmarshalSetupMessengerIntegrationParams(bytes)
+//    bytes, err = setupMessengerIntegrationParams.Marshal()
 //
-//    integrationMessengerSetupRequest, err := UnmarshalIntegrationMessengerSetupRequest(bytes)
-//    bytes, err = integrationMessengerSetupRequest.Marshal()
+//    setupMessengerIntegrationRequest, err := UnmarshalSetupMessengerIntegrationRequest(bytes)
+//    bytes, err = setupMessengerIntegrationRequest.Marshal()
 //
-//    integrationMessengerSetupResponse, err := UnmarshalIntegrationMessengerSetupResponse(bytes)
-//    bytes, err = integrationMessengerSetupResponse.Marshal()
+//    setupMessengerIntegrationResponse, err := UnmarshalSetupMessengerIntegrationResponse(bytes)
+//    bytes, err = setupMessengerIntegrationResponse.Marshal()
 //
-//    integrationMessengerUpdateParams, err := UnmarshalIntegrationMessengerUpdateParams(bytes)
-//    bytes, err = integrationMessengerUpdateParams.Marshal()
+//    updateMessengerIntegrationParams, err := UnmarshalUpdateMessengerIntegrationParams(bytes)
+//    bytes, err = updateMessengerIntegrationParams.Marshal()
 //
-//    integrationMessengerUpdateRequest, err := UnmarshalIntegrationMessengerUpdateRequest(bytes)
-//    bytes, err = integrationMessengerUpdateRequest.Marshal()
+//    updateMessengerIntegrationRequest, err := UnmarshalUpdateMessengerIntegrationRequest(bytes)
+//    bytes, err = updateMessengerIntegrationRequest.Marshal()
 //
-//    integrationMessengerUpdateResponse, err := UnmarshalIntegrationMessengerUpdateResponse(bytes)
-//    bytes, err = integrationMessengerUpdateResponse.Marshal()
+//    updateMessengerIntegrationResponse, err := UnmarshalUpdateMessengerIntegrationResponse(bytes)
+//    bytes, err = updateMessengerIntegrationResponse.Marshal()
 //
-//    integrationMessengerCreateRequest, err := UnmarshalIntegrationMessengerCreateRequest(bytes)
-//    bytes, err = integrationMessengerCreateRequest.Marshal()
+//    createMessengerIntegrationRequest, err := UnmarshalCreateMessengerIntegrationRequest(bytes)
+//    bytes, err = createMessengerIntegrationRequest.Marshal()
 //
-//    integrationMessengerCreateResponse, err := UnmarshalIntegrationMessengerCreateResponse(bytes)
-//    bytes, err = integrationMessengerCreateResponse.Marshal()
+//    createMessengerIntegrationResponse, err := UnmarshalCreateMessengerIntegrationResponse(bytes)
+//    bytes, err = createMessengerIntegrationResponse.Marshal()
 //
-//    integrationMessengerListParams, err := UnmarshalIntegrationMessengerListParams(bytes)
-//    bytes, err = integrationMessengerListParams.Marshal()
+//    listMessengerIntegrationsParams, err := UnmarshalListMessengerIntegrationsParams(bytes)
+//    bytes, err = listMessengerIntegrationsParams.Marshal()
 //
-//    integrationMessengerListResponse, err := UnmarshalIntegrationMessengerListResponse(bytes)
-//    bytes, err = integrationMessengerListResponse.Marshal()
+//    listMessengerIntegrationsResponse, err := UnmarshalListMessengerIntegrationsResponse(bytes)
+//    bytes, err = listMessengerIntegrationsResponse.Marshal()
 //
-//    integrationNotionDeleteParams, err := UnmarshalIntegrationNotionDeleteParams(bytes)
-//    bytes, err = integrationNotionDeleteParams.Marshal()
+//    deleteNotionIntegrationParams, err := UnmarshalDeleteNotionIntegrationParams(bytes)
+//    bytes, err = deleteNotionIntegrationParams.Marshal()
 //
-//    integrationNotionDeleteRequest, err := UnmarshalIntegrationNotionDeleteRequest(bytes)
-//    bytes, err = integrationNotionDeleteRequest.Marshal()
+//    deleteNotionIntegrationRequest, err := UnmarshalDeleteNotionIntegrationRequest(bytes)
+//    bytes, err = deleteNotionIntegrationRequest.Marshal()
 //
-//    integrationNotionDeleteResponse, err := UnmarshalIntegrationNotionDeleteResponse(bytes)
-//    bytes, err = integrationNotionDeleteResponse.Marshal()
+//    deleteNotionIntegrationResponse, err := UnmarshalDeleteNotionIntegrationResponse(bytes)
+//    bytes, err = deleteNotionIntegrationResponse.Marshal()
 //
-//    integrationNotionFetchParams, err := UnmarshalIntegrationNotionFetchParams(bytes)
-//    bytes, err = integrationNotionFetchParams.Marshal()
+//    fetchNotionIntegrationParams, err := UnmarshalFetchNotionIntegrationParams(bytes)
+//    bytes, err = fetchNotionIntegrationParams.Marshal()
 //
-//    integrationNotionFetchResponse, err := UnmarshalIntegrationNotionFetchResponse(bytes)
-//    bytes, err = integrationNotionFetchResponse.Marshal()
+//    fetchNotionIntegrationResponse, err := UnmarshalFetchNotionIntegrationResponse(bytes)
+//    bytes, err = fetchNotionIntegrationResponse.Marshal()
 //
-//    integrationNotionSyncParams, err := UnmarshalIntegrationNotionSyncParams(bytes)
-//    bytes, err = integrationNotionSyncParams.Marshal()
+//    syncNotionIntegrationParams, err := UnmarshalSyncNotionIntegrationParams(bytes)
+//    bytes, err = syncNotionIntegrationParams.Marshal()
 //
-//    integrationNotionSyncRequest, err := UnmarshalIntegrationNotionSyncRequest(bytes)
-//    bytes, err = integrationNotionSyncRequest.Marshal()
+//    syncNotionIntegrationRequest, err := UnmarshalSyncNotionIntegrationRequest(bytes)
+//    bytes, err = syncNotionIntegrationRequest.Marshal()
 //
-//    integrationNotionSyncResponse, err := UnmarshalIntegrationNotionSyncResponse(bytes)
-//    bytes, err = integrationNotionSyncResponse.Marshal()
+//    syncNotionIntegrationResponse, err := UnmarshalSyncNotionIntegrationResponse(bytes)
+//    bytes, err = syncNotionIntegrationResponse.Marshal()
 //
-//    integrationNotionUpdateParams, err := UnmarshalIntegrationNotionUpdateParams(bytes)
-//    bytes, err = integrationNotionUpdateParams.Marshal()
+//    updateNotionIntegrationParams, err := UnmarshalUpdateNotionIntegrationParams(bytes)
+//    bytes, err = updateNotionIntegrationParams.Marshal()
 //
-//    integrationNotionUpdateRequest, err := UnmarshalIntegrationNotionUpdateRequest(bytes)
-//    bytes, err = integrationNotionUpdateRequest.Marshal()
+//    updateNotionIntegrationRequest, err := UnmarshalUpdateNotionIntegrationRequest(bytes)
+//    bytes, err = updateNotionIntegrationRequest.Marshal()
 //
-//    integrationNotionUpdateResponse, err := UnmarshalIntegrationNotionUpdateResponse(bytes)
-//    bytes, err = integrationNotionUpdateResponse.Marshal()
+//    updateNotionIntegrationResponse, err := UnmarshalUpdateNotionIntegrationResponse(bytes)
+//    bytes, err = updateNotionIntegrationResponse.Marshal()
 //
-//    integrationNotionCreateRequest, err := UnmarshalIntegrationNotionCreateRequest(bytes)
-//    bytes, err = integrationNotionCreateRequest.Marshal()
+//    createNotionIntegrationRequest, err := UnmarshalCreateNotionIntegrationRequest(bytes)
+//    bytes, err = createNotionIntegrationRequest.Marshal()
 //
-//    integrationNotionCreateResponse, err := UnmarshalIntegrationNotionCreateResponse(bytes)
-//    bytes, err = integrationNotionCreateResponse.Marshal()
+//    createNotionIntegrationResponse, err := UnmarshalCreateNotionIntegrationResponse(bytes)
+//    bytes, err = createNotionIntegrationResponse.Marshal()
 //
-//    integrationNotionListParams, err := UnmarshalIntegrationNotionListParams(bytes)
-//    bytes, err = integrationNotionListParams.Marshal()
+//    listNotionIntegrationsParams, err := UnmarshalListNotionIntegrationsParams(bytes)
+//    bytes, err = listNotionIntegrationsParams.Marshal()
 //
-//    integrationNotionListResponse, err := UnmarshalIntegrationNotionListResponse(bytes)
-//    bytes, err = integrationNotionListResponse.Marshal()
+//    listNotionIntegrationsResponse, err := UnmarshalListNotionIntegrationsResponse(bytes)
+//    bytes, err = listNotionIntegrationsResponse.Marshal()
 //
-//    integrationSitemapDeleteParams, err := UnmarshalIntegrationSitemapDeleteParams(bytes)
-//    bytes, err = integrationSitemapDeleteParams.Marshal()
+//    deleteSitemapIntegrationParams, err := UnmarshalDeleteSitemapIntegrationParams(bytes)
+//    bytes, err = deleteSitemapIntegrationParams.Marshal()
 //
-//    integrationSitemapDeleteRequest, err := UnmarshalIntegrationSitemapDeleteRequest(bytes)
-//    bytes, err = integrationSitemapDeleteRequest.Marshal()
+//    deleteSitemapIntegrationRequest, err := UnmarshalDeleteSitemapIntegrationRequest(bytes)
+//    bytes, err = deleteSitemapIntegrationRequest.Marshal()
 //
-//    integrationSitemapDeleteResponse, err := UnmarshalIntegrationSitemapDeleteResponse(bytes)
-//    bytes, err = integrationSitemapDeleteResponse.Marshal()
+//    deleteSitemapIntegrationResponse, err := UnmarshalDeleteSitemapIntegrationResponse(bytes)
+//    bytes, err = deleteSitemapIntegrationResponse.Marshal()
 //
-//    integrationSitemapFetchParams, err := UnmarshalIntegrationSitemapFetchParams(bytes)
-//    bytes, err = integrationSitemapFetchParams.Marshal()
+//    fetchSitemapIntegrationParams, err := UnmarshalFetchSitemapIntegrationParams(bytes)
+//    bytes, err = fetchSitemapIntegrationParams.Marshal()
 //
-//    integrationSitemapFetchResponse, err := UnmarshalIntegrationSitemapFetchResponse(bytes)
-//    bytes, err = integrationSitemapFetchResponse.Marshal()
+//    fetchSitemapIntegrationResponse, err := UnmarshalFetchSitemapIntegrationResponse(bytes)
+//    bytes, err = fetchSitemapIntegrationResponse.Marshal()
 //
-//    integrationSitemapSyncParams, err := UnmarshalIntegrationSitemapSyncParams(bytes)
-//    bytes, err = integrationSitemapSyncParams.Marshal()
+//    syncSitemapIntegrationParams, err := UnmarshalSyncSitemapIntegrationParams(bytes)
+//    bytes, err = syncSitemapIntegrationParams.Marshal()
 //
-//    integrationSitemapSyncRequest, err := UnmarshalIntegrationSitemapSyncRequest(bytes)
-//    bytes, err = integrationSitemapSyncRequest.Marshal()
+//    syncSitemapIntegrationRequest, err := UnmarshalSyncSitemapIntegrationRequest(bytes)
+//    bytes, err = syncSitemapIntegrationRequest.Marshal()
 //
-//    integrationSitemapSyncResponse, err := UnmarshalIntegrationSitemapSyncResponse(bytes)
-//    bytes, err = integrationSitemapSyncResponse.Marshal()
+//    syncSitemapIntegrationResponse, err := UnmarshalSyncSitemapIntegrationResponse(bytes)
+//    bytes, err = syncSitemapIntegrationResponse.Marshal()
 //
-//    integrationSitemapUpdateParams, err := UnmarshalIntegrationSitemapUpdateParams(bytes)
-//    bytes, err = integrationSitemapUpdateParams.Marshal()
+//    updateSitemapIntegrationParams, err := UnmarshalUpdateSitemapIntegrationParams(bytes)
+//    bytes, err = updateSitemapIntegrationParams.Marshal()
 //
-//    integrationSitemapUpdateRequest, err := UnmarshalIntegrationSitemapUpdateRequest(bytes)
-//    bytes, err = integrationSitemapUpdateRequest.Marshal()
+//    updateSitemapIntegrationRequest, err := UnmarshalUpdateSitemapIntegrationRequest(bytes)
+//    bytes, err = updateSitemapIntegrationRequest.Marshal()
 //
-//    integrationSitemapUpdateResponse, err := UnmarshalIntegrationSitemapUpdateResponse(bytes)
-//    bytes, err = integrationSitemapUpdateResponse.Marshal()
+//    updateSitemapIntegrationResponse, err := UnmarshalUpdateSitemapIntegrationResponse(bytes)
+//    bytes, err = updateSitemapIntegrationResponse.Marshal()
 //
-//    integrationSitemapCreateRequest, err := UnmarshalIntegrationSitemapCreateRequest(bytes)
-//    bytes, err = integrationSitemapCreateRequest.Marshal()
+//    createSitemapIntegrationRequest, err := UnmarshalCreateSitemapIntegrationRequest(bytes)
+//    bytes, err = createSitemapIntegrationRequest.Marshal()
 //
-//    integrationSitemapCreateResponse, err := UnmarshalIntegrationSitemapCreateResponse(bytes)
-//    bytes, err = integrationSitemapCreateResponse.Marshal()
+//    createSitemapIntegrationResponse, err := UnmarshalCreateSitemapIntegrationResponse(bytes)
+//    bytes, err = createSitemapIntegrationResponse.Marshal()
 //
-//    integrationSitemapListParams, err := UnmarshalIntegrationSitemapListParams(bytes)
-//    bytes, err = integrationSitemapListParams.Marshal()
+//    listSitemapIntegrationsParams, err := UnmarshalListSitemapIntegrationsParams(bytes)
+//    bytes, err = listSitemapIntegrationsParams.Marshal()
 //
-//    integrationSitemapListResponse, err := UnmarshalIntegrationSitemapListResponse(bytes)
-//    bytes, err = integrationSitemapListResponse.Marshal()
+//    listSitemapIntegrationsResponse, err := UnmarshalListSitemapIntegrationsResponse(bytes)
+//    bytes, err = listSitemapIntegrationsResponse.Marshal()
 //
-//    integrationSlackDeleteParams, err := UnmarshalIntegrationSlackDeleteParams(bytes)
-//    bytes, err = integrationSlackDeleteParams.Marshal()
+//    deleteSlackIntegrationParams, err := UnmarshalDeleteSlackIntegrationParams(bytes)
+//    bytes, err = deleteSlackIntegrationParams.Marshal()
 //
-//    integrationSlackDeleteRequest, err := UnmarshalIntegrationSlackDeleteRequest(bytes)
-//    bytes, err = integrationSlackDeleteRequest.Marshal()
+//    deleteSlackIntegrationRequest, err := UnmarshalDeleteSlackIntegrationRequest(bytes)
+//    bytes, err = deleteSlackIntegrationRequest.Marshal()
 //
-//    integrationSlackDeleteResponse, err := UnmarshalIntegrationSlackDeleteResponse(bytes)
-//    bytes, err = integrationSlackDeleteResponse.Marshal()
+//    deleteSlackIntegrationResponse, err := UnmarshalDeleteSlackIntegrationResponse(bytes)
+//    bytes, err = deleteSlackIntegrationResponse.Marshal()
 //
-//    integrationSlackFetchParams, err := UnmarshalIntegrationSlackFetchParams(bytes)
-//    bytes, err = integrationSlackFetchParams.Marshal()
+//    fetchSlackIntegrationParams, err := UnmarshalFetchSlackIntegrationParams(bytes)
+//    bytes, err = fetchSlackIntegrationParams.Marshal()
 //
-//    integrationSlackFetchResponse, err := UnmarshalIntegrationSlackFetchResponse(bytes)
-//    bytes, err = integrationSlackFetchResponse.Marshal()
+//    fetchSlackIntegrationResponse, err := UnmarshalFetchSlackIntegrationResponse(bytes)
+//    bytes, err = fetchSlackIntegrationResponse.Marshal()
 //
-//    integrationSlackSetupParams, err := UnmarshalIntegrationSlackSetupParams(bytes)
-//    bytes, err = integrationSlackSetupParams.Marshal()
+//    setupSlackIntegrationParams, err := UnmarshalSetupSlackIntegrationParams(bytes)
+//    bytes, err = setupSlackIntegrationParams.Marshal()
 //
-//    integrationSlackSetupRequest, err := UnmarshalIntegrationSlackSetupRequest(bytes)
-//    bytes, err = integrationSlackSetupRequest.Marshal()
+//    setupSlackIntegrationRequest, err := UnmarshalSetupSlackIntegrationRequest(bytes)
+//    bytes, err = setupSlackIntegrationRequest.Marshal()
 //
-//    integrationSlackSetupResponse, err := UnmarshalIntegrationSlackSetupResponse(bytes)
-//    bytes, err = integrationSlackSetupResponse.Marshal()
+//    setupSlackIntegrationResponse, err := UnmarshalSetupSlackIntegrationResponse(bytes)
+//    bytes, err = setupSlackIntegrationResponse.Marshal()
 //
-//    integrationSlackUpdateParams, err := UnmarshalIntegrationSlackUpdateParams(bytes)
-//    bytes, err = integrationSlackUpdateParams.Marshal()
+//    updateSlackIntegrationParams, err := UnmarshalUpdateSlackIntegrationParams(bytes)
+//    bytes, err = updateSlackIntegrationParams.Marshal()
 //
-//    integrationSlackUpdateRequest, err := UnmarshalIntegrationSlackUpdateRequest(bytes)
-//    bytes, err = integrationSlackUpdateRequest.Marshal()
+//    updateSlackIntegrationRequest, err := UnmarshalUpdateSlackIntegrationRequest(bytes)
+//    bytes, err = updateSlackIntegrationRequest.Marshal()
 //
-//    integrationSlackUpdateResponse, err := UnmarshalIntegrationSlackUpdateResponse(bytes)
-//    bytes, err = integrationSlackUpdateResponse.Marshal()
+//    updateSlackIntegrationResponse, err := UnmarshalUpdateSlackIntegrationResponse(bytes)
+//    bytes, err = updateSlackIntegrationResponse.Marshal()
 //
-//    integrationSlackCreateRequest, err := UnmarshalIntegrationSlackCreateRequest(bytes)
-//    bytes, err = integrationSlackCreateRequest.Marshal()
+//    createSlackIntegrationRequest, err := UnmarshalCreateSlackIntegrationRequest(bytes)
+//    bytes, err = createSlackIntegrationRequest.Marshal()
 //
-//    integrationSlackCreateResponse, err := UnmarshalIntegrationSlackCreateResponse(bytes)
-//    bytes, err = integrationSlackCreateResponse.Marshal()
+//    createSlackIntegrationResponse, err := UnmarshalCreateSlackIntegrationResponse(bytes)
+//    bytes, err = createSlackIntegrationResponse.Marshal()
 //
-//    integrationSlackListParams, err := UnmarshalIntegrationSlackListParams(bytes)
-//    bytes, err = integrationSlackListParams.Marshal()
+//    listSlackIntegrationsParams, err := UnmarshalListSlackIntegrationsParams(bytes)
+//    bytes, err = listSlackIntegrationsParams.Marshal()
 //
-//    integrationSlackListResponse, err := UnmarshalIntegrationSlackListResponse(bytes)
-//    bytes, err = integrationSlackListResponse.Marshal()
+//    listSlackIntegrationsResponse, err := UnmarshalListSlackIntegrationsResponse(bytes)
+//    bytes, err = listSlackIntegrationsResponse.Marshal()
 //
-//    integrationSupportDeleteParams, err := UnmarshalIntegrationSupportDeleteParams(bytes)
-//    bytes, err = integrationSupportDeleteParams.Marshal()
+//    deleteSupportIntegrationParams, err := UnmarshalDeleteSupportIntegrationParams(bytes)
+//    bytes, err = deleteSupportIntegrationParams.Marshal()
 //
-//    integrationSupportDeleteRequest, err := UnmarshalIntegrationSupportDeleteRequest(bytes)
-//    bytes, err = integrationSupportDeleteRequest.Marshal()
+//    deleteSupportIntegrationRequest, err := UnmarshalDeleteSupportIntegrationRequest(bytes)
+//    bytes, err = deleteSupportIntegrationRequest.Marshal()
 //
-//    integrationSupportDeleteResponse, err := UnmarshalIntegrationSupportDeleteResponse(bytes)
-//    bytes, err = integrationSupportDeleteResponse.Marshal()
+//    deleteSupportIntegrationResponse, err := UnmarshalDeleteSupportIntegrationResponse(bytes)
+//    bytes, err = deleteSupportIntegrationResponse.Marshal()
 //
-//    integrationSupportFetchParams, err := UnmarshalIntegrationSupportFetchParams(bytes)
-//    bytes, err = integrationSupportFetchParams.Marshal()
+//    fetchSupportIntegrationParams, err := UnmarshalFetchSupportIntegrationParams(bytes)
+//    bytes, err = fetchSupportIntegrationParams.Marshal()
 //
-//    integrationSupportFetchResponse, err := UnmarshalIntegrationSupportFetchResponse(bytes)
-//    bytes, err = integrationSupportFetchResponse.Marshal()
+//    fetchSupportIntegrationResponse, err := UnmarshalFetchSupportIntegrationResponse(bytes)
+//    bytes, err = fetchSupportIntegrationResponse.Marshal()
 //
-//    integrationSupportUpdateParams, err := UnmarshalIntegrationSupportUpdateParams(bytes)
-//    bytes, err = integrationSupportUpdateParams.Marshal()
+//    updateSupportIntegrationParams, err := UnmarshalUpdateSupportIntegrationParams(bytes)
+//    bytes, err = updateSupportIntegrationParams.Marshal()
 //
-//    integrationSupportUpdateRequest, err := UnmarshalIntegrationSupportUpdateRequest(bytes)
-//    bytes, err = integrationSupportUpdateRequest.Marshal()
+//    updateSupportIntegrationRequest, err := UnmarshalUpdateSupportIntegrationRequest(bytes)
+//    bytes, err = updateSupportIntegrationRequest.Marshal()
 //
-//    integrationSupportUpdateResponse, err := UnmarshalIntegrationSupportUpdateResponse(bytes)
-//    bytes, err = integrationSupportUpdateResponse.Marshal()
+//    updateSupportIntegrationResponse, err := UnmarshalUpdateSupportIntegrationResponse(bytes)
+//    bytes, err = updateSupportIntegrationResponse.Marshal()
 //
-//    integrationSupportCreateRequest, err := UnmarshalIntegrationSupportCreateRequest(bytes)
-//    bytes, err = integrationSupportCreateRequest.Marshal()
+//    createSupportIntegrationRequest, err := UnmarshalCreateSupportIntegrationRequest(bytes)
+//    bytes, err = createSupportIntegrationRequest.Marshal()
 //
-//    integrationSupportCreateResponse, err := UnmarshalIntegrationSupportCreateResponse(bytes)
-//    bytes, err = integrationSupportCreateResponse.Marshal()
+//    createSupportIntegrationResponse, err := UnmarshalCreateSupportIntegrationResponse(bytes)
+//    bytes, err = createSupportIntegrationResponse.Marshal()
 //
-//    integrationSupportListParams, err := UnmarshalIntegrationSupportListParams(bytes)
-//    bytes, err = integrationSupportListParams.Marshal()
+//    listSupportIntegrationsParams, err := UnmarshalListSupportIntegrationsParams(bytes)
+//    bytes, err = listSupportIntegrationsParams.Marshal()
 //
-//    integrationSupportListResponse, err := UnmarshalIntegrationSupportListResponse(bytes)
-//    bytes, err = integrationSupportListResponse.Marshal()
+//    listSupportIntegrationsResponse, err := UnmarshalListSupportIntegrationsResponse(bytes)
+//    bytes, err = listSupportIntegrationsResponse.Marshal()
 //
-//    integrationTelegramDeleteParams, err := UnmarshalIntegrationTelegramDeleteParams(bytes)
-//    bytes, err = integrationTelegramDeleteParams.Marshal()
+//    deleteTelegramIntegrationParams, err := UnmarshalDeleteTelegramIntegrationParams(bytes)
+//    bytes, err = deleteTelegramIntegrationParams.Marshal()
 //
-//    integrationTelegramDeleteRequest, err := UnmarshalIntegrationTelegramDeleteRequest(bytes)
-//    bytes, err = integrationTelegramDeleteRequest.Marshal()
+//    deleteTelegramIntegrationRequest, err := UnmarshalDeleteTelegramIntegrationRequest(bytes)
+//    bytes, err = deleteTelegramIntegrationRequest.Marshal()
 //
-//    integrationTelegramDeleteResponse, err := UnmarshalIntegrationTelegramDeleteResponse(bytes)
-//    bytes, err = integrationTelegramDeleteResponse.Marshal()
+//    deleteTelegramIntegrationResponse, err := UnmarshalDeleteTelegramIntegrationResponse(bytes)
+//    bytes, err = deleteTelegramIntegrationResponse.Marshal()
 //
-//    integrationTelegramFetchParams, err := UnmarshalIntegrationTelegramFetchParams(bytes)
-//    bytes, err = integrationTelegramFetchParams.Marshal()
+//    fetchTelegramIntegrationParams, err := UnmarshalFetchTelegramIntegrationParams(bytes)
+//    bytes, err = fetchTelegramIntegrationParams.Marshal()
 //
-//    integrationTelegramFetchResponse, err := UnmarshalIntegrationTelegramFetchResponse(bytes)
-//    bytes, err = integrationTelegramFetchResponse.Marshal()
+//    fetchTelegramIntegrationResponse, err := UnmarshalFetchTelegramIntegrationResponse(bytes)
+//    bytes, err = fetchTelegramIntegrationResponse.Marshal()
 //
-//    integrationTelegramSetupParams, err := UnmarshalIntegrationTelegramSetupParams(bytes)
-//    bytes, err = integrationTelegramSetupParams.Marshal()
+//    setupTelegramIntegrationParams, err := UnmarshalSetupTelegramIntegrationParams(bytes)
+//    bytes, err = setupTelegramIntegrationParams.Marshal()
 //
-//    integrationTelegramSetupRequest, err := UnmarshalIntegrationTelegramSetupRequest(bytes)
-//    bytes, err = integrationTelegramSetupRequest.Marshal()
+//    setupTelegramIntegrationRequest, err := UnmarshalSetupTelegramIntegrationRequest(bytes)
+//    bytes, err = setupTelegramIntegrationRequest.Marshal()
 //
-//    integrationTelegramSetupResponse, err := UnmarshalIntegrationTelegramSetupResponse(bytes)
-//    bytes, err = integrationTelegramSetupResponse.Marshal()
+//    setupTelegramIntegrationResponse, err := UnmarshalSetupTelegramIntegrationResponse(bytes)
+//    bytes, err = setupTelegramIntegrationResponse.Marshal()
 //
-//    integrationTelegramUpdateParams, err := UnmarshalIntegrationTelegramUpdateParams(bytes)
-//    bytes, err = integrationTelegramUpdateParams.Marshal()
+//    updateTelegramIntegrationParams, err := UnmarshalUpdateTelegramIntegrationParams(bytes)
+//    bytes, err = updateTelegramIntegrationParams.Marshal()
 //
-//    integrationTelegramUpdateRequest, err := UnmarshalIntegrationTelegramUpdateRequest(bytes)
-//    bytes, err = integrationTelegramUpdateRequest.Marshal()
+//    updateTelegramIntegrationRequest, err := UnmarshalUpdateTelegramIntegrationRequest(bytes)
+//    bytes, err = updateTelegramIntegrationRequest.Marshal()
 //
-//    integrationTelegramUpdateResponse, err := UnmarshalIntegrationTelegramUpdateResponse(bytes)
-//    bytes, err = integrationTelegramUpdateResponse.Marshal()
+//    updateTelegramIntegrationResponse, err := UnmarshalUpdateTelegramIntegrationResponse(bytes)
+//    bytes, err = updateTelegramIntegrationResponse.Marshal()
 //
-//    integrationTelegramCreateRequest, err := UnmarshalIntegrationTelegramCreateRequest(bytes)
-//    bytes, err = integrationTelegramCreateRequest.Marshal()
+//    createTelegramIntegrationRequest, err := UnmarshalCreateTelegramIntegrationRequest(bytes)
+//    bytes, err = createTelegramIntegrationRequest.Marshal()
 //
-//    integrationTelegramCreateResponse, err := UnmarshalIntegrationTelegramCreateResponse(bytes)
-//    bytes, err = integrationTelegramCreateResponse.Marshal()
+//    createTelegramIntegrationResponse, err := UnmarshalCreateTelegramIntegrationResponse(bytes)
+//    bytes, err = createTelegramIntegrationResponse.Marshal()
 //
-//    integrationTelegramListParams, err := UnmarshalIntegrationTelegramListParams(bytes)
-//    bytes, err = integrationTelegramListParams.Marshal()
+//    listTelegramIntegrationsParams, err := UnmarshalListTelegramIntegrationsParams(bytes)
+//    bytes, err = listTelegramIntegrationsParams.Marshal()
 //
-//    integrationTelegramListResponse, err := UnmarshalIntegrationTelegramListResponse(bytes)
-//    bytes, err = integrationTelegramListResponse.Marshal()
+//    listTelegramIntegrationsResponse, err := UnmarshalListTelegramIntegrationsResponse(bytes)
+//    bytes, err = listTelegramIntegrationsResponse.Marshal()
 //
-//    integrationTriggerDeleteParams, err := UnmarshalIntegrationTriggerDeleteParams(bytes)
-//    bytes, err = integrationTriggerDeleteParams.Marshal()
+//    deleteTriggerIntegrationParams, err := UnmarshalDeleteTriggerIntegrationParams(bytes)
+//    bytes, err = deleteTriggerIntegrationParams.Marshal()
 //
-//    integrationTriggerDeleteRequest, err := UnmarshalIntegrationTriggerDeleteRequest(bytes)
-//    bytes, err = integrationTriggerDeleteRequest.Marshal()
+//    deleteTriggerIntegrationRequest, err := UnmarshalDeleteTriggerIntegrationRequest(bytes)
+//    bytes, err = deleteTriggerIntegrationRequest.Marshal()
 //
-//    integrationTriggerDeleteResponse, err := UnmarshalIntegrationTriggerDeleteResponse(bytes)
-//    bytes, err = integrationTriggerDeleteResponse.Marshal()
+//    deleteTriggerIntegrationResponse, err := UnmarshalDeleteTriggerIntegrationResponse(bytes)
+//    bytes, err = deleteTriggerIntegrationResponse.Marshal()
 //
-//    integrationTriggerFetchParams, err := UnmarshalIntegrationTriggerFetchParams(bytes)
-//    bytes, err = integrationTriggerFetchParams.Marshal()
+//    fetchTriggerIntegrationParams, err := UnmarshalFetchTriggerIntegrationParams(bytes)
+//    bytes, err = fetchTriggerIntegrationParams.Marshal()
 //
-//    integrationTriggerFetchResponse, err := UnmarshalIntegrationTriggerFetchResponse(bytes)
-//    bytes, err = integrationTriggerFetchResponse.Marshal()
+//    fetchTriggerIntegrationResponse, err := UnmarshalFetchTriggerIntegrationResponse(bytes)
+//    bytes, err = fetchTriggerIntegrationResponse.Marshal()
 //
-//    integrationTriggerInvokeParams, err := UnmarshalIntegrationTriggerInvokeParams(bytes)
-//    bytes, err = integrationTriggerInvokeParams.Marshal()
+//    invokeTriggerIntegrationParams, err := UnmarshalInvokeTriggerIntegrationParams(bytes)
+//    bytes, err = invokeTriggerIntegrationParams.Marshal()
 //
-//    integrationTriggerInvokeRequest, err := UnmarshalIntegrationTriggerInvokeRequest(bytes)
-//    bytes, err = integrationTriggerInvokeRequest.Marshal()
+//    invokeTriggerIntegrationRequest, err := UnmarshalInvokeTriggerIntegrationRequest(bytes)
+//    bytes, err = invokeTriggerIntegrationRequest.Marshal()
 //
-//    integrationTriggerInvokeResponse, err := UnmarshalIntegrationTriggerInvokeResponse(bytes)
-//    bytes, err = integrationTriggerInvokeResponse.Marshal()
+//    invokeTriggerIntegrationResponse, err := UnmarshalInvokeTriggerIntegrationResponse(bytes)
+//    bytes, err = invokeTriggerIntegrationResponse.Marshal()
 //
-//    integrationTriggerSetupParams, err := UnmarshalIntegrationTriggerSetupParams(bytes)
-//    bytes, err = integrationTriggerSetupParams.Marshal()
+//    setupTriggerIntegrationParams, err := UnmarshalSetupTriggerIntegrationParams(bytes)
+//    bytes, err = setupTriggerIntegrationParams.Marshal()
 //
-//    integrationTriggerSetupRequest, err := UnmarshalIntegrationTriggerSetupRequest(bytes)
-//    bytes, err = integrationTriggerSetupRequest.Marshal()
+//    setupTriggerIntegrationRequest, err := UnmarshalSetupTriggerIntegrationRequest(bytes)
+//    bytes, err = setupTriggerIntegrationRequest.Marshal()
 //
-//    integrationTriggerSetupResponse, err := UnmarshalIntegrationTriggerSetupResponse(bytes)
-//    bytes, err = integrationTriggerSetupResponse.Marshal()
+//    setupTriggerIntegrationResponse, err := UnmarshalSetupTriggerIntegrationResponse(bytes)
+//    bytes, err = setupTriggerIntegrationResponse.Marshal()
 //
-//    integrationTriggerUpdateParams, err := UnmarshalIntegrationTriggerUpdateParams(bytes)
-//    bytes, err = integrationTriggerUpdateParams.Marshal()
+//    updateTriggerIntegrationParams, err := UnmarshalUpdateTriggerIntegrationParams(bytes)
+//    bytes, err = updateTriggerIntegrationParams.Marshal()
 //
-//    integrationTriggerUpdateRequest, err := UnmarshalIntegrationTriggerUpdateRequest(bytes)
-//    bytes, err = integrationTriggerUpdateRequest.Marshal()
+//    updateTriggerIntegrationRequest, err := UnmarshalUpdateTriggerIntegrationRequest(bytes)
+//    bytes, err = updateTriggerIntegrationRequest.Marshal()
 //
-//    integrationTriggerUpdateResponse, err := UnmarshalIntegrationTriggerUpdateResponse(bytes)
-//    bytes, err = integrationTriggerUpdateResponse.Marshal()
+//    updateTriggerIntegrationResponse, err := UnmarshalUpdateTriggerIntegrationResponse(bytes)
+//    bytes, err = updateTriggerIntegrationResponse.Marshal()
 //
-//    integrationTriggerCreateRequest, err := UnmarshalIntegrationTriggerCreateRequest(bytes)
-//    bytes, err = integrationTriggerCreateRequest.Marshal()
+//    createTriggerIntegrationRequest, err := UnmarshalCreateTriggerIntegrationRequest(bytes)
+//    bytes, err = createTriggerIntegrationRequest.Marshal()
 //
-//    integrationTriggerCreateResponse, err := UnmarshalIntegrationTriggerCreateResponse(bytes)
-//    bytes, err = integrationTriggerCreateResponse.Marshal()
+//    createTriggerIntegrationResponse, err := UnmarshalCreateTriggerIntegrationResponse(bytes)
+//    bytes, err = createTriggerIntegrationResponse.Marshal()
 //
-//    integrationTriggerListParams, err := UnmarshalIntegrationTriggerListParams(bytes)
-//    bytes, err = integrationTriggerListParams.Marshal()
+//    listTriggerIntegrationsParams, err := UnmarshalListTriggerIntegrationsParams(bytes)
+//    bytes, err = listTriggerIntegrationsParams.Marshal()
 //
-//    integrationTriggerListResponse, err := UnmarshalIntegrationTriggerListResponse(bytes)
-//    bytes, err = integrationTriggerListResponse.Marshal()
+//    listTriggerIntegrationsResponse, err := UnmarshalListTriggerIntegrationsResponse(bytes)
+//    bytes, err = listTriggerIntegrationsResponse.Marshal()
 //
-//    integrationTwilioDeleteParams, err := UnmarshalIntegrationTwilioDeleteParams(bytes)
-//    bytes, err = integrationTwilioDeleteParams.Marshal()
+//    deleteTwilioIntegrationParams, err := UnmarshalDeleteTwilioIntegrationParams(bytes)
+//    bytes, err = deleteTwilioIntegrationParams.Marshal()
 //
-//    integrationTwilioDeleteRequest, err := UnmarshalIntegrationTwilioDeleteRequest(bytes)
-//    bytes, err = integrationTwilioDeleteRequest.Marshal()
+//    deleteTwilioIntegrationRequest, err := UnmarshalDeleteTwilioIntegrationRequest(bytes)
+//    bytes, err = deleteTwilioIntegrationRequest.Marshal()
 //
-//    integrationTwilioDeleteResponse, err := UnmarshalIntegrationTwilioDeleteResponse(bytes)
-//    bytes, err = integrationTwilioDeleteResponse.Marshal()
+//    deleteTwilioIntegrationResponse, err := UnmarshalDeleteTwilioIntegrationResponse(bytes)
+//    bytes, err = deleteTwilioIntegrationResponse.Marshal()
 //
-//    integrationTwilioFetchParams, err := UnmarshalIntegrationTwilioFetchParams(bytes)
-//    bytes, err = integrationTwilioFetchParams.Marshal()
+//    fetchTwilioIntegrationParams, err := UnmarshalFetchTwilioIntegrationParams(bytes)
+//    bytes, err = fetchTwilioIntegrationParams.Marshal()
 //
-//    integrationTwilioFetchResponse, err := UnmarshalIntegrationTwilioFetchResponse(bytes)
-//    bytes, err = integrationTwilioFetchResponse.Marshal()
+//    fetchTwilioIntegrationResponse, err := UnmarshalFetchTwilioIntegrationResponse(bytes)
+//    bytes, err = fetchTwilioIntegrationResponse.Marshal()
 //
-//    integrationTwilioSetupParams, err := UnmarshalIntegrationTwilioSetupParams(bytes)
-//    bytes, err = integrationTwilioSetupParams.Marshal()
+//    setupTwilioIntegrationParams, err := UnmarshalSetupTwilioIntegrationParams(bytes)
+//    bytes, err = setupTwilioIntegrationParams.Marshal()
 //
-//    integrationTwilioSetupRequest, err := UnmarshalIntegrationTwilioSetupRequest(bytes)
-//    bytes, err = integrationTwilioSetupRequest.Marshal()
+//    setupTwilioIntegrationRequest, err := UnmarshalSetupTwilioIntegrationRequest(bytes)
+//    bytes, err = setupTwilioIntegrationRequest.Marshal()
 //
-//    integrationTwilioSetupResponse, err := UnmarshalIntegrationTwilioSetupResponse(bytes)
-//    bytes, err = integrationTwilioSetupResponse.Marshal()
+//    setupTwilioIntegrationResponse, err := UnmarshalSetupTwilioIntegrationResponse(bytes)
+//    bytes, err = setupTwilioIntegrationResponse.Marshal()
 //
-//    integrationTwilioUpdateParams, err := UnmarshalIntegrationTwilioUpdateParams(bytes)
-//    bytes, err = integrationTwilioUpdateParams.Marshal()
+//    updateTwilioIntegrationParams, err := UnmarshalUpdateTwilioIntegrationParams(bytes)
+//    bytes, err = updateTwilioIntegrationParams.Marshal()
 //
-//    integrationTwilioUpdateRequest, err := UnmarshalIntegrationTwilioUpdateRequest(bytes)
-//    bytes, err = integrationTwilioUpdateRequest.Marshal()
+//    updateTwilioIntegrationRequest, err := UnmarshalUpdateTwilioIntegrationRequest(bytes)
+//    bytes, err = updateTwilioIntegrationRequest.Marshal()
 //
-//    integrationTwilioUpdateResponse, err := UnmarshalIntegrationTwilioUpdateResponse(bytes)
-//    bytes, err = integrationTwilioUpdateResponse.Marshal()
+//    updateTwilioIntegrationResponse, err := UnmarshalUpdateTwilioIntegrationResponse(bytes)
+//    bytes, err = updateTwilioIntegrationResponse.Marshal()
 //
-//    integrationTwilioCreateRequest, err := UnmarshalIntegrationTwilioCreateRequest(bytes)
-//    bytes, err = integrationTwilioCreateRequest.Marshal()
+//    createTwilioIntegrationRequest, err := UnmarshalCreateTwilioIntegrationRequest(bytes)
+//    bytes, err = createTwilioIntegrationRequest.Marshal()
 //
-//    integrationTwilioCreateResponse, err := UnmarshalIntegrationTwilioCreateResponse(bytes)
-//    bytes, err = integrationTwilioCreateResponse.Marshal()
+//    createTwilioIntegrationResponse, err := UnmarshalCreateTwilioIntegrationResponse(bytes)
+//    bytes, err = createTwilioIntegrationResponse.Marshal()
 //
-//    integrationTwilioListParams, err := UnmarshalIntegrationTwilioListParams(bytes)
-//    bytes, err = integrationTwilioListParams.Marshal()
+//    listTwilioIntegrationsParams, err := UnmarshalListTwilioIntegrationsParams(bytes)
+//    bytes, err = listTwilioIntegrationsParams.Marshal()
 //
-//    integrationTwilioListResponse, err := UnmarshalIntegrationTwilioListResponse(bytes)
-//    bytes, err = integrationTwilioListResponse.Marshal()
+//    listTwilioIntegrationsResponse, err := UnmarshalListTwilioIntegrationsResponse(bytes)
+//    bytes, err = listTwilioIntegrationsResponse.Marshal()
 //
-//    integrationWhatsappDeleteParams, err := UnmarshalIntegrationWhatsappDeleteParams(bytes)
-//    bytes, err = integrationWhatsappDeleteParams.Marshal()
+//    deleteWhatsAppIntegrationParams, err := UnmarshalDeleteWhatsAppIntegrationParams(bytes)
+//    bytes, err = deleteWhatsAppIntegrationParams.Marshal()
 //
-//    integrationWhatsappDeleteRequest, err := UnmarshalIntegrationWhatsappDeleteRequest(bytes)
-//    bytes, err = integrationWhatsappDeleteRequest.Marshal()
+//    deleteWhatsAppIntegrationRequest, err := UnmarshalDeleteWhatsAppIntegrationRequest(bytes)
+//    bytes, err = deleteWhatsAppIntegrationRequest.Marshal()
 //
-//    integrationWhatsappDeleteResponse, err := UnmarshalIntegrationWhatsappDeleteResponse(bytes)
-//    bytes, err = integrationWhatsappDeleteResponse.Marshal()
+//    deleteWhatsAppIntegrationResponse, err := UnmarshalDeleteWhatsAppIntegrationResponse(bytes)
+//    bytes, err = deleteWhatsAppIntegrationResponse.Marshal()
 //
-//    integrationWhatsappFetchParams, err := UnmarshalIntegrationWhatsappFetchParams(bytes)
-//    bytes, err = integrationWhatsappFetchParams.Marshal()
+//    fetchWhatsAppIntegrationParams, err := UnmarshalFetchWhatsAppIntegrationParams(bytes)
+//    bytes, err = fetchWhatsAppIntegrationParams.Marshal()
 //
-//    integrationWhatsappFetchResponse, err := UnmarshalIntegrationWhatsappFetchResponse(bytes)
-//    bytes, err = integrationWhatsappFetchResponse.Marshal()
+//    fetchWhatsAppIntegrationResponse, err := UnmarshalFetchWhatsAppIntegrationResponse(bytes)
+//    bytes, err = fetchWhatsAppIntegrationResponse.Marshal()
 //
-//    integrationWhatsappSetupParams, err := UnmarshalIntegrationWhatsappSetupParams(bytes)
-//    bytes, err = integrationWhatsappSetupParams.Marshal()
+//    setupWhatsAppIntegrationParams, err := UnmarshalSetupWhatsAppIntegrationParams(bytes)
+//    bytes, err = setupWhatsAppIntegrationParams.Marshal()
 //
-//    integrationWhatsappSetupRequest, err := UnmarshalIntegrationWhatsappSetupRequest(bytes)
-//    bytes, err = integrationWhatsappSetupRequest.Marshal()
+//    setupWhatsAppIntegrationRequest, err := UnmarshalSetupWhatsAppIntegrationRequest(bytes)
+//    bytes, err = setupWhatsAppIntegrationRequest.Marshal()
 //
-//    integrationWhatsappSetupResponse, err := UnmarshalIntegrationWhatsappSetupResponse(bytes)
-//    bytes, err = integrationWhatsappSetupResponse.Marshal()
+//    setupWhatsAppIntegrationResponse, err := UnmarshalSetupWhatsAppIntegrationResponse(bytes)
+//    bytes, err = setupWhatsAppIntegrationResponse.Marshal()
 //
-//    integrationWhatsappUpdateParams, err := UnmarshalIntegrationWhatsappUpdateParams(bytes)
-//    bytes, err = integrationWhatsappUpdateParams.Marshal()
+//    updateWhatsAppIntegrationParams, err := UnmarshalUpdateWhatsAppIntegrationParams(bytes)
+//    bytes, err = updateWhatsAppIntegrationParams.Marshal()
 //
-//    integrationWhatsappUpdateRequest, err := UnmarshalIntegrationWhatsappUpdateRequest(bytes)
-//    bytes, err = integrationWhatsappUpdateRequest.Marshal()
+//    updateWhatsAppIntegrationRequest, err := UnmarshalUpdateWhatsAppIntegrationRequest(bytes)
+//    bytes, err = updateWhatsAppIntegrationRequest.Marshal()
 //
-//    integrationWhatsappUpdateResponse, err := UnmarshalIntegrationWhatsappUpdateResponse(bytes)
-//    bytes, err = integrationWhatsappUpdateResponse.Marshal()
+//    updateWhatsAppIntegrationResponse, err := UnmarshalUpdateWhatsAppIntegrationResponse(bytes)
+//    bytes, err = updateWhatsAppIntegrationResponse.Marshal()
 //
-//    integrationWhatsappCreateRequest, err := UnmarshalIntegrationWhatsappCreateRequest(bytes)
-//    bytes, err = integrationWhatsappCreateRequest.Marshal()
+//    createWhatsAppIntegrationRequest, err := UnmarshalCreateWhatsAppIntegrationRequest(bytes)
+//    bytes, err = createWhatsAppIntegrationRequest.Marshal()
 //
-//    integrationWhatsappCreateResponse, err := UnmarshalIntegrationWhatsappCreateResponse(bytes)
-//    bytes, err = integrationWhatsappCreateResponse.Marshal()
+//    createWhatsAppIntegrationResponse, err := UnmarshalCreateWhatsAppIntegrationResponse(bytes)
+//    bytes, err = createWhatsAppIntegrationResponse.Marshal()
 //
-//    integrationWhatsappListParams, err := UnmarshalIntegrationWhatsappListParams(bytes)
-//    bytes, err = integrationWhatsappListParams.Marshal()
+//    listWhatsAppIntegrationsParams, err := UnmarshalListWhatsAppIntegrationsParams(bytes)
+//    bytes, err = listWhatsAppIntegrationsParams.Marshal()
 //
-//    integrationWhatsappListResponse, err := UnmarshalIntegrationWhatsappListResponse(bytes)
-//    bytes, err = integrationWhatsappListResponse.Marshal()
+//    listWhatsAppIntegrationsResponse, err := UnmarshalListWhatsAppIntegrationsResponse(bytes)
+//    bytes, err = listWhatsAppIntegrationsResponse.Marshal()
 //
-//    integrationWidgetDeleteParams, err := UnmarshalIntegrationWidgetDeleteParams(bytes)
-//    bytes, err = integrationWidgetDeleteParams.Marshal()
+//    deleteWidgetIntegrationParams, err := UnmarshalDeleteWidgetIntegrationParams(bytes)
+//    bytes, err = deleteWidgetIntegrationParams.Marshal()
 //
-//    integrationWidgetDeleteRequest, err := UnmarshalIntegrationWidgetDeleteRequest(bytes)
-//    bytes, err = integrationWidgetDeleteRequest.Marshal()
+//    deleteWidgetIntegrationRequest, err := UnmarshalDeleteWidgetIntegrationRequest(bytes)
+//    bytes, err = deleteWidgetIntegrationRequest.Marshal()
 //
-//    integrationWidgetDeleteResponse, err := UnmarshalIntegrationWidgetDeleteResponse(bytes)
-//    bytes, err = integrationWidgetDeleteResponse.Marshal()
+//    deleteWidgetIntegrationResponse, err := UnmarshalDeleteWidgetIntegrationResponse(bytes)
+//    bytes, err = deleteWidgetIntegrationResponse.Marshal()
 //
-//    integrationWidgetFetchParams, err := UnmarshalIntegrationWidgetFetchParams(bytes)
-//    bytes, err = integrationWidgetFetchParams.Marshal()
+//    fetchWidgetIntegrationParams, err := UnmarshalFetchWidgetIntegrationParams(bytes)
+//    bytes, err = fetchWidgetIntegrationParams.Marshal()
 //
-//    integrationWidgetFetchResponse, err := UnmarshalIntegrationWidgetFetchResponse(bytes)
-//    bytes, err = integrationWidgetFetchResponse.Marshal()
+//    fetchWidgetIntegrationResponse, err := UnmarshalFetchWidgetIntegrationResponse(bytes)
+//    bytes, err = fetchWidgetIntegrationResponse.Marshal()
 //
-//    integrationWidgetSetupParams, err := UnmarshalIntegrationWidgetSetupParams(bytes)
-//    bytes, err = integrationWidgetSetupParams.Marshal()
+//    setupWidgetIntegrationParams, err := UnmarshalSetupWidgetIntegrationParams(bytes)
+//    bytes, err = setupWidgetIntegrationParams.Marshal()
 //
-//    integrationWidgetSetupRequest, err := UnmarshalIntegrationWidgetSetupRequest(bytes)
-//    bytes, err = integrationWidgetSetupRequest.Marshal()
+//    setupWidgetIntegrationRequest, err := UnmarshalSetupWidgetIntegrationRequest(bytes)
+//    bytes, err = setupWidgetIntegrationRequest.Marshal()
 //
-//    integrationWidgetSetupResponse, err := UnmarshalIntegrationWidgetSetupResponse(bytes)
-//    bytes, err = integrationWidgetSetupResponse.Marshal()
+//    setupWidgetIntegrationResponse, err := UnmarshalSetupWidgetIntegrationResponse(bytes)
+//    bytes, err = setupWidgetIntegrationResponse.Marshal()
 //
-//    integrationWidgetUpdateParams, err := UnmarshalIntegrationWidgetUpdateParams(bytes)
-//    bytes, err = integrationWidgetUpdateParams.Marshal()
+//    updateWidgetIntegrationParams, err := UnmarshalUpdateWidgetIntegrationParams(bytes)
+//    bytes, err = updateWidgetIntegrationParams.Marshal()
 //
-//    integrationWidgetUpdateRequest, err := UnmarshalIntegrationWidgetUpdateRequest(bytes)
-//    bytes, err = integrationWidgetUpdateRequest.Marshal()
+//    updateWidgetIntegrationRequest, err := UnmarshalUpdateWidgetIntegrationRequest(bytes)
+//    bytes, err = updateWidgetIntegrationRequest.Marshal()
 //
-//    integrationWidgetUpdateResponse, err := UnmarshalIntegrationWidgetUpdateResponse(bytes)
-//    bytes, err = integrationWidgetUpdateResponse.Marshal()
+//    updateWidgetIntegrationResponse, err := UnmarshalUpdateWidgetIntegrationResponse(bytes)
+//    bytes, err = updateWidgetIntegrationResponse.Marshal()
 //
-//    integrationWidgetCreateRequest, err := UnmarshalIntegrationWidgetCreateRequest(bytes)
-//    bytes, err = integrationWidgetCreateRequest.Marshal()
+//    createWidgetIntegrationRequest, err := UnmarshalCreateWidgetIntegrationRequest(bytes)
+//    bytes, err = createWidgetIntegrationRequest.Marshal()
 //
-//    integrationWidgetCreateResponse, err := UnmarshalIntegrationWidgetCreateResponse(bytes)
-//    bytes, err = integrationWidgetCreateResponse.Marshal()
+//    createWidgetIntegrationResponse, err := UnmarshalCreateWidgetIntegrationResponse(bytes)
+//    bytes, err = createWidgetIntegrationResponse.Marshal()
 //
-//    integrationWidgetListParams, err := UnmarshalIntegrationWidgetListParams(bytes)
-//    bytes, err = integrationWidgetListParams.Marshal()
+//    listWidgetIntegrationsParams, err := UnmarshalListWidgetIntegrationsParams(bytes)
+//    bytes, err = listWidgetIntegrationsParams.Marshal()
 //
-//    integrationWidgetListResponse, err := UnmarshalIntegrationWidgetListResponse(bytes)
-//    bytes, err = integrationWidgetListResponse.Marshal()
+//    listWidgetIntegrationsResponse, err := UnmarshalListWidgetIntegrationsResponse(bytes)
+//    bytes, err = listWidgetIntegrationsResponse.Marshal()
 //
-//    magicGenerateParams, err := UnmarshalMagicGenerateParams(bytes)
-//    bytes, err = magicGenerateParams.Marshal()
+//    generateMagicFromPromptParams, err := UnmarshalGenerateMagicFromPromptParams(bytes)
+//    bytes, err = generateMagicFromPromptParams.Marshal()
 //
-//    magicGenerateRequest, err := UnmarshalMagicGenerateRequest(bytes)
-//    bytes, err = magicGenerateRequest.Marshal()
+//    generateMagicFromPromptRequest, err := UnmarshalGenerateMagicFromPromptRequest(bytes)
+//    bytes, err = generateMagicFromPromptRequest.Marshal()
 //
-//    magicGenerateResponse, err := UnmarshalMagicGenerateResponse(bytes)
-//    bytes, err = magicGenerateResponse.Marshal()
+//    generateMagicFromPromptResponse, err := UnmarshalGenerateMagicFromPromptResponse(bytes)
+//    bytes, err = generateMagicFromPromptResponse.Marshal()
 //
-//    magicListParams, err := UnmarshalMagicListParams(bytes)
-//    bytes, err = magicListParams.Marshal()
+//    listMagicPromptsParams, err := UnmarshalListMagicPromptsParams(bytes)
+//    bytes, err = listMagicPromptsParams.Marshal()
 //
-//    magicListResponse, err := UnmarshalMagicListResponse(bytes)
-//    bytes, err = magicListResponse.Marshal()
+//    listMagicPromptsResponse, err := UnmarshalListMagicPromptsResponse(bytes)
+//    bytes, err = listMagicPromptsResponse.Marshal()
 //
-//    memoryDeleteParams, err := UnmarshalMemoryDeleteParams(bytes)
-//    bytes, err = memoryDeleteParams.Marshal()
+//    deleteMemoryParams, err := UnmarshalDeleteMemoryParams(bytes)
+//    bytes, err = deleteMemoryParams.Marshal()
 //
-//    memoryDeleteRequest, err := UnmarshalMemoryDeleteRequest(bytes)
-//    bytes, err = memoryDeleteRequest.Marshal()
+//    deleteMemoryRequest, err := UnmarshalDeleteMemoryRequest(bytes)
+//    bytes, err = deleteMemoryRequest.Marshal()
 //
-//    memoryDeleteResponse, err := UnmarshalMemoryDeleteResponse(bytes)
-//    bytes, err = memoryDeleteResponse.Marshal()
+//    deleteMemoryResponse, err := UnmarshalDeleteMemoryResponse(bytes)
+//    bytes, err = deleteMemoryResponse.Marshal()
 //
-//    memoryFetchParams, err := UnmarshalMemoryFetchParams(bytes)
-//    bytes, err = memoryFetchParams.Marshal()
+//    fetchMemoryParams, err := UnmarshalFetchMemoryParams(bytes)
+//    bytes, err = fetchMemoryParams.Marshal()
 //
-//    memoryFetchResponse, err := UnmarshalMemoryFetchResponse(bytes)
-//    bytes, err = memoryFetchResponse.Marshal()
+//    fetchMemoryResponse, err := UnmarshalFetchMemoryResponse(bytes)
+//    bytes, err = fetchMemoryResponse.Marshal()
 //
-//    memoryUpdateParams, err := UnmarshalMemoryUpdateParams(bytes)
-//    bytes, err = memoryUpdateParams.Marshal()
+//    updateMemoryParams, err := UnmarshalUpdateMemoryParams(bytes)
+//    bytes, err = updateMemoryParams.Marshal()
 //
-//    memoryUpdateRequest, err := UnmarshalMemoryUpdateRequest(bytes)
-//    bytes, err = memoryUpdateRequest.Marshal()
+//    updateMemoryRequest, err := UnmarshalUpdateMemoryRequest(bytes)
+//    bytes, err = updateMemoryRequest.Marshal()
 //
-//    memoryUpdateResponse, err := UnmarshalMemoryUpdateResponse(bytes)
-//    bytes, err = memoryUpdateResponse.Marshal()
+//    updateMemoryResponse, err := UnmarshalUpdateMemoryResponse(bytes)
+//    bytes, err = updateMemoryResponse.Marshal()
 //
-//    memoryCreateRequest, err := UnmarshalMemoryCreateRequest(bytes)
-//    bytes, err = memoryCreateRequest.Marshal()
+//    createMemoryRequest, err := UnmarshalCreateMemoryRequest(bytes)
+//    bytes, err = createMemoryRequest.Marshal()
 //
-//    memoryCreateResponse, err := UnmarshalMemoryCreateResponse(bytes)
-//    bytes, err = memoryCreateResponse.Marshal()
+//    createMemoryResponse, err := UnmarshalCreateMemoryResponse(bytes)
+//    bytes, err = createMemoryResponse.Marshal()
 //
-//    memoryExportParams, err := UnmarshalMemoryExportParams(bytes)
-//    bytes, err = memoryExportParams.Marshal()
+//    exportMemoriesParams, err := UnmarshalExportMemoriesParams(bytes)
+//    bytes, err = exportMemoriesParams.Marshal()
 //
-//    memoryExportResponse, err := UnmarshalMemoryExportResponse(bytes)
-//    bytes, err = memoryExportResponse.Marshal()
+//    exportMemoriesResponse, err := UnmarshalExportMemoriesResponse(bytes)
+//    bytes, err = exportMemoriesResponse.Marshal()
 //
-//    memoryListParams, err := UnmarshalMemoryListParams(bytes)
-//    bytes, err = memoryListParams.Marshal()
+//    listMemoriesParams, err := UnmarshalListMemoriesParams(bytes)
+//    bytes, err = listMemoriesParams.Marshal()
 //
-//    memoryListResponse, err := UnmarshalMemoryListResponse(bytes)
-//    bytes, err = memoryListResponse.Marshal()
+//    listMemoriesResponse, err := UnmarshalListMemoriesResponse(bytes)
+//    bytes, err = listMemoriesResponse.Marshal()
 //
-//    memorySearchRequest, err := UnmarshalMemorySearchRequest(bytes)
-//    bytes, err = memorySearchRequest.Marshal()
+//    searchMemoryRequest, err := UnmarshalSearchMemoryRequest(bytes)
+//    bytes, err = searchMemoryRequest.Marshal()
 //
-//    memorySearchResponse, err := UnmarshalMemorySearchResponse(bytes)
-//    bytes, err = memorySearchResponse.Marshal()
+//    searchMemoryResponse, err := UnmarshalSearchMemoryResponse(bytes)
+//    bytes, err = searchMemoryResponse.Marshal()
 //
-//    partnerUserDeleteParams, err := UnmarshalPartnerUserDeleteParams(bytes)
-//    bytes, err = partnerUserDeleteParams.Marshal()
+//    deletePartnerUserParams, err := UnmarshalDeletePartnerUserParams(bytes)
+//    bytes, err = deletePartnerUserParams.Marshal()
 //
-//    partnerUserDeleteRequest, err := UnmarshalPartnerUserDeleteRequest(bytes)
-//    bytes, err = partnerUserDeleteRequest.Marshal()
+//    deletePartnerUserRequest, err := UnmarshalDeletePartnerUserRequest(bytes)
+//    bytes, err = deletePartnerUserRequest.Marshal()
 //
-//    partnerUserDeleteResponse, err := UnmarshalPartnerUserDeleteResponse(bytes)
-//    bytes, err = partnerUserDeleteResponse.Marshal()
+//    deletePartnerUserResponse, err := UnmarshalDeletePartnerUserResponse(bytes)
+//    bytes, err = deletePartnerUserResponse.Marshal()
 //
-//    partnerUserFetchParams, err := UnmarshalPartnerUserFetchParams(bytes)
-//    bytes, err = partnerUserFetchParams.Marshal()
+//    fetchPartnerUserParams, err := UnmarshalFetchPartnerUserParams(bytes)
+//    bytes, err = fetchPartnerUserParams.Marshal()
 //
-//    partnerUserFetchResponse, err := UnmarshalPartnerUserFetchResponse(bytes)
-//    bytes, err = partnerUserFetchResponse.Marshal()
+//    fetchPartnerUserResponse, err := UnmarshalFetchPartnerUserResponse(bytes)
+//    bytes, err = fetchPartnerUserResponse.Marshal()
 //
-//    partnerUserTokenDeleteParams, err := UnmarshalPartnerUserTokenDeleteParams(bytes)
-//    bytes, err = partnerUserTokenDeleteParams.Marshal()
+//    deletePartnerUserTokenParams, err := UnmarshalDeletePartnerUserTokenParams(bytes)
+//    bytes, err = deletePartnerUserTokenParams.Marshal()
 //
-//    partnerUserTokenDeleteRequest, err := UnmarshalPartnerUserTokenDeleteRequest(bytes)
-//    bytes, err = partnerUserTokenDeleteRequest.Marshal()
+//    deletePartnerUserTokenRequest, err := UnmarshalDeletePartnerUserTokenRequest(bytes)
+//    bytes, err = deletePartnerUserTokenRequest.Marshal()
 //
-//    partnerUserTokenDeleteResponse, err := UnmarshalPartnerUserTokenDeleteResponse(bytes)
-//    bytes, err = partnerUserTokenDeleteResponse.Marshal()
+//    deletePartnerUserTokenResponse, err := UnmarshalDeletePartnerUserTokenResponse(bytes)
+//    bytes, err = deletePartnerUserTokenResponse.Marshal()
 //
-//    partnerUserTokenCreateParams, err := UnmarshalPartnerUserTokenCreateParams(bytes)
-//    bytes, err = partnerUserTokenCreateParams.Marshal()
+//    createPartnerUserTokenParams, err := UnmarshalCreatePartnerUserTokenParams(bytes)
+//    bytes, err = createPartnerUserTokenParams.Marshal()
 //
-//    partnerUserTokenCreateRequest, err := UnmarshalPartnerUserTokenCreateRequest(bytes)
-//    bytes, err = partnerUserTokenCreateRequest.Marshal()
+//    createPartnerUserTokenRequest, err := UnmarshalCreatePartnerUserTokenRequest(bytes)
+//    bytes, err = createPartnerUserTokenRequest.Marshal()
 //
-//    partnerUserTokenCreateResponse, err := UnmarshalPartnerUserTokenCreateResponse(bytes)
-//    bytes, err = partnerUserTokenCreateResponse.Marshal()
+//    createPartnerUserTokenResponse, err := UnmarshalCreatePartnerUserTokenResponse(bytes)
+//    bytes, err = createPartnerUserTokenResponse.Marshal()
 //
-//    partnerUserTokenListParams, err := UnmarshalPartnerUserTokenListParams(bytes)
-//    bytes, err = partnerUserTokenListParams.Marshal()
+//    listPartnerUserTokensParams, err := UnmarshalListPartnerUserTokensParams(bytes)
+//    bytes, err = listPartnerUserTokensParams.Marshal()
 //
-//    partnerUserTokenListResponse, err := UnmarshalPartnerUserTokenListResponse(bytes)
-//    bytes, err = partnerUserTokenListResponse.Marshal()
+//    listPartnerUserTokensResponse, err := UnmarshalListPartnerUserTokensResponse(bytes)
+//    bytes, err = listPartnerUserTokensResponse.Marshal()
 //
-//    partnerUserUpdateParams, err := UnmarshalPartnerUserUpdateParams(bytes)
-//    bytes, err = partnerUserUpdateParams.Marshal()
+//    updatePartnerUserParams, err := UnmarshalUpdatePartnerUserParams(bytes)
+//    bytes, err = updatePartnerUserParams.Marshal()
 //
-//    partnerUserUpdateRequest, err := UnmarshalPartnerUserUpdateRequest(bytes)
-//    bytes, err = partnerUserUpdateRequest.Marshal()
+//    updatePartnerUserRequest, err := UnmarshalUpdatePartnerUserRequest(bytes)
+//    bytes, err = updatePartnerUserRequest.Marshal()
 //
-//    partnerUserUpdateResponse, err := UnmarshalPartnerUserUpdateResponse(bytes)
-//    bytes, err = partnerUserUpdateResponse.Marshal()
+//    updatePartnerUserResponse, err := UnmarshalUpdatePartnerUserResponse(bytes)
+//    bytes, err = updatePartnerUserResponse.Marshal()
 //
-//    partnerUserCreateRequest, err := UnmarshalPartnerUserCreateRequest(bytes)
-//    bytes, err = partnerUserCreateRequest.Marshal()
+//    createPartnerUserRequest, err := UnmarshalCreatePartnerUserRequest(bytes)
+//    bytes, err = createPartnerUserRequest.Marshal()
 //
-//    partnerUserCreateResponse, err := UnmarshalPartnerUserCreateResponse(bytes)
-//    bytes, err = partnerUserCreateResponse.Marshal()
+//    createPartnerUserResponse, err := UnmarshalCreatePartnerUserResponse(bytes)
+//    bytes, err = createPartnerUserResponse.Marshal()
 //
-//    partnerUserListParams, err := UnmarshalPartnerUserListParams(bytes)
-//    bytes, err = partnerUserListParams.Marshal()
+//    listPartnerUsersParams, err := UnmarshalListPartnerUsersParams(bytes)
+//    bytes, err = listPartnerUsersParams.Marshal()
 //
-//    partnerUserListResponse, err := UnmarshalPartnerUserListResponse(bytes)
-//    bytes, err = partnerUserListResponse.Marshal()
+//    listPartnerUsersResponse, err := UnmarshalListPartnerUsersResponse(bytes)
+//    bytes, err = listPartnerUsersResponse.Marshal()
 //
-//    platformAbilityListParams, err := UnmarshalPlatformAbilityListParams(bytes)
-//    bytes, err = platformAbilityListParams.Marshal()
+//    listPlatformAbilitiesParams, err := UnmarshalListPlatformAbilitiesParams(bytes)
+//    bytes, err = listPlatformAbilitiesParams.Marshal()
 //
-//    platformAbilityListResponse, err := UnmarshalPlatformAbilityListResponse(bytes)
-//    bytes, err = platformAbilityListResponse.Marshal()
+//    listPlatformAbilitiesResponse, err := UnmarshalListPlatformAbilitiesResponse(bytes)
+//    bytes, err = listPlatformAbilitiesResponse.Marshal()
 //
-//    platformActionListParams, err := UnmarshalPlatformActionListParams(bytes)
-//    bytes, err = platformActionListParams.Marshal()
+//    listPlatformActionsParams, err := UnmarshalListPlatformActionsParams(bytes)
+//    bytes, err = listPlatformActionsParams.Marshal()
 //
-//    platformActionListResponse, err := UnmarshalPlatformActionListResponse(bytes)
-//    bytes, err = platformActionListResponse.Marshal()
+//    listPlatformActionsResponse, err := UnmarshalListPlatformActionsResponse(bytes)
+//    bytes, err = listPlatformActionsResponse.Marshal()
 //
-//    platformDocFetchParams, err := UnmarshalPlatformDocFetchParams(bytes)
-//    bytes, err = platformDocFetchParams.Marshal()
+//    fetchPlatformDocParams, err := UnmarshalFetchPlatformDocParams(bytes)
+//    bytes, err = fetchPlatformDocParams.Marshal()
 //
-//    platformDocFetchResponse, err := UnmarshalPlatformDocFetchResponse(bytes)
-//    bytes, err = platformDocFetchResponse.Marshal()
+//    fetchPlatformDocResponse, err := UnmarshalFetchPlatformDocResponse(bytes)
+//    bytes, err = fetchPlatformDocResponse.Marshal()
 //
-//    platformDocListParams, err := UnmarshalPlatformDocListParams(bytes)
-//    bytes, err = platformDocListParams.Marshal()
+//    listPlatformDocsParams, err := UnmarshalListPlatformDocsParams(bytes)
+//    bytes, err = listPlatformDocsParams.Marshal()
 //
-//    platformDocListResponse, err := UnmarshalPlatformDocListResponse(bytes)
-//    bytes, err = platformDocListResponse.Marshal()
+//    listPlatformDocsResponse, err := UnmarshalListPlatformDocsResponse(bytes)
+//    bytes, err = listPlatformDocsResponse.Marshal()
 //
-//    platformDocSearchRequest, err := UnmarshalPlatformDocSearchRequest(bytes)
-//    bytes, err = platformDocSearchRequest.Marshal()
+//    searchPlatformDocsRequest, err := UnmarshalSearchPlatformDocsRequest(bytes)
+//    bytes, err = searchPlatformDocsRequest.Marshal()
 //
-//    platformDocSearchResponse, err := UnmarshalPlatformDocSearchResponse(bytes)
-//    bytes, err = platformDocSearchResponse.Marshal()
+//    searchPlatformDocsResponse, err := UnmarshalSearchPlatformDocsResponse(bytes)
+//    bytes, err = searchPlatformDocsResponse.Marshal()
 //
-//    platformExampleCloneParams, err := UnmarshalPlatformExampleCloneParams(bytes)
-//    bytes, err = platformExampleCloneParams.Marshal()
+//    clonePlatformExampleParams, err := UnmarshalClonePlatformExampleParams(bytes)
+//    bytes, err = clonePlatformExampleParams.Marshal()
 //
-//    platformExampleCloneRequest, err := UnmarshalPlatformExampleCloneRequest(bytes)
-//    bytes, err = platformExampleCloneRequest.Marshal()
+//    clonePlatformExampleRequest, err := UnmarshalClonePlatformExampleRequest(bytes)
+//    bytes, err = clonePlatformExampleRequest.Marshal()
 //
-//    platformExampleCloneResponse, err := UnmarshalPlatformExampleCloneResponse(bytes)
-//    bytes, err = platformExampleCloneResponse.Marshal()
+//    clonePlatformExampleResponse, err := UnmarshalClonePlatformExampleResponse(bytes)
+//    bytes, err = clonePlatformExampleResponse.Marshal()
 //
-//    platformExampleFetchParams, err := UnmarshalPlatformExampleFetchParams(bytes)
-//    bytes, err = platformExampleFetchParams.Marshal()
+//    fetchPlatformExampleParams, err := UnmarshalFetchPlatformExampleParams(bytes)
+//    bytes, err = fetchPlatformExampleParams.Marshal()
 //
-//    platformExampleFetchResponse, err := UnmarshalPlatformExampleFetchResponse(bytes)
-//    bytes, err = platformExampleFetchResponse.Marshal()
+//    fetchPlatformExampleResponse, err := UnmarshalFetchPlatformExampleResponse(bytes)
+//    bytes, err = fetchPlatformExampleResponse.Marshal()
 //
-//    platformExampleListParams, err := UnmarshalPlatformExampleListParams(bytes)
-//    bytes, err = platformExampleListParams.Marshal()
+//    listPlatformExamplesParams, err := UnmarshalListPlatformExamplesParams(bytes)
+//    bytes, err = listPlatformExamplesParams.Marshal()
 //
-//    platformExampleListResponse, err := UnmarshalPlatformExampleListResponse(bytes)
-//    bytes, err = platformExampleListResponse.Marshal()
+//    listPlatformExamplesResponse, err := UnmarshalListPlatformExamplesResponse(bytes)
+//    bytes, err = listPlatformExamplesResponse.Marshal()
 //
-//    platformExampleSearchRequest, err := UnmarshalPlatformExampleSearchRequest(bytes)
-//    bytes, err = platformExampleSearchRequest.Marshal()
+//    searchPlatformExamplesRequest, err := UnmarshalSearchPlatformExamplesRequest(bytes)
+//    bytes, err = searchPlatformExamplesRequest.Marshal()
 //
-//    platformExampleSearchResponse, err := UnmarshalPlatformExampleSearchResponse(bytes)
-//    bytes, err = platformExampleSearchResponse.Marshal()
+//    searchPlatformExamplesResponse, err := UnmarshalSearchPlatformExamplesResponse(bytes)
+//    bytes, err = searchPlatformExamplesResponse.Marshal()
 //
-//    platformGuideFetchParams, err := UnmarshalPlatformGuideFetchParams(bytes)
-//    bytes, err = platformGuideFetchParams.Marshal()
+//    fetchPlatformGuideParams, err := UnmarshalFetchPlatformGuideParams(bytes)
+//    bytes, err = fetchPlatformGuideParams.Marshal()
 //
-//    platformGuideFetchResponse, err := UnmarshalPlatformGuideFetchResponse(bytes)
-//    bytes, err = platformGuideFetchResponse.Marshal()
+//    fetchPlatformGuideResponse, err := UnmarshalFetchPlatformGuideResponse(bytes)
+//    bytes, err = fetchPlatformGuideResponse.Marshal()
 //
-//    platformGuideListParams, err := UnmarshalPlatformGuideListParams(bytes)
-//    bytes, err = platformGuideListParams.Marshal()
+//    listPlatformGuidesParams, err := UnmarshalListPlatformGuidesParams(bytes)
+//    bytes, err = listPlatformGuidesParams.Marshal()
 //
-//    platformGuideListResponse, err := UnmarshalPlatformGuideListResponse(bytes)
-//    bytes, err = platformGuideListResponse.Marshal()
+//    listPlatformGuidesResponse, err := UnmarshalListPlatformGuidesResponse(bytes)
+//    bytes, err = listPlatformGuidesResponse.Marshal()
 //
-//    platformGuideSearchRequest, err := UnmarshalPlatformGuideSearchRequest(bytes)
-//    bytes, err = platformGuideSearchRequest.Marshal()
+//    searchPlatformGuidesRequest, err := UnmarshalSearchPlatformGuidesRequest(bytes)
+//    bytes, err = searchPlatformGuidesRequest.Marshal()
 //
-//    platformGuideSearchResponse, err := UnmarshalPlatformGuideSearchResponse(bytes)
-//    bytes, err = platformGuideSearchResponse.Marshal()
+//    searchPlatformGuidesResponse, err := UnmarshalSearchPlatformGuidesResponse(bytes)
+//    bytes, err = searchPlatformGuidesResponse.Marshal()
 //
-//    platformManualFetchParams, err := UnmarshalPlatformManualFetchParams(bytes)
-//    bytes, err = platformManualFetchParams.Marshal()
+//    fetchPlatformManualParams, err := UnmarshalFetchPlatformManualParams(bytes)
+//    bytes, err = fetchPlatformManualParams.Marshal()
 //
-//    platformManualFetchResponse, err := UnmarshalPlatformManualFetchResponse(bytes)
-//    bytes, err = platformManualFetchResponse.Marshal()
+//    fetchPlatformManualResponse, err := UnmarshalFetchPlatformManualResponse(bytes)
+//    bytes, err = fetchPlatformManualResponse.Marshal()
 //
-//    platformManualListParams, err := UnmarshalPlatformManualListParams(bytes)
-//    bytes, err = platformManualListParams.Marshal()
+//    listPlatformManualsParams, err := UnmarshalListPlatformManualsParams(bytes)
+//    bytes, err = listPlatformManualsParams.Marshal()
 //
-//    platformManualListResponse, err := UnmarshalPlatformManualListResponse(bytes)
-//    bytes, err = platformManualListResponse.Marshal()
+//    listPlatformManualsResponse, err := UnmarshalListPlatformManualsResponse(bytes)
+//    bytes, err = listPlatformManualsResponse.Marshal()
 //
-//    platformManualSearchRequest, err := UnmarshalPlatformManualSearchRequest(bytes)
-//    bytes, err = platformManualSearchRequest.Marshal()
+//    searchPlatformManualsRequest, err := UnmarshalSearchPlatformManualsRequest(bytes)
+//    bytes, err = searchPlatformManualsRequest.Marshal()
 //
-//    platformManualSearchResponse, err := UnmarshalPlatformManualSearchResponse(bytes)
-//    bytes, err = platformManualSearchResponse.Marshal()
+//    searchPlatformManualsResponse, err := UnmarshalSearchPlatformManualsResponse(bytes)
+//    bytes, err = searchPlatformManualsResponse.Marshal()
 //
-//    platformModelListParams, err := UnmarshalPlatformModelListParams(bytes)
-//    bytes, err = platformModelListParams.Marshal()
+//    listPlatformModelsParams, err := UnmarshalListPlatformModelsParams(bytes)
+//    bytes, err = listPlatformModelsParams.Marshal()
 //
-//    platformModelListResponse, err := UnmarshalPlatformModelListResponse(bytes)
-//    bytes, err = platformModelListResponse.Marshal()
+//    listPlatformModelsResponse, err := UnmarshalListPlatformModelsResponse(bytes)
+//    bytes, err = listPlatformModelsResponse.Marshal()
 //
-//    platformSecretListParams, err := UnmarshalPlatformSecretListParams(bytes)
-//    bytes, err = platformSecretListParams.Marshal()
+//    listPlatformSecretsParams, err := UnmarshalListPlatformSecretsParams(bytes)
+//    bytes, err = listPlatformSecretsParams.Marshal()
 //
-//    platformSecretListResponse, err := UnmarshalPlatformSecretListResponse(bytes)
-//    bytes, err = platformSecretListResponse.Marshal()
+//    listPlatformSecretsResponse, err := UnmarshalListPlatformSecretsResponse(bytes)
+//    bytes, err = listPlatformSecretsResponse.Marshal()
 //
-//    platformTutorialFetchParams, err := UnmarshalPlatformTutorialFetchParams(bytes)
-//    bytes, err = platformTutorialFetchParams.Marshal()
+//    fetchPlatformTutorialParams, err := UnmarshalFetchPlatformTutorialParams(bytes)
+//    bytes, err = fetchPlatformTutorialParams.Marshal()
 //
-//    platformTutorialFetchResponse, err := UnmarshalPlatformTutorialFetchResponse(bytes)
-//    bytes, err = platformTutorialFetchResponse.Marshal()
+//    fetchPlatformTutorialResponse, err := UnmarshalFetchPlatformTutorialResponse(bytes)
+//    bytes, err = fetchPlatformTutorialResponse.Marshal()
 //
-//    platformTutorialListParams, err := UnmarshalPlatformTutorialListParams(bytes)
-//    bytes, err = platformTutorialListParams.Marshal()
+//    listPlatformTutorialsParams, err := UnmarshalListPlatformTutorialsParams(bytes)
+//    bytes, err = listPlatformTutorialsParams.Marshal()
 //
-//    platformTutorialListResponse, err := UnmarshalPlatformTutorialListResponse(bytes)
-//    bytes, err = platformTutorialListResponse.Marshal()
+//    listPlatformTutorialsResponse, err := UnmarshalListPlatformTutorialsResponse(bytes)
+//    bytes, err = listPlatformTutorialsResponse.Marshal()
 //
-//    platformTutorialSearchRequest, err := UnmarshalPlatformTutorialSearchRequest(bytes)
-//    bytes, err = platformTutorialSearchRequest.Marshal()
+//    searchPlatformTutorialsRequest, err := UnmarshalSearchPlatformTutorialsRequest(bytes)
+//    bytes, err = searchPlatformTutorialsRequest.Marshal()
 //
-//    platformTutorialSearchResponse, err := UnmarshalPlatformTutorialSearchResponse(bytes)
-//    bytes, err = platformTutorialSearchResponse.Marshal()
+//    searchPlatformTutorialsResponse, err := UnmarshalSearchPlatformTutorialsResponse(bytes)
+//    bytes, err = searchPlatformTutorialsResponse.Marshal()
 //
-//    policyDeleteParams, err := UnmarshalPolicyDeleteParams(bytes)
-//    bytes, err = policyDeleteParams.Marshal()
+//    deletePolicyParams, err := UnmarshalDeletePolicyParams(bytes)
+//    bytes, err = deletePolicyParams.Marshal()
 //
-//    policyDeleteRequest, err := UnmarshalPolicyDeleteRequest(bytes)
-//    bytes, err = policyDeleteRequest.Marshal()
+//    deletePolicyRequest, err := UnmarshalDeletePolicyRequest(bytes)
+//    bytes, err = deletePolicyRequest.Marshal()
 //
-//    policyDeleteResponse, err := UnmarshalPolicyDeleteResponse(bytes)
-//    bytes, err = policyDeleteResponse.Marshal()
+//    deletePolicyResponse, err := UnmarshalDeletePolicyResponse(bytes)
+//    bytes, err = deletePolicyResponse.Marshal()
 //
-//    policyFetchParams, err := UnmarshalPolicyFetchParams(bytes)
-//    bytes, err = policyFetchParams.Marshal()
+//    fetchPolicyParams, err := UnmarshalFetchPolicyParams(bytes)
+//    bytes, err = fetchPolicyParams.Marshal()
 //
-//    policyFetchResponse, err := UnmarshalPolicyFetchResponse(bytes)
-//    bytes, err = policyFetchResponse.Marshal()
+//    fetchPolicyResponse, err := UnmarshalFetchPolicyResponse(bytes)
+//    bytes, err = fetchPolicyResponse.Marshal()
 //
-//    policyUpdateParams, err := UnmarshalPolicyUpdateParams(bytes)
-//    bytes, err = policyUpdateParams.Marshal()
+//    updatePolicyParams, err := UnmarshalUpdatePolicyParams(bytes)
+//    bytes, err = updatePolicyParams.Marshal()
 //
-//    policyUpdateRequest, err := UnmarshalPolicyUpdateRequest(bytes)
-//    bytes, err = policyUpdateRequest.Marshal()
+//    updatePolicyRequest, err := UnmarshalUpdatePolicyRequest(bytes)
+//    bytes, err = updatePolicyRequest.Marshal()
 //
-//    policyUpdateResponse, err := UnmarshalPolicyUpdateResponse(bytes)
-//    bytes, err = policyUpdateResponse.Marshal()
+//    updatePolicyResponse, err := UnmarshalUpdatePolicyResponse(bytes)
+//    bytes, err = updatePolicyResponse.Marshal()
 //
-//    policyCreateRequest, err := UnmarshalPolicyCreateRequest(bytes)
-//    bytes, err = policyCreateRequest.Marshal()
+//    createPolicyRequest, err := UnmarshalCreatePolicyRequest(bytes)
+//    bytes, err = createPolicyRequest.Marshal()
 //
-//    policyCreateResponse, err := UnmarshalPolicyCreateResponse(bytes)
-//    bytes, err = policyCreateResponse.Marshal()
+//    createPolicyResponse, err := UnmarshalCreatePolicyResponse(bytes)
+//    bytes, err = createPolicyResponse.Marshal()
 //
-//    policyListParams, err := UnmarshalPolicyListParams(bytes)
-//    bytes, err = policyListParams.Marshal()
+//    listPoliciesParams, err := UnmarshalListPoliciesParams(bytes)
+//    bytes, err = listPoliciesParams.Marshal()
 //
-//    policyListResponse, err := UnmarshalPolicyListResponse(bytes)
-//    bytes, err = policyListResponse.Marshal()
+//    listPoliciesResponse, err := UnmarshalListPoliciesResponse(bytes)
+//    bytes, err = listPoliciesResponse.Marshal()
 //
-//    portalDeleteParams, err := UnmarshalPortalDeleteParams(bytes)
-//    bytes, err = portalDeleteParams.Marshal()
+//    deletePortalParams, err := UnmarshalDeletePortalParams(bytes)
+//    bytes, err = deletePortalParams.Marshal()
 //
-//    portalDeleteRequest, err := UnmarshalPortalDeleteRequest(bytes)
-//    bytes, err = portalDeleteRequest.Marshal()
+//    deletePortalRequest, err := UnmarshalDeletePortalRequest(bytes)
+//    bytes, err = deletePortalRequest.Marshal()
 //
-//    portalDeleteResponse, err := UnmarshalPortalDeleteResponse(bytes)
-//    bytes, err = portalDeleteResponse.Marshal()
+//    deletePortalResponse, err := UnmarshalDeletePortalResponse(bytes)
+//    bytes, err = deletePortalResponse.Marshal()
 //
-//    portalFetchParams, err := UnmarshalPortalFetchParams(bytes)
-//    bytes, err = portalFetchParams.Marshal()
+//    fetchPortalParams, err := UnmarshalFetchPortalParams(bytes)
+//    bytes, err = fetchPortalParams.Marshal()
 //
-//    portalFetchResponse, err := UnmarshalPortalFetchResponse(bytes)
-//    bytes, err = portalFetchResponse.Marshal()
+//    fetchPortalResponse, err := UnmarshalFetchPortalResponse(bytes)
+//    bytes, err = fetchPortalResponse.Marshal()
 //
-//    portalUpdateParams, err := UnmarshalPortalUpdateParams(bytes)
-//    bytes, err = portalUpdateParams.Marshal()
+//    updatePortalParams, err := UnmarshalUpdatePortalParams(bytes)
+//    bytes, err = updatePortalParams.Marshal()
 //
-//    portalUpdateRequest, err := UnmarshalPortalUpdateRequest(bytes)
-//    bytes, err = portalUpdateRequest.Marshal()
+//    updatePortalRequest, err := UnmarshalUpdatePortalRequest(bytes)
+//    bytes, err = updatePortalRequest.Marshal()
 //
-//    portalUpdateResponse, err := UnmarshalPortalUpdateResponse(bytes)
-//    bytes, err = portalUpdateResponse.Marshal()
+//    updatePortalResponse, err := UnmarshalUpdatePortalResponse(bytes)
+//    bytes, err = updatePortalResponse.Marshal()
 //
-//    portalCreateRequest, err := UnmarshalPortalCreateRequest(bytes)
-//    bytes, err = portalCreateRequest.Marshal()
+//    createPortalRequest, err := UnmarshalCreatePortalRequest(bytes)
+//    bytes, err = createPortalRequest.Marshal()
 //
-//    portalCreateResponse, err := UnmarshalPortalCreateResponse(bytes)
-//    bytes, err = portalCreateResponse.Marshal()
+//    createPortalResponse, err := UnmarshalCreatePortalResponse(bytes)
+//    bytes, err = createPortalResponse.Marshal()
 //
-//    portalListParams, err := UnmarshalPortalListParams(bytes)
-//    bytes, err = portalListParams.Marshal()
+//    listPortalsParams, err := UnmarshalListPortalsParams(bytes)
+//    bytes, err = listPortalsParams.Marshal()
 //
-//    portalListResponse, err := UnmarshalPortalListResponse(bytes)
-//    bytes, err = portalListResponse.Marshal()
+//    listPortalsResponse, err := UnmarshalListPortalsResponse(bytes)
+//    bytes, err = listPortalsResponse.Marshal()
 //
-//    secretAuthenticateParams, err := UnmarshalSecretAuthenticateParams(bytes)
-//    bytes, err = secretAuthenticateParams.Marshal()
+//    authenticateSecretParams, err := UnmarshalAuthenticateSecretParams(bytes)
+//    bytes, err = authenticateSecretParams.Marshal()
 //
-//    secretAuthenticateRequest, err := UnmarshalSecretAuthenticateRequest(bytes)
-//    bytes, err = secretAuthenticateRequest.Marshal()
+//    authenticateSecretRequest, err := UnmarshalAuthenticateSecretRequest(bytes)
+//    bytes, err = authenticateSecretRequest.Marshal()
 //
-//    secretAuthenticateResponse, err := UnmarshalSecretAuthenticateResponse(bytes)
-//    bytes, err = secretAuthenticateResponse.Marshal()
+//    authenticateSecretResponse, err := UnmarshalAuthenticateSecretResponse(bytes)
+//    bytes, err = authenticateSecretResponse.Marshal()
 //
-//    secretDeleteParams, err := UnmarshalSecretDeleteParams(bytes)
-//    bytes, err = secretDeleteParams.Marshal()
+//    deleteSecretParams, err := UnmarshalDeleteSecretParams(bytes)
+//    bytes, err = deleteSecretParams.Marshal()
 //
-//    secretDeleteRequest, err := UnmarshalSecretDeleteRequest(bytes)
-//    bytes, err = secretDeleteRequest.Marshal()
+//    deleteSecretRequest, err := UnmarshalDeleteSecretRequest(bytes)
+//    bytes, err = deleteSecretRequest.Marshal()
 //
-//    secretDeleteResponse, err := UnmarshalSecretDeleteResponse(bytes)
-//    bytes, err = secretDeleteResponse.Marshal()
+//    deleteSecretResponse, err := UnmarshalDeleteSecretResponse(bytes)
+//    bytes, err = deleteSecretResponse.Marshal()
 //
-//    secretFetchParams, err := UnmarshalSecretFetchParams(bytes)
-//    bytes, err = secretFetchParams.Marshal()
+//    fetchSecretParams, err := UnmarshalFetchSecretParams(bytes)
+//    bytes, err = fetchSecretParams.Marshal()
 //
-//    secretFetchResponse, err := UnmarshalSecretFetchResponse(bytes)
-//    bytes, err = secretFetchResponse.Marshal()
+//    fetchSecretResponse, err := UnmarshalFetchSecretResponse(bytes)
+//    bytes, err = fetchSecretResponse.Marshal()
 //
-//    secretRevokeParams, err := UnmarshalSecretRevokeParams(bytes)
-//    bytes, err = secretRevokeParams.Marshal()
+//    revokeSecretParams, err := UnmarshalRevokeSecretParams(bytes)
+//    bytes, err = revokeSecretParams.Marshal()
 //
-//    secretRevokeRequest, err := UnmarshalSecretRevokeRequest(bytes)
-//    bytes, err = secretRevokeRequest.Marshal()
+//    revokeSecretRequest, err := UnmarshalRevokeSecretRequest(bytes)
+//    bytes, err = revokeSecretRequest.Marshal()
 //
-//    secretRevokeResponse, err := UnmarshalSecretRevokeResponse(bytes)
-//    bytes, err = secretRevokeResponse.Marshal()
+//    revokeSecretResponse, err := UnmarshalRevokeSecretResponse(bytes)
+//    bytes, err = revokeSecretResponse.Marshal()
 //
-//    secretUpdateParams, err := UnmarshalSecretUpdateParams(bytes)
-//    bytes, err = secretUpdateParams.Marshal()
+//    updateSecretParams, err := UnmarshalUpdateSecretParams(bytes)
+//    bytes, err = updateSecretParams.Marshal()
 //
-//    secretUpdateRequest, err := UnmarshalSecretUpdateRequest(bytes)
-//    bytes, err = secretUpdateRequest.Marshal()
+//    updateSecretRequest, err := UnmarshalUpdateSecretRequest(bytes)
+//    bytes, err = updateSecretRequest.Marshal()
 //
-//    secretUpdateResponse, err := UnmarshalSecretUpdateResponse(bytes)
-//    bytes, err = secretUpdateResponse.Marshal()
+//    updateSecretResponse, err := UnmarshalUpdateSecretResponse(bytes)
+//    bytes, err = updateSecretResponse.Marshal()
 //
-//    secretVerifyParams, err := UnmarshalSecretVerifyParams(bytes)
-//    bytes, err = secretVerifyParams.Marshal()
+//    verifySecretParams, err := UnmarshalVerifySecretParams(bytes)
+//    bytes, err = verifySecretParams.Marshal()
 //
-//    secretVerifyRequest, err := UnmarshalSecretVerifyRequest(bytes)
-//    bytes, err = secretVerifyRequest.Marshal()
+//    verifySecretRequest, err := UnmarshalVerifySecretRequest(bytes)
+//    bytes, err = verifySecretRequest.Marshal()
 //
-//    secretVerifyResponse, err := UnmarshalSecretVerifyResponse(bytes)
-//    bytes, err = secretVerifyResponse.Marshal()
+//    verifySecretResponse, err := UnmarshalVerifySecretResponse(bytes)
+//    bytes, err = verifySecretResponse.Marshal()
 //
-//    secretCreateRequest, err := UnmarshalSecretCreateRequest(bytes)
-//    bytes, err = secretCreateRequest.Marshal()
+//    createSecretRequest, err := UnmarshalCreateSecretRequest(bytes)
+//    bytes, err = createSecretRequest.Marshal()
 //
-//    secretCreateResponse, err := UnmarshalSecretCreateResponse(bytes)
-//    bytes, err = secretCreateResponse.Marshal()
+//    createSecretResponse, err := UnmarshalCreateSecretResponse(bytes)
+//    bytes, err = createSecretResponse.Marshal()
 //
-//    secretListParams, err := UnmarshalSecretListParams(bytes)
-//    bytes, err = secretListParams.Marshal()
+//    listSecretsParams, err := UnmarshalListSecretsParams(bytes)
+//    bytes, err = listSecretsParams.Marshal()
 //
-//    secretListResponse, err := UnmarshalSecretListResponse(bytes)
-//    bytes, err = secretListResponse.Marshal()
+//    listSecretsResponse, err := UnmarshalListSecretsResponse(bytes)
+//    bytes, err = listSecretsResponse.Marshal()
 //
-//    skillsetAbilityDeleteParams, err := UnmarshalSkillsetAbilityDeleteParams(bytes)
-//    bytes, err = skillsetAbilityDeleteParams.Marshal()
+//    deleteSkillsetAbilityParams, err := UnmarshalDeleteSkillsetAbilityParams(bytes)
+//    bytes, err = deleteSkillsetAbilityParams.Marshal()
 //
-//    skillsetAbilityDeleteRequest, err := UnmarshalSkillsetAbilityDeleteRequest(bytes)
-//    bytes, err = skillsetAbilityDeleteRequest.Marshal()
+//    deleteSkillsetAbilityRequest, err := UnmarshalDeleteSkillsetAbilityRequest(bytes)
+//    bytes, err = deleteSkillsetAbilityRequest.Marshal()
 //
-//    skillsetAbilityDeleteResponse, err := UnmarshalSkillsetAbilityDeleteResponse(bytes)
-//    bytes, err = skillsetAbilityDeleteResponse.Marshal()
+//    deleteSkillsetAbilityResponse, err := UnmarshalDeleteSkillsetAbilityResponse(bytes)
+//    bytes, err = deleteSkillsetAbilityResponse.Marshal()
 //
-//    skillsetAbilityExecuteParams, err := UnmarshalSkillsetAbilityExecuteParams(bytes)
-//    bytes, err = skillsetAbilityExecuteParams.Marshal()
+//    executeSkillsetAbilityParams, err := UnmarshalExecuteSkillsetAbilityParams(bytes)
+//    bytes, err = executeSkillsetAbilityParams.Marshal()
 //
-//    skillsetAbilityExecuteRequest, err := UnmarshalSkillsetAbilityExecuteRequest(bytes)
-//    bytes, err = skillsetAbilityExecuteRequest.Marshal()
+//    executeSkillsetAbilityRequest, err := UnmarshalExecuteSkillsetAbilityRequest(bytes)
+//    bytes, err = executeSkillsetAbilityRequest.Marshal()
 //
-//    skillsetAbilityExecuteResponse, err := UnmarshalSkillsetAbilityExecuteResponse(bytes)
-//    bytes, err = skillsetAbilityExecuteResponse.Marshal()
+//    executeSkillsetAbilityResponse, err := UnmarshalExecuteSkillsetAbilityResponse(bytes)
+//    bytes, err = executeSkillsetAbilityResponse.Marshal()
 //
-//    skillsetAbilityFetchParams, err := UnmarshalSkillsetAbilityFetchParams(bytes)
-//    bytes, err = skillsetAbilityFetchParams.Marshal()
+//    fetchSkillsetAbilityParams, err := UnmarshalFetchSkillsetAbilityParams(bytes)
+//    bytes, err = fetchSkillsetAbilityParams.Marshal()
 //
-//    skillsetAbilityFetchResponse, err := UnmarshalSkillsetAbilityFetchResponse(bytes)
-//    bytes, err = skillsetAbilityFetchResponse.Marshal()
+//    fetchSkillsetAbilityResponse, err := UnmarshalFetchSkillsetAbilityResponse(bytes)
+//    bytes, err = fetchSkillsetAbilityResponse.Marshal()
 //
-//    skillsetAbilityUpdateParams, err := UnmarshalSkillsetAbilityUpdateParams(bytes)
-//    bytes, err = skillsetAbilityUpdateParams.Marshal()
+//    updateSkillsetAbilityParams, err := UnmarshalUpdateSkillsetAbilityParams(bytes)
+//    bytes, err = updateSkillsetAbilityParams.Marshal()
 //
-//    skillsetAbilityUpdateRequest, err := UnmarshalSkillsetAbilityUpdateRequest(bytes)
-//    bytes, err = skillsetAbilityUpdateRequest.Marshal()
+//    updateSkillsetAbilityRequest, err := UnmarshalUpdateSkillsetAbilityRequest(bytes)
+//    bytes, err = updateSkillsetAbilityRequest.Marshal()
 //
-//    skillsetAbilityUpdateResponse, err := UnmarshalSkillsetAbilityUpdateResponse(bytes)
-//    bytes, err = skillsetAbilityUpdateResponse.Marshal()
+//    updateSkillsetAbilityResponse, err := UnmarshalUpdateSkillsetAbilityResponse(bytes)
+//    bytes, err = updateSkillsetAbilityResponse.Marshal()
 //
-//    skillsetAbilityCreateParams, err := UnmarshalSkillsetAbilityCreateParams(bytes)
-//    bytes, err = skillsetAbilityCreateParams.Marshal()
+//    createSkillsetAbilityParams, err := UnmarshalCreateSkillsetAbilityParams(bytes)
+//    bytes, err = createSkillsetAbilityParams.Marshal()
 //
-//    skillsetAbilityCreateRequest, err := UnmarshalSkillsetAbilityCreateRequest(bytes)
-//    bytes, err = skillsetAbilityCreateRequest.Marshal()
+//    createSkillsetAbilityRequest, err := UnmarshalCreateSkillsetAbilityRequest(bytes)
+//    bytes, err = createSkillsetAbilityRequest.Marshal()
 //
-//    skillsetAbilityCreateResponse, err := UnmarshalSkillsetAbilityCreateResponse(bytes)
-//    bytes, err = skillsetAbilityCreateResponse.Marshal()
+//    createSkillsetAbilityResponse, err := UnmarshalCreateSkillsetAbilityResponse(bytes)
+//    bytes, err = createSkillsetAbilityResponse.Marshal()
 //
-//    skillsetAbilityExportParams, err := UnmarshalSkillsetAbilityExportParams(bytes)
-//    bytes, err = skillsetAbilityExportParams.Marshal()
+//    exportSkillsetAbilitiesParams, err := UnmarshalExportSkillsetAbilitiesParams(bytes)
+//    bytes, err = exportSkillsetAbilitiesParams.Marshal()
 //
-//    skillsetAbilityExportResponse, err := UnmarshalSkillsetAbilityExportResponse(bytes)
-//    bytes, err = skillsetAbilityExportResponse.Marshal()
+//    exportSkillsetAbilitiesResponse, err := UnmarshalExportSkillsetAbilitiesResponse(bytes)
+//    bytes, err = exportSkillsetAbilitiesResponse.Marshal()
 //
-//    skillsetAbilityListParams, err := UnmarshalSkillsetAbilityListParams(bytes)
-//    bytes, err = skillsetAbilityListParams.Marshal()
+//    listSkillsetAbilitiesParams, err := UnmarshalListSkillsetAbilitiesParams(bytes)
+//    bytes, err = listSkillsetAbilitiesParams.Marshal()
 //
-//    skillsetAbilityListResponse, err := UnmarshalSkillsetAbilityListResponse(bytes)
-//    bytes, err = skillsetAbilityListResponse.Marshal()
+//    listSkillsetAbilitiesResponse, err := UnmarshalListSkillsetAbilitiesResponse(bytes)
+//    bytes, err = listSkillsetAbilitiesResponse.Marshal()
 //
-//    skillsetDeleteParams, err := UnmarshalSkillsetDeleteParams(bytes)
-//    bytes, err = skillsetDeleteParams.Marshal()
+//    deleteSkillsetParams, err := UnmarshalDeleteSkillsetParams(bytes)
+//    bytes, err = deleteSkillsetParams.Marshal()
 //
-//    skillsetDeleteRequest, err := UnmarshalSkillsetDeleteRequest(bytes)
-//    bytes, err = skillsetDeleteRequest.Marshal()
+//    deleteSkillsetRequest, err := UnmarshalDeleteSkillsetRequest(bytes)
+//    bytes, err = deleteSkillsetRequest.Marshal()
 //
-//    skillsetDeleteResponse, err := UnmarshalSkillsetDeleteResponse(bytes)
-//    bytes, err = skillsetDeleteResponse.Marshal()
+//    deleteSkillsetResponse, err := UnmarshalDeleteSkillsetResponse(bytes)
+//    bytes, err = deleteSkillsetResponse.Marshal()
 //
-//    skillsetFetchParams, err := UnmarshalSkillsetFetchParams(bytes)
-//    bytes, err = skillsetFetchParams.Marshal()
+//    fetchSkillsetParams, err := UnmarshalFetchSkillsetParams(bytes)
+//    bytes, err = fetchSkillsetParams.Marshal()
 //
-//    skillsetFetchResponse, err := UnmarshalSkillsetFetchResponse(bytes)
-//    bytes, err = skillsetFetchResponse.Marshal()
+//    fetchSkillsetResponse, err := UnmarshalFetchSkillsetResponse(bytes)
+//    bytes, err = fetchSkillsetResponse.Marshal()
 //
-//    skillsetUpdateParams, err := UnmarshalSkillsetUpdateParams(bytes)
-//    bytes, err = skillsetUpdateParams.Marshal()
+//    updateSkillsetParams, err := UnmarshalUpdateSkillsetParams(bytes)
+//    bytes, err = updateSkillsetParams.Marshal()
 //
-//    skillsetUpdateRequest, err := UnmarshalSkillsetUpdateRequest(bytes)
-//    bytes, err = skillsetUpdateRequest.Marshal()
+//    updateSkillsetRequest, err := UnmarshalUpdateSkillsetRequest(bytes)
+//    bytes, err = updateSkillsetRequest.Marshal()
 //
-//    skillsetUpdateResponse, err := UnmarshalSkillsetUpdateResponse(bytes)
-//    bytes, err = skillsetUpdateResponse.Marshal()
+//    updateSkillsetResponse, err := UnmarshalUpdateSkillsetResponse(bytes)
+//    bytes, err = updateSkillsetResponse.Marshal()
 //
-//    skillsetCreateRequest, err := UnmarshalSkillsetCreateRequest(bytes)
-//    bytes, err = skillsetCreateRequest.Marshal()
+//    createSkillsetRequest, err := UnmarshalCreateSkillsetRequest(bytes)
+//    bytes, err = createSkillsetRequest.Marshal()
 //
-//    skillsetCreateResponse, err := UnmarshalSkillsetCreateResponse(bytes)
-//    bytes, err = skillsetCreateResponse.Marshal()
+//    createSkillsetResponse, err := UnmarshalCreateSkillsetResponse(bytes)
+//    bytes, err = createSkillsetResponse.Marshal()
 //
-//    skillsetListParams, err := UnmarshalSkillsetListParams(bytes)
-//    bytes, err = skillsetListParams.Marshal()
+//    listSkillsetsParams, err := UnmarshalListSkillsetsParams(bytes)
+//    bytes, err = listSkillsetsParams.Marshal()
 //
-//    skillsetListResponse, err := UnmarshalSkillsetListResponse(bytes)
-//    bytes, err = skillsetListResponse.Marshal()
+//    listSkillsetsResponse, err := UnmarshalListSkillsetsResponse(bytes)
+//    bytes, err = listSkillsetsResponse.Marshal()
 //
-//    spaceFetchParams, err := UnmarshalSpaceFetchParams(bytes)
-//    bytes, err = spaceFetchParams.Marshal()
+//    fetchSpaceParams, err := UnmarshalFetchSpaceParams(bytes)
+//    bytes, err = fetchSpaceParams.Marshal()
 //
-//    spaceFetchResponse, err := UnmarshalSpaceFetchResponse(bytes)
-//    bytes, err = spaceFetchResponse.Marshal()
+//    fetchSpaceResponse, err := UnmarshalFetchSpaceResponse(bytes)
+//    bytes, err = fetchSpaceResponse.Marshal()
 //
-//    spaceUpdateParams, err := UnmarshalSpaceUpdateParams(bytes)
-//    bytes, err = spaceUpdateParams.Marshal()
+//    updateSpaceParams, err := UnmarshalUpdateSpaceParams(bytes)
+//    bytes, err = updateSpaceParams.Marshal()
 //
-//    spaceUpdateRequest, err := UnmarshalSpaceUpdateRequest(bytes)
-//    bytes, err = spaceUpdateRequest.Marshal()
+//    updateSpaceRequest, err := UnmarshalUpdateSpaceRequest(bytes)
+//    bytes, err = updateSpaceRequest.Marshal()
 //
-//    spaceUpdateResponse, err := UnmarshalSpaceUpdateResponse(bytes)
-//    bytes, err = spaceUpdateResponse.Marshal()
+//    updateSpaceResponse, err := UnmarshalUpdateSpaceResponse(bytes)
+//    bytes, err = updateSpaceResponse.Marshal()
 //
-//    spaceCreateRequest, err := UnmarshalSpaceCreateRequest(bytes)
-//    bytes, err = spaceCreateRequest.Marshal()
+//    createSpaceRequest, err := UnmarshalCreateSpaceRequest(bytes)
+//    bytes, err = createSpaceRequest.Marshal()
 //
-//    spaceCreateResponse, err := UnmarshalSpaceCreateResponse(bytes)
-//    bytes, err = spaceCreateResponse.Marshal()
+//    createSpaceResponse, err := UnmarshalCreateSpaceResponse(bytes)
+//    bytes, err = createSpaceResponse.Marshal()
 //
-//    spaceExportParams, err := UnmarshalSpaceExportParams(bytes)
-//    bytes, err = spaceExportParams.Marshal()
+//    exportSpacesParams, err := UnmarshalExportSpacesParams(bytes)
+//    bytes, err = exportSpacesParams.Marshal()
 //
-//    spaceExportResponse, err := UnmarshalSpaceExportResponse(bytes)
-//    bytes, err = spaceExportResponse.Marshal()
+//    exportSpacesResponse, err := UnmarshalExportSpacesResponse(bytes)
+//    bytes, err = exportSpacesResponse.Marshal()
 //
-//    spaceListParams, err := UnmarshalSpaceListParams(bytes)
-//    bytes, err = spaceListParams.Marshal()
+//    listSpacesParams, err := UnmarshalListSpacesParams(bytes)
+//    bytes, err = listSpacesParams.Marshal()
 //
-//    spaceListResponse, err := UnmarshalSpaceListResponse(bytes)
-//    bytes, err = spaceListResponse.Marshal()
+//    listSpacesResponse, err := UnmarshalListSpacesResponse(bytes)
+//    bytes, err = listSpacesResponse.Marshal()
 //
-//    taskDeleteParams, err := UnmarshalTaskDeleteParams(bytes)
-//    bytes, err = taskDeleteParams.Marshal()
+//    deleteTaskParams, err := UnmarshalDeleteTaskParams(bytes)
+//    bytes, err = deleteTaskParams.Marshal()
 //
-//    taskDeleteRequest, err := UnmarshalTaskDeleteRequest(bytes)
-//    bytes, err = taskDeleteRequest.Marshal()
+//    deleteTaskRequest, err := UnmarshalDeleteTaskRequest(bytes)
+//    bytes, err = deleteTaskRequest.Marshal()
 //
-//    taskDeleteResponse, err := UnmarshalTaskDeleteResponse(bytes)
-//    bytes, err = taskDeleteResponse.Marshal()
+//    deleteTaskResponse, err := UnmarshalDeleteTaskResponse(bytes)
+//    bytes, err = deleteTaskResponse.Marshal()
 //
-//    taskFetchParams, err := UnmarshalTaskFetchParams(bytes)
-//    bytes, err = taskFetchParams.Marshal()
+//    fetchTaskParams, err := UnmarshalFetchTaskParams(bytes)
+//    bytes, err = fetchTaskParams.Marshal()
 //
-//    taskFetchResponse, err := UnmarshalTaskFetchResponse(bytes)
-//    bytes, err = taskFetchResponse.Marshal()
+//    fetchTaskResponse, err := UnmarshalFetchTaskResponse(bytes)
+//    bytes, err = fetchTaskResponse.Marshal()
 //
-//    taskTriggerParams, err := UnmarshalTaskTriggerParams(bytes)
-//    bytes, err = taskTriggerParams.Marshal()
+//    triggerTaskParams, err := UnmarshalTriggerTaskParams(bytes)
+//    bytes, err = triggerTaskParams.Marshal()
 //
-//    taskTriggerRequest, err := UnmarshalTaskTriggerRequest(bytes)
-//    bytes, err = taskTriggerRequest.Marshal()
+//    triggerTaskRequest, err := UnmarshalTriggerTaskRequest(bytes)
+//    bytes, err = triggerTaskRequest.Marshal()
 //
-//    taskTriggerResponse, err := UnmarshalTaskTriggerResponse(bytes)
-//    bytes, err = taskTriggerResponse.Marshal()
+//    triggerTaskResponse, err := UnmarshalTriggerTaskResponse(bytes)
+//    bytes, err = triggerTaskResponse.Marshal()
 //
-//    taskUpdateParams, err := UnmarshalTaskUpdateParams(bytes)
-//    bytes, err = taskUpdateParams.Marshal()
+//    updateTaskParams, err := UnmarshalUpdateTaskParams(bytes)
+//    bytes, err = updateTaskParams.Marshal()
 //
-//    taskUpdateRequest, err := UnmarshalTaskUpdateRequest(bytes)
-//    bytes, err = taskUpdateRequest.Marshal()
+//    updateTaskRequest, err := UnmarshalUpdateTaskRequest(bytes)
+//    bytes, err = updateTaskRequest.Marshal()
 //
-//    taskUpdateResponse, err := UnmarshalTaskUpdateResponse(bytes)
-//    bytes, err = taskUpdateResponse.Marshal()
+//    updateTaskResponse, err := UnmarshalUpdateTaskResponse(bytes)
+//    bytes, err = updateTaskResponse.Marshal()
 //
-//    taskCreateRequest, err := UnmarshalTaskCreateRequest(bytes)
-//    bytes, err = taskCreateRequest.Marshal()
+//    createTaskRequest, err := UnmarshalCreateTaskRequest(bytes)
+//    bytes, err = createTaskRequest.Marshal()
 //
-//    taskCreateResponse, err := UnmarshalTaskCreateResponse(bytes)
-//    bytes, err = taskCreateResponse.Marshal()
+//    createTaskResponse, err := UnmarshalCreateTaskResponse(bytes)
+//    bytes, err = createTaskResponse.Marshal()
 //
-//    taskExportParams, err := UnmarshalTaskExportParams(bytes)
-//    bytes, err = taskExportParams.Marshal()
+//    exportTasksParams, err := UnmarshalExportTasksParams(bytes)
+//    bytes, err = exportTasksParams.Marshal()
 //
-//    taskExportResponse, err := UnmarshalTaskExportResponse(bytes)
-//    bytes, err = taskExportResponse.Marshal()
+//    exportTasksResponse, err := UnmarshalExportTasksResponse(bytes)
+//    bytes, err = exportTasksResponse.Marshal()
 //
-//    taskListParams, err := UnmarshalTaskListParams(bytes)
-//    bytes, err = taskListParams.Marshal()
+//    listTasksParams, err := UnmarshalListTasksParams(bytes)
+//    bytes, err = listTasksParams.Marshal()
 //
-//    taskListResponse, err := UnmarshalTaskListResponse(bytes)
-//    bytes, err = taskListResponse.Marshal()
+//    listTasksResponse, err := UnmarshalListTasksResponse(bytes)
+//    bytes, err = listTasksResponse.Marshal()
 //
-//    teamListParams, err := UnmarshalTeamListParams(bytes)
-//    bytes, err = teamListParams.Marshal()
+//    listTeamsParams, err := UnmarshalListTeamsParams(bytes)
+//    bytes, err = listTeamsParams.Marshal()
 //
-//    teamListResponse, err := UnmarshalTeamListResponse(bytes)
-//    bytes, err = teamListResponse.Marshal()
+//    listTeamsResponse, err := UnmarshalListTeamsResponse(bytes)
+//    bytes, err = listTeamsResponse.Marshal()
 //
-//    usageFetchResponse, err := UnmarshalUsageFetchResponse(bytes)
-//    bytes, err = usageFetchResponse.Marshal()
+//    fetchUsageResponse, err := UnmarshalFetchUsageResponse(bytes)
+//    bytes, err = fetchUsageResponse.Marshal()
 //
-//    usageSeriesFetchResponse, err := UnmarshalUsageSeriesFetchResponse(bytes)
-//    bytes, err = usageSeriesFetchResponse.Marshal()
+//    fetchUsageSeriesResponse, err := UnmarshalFetchUsageSeriesResponse(bytes)
+//    bytes, err = fetchUsageSeriesResponse.Marshal()
 //
 //    message, err := UnmarshalMessage(bytes)
 //    bytes, err = message.Marshal()
@@ -2043,14 +2043,6 @@ import "time"
 
 import "encoding/json"
 
-// Type aliases for visibility types that quicktype collapsed
-// These are all the same underlying enum (private, protected, public)
-type BlueprintVisibility = SecretVisibility
-type BotVisibility = SecretVisibility
-type DatasetVisibility = SecretVisibility
-type SkillsetVisibility = SecretVisibility
-type FileVisibility = SecretVisibility
-
 func UnmarshalGraphqlRequest(data []byte) (GraphqlRequest, error) {
 	var r GraphqlRequest
 	err := json.Unmarshal(data, &r)
@@ -2071,6505 +2063,6507 @@ func (r *GraphqlResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformReportListParams(data []byte) (PlatformReportListParams, error) {
-	var r PlatformReportListParams
+func UnmarshalListPlatformReportsParams(data []byte) (ListPlatformReportsParams, error) {
+	var r ListPlatformReportsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformReportListParams) Marshal() ([]byte, error) {
+func (r *ListPlatformReportsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformReportListResponse(data []byte) (PlatformReportListResponse, error) {
-	var r PlatformReportListResponse
+func UnmarshalListPlatformReportsResponse(data []byte) (ListPlatformReportsResponse, error) {
+	var r ListPlatformReportsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformReportListResponse) Marshal() ([]byte, error) {
+func (r *ListPlatformReportsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalReportGenerateParams(data []byte) (ReportGenerateParams, error) {
-	var r ReportGenerateParams
+func UnmarshalGenerateReportParams(data []byte) (GenerateReportParams, error) {
+	var r GenerateReportParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ReportGenerateParams) Marshal() ([]byte, error) {
+func (r *GenerateReportParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type ReportGenerateRequest map[string]interface{}
+type GenerateReportRequest map[string]interface{}
 
-func UnmarshalReportGenerateRequest(data []byte) (ReportGenerateRequest, error) {
-	var r ReportGenerateRequest
+func UnmarshalGenerateReportRequest(data []byte) (GenerateReportRequest, error) {
+	var r GenerateReportRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ReportGenerateRequest) Marshal() ([]byte, error) {
+func (r *GenerateReportRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type ReportGenerateResponse map[string]interface{}
+type GenerateReportResponse map[string]interface{}
 
-func UnmarshalReportGenerateResponse(data []byte) (ReportGenerateResponse, error) {
-	var r ReportGenerateResponse
+func UnmarshalGenerateReportResponse(data []byte) (GenerateReportResponse, error) {
+	var r GenerateReportResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ReportGenerateResponse) Marshal() ([]byte, error) {
+func (r *GenerateReportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type ReportGenerateRequest1 map[string]map[string]interface{}
+type GenerateReportsRequest map[string]map[string]interface{}
 
-func UnmarshalReportGenerateRequest1(data []byte) (ReportGenerateRequest1, error) {
-	var r ReportGenerateRequest1
+func UnmarshalGenerateReportsRequest(data []byte) (GenerateReportsRequest, error) {
+	var r GenerateReportsRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ReportGenerateRequest1) Marshal() ([]byte, error) {
+func (r *GenerateReportsRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type ReportGenerateResponse1 map[string]ReportGenerateResponse1_Value
+type GenerateReportsResponse map[string]GenerateReportsResponseValue
 
-func UnmarshalReportGenerateResponse1(data []byte) (ReportGenerateResponse1, error) {
-	var r ReportGenerateResponse1
+func UnmarshalGenerateReportsResponse(data []byte) (GenerateReportsResponse, error) {
+	var r GenerateReportsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ReportGenerateResponse1) Marshal() ([]byte, error) {
+func (r *GenerateReportsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintCloneParams(data []byte) (BlueprintCloneParams, error) {
-	var r BlueprintCloneParams
+func UnmarshalCloneBlueprintParams(data []byte) (CloneBlueprintParams, error) {
+	var r CloneBlueprintParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintCloneParams) Marshal() ([]byte, error) {
+func (r *CloneBlueprintParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type BlueprintCloneRequest map[string]interface{}
+type CloneBlueprintRequest map[string]interface{}
 
-func UnmarshalBlueprintCloneRequest(data []byte) (BlueprintCloneRequest, error) {
-	var r BlueprintCloneRequest
+func UnmarshalCloneBlueprintRequest(data []byte) (CloneBlueprintRequest, error) {
+	var r CloneBlueprintRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintCloneRequest) Marshal() ([]byte, error) {
+func (r *CloneBlueprintRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintCloneResponse(data []byte) (BlueprintCloneResponse, error) {
-	var r BlueprintCloneResponse
+func UnmarshalCloneBlueprintResponse(data []byte) (CloneBlueprintResponse, error) {
+	var r CloneBlueprintResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintCloneResponse) Marshal() ([]byte, error) {
+func (r *CloneBlueprintResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintDeleteParams(data []byte) (BlueprintDeleteParams, error) {
-	var r BlueprintDeleteParams
+func UnmarshalDeleteBlueprintParams(data []byte) (DeleteBlueprintParams, error) {
+	var r DeleteBlueprintParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteBlueprintParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintDeleteRequest(data []byte) (BlueprintDeleteRequest, error) {
-	var r BlueprintDeleteRequest
+func UnmarshalDeleteBlueprintRequest(data []byte) (DeleteBlueprintRequest, error) {
+	var r DeleteBlueprintRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteBlueprintRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintDeleteResponse(data []byte) (BlueprintDeleteResponse, error) {
-	var r BlueprintDeleteResponse
+func UnmarshalDeleteBlueprintResponse(data []byte) (DeleteBlueprintResponse, error) {
+	var r DeleteBlueprintResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteBlueprintResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintFetchParams(data []byte) (BlueprintFetchParams, error) {
-	var r BlueprintFetchParams
+func UnmarshalFetchBlueprintParams(data []byte) (FetchBlueprintParams, error) {
+	var r FetchBlueprintParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintFetchParams) Marshal() ([]byte, error) {
+func (r *FetchBlueprintParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintFetchResponse(data []byte) (BlueprintFetchResponse, error) {
-	var r BlueprintFetchResponse
+func UnmarshalFetchBlueprintResponse(data []byte) (FetchBlueprintResponse, error) {
+	var r FetchBlueprintResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchBlueprintResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintResourceListParams(data []byte) (BlueprintResourceListParams, error) {
-	var r BlueprintResourceListParams
+func UnmarshalListBlueprintResourcesParams(data []byte) (ListBlueprintResourcesParams, error) {
+	var r ListBlueprintResourcesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintResourceListParams) Marshal() ([]byte, error) {
+func (r *ListBlueprintResourcesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintResourceListResponse(data []byte) (BlueprintResourceListResponse, error) {
-	var r BlueprintResourceListResponse
+func UnmarshalListBlueprintResourcesResponse(data []byte) (ListBlueprintResourcesResponse, error) {
+	var r ListBlueprintResourcesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintResourceListResponse) Marshal() ([]byte, error) {
+func (r *ListBlueprintResourcesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintUpdateParams(data []byte) (BlueprintUpdateParams, error) {
-	var r BlueprintUpdateParams
+func UnmarshalUpdateBlueprintParams(data []byte) (UpdateBlueprintParams, error) {
+	var r UpdateBlueprintParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateBlueprintParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintUpdateRequest(data []byte) (BlueprintUpdateRequest, error) {
-	var r BlueprintUpdateRequest
+func UnmarshalUpdateBlueprintRequest(data []byte) (UpdateBlueprintRequest, error) {
+	var r UpdateBlueprintRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateBlueprintRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintUpdateResponse(data []byte) (BlueprintUpdateResponse, error) {
-	var r BlueprintUpdateResponse
+func UnmarshalUpdateBlueprintResponse(data []byte) (UpdateBlueprintResponse, error) {
+	var r UpdateBlueprintResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateBlueprintResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintCreateRequest(data []byte) (BlueprintCreateRequest, error) {
-	var r BlueprintCreateRequest
+func UnmarshalCreateBlueprintRequest(data []byte) (CreateBlueprintRequest, error) {
+	var r CreateBlueprintRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateBlueprintRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintCreateResponse(data []byte) (BlueprintCreateResponse, error) {
-	var r BlueprintCreateResponse
+func UnmarshalCreateBlueprintResponse(data []byte) (CreateBlueprintResponse, error) {
+	var r CreateBlueprintResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateBlueprintResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintListParams(data []byte) (BlueprintListParams, error) {
-	var r BlueprintListParams
+func UnmarshalListBlueprintsParams(data []byte) (ListBlueprintsParams, error) {
+	var r ListBlueprintsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintListParams) Marshal() ([]byte, error) {
+func (r *ListBlueprintsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintListResponse(data []byte) (BlueprintListResponse, error) {
-	var r BlueprintListResponse
+func UnmarshalListBlueprintsResponse(data []byte) (ListBlueprintsResponse, error) {
+	var r ListBlueprintsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintListResponse) Marshal() ([]byte, error) {
+func (r *ListBlueprintsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotCloneParams(data []byte) (BotCloneParams, error) {
-	var r BotCloneParams
+func UnmarshalCloneBotParams(data []byte) (CloneBotParams, error) {
+	var r CloneBotParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotCloneParams) Marshal() ([]byte, error) {
+func (r *CloneBotParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type BotCloneRequest interface{}
+type CloneBotRequest interface{}
 
-func UnmarshalBotCloneRequest(data []byte) (BotCloneRequest, error) {
-	var r BotCloneRequest
+func UnmarshalCloneBotRequest(data []byte) (CloneBotRequest, error) {
+	var r CloneBotRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-// BotCloneRequest.Marshal cannot be defined (interface type)
+func (r *CloneBotRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
 
-func UnmarshalBotCloneResponse(data []byte) (BotCloneResponse, error) {
-	var r BotCloneResponse
+func UnmarshalCloneBotResponse(data []byte) (CloneBotResponse, error) {
+	var r CloneBotResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotCloneResponse) Marshal() ([]byte, error) {
+func (r *CloneBotResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotDeleteParams(data []byte) (BotDeleteParams, error) {
-	var r BotDeleteParams
+func UnmarshalDeleteBotParams(data []byte) (DeleteBotParams, error) {
+	var r DeleteBotParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteBotParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type BotDeleteRequest map[string]interface{}
+type DeleteBotRequest map[string]interface{}
 
-func UnmarshalBotDeleteRequest(data []byte) (BotDeleteRequest, error) {
-	var r BotDeleteRequest
+func UnmarshalDeleteBotRequest(data []byte) (DeleteBotRequest, error) {
+	var r DeleteBotRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteBotRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotDeleteResponse(data []byte) (BotDeleteResponse, error) {
-	var r BotDeleteResponse
+func UnmarshalDeleteBotResponse(data []byte) (DeleteBotResponse, error) {
+	var r DeleteBotResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteBotResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotDownvoteParams(data []byte) (BotDownvoteParams, error) {
-	var r BotDownvoteParams
+func UnmarshalDownvoteBotParams(data []byte) (DownvoteBotParams, error) {
+	var r DownvoteBotParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotDownvoteParams) Marshal() ([]byte, error) {
+func (r *DownvoteBotParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotDownvoteRequest(data []byte) (BotDownvoteRequest, error) {
-	var r BotDownvoteRequest
+func UnmarshalDownvoteBotRequest(data []byte) (DownvoteBotRequest, error) {
+	var r DownvoteBotRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotDownvoteRequest) Marshal() ([]byte, error) {
+func (r *DownvoteBotRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotDownvoteResponse(data []byte) (BotDownvoteResponse, error) {
-	var r BotDownvoteResponse
+func UnmarshalDownvoteBotResponse(data []byte) (DownvoteBotResponse, error) {
+	var r DownvoteBotResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotDownvoteResponse) Marshal() ([]byte, error) {
+func (r *DownvoteBotResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotFetchParams(data []byte) (BotFetchParams, error) {
-	var r BotFetchParams
+func UnmarshalFetchBotParams(data []byte) (FetchBotParams, error) {
+	var r FetchBotParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotFetchParams) Marshal() ([]byte, error) {
+func (r *FetchBotParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotFetchResponse(data []byte) (BotFetchResponse, error) {
-	var r BotFetchResponse
+func UnmarshalFetchBotResponse(data []byte) (FetchBotResponse, error) {
+	var r FetchBotResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchBotResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotMemorySearchParams(data []byte) (BotMemorySearchParams, error) {
-	var r BotMemorySearchParams
+func UnmarshalSearchBotMemoryParams(data []byte) (SearchBotMemoryParams, error) {
+	var r SearchBotMemoryParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotMemorySearchParams) Marshal() ([]byte, error) {
+func (r *SearchBotMemoryParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotMemorySearchRequest(data []byte) (BotMemorySearchRequest, error) {
-	var r BotMemorySearchRequest
+func UnmarshalSearchBotMemoryRequest(data []byte) (SearchBotMemoryRequest, error) {
+	var r SearchBotMemoryRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotMemorySearchRequest) Marshal() ([]byte, error) {
+func (r *SearchBotMemoryRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotMemorySearchResponse(data []byte) (BotMemorySearchResponse, error) {
-	var r BotMemorySearchResponse
+func UnmarshalSearchBotMemoryResponse(data []byte) (SearchBotMemoryResponse, error) {
+	var r SearchBotMemoryResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotMemorySearchResponse) Marshal() ([]byte, error) {
+func (r *SearchBotMemoryResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotSessionCreateParams(data []byte) (BotSessionCreateParams, error) {
-	var r BotSessionCreateParams
+func UnmarshalCreateBotSessionParams(data []byte) (CreateBotSessionParams, error) {
+	var r CreateBotSessionParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotSessionCreateParams) Marshal() ([]byte, error) {
+func (r *CreateBotSessionParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotSessionCreateRequest(data []byte) (BotSessionCreateRequest, error) {
-	var r BotSessionCreateRequest
+func UnmarshalCreateBotSessionRequest(data []byte) (CreateBotSessionRequest, error) {
+	var r CreateBotSessionRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotSessionCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateBotSessionRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotSessionCreateResponse(data []byte) (BotSessionCreateResponse, error) {
-	var r BotSessionCreateResponse
+func UnmarshalCreateBotSessionResponse(data []byte) (CreateBotSessionResponse, error) {
+	var r CreateBotSessionResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotSessionCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateBotSessionResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotUpdateParams(data []byte) (BotUpdateParams, error) {
-	var r BotUpdateParams
+func UnmarshalUpdateBotParams(data []byte) (UpdateBotParams, error) {
+	var r UpdateBotParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateBotParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotUpdateRequest(data []byte) (BotUpdateRequest, error) {
-	var r BotUpdateRequest
+func UnmarshalUpdateBotRequest(data []byte) (UpdateBotRequest, error) {
+	var r UpdateBotRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateBotRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotUpdateResponse(data []byte) (BotUpdateResponse, error) {
-	var r BotUpdateResponse
+func UnmarshalUpdateBotResponse(data []byte) (UpdateBotResponse, error) {
+	var r UpdateBotResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateBotResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotUpvoteParams(data []byte) (BotUpvoteParams, error) {
-	var r BotUpvoteParams
+func UnmarshalUpvoteBotParams(data []byte) (UpvoteBotParams, error) {
+	var r UpvoteBotParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotUpvoteParams) Marshal() ([]byte, error) {
+func (r *UpvoteBotParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotUpvoteRequest(data []byte) (BotUpvoteRequest, error) {
-	var r BotUpvoteRequest
+func UnmarshalUpvoteBotRequest(data []byte) (UpvoteBotRequest, error) {
+	var r UpvoteBotRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotUpvoteRequest) Marshal() ([]byte, error) {
+func (r *UpvoteBotRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotUpvoteResponse(data []byte) (BotUpvoteResponse, error) {
-	var r BotUpvoteResponse
+func UnmarshalUpvoteBotResponse(data []byte) (UpvoteBotResponse, error) {
+	var r UpvoteBotResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotUpvoteResponse) Marshal() ([]byte, error) {
+func (r *UpvoteBotResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotUsageFetchParams(data []byte) (BotUsageFetchParams, error) {
-	var r BotUsageFetchParams
+func UnmarshalFetchBotUsageParams(data []byte) (FetchBotUsageParams, error) {
+	var r FetchBotUsageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotUsageFetchParams) Marshal() ([]byte, error) {
+func (r *FetchBotUsageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotUsageFetchResponse(data []byte) (BotUsageFetchResponse, error) {
-	var r BotUsageFetchResponse
+func UnmarshalFetchBotUsageResponse(data []byte) (FetchBotUsageResponse, error) {
+	var r FetchBotUsageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotUsageFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchBotUsageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotCreateRequest(data []byte) (BotCreateRequest, error) {
-	var r BotCreateRequest
+func UnmarshalCreateBotRequest(data []byte) (CreateBotRequest, error) {
+	var r CreateBotRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateBotRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotCreateResponse(data []byte) (BotCreateResponse, error) {
-	var r BotCreateResponse
+func UnmarshalCreateBotResponse(data []byte) (CreateBotResponse, error) {
+	var r CreateBotResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateBotResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotListParams(data []byte) (BotListParams, error) {
-	var r BotListParams
+func UnmarshalListBotsParams(data []byte) (ListBotsParams, error) {
+	var r ListBotsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotListParams) Marshal() ([]byte, error) {
+func (r *ListBotsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotListResponse(data []byte) (BotListResponse, error) {
-	var r BotListResponse
+func UnmarshalListBotsResponse(data []byte) (ListBotsResponse, error) {
+	var r ListBotsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotListResponse) Marshal() ([]byte, error) {
+func (r *ListBotsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalChannelPublishParams(data []byte) (ChannelPublishParams, error) {
-	var r ChannelPublishParams
+func UnmarshalPublishChannelMessageParams(data []byte) (PublishChannelMessageParams, error) {
+	var r PublishChannelMessageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ChannelPublishParams) Marshal() ([]byte, error) {
+func (r *PublishChannelMessageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalChannelPublishRequest(data []byte) (ChannelPublishRequest, error) {
-	var r ChannelPublishRequest
+func UnmarshalPublishChannelMessageRequest(data []byte) (PublishChannelMessageRequest, error) {
+	var r PublishChannelMessageRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ChannelPublishRequest) Marshal() ([]byte, error) {
+func (r *PublishChannelMessageRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalChannelPublishResponse(data []byte) (ChannelPublishResponse, error) {
-	var r ChannelPublishResponse
+func UnmarshalPublishChannelMessageResponse(data []byte) (PublishChannelMessageResponse, error) {
+	var r PublishChannelMessageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ChannelPublishResponse) Marshal() ([]byte, error) {
+func (r *PublishChannelMessageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalChannelSubscribeParams(data []byte) (ChannelSubscribeParams, error) {
-	var r ChannelSubscribeParams
+func UnmarshalSubscribeChannelMessagesParams(data []byte) (SubscribeChannelMessagesParams, error) {
+	var r SubscribeChannelMessagesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ChannelSubscribeParams) Marshal() ([]byte, error) {
+func (r *SubscribeChannelMessagesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalChannelSubscribeRequest(data []byte) (ChannelSubscribeRequest, error) {
-	var r ChannelSubscribeRequest
+func UnmarshalSubscribeChannelMessagesRequest(data []byte) (SubscribeChannelMessagesRequest, error) {
+	var r SubscribeChannelMessagesRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ChannelSubscribeRequest) Marshal() ([]byte, error) {
+func (r *SubscribeChannelMessagesRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactConversationListParams(data []byte) (ContactConversationListParams, error) {
-	var r ContactConversationListParams
+func UnmarshalListContactConversationsParams(data []byte) (ListContactConversationsParams, error) {
+	var r ListContactConversationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactConversationListParams) Marshal() ([]byte, error) {
+func (r *ListContactConversationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactConversationListResponse(data []byte) (ContactConversationListResponse, error) {
-	var r ContactConversationListResponse
+func UnmarshalListContactConversationsResponse(data []byte) (ListContactConversationsResponse, error) {
+	var r ListContactConversationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactConversationListResponse) Marshal() ([]byte, error) {
+func (r *ListContactConversationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactDeleteParams(data []byte) (ContactDeleteParams, error) {
-	var r ContactDeleteParams
+func UnmarshalDeleteContactParams(data []byte) (DeleteContactParams, error) {
+	var r DeleteContactParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteContactParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type ContactDeleteRequest map[string]interface{}
+type DeleteContactRequest map[string]interface{}
 
-func UnmarshalContactDeleteRequest(data []byte) (ContactDeleteRequest, error) {
-	var r ContactDeleteRequest
+func UnmarshalDeleteContactRequest(data []byte) (DeleteContactRequest, error) {
+	var r DeleteContactRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteContactRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactDeleteResponse(data []byte) (ContactDeleteResponse, error) {
-	var r ContactDeleteResponse
+func UnmarshalDeleteContactResponse(data []byte) (DeleteContactResponse, error) {
+	var r DeleteContactResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteContactResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactFetchParams(data []byte) (ContactFetchParams, error) {
-	var r ContactFetchParams
+func UnmarshalFetchContactParams(data []byte) (FetchContactParams, error) {
+	var r FetchContactParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactFetchParams) Marshal() ([]byte, error) {
+func (r *FetchContactParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactFetchResponse(data []byte) (ContactFetchResponse, error) {
-	var r ContactFetchResponse
+func UnmarshalFetchContactResponse(data []byte) (FetchContactResponse, error) {
+	var r FetchContactResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchContactResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactMemoryListParams(data []byte) (ContactMemoryListParams, error) {
-	var r ContactMemoryListParams
+func UnmarshalListContactMemoriesParams(data []byte) (ListContactMemoriesParams, error) {
+	var r ListContactMemoriesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactMemoryListParams) Marshal() ([]byte, error) {
+func (r *ListContactMemoriesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactMemoryListResponse(data []byte) (ContactMemoryListResponse, error) {
-	var r ContactMemoryListResponse
+func UnmarshalListContactMemoriesResponse(data []byte) (ListContactMemoriesResponse, error) {
+	var r ListContactMemoriesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactMemoryListResponse) Marshal() ([]byte, error) {
+func (r *ListContactMemoriesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactMemorySearchParams(data []byte) (ContactMemorySearchParams, error) {
-	var r ContactMemorySearchParams
+func UnmarshalSearchContactMemoryParams(data []byte) (SearchContactMemoryParams, error) {
+	var r SearchContactMemoryParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactMemorySearchParams) Marshal() ([]byte, error) {
+func (r *SearchContactMemoryParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactMemorySearchRequest(data []byte) (ContactMemorySearchRequest, error) {
-	var r ContactMemorySearchRequest
+func UnmarshalSearchContactMemoryRequest(data []byte) (SearchContactMemoryRequest, error) {
+	var r SearchContactMemoryRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactMemorySearchRequest) Marshal() ([]byte, error) {
+func (r *SearchContactMemoryRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactMemorySearchResponse(data []byte) (ContactMemorySearchResponse, error) {
-	var r ContactMemorySearchResponse
+func UnmarshalSearchContactMemoryResponse(data []byte) (SearchContactMemoryResponse, error) {
+	var r SearchContactMemoryResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactMemorySearchResponse) Marshal() ([]byte, error) {
+func (r *SearchContactMemoryResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSecretAuthenticateParams(data []byte) (ContactSecretAuthenticateParams, error) {
-	var r ContactSecretAuthenticateParams
+func UnmarshalAuthenticateContactSecretParams(data []byte) (AuthenticateContactSecretParams, error) {
+	var r AuthenticateContactSecretParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretAuthenticateParams) Marshal() ([]byte, error) {
+func (r *AuthenticateContactSecretParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type ContactSecretAuthenticateRequest map[string]interface{}
+type AuthenticateContactSecretRequest map[string]interface{}
 
-func UnmarshalContactSecretAuthenticateRequest(data []byte) (ContactSecretAuthenticateRequest, error) {
-	var r ContactSecretAuthenticateRequest
+func UnmarshalAuthenticateContactSecretRequest(data []byte) (AuthenticateContactSecretRequest, error) {
+	var r AuthenticateContactSecretRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretAuthenticateRequest) Marshal() ([]byte, error) {
+func (r *AuthenticateContactSecretRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSecretAuthenticateResponse(data []byte) (ContactSecretAuthenticateResponse, error) {
-	var r ContactSecretAuthenticateResponse
+func UnmarshalAuthenticateContactSecretResponse(data []byte) (AuthenticateContactSecretResponse, error) {
+	var r AuthenticateContactSecretResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretAuthenticateResponse) Marshal() ([]byte, error) {
+func (r *AuthenticateContactSecretResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSecretRevokeParams(data []byte) (ContactSecretRevokeParams, error) {
-	var r ContactSecretRevokeParams
+func UnmarshalRevokeContactSecretParams(data []byte) (RevokeContactSecretParams, error) {
+	var r RevokeContactSecretParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretRevokeParams) Marshal() ([]byte, error) {
+func (r *RevokeContactSecretParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type ContactSecretRevokeRequest map[string]interface{}
+type RevokeContactSecretRequest map[string]interface{}
 
-func UnmarshalContactSecretRevokeRequest(data []byte) (ContactSecretRevokeRequest, error) {
-	var r ContactSecretRevokeRequest
+func UnmarshalRevokeContactSecretRequest(data []byte) (RevokeContactSecretRequest, error) {
+	var r RevokeContactSecretRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretRevokeRequest) Marshal() ([]byte, error) {
+func (r *RevokeContactSecretRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSecretRevokeResponse(data []byte) (ContactSecretRevokeResponse, error) {
-	var r ContactSecretRevokeResponse
+func UnmarshalRevokeContactSecretResponse(data []byte) (RevokeContactSecretResponse, error) {
+	var r RevokeContactSecretResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretRevokeResponse) Marshal() ([]byte, error) {
+func (r *RevokeContactSecretResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSecretVerifyParams(data []byte) (ContactSecretVerifyParams, error) {
-	var r ContactSecretVerifyParams
+func UnmarshalVerifyContactSecretParams(data []byte) (VerifyContactSecretParams, error) {
+	var r VerifyContactSecretParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretVerifyParams) Marshal() ([]byte, error) {
+func (r *VerifyContactSecretParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type ContactSecretVerifyRequest map[string]interface{}
+type VerifyContactSecretRequest map[string]interface{}
 
-func UnmarshalContactSecretVerifyRequest(data []byte) (ContactSecretVerifyRequest, error) {
-	var r ContactSecretVerifyRequest
+func UnmarshalVerifyContactSecretRequest(data []byte) (VerifyContactSecretRequest, error) {
+	var r VerifyContactSecretRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretVerifyRequest) Marshal() ([]byte, error) {
+func (r *VerifyContactSecretRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSecretVerifyResponse(data []byte) (ContactSecretVerifyResponse, error) {
-	var r ContactSecretVerifyResponse
+func UnmarshalVerifyContactSecretResponse(data []byte) (VerifyContactSecretResponse, error) {
+	var r VerifyContactSecretResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretVerifyResponse) Marshal() ([]byte, error) {
+func (r *VerifyContactSecretResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSecretListParams(data []byte) (ContactSecretListParams, error) {
-	var r ContactSecretListParams
+func UnmarshalListContactSecretsParams(data []byte) (ListContactSecretsParams, error) {
+	var r ListContactSecretsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretListParams) Marshal() ([]byte, error) {
+func (r *ListContactSecretsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSecretListResponse(data []byte) (ContactSecretListResponse, error) {
-	var r ContactSecretListResponse
+func UnmarshalListContactSecretsResponse(data []byte) (ListContactSecretsResponse, error) {
+	var r ListContactSecretsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretListResponse) Marshal() ([]byte, error) {
+func (r *ListContactSecretsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSpaceListParams(data []byte) (ContactSpaceListParams, error) {
-	var r ContactSpaceListParams
+func UnmarshalListContactSpacesParams(data []byte) (ListContactSpacesParams, error) {
+	var r ListContactSpacesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSpaceListParams) Marshal() ([]byte, error) {
+func (r *ListContactSpacesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSpaceListResponse(data []byte) (ContactSpaceListResponse, error) {
-	var r ContactSpaceListResponse
+func UnmarshalListContactSpacesResponse(data []byte) (ListContactSpacesResponse, error) {
+	var r ListContactSpacesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSpaceListResponse) Marshal() ([]byte, error) {
+func (r *ListContactSpacesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactTaskListParams(data []byte) (ContactTaskListParams, error) {
-	var r ContactTaskListParams
+func UnmarshalListContactTasksParams(data []byte) (ListContactTasksParams, error) {
+	var r ListContactTasksParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactTaskListParams) Marshal() ([]byte, error) {
+func (r *ListContactTasksParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactTaskListResponse(data []byte) (ContactTaskListResponse, error) {
-	var r ContactTaskListResponse
+func UnmarshalListContactTasksResponse(data []byte) (ListContactTasksResponse, error) {
+	var r ListContactTasksResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactTaskListResponse) Marshal() ([]byte, error) {
+func (r *ListContactTasksResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactUpdateParams(data []byte) (ContactUpdateParams, error) {
-	var r ContactUpdateParams
+func UnmarshalUpdateContactParams(data []byte) (UpdateContactParams, error) {
+	var r UpdateContactParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateContactParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactUpdateRequest(data []byte) (ContactUpdateRequest, error) {
-	var r ContactUpdateRequest
+func UnmarshalUpdateContactRequest(data []byte) (UpdateContactRequest, error) {
+	var r UpdateContactRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateContactRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactUpdateResponse(data []byte) (ContactUpdateResponse, error) {
-	var r ContactUpdateResponse
+func UnmarshalUpdateContactResponse(data []byte) (UpdateContactResponse, error) {
+	var r UpdateContactResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateContactResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactCreateRequest(data []byte) (ContactCreateRequest, error) {
-	var r ContactCreateRequest
+func UnmarshalCreateContactRequest(data []byte) (CreateContactRequest, error) {
+	var r CreateContactRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateContactRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactCreateResponse(data []byte) (ContactCreateResponse, error) {
-	var r ContactCreateResponse
+func UnmarshalCreateContactResponse(data []byte) (CreateContactResponse, error) {
+	var r CreateContactResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateContactResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactEnsureRequest(data []byte) (ContactEnsureRequest, error) {
-	var r ContactEnsureRequest
+func UnmarshalEnsureContactRequest(data []byte) (EnsureContactRequest, error) {
+	var r EnsureContactRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactEnsureRequest) Marshal() ([]byte, error) {
+func (r *EnsureContactRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactEnsureResponse(data []byte) (ContactEnsureResponse, error) {
-	var r ContactEnsureResponse
+func UnmarshalEnsureContactResponse(data []byte) (EnsureContactResponse, error) {
+	var r EnsureContactResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactEnsureResponse) Marshal() ([]byte, error) {
+func (r *EnsureContactResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactExportParams(data []byte) (ContactExportParams, error) {
-	var r ContactExportParams
+func UnmarshalExportContactsParams(data []byte) (ExportContactsParams, error) {
+	var r ExportContactsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactExportParams) Marshal() ([]byte, error) {
+func (r *ExportContactsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactExportResponse(data []byte) (ContactExportResponse, error) {
-	var r ContactExportResponse
+func UnmarshalExportContactsResponse(data []byte) (ExportContactsResponse, error) {
+	var r ExportContactsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactExportResponse) Marshal() ([]byte, error) {
+func (r *ExportContactsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactListParams(data []byte) (ContactListParams, error) {
-	var r ContactListParams
+func UnmarshalListContactsParams(data []byte) (ListContactsParams, error) {
+	var r ListContactsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactListParams) Marshal() ([]byte, error) {
+func (r *ListContactsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactListResponse(data []byte) (ContactListResponse, error) {
-	var r ContactListResponse
+func UnmarshalListContactsResponse(data []byte) (ListContactsResponse, error) {
+	var r ListContactsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactListResponse) Marshal() ([]byte, error) {
+func (r *ListContactsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationAttachmentUploadParams(data []byte) (ConversationAttachmentUploadParams, error) {
-	var r ConversationAttachmentUploadParams
+func UnmarshalUploadConversationAttachmentParams(data []byte) (UploadConversationAttachmentParams, error) {
+	var r UploadConversationAttachmentParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationAttachmentUploadParams) Marshal() ([]byte, error) {
+func (r *UploadConversationAttachmentParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationAttachmentUploadRequest(data []byte) (ConversationAttachmentUploadRequest, error) {
-	var r ConversationAttachmentUploadRequest
+func UnmarshalUploadConversationAttachmentRequest(data []byte) (UploadConversationAttachmentRequest, error) {
+	var r UploadConversationAttachmentRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationAttachmentUploadRequest) Marshal() ([]byte, error) {
+func (r *UploadConversationAttachmentRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationAttachmentUploadResponse(data []byte) (ConversationAttachmentUploadResponse, error) {
-	var r ConversationAttachmentUploadResponse
+func UnmarshalUploadConversationAttachmentResponse(data []byte) (UploadConversationAttachmentResponse, error) {
+	var r UploadConversationAttachmentResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationAttachmentUploadResponse) Marshal() ([]byte, error) {
+func (r *UploadConversationAttachmentResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationCompleteParams(data []byte) (ConversationCompleteParams, error) {
-	var r ConversationCompleteParams
+func UnmarshalCompleteConversationMessageParams(data []byte) (CompleteConversationMessageParams, error) {
+	var r CompleteConversationMessageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationCompleteParams) Marshal() ([]byte, error) {
+func (r *CompleteConversationMessageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationCompleteRequest(data []byte) (ConversationCompleteRequest, error) {
-	var r ConversationCompleteRequest
+func UnmarshalCompleteConversationMessageRequest(data []byte) (CompleteConversationMessageRequest, error) {
+	var r CompleteConversationMessageRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationCompleteRequest) Marshal() ([]byte, error) {
+func (r *CompleteConversationMessageRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationCompleteResponse(data []byte) (ConversationCompleteResponse, error) {
-	var r ConversationCompleteResponse
+func UnmarshalCompleteConversationMessageResponse(data []byte) (CompleteConversationMessageResponse, error) {
+	var r CompleteConversationMessageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationCompleteResponse) Marshal() ([]byte, error) {
+func (r *CompleteConversationMessageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationContactUpsertParams(data []byte) (ConversationContactUpsertParams, error) {
-	var r ConversationContactUpsertParams
+func UnmarshalUpsertConversationContactParams(data []byte) (UpsertConversationContactParams, error) {
+	var r UpsertConversationContactParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationContactUpsertParams) Marshal() ([]byte, error) {
+func (r *UpsertConversationContactParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationContactUpsertRequest(data []byte) (ConversationContactUpsertRequest, error) {
-	var r ConversationContactUpsertRequest
+func UnmarshalUpsertConversationContactRequest(data []byte) (UpsertConversationContactRequest, error) {
+	var r UpsertConversationContactRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationContactUpsertRequest) Marshal() ([]byte, error) {
+func (r *UpsertConversationContactRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationContactUpsertResponse(data []byte) (ConversationContactUpsertResponse, error) {
-	var r ConversationContactUpsertResponse
+func UnmarshalUpsertConversationContactResponse(data []byte) (UpsertConversationContactResponse, error) {
+	var r UpsertConversationContactResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationContactUpsertResponse) Marshal() ([]byte, error) {
+func (r *UpsertConversationContactResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationDeleteParams(data []byte) (ConversationDeleteParams, error) {
-	var r ConversationDeleteParams
+func UnmarshalDeleteConversationParams(data []byte) (DeleteConversationParams, error) {
+	var r DeleteConversationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteConversationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type ConversationDeleteRequest map[string]interface{}
+type DeleteConversationRequest map[string]interface{}
 
-func UnmarshalConversationDeleteRequest(data []byte) (ConversationDeleteRequest, error) {
-	var r ConversationDeleteRequest
+func UnmarshalDeleteConversationRequest(data []byte) (DeleteConversationRequest, error) {
+	var r DeleteConversationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteConversationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationDeleteResponse(data []byte) (ConversationDeleteResponse, error) {
-	var r ConversationDeleteResponse
+func UnmarshalDeleteConversationResponse(data []byte) (DeleteConversationResponse, error) {
+	var r DeleteConversationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteConversationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationDispatchRequest(data []byte) (ConversationDispatchRequest, error) {
-	var r ConversationDispatchRequest
+func UnmarshalDispatchStatefulConversationRequest(data []byte) (DispatchStatefulConversationRequest, error) {
+	var r DispatchStatefulConversationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationDispatchRequest) Marshal() ([]byte, error) {
+func (r *DispatchStatefulConversationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationDispatchResponse(data []byte) (ConversationDispatchResponse, error) {
-	var r ConversationDispatchResponse
+func UnmarshalDispatchStatefulConversationResponse(data []byte) (DispatchStatefulConversationResponse, error) {
+	var r DispatchStatefulConversationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationDispatchResponse) Marshal() ([]byte, error) {
+func (r *DispatchStatefulConversationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationDownvoteParams(data []byte) (ConversationDownvoteParams, error) {
-	var r ConversationDownvoteParams
+func UnmarshalDownvoteConversationParams(data []byte) (DownvoteConversationParams, error) {
+	var r DownvoteConversationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationDownvoteParams) Marshal() ([]byte, error) {
+func (r *DownvoteConversationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationDownvoteRequest(data []byte) (ConversationDownvoteRequest, error) {
-	var r ConversationDownvoteRequest
+func UnmarshalDownvoteConversationRequest(data []byte) (DownvoteConversationRequest, error) {
+	var r DownvoteConversationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationDownvoteRequest) Marshal() ([]byte, error) {
+func (r *DownvoteConversationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationDownvoteResponse(data []byte) (ConversationDownvoteResponse, error) {
-	var r ConversationDownvoteResponse
+func UnmarshalDownvoteConversationResponse(data []byte) (DownvoteConversationResponse, error) {
+	var r DownvoteConversationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationDownvoteResponse) Marshal() ([]byte, error) {
+func (r *DownvoteConversationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationFetchParams(data []byte) (ConversationFetchParams, error) {
-	var r ConversationFetchParams
+func UnmarshalFetchConversationParams(data []byte) (FetchConversationParams, error) {
+	var r FetchConversationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationFetchParams) Marshal() ([]byte, error) {
+func (r *FetchConversationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationFetchResponse(data []byte) (ConversationFetchResponse, error) {
-	var r ConversationFetchResponse
+func UnmarshalFetchConversationResponse(data []byte) (FetchConversationResponse, error) {
+	var r FetchConversationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchConversationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageDeleteParams(data []byte) (ConversationMessageDeleteParams, error) {
-	var r ConversationMessageDeleteParams
+func UnmarshalDeleteConversationMessageParams(data []byte) (DeleteConversationMessageParams, error) {
+	var r DeleteConversationMessageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteConversationMessageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type ConversationMessageDeleteRequest map[string]interface{}
+type DeleteConversationMessageRequest map[string]interface{}
 
-func UnmarshalConversationMessageDeleteRequest(data []byte) (ConversationMessageDeleteRequest, error) {
-	var r ConversationMessageDeleteRequest
+func UnmarshalDeleteConversationMessageRequest(data []byte) (DeleteConversationMessageRequest, error) {
+	var r DeleteConversationMessageRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteConversationMessageRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageDeleteResponse(data []byte) (ConversationMessageDeleteResponse, error) {
-	var r ConversationMessageDeleteResponse
+func UnmarshalDeleteConversationMessageResponse(data []byte) (DeleteConversationMessageResponse, error) {
+	var r DeleteConversationMessageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteConversationMessageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageDownvoteParams(data []byte) (ConversationMessageDownvoteParams, error) {
-	var r ConversationMessageDownvoteParams
+func UnmarshalDownvoteConversationMessageParams(data []byte) (DownvoteConversationMessageParams, error) {
+	var r DownvoteConversationMessageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageDownvoteParams) Marshal() ([]byte, error) {
+func (r *DownvoteConversationMessageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageDownvoteRequest(data []byte) (ConversationMessageDownvoteRequest, error) {
-	var r ConversationMessageDownvoteRequest
+func UnmarshalDownvoteConversationMessageRequest(data []byte) (DownvoteConversationMessageRequest, error) {
+	var r DownvoteConversationMessageRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageDownvoteRequest) Marshal() ([]byte, error) {
+func (r *DownvoteConversationMessageRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageDownvoteResponse(data []byte) (ConversationMessageDownvoteResponse, error) {
-	var r ConversationMessageDownvoteResponse
+func UnmarshalDownvoteConversationMessageResponse(data []byte) (DownvoteConversationMessageResponse, error) {
+	var r DownvoteConversationMessageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageDownvoteResponse) Marshal() ([]byte, error) {
+func (r *DownvoteConversationMessageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageFetchParams(data []byte) (ConversationMessageFetchParams, error) {
-	var r ConversationMessageFetchParams
+func UnmarshalFetchConversationMessageParams(data []byte) (FetchConversationMessageParams, error) {
+	var r FetchConversationMessageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageFetchParams) Marshal() ([]byte, error) {
+func (r *FetchConversationMessageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageFetchResponse(data []byte) (ConversationMessageFetchResponse, error) {
-	var r ConversationMessageFetchResponse
+func UnmarshalFetchConversationMessageResponse(data []byte) (FetchConversationMessageResponse, error) {
+	var r FetchConversationMessageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchConversationMessageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageSynthesizeParams(data []byte) (ConversationMessageSynthesizeParams, error) {
-	var r ConversationMessageSynthesizeParams
+func UnmarshalSynthesizeConversationMessageParams(data []byte) (SynthesizeConversationMessageParams, error) {
+	var r SynthesizeConversationMessageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageSynthesizeParams) Marshal() ([]byte, error) {
+func (r *SynthesizeConversationMessageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type ConversationMessageSynthesizeRequest map[string]interface{}
+type SynthesizeConversationMessageRequest map[string]interface{}
 
-func UnmarshalConversationMessageSynthesizeRequest(data []byte) (ConversationMessageSynthesizeRequest, error) {
-	var r ConversationMessageSynthesizeRequest
+func UnmarshalSynthesizeConversationMessageRequest(data []byte) (SynthesizeConversationMessageRequest, error) {
+	var r SynthesizeConversationMessageRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageSynthesizeRequest) Marshal() ([]byte, error) {
+func (r *SynthesizeConversationMessageRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageSynthesizeResponse(data []byte) (ConversationMessageSynthesizeResponse, error) {
-	var r ConversationMessageSynthesizeResponse
+func UnmarshalSynthesizeConversationMessageResponse(data []byte) (SynthesizeConversationMessageResponse, error) {
+	var r SynthesizeConversationMessageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageSynthesizeResponse) Marshal() ([]byte, error) {
+func (r *SynthesizeConversationMessageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageUpdateParams(data []byte) (ConversationMessageUpdateParams, error) {
-	var r ConversationMessageUpdateParams
+func UnmarshalUpdateConversationMessageParams(data []byte) (UpdateConversationMessageParams, error) {
+	var r UpdateConversationMessageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateConversationMessageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageUpdateRequest(data []byte) (ConversationMessageUpdateRequest, error) {
-	var r ConversationMessageUpdateRequest
+func UnmarshalUpdateConversationMessageRequest(data []byte) (UpdateConversationMessageRequest, error) {
+	var r UpdateConversationMessageRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateConversationMessageRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageUpdateResponse(data []byte) (ConversationMessageUpdateResponse, error) {
-	var r ConversationMessageUpdateResponse
+func UnmarshalUpdateConversationMessageResponse(data []byte) (UpdateConversationMessageResponse, error) {
+	var r UpdateConversationMessageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateConversationMessageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageUpvoteParams(data []byte) (ConversationMessageUpvoteParams, error) {
-	var r ConversationMessageUpvoteParams
+func UnmarshalUpvoteConversationMessageParams(data []byte) (UpvoteConversationMessageParams, error) {
+	var r UpvoteConversationMessageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageUpvoteParams) Marshal() ([]byte, error) {
+func (r *UpvoteConversationMessageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageUpvoteRequest(data []byte) (ConversationMessageUpvoteRequest, error) {
-	var r ConversationMessageUpvoteRequest
+func UnmarshalUpvoteConversationMessageRequest(data []byte) (UpvoteConversationMessageRequest, error) {
+	var r UpvoteConversationMessageRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageUpvoteRequest) Marshal() ([]byte, error) {
+func (r *UpvoteConversationMessageRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageUpvoteResponse(data []byte) (ConversationMessageUpvoteResponse, error) {
-	var r ConversationMessageUpvoteResponse
+func UnmarshalUpvoteConversationMessageResponse(data []byte) (UpvoteConversationMessageResponse, error) {
+	var r UpvoteConversationMessageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageUpvoteResponse) Marshal() ([]byte, error) {
+func (r *UpvoteConversationMessageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageCreateParams(data []byte) (ConversationMessageCreateParams, error) {
-	var r ConversationMessageCreateParams
+func UnmarshalCreateConversationMessageParams(data []byte) (CreateConversationMessageParams, error) {
+	var r CreateConversationMessageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageCreateParams) Marshal() ([]byte, error) {
+func (r *CreateConversationMessageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageCreateRequest(data []byte) (ConversationMessageCreateRequest, error) {
-	var r ConversationMessageCreateRequest
+func UnmarshalCreateConversationMessageRequest(data []byte) (CreateConversationMessageRequest, error) {
+	var r CreateConversationMessageRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateConversationMessageRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageCreateResponse(data []byte) (ConversationMessageCreateResponse, error) {
-	var r ConversationMessageCreateResponse
+func UnmarshalCreateConversationMessageResponse(data []byte) (CreateConversationMessageResponse, error) {
+	var r CreateConversationMessageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateConversationMessageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageListParams(data []byte) (ConversationMessageListParams, error) {
-	var r ConversationMessageListParams
+func UnmarshalListConversationMessagesParams(data []byte) (ListConversationMessagesParams, error) {
+	var r ListConversationMessagesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageListParams) Marshal() ([]byte, error) {
+func (r *ListConversationMessagesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessageListResponse(data []byte) (ConversationMessageListResponse, error) {
-	var r ConversationMessageListResponse
+func UnmarshalListConversationMessagesResponse(data []byte) (ListConversationMessagesResponse, error) {
+	var r ListConversationMessagesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessageListResponse) Marshal() ([]byte, error) {
+func (r *ListConversationMessagesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationReceiveParams(data []byte) (ConversationReceiveParams, error) {
-	var r ConversationReceiveParams
+func UnmarshalReceiveConversationMessageParams(data []byte) (ReceiveConversationMessageParams, error) {
+	var r ReceiveConversationMessageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationReceiveParams) Marshal() ([]byte, error) {
+func (r *ReceiveConversationMessageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationReceiveRequest(data []byte) (ConversationReceiveRequest, error) {
-	var r ConversationReceiveRequest
+func UnmarshalReceiveConversationMessageRequest(data []byte) (ReceiveConversationMessageRequest, error) {
+	var r ReceiveConversationMessageRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationReceiveRequest) Marshal() ([]byte, error) {
+func (r *ReceiveConversationMessageRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationReceiveResponse(data []byte) (ConversationReceiveResponse, error) {
-	var r ConversationReceiveResponse
+func UnmarshalReceiveConversationMessageResponse(data []byte) (ReceiveConversationMessageResponse, error) {
+	var r ReceiveConversationMessageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationReceiveResponse) Marshal() ([]byte, error) {
+func (r *ReceiveConversationMessageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationSendParams(data []byte) (ConversationSendParams, error) {
-	var r ConversationSendParams
+func UnmarshalSendConversationMessageParams(data []byte) (SendConversationMessageParams, error) {
+	var r SendConversationMessageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationSendParams) Marshal() ([]byte, error) {
+func (r *SendConversationMessageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationSendRequest(data []byte) (ConversationSendRequest, error) {
-	var r ConversationSendRequest
+func UnmarshalSendConversationMessageRequest(data []byte) (SendConversationMessageRequest, error) {
+	var r SendConversationMessageRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationSendRequest) Marshal() ([]byte, error) {
+func (r *SendConversationMessageRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationSendResponse(data []byte) (ConversationSendResponse, error) {
-	var r ConversationSendResponse
+func UnmarshalSendConversationMessageResponse(data []byte) (SendConversationMessageResponse, error) {
+	var r SendConversationMessageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationSendResponse) Marshal() ([]byte, error) {
+func (r *SendConversationMessageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationSessionCreateParams(data []byte) (ConversationSessionCreateParams, error) {
-	var r ConversationSessionCreateParams
+func UnmarshalCreateConversationSessionParams(data []byte) (CreateConversationSessionParams, error) {
+	var r CreateConversationSessionParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationSessionCreateParams) Marshal() ([]byte, error) {
+func (r *CreateConversationSessionParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationSessionCreateRequest(data []byte) (ConversationSessionCreateRequest, error) {
-	var r ConversationSessionCreateRequest
+func UnmarshalCreateConversationSessionRequest(data []byte) (CreateConversationSessionRequest, error) {
+	var r CreateConversationSessionRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationSessionCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateConversationSessionRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationSessionCreateResponse(data []byte) (ConversationSessionCreateResponse, error) {
-	var r ConversationSessionCreateResponse
+func UnmarshalCreateConversationSessionResponse(data []byte) (CreateConversationSessionResponse, error) {
+	var r CreateConversationSessionResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationSessionCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateConversationSessionResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationUpdateParams(data []byte) (ConversationUpdateParams, error) {
-	var r ConversationUpdateParams
+func UnmarshalUpdateConversationParams(data []byte) (UpdateConversationParams, error) {
+	var r UpdateConversationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateConversationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationUpdateRequest(data []byte) (ConversationUpdateRequest, error) {
-	var r ConversationUpdateRequest
+func UnmarshalUpdateConversationRequest(data []byte) (UpdateConversationRequest, error) {
+	var r UpdateConversationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateConversationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationUpdateResponse(data []byte) (ConversationUpdateResponse, error) {
-	var r ConversationUpdateResponse
+func UnmarshalUpdateConversationResponse(data []byte) (UpdateConversationResponse, error) {
+	var r UpdateConversationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateConversationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationUpvoteParams(data []byte) (ConversationUpvoteParams, error) {
-	var r ConversationUpvoteParams
+func UnmarshalUpvoteConversationParams(data []byte) (UpvoteConversationParams, error) {
+	var r UpvoteConversationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationUpvoteParams) Marshal() ([]byte, error) {
+func (r *UpvoteConversationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationUpvoteRequest(data []byte) (ConversationUpvoteRequest, error) {
-	var r ConversationUpvoteRequest
+func UnmarshalUpvoteConversationRequest(data []byte) (UpvoteConversationRequest, error) {
+	var r UpvoteConversationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationUpvoteRequest) Marshal() ([]byte, error) {
+func (r *UpvoteConversationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationUpvoteResponse(data []byte) (ConversationUpvoteResponse, error) {
-	var r ConversationUpvoteResponse
+func UnmarshalUpvoteConversationResponse(data []byte) (UpvoteConversationResponse, error) {
+	var r UpvoteConversationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationUpvoteResponse) Marshal() ([]byte, error) {
+func (r *UpvoteConversationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationUsageFetchParams(data []byte) (ConversationUsageFetchParams, error) {
-	var r ConversationUsageFetchParams
+func UnmarshalFetchConversationUsageParams(data []byte) (FetchConversationUsageParams, error) {
+	var r FetchConversationUsageParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationUsageFetchParams) Marshal() ([]byte, error) {
+func (r *FetchConversationUsageParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationUsageFetchResponse(data []byte) (ConversationUsageFetchResponse, error) {
-	var r ConversationUsageFetchResponse
+func UnmarshalFetchConversationUsageResponse(data []byte) (FetchConversationUsageResponse, error) {
+	var r FetchConversationUsageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationUsageFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchConversationUsageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationCompleteRequest1(data []byte) (ConversationCompleteRequest1, error) {
-	var r ConversationCompleteRequest1
+func UnmarshalCompleteConversationRequest(data []byte) (CompleteConversationRequest, error) {
+	var r CompleteConversationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationCompleteRequest1) Marshal() ([]byte, error) {
+func (r *CompleteConversationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationCompleteResponse1(data []byte) (ConversationCompleteResponse1, error) {
-	var r ConversationCompleteResponse1
+func UnmarshalCompleteConversationResponse(data []byte) (CompleteConversationResponse, error) {
+	var r CompleteConversationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationCompleteResponse1) Marshal() ([]byte, error) {
+func (r *CompleteConversationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationCreateRequest(data []byte) (ConversationCreateRequest, error) {
-	var r ConversationCreateRequest
+func UnmarshalCreateConversationRequest(data []byte) (CreateConversationRequest, error) {
+	var r CreateConversationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateConversationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationCreateResponse(data []byte) (ConversationCreateResponse, error) {
-	var r ConversationCreateResponse
+func UnmarshalCreateConversationResponse(data []byte) (CreateConversationResponse, error) {
+	var r CreateConversationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateConversationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationDispatchRequest1(data []byte) (ConversationDispatchRequest1, error) {
-	var r ConversationDispatchRequest1
+func UnmarshalDispatchConversationRequest(data []byte) (DispatchConversationRequest, error) {
+	var r DispatchConversationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationDispatchRequest1) Marshal() ([]byte, error) {
+func (r *DispatchConversationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationDispatchResponse1(data []byte) (ConversationDispatchResponse1, error) {
-	var r ConversationDispatchResponse1
+func UnmarshalDispatchConversationResponse(data []byte) (DispatchConversationResponse, error) {
+	var r DispatchConversationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationDispatchResponse1) Marshal() ([]byte, error) {
+func (r *DispatchConversationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationExportParams(data []byte) (ConversationExportParams, error) {
-	var r ConversationExportParams
+func UnmarshalExportConversationsParams(data []byte) (ExportConversationsParams, error) {
+	var r ExportConversationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationExportParams) Marshal() ([]byte, error) {
+func (r *ExportConversationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationExportResponse(data []byte) (ConversationExportResponse, error) {
-	var r ConversationExportResponse
+func UnmarshalExportConversationsResponse(data []byte) (ExportConversationsResponse, error) {
+	var r ExportConversationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationExportResponse) Marshal() ([]byte, error) {
+func (r *ExportConversationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationListParams(data []byte) (ConversationListParams, error) {
-	var r ConversationListParams
+func UnmarshalListConversationsParams(data []byte) (ListConversationsParams, error) {
+	var r ListConversationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationListParams) Marshal() ([]byte, error) {
+func (r *ListConversationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationListResponse(data []byte) (ConversationListResponse, error) {
-	var r ConversationListResponse
+func UnmarshalListConversationsResponse(data []byte) (ListConversationsResponse, error) {
+	var r ListConversationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationListResponse) Marshal() ([]byte, error) {
+func (r *ListConversationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetDeleteParams(data []byte) (DatasetDeleteParams, error) {
-	var r DatasetDeleteParams
+func UnmarshalDeleteDatasetParams(data []byte) (DeleteDatasetParams, error) {
+	var r DeleteDatasetParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteDatasetParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type DatasetDeleteRequest map[string]interface{}
+type DeleteDatasetRequest map[string]interface{}
 
-func UnmarshalDatasetDeleteRequest(data []byte) (DatasetDeleteRequest, error) {
-	var r DatasetDeleteRequest
+func UnmarshalDeleteDatasetRequest(data []byte) (DeleteDatasetRequest, error) {
+	var r DeleteDatasetRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteDatasetRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetDeleteResponse(data []byte) (DatasetDeleteResponse, error) {
-	var r DatasetDeleteResponse
+func UnmarshalDeleteDatasetResponse(data []byte) (DeleteDatasetResponse, error) {
+	var r DeleteDatasetResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteDatasetResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFetchParams(data []byte) (DatasetFetchParams, error) {
-	var r DatasetFetchParams
+func UnmarshalFetchDatasetParams(data []byte) (FetchDatasetParams, error) {
+	var r FetchDatasetParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFetchParams) Marshal() ([]byte, error) {
+func (r *FetchDatasetParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFetchResponse(data []byte) (DatasetFetchResponse, error) {
-	var r DatasetFetchResponse
+func UnmarshalFetchDatasetResponse(data []byte) (FetchDatasetResponse, error) {
+	var r FetchDatasetResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchDatasetResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFileAttachParams(data []byte) (DatasetFileAttachParams, error) {
-	var r DatasetFileAttachParams
+func UnmarshalAttachDatasetFileParams(data []byte) (AttachDatasetFileParams, error) {
+	var r AttachDatasetFileParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFileAttachParams) Marshal() ([]byte, error) {
+func (r *AttachDatasetFileParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFileAttachRequest(data []byte) (DatasetFileAttachRequest, error) {
-	var r DatasetFileAttachRequest
+func UnmarshalAttachDatasetFileRequest(data []byte) (AttachDatasetFileRequest, error) {
+	var r AttachDatasetFileRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFileAttachRequest) Marshal() ([]byte, error) {
+func (r *AttachDatasetFileRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFileAttachResponse(data []byte) (DatasetFileAttachResponse, error) {
-	var r DatasetFileAttachResponse
+func UnmarshalAttachDatasetFileResponse(data []byte) (AttachDatasetFileResponse, error) {
+	var r AttachDatasetFileResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFileAttachResponse) Marshal() ([]byte, error) {
+func (r *AttachDatasetFileResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFileDetachParams(data []byte) (DatasetFileDetachParams, error) {
-	var r DatasetFileDetachParams
+func UnmarshalDetachDatasetFileParams(data []byte) (DetachDatasetFileParams, error) {
+	var r DetachDatasetFileParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFileDetachParams) Marshal() ([]byte, error) {
+func (r *DetachDatasetFileParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFileDetachRequest(data []byte) (DatasetFileDetachRequest, error) {
-	var r DatasetFileDetachRequest
+func UnmarshalDetachDatasetFileRequest(data []byte) (DetachDatasetFileRequest, error) {
+	var r DetachDatasetFileRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFileDetachRequest) Marshal() ([]byte, error) {
+func (r *DetachDatasetFileRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFileDetachResponse(data []byte) (DatasetFileDetachResponse, error) {
-	var r DatasetFileDetachResponse
+func UnmarshalDetachDatasetFileResponse(data []byte) (DetachDatasetFileResponse, error) {
+	var r DetachDatasetFileResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFileDetachResponse) Marshal() ([]byte, error) {
+func (r *DetachDatasetFileResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFileSyncParams(data []byte) (DatasetFileSyncParams, error) {
-	var r DatasetFileSyncParams
+func UnmarshalSyncDatasetFileParams(data []byte) (SyncDatasetFileParams, error) {
+	var r SyncDatasetFileParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFileSyncParams) Marshal() ([]byte, error) {
+func (r *SyncDatasetFileParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type DatasetFileSyncRequest map[string]interface{}
+type SyncDatasetFileRequest map[string]interface{}
 
-func UnmarshalDatasetFileSyncRequest(data []byte) (DatasetFileSyncRequest, error) {
-	var r DatasetFileSyncRequest
+func UnmarshalSyncDatasetFileRequest(data []byte) (SyncDatasetFileRequest, error) {
+	var r SyncDatasetFileRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFileSyncRequest) Marshal() ([]byte, error) {
+func (r *SyncDatasetFileRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFileSyncResponse(data []byte) (DatasetFileSyncResponse, error) {
-	var r DatasetFileSyncResponse
+func UnmarshalSyncDatasetFileResponse(data []byte) (SyncDatasetFileResponse, error) {
+	var r SyncDatasetFileResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFileSyncResponse) Marshal() ([]byte, error) {
+func (r *SyncDatasetFileResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFileListParams(data []byte) (DatasetFileListParams, error) {
-	var r DatasetFileListParams
+func UnmarshalListDatasetFilesParams(data []byte) (ListDatasetFilesParams, error) {
+	var r ListDatasetFilesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFileListParams) Marshal() ([]byte, error) {
+func (r *ListDatasetFilesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFileListResponse(data []byte) (DatasetFileListResponse, error) {
-	var r DatasetFileListResponse
+func UnmarshalListDatasetFilesResponse(data []byte) (ListDatasetFilesResponse, error) {
+	var r ListDatasetFilesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFileListResponse) Marshal() ([]byte, error) {
+func (r *ListDatasetFilesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordDeleteParams(data []byte) (DatasetRecordDeleteParams, error) {
-	var r DatasetRecordDeleteParams
+func UnmarshalDeleteDatasetRecordParams(data []byte) (DeleteDatasetRecordParams, error) {
+	var r DeleteDatasetRecordParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteDatasetRecordParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type DatasetRecordDeleteRequest map[string]interface{}
+type DeleteDatasetRecordRequest map[string]interface{}
 
-func UnmarshalDatasetRecordDeleteRequest(data []byte) (DatasetRecordDeleteRequest, error) {
-	var r DatasetRecordDeleteRequest
+func UnmarshalDeleteDatasetRecordRequest(data []byte) (DeleteDatasetRecordRequest, error) {
+	var r DeleteDatasetRecordRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteDatasetRecordRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordDeleteResponse(data []byte) (DatasetRecordDeleteResponse, error) {
-	var r DatasetRecordDeleteResponse
+func UnmarshalDeleteDatasetRecordResponse(data []byte) (DeleteDatasetRecordResponse, error) {
+	var r DeleteDatasetRecordResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteDatasetRecordResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordFetchParams(data []byte) (DatasetRecordFetchParams, error) {
-	var r DatasetRecordFetchParams
+func UnmarshalFetchDatasetRecordParams(data []byte) (FetchDatasetRecordParams, error) {
+	var r FetchDatasetRecordParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordFetchParams) Marshal() ([]byte, error) {
+func (r *FetchDatasetRecordParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordFetchResponse(data []byte) (DatasetRecordFetchResponse, error) {
-	var r DatasetRecordFetchResponse
+func UnmarshalFetchDatasetRecordResponse(data []byte) (FetchDatasetRecordResponse, error) {
+	var r FetchDatasetRecordResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchDatasetRecordResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordUpdateParams(data []byte) (DatasetRecordUpdateParams, error) {
-	var r DatasetRecordUpdateParams
+func UnmarshalUpdateDatasetRecordParams(data []byte) (UpdateDatasetRecordParams, error) {
+	var r UpdateDatasetRecordParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateDatasetRecordParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordUpdateRequest(data []byte) (DatasetRecordUpdateRequest, error) {
-	var r DatasetRecordUpdateRequest
+func UnmarshalUpdateDatasetRecordRequest(data []byte) (UpdateDatasetRecordRequest, error) {
+	var r UpdateDatasetRecordRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateDatasetRecordRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordUpdateResponse(data []byte) (DatasetRecordUpdateResponse, error) {
-	var r DatasetRecordUpdateResponse
+func UnmarshalUpdateDatasetRecordResponse(data []byte) (UpdateDatasetRecordResponse, error) {
+	var r UpdateDatasetRecordResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateDatasetRecordResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordCreateParams(data []byte) (DatasetRecordCreateParams, error) {
-	var r DatasetRecordCreateParams
+func UnmarshalCreateDatasetRecordParams(data []byte) (CreateDatasetRecordParams, error) {
+	var r CreateDatasetRecordParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordCreateParams) Marshal() ([]byte, error) {
+func (r *CreateDatasetRecordParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordCreateRequest(data []byte) (DatasetRecordCreateRequest, error) {
-	var r DatasetRecordCreateRequest
+func UnmarshalCreateDatasetRecordRequest(data []byte) (CreateDatasetRecordRequest, error) {
+	var r CreateDatasetRecordRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateDatasetRecordRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordCreateResponse(data []byte) (DatasetRecordCreateResponse, error) {
-	var r DatasetRecordCreateResponse
+func UnmarshalCreateDatasetRecordResponse(data []byte) (CreateDatasetRecordResponse, error) {
+	var r CreateDatasetRecordResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateDatasetRecordResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordExportParams(data []byte) (DatasetRecordExportParams, error) {
-	var r DatasetRecordExportParams
+func UnmarshalExportDatasetRecordsParams(data []byte) (ExportDatasetRecordsParams, error) {
+	var r ExportDatasetRecordsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordExportParams) Marshal() ([]byte, error) {
+func (r *ExportDatasetRecordsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordExportResponse(data []byte) (DatasetRecordExportResponse, error) {
-	var r DatasetRecordExportResponse
+func UnmarshalExportDatasetRecordsResponse(data []byte) (ExportDatasetRecordsResponse, error) {
+	var r ExportDatasetRecordsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordExportResponse) Marshal() ([]byte, error) {
+func (r *ExportDatasetRecordsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordListParams(data []byte) (DatasetRecordListParams, error) {
-	var r DatasetRecordListParams
+func UnmarshalListDatasetRecordsParams(data []byte) (ListDatasetRecordsParams, error) {
+	var r ListDatasetRecordsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordListParams) Marshal() ([]byte, error) {
+func (r *ListDatasetRecordsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordListResponse(data []byte) (DatasetRecordListResponse, error) {
-	var r DatasetRecordListResponse
+func UnmarshalListDatasetRecordsResponse(data []byte) (ListDatasetRecordsResponse, error) {
+	var r ListDatasetRecordsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordListResponse) Marshal() ([]byte, error) {
+func (r *ListDatasetRecordsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetSearchParams(data []byte) (DatasetSearchParams, error) {
-	var r DatasetSearchParams
+func UnmarshalSearchDatasetParams(data []byte) (SearchDatasetParams, error) {
+	var r SearchDatasetParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetSearchParams) Marshal() ([]byte, error) {
+func (r *SearchDatasetParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetSearchRequest(data []byte) (DatasetSearchRequest, error) {
-	var r DatasetSearchRequest
+func UnmarshalSearchDatasetRequest(data []byte) (SearchDatasetRequest, error) {
+	var r SearchDatasetRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetSearchRequest) Marshal() ([]byte, error) {
+func (r *SearchDatasetRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetSearchResponse(data []byte) (DatasetSearchResponse, error) {
-	var r DatasetSearchResponse
+func UnmarshalSearchDatasetResponse(data []byte) (SearchDatasetResponse, error) {
+	var r SearchDatasetResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetSearchResponse) Marshal() ([]byte, error) {
+func (r *SearchDatasetResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetUpdateParams(data []byte) (DatasetUpdateParams, error) {
-	var r DatasetUpdateParams
+func UnmarshalUpdateDatasetParams(data []byte) (UpdateDatasetParams, error) {
+	var r UpdateDatasetParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateDatasetParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetUpdateRequest(data []byte) (DatasetUpdateRequest, error) {
-	var r DatasetUpdateRequest
+func UnmarshalUpdateDatasetRequest(data []byte) (UpdateDatasetRequest, error) {
+	var r UpdateDatasetRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateDatasetRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetUpdateResponse(data []byte) (DatasetUpdateResponse, error) {
-	var r DatasetUpdateResponse
+func UnmarshalUpdateDatasetResponse(data []byte) (UpdateDatasetResponse, error) {
+	var r UpdateDatasetResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateDatasetResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetCreateRequest(data []byte) (DatasetCreateRequest, error) {
-	var r DatasetCreateRequest
+func UnmarshalCreateDatasetRequest(data []byte) (CreateDatasetRequest, error) {
+	var r CreateDatasetRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateDatasetRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetCreateResponse(data []byte) (DatasetCreateResponse, error) {
-	var r DatasetCreateResponse
+func UnmarshalCreateDatasetResponse(data []byte) (CreateDatasetResponse, error) {
+	var r CreateDatasetResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateDatasetResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetListParams(data []byte) (DatasetListParams, error) {
-	var r DatasetListParams
+func UnmarshalListDatasetsParams(data []byte) (ListDatasetsParams, error) {
+	var r ListDatasetsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetListParams) Marshal() ([]byte, error) {
+func (r *ListDatasetsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetListResponse(data []byte) (DatasetListResponse, error) {
-	var r DatasetListResponse
+func UnmarshalListDatasetsResponse(data []byte) (ListDatasetsResponse, error) {
+	var r ListDatasetsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetListResponse) Marshal() ([]byte, error) {
+func (r *ListDatasetsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalEventLogExportParams(data []byte) (EventLogExportParams, error) {
-	var r EventLogExportParams
+func UnmarshalExportEventLogsParams(data []byte) (ExportEventLogsParams, error) {
+	var r ExportEventLogsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *EventLogExportParams) Marshal() ([]byte, error) {
+func (r *ExportEventLogsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalEventLogExportResponse(data []byte) (EventLogExportResponse, error) {
-	var r EventLogExportResponse
+func UnmarshalExportEventLogsResponse(data []byte) (ExportEventLogsResponse, error) {
+	var r ExportEventLogsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *EventLogExportResponse) Marshal() ([]byte, error) {
+func (r *ExportEventLogsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalEventLogListParams(data []byte) (EventLogListParams, error) {
-	var r EventLogListParams
+func UnmarshalListEventLogsParams(data []byte) (ListEventLogsParams, error) {
+	var r ListEventLogsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *EventLogListParams) Marshal() ([]byte, error) {
+func (r *ListEventLogsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalEventLogListResponse(data []byte) (EventLogListResponse, error) {
-	var r EventLogListResponse
+func UnmarshalListEventLogsResponse(data []byte) (ListEventLogsResponse, error) {
+	var r ListEventLogsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *EventLogListResponse) Marshal() ([]byte, error) {
+func (r *ListEventLogsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalEventLogSubscribeRequest(data []byte) (EventLogSubscribeRequest, error) {
-	var r EventLogSubscribeRequest
+func UnmarshalSubscribeEventLogsRequest(data []byte) (SubscribeEventLogsRequest, error) {
+	var r SubscribeEventLogsRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *EventLogSubscribeRequest) Marshal() ([]byte, error) {
+func (r *SubscribeEventLogsRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileDeleteParams(data []byte) (FileDeleteParams, error) {
-	var r FileDeleteParams
+func UnmarshalDeleteFileParams(data []byte) (DeleteFileParams, error) {
+	var r DeleteFileParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteFileParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type FileDeleteRequest map[string]interface{}
+type DeleteFileRequest map[string]interface{}
 
-func UnmarshalFileDeleteRequest(data []byte) (FileDeleteRequest, error) {
-	var r FileDeleteRequest
+func UnmarshalDeleteFileRequest(data []byte) (DeleteFileRequest, error) {
+	var r DeleteFileRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteFileRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileDeleteResponse(data []byte) (FileDeleteResponse, error) {
-	var r FileDeleteResponse
+func UnmarshalDeleteFileResponse(data []byte) (DeleteFileResponse, error) {
+	var r DeleteFileResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteFileResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileDownloadParams(data []byte) (FileDownloadParams, error) {
-	var r FileDownloadParams
+func UnmarshalDownloadFileParams(data []byte) (DownloadFileParams, error) {
+	var r DownloadFileParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileDownloadParams) Marshal() ([]byte, error) {
+func (r *DownloadFileParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileDownloadResponse(data []byte) (FileDownloadResponse, error) {
-	var r FileDownloadResponse
+func UnmarshalDownloadFileResponse(data []byte) (DownloadFileResponse, error) {
+	var r DownloadFileResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileDownloadResponse) Marshal() ([]byte, error) {
+func (r *DownloadFileResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileFetchParams(data []byte) (FileFetchParams, error) {
-	var r FileFetchParams
+func UnmarshalFetchFileParams(data []byte) (FetchFileParams, error) {
+	var r FetchFileParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileFetchParams) Marshal() ([]byte, error) {
+func (r *FetchFileParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileFetchResponse(data []byte) (FileFetchResponse, error) {
-	var r FileFetchResponse
+func UnmarshalFetchFileResponse(data []byte) (FetchFileResponse, error) {
+	var r FetchFileResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchFileResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileSyncParams(data []byte) (FileSyncParams, error) {
-	var r FileSyncParams
+func UnmarshalSyncFileParams(data []byte) (SyncFileParams, error) {
+	var r SyncFileParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileSyncParams) Marshal() ([]byte, error) {
+func (r *SyncFileParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type FileSyncRequest map[string]interface{}
+type SyncFileRequest map[string]interface{}
 
-func UnmarshalFileSyncRequest(data []byte) (FileSyncRequest, error) {
-	var r FileSyncRequest
+func UnmarshalSyncFileRequest(data []byte) (SyncFileRequest, error) {
+	var r SyncFileRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileSyncRequest) Marshal() ([]byte, error) {
+func (r *SyncFileRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileSyncResponse(data []byte) (FileSyncResponse, error) {
-	var r FileSyncResponse
+func UnmarshalSyncFileResponse(data []byte) (SyncFileResponse, error) {
+	var r SyncFileResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileSyncResponse) Marshal() ([]byte, error) {
+func (r *SyncFileResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileUpdateParams(data []byte) (FileUpdateParams, error) {
-	var r FileUpdateParams
+func UnmarshalUpdateFileParams(data []byte) (UpdateFileParams, error) {
+	var r UpdateFileParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateFileParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileUpdateRequest(data []byte) (FileUpdateRequest, error) {
-	var r FileUpdateRequest
+func UnmarshalUpdateFileRequest(data []byte) (UpdateFileRequest, error) {
+	var r UpdateFileRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateFileRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileUpdateResponse(data []byte) (FileUpdateResponse, error) {
-	var r FileUpdateResponse
+func UnmarshalUpdateFileResponse(data []byte) (UpdateFileResponse, error) {
+	var r UpdateFileResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateFileResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileUploadParams(data []byte) (FileUploadParams, error) {
-	var r FileUploadParams
+func UnmarshalUploadFileParams(data []byte) (UploadFileParams, error) {
+	var r UploadFileParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileUploadParams) Marshal() ([]byte, error) {
+func (r *UploadFileParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileUploadRequest(data []byte) (FileUploadRequest, error) {
-	var r FileUploadRequest
+func UnmarshalUploadFileRequest(data []byte) (UploadFileRequest, error) {
+	var r UploadFileRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileUploadRequest) Marshal() ([]byte, error) {
+func (r *UploadFileRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileUploadResponse(data []byte) (FileUploadResponse, error) {
-	var r FileUploadResponse
+func UnmarshalUploadFileResponse(data []byte) (UploadFileResponse, error) {
+	var r UploadFileResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileUploadResponse) Marshal() ([]byte, error) {
+func (r *UploadFileResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileCreateRequest(data []byte) (FileCreateRequest, error) {
-	var r FileCreateRequest
+func UnmarshalCreateFileRequest(data []byte) (CreateFileRequest, error) {
+	var r CreateFileRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateFileRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileCreateResponse(data []byte) (FileCreateResponse, error) {
-	var r FileCreateResponse
+func UnmarshalCreateFileResponse(data []byte) (CreateFileResponse, error) {
+	var r CreateFileResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateFileResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileListParams(data []byte) (FileListParams, error) {
-	var r FileListParams
+func UnmarshalListFilesParams(data []byte) (ListFilesParams, error) {
+	var r ListFilesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileListParams) Marshal() ([]byte, error) {
+func (r *ListFilesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFileListResponse(data []byte) (FileListResponse, error) {
-	var r FileListResponse
+func UnmarshalListFilesResponse(data []byte) (ListFilesResponse, error) {
+	var r ListFilesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FileListResponse) Marshal() ([]byte, error) {
+func (r *ListFilesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordDeleteParams(data []byte) (IntegrationDiscordDeleteParams, error) {
-	var r IntegrationDiscordDeleteParams
+func UnmarshalDeleteDiscordIntegrationParams(data []byte) (DeleteDiscordIntegrationParams, error) {
+	var r DeleteDiscordIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteDiscordIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationDiscordDeleteRequest map[string]interface{}
+type DeleteDiscordIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationDiscordDeleteRequest(data []byte) (IntegrationDiscordDeleteRequest, error) {
-	var r IntegrationDiscordDeleteRequest
+func UnmarshalDeleteDiscordIntegrationRequest(data []byte) (DeleteDiscordIntegrationRequest, error) {
+	var r DeleteDiscordIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteDiscordIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordDeleteResponse(data []byte) (IntegrationDiscordDeleteResponse, error) {
-	var r IntegrationDiscordDeleteResponse
+func UnmarshalDeleteDiscordIntegrationResponse(data []byte) (DeleteDiscordIntegrationResponse, error) {
+	var r DeleteDiscordIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteDiscordIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordFetchParams(data []byte) (IntegrationDiscordFetchParams, error) {
-	var r IntegrationDiscordFetchParams
+func UnmarshalFetchDiscordIntegrationParams(data []byte) (FetchDiscordIntegrationParams, error) {
+	var r FetchDiscordIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordFetchParams) Marshal() ([]byte, error) {
+func (r *FetchDiscordIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordFetchResponse(data []byte) (IntegrationDiscordFetchResponse, error) {
-	var r IntegrationDiscordFetchResponse
+func UnmarshalFetchDiscordIntegrationResponse(data []byte) (FetchDiscordIntegrationResponse, error) {
+	var r FetchDiscordIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchDiscordIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordSetupParams(data []byte) (IntegrationDiscordSetupParams, error) {
-	var r IntegrationDiscordSetupParams
+func UnmarshalSetupDiscordIntegrationParams(data []byte) (SetupDiscordIntegrationParams, error) {
+	var r SetupDiscordIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordSetupParams) Marshal() ([]byte, error) {
+func (r *SetupDiscordIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationDiscordSetupRequest map[string]interface{}
+type SetupDiscordIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationDiscordSetupRequest(data []byte) (IntegrationDiscordSetupRequest, error) {
-	var r IntegrationDiscordSetupRequest
+func UnmarshalSetupDiscordIntegrationRequest(data []byte) (SetupDiscordIntegrationRequest, error) {
+	var r SetupDiscordIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordSetupRequest) Marshal() ([]byte, error) {
+func (r *SetupDiscordIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordSetupResponse(data []byte) (IntegrationDiscordSetupResponse, error) {
-	var r IntegrationDiscordSetupResponse
+func UnmarshalSetupDiscordIntegrationResponse(data []byte) (SetupDiscordIntegrationResponse, error) {
+	var r SetupDiscordIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordSetupResponse) Marshal() ([]byte, error) {
+func (r *SetupDiscordIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordUpdateParams(data []byte) (IntegrationDiscordUpdateParams, error) {
-	var r IntegrationDiscordUpdateParams
+func UnmarshalUpdateDiscordIntegrationParams(data []byte) (UpdateDiscordIntegrationParams, error) {
+	var r UpdateDiscordIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateDiscordIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordUpdateRequest(data []byte) (IntegrationDiscordUpdateRequest, error) {
-	var r IntegrationDiscordUpdateRequest
+func UnmarshalUpdateDiscordIntegrationRequest(data []byte) (UpdateDiscordIntegrationRequest, error) {
+	var r UpdateDiscordIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateDiscordIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordUpdateResponse(data []byte) (IntegrationDiscordUpdateResponse, error) {
-	var r IntegrationDiscordUpdateResponse
+func UnmarshalUpdateDiscordIntegrationResponse(data []byte) (UpdateDiscordIntegrationResponse, error) {
+	var r UpdateDiscordIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateDiscordIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordCreateRequest(data []byte) (IntegrationDiscordCreateRequest, error) {
-	var r IntegrationDiscordCreateRequest
+func UnmarshalCreateDiscordIntegrationRequest(data []byte) (CreateDiscordIntegrationRequest, error) {
+	var r CreateDiscordIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateDiscordIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordCreateResponse(data []byte) (IntegrationDiscordCreateResponse, error) {
-	var r IntegrationDiscordCreateResponse
+func UnmarshalCreateDiscordIntegrationResponse(data []byte) (CreateDiscordIntegrationResponse, error) {
+	var r CreateDiscordIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateDiscordIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordListParams(data []byte) (IntegrationDiscordListParams, error) {
-	var r IntegrationDiscordListParams
+func UnmarshalListDiscordIntegrationsParams(data []byte) (ListDiscordIntegrationsParams, error) {
+	var r ListDiscordIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordListParams) Marshal() ([]byte, error) {
+func (r *ListDiscordIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationDiscordListResponse(data []byte) (IntegrationDiscordListResponse, error) {
-	var r IntegrationDiscordListResponse
+func UnmarshalListDiscordIntegrationsResponse(data []byte) (ListDiscordIntegrationsResponse, error) {
+	var r ListDiscordIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationDiscordListResponse) Marshal() ([]byte, error) {
+func (r *ListDiscordIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailDeleteParams(data []byte) (IntegrationEmailDeleteParams, error) {
-	var r IntegrationEmailDeleteParams
+func UnmarshalDeleteEmailIntegrationParams(data []byte) (DeleteEmailIntegrationParams, error) {
+	var r DeleteEmailIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteEmailIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationEmailDeleteRequest map[string]interface{}
+type DeleteEmailIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationEmailDeleteRequest(data []byte) (IntegrationEmailDeleteRequest, error) {
-	var r IntegrationEmailDeleteRequest
+func UnmarshalDeleteEmailIntegrationRequest(data []byte) (DeleteEmailIntegrationRequest, error) {
+	var r DeleteEmailIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteEmailIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailDeleteResponse(data []byte) (IntegrationEmailDeleteResponse, error) {
-	var r IntegrationEmailDeleteResponse
+func UnmarshalDeleteEmailIntegrationResponse(data []byte) (DeleteEmailIntegrationResponse, error) {
+	var r DeleteEmailIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteEmailIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailFetchParams(data []byte) (IntegrationEmailFetchParams, error) {
-	var r IntegrationEmailFetchParams
+func UnmarshalFetchEmailIntegrationParams(data []byte) (FetchEmailIntegrationParams, error) {
+	var r FetchEmailIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailFetchParams) Marshal() ([]byte, error) {
+func (r *FetchEmailIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailFetchResponse(data []byte) (IntegrationEmailFetchResponse, error) {
-	var r IntegrationEmailFetchResponse
+func UnmarshalFetchEmailIntegrationResponse(data []byte) (FetchEmailIntegrationResponse, error) {
+	var r FetchEmailIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchEmailIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailSetupParams(data []byte) (IntegrationEmailSetupParams, error) {
-	var r IntegrationEmailSetupParams
+func UnmarshalSetupEmailIntegrationParams(data []byte) (SetupEmailIntegrationParams, error) {
+	var r SetupEmailIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailSetupParams) Marshal() ([]byte, error) {
+func (r *SetupEmailIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationEmailSetupRequest map[string]interface{}
+type SetupEmailIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationEmailSetupRequest(data []byte) (IntegrationEmailSetupRequest, error) {
-	var r IntegrationEmailSetupRequest
+func UnmarshalSetupEmailIntegrationRequest(data []byte) (SetupEmailIntegrationRequest, error) {
+	var r SetupEmailIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailSetupRequest) Marshal() ([]byte, error) {
+func (r *SetupEmailIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailSetupResponse(data []byte) (IntegrationEmailSetupResponse, error) {
-	var r IntegrationEmailSetupResponse
+func UnmarshalSetupEmailIntegrationResponse(data []byte) (SetupEmailIntegrationResponse, error) {
+	var r SetupEmailIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailSetupResponse) Marshal() ([]byte, error) {
+func (r *SetupEmailIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailUpdateParams(data []byte) (IntegrationEmailUpdateParams, error) {
-	var r IntegrationEmailUpdateParams
+func UnmarshalUpdateEmailIntegrationParams(data []byte) (UpdateEmailIntegrationParams, error) {
+	var r UpdateEmailIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateEmailIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailUpdateRequest(data []byte) (IntegrationEmailUpdateRequest, error) {
-	var r IntegrationEmailUpdateRequest
+func UnmarshalUpdateEmailIntegrationRequest(data []byte) (UpdateEmailIntegrationRequest, error) {
+	var r UpdateEmailIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateEmailIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailUpdateResponse(data []byte) (IntegrationEmailUpdateResponse, error) {
-	var r IntegrationEmailUpdateResponse
+func UnmarshalUpdateEmailIntegrationResponse(data []byte) (UpdateEmailIntegrationResponse, error) {
+	var r UpdateEmailIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateEmailIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailCreateRequest(data []byte) (IntegrationEmailCreateRequest, error) {
-	var r IntegrationEmailCreateRequest
+func UnmarshalCreateEmailIntegrationRequest(data []byte) (CreateEmailIntegrationRequest, error) {
+	var r CreateEmailIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateEmailIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailCreateResponse(data []byte) (IntegrationEmailCreateResponse, error) {
-	var r IntegrationEmailCreateResponse
+func UnmarshalCreateEmailIntegrationResponse(data []byte) (CreateEmailIntegrationResponse, error) {
+	var r CreateEmailIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateEmailIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailListParams(data []byte) (IntegrationEmailListParams, error) {
-	var r IntegrationEmailListParams
+func UnmarshalListEmailIntegrationsParams(data []byte) (ListEmailIntegrationsParams, error) {
+	var r ListEmailIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailListParams) Marshal() ([]byte, error) {
+func (r *ListEmailIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationEmailListResponse(data []byte) (IntegrationEmailListResponse, error) {
-	var r IntegrationEmailListResponse
+func UnmarshalListEmailIntegrationsResponse(data []byte) (ListEmailIntegrationsResponse, error) {
+	var r ListEmailIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationEmailListResponse) Marshal() ([]byte, error) {
+func (r *ListEmailIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationExtractDeleteParams(data []byte) (IntegrationExtractDeleteParams, error) {
-	var r IntegrationExtractDeleteParams
+func UnmarshalDeleteExtractIntegrationParams(data []byte) (DeleteExtractIntegrationParams, error) {
+	var r DeleteExtractIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationExtractDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteExtractIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationExtractDeleteRequest map[string]interface{}
+type DeleteExtractIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationExtractDeleteRequest(data []byte) (IntegrationExtractDeleteRequest, error) {
-	var r IntegrationExtractDeleteRequest
+func UnmarshalDeleteExtractIntegrationRequest(data []byte) (DeleteExtractIntegrationRequest, error) {
+	var r DeleteExtractIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationExtractDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteExtractIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationExtractDeleteResponse(data []byte) (IntegrationExtractDeleteResponse, error) {
-	var r IntegrationExtractDeleteResponse
+func UnmarshalDeleteExtractIntegrationResponse(data []byte) (DeleteExtractIntegrationResponse, error) {
+	var r DeleteExtractIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationExtractDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteExtractIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationExtractFetchParams(data []byte) (IntegrationExtractFetchParams, error) {
-	var r IntegrationExtractFetchParams
+func UnmarshalFetchExtractIntegrationParams(data []byte) (FetchExtractIntegrationParams, error) {
+	var r FetchExtractIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationExtractFetchParams) Marshal() ([]byte, error) {
+func (r *FetchExtractIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationExtractFetchResponse(data []byte) (IntegrationExtractFetchResponse, error) {
-	var r IntegrationExtractFetchResponse
+func UnmarshalFetchExtractIntegrationResponse(data []byte) (FetchExtractIntegrationResponse, error) {
+	var r FetchExtractIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationExtractFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchExtractIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationExtractUpdateParams(data []byte) (IntegrationExtractUpdateParams, error) {
-	var r IntegrationExtractUpdateParams
+func UnmarshalUpdateExtractIntegrationParams(data []byte) (UpdateExtractIntegrationParams, error) {
+	var r UpdateExtractIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationExtractUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateExtractIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationExtractUpdateRequest(data []byte) (IntegrationExtractUpdateRequest, error) {
-	var r IntegrationExtractUpdateRequest
+func UnmarshalUpdateExtractIntegrationRequest(data []byte) (UpdateExtractIntegrationRequest, error) {
+	var r UpdateExtractIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationExtractUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateExtractIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationExtractUpdateResponse(data []byte) (IntegrationExtractUpdateResponse, error) {
-	var r IntegrationExtractUpdateResponse
+func UnmarshalUpdateExtractIntegrationResponse(data []byte) (UpdateExtractIntegrationResponse, error) {
+	var r UpdateExtractIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationExtractUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateExtractIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationExtractCreateRequest(data []byte) (IntegrationExtractCreateRequest, error) {
-	var r IntegrationExtractCreateRequest
+func UnmarshalCreateExtractIntegrationRequest(data []byte) (CreateExtractIntegrationRequest, error) {
+	var r CreateExtractIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationExtractCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateExtractIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationExtractCreateResponse(data []byte) (IntegrationExtractCreateResponse, error) {
-	var r IntegrationExtractCreateResponse
+func UnmarshalCreateExtractIntegrationResponse(data []byte) (CreateExtractIntegrationResponse, error) {
+	var r CreateExtractIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationExtractCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateExtractIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationExtractListParams(data []byte) (IntegrationExtractListParams, error) {
-	var r IntegrationExtractListParams
+func UnmarshalListExtractIntegrationsParams(data []byte) (ListExtractIntegrationsParams, error) {
+	var r ListExtractIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationExtractListParams) Marshal() ([]byte, error) {
+func (r *ListExtractIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationExtractListResponse(data []byte) (IntegrationExtractListResponse, error) {
-	var r IntegrationExtractListResponse
+func UnmarshalListExtractIntegrationsResponse(data []byte) (ListExtractIntegrationsResponse, error) {
+	var r ListExtractIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationExtractListResponse) Marshal() ([]byte, error) {
+func (r *ListExtractIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramDeleteParams(data []byte) (IntegrationInstagramDeleteParams, error) {
-	var r IntegrationInstagramDeleteParams
+func UnmarshalDeleteInstagramIntegrationParams(data []byte) (DeleteInstagramIntegrationParams, error) {
+	var r DeleteInstagramIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteInstagramIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationInstagramDeleteRequest map[string]interface{}
+type DeleteInstagramIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationInstagramDeleteRequest(data []byte) (IntegrationInstagramDeleteRequest, error) {
-	var r IntegrationInstagramDeleteRequest
+func UnmarshalDeleteInstagramIntegrationRequest(data []byte) (DeleteInstagramIntegrationRequest, error) {
+	var r DeleteInstagramIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteInstagramIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramDeleteResponse(data []byte) (IntegrationInstagramDeleteResponse, error) {
-	var r IntegrationInstagramDeleteResponse
+func UnmarshalDeleteInstagramIntegrationResponse(data []byte) (DeleteInstagramIntegrationResponse, error) {
+	var r DeleteInstagramIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteInstagramIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramFetchParams(data []byte) (IntegrationInstagramFetchParams, error) {
-	var r IntegrationInstagramFetchParams
+func UnmarshalFetchInstagramIntegrationParams(data []byte) (FetchInstagramIntegrationParams, error) {
+	var r FetchInstagramIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramFetchParams) Marshal() ([]byte, error) {
+func (r *FetchInstagramIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramFetchResponse(data []byte) (IntegrationInstagramFetchResponse, error) {
-	var r IntegrationInstagramFetchResponse
+func UnmarshalFetchInstagramIntegrationResponse(data []byte) (FetchInstagramIntegrationResponse, error) {
+	var r FetchInstagramIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchInstagramIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramSetupParams(data []byte) (IntegrationInstagramSetupParams, error) {
-	var r IntegrationInstagramSetupParams
+func UnmarshalSetupInstagramIntegrationParams(data []byte) (SetupInstagramIntegrationParams, error) {
+	var r SetupInstagramIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramSetupParams) Marshal() ([]byte, error) {
+func (r *SetupInstagramIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationInstagramSetupRequest map[string]interface{}
+type SetupInstagramIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationInstagramSetupRequest(data []byte) (IntegrationInstagramSetupRequest, error) {
-	var r IntegrationInstagramSetupRequest
+func UnmarshalSetupInstagramIntegrationRequest(data []byte) (SetupInstagramIntegrationRequest, error) {
+	var r SetupInstagramIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramSetupRequest) Marshal() ([]byte, error) {
+func (r *SetupInstagramIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramSetupResponse(data []byte) (IntegrationInstagramSetupResponse, error) {
-	var r IntegrationInstagramSetupResponse
+func UnmarshalSetupInstagramIntegrationResponse(data []byte) (SetupInstagramIntegrationResponse, error) {
+	var r SetupInstagramIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramSetupResponse) Marshal() ([]byte, error) {
+func (r *SetupInstagramIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramUpdateParams(data []byte) (IntegrationInstagramUpdateParams, error) {
-	var r IntegrationInstagramUpdateParams
+func UnmarshalUpdateInstagramIntegrationParams(data []byte) (UpdateInstagramIntegrationParams, error) {
+	var r UpdateInstagramIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateInstagramIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramUpdateRequest(data []byte) (IntegrationInstagramUpdateRequest, error) {
-	var r IntegrationInstagramUpdateRequest
+func UnmarshalUpdateInstagramIntegrationRequest(data []byte) (UpdateInstagramIntegrationRequest, error) {
+	var r UpdateInstagramIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateInstagramIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramUpdateResponse(data []byte) (IntegrationInstagramUpdateResponse, error) {
-	var r IntegrationInstagramUpdateResponse
+func UnmarshalUpdateInstagramIntegrationResponse(data []byte) (UpdateInstagramIntegrationResponse, error) {
+	var r UpdateInstagramIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateInstagramIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramCreateRequest(data []byte) (IntegrationInstagramCreateRequest, error) {
-	var r IntegrationInstagramCreateRequest
+func UnmarshalCreateInstagramIntegrationRequest(data []byte) (CreateInstagramIntegrationRequest, error) {
+	var r CreateInstagramIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateInstagramIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramCreateResponse(data []byte) (IntegrationInstagramCreateResponse, error) {
-	var r IntegrationInstagramCreateResponse
+func UnmarshalCreateInstagramIntegrationResponse(data []byte) (CreateInstagramIntegrationResponse, error) {
+	var r CreateInstagramIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateInstagramIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramListParams(data []byte) (IntegrationInstagramListParams, error) {
-	var r IntegrationInstagramListParams
+func UnmarshalListInstagramIntegrationsParams(data []byte) (ListInstagramIntegrationsParams, error) {
+	var r ListInstagramIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramListParams) Marshal() ([]byte, error) {
+func (r *ListInstagramIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationInstagramListResponse(data []byte) (IntegrationInstagramListResponse, error) {
-	var r IntegrationInstagramListResponse
+func UnmarshalListInstagramIntegrationsResponse(data []byte) (ListInstagramIntegrationsResponse, error) {
+	var r ListInstagramIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationInstagramListResponse) Marshal() ([]byte, error) {
+func (r *ListInstagramIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMcpserverDeleteParams(data []byte) (IntegrationMcpserverDeleteParams, error) {
-	var r IntegrationMcpserverDeleteParams
+func UnmarshalDeleteMCPServerIntegrationParams(data []byte) (DeleteMCPServerIntegrationParams, error) {
+	var r DeleteMCPServerIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMcpserverDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteMCPServerIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationMcpserverDeleteRequest map[string]interface{}
+type DeleteMCPServerIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationMcpserverDeleteRequest(data []byte) (IntegrationMcpserverDeleteRequest, error) {
-	var r IntegrationMcpserverDeleteRequest
+func UnmarshalDeleteMCPServerIntegrationRequest(data []byte) (DeleteMCPServerIntegrationRequest, error) {
+	var r DeleteMCPServerIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMcpserverDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteMCPServerIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMcpserverDeleteResponse(data []byte) (IntegrationMcpserverDeleteResponse, error) {
-	var r IntegrationMcpserverDeleteResponse
+func UnmarshalDeleteMCPServerIntegrationResponse(data []byte) (DeleteMCPServerIntegrationResponse, error) {
+	var r DeleteMCPServerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMcpserverDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteMCPServerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMcpserverFetchParams(data []byte) (IntegrationMcpserverFetchParams, error) {
-	var r IntegrationMcpserverFetchParams
+func UnmarshalFetchMCPServerIntegrationParams(data []byte) (FetchMCPServerIntegrationParams, error) {
+	var r FetchMCPServerIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMcpserverFetchParams) Marshal() ([]byte, error) {
+func (r *FetchMCPServerIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMcpserverFetchResponse(data []byte) (IntegrationMcpserverFetchResponse, error) {
-	var r IntegrationMcpserverFetchResponse
+func UnmarshalFetchMCPServerIntegrationResponse(data []byte) (FetchMCPServerIntegrationResponse, error) {
+	var r FetchMCPServerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMcpserverFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchMCPServerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMcpserverUpdateParams(data []byte) (IntegrationMcpserverUpdateParams, error) {
-	var r IntegrationMcpserverUpdateParams
+func UnmarshalUpdateMCPServerIntegrationParams(data []byte) (UpdateMCPServerIntegrationParams, error) {
+	var r UpdateMCPServerIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMcpserverUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateMCPServerIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMcpserverUpdateRequest(data []byte) (IntegrationMcpserverUpdateRequest, error) {
-	var r IntegrationMcpserverUpdateRequest
+func UnmarshalUpdateMCPServerIntegrationRequest(data []byte) (UpdateMCPServerIntegrationRequest, error) {
+	var r UpdateMCPServerIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMcpserverUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateMCPServerIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMcpserverUpdateResponse(data []byte) (IntegrationMcpserverUpdateResponse, error) {
-	var r IntegrationMcpserverUpdateResponse
+func UnmarshalUpdateMCPServerIntegrationResponse(data []byte) (UpdateMCPServerIntegrationResponse, error) {
+	var r UpdateMCPServerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMcpserverUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateMCPServerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMcpserverCreateRequest(data []byte) (IntegrationMcpserverCreateRequest, error) {
-	var r IntegrationMcpserverCreateRequest
+func UnmarshalCreateMCPServerIntegrationRequest(data []byte) (CreateMCPServerIntegrationRequest, error) {
+	var r CreateMCPServerIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMcpserverCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateMCPServerIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMcpserverCreateResponse(data []byte) (IntegrationMcpserverCreateResponse, error) {
-	var r IntegrationMcpserverCreateResponse
+func UnmarshalCreateMCPServerIntegrationResponse(data []byte) (CreateMCPServerIntegrationResponse, error) {
+	var r CreateMCPServerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMcpserverCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateMCPServerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMcpserverListParams(data []byte) (IntegrationMcpserverListParams, error) {
-	var r IntegrationMcpserverListParams
+func UnmarshalListMCPServerIntegrationsParams(data []byte) (ListMCPServerIntegrationsParams, error) {
+	var r ListMCPServerIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMcpserverListParams) Marshal() ([]byte, error) {
+func (r *ListMCPServerIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMcpserverListResponse(data []byte) (IntegrationMcpserverListResponse, error) {
-	var r IntegrationMcpserverListResponse
+func UnmarshalListMCPServerIntegrationsResponse(data []byte) (ListMCPServerIntegrationsResponse, error) {
+	var r ListMCPServerIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMcpserverListResponse) Marshal() ([]byte, error) {
+func (r *ListMCPServerIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerDeleteParams(data []byte) (IntegrationMessengerDeleteParams, error) {
-	var r IntegrationMessengerDeleteParams
+func UnmarshalDeleteMessengerIntegrationParams(data []byte) (DeleteMessengerIntegrationParams, error) {
+	var r DeleteMessengerIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteMessengerIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationMessengerDeleteRequest map[string]interface{}
+type DeleteMessengerIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationMessengerDeleteRequest(data []byte) (IntegrationMessengerDeleteRequest, error) {
-	var r IntegrationMessengerDeleteRequest
+func UnmarshalDeleteMessengerIntegrationRequest(data []byte) (DeleteMessengerIntegrationRequest, error) {
+	var r DeleteMessengerIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteMessengerIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerDeleteResponse(data []byte) (IntegrationMessengerDeleteResponse, error) {
-	var r IntegrationMessengerDeleteResponse
+func UnmarshalDeleteMessengerIntegrationResponse(data []byte) (DeleteMessengerIntegrationResponse, error) {
+	var r DeleteMessengerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteMessengerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerFetchParams(data []byte) (IntegrationMessengerFetchParams, error) {
-	var r IntegrationMessengerFetchParams
+func UnmarshalFetchMessengerIntegrationParams(data []byte) (FetchMessengerIntegrationParams, error) {
+	var r FetchMessengerIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerFetchParams) Marshal() ([]byte, error) {
+func (r *FetchMessengerIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerFetchResponse(data []byte) (IntegrationMessengerFetchResponse, error) {
-	var r IntegrationMessengerFetchResponse
+func UnmarshalFetchMessengerIntegrationResponse(data []byte) (FetchMessengerIntegrationResponse, error) {
+	var r FetchMessengerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchMessengerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerSetupParams(data []byte) (IntegrationMessengerSetupParams, error) {
-	var r IntegrationMessengerSetupParams
+func UnmarshalSetupMessengerIntegrationParams(data []byte) (SetupMessengerIntegrationParams, error) {
+	var r SetupMessengerIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerSetupParams) Marshal() ([]byte, error) {
+func (r *SetupMessengerIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationMessengerSetupRequest map[string]interface{}
+type SetupMessengerIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationMessengerSetupRequest(data []byte) (IntegrationMessengerSetupRequest, error) {
-	var r IntegrationMessengerSetupRequest
+func UnmarshalSetupMessengerIntegrationRequest(data []byte) (SetupMessengerIntegrationRequest, error) {
+	var r SetupMessengerIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerSetupRequest) Marshal() ([]byte, error) {
+func (r *SetupMessengerIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerSetupResponse(data []byte) (IntegrationMessengerSetupResponse, error) {
-	var r IntegrationMessengerSetupResponse
+func UnmarshalSetupMessengerIntegrationResponse(data []byte) (SetupMessengerIntegrationResponse, error) {
+	var r SetupMessengerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerSetupResponse) Marshal() ([]byte, error) {
+func (r *SetupMessengerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerUpdateParams(data []byte) (IntegrationMessengerUpdateParams, error) {
-	var r IntegrationMessengerUpdateParams
+func UnmarshalUpdateMessengerIntegrationParams(data []byte) (UpdateMessengerIntegrationParams, error) {
+	var r UpdateMessengerIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateMessengerIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerUpdateRequest(data []byte) (IntegrationMessengerUpdateRequest, error) {
-	var r IntegrationMessengerUpdateRequest
+func UnmarshalUpdateMessengerIntegrationRequest(data []byte) (UpdateMessengerIntegrationRequest, error) {
+	var r UpdateMessengerIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateMessengerIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerUpdateResponse(data []byte) (IntegrationMessengerUpdateResponse, error) {
-	var r IntegrationMessengerUpdateResponse
+func UnmarshalUpdateMessengerIntegrationResponse(data []byte) (UpdateMessengerIntegrationResponse, error) {
+	var r UpdateMessengerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateMessengerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerCreateRequest(data []byte) (IntegrationMessengerCreateRequest, error) {
-	var r IntegrationMessengerCreateRequest
+func UnmarshalCreateMessengerIntegrationRequest(data []byte) (CreateMessengerIntegrationRequest, error) {
+	var r CreateMessengerIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateMessengerIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerCreateResponse(data []byte) (IntegrationMessengerCreateResponse, error) {
-	var r IntegrationMessengerCreateResponse
+func UnmarshalCreateMessengerIntegrationResponse(data []byte) (CreateMessengerIntegrationResponse, error) {
+	var r CreateMessengerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateMessengerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerListParams(data []byte) (IntegrationMessengerListParams, error) {
-	var r IntegrationMessengerListParams
+func UnmarshalListMessengerIntegrationsParams(data []byte) (ListMessengerIntegrationsParams, error) {
+	var r ListMessengerIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerListParams) Marshal() ([]byte, error) {
+func (r *ListMessengerIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationMessengerListResponse(data []byte) (IntegrationMessengerListResponse, error) {
-	var r IntegrationMessengerListResponse
+func UnmarshalListMessengerIntegrationsResponse(data []byte) (ListMessengerIntegrationsResponse, error) {
+	var r ListMessengerIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationMessengerListResponse) Marshal() ([]byte, error) {
+func (r *ListMessengerIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionDeleteParams(data []byte) (IntegrationNotionDeleteParams, error) {
-	var r IntegrationNotionDeleteParams
+func UnmarshalDeleteNotionIntegrationParams(data []byte) (DeleteNotionIntegrationParams, error) {
+	var r DeleteNotionIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteNotionIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationNotionDeleteRequest map[string]interface{}
+type DeleteNotionIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationNotionDeleteRequest(data []byte) (IntegrationNotionDeleteRequest, error) {
-	var r IntegrationNotionDeleteRequest
+func UnmarshalDeleteNotionIntegrationRequest(data []byte) (DeleteNotionIntegrationRequest, error) {
+	var r DeleteNotionIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteNotionIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionDeleteResponse(data []byte) (IntegrationNotionDeleteResponse, error) {
-	var r IntegrationNotionDeleteResponse
+func UnmarshalDeleteNotionIntegrationResponse(data []byte) (DeleteNotionIntegrationResponse, error) {
+	var r DeleteNotionIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteNotionIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionFetchParams(data []byte) (IntegrationNotionFetchParams, error) {
-	var r IntegrationNotionFetchParams
+func UnmarshalFetchNotionIntegrationParams(data []byte) (FetchNotionIntegrationParams, error) {
+	var r FetchNotionIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionFetchParams) Marshal() ([]byte, error) {
+func (r *FetchNotionIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionFetchResponse(data []byte) (IntegrationNotionFetchResponse, error) {
-	var r IntegrationNotionFetchResponse
+func UnmarshalFetchNotionIntegrationResponse(data []byte) (FetchNotionIntegrationResponse, error) {
+	var r FetchNotionIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchNotionIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionSyncParams(data []byte) (IntegrationNotionSyncParams, error) {
-	var r IntegrationNotionSyncParams
+func UnmarshalSyncNotionIntegrationParams(data []byte) (SyncNotionIntegrationParams, error) {
+	var r SyncNotionIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionSyncParams) Marshal() ([]byte, error) {
+func (r *SyncNotionIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationNotionSyncRequest map[string]interface{}
+type SyncNotionIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationNotionSyncRequest(data []byte) (IntegrationNotionSyncRequest, error) {
-	var r IntegrationNotionSyncRequest
+func UnmarshalSyncNotionIntegrationRequest(data []byte) (SyncNotionIntegrationRequest, error) {
+	var r SyncNotionIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionSyncRequest) Marshal() ([]byte, error) {
+func (r *SyncNotionIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionSyncResponse(data []byte) (IntegrationNotionSyncResponse, error) {
-	var r IntegrationNotionSyncResponse
+func UnmarshalSyncNotionIntegrationResponse(data []byte) (SyncNotionIntegrationResponse, error) {
+	var r SyncNotionIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionSyncResponse) Marshal() ([]byte, error) {
+func (r *SyncNotionIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionUpdateParams(data []byte) (IntegrationNotionUpdateParams, error) {
-	var r IntegrationNotionUpdateParams
+func UnmarshalUpdateNotionIntegrationParams(data []byte) (UpdateNotionIntegrationParams, error) {
+	var r UpdateNotionIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateNotionIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionUpdateRequest(data []byte) (IntegrationNotionUpdateRequest, error) {
-	var r IntegrationNotionUpdateRequest
+func UnmarshalUpdateNotionIntegrationRequest(data []byte) (UpdateNotionIntegrationRequest, error) {
+	var r UpdateNotionIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateNotionIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionUpdateResponse(data []byte) (IntegrationNotionUpdateResponse, error) {
-	var r IntegrationNotionUpdateResponse
+func UnmarshalUpdateNotionIntegrationResponse(data []byte) (UpdateNotionIntegrationResponse, error) {
+	var r UpdateNotionIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateNotionIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionCreateRequest(data []byte) (IntegrationNotionCreateRequest, error) {
-	var r IntegrationNotionCreateRequest
+func UnmarshalCreateNotionIntegrationRequest(data []byte) (CreateNotionIntegrationRequest, error) {
+	var r CreateNotionIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateNotionIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionCreateResponse(data []byte) (IntegrationNotionCreateResponse, error) {
-	var r IntegrationNotionCreateResponse
+func UnmarshalCreateNotionIntegrationResponse(data []byte) (CreateNotionIntegrationResponse, error) {
+	var r CreateNotionIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateNotionIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionListParams(data []byte) (IntegrationNotionListParams, error) {
-	var r IntegrationNotionListParams
+func UnmarshalListNotionIntegrationsParams(data []byte) (ListNotionIntegrationsParams, error) {
+	var r ListNotionIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionListParams) Marshal() ([]byte, error) {
+func (r *ListNotionIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationNotionListResponse(data []byte) (IntegrationNotionListResponse, error) {
-	var r IntegrationNotionListResponse
+func UnmarshalListNotionIntegrationsResponse(data []byte) (ListNotionIntegrationsResponse, error) {
+	var r ListNotionIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationNotionListResponse) Marshal() ([]byte, error) {
+func (r *ListNotionIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapDeleteParams(data []byte) (IntegrationSitemapDeleteParams, error) {
-	var r IntegrationSitemapDeleteParams
+func UnmarshalDeleteSitemapIntegrationParams(data []byte) (DeleteSitemapIntegrationParams, error) {
+	var r DeleteSitemapIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteSitemapIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationSitemapDeleteRequest map[string]interface{}
+type DeleteSitemapIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationSitemapDeleteRequest(data []byte) (IntegrationSitemapDeleteRequest, error) {
-	var r IntegrationSitemapDeleteRequest
+func UnmarshalDeleteSitemapIntegrationRequest(data []byte) (DeleteSitemapIntegrationRequest, error) {
+	var r DeleteSitemapIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteSitemapIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapDeleteResponse(data []byte) (IntegrationSitemapDeleteResponse, error) {
-	var r IntegrationSitemapDeleteResponse
+func UnmarshalDeleteSitemapIntegrationResponse(data []byte) (DeleteSitemapIntegrationResponse, error) {
+	var r DeleteSitemapIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteSitemapIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapFetchParams(data []byte) (IntegrationSitemapFetchParams, error) {
-	var r IntegrationSitemapFetchParams
+func UnmarshalFetchSitemapIntegrationParams(data []byte) (FetchSitemapIntegrationParams, error) {
+	var r FetchSitemapIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapFetchParams) Marshal() ([]byte, error) {
+func (r *FetchSitemapIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapFetchResponse(data []byte) (IntegrationSitemapFetchResponse, error) {
-	var r IntegrationSitemapFetchResponse
+func UnmarshalFetchSitemapIntegrationResponse(data []byte) (FetchSitemapIntegrationResponse, error) {
+	var r FetchSitemapIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchSitemapIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapSyncParams(data []byte) (IntegrationSitemapSyncParams, error) {
-	var r IntegrationSitemapSyncParams
+func UnmarshalSyncSitemapIntegrationParams(data []byte) (SyncSitemapIntegrationParams, error) {
+	var r SyncSitemapIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapSyncParams) Marshal() ([]byte, error) {
+func (r *SyncSitemapIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationSitemapSyncRequest map[string]interface{}
+type SyncSitemapIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationSitemapSyncRequest(data []byte) (IntegrationSitemapSyncRequest, error) {
-	var r IntegrationSitemapSyncRequest
+func UnmarshalSyncSitemapIntegrationRequest(data []byte) (SyncSitemapIntegrationRequest, error) {
+	var r SyncSitemapIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapSyncRequest) Marshal() ([]byte, error) {
+func (r *SyncSitemapIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapSyncResponse(data []byte) (IntegrationSitemapSyncResponse, error) {
-	var r IntegrationSitemapSyncResponse
+func UnmarshalSyncSitemapIntegrationResponse(data []byte) (SyncSitemapIntegrationResponse, error) {
+	var r SyncSitemapIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapSyncResponse) Marshal() ([]byte, error) {
+func (r *SyncSitemapIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapUpdateParams(data []byte) (IntegrationSitemapUpdateParams, error) {
-	var r IntegrationSitemapUpdateParams
+func UnmarshalUpdateSitemapIntegrationParams(data []byte) (UpdateSitemapIntegrationParams, error) {
+	var r UpdateSitemapIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateSitemapIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapUpdateRequest(data []byte) (IntegrationSitemapUpdateRequest, error) {
-	var r IntegrationSitemapUpdateRequest
+func UnmarshalUpdateSitemapIntegrationRequest(data []byte) (UpdateSitemapIntegrationRequest, error) {
+	var r UpdateSitemapIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateSitemapIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapUpdateResponse(data []byte) (IntegrationSitemapUpdateResponse, error) {
-	var r IntegrationSitemapUpdateResponse
+func UnmarshalUpdateSitemapIntegrationResponse(data []byte) (UpdateSitemapIntegrationResponse, error) {
+	var r UpdateSitemapIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateSitemapIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapCreateRequest(data []byte) (IntegrationSitemapCreateRequest, error) {
-	var r IntegrationSitemapCreateRequest
+func UnmarshalCreateSitemapIntegrationRequest(data []byte) (CreateSitemapIntegrationRequest, error) {
+	var r CreateSitemapIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateSitemapIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapCreateResponse(data []byte) (IntegrationSitemapCreateResponse, error) {
-	var r IntegrationSitemapCreateResponse
+func UnmarshalCreateSitemapIntegrationResponse(data []byte) (CreateSitemapIntegrationResponse, error) {
+	var r CreateSitemapIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateSitemapIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapListParams(data []byte) (IntegrationSitemapListParams, error) {
-	var r IntegrationSitemapListParams
+func UnmarshalListSitemapIntegrationsParams(data []byte) (ListSitemapIntegrationsParams, error) {
+	var r ListSitemapIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapListParams) Marshal() ([]byte, error) {
+func (r *ListSitemapIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSitemapListResponse(data []byte) (IntegrationSitemapListResponse, error) {
-	var r IntegrationSitemapListResponse
+func UnmarshalListSitemapIntegrationsResponse(data []byte) (ListSitemapIntegrationsResponse, error) {
+	var r ListSitemapIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSitemapListResponse) Marshal() ([]byte, error) {
+func (r *ListSitemapIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackDeleteParams(data []byte) (IntegrationSlackDeleteParams, error) {
-	var r IntegrationSlackDeleteParams
+func UnmarshalDeleteSlackIntegrationParams(data []byte) (DeleteSlackIntegrationParams, error) {
+	var r DeleteSlackIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteSlackIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationSlackDeleteRequest map[string]interface{}
+type DeleteSlackIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationSlackDeleteRequest(data []byte) (IntegrationSlackDeleteRequest, error) {
-	var r IntegrationSlackDeleteRequest
+func UnmarshalDeleteSlackIntegrationRequest(data []byte) (DeleteSlackIntegrationRequest, error) {
+	var r DeleteSlackIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteSlackIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackDeleteResponse(data []byte) (IntegrationSlackDeleteResponse, error) {
-	var r IntegrationSlackDeleteResponse
+func UnmarshalDeleteSlackIntegrationResponse(data []byte) (DeleteSlackIntegrationResponse, error) {
+	var r DeleteSlackIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteSlackIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackFetchParams(data []byte) (IntegrationSlackFetchParams, error) {
-	var r IntegrationSlackFetchParams
+func UnmarshalFetchSlackIntegrationParams(data []byte) (FetchSlackIntegrationParams, error) {
+	var r FetchSlackIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackFetchParams) Marshal() ([]byte, error) {
+func (r *FetchSlackIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackFetchResponse(data []byte) (IntegrationSlackFetchResponse, error) {
-	var r IntegrationSlackFetchResponse
+func UnmarshalFetchSlackIntegrationResponse(data []byte) (FetchSlackIntegrationResponse, error) {
+	var r FetchSlackIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchSlackIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackSetupParams(data []byte) (IntegrationSlackSetupParams, error) {
-	var r IntegrationSlackSetupParams
+func UnmarshalSetupSlackIntegrationParams(data []byte) (SetupSlackIntegrationParams, error) {
+	var r SetupSlackIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackSetupParams) Marshal() ([]byte, error) {
+func (r *SetupSlackIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationSlackSetupRequest map[string]interface{}
+type SetupSlackIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationSlackSetupRequest(data []byte) (IntegrationSlackSetupRequest, error) {
-	var r IntegrationSlackSetupRequest
+func UnmarshalSetupSlackIntegrationRequest(data []byte) (SetupSlackIntegrationRequest, error) {
+	var r SetupSlackIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackSetupRequest) Marshal() ([]byte, error) {
+func (r *SetupSlackIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackSetupResponse(data []byte) (IntegrationSlackSetupResponse, error) {
-	var r IntegrationSlackSetupResponse
+func UnmarshalSetupSlackIntegrationResponse(data []byte) (SetupSlackIntegrationResponse, error) {
+	var r SetupSlackIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackSetupResponse) Marshal() ([]byte, error) {
+func (r *SetupSlackIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackUpdateParams(data []byte) (IntegrationSlackUpdateParams, error) {
-	var r IntegrationSlackUpdateParams
+func UnmarshalUpdateSlackIntegrationParams(data []byte) (UpdateSlackIntegrationParams, error) {
+	var r UpdateSlackIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateSlackIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackUpdateRequest(data []byte) (IntegrationSlackUpdateRequest, error) {
-	var r IntegrationSlackUpdateRequest
+func UnmarshalUpdateSlackIntegrationRequest(data []byte) (UpdateSlackIntegrationRequest, error) {
+	var r UpdateSlackIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateSlackIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackUpdateResponse(data []byte) (IntegrationSlackUpdateResponse, error) {
-	var r IntegrationSlackUpdateResponse
+func UnmarshalUpdateSlackIntegrationResponse(data []byte) (UpdateSlackIntegrationResponse, error) {
+	var r UpdateSlackIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateSlackIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackCreateRequest(data []byte) (IntegrationSlackCreateRequest, error) {
-	var r IntegrationSlackCreateRequest
+func UnmarshalCreateSlackIntegrationRequest(data []byte) (CreateSlackIntegrationRequest, error) {
+	var r CreateSlackIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateSlackIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackCreateResponse(data []byte) (IntegrationSlackCreateResponse, error) {
-	var r IntegrationSlackCreateResponse
+func UnmarshalCreateSlackIntegrationResponse(data []byte) (CreateSlackIntegrationResponse, error) {
+	var r CreateSlackIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateSlackIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackListParams(data []byte) (IntegrationSlackListParams, error) {
-	var r IntegrationSlackListParams
+func UnmarshalListSlackIntegrationsParams(data []byte) (ListSlackIntegrationsParams, error) {
+	var r ListSlackIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackListParams) Marshal() ([]byte, error) {
+func (r *ListSlackIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSlackListResponse(data []byte) (IntegrationSlackListResponse, error) {
-	var r IntegrationSlackListResponse
+func UnmarshalListSlackIntegrationsResponse(data []byte) (ListSlackIntegrationsResponse, error) {
+	var r ListSlackIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSlackListResponse) Marshal() ([]byte, error) {
+func (r *ListSlackIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSupportDeleteParams(data []byte) (IntegrationSupportDeleteParams, error) {
-	var r IntegrationSupportDeleteParams
+func UnmarshalDeleteSupportIntegrationParams(data []byte) (DeleteSupportIntegrationParams, error) {
+	var r DeleteSupportIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSupportDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteSupportIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationSupportDeleteRequest map[string]interface{}
+type DeleteSupportIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationSupportDeleteRequest(data []byte) (IntegrationSupportDeleteRequest, error) {
-	var r IntegrationSupportDeleteRequest
+func UnmarshalDeleteSupportIntegrationRequest(data []byte) (DeleteSupportIntegrationRequest, error) {
+	var r DeleteSupportIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSupportDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteSupportIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSupportDeleteResponse(data []byte) (IntegrationSupportDeleteResponse, error) {
-	var r IntegrationSupportDeleteResponse
+func UnmarshalDeleteSupportIntegrationResponse(data []byte) (DeleteSupportIntegrationResponse, error) {
+	var r DeleteSupportIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSupportDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteSupportIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSupportFetchParams(data []byte) (IntegrationSupportFetchParams, error) {
-	var r IntegrationSupportFetchParams
+func UnmarshalFetchSupportIntegrationParams(data []byte) (FetchSupportIntegrationParams, error) {
+	var r FetchSupportIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSupportFetchParams) Marshal() ([]byte, error) {
+func (r *FetchSupportIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSupportFetchResponse(data []byte) (IntegrationSupportFetchResponse, error) {
-	var r IntegrationSupportFetchResponse
+func UnmarshalFetchSupportIntegrationResponse(data []byte) (FetchSupportIntegrationResponse, error) {
+	var r FetchSupportIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSupportFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchSupportIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSupportUpdateParams(data []byte) (IntegrationSupportUpdateParams, error) {
-	var r IntegrationSupportUpdateParams
+func UnmarshalUpdateSupportIntegrationParams(data []byte) (UpdateSupportIntegrationParams, error) {
+	var r UpdateSupportIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSupportUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateSupportIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSupportUpdateRequest(data []byte) (IntegrationSupportUpdateRequest, error) {
-	var r IntegrationSupportUpdateRequest
+func UnmarshalUpdateSupportIntegrationRequest(data []byte) (UpdateSupportIntegrationRequest, error) {
+	var r UpdateSupportIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSupportUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateSupportIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSupportUpdateResponse(data []byte) (IntegrationSupportUpdateResponse, error) {
-	var r IntegrationSupportUpdateResponse
+func UnmarshalUpdateSupportIntegrationResponse(data []byte) (UpdateSupportIntegrationResponse, error) {
+	var r UpdateSupportIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSupportUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateSupportIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSupportCreateRequest(data []byte) (IntegrationSupportCreateRequest, error) {
-	var r IntegrationSupportCreateRequest
+func UnmarshalCreateSupportIntegrationRequest(data []byte) (CreateSupportIntegrationRequest, error) {
+	var r CreateSupportIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSupportCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateSupportIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSupportCreateResponse(data []byte) (IntegrationSupportCreateResponse, error) {
-	var r IntegrationSupportCreateResponse
+func UnmarshalCreateSupportIntegrationResponse(data []byte) (CreateSupportIntegrationResponse, error) {
+	var r CreateSupportIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSupportCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateSupportIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSupportListParams(data []byte) (IntegrationSupportListParams, error) {
-	var r IntegrationSupportListParams
+func UnmarshalListSupportIntegrationsParams(data []byte) (ListSupportIntegrationsParams, error) {
+	var r ListSupportIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSupportListParams) Marshal() ([]byte, error) {
+func (r *ListSupportIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationSupportListResponse(data []byte) (IntegrationSupportListResponse, error) {
-	var r IntegrationSupportListResponse
+func UnmarshalListSupportIntegrationsResponse(data []byte) (ListSupportIntegrationsResponse, error) {
+	var r ListSupportIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationSupportListResponse) Marshal() ([]byte, error) {
+func (r *ListSupportIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramDeleteParams(data []byte) (IntegrationTelegramDeleteParams, error) {
-	var r IntegrationTelegramDeleteParams
+func UnmarshalDeleteTelegramIntegrationParams(data []byte) (DeleteTelegramIntegrationParams, error) {
+	var r DeleteTelegramIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteTelegramIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationTelegramDeleteRequest map[string]interface{}
+type DeleteTelegramIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationTelegramDeleteRequest(data []byte) (IntegrationTelegramDeleteRequest, error) {
-	var r IntegrationTelegramDeleteRequest
+func UnmarshalDeleteTelegramIntegrationRequest(data []byte) (DeleteTelegramIntegrationRequest, error) {
+	var r DeleteTelegramIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteTelegramIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramDeleteResponse(data []byte) (IntegrationTelegramDeleteResponse, error) {
-	var r IntegrationTelegramDeleteResponse
+func UnmarshalDeleteTelegramIntegrationResponse(data []byte) (DeleteTelegramIntegrationResponse, error) {
+	var r DeleteTelegramIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteTelegramIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramFetchParams(data []byte) (IntegrationTelegramFetchParams, error) {
-	var r IntegrationTelegramFetchParams
+func UnmarshalFetchTelegramIntegrationParams(data []byte) (FetchTelegramIntegrationParams, error) {
+	var r FetchTelegramIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramFetchParams) Marshal() ([]byte, error) {
+func (r *FetchTelegramIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramFetchResponse(data []byte) (IntegrationTelegramFetchResponse, error) {
-	var r IntegrationTelegramFetchResponse
+func UnmarshalFetchTelegramIntegrationResponse(data []byte) (FetchTelegramIntegrationResponse, error) {
+	var r FetchTelegramIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchTelegramIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramSetupParams(data []byte) (IntegrationTelegramSetupParams, error) {
-	var r IntegrationTelegramSetupParams
+func UnmarshalSetupTelegramIntegrationParams(data []byte) (SetupTelegramIntegrationParams, error) {
+	var r SetupTelegramIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramSetupParams) Marshal() ([]byte, error) {
+func (r *SetupTelegramIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationTelegramSetupRequest map[string]interface{}
+type SetupTelegramIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationTelegramSetupRequest(data []byte) (IntegrationTelegramSetupRequest, error) {
-	var r IntegrationTelegramSetupRequest
+func UnmarshalSetupTelegramIntegrationRequest(data []byte) (SetupTelegramIntegrationRequest, error) {
+	var r SetupTelegramIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramSetupRequest) Marshal() ([]byte, error) {
+func (r *SetupTelegramIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramSetupResponse(data []byte) (IntegrationTelegramSetupResponse, error) {
-	var r IntegrationTelegramSetupResponse
+func UnmarshalSetupTelegramIntegrationResponse(data []byte) (SetupTelegramIntegrationResponse, error) {
+	var r SetupTelegramIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramSetupResponse) Marshal() ([]byte, error) {
+func (r *SetupTelegramIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramUpdateParams(data []byte) (IntegrationTelegramUpdateParams, error) {
-	var r IntegrationTelegramUpdateParams
+func UnmarshalUpdateTelegramIntegrationParams(data []byte) (UpdateTelegramIntegrationParams, error) {
+	var r UpdateTelegramIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateTelegramIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramUpdateRequest(data []byte) (IntegrationTelegramUpdateRequest, error) {
-	var r IntegrationTelegramUpdateRequest
+func UnmarshalUpdateTelegramIntegrationRequest(data []byte) (UpdateTelegramIntegrationRequest, error) {
+	var r UpdateTelegramIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateTelegramIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramUpdateResponse(data []byte) (IntegrationTelegramUpdateResponse, error) {
-	var r IntegrationTelegramUpdateResponse
+func UnmarshalUpdateTelegramIntegrationResponse(data []byte) (UpdateTelegramIntegrationResponse, error) {
+	var r UpdateTelegramIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateTelegramIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramCreateRequest(data []byte) (IntegrationTelegramCreateRequest, error) {
-	var r IntegrationTelegramCreateRequest
+func UnmarshalCreateTelegramIntegrationRequest(data []byte) (CreateTelegramIntegrationRequest, error) {
+	var r CreateTelegramIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateTelegramIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramCreateResponse(data []byte) (IntegrationTelegramCreateResponse, error) {
-	var r IntegrationTelegramCreateResponse
+func UnmarshalCreateTelegramIntegrationResponse(data []byte) (CreateTelegramIntegrationResponse, error) {
+	var r CreateTelegramIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateTelegramIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramListParams(data []byte) (IntegrationTelegramListParams, error) {
-	var r IntegrationTelegramListParams
+func UnmarshalListTelegramIntegrationsParams(data []byte) (ListTelegramIntegrationsParams, error) {
+	var r ListTelegramIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramListParams) Marshal() ([]byte, error) {
+func (r *ListTelegramIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTelegramListResponse(data []byte) (IntegrationTelegramListResponse, error) {
-	var r IntegrationTelegramListResponse
+func UnmarshalListTelegramIntegrationsResponse(data []byte) (ListTelegramIntegrationsResponse, error) {
+	var r ListTelegramIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTelegramListResponse) Marshal() ([]byte, error) {
+func (r *ListTelegramIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerDeleteParams(data []byte) (IntegrationTriggerDeleteParams, error) {
-	var r IntegrationTriggerDeleteParams
+func UnmarshalDeleteTriggerIntegrationParams(data []byte) (DeleteTriggerIntegrationParams, error) {
+	var r DeleteTriggerIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteTriggerIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationTriggerDeleteRequest map[string]interface{}
+type DeleteTriggerIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationTriggerDeleteRequest(data []byte) (IntegrationTriggerDeleteRequest, error) {
-	var r IntegrationTriggerDeleteRequest
+func UnmarshalDeleteTriggerIntegrationRequest(data []byte) (DeleteTriggerIntegrationRequest, error) {
+	var r DeleteTriggerIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteTriggerIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerDeleteResponse(data []byte) (IntegrationTriggerDeleteResponse, error) {
-	var r IntegrationTriggerDeleteResponse
+func UnmarshalDeleteTriggerIntegrationResponse(data []byte) (DeleteTriggerIntegrationResponse, error) {
+	var r DeleteTriggerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteTriggerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerFetchParams(data []byte) (IntegrationTriggerFetchParams, error) {
-	var r IntegrationTriggerFetchParams
+func UnmarshalFetchTriggerIntegrationParams(data []byte) (FetchTriggerIntegrationParams, error) {
+	var r FetchTriggerIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerFetchParams) Marshal() ([]byte, error) {
+func (r *FetchTriggerIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerFetchResponse(data []byte) (IntegrationTriggerFetchResponse, error) {
-	var r IntegrationTriggerFetchResponse
+func UnmarshalFetchTriggerIntegrationResponse(data []byte) (FetchTriggerIntegrationResponse, error) {
+	var r FetchTriggerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchTriggerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerInvokeParams(data []byte) (IntegrationTriggerInvokeParams, error) {
-	var r IntegrationTriggerInvokeParams
+func UnmarshalInvokeTriggerIntegrationParams(data []byte) (InvokeTriggerIntegrationParams, error) {
+	var r InvokeTriggerIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerInvokeParams) Marshal() ([]byte, error) {
+func (r *InvokeTriggerIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationTriggerInvokeRequest map[string]interface{}
+type InvokeTriggerIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationTriggerInvokeRequest(data []byte) (IntegrationTriggerInvokeRequest, error) {
-	var r IntegrationTriggerInvokeRequest
+func UnmarshalInvokeTriggerIntegrationRequest(data []byte) (InvokeTriggerIntegrationRequest, error) {
+	var r InvokeTriggerIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerInvokeRequest) Marshal() ([]byte, error) {
+func (r *InvokeTriggerIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerInvokeResponse(data []byte) (IntegrationTriggerInvokeResponse, error) {
-	var r IntegrationTriggerInvokeResponse
+func UnmarshalInvokeTriggerIntegrationResponse(data []byte) (InvokeTriggerIntegrationResponse, error) {
+	var r InvokeTriggerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerInvokeResponse) Marshal() ([]byte, error) {
+func (r *InvokeTriggerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerSetupParams(data []byte) (IntegrationTriggerSetupParams, error) {
-	var r IntegrationTriggerSetupParams
+func UnmarshalSetupTriggerIntegrationParams(data []byte) (SetupTriggerIntegrationParams, error) {
+	var r SetupTriggerIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerSetupParams) Marshal() ([]byte, error) {
+func (r *SetupTriggerIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationTriggerSetupRequest map[string]interface{}
+type SetupTriggerIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationTriggerSetupRequest(data []byte) (IntegrationTriggerSetupRequest, error) {
-	var r IntegrationTriggerSetupRequest
+func UnmarshalSetupTriggerIntegrationRequest(data []byte) (SetupTriggerIntegrationRequest, error) {
+	var r SetupTriggerIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerSetupRequest) Marshal() ([]byte, error) {
+func (r *SetupTriggerIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerSetupResponse(data []byte) (IntegrationTriggerSetupResponse, error) {
-	var r IntegrationTriggerSetupResponse
+func UnmarshalSetupTriggerIntegrationResponse(data []byte) (SetupTriggerIntegrationResponse, error) {
+	var r SetupTriggerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerSetupResponse) Marshal() ([]byte, error) {
+func (r *SetupTriggerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerUpdateParams(data []byte) (IntegrationTriggerUpdateParams, error) {
-	var r IntegrationTriggerUpdateParams
+func UnmarshalUpdateTriggerIntegrationParams(data []byte) (UpdateTriggerIntegrationParams, error) {
+	var r UpdateTriggerIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateTriggerIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerUpdateRequest(data []byte) (IntegrationTriggerUpdateRequest, error) {
-	var r IntegrationTriggerUpdateRequest
+func UnmarshalUpdateTriggerIntegrationRequest(data []byte) (UpdateTriggerIntegrationRequest, error) {
+	var r UpdateTriggerIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateTriggerIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerUpdateResponse(data []byte) (IntegrationTriggerUpdateResponse, error) {
-	var r IntegrationTriggerUpdateResponse
+func UnmarshalUpdateTriggerIntegrationResponse(data []byte) (UpdateTriggerIntegrationResponse, error) {
+	var r UpdateTriggerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateTriggerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerCreateRequest(data []byte) (IntegrationTriggerCreateRequest, error) {
-	var r IntegrationTriggerCreateRequest
+func UnmarshalCreateTriggerIntegrationRequest(data []byte) (CreateTriggerIntegrationRequest, error) {
+	var r CreateTriggerIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateTriggerIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerCreateResponse(data []byte) (IntegrationTriggerCreateResponse, error) {
-	var r IntegrationTriggerCreateResponse
+func UnmarshalCreateTriggerIntegrationResponse(data []byte) (CreateTriggerIntegrationResponse, error) {
+	var r CreateTriggerIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateTriggerIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerListParams(data []byte) (IntegrationTriggerListParams, error) {
-	var r IntegrationTriggerListParams
+func UnmarshalListTriggerIntegrationsParams(data []byte) (ListTriggerIntegrationsParams, error) {
+	var r ListTriggerIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerListParams) Marshal() ([]byte, error) {
+func (r *ListTriggerIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTriggerListResponse(data []byte) (IntegrationTriggerListResponse, error) {
-	var r IntegrationTriggerListResponse
+func UnmarshalListTriggerIntegrationsResponse(data []byte) (ListTriggerIntegrationsResponse, error) {
+	var r ListTriggerIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTriggerListResponse) Marshal() ([]byte, error) {
+func (r *ListTriggerIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioDeleteParams(data []byte) (IntegrationTwilioDeleteParams, error) {
-	var r IntegrationTwilioDeleteParams
+func UnmarshalDeleteTwilioIntegrationParams(data []byte) (DeleteTwilioIntegrationParams, error) {
+	var r DeleteTwilioIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteTwilioIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationTwilioDeleteRequest map[string]interface{}
+type DeleteTwilioIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationTwilioDeleteRequest(data []byte) (IntegrationTwilioDeleteRequest, error) {
-	var r IntegrationTwilioDeleteRequest
+func UnmarshalDeleteTwilioIntegrationRequest(data []byte) (DeleteTwilioIntegrationRequest, error) {
+	var r DeleteTwilioIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteTwilioIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioDeleteResponse(data []byte) (IntegrationTwilioDeleteResponse, error) {
-	var r IntegrationTwilioDeleteResponse
+func UnmarshalDeleteTwilioIntegrationResponse(data []byte) (DeleteTwilioIntegrationResponse, error) {
+	var r DeleteTwilioIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteTwilioIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioFetchParams(data []byte) (IntegrationTwilioFetchParams, error) {
-	var r IntegrationTwilioFetchParams
+func UnmarshalFetchTwilioIntegrationParams(data []byte) (FetchTwilioIntegrationParams, error) {
+	var r FetchTwilioIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioFetchParams) Marshal() ([]byte, error) {
+func (r *FetchTwilioIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioFetchResponse(data []byte) (IntegrationTwilioFetchResponse, error) {
-	var r IntegrationTwilioFetchResponse
+func UnmarshalFetchTwilioIntegrationResponse(data []byte) (FetchTwilioIntegrationResponse, error) {
+	var r FetchTwilioIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchTwilioIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioSetupParams(data []byte) (IntegrationTwilioSetupParams, error) {
-	var r IntegrationTwilioSetupParams
+func UnmarshalSetupTwilioIntegrationParams(data []byte) (SetupTwilioIntegrationParams, error) {
+	var r SetupTwilioIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioSetupParams) Marshal() ([]byte, error) {
+func (r *SetupTwilioIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationTwilioSetupRequest map[string]interface{}
+type SetupTwilioIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationTwilioSetupRequest(data []byte) (IntegrationTwilioSetupRequest, error) {
-	var r IntegrationTwilioSetupRequest
+func UnmarshalSetupTwilioIntegrationRequest(data []byte) (SetupTwilioIntegrationRequest, error) {
+	var r SetupTwilioIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioSetupRequest) Marshal() ([]byte, error) {
+func (r *SetupTwilioIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioSetupResponse(data []byte) (IntegrationTwilioSetupResponse, error) {
-	var r IntegrationTwilioSetupResponse
+func UnmarshalSetupTwilioIntegrationResponse(data []byte) (SetupTwilioIntegrationResponse, error) {
+	var r SetupTwilioIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioSetupResponse) Marshal() ([]byte, error) {
+func (r *SetupTwilioIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioUpdateParams(data []byte) (IntegrationTwilioUpdateParams, error) {
-	var r IntegrationTwilioUpdateParams
+func UnmarshalUpdateTwilioIntegrationParams(data []byte) (UpdateTwilioIntegrationParams, error) {
+	var r UpdateTwilioIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateTwilioIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioUpdateRequest(data []byte) (IntegrationTwilioUpdateRequest, error) {
-	var r IntegrationTwilioUpdateRequest
+func UnmarshalUpdateTwilioIntegrationRequest(data []byte) (UpdateTwilioIntegrationRequest, error) {
+	var r UpdateTwilioIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateTwilioIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioUpdateResponse(data []byte) (IntegrationTwilioUpdateResponse, error) {
-	var r IntegrationTwilioUpdateResponse
+func UnmarshalUpdateTwilioIntegrationResponse(data []byte) (UpdateTwilioIntegrationResponse, error) {
+	var r UpdateTwilioIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateTwilioIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioCreateRequest(data []byte) (IntegrationTwilioCreateRequest, error) {
-	var r IntegrationTwilioCreateRequest
+func UnmarshalCreateTwilioIntegrationRequest(data []byte) (CreateTwilioIntegrationRequest, error) {
+	var r CreateTwilioIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateTwilioIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioCreateResponse(data []byte) (IntegrationTwilioCreateResponse, error) {
-	var r IntegrationTwilioCreateResponse
+func UnmarshalCreateTwilioIntegrationResponse(data []byte) (CreateTwilioIntegrationResponse, error) {
+	var r CreateTwilioIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateTwilioIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioListParams(data []byte) (IntegrationTwilioListParams, error) {
-	var r IntegrationTwilioListParams
+func UnmarshalListTwilioIntegrationsParams(data []byte) (ListTwilioIntegrationsParams, error) {
+	var r ListTwilioIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioListParams) Marshal() ([]byte, error) {
+func (r *ListTwilioIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationTwilioListResponse(data []byte) (IntegrationTwilioListResponse, error) {
-	var r IntegrationTwilioListResponse
+func UnmarshalListTwilioIntegrationsResponse(data []byte) (ListTwilioIntegrationsResponse, error) {
+	var r ListTwilioIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationTwilioListResponse) Marshal() ([]byte, error) {
+func (r *ListTwilioIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappDeleteParams(data []byte) (IntegrationWhatsappDeleteParams, error) {
-	var r IntegrationWhatsappDeleteParams
+func UnmarshalDeleteWhatsAppIntegrationParams(data []byte) (DeleteWhatsAppIntegrationParams, error) {
+	var r DeleteWhatsAppIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteWhatsAppIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationWhatsappDeleteRequest map[string]interface{}
+type DeleteWhatsAppIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationWhatsappDeleteRequest(data []byte) (IntegrationWhatsappDeleteRequest, error) {
-	var r IntegrationWhatsappDeleteRequest
+func UnmarshalDeleteWhatsAppIntegrationRequest(data []byte) (DeleteWhatsAppIntegrationRequest, error) {
+	var r DeleteWhatsAppIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteWhatsAppIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappDeleteResponse(data []byte) (IntegrationWhatsappDeleteResponse, error) {
-	var r IntegrationWhatsappDeleteResponse
+func UnmarshalDeleteWhatsAppIntegrationResponse(data []byte) (DeleteWhatsAppIntegrationResponse, error) {
+	var r DeleteWhatsAppIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteWhatsAppIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappFetchParams(data []byte) (IntegrationWhatsappFetchParams, error) {
-	var r IntegrationWhatsappFetchParams
+func UnmarshalFetchWhatsAppIntegrationParams(data []byte) (FetchWhatsAppIntegrationParams, error) {
+	var r FetchWhatsAppIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappFetchParams) Marshal() ([]byte, error) {
+func (r *FetchWhatsAppIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappFetchResponse(data []byte) (IntegrationWhatsappFetchResponse, error) {
-	var r IntegrationWhatsappFetchResponse
+func UnmarshalFetchWhatsAppIntegrationResponse(data []byte) (FetchWhatsAppIntegrationResponse, error) {
+	var r FetchWhatsAppIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchWhatsAppIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappSetupParams(data []byte) (IntegrationWhatsappSetupParams, error) {
-	var r IntegrationWhatsappSetupParams
+func UnmarshalSetupWhatsAppIntegrationParams(data []byte) (SetupWhatsAppIntegrationParams, error) {
+	var r SetupWhatsAppIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappSetupParams) Marshal() ([]byte, error) {
+func (r *SetupWhatsAppIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationWhatsappSetupRequest map[string]interface{}
+type SetupWhatsAppIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationWhatsappSetupRequest(data []byte) (IntegrationWhatsappSetupRequest, error) {
-	var r IntegrationWhatsappSetupRequest
+func UnmarshalSetupWhatsAppIntegrationRequest(data []byte) (SetupWhatsAppIntegrationRequest, error) {
+	var r SetupWhatsAppIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappSetupRequest) Marshal() ([]byte, error) {
+func (r *SetupWhatsAppIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappSetupResponse(data []byte) (IntegrationWhatsappSetupResponse, error) {
-	var r IntegrationWhatsappSetupResponse
+func UnmarshalSetupWhatsAppIntegrationResponse(data []byte) (SetupWhatsAppIntegrationResponse, error) {
+	var r SetupWhatsAppIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappSetupResponse) Marshal() ([]byte, error) {
+func (r *SetupWhatsAppIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappUpdateParams(data []byte) (IntegrationWhatsappUpdateParams, error) {
-	var r IntegrationWhatsappUpdateParams
+func UnmarshalUpdateWhatsAppIntegrationParams(data []byte) (UpdateWhatsAppIntegrationParams, error) {
+	var r UpdateWhatsAppIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateWhatsAppIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappUpdateRequest(data []byte) (IntegrationWhatsappUpdateRequest, error) {
-	var r IntegrationWhatsappUpdateRequest
+func UnmarshalUpdateWhatsAppIntegrationRequest(data []byte) (UpdateWhatsAppIntegrationRequest, error) {
+	var r UpdateWhatsAppIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateWhatsAppIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappUpdateResponse(data []byte) (IntegrationWhatsappUpdateResponse, error) {
-	var r IntegrationWhatsappUpdateResponse
+func UnmarshalUpdateWhatsAppIntegrationResponse(data []byte) (UpdateWhatsAppIntegrationResponse, error) {
+	var r UpdateWhatsAppIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateWhatsAppIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappCreateRequest(data []byte) (IntegrationWhatsappCreateRequest, error) {
-	var r IntegrationWhatsappCreateRequest
+func UnmarshalCreateWhatsAppIntegrationRequest(data []byte) (CreateWhatsAppIntegrationRequest, error) {
+	var r CreateWhatsAppIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateWhatsAppIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappCreateResponse(data []byte) (IntegrationWhatsappCreateResponse, error) {
-	var r IntegrationWhatsappCreateResponse
+func UnmarshalCreateWhatsAppIntegrationResponse(data []byte) (CreateWhatsAppIntegrationResponse, error) {
+	var r CreateWhatsAppIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateWhatsAppIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappListParams(data []byte) (IntegrationWhatsappListParams, error) {
-	var r IntegrationWhatsappListParams
+func UnmarshalListWhatsAppIntegrationsParams(data []byte) (ListWhatsAppIntegrationsParams, error) {
+	var r ListWhatsAppIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappListParams) Marshal() ([]byte, error) {
+func (r *ListWhatsAppIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWhatsappListResponse(data []byte) (IntegrationWhatsappListResponse, error) {
-	var r IntegrationWhatsappListResponse
+func UnmarshalListWhatsAppIntegrationsResponse(data []byte) (ListWhatsAppIntegrationsResponse, error) {
+	var r ListWhatsAppIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWhatsappListResponse) Marshal() ([]byte, error) {
+func (r *ListWhatsAppIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetDeleteParams(data []byte) (IntegrationWidgetDeleteParams, error) {
-	var r IntegrationWidgetDeleteParams
+func UnmarshalDeleteWidgetIntegrationParams(data []byte) (DeleteWidgetIntegrationParams, error) {
+	var r DeleteWidgetIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteWidgetIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationWidgetDeleteRequest map[string]interface{}
+type DeleteWidgetIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationWidgetDeleteRequest(data []byte) (IntegrationWidgetDeleteRequest, error) {
-	var r IntegrationWidgetDeleteRequest
+func UnmarshalDeleteWidgetIntegrationRequest(data []byte) (DeleteWidgetIntegrationRequest, error) {
+	var r DeleteWidgetIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteWidgetIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetDeleteResponse(data []byte) (IntegrationWidgetDeleteResponse, error) {
-	var r IntegrationWidgetDeleteResponse
+func UnmarshalDeleteWidgetIntegrationResponse(data []byte) (DeleteWidgetIntegrationResponse, error) {
+	var r DeleteWidgetIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteWidgetIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetFetchParams(data []byte) (IntegrationWidgetFetchParams, error) {
-	var r IntegrationWidgetFetchParams
+func UnmarshalFetchWidgetIntegrationParams(data []byte) (FetchWidgetIntegrationParams, error) {
+	var r FetchWidgetIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetFetchParams) Marshal() ([]byte, error) {
+func (r *FetchWidgetIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetFetchResponse(data []byte) (IntegrationWidgetFetchResponse, error) {
-	var r IntegrationWidgetFetchResponse
+func UnmarshalFetchWidgetIntegrationResponse(data []byte) (FetchWidgetIntegrationResponse, error) {
+	var r FetchWidgetIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchWidgetIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetSetupParams(data []byte) (IntegrationWidgetSetupParams, error) {
-	var r IntegrationWidgetSetupParams
+func UnmarshalSetupWidgetIntegrationParams(data []byte) (SetupWidgetIntegrationParams, error) {
+	var r SetupWidgetIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetSetupParams) Marshal() ([]byte, error) {
+func (r *SetupWidgetIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type IntegrationWidgetSetupRequest map[string]interface{}
+type SetupWidgetIntegrationRequest map[string]interface{}
 
-func UnmarshalIntegrationWidgetSetupRequest(data []byte) (IntegrationWidgetSetupRequest, error) {
-	var r IntegrationWidgetSetupRequest
+func UnmarshalSetupWidgetIntegrationRequest(data []byte) (SetupWidgetIntegrationRequest, error) {
+	var r SetupWidgetIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetSetupRequest) Marshal() ([]byte, error) {
+func (r *SetupWidgetIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetSetupResponse(data []byte) (IntegrationWidgetSetupResponse, error) {
-	var r IntegrationWidgetSetupResponse
+func UnmarshalSetupWidgetIntegrationResponse(data []byte) (SetupWidgetIntegrationResponse, error) {
+	var r SetupWidgetIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetSetupResponse) Marshal() ([]byte, error) {
+func (r *SetupWidgetIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetUpdateParams(data []byte) (IntegrationWidgetUpdateParams, error) {
-	var r IntegrationWidgetUpdateParams
+func UnmarshalUpdateWidgetIntegrationParams(data []byte) (UpdateWidgetIntegrationParams, error) {
+	var r UpdateWidgetIntegrationParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateWidgetIntegrationParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetUpdateRequest(data []byte) (IntegrationWidgetUpdateRequest, error) {
-	var r IntegrationWidgetUpdateRequest
+func UnmarshalUpdateWidgetIntegrationRequest(data []byte) (UpdateWidgetIntegrationRequest, error) {
+	var r UpdateWidgetIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateWidgetIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetUpdateResponse(data []byte) (IntegrationWidgetUpdateResponse, error) {
-	var r IntegrationWidgetUpdateResponse
+func UnmarshalUpdateWidgetIntegrationResponse(data []byte) (UpdateWidgetIntegrationResponse, error) {
+	var r UpdateWidgetIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateWidgetIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetCreateRequest(data []byte) (IntegrationWidgetCreateRequest, error) {
-	var r IntegrationWidgetCreateRequest
+func UnmarshalCreateWidgetIntegrationRequest(data []byte) (CreateWidgetIntegrationRequest, error) {
+	var r CreateWidgetIntegrationRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateWidgetIntegrationRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetCreateResponse(data []byte) (IntegrationWidgetCreateResponse, error) {
-	var r IntegrationWidgetCreateResponse
+func UnmarshalCreateWidgetIntegrationResponse(data []byte) (CreateWidgetIntegrationResponse, error) {
+	var r CreateWidgetIntegrationResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateWidgetIntegrationResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetListParams(data []byte) (IntegrationWidgetListParams, error) {
-	var r IntegrationWidgetListParams
+func UnmarshalListWidgetIntegrationsParams(data []byte) (ListWidgetIntegrationsParams, error) {
+	var r ListWidgetIntegrationsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetListParams) Marshal() ([]byte, error) {
+func (r *ListWidgetIntegrationsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalIntegrationWidgetListResponse(data []byte) (IntegrationWidgetListResponse, error) {
-	var r IntegrationWidgetListResponse
+func UnmarshalListWidgetIntegrationsResponse(data []byte) (ListWidgetIntegrationsResponse, error) {
+	var r ListWidgetIntegrationsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *IntegrationWidgetListResponse) Marshal() ([]byte, error) {
+func (r *ListWidgetIntegrationsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMagicGenerateParams(data []byte) (MagicGenerateParams, error) {
-	var r MagicGenerateParams
+func UnmarshalGenerateMagicFromPromptParams(data []byte) (GenerateMagicFromPromptParams, error) {
+	var r GenerateMagicFromPromptParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MagicGenerateParams) Marshal() ([]byte, error) {
+func (r *GenerateMagicFromPromptParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMagicGenerateRequest(data []byte) (MagicGenerateRequest, error) {
-	var r MagicGenerateRequest
+func UnmarshalGenerateMagicFromPromptRequest(data []byte) (GenerateMagicFromPromptRequest, error) {
+	var r GenerateMagicFromPromptRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MagicGenerateRequest) Marshal() ([]byte, error) {
+func (r *GenerateMagicFromPromptRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMagicGenerateResponse(data []byte) (MagicGenerateResponse, error) {
-	var r MagicGenerateResponse
+func UnmarshalGenerateMagicFromPromptResponse(data []byte) (GenerateMagicFromPromptResponse, error) {
+	var r GenerateMagicFromPromptResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MagicGenerateResponse) Marshal() ([]byte, error) {
+func (r *GenerateMagicFromPromptResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMagicListParams(data []byte) (MagicListParams, error) {
-	var r MagicListParams
+func UnmarshalListMagicPromptsParams(data []byte) (ListMagicPromptsParams, error) {
+	var r ListMagicPromptsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MagicListParams) Marshal() ([]byte, error) {
+func (r *ListMagicPromptsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMagicListResponse(data []byte) (MagicListResponse, error) {
-	var r MagicListResponse
+func UnmarshalListMagicPromptsResponse(data []byte) (ListMagicPromptsResponse, error) {
+	var r ListMagicPromptsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MagicListResponse) Marshal() ([]byte, error) {
+func (r *ListMagicPromptsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryDeleteParams(data []byte) (MemoryDeleteParams, error) {
-	var r MemoryDeleteParams
+func UnmarshalDeleteMemoryParams(data []byte) (DeleteMemoryParams, error) {
+	var r DeleteMemoryParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteMemoryParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type MemoryDeleteRequest map[string]interface{}
+type DeleteMemoryRequest map[string]interface{}
 
-func UnmarshalMemoryDeleteRequest(data []byte) (MemoryDeleteRequest, error) {
-	var r MemoryDeleteRequest
+func UnmarshalDeleteMemoryRequest(data []byte) (DeleteMemoryRequest, error) {
+	var r DeleteMemoryRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteMemoryRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryDeleteResponse(data []byte) (MemoryDeleteResponse, error) {
-	var r MemoryDeleteResponse
+func UnmarshalDeleteMemoryResponse(data []byte) (DeleteMemoryResponse, error) {
+	var r DeleteMemoryResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteMemoryResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryFetchParams(data []byte) (MemoryFetchParams, error) {
-	var r MemoryFetchParams
+func UnmarshalFetchMemoryParams(data []byte) (FetchMemoryParams, error) {
+	var r FetchMemoryParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryFetchParams) Marshal() ([]byte, error) {
+func (r *FetchMemoryParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryFetchResponse(data []byte) (MemoryFetchResponse, error) {
-	var r MemoryFetchResponse
+func UnmarshalFetchMemoryResponse(data []byte) (FetchMemoryResponse, error) {
+	var r FetchMemoryResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchMemoryResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryUpdateParams(data []byte) (MemoryUpdateParams, error) {
-	var r MemoryUpdateParams
+func UnmarshalUpdateMemoryParams(data []byte) (UpdateMemoryParams, error) {
+	var r UpdateMemoryParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateMemoryParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryUpdateRequest(data []byte) (MemoryUpdateRequest, error) {
-	var r MemoryUpdateRequest
+func UnmarshalUpdateMemoryRequest(data []byte) (UpdateMemoryRequest, error) {
+	var r UpdateMemoryRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateMemoryRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryUpdateResponse(data []byte) (MemoryUpdateResponse, error) {
-	var r MemoryUpdateResponse
+func UnmarshalUpdateMemoryResponse(data []byte) (UpdateMemoryResponse, error) {
+	var r UpdateMemoryResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateMemoryResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryCreateRequest(data []byte) (MemoryCreateRequest, error) {
-	var r MemoryCreateRequest
+func UnmarshalCreateMemoryRequest(data []byte) (CreateMemoryRequest, error) {
+	var r CreateMemoryRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateMemoryRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryCreateResponse(data []byte) (MemoryCreateResponse, error) {
-	var r MemoryCreateResponse
+func UnmarshalCreateMemoryResponse(data []byte) (CreateMemoryResponse, error) {
+	var r CreateMemoryResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateMemoryResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryExportParams(data []byte) (MemoryExportParams, error) {
-	var r MemoryExportParams
+func UnmarshalExportMemoriesParams(data []byte) (ExportMemoriesParams, error) {
+	var r ExportMemoriesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryExportParams) Marshal() ([]byte, error) {
+func (r *ExportMemoriesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryExportResponse(data []byte) (MemoryExportResponse, error) {
-	var r MemoryExportResponse
+func UnmarshalExportMemoriesResponse(data []byte) (ExportMemoriesResponse, error) {
+	var r ExportMemoriesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryExportResponse) Marshal() ([]byte, error) {
+func (r *ExportMemoriesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryListParams(data []byte) (MemoryListParams, error) {
-	var r MemoryListParams
+func UnmarshalListMemoriesParams(data []byte) (ListMemoriesParams, error) {
+	var r ListMemoriesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryListParams) Marshal() ([]byte, error) {
+func (r *ListMemoriesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoryListResponse(data []byte) (MemoryListResponse, error) {
-	var r MemoryListResponse
+func UnmarshalListMemoriesResponse(data []byte) (ListMemoriesResponse, error) {
+	var r ListMemoriesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoryListResponse) Marshal() ([]byte, error) {
+func (r *ListMemoriesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemorySearchRequest(data []byte) (MemorySearchRequest, error) {
-	var r MemorySearchRequest
+func UnmarshalSearchMemoryRequest(data []byte) (SearchMemoryRequest, error) {
+	var r SearchMemoryRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemorySearchRequest) Marshal() ([]byte, error) {
+func (r *SearchMemoryRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemorySearchResponse(data []byte) (MemorySearchResponse, error) {
-	var r MemorySearchResponse
+func UnmarshalSearchMemoryResponse(data []byte) (SearchMemoryResponse, error) {
+	var r SearchMemoryResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemorySearchResponse) Marshal() ([]byte, error) {
+func (r *SearchMemoryResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserDeleteParams(data []byte) (PartnerUserDeleteParams, error) {
-	var r PartnerUserDeleteParams
+func UnmarshalDeletePartnerUserParams(data []byte) (DeletePartnerUserParams, error) {
+	var r DeletePartnerUserParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserDeleteParams) Marshal() ([]byte, error) {
+func (r *DeletePartnerUserParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type PartnerUserDeleteRequest map[string]interface{}
+type DeletePartnerUserRequest map[string]interface{}
 
-func UnmarshalPartnerUserDeleteRequest(data []byte) (PartnerUserDeleteRequest, error) {
-	var r PartnerUserDeleteRequest
+func UnmarshalDeletePartnerUserRequest(data []byte) (DeletePartnerUserRequest, error) {
+	var r DeletePartnerUserRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeletePartnerUserRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserDeleteResponse(data []byte) (PartnerUserDeleteResponse, error) {
-	var r PartnerUserDeleteResponse
+func UnmarshalDeletePartnerUserResponse(data []byte) (DeletePartnerUserResponse, error) {
+	var r DeletePartnerUserResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeletePartnerUserResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserFetchParams(data []byte) (PartnerUserFetchParams, error) {
-	var r PartnerUserFetchParams
+func UnmarshalFetchPartnerUserParams(data []byte) (FetchPartnerUserParams, error) {
+	var r FetchPartnerUserParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserFetchParams) Marshal() ([]byte, error) {
+func (r *FetchPartnerUserParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserFetchResponse(data []byte) (PartnerUserFetchResponse, error) {
-	var r PartnerUserFetchResponse
+func UnmarshalFetchPartnerUserResponse(data []byte) (FetchPartnerUserResponse, error) {
+	var r FetchPartnerUserResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchPartnerUserResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserTokenDeleteParams(data []byte) (PartnerUserTokenDeleteParams, error) {
-	var r PartnerUserTokenDeleteParams
+func UnmarshalDeletePartnerUserTokenParams(data []byte) (DeletePartnerUserTokenParams, error) {
+	var r DeletePartnerUserTokenParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserTokenDeleteParams) Marshal() ([]byte, error) {
+func (r *DeletePartnerUserTokenParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type PartnerUserTokenDeleteRequest map[string]interface{}
+type DeletePartnerUserTokenRequest map[string]interface{}
 
-func UnmarshalPartnerUserTokenDeleteRequest(data []byte) (PartnerUserTokenDeleteRequest, error) {
-	var r PartnerUserTokenDeleteRequest
+func UnmarshalDeletePartnerUserTokenRequest(data []byte) (DeletePartnerUserTokenRequest, error) {
+	var r DeletePartnerUserTokenRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserTokenDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeletePartnerUserTokenRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserTokenDeleteResponse(data []byte) (PartnerUserTokenDeleteResponse, error) {
-	var r PartnerUserTokenDeleteResponse
+func UnmarshalDeletePartnerUserTokenResponse(data []byte) (DeletePartnerUserTokenResponse, error) {
+	var r DeletePartnerUserTokenResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserTokenDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeletePartnerUserTokenResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserTokenCreateParams(data []byte) (PartnerUserTokenCreateParams, error) {
-	var r PartnerUserTokenCreateParams
+func UnmarshalCreatePartnerUserTokenParams(data []byte) (CreatePartnerUserTokenParams, error) {
+	var r CreatePartnerUserTokenParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserTokenCreateParams) Marshal() ([]byte, error) {
+func (r *CreatePartnerUserTokenParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type PartnerUserTokenCreateRequest map[string]interface{}
+type CreatePartnerUserTokenRequest map[string]interface{}
 
-func UnmarshalPartnerUserTokenCreateRequest(data []byte) (PartnerUserTokenCreateRequest, error) {
-	var r PartnerUserTokenCreateRequest
+func UnmarshalCreatePartnerUserTokenRequest(data []byte) (CreatePartnerUserTokenRequest, error) {
+	var r CreatePartnerUserTokenRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserTokenCreateRequest) Marshal() ([]byte, error) {
+func (r *CreatePartnerUserTokenRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserTokenCreateResponse(data []byte) (PartnerUserTokenCreateResponse, error) {
-	var r PartnerUserTokenCreateResponse
+func UnmarshalCreatePartnerUserTokenResponse(data []byte) (CreatePartnerUserTokenResponse, error) {
+	var r CreatePartnerUserTokenResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserTokenCreateResponse) Marshal() ([]byte, error) {
+func (r *CreatePartnerUserTokenResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserTokenListParams(data []byte) (PartnerUserTokenListParams, error) {
-	var r PartnerUserTokenListParams
+func UnmarshalListPartnerUserTokensParams(data []byte) (ListPartnerUserTokensParams, error) {
+	var r ListPartnerUserTokensParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserTokenListParams) Marshal() ([]byte, error) {
+func (r *ListPartnerUserTokensParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserTokenListResponse(data []byte) (PartnerUserTokenListResponse, error) {
-	var r PartnerUserTokenListResponse
+func UnmarshalListPartnerUserTokensResponse(data []byte) (ListPartnerUserTokensResponse, error) {
+	var r ListPartnerUserTokensResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserTokenListResponse) Marshal() ([]byte, error) {
+func (r *ListPartnerUserTokensResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserUpdateParams(data []byte) (PartnerUserUpdateParams, error) {
-	var r PartnerUserUpdateParams
+func UnmarshalUpdatePartnerUserParams(data []byte) (UpdatePartnerUserParams, error) {
+	var r UpdatePartnerUserParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdatePartnerUserParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserUpdateRequest(data []byte) (PartnerUserUpdateRequest, error) {
-	var r PartnerUserUpdateRequest
+func UnmarshalUpdatePartnerUserRequest(data []byte) (UpdatePartnerUserRequest, error) {
+	var r UpdatePartnerUserRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdatePartnerUserRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserUpdateResponse(data []byte) (PartnerUserUpdateResponse, error) {
-	var r PartnerUserUpdateResponse
+func UnmarshalUpdatePartnerUserResponse(data []byte) (UpdatePartnerUserResponse, error) {
+	var r UpdatePartnerUserResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdatePartnerUserResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserCreateRequest(data []byte) (PartnerUserCreateRequest, error) {
-	var r PartnerUserCreateRequest
+func UnmarshalCreatePartnerUserRequest(data []byte) (CreatePartnerUserRequest, error) {
+	var r CreatePartnerUserRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserCreateRequest) Marshal() ([]byte, error) {
+func (r *CreatePartnerUserRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserCreateResponse(data []byte) (PartnerUserCreateResponse, error) {
-	var r PartnerUserCreateResponse
+func UnmarshalCreatePartnerUserResponse(data []byte) (CreatePartnerUserResponse, error) {
+	var r CreatePartnerUserResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserCreateResponse) Marshal() ([]byte, error) {
+func (r *CreatePartnerUserResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserListParams(data []byte) (PartnerUserListParams, error) {
-	var r PartnerUserListParams
+func UnmarshalListPartnerUsersParams(data []byte) (ListPartnerUsersParams, error) {
+	var r ListPartnerUsersParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserListParams) Marshal() ([]byte, error) {
+func (r *ListPartnerUsersParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserListResponse(data []byte) (PartnerUserListResponse, error) {
-	var r PartnerUserListResponse
+func UnmarshalListPartnerUsersResponse(data []byte) (ListPartnerUsersResponse, error) {
+	var r ListPartnerUsersResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserListResponse) Marshal() ([]byte, error) {
+func (r *ListPartnerUsersResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformAbilityListParams(data []byte) (PlatformAbilityListParams, error) {
-	var r PlatformAbilityListParams
+func UnmarshalListPlatformAbilitiesParams(data []byte) (ListPlatformAbilitiesParams, error) {
+	var r ListPlatformAbilitiesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformAbilityListParams) Marshal() ([]byte, error) {
+func (r *ListPlatformAbilitiesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformAbilityListResponse(data []byte) (PlatformAbilityListResponse, error) {
-	var r PlatformAbilityListResponse
+func UnmarshalListPlatformAbilitiesResponse(data []byte) (ListPlatformAbilitiesResponse, error) {
+	var r ListPlatformAbilitiesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformAbilityListResponse) Marshal() ([]byte, error) {
+func (r *ListPlatformAbilitiesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformActionListParams(data []byte) (PlatformActionListParams, error) {
-	var r PlatformActionListParams
+func UnmarshalListPlatformActionsParams(data []byte) (ListPlatformActionsParams, error) {
+	var r ListPlatformActionsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformActionListParams) Marshal() ([]byte, error) {
+func (r *ListPlatformActionsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformActionListResponse(data []byte) (PlatformActionListResponse, error) {
-	var r PlatformActionListResponse
+func UnmarshalListPlatformActionsResponse(data []byte) (ListPlatformActionsResponse, error) {
+	var r ListPlatformActionsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformActionListResponse) Marshal() ([]byte, error) {
+func (r *ListPlatformActionsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformDocFetchParams(data []byte) (PlatformDocFetchParams, error) {
-	var r PlatformDocFetchParams
+func UnmarshalFetchPlatformDocParams(data []byte) (FetchPlatformDocParams, error) {
+	var r FetchPlatformDocParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformDocFetchParams) Marshal() ([]byte, error) {
+func (r *FetchPlatformDocParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformDocFetchResponse(data []byte) (PlatformDocFetchResponse, error) {
-	var r PlatformDocFetchResponse
+func UnmarshalFetchPlatformDocResponse(data []byte) (FetchPlatformDocResponse, error) {
+	var r FetchPlatformDocResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformDocFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchPlatformDocResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformDocListParams(data []byte) (PlatformDocListParams, error) {
-	var r PlatformDocListParams
+func UnmarshalListPlatformDocsParams(data []byte) (ListPlatformDocsParams, error) {
+	var r ListPlatformDocsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformDocListParams) Marshal() ([]byte, error) {
+func (r *ListPlatformDocsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformDocListResponse(data []byte) (PlatformDocListResponse, error) {
-	var r PlatformDocListResponse
+func UnmarshalListPlatformDocsResponse(data []byte) (ListPlatformDocsResponse, error) {
+	var r ListPlatformDocsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformDocListResponse) Marshal() ([]byte, error) {
+func (r *ListPlatformDocsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformDocSearchRequest(data []byte) (PlatformDocSearchRequest, error) {
-	var r PlatformDocSearchRequest
+func UnmarshalSearchPlatformDocsRequest(data []byte) (SearchPlatformDocsRequest, error) {
+	var r SearchPlatformDocsRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformDocSearchRequest) Marshal() ([]byte, error) {
+func (r *SearchPlatformDocsRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformDocSearchResponse(data []byte) (PlatformDocSearchResponse, error) {
-	var r PlatformDocSearchResponse
+func UnmarshalSearchPlatformDocsResponse(data []byte) (SearchPlatformDocsResponse, error) {
+	var r SearchPlatformDocsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformDocSearchResponse) Marshal() ([]byte, error) {
+func (r *SearchPlatformDocsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformExampleCloneParams(data []byte) (PlatformExampleCloneParams, error) {
-	var r PlatformExampleCloneParams
+func UnmarshalClonePlatformExampleParams(data []byte) (ClonePlatformExampleParams, error) {
+	var r ClonePlatformExampleParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformExampleCloneParams) Marshal() ([]byte, error) {
+func (r *ClonePlatformExampleParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type PlatformExampleCloneRequest map[string]interface{}
+type ClonePlatformExampleRequest map[string]interface{}
 
-func UnmarshalPlatformExampleCloneRequest(data []byte) (PlatformExampleCloneRequest, error) {
-	var r PlatformExampleCloneRequest
+func UnmarshalClonePlatformExampleRequest(data []byte) (ClonePlatformExampleRequest, error) {
+	var r ClonePlatformExampleRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformExampleCloneRequest) Marshal() ([]byte, error) {
+func (r *ClonePlatformExampleRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformExampleCloneResponse(data []byte) (PlatformExampleCloneResponse, error) {
-	var r PlatformExampleCloneResponse
+func UnmarshalClonePlatformExampleResponse(data []byte) (ClonePlatformExampleResponse, error) {
+	var r ClonePlatformExampleResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformExampleCloneResponse) Marshal() ([]byte, error) {
+func (r *ClonePlatformExampleResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformExampleFetchParams(data []byte) (PlatformExampleFetchParams, error) {
-	var r PlatformExampleFetchParams
+func UnmarshalFetchPlatformExampleParams(data []byte) (FetchPlatformExampleParams, error) {
+	var r FetchPlatformExampleParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformExampleFetchParams) Marshal() ([]byte, error) {
+func (r *FetchPlatformExampleParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformExampleFetchResponse(data []byte) (PlatformExampleFetchResponse, error) {
-	var r PlatformExampleFetchResponse
+func UnmarshalFetchPlatformExampleResponse(data []byte) (FetchPlatformExampleResponse, error) {
+	var r FetchPlatformExampleResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformExampleFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchPlatformExampleResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformExampleListParams(data []byte) (PlatformExampleListParams, error) {
-	var r PlatformExampleListParams
+func UnmarshalListPlatformExamplesParams(data []byte) (ListPlatformExamplesParams, error) {
+	var r ListPlatformExamplesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformExampleListParams) Marshal() ([]byte, error) {
+func (r *ListPlatformExamplesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformExampleListResponse(data []byte) (PlatformExampleListResponse, error) {
-	var r PlatformExampleListResponse
+func UnmarshalListPlatformExamplesResponse(data []byte) (ListPlatformExamplesResponse, error) {
+	var r ListPlatformExamplesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformExampleListResponse) Marshal() ([]byte, error) {
+func (r *ListPlatformExamplesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformExampleSearchRequest(data []byte) (PlatformExampleSearchRequest, error) {
-	var r PlatformExampleSearchRequest
+func UnmarshalSearchPlatformExamplesRequest(data []byte) (SearchPlatformExamplesRequest, error) {
+	var r SearchPlatformExamplesRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformExampleSearchRequest) Marshal() ([]byte, error) {
+func (r *SearchPlatformExamplesRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformExampleSearchResponse(data []byte) (PlatformExampleSearchResponse, error) {
-	var r PlatformExampleSearchResponse
+func UnmarshalSearchPlatformExamplesResponse(data []byte) (SearchPlatformExamplesResponse, error) {
+	var r SearchPlatformExamplesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformExampleSearchResponse) Marshal() ([]byte, error) {
+func (r *SearchPlatformExamplesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformGuideFetchParams(data []byte) (PlatformGuideFetchParams, error) {
-	var r PlatformGuideFetchParams
+func UnmarshalFetchPlatformGuideParams(data []byte) (FetchPlatformGuideParams, error) {
+	var r FetchPlatformGuideParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformGuideFetchParams) Marshal() ([]byte, error) {
+func (r *FetchPlatformGuideParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformGuideFetchResponse(data []byte) (PlatformGuideFetchResponse, error) {
-	var r PlatformGuideFetchResponse
+func UnmarshalFetchPlatformGuideResponse(data []byte) (FetchPlatformGuideResponse, error) {
+	var r FetchPlatformGuideResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformGuideFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchPlatformGuideResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformGuideListParams(data []byte) (PlatformGuideListParams, error) {
-	var r PlatformGuideListParams
+func UnmarshalListPlatformGuidesParams(data []byte) (ListPlatformGuidesParams, error) {
+	var r ListPlatformGuidesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformGuideListParams) Marshal() ([]byte, error) {
+func (r *ListPlatformGuidesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformGuideListResponse(data []byte) (PlatformGuideListResponse, error) {
-	var r PlatformGuideListResponse
+func UnmarshalListPlatformGuidesResponse(data []byte) (ListPlatformGuidesResponse, error) {
+	var r ListPlatformGuidesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformGuideListResponse) Marshal() ([]byte, error) {
+func (r *ListPlatformGuidesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformGuideSearchRequest(data []byte) (PlatformGuideSearchRequest, error) {
-	var r PlatformGuideSearchRequest
+func UnmarshalSearchPlatformGuidesRequest(data []byte) (SearchPlatformGuidesRequest, error) {
+	var r SearchPlatformGuidesRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformGuideSearchRequest) Marshal() ([]byte, error) {
+func (r *SearchPlatformGuidesRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformGuideSearchResponse(data []byte) (PlatformGuideSearchResponse, error) {
-	var r PlatformGuideSearchResponse
+func UnmarshalSearchPlatformGuidesResponse(data []byte) (SearchPlatformGuidesResponse, error) {
+	var r SearchPlatformGuidesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformGuideSearchResponse) Marshal() ([]byte, error) {
+func (r *SearchPlatformGuidesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformManualFetchParams(data []byte) (PlatformManualFetchParams, error) {
-	var r PlatformManualFetchParams
+func UnmarshalFetchPlatformManualParams(data []byte) (FetchPlatformManualParams, error) {
+	var r FetchPlatformManualParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformManualFetchParams) Marshal() ([]byte, error) {
+func (r *FetchPlatformManualParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformManualFetchResponse(data []byte) (PlatformManualFetchResponse, error) {
-	var r PlatformManualFetchResponse
+func UnmarshalFetchPlatformManualResponse(data []byte) (FetchPlatformManualResponse, error) {
+	var r FetchPlatformManualResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformManualFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchPlatformManualResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformManualListParams(data []byte) (PlatformManualListParams, error) {
-	var r PlatformManualListParams
+func UnmarshalListPlatformManualsParams(data []byte) (ListPlatformManualsParams, error) {
+	var r ListPlatformManualsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformManualListParams) Marshal() ([]byte, error) {
+func (r *ListPlatformManualsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformManualListResponse(data []byte) (PlatformManualListResponse, error) {
-	var r PlatformManualListResponse
+func UnmarshalListPlatformManualsResponse(data []byte) (ListPlatformManualsResponse, error) {
+	var r ListPlatformManualsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformManualListResponse) Marshal() ([]byte, error) {
+func (r *ListPlatformManualsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformManualSearchRequest(data []byte) (PlatformManualSearchRequest, error) {
-	var r PlatformManualSearchRequest
+func UnmarshalSearchPlatformManualsRequest(data []byte) (SearchPlatformManualsRequest, error) {
+	var r SearchPlatformManualsRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformManualSearchRequest) Marshal() ([]byte, error) {
+func (r *SearchPlatformManualsRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformManualSearchResponse(data []byte) (PlatformManualSearchResponse, error) {
-	var r PlatformManualSearchResponse
+func UnmarshalSearchPlatformManualsResponse(data []byte) (SearchPlatformManualsResponse, error) {
+	var r SearchPlatformManualsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformManualSearchResponse) Marshal() ([]byte, error) {
+func (r *SearchPlatformManualsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformModelListParams(data []byte) (PlatformModelListParams, error) {
-	var r PlatformModelListParams
+func UnmarshalListPlatformModelsParams(data []byte) (ListPlatformModelsParams, error) {
+	var r ListPlatformModelsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformModelListParams) Marshal() ([]byte, error) {
+func (r *ListPlatformModelsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformModelListResponse(data []byte) (PlatformModelListResponse, error) {
-	var r PlatformModelListResponse
+func UnmarshalListPlatformModelsResponse(data []byte) (ListPlatformModelsResponse, error) {
+	var r ListPlatformModelsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformModelListResponse) Marshal() ([]byte, error) {
+func (r *ListPlatformModelsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformSecretListParams(data []byte) (PlatformSecretListParams, error) {
-	var r PlatformSecretListParams
+func UnmarshalListPlatformSecretsParams(data []byte) (ListPlatformSecretsParams, error) {
+	var r ListPlatformSecretsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformSecretListParams) Marshal() ([]byte, error) {
+func (r *ListPlatformSecretsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformSecretListResponse(data []byte) (PlatformSecretListResponse, error) {
-	var r PlatformSecretListResponse
+func UnmarshalListPlatformSecretsResponse(data []byte) (ListPlatformSecretsResponse, error) {
+	var r ListPlatformSecretsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformSecretListResponse) Marshal() ([]byte, error) {
+func (r *ListPlatformSecretsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformTutorialFetchParams(data []byte) (PlatformTutorialFetchParams, error) {
-	var r PlatformTutorialFetchParams
+func UnmarshalFetchPlatformTutorialParams(data []byte) (FetchPlatformTutorialParams, error) {
+	var r FetchPlatformTutorialParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformTutorialFetchParams) Marshal() ([]byte, error) {
+func (r *FetchPlatformTutorialParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformTutorialFetchResponse(data []byte) (PlatformTutorialFetchResponse, error) {
-	var r PlatformTutorialFetchResponse
+func UnmarshalFetchPlatformTutorialResponse(data []byte) (FetchPlatformTutorialResponse, error) {
+	var r FetchPlatformTutorialResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformTutorialFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchPlatformTutorialResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformTutorialListParams(data []byte) (PlatformTutorialListParams, error) {
-	var r PlatformTutorialListParams
+func UnmarshalListPlatformTutorialsParams(data []byte) (ListPlatformTutorialsParams, error) {
+	var r ListPlatformTutorialsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformTutorialListParams) Marshal() ([]byte, error) {
+func (r *ListPlatformTutorialsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformTutorialListResponse(data []byte) (PlatformTutorialListResponse, error) {
-	var r PlatformTutorialListResponse
+func UnmarshalListPlatformTutorialsResponse(data []byte) (ListPlatformTutorialsResponse, error) {
+	var r ListPlatformTutorialsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformTutorialListResponse) Marshal() ([]byte, error) {
+func (r *ListPlatformTutorialsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformTutorialSearchRequest(data []byte) (PlatformTutorialSearchRequest, error) {
-	var r PlatformTutorialSearchRequest
+func UnmarshalSearchPlatformTutorialsRequest(data []byte) (SearchPlatformTutorialsRequest, error) {
+	var r SearchPlatformTutorialsRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformTutorialSearchRequest) Marshal() ([]byte, error) {
+func (r *SearchPlatformTutorialsRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformTutorialSearchResponse(data []byte) (PlatformTutorialSearchResponse, error) {
-	var r PlatformTutorialSearchResponse
+func UnmarshalSearchPlatformTutorialsResponse(data []byte) (SearchPlatformTutorialsResponse, error) {
+	var r SearchPlatformTutorialsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformTutorialSearchResponse) Marshal() ([]byte, error) {
+func (r *SearchPlatformTutorialsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPolicyDeleteParams(data []byte) (PolicyDeleteParams, error) {
-	var r PolicyDeleteParams
+func UnmarshalDeletePolicyParams(data []byte) (DeletePolicyParams, error) {
+	var r DeletePolicyParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PolicyDeleteParams) Marshal() ([]byte, error) {
+func (r *DeletePolicyParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type PolicyDeleteRequest map[string]interface{}
+type DeletePolicyRequest map[string]interface{}
 
-func UnmarshalPolicyDeleteRequest(data []byte) (PolicyDeleteRequest, error) {
-	var r PolicyDeleteRequest
+func UnmarshalDeletePolicyRequest(data []byte) (DeletePolicyRequest, error) {
+	var r DeletePolicyRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PolicyDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeletePolicyRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPolicyDeleteResponse(data []byte) (PolicyDeleteResponse, error) {
-	var r PolicyDeleteResponse
+func UnmarshalDeletePolicyResponse(data []byte) (DeletePolicyResponse, error) {
+	var r DeletePolicyResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PolicyDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeletePolicyResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPolicyFetchParams(data []byte) (PolicyFetchParams, error) {
-	var r PolicyFetchParams
+func UnmarshalFetchPolicyParams(data []byte) (FetchPolicyParams, error) {
+	var r FetchPolicyParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PolicyFetchParams) Marshal() ([]byte, error) {
+func (r *FetchPolicyParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPolicyFetchResponse(data []byte) (PolicyFetchResponse, error) {
-	var r PolicyFetchResponse
+func UnmarshalFetchPolicyResponse(data []byte) (FetchPolicyResponse, error) {
+	var r FetchPolicyResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PolicyFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchPolicyResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPolicyUpdateParams(data []byte) (PolicyUpdateParams, error) {
-	var r PolicyUpdateParams
+func UnmarshalUpdatePolicyParams(data []byte) (UpdatePolicyParams, error) {
+	var r UpdatePolicyParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PolicyUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdatePolicyParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPolicyUpdateRequest(data []byte) (PolicyUpdateRequest, error) {
-	var r PolicyUpdateRequest
+func UnmarshalUpdatePolicyRequest(data []byte) (UpdatePolicyRequest, error) {
+	var r UpdatePolicyRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PolicyUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdatePolicyRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPolicyUpdateResponse(data []byte) (PolicyUpdateResponse, error) {
-	var r PolicyUpdateResponse
+func UnmarshalUpdatePolicyResponse(data []byte) (UpdatePolicyResponse, error) {
+	var r UpdatePolicyResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PolicyUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdatePolicyResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPolicyCreateRequest(data []byte) (PolicyCreateRequest, error) {
-	var r PolicyCreateRequest
+func UnmarshalCreatePolicyRequest(data []byte) (CreatePolicyRequest, error) {
+	var r CreatePolicyRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PolicyCreateRequest) Marshal() ([]byte, error) {
+func (r *CreatePolicyRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPolicyCreateResponse(data []byte) (PolicyCreateResponse, error) {
-	var r PolicyCreateResponse
+func UnmarshalCreatePolicyResponse(data []byte) (CreatePolicyResponse, error) {
+	var r CreatePolicyResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PolicyCreateResponse) Marshal() ([]byte, error) {
+func (r *CreatePolicyResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPolicyListParams(data []byte) (PolicyListParams, error) {
-	var r PolicyListParams
+func UnmarshalListPoliciesParams(data []byte) (ListPoliciesParams, error) {
+	var r ListPoliciesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PolicyListParams) Marshal() ([]byte, error) {
+func (r *ListPoliciesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPolicyListResponse(data []byte) (PolicyListResponse, error) {
-	var r PolicyListResponse
+func UnmarshalListPoliciesResponse(data []byte) (ListPoliciesResponse, error) {
+	var r ListPoliciesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PolicyListResponse) Marshal() ([]byte, error) {
+func (r *ListPoliciesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalDeleteParams(data []byte) (PortalDeleteParams, error) {
-	var r PortalDeleteParams
+func UnmarshalDeletePortalParams(data []byte) (DeletePortalParams, error) {
+	var r DeletePortalParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalDeleteParams) Marshal() ([]byte, error) {
+func (r *DeletePortalParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type PortalDeleteRequest map[string]interface{}
+type DeletePortalRequest map[string]interface{}
 
-func UnmarshalPortalDeleteRequest(data []byte) (PortalDeleteRequest, error) {
-	var r PortalDeleteRequest
+func UnmarshalDeletePortalRequest(data []byte) (DeletePortalRequest, error) {
+	var r DeletePortalRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeletePortalRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalDeleteResponse(data []byte) (PortalDeleteResponse, error) {
-	var r PortalDeleteResponse
+func UnmarshalDeletePortalResponse(data []byte) (DeletePortalResponse, error) {
+	var r DeletePortalResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeletePortalResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalFetchParams(data []byte) (PortalFetchParams, error) {
-	var r PortalFetchParams
+func UnmarshalFetchPortalParams(data []byte) (FetchPortalParams, error) {
+	var r FetchPortalParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalFetchParams) Marshal() ([]byte, error) {
+func (r *FetchPortalParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalFetchResponse(data []byte) (PortalFetchResponse, error) {
-	var r PortalFetchResponse
+func UnmarshalFetchPortalResponse(data []byte) (FetchPortalResponse, error) {
+	var r FetchPortalResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchPortalResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalUpdateParams(data []byte) (PortalUpdateParams, error) {
-	var r PortalUpdateParams
+func UnmarshalUpdatePortalParams(data []byte) (UpdatePortalParams, error) {
+	var r UpdatePortalParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdatePortalParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalUpdateRequest(data []byte) (PortalUpdateRequest, error) {
-	var r PortalUpdateRequest
+func UnmarshalUpdatePortalRequest(data []byte) (UpdatePortalRequest, error) {
+	var r UpdatePortalRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdatePortalRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalUpdateResponse(data []byte) (PortalUpdateResponse, error) {
-	var r PortalUpdateResponse
+func UnmarshalUpdatePortalResponse(data []byte) (UpdatePortalResponse, error) {
+	var r UpdatePortalResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdatePortalResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalCreateRequest(data []byte) (PortalCreateRequest, error) {
-	var r PortalCreateRequest
+func UnmarshalCreatePortalRequest(data []byte) (CreatePortalRequest, error) {
+	var r CreatePortalRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalCreateRequest) Marshal() ([]byte, error) {
+func (r *CreatePortalRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalCreateResponse(data []byte) (PortalCreateResponse, error) {
-	var r PortalCreateResponse
+func UnmarshalCreatePortalResponse(data []byte) (CreatePortalResponse, error) {
+	var r CreatePortalResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalCreateResponse) Marshal() ([]byte, error) {
+func (r *CreatePortalResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalListParams(data []byte) (PortalListParams, error) {
-	var r PortalListParams
+func UnmarshalListPortalsParams(data []byte) (ListPortalsParams, error) {
+	var r ListPortalsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalListParams) Marshal() ([]byte, error) {
+func (r *ListPortalsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalListResponse(data []byte) (PortalListResponse, error) {
-	var r PortalListResponse
+func UnmarshalListPortalsResponse(data []byte) (ListPortalsResponse, error) {
+	var r ListPortalsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalListResponse) Marshal() ([]byte, error) {
+func (r *ListPortalsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretAuthenticateParams(data []byte) (SecretAuthenticateParams, error) {
-	var r SecretAuthenticateParams
+func UnmarshalAuthenticateSecretParams(data []byte) (AuthenticateSecretParams, error) {
+	var r AuthenticateSecretParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretAuthenticateParams) Marshal() ([]byte, error) {
+func (r *AuthenticateSecretParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type SecretAuthenticateRequest map[string]interface{}
+type AuthenticateSecretRequest map[string]interface{}
 
-func UnmarshalSecretAuthenticateRequest(data []byte) (SecretAuthenticateRequest, error) {
-	var r SecretAuthenticateRequest
+func UnmarshalAuthenticateSecretRequest(data []byte) (AuthenticateSecretRequest, error) {
+	var r AuthenticateSecretRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretAuthenticateRequest) Marshal() ([]byte, error) {
+func (r *AuthenticateSecretRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretAuthenticateResponse(data []byte) (SecretAuthenticateResponse, error) {
-	var r SecretAuthenticateResponse
+func UnmarshalAuthenticateSecretResponse(data []byte) (AuthenticateSecretResponse, error) {
+	var r AuthenticateSecretResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretAuthenticateResponse) Marshal() ([]byte, error) {
+func (r *AuthenticateSecretResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretDeleteParams(data []byte) (SecretDeleteParams, error) {
-	var r SecretDeleteParams
+func UnmarshalDeleteSecretParams(data []byte) (DeleteSecretParams, error) {
+	var r DeleteSecretParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteSecretParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type SecretDeleteRequest map[string]interface{}
+type DeleteSecretRequest map[string]interface{}
 
-func UnmarshalSecretDeleteRequest(data []byte) (SecretDeleteRequest, error) {
-	var r SecretDeleteRequest
+func UnmarshalDeleteSecretRequest(data []byte) (DeleteSecretRequest, error) {
+	var r DeleteSecretRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteSecretRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretDeleteResponse(data []byte) (SecretDeleteResponse, error) {
-	var r SecretDeleteResponse
+func UnmarshalDeleteSecretResponse(data []byte) (DeleteSecretResponse, error) {
+	var r DeleteSecretResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteSecretResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretFetchParams(data []byte) (SecretFetchParams, error) {
-	var r SecretFetchParams
+func UnmarshalFetchSecretParams(data []byte) (FetchSecretParams, error) {
+	var r FetchSecretParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretFetchParams) Marshal() ([]byte, error) {
+func (r *FetchSecretParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretFetchResponse(data []byte) (SecretFetchResponse, error) {
-	var r SecretFetchResponse
+func UnmarshalFetchSecretResponse(data []byte) (FetchSecretResponse, error) {
+	var r FetchSecretResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchSecretResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretRevokeParams(data []byte) (SecretRevokeParams, error) {
-	var r SecretRevokeParams
+func UnmarshalRevokeSecretParams(data []byte) (RevokeSecretParams, error) {
+	var r RevokeSecretParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretRevokeParams) Marshal() ([]byte, error) {
+func (r *RevokeSecretParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type SecretRevokeRequest map[string]interface{}
+type RevokeSecretRequest map[string]interface{}
 
-func UnmarshalSecretRevokeRequest(data []byte) (SecretRevokeRequest, error) {
-	var r SecretRevokeRequest
+func UnmarshalRevokeSecretRequest(data []byte) (RevokeSecretRequest, error) {
+	var r RevokeSecretRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretRevokeRequest) Marshal() ([]byte, error) {
+func (r *RevokeSecretRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretRevokeResponse(data []byte) (SecretRevokeResponse, error) {
-	var r SecretRevokeResponse
+func UnmarshalRevokeSecretResponse(data []byte) (RevokeSecretResponse, error) {
+	var r RevokeSecretResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretRevokeResponse) Marshal() ([]byte, error) {
+func (r *RevokeSecretResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretUpdateParams(data []byte) (SecretUpdateParams, error) {
-	var r SecretUpdateParams
+func UnmarshalUpdateSecretParams(data []byte) (UpdateSecretParams, error) {
+	var r UpdateSecretParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateSecretParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretUpdateRequest(data []byte) (SecretUpdateRequest, error) {
-	var r SecretUpdateRequest
+func UnmarshalUpdateSecretRequest(data []byte) (UpdateSecretRequest, error) {
+	var r UpdateSecretRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateSecretRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretUpdateResponse(data []byte) (SecretUpdateResponse, error) {
-	var r SecretUpdateResponse
+func UnmarshalUpdateSecretResponse(data []byte) (UpdateSecretResponse, error) {
+	var r UpdateSecretResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateSecretResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretVerifyParams(data []byte) (SecretVerifyParams, error) {
-	var r SecretVerifyParams
+func UnmarshalVerifySecretParams(data []byte) (VerifySecretParams, error) {
+	var r VerifySecretParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretVerifyParams) Marshal() ([]byte, error) {
+func (r *VerifySecretParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type SecretVerifyRequest map[string]interface{}
+type VerifySecretRequest map[string]interface{}
 
-func UnmarshalSecretVerifyRequest(data []byte) (SecretVerifyRequest, error) {
-	var r SecretVerifyRequest
+func UnmarshalVerifySecretRequest(data []byte) (VerifySecretRequest, error) {
+	var r VerifySecretRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretVerifyRequest) Marshal() ([]byte, error) {
+func (r *VerifySecretRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretVerifyResponse(data []byte) (SecretVerifyResponse, error) {
-	var r SecretVerifyResponse
+func UnmarshalVerifySecretResponse(data []byte) (VerifySecretResponse, error) {
+	var r VerifySecretResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretVerifyResponse) Marshal() ([]byte, error) {
+func (r *VerifySecretResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretCreateRequest(data []byte) (SecretCreateRequest, error) {
-	var r SecretCreateRequest
+func UnmarshalCreateSecretRequest(data []byte) (CreateSecretRequest, error) {
+	var r CreateSecretRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateSecretRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretCreateResponse(data []byte) (SecretCreateResponse, error) {
-	var r SecretCreateResponse
+func UnmarshalCreateSecretResponse(data []byte) (CreateSecretResponse, error) {
+	var r CreateSecretResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateSecretResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretListParams(data []byte) (SecretListParams, error) {
-	var r SecretListParams
+func UnmarshalListSecretsParams(data []byte) (ListSecretsParams, error) {
+	var r ListSecretsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretListParams) Marshal() ([]byte, error) {
+func (r *ListSecretsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretListResponse(data []byte) (SecretListResponse, error) {
-	var r SecretListResponse
+func UnmarshalListSecretsResponse(data []byte) (ListSecretsResponse, error) {
+	var r ListSecretsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretListResponse) Marshal() ([]byte, error) {
+func (r *ListSecretsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityDeleteParams(data []byte) (SkillsetAbilityDeleteParams, error) {
-	var r SkillsetAbilityDeleteParams
+func UnmarshalDeleteSkillsetAbilityParams(data []byte) (DeleteSkillsetAbilityParams, error) {
+	var r DeleteSkillsetAbilityParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteSkillsetAbilityParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type SkillsetAbilityDeleteRequest map[string]interface{}
+type DeleteSkillsetAbilityRequest map[string]interface{}
 
-func UnmarshalSkillsetAbilityDeleteRequest(data []byte) (SkillsetAbilityDeleteRequest, error) {
-	var r SkillsetAbilityDeleteRequest
+func UnmarshalDeleteSkillsetAbilityRequest(data []byte) (DeleteSkillsetAbilityRequest, error) {
+	var r DeleteSkillsetAbilityRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteSkillsetAbilityRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityDeleteResponse(data []byte) (SkillsetAbilityDeleteResponse, error) {
-	var r SkillsetAbilityDeleteResponse
+func UnmarshalDeleteSkillsetAbilityResponse(data []byte) (DeleteSkillsetAbilityResponse, error) {
+	var r DeleteSkillsetAbilityResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteSkillsetAbilityResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityExecuteParams(data []byte) (SkillsetAbilityExecuteParams, error) {
-	var r SkillsetAbilityExecuteParams
+func UnmarshalExecuteSkillsetAbilityParams(data []byte) (ExecuteSkillsetAbilityParams, error) {
+	var r ExecuteSkillsetAbilityParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityExecuteParams) Marshal() ([]byte, error) {
+func (r *ExecuteSkillsetAbilityParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityExecuteRequest(data []byte) (SkillsetAbilityExecuteRequest, error) {
-	var r SkillsetAbilityExecuteRequest
+func UnmarshalExecuteSkillsetAbilityRequest(data []byte) (ExecuteSkillsetAbilityRequest, error) {
+	var r ExecuteSkillsetAbilityRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityExecuteRequest) Marshal() ([]byte, error) {
+func (r *ExecuteSkillsetAbilityRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityExecuteResponse(data []byte) (SkillsetAbilityExecuteResponse, error) {
-	var r SkillsetAbilityExecuteResponse
+func UnmarshalExecuteSkillsetAbilityResponse(data []byte) (ExecuteSkillsetAbilityResponse, error) {
+	var r ExecuteSkillsetAbilityResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityExecuteResponse) Marshal() ([]byte, error) {
+func (r *ExecuteSkillsetAbilityResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityFetchParams(data []byte) (SkillsetAbilityFetchParams, error) {
-	var r SkillsetAbilityFetchParams
+func UnmarshalFetchSkillsetAbilityParams(data []byte) (FetchSkillsetAbilityParams, error) {
+	var r FetchSkillsetAbilityParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityFetchParams) Marshal() ([]byte, error) {
+func (r *FetchSkillsetAbilityParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityFetchResponse(data []byte) (SkillsetAbilityFetchResponse, error) {
-	var r SkillsetAbilityFetchResponse
+func UnmarshalFetchSkillsetAbilityResponse(data []byte) (FetchSkillsetAbilityResponse, error) {
+	var r FetchSkillsetAbilityResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchSkillsetAbilityResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityUpdateParams(data []byte) (SkillsetAbilityUpdateParams, error) {
-	var r SkillsetAbilityUpdateParams
+func UnmarshalUpdateSkillsetAbilityParams(data []byte) (UpdateSkillsetAbilityParams, error) {
+	var r UpdateSkillsetAbilityParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateSkillsetAbilityParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityUpdateRequest(data []byte) (SkillsetAbilityUpdateRequest, error) {
-	var r SkillsetAbilityUpdateRequest
+func UnmarshalUpdateSkillsetAbilityRequest(data []byte) (UpdateSkillsetAbilityRequest, error) {
+	var r UpdateSkillsetAbilityRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateSkillsetAbilityRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityUpdateResponse(data []byte) (SkillsetAbilityUpdateResponse, error) {
-	var r SkillsetAbilityUpdateResponse
+func UnmarshalUpdateSkillsetAbilityResponse(data []byte) (UpdateSkillsetAbilityResponse, error) {
+	var r UpdateSkillsetAbilityResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateSkillsetAbilityResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityCreateParams(data []byte) (SkillsetAbilityCreateParams, error) {
-	var r SkillsetAbilityCreateParams
+func UnmarshalCreateSkillsetAbilityParams(data []byte) (CreateSkillsetAbilityParams, error) {
+	var r CreateSkillsetAbilityParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityCreateParams) Marshal() ([]byte, error) {
+func (r *CreateSkillsetAbilityParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityCreateRequest(data []byte) (SkillsetAbilityCreateRequest, error) {
-	var r SkillsetAbilityCreateRequest
+func UnmarshalCreateSkillsetAbilityRequest(data []byte) (CreateSkillsetAbilityRequest, error) {
+	var r CreateSkillsetAbilityRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateSkillsetAbilityRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityCreateResponse(data []byte) (SkillsetAbilityCreateResponse, error) {
-	var r SkillsetAbilityCreateResponse
+func UnmarshalCreateSkillsetAbilityResponse(data []byte) (CreateSkillsetAbilityResponse, error) {
+	var r CreateSkillsetAbilityResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateSkillsetAbilityResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityExportParams(data []byte) (SkillsetAbilityExportParams, error) {
-	var r SkillsetAbilityExportParams
+func UnmarshalExportSkillsetAbilitiesParams(data []byte) (ExportSkillsetAbilitiesParams, error) {
+	var r ExportSkillsetAbilitiesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityExportParams) Marshal() ([]byte, error) {
+func (r *ExportSkillsetAbilitiesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityExportResponse(data []byte) (SkillsetAbilityExportResponse, error) {
-	var r SkillsetAbilityExportResponse
+func UnmarshalExportSkillsetAbilitiesResponse(data []byte) (ExportSkillsetAbilitiesResponse, error) {
+	var r ExportSkillsetAbilitiesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityExportResponse) Marshal() ([]byte, error) {
+func (r *ExportSkillsetAbilitiesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityListParams(data []byte) (SkillsetAbilityListParams, error) {
-	var r SkillsetAbilityListParams
+func UnmarshalListSkillsetAbilitiesParams(data []byte) (ListSkillsetAbilitiesParams, error) {
+	var r ListSkillsetAbilitiesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityListParams) Marshal() ([]byte, error) {
+func (r *ListSkillsetAbilitiesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilityListResponse(data []byte) (SkillsetAbilityListResponse, error) {
-	var r SkillsetAbilityListResponse
+func UnmarshalListSkillsetAbilitiesResponse(data []byte) (ListSkillsetAbilitiesResponse, error) {
+	var r ListSkillsetAbilitiesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilityListResponse) Marshal() ([]byte, error) {
+func (r *ListSkillsetAbilitiesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetDeleteParams(data []byte) (SkillsetDeleteParams, error) {
-	var r SkillsetDeleteParams
+func UnmarshalDeleteSkillsetParams(data []byte) (DeleteSkillsetParams, error) {
+	var r DeleteSkillsetParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteSkillsetParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type SkillsetDeleteRequest map[string]interface{}
+type DeleteSkillsetRequest map[string]interface{}
 
-func UnmarshalSkillsetDeleteRequest(data []byte) (SkillsetDeleteRequest, error) {
-	var r SkillsetDeleteRequest
+func UnmarshalDeleteSkillsetRequest(data []byte) (DeleteSkillsetRequest, error) {
+	var r DeleteSkillsetRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteSkillsetRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetDeleteResponse(data []byte) (SkillsetDeleteResponse, error) {
-	var r SkillsetDeleteResponse
+func UnmarshalDeleteSkillsetResponse(data []byte) (DeleteSkillsetResponse, error) {
+	var r DeleteSkillsetResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteSkillsetResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetFetchParams(data []byte) (SkillsetFetchParams, error) {
-	var r SkillsetFetchParams
+func UnmarshalFetchSkillsetParams(data []byte) (FetchSkillsetParams, error) {
+	var r FetchSkillsetParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetFetchParams) Marshal() ([]byte, error) {
+func (r *FetchSkillsetParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetFetchResponse(data []byte) (SkillsetFetchResponse, error) {
-	var r SkillsetFetchResponse
+func UnmarshalFetchSkillsetResponse(data []byte) (FetchSkillsetResponse, error) {
+	var r FetchSkillsetResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchSkillsetResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetUpdateParams(data []byte) (SkillsetUpdateParams, error) {
-	var r SkillsetUpdateParams
+func UnmarshalUpdateSkillsetParams(data []byte) (UpdateSkillsetParams, error) {
+	var r UpdateSkillsetParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateSkillsetParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetUpdateRequest(data []byte) (SkillsetUpdateRequest, error) {
-	var r SkillsetUpdateRequest
+func UnmarshalUpdateSkillsetRequest(data []byte) (UpdateSkillsetRequest, error) {
+	var r UpdateSkillsetRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateSkillsetRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetUpdateResponse(data []byte) (SkillsetUpdateResponse, error) {
-	var r SkillsetUpdateResponse
+func UnmarshalUpdateSkillsetResponse(data []byte) (UpdateSkillsetResponse, error) {
+	var r UpdateSkillsetResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateSkillsetResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetCreateRequest(data []byte) (SkillsetCreateRequest, error) {
-	var r SkillsetCreateRequest
+func UnmarshalCreateSkillsetRequest(data []byte) (CreateSkillsetRequest, error) {
+	var r CreateSkillsetRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateSkillsetRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetCreateResponse(data []byte) (SkillsetCreateResponse, error) {
-	var r SkillsetCreateResponse
+func UnmarshalCreateSkillsetResponse(data []byte) (CreateSkillsetResponse, error) {
+	var r CreateSkillsetResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateSkillsetResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetListParams(data []byte) (SkillsetListParams, error) {
-	var r SkillsetListParams
+func UnmarshalListSkillsetsParams(data []byte) (ListSkillsetsParams, error) {
+	var r ListSkillsetsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetListParams) Marshal() ([]byte, error) {
+func (r *ListSkillsetsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetListResponse(data []byte) (SkillsetListResponse, error) {
-	var r SkillsetListResponse
+func UnmarshalListSkillsetsResponse(data []byte) (ListSkillsetsResponse, error) {
+	var r ListSkillsetsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetListResponse) Marshal() ([]byte, error) {
+func (r *ListSkillsetsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpaceFetchParams(data []byte) (SpaceFetchParams, error) {
-	var r SpaceFetchParams
+func UnmarshalFetchSpaceParams(data []byte) (FetchSpaceParams, error) {
+	var r FetchSpaceParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpaceFetchParams) Marshal() ([]byte, error) {
+func (r *FetchSpaceParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpaceFetchResponse(data []byte) (SpaceFetchResponse, error) {
-	var r SpaceFetchResponse
+func UnmarshalFetchSpaceResponse(data []byte) (FetchSpaceResponse, error) {
+	var r FetchSpaceResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpaceFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchSpaceResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpaceUpdateParams(data []byte) (SpaceUpdateParams, error) {
-	var r SpaceUpdateParams
+func UnmarshalUpdateSpaceParams(data []byte) (UpdateSpaceParams, error) {
+	var r UpdateSpaceParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpaceUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateSpaceParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpaceUpdateRequest(data []byte) (SpaceUpdateRequest, error) {
-	var r SpaceUpdateRequest
+func UnmarshalUpdateSpaceRequest(data []byte) (UpdateSpaceRequest, error) {
+	var r UpdateSpaceRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpaceUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateSpaceRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpaceUpdateResponse(data []byte) (SpaceUpdateResponse, error) {
-	var r SpaceUpdateResponse
+func UnmarshalUpdateSpaceResponse(data []byte) (UpdateSpaceResponse, error) {
+	var r UpdateSpaceResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpaceUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateSpaceResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpaceCreateRequest(data []byte) (SpaceCreateRequest, error) {
-	var r SpaceCreateRequest
+func UnmarshalCreateSpaceRequest(data []byte) (CreateSpaceRequest, error) {
+	var r CreateSpaceRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpaceCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateSpaceRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpaceCreateResponse(data []byte) (SpaceCreateResponse, error) {
-	var r SpaceCreateResponse
+func UnmarshalCreateSpaceResponse(data []byte) (CreateSpaceResponse, error) {
+	var r CreateSpaceResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpaceCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateSpaceResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpaceExportParams(data []byte) (SpaceExportParams, error) {
-	var r SpaceExportParams
+func UnmarshalExportSpacesParams(data []byte) (ExportSpacesParams, error) {
+	var r ExportSpacesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpaceExportParams) Marshal() ([]byte, error) {
+func (r *ExportSpacesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpaceExportResponse(data []byte) (SpaceExportResponse, error) {
-	var r SpaceExportResponse
+func UnmarshalExportSpacesResponse(data []byte) (ExportSpacesResponse, error) {
+	var r ExportSpacesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpaceExportResponse) Marshal() ([]byte, error) {
+func (r *ExportSpacesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpaceListParams(data []byte) (SpaceListParams, error) {
-	var r SpaceListParams
+func UnmarshalListSpacesParams(data []byte) (ListSpacesParams, error) {
+	var r ListSpacesParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpaceListParams) Marshal() ([]byte, error) {
+func (r *ListSpacesParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpaceListResponse(data []byte) (SpaceListResponse, error) {
-	var r SpaceListResponse
+func UnmarshalListSpacesResponse(data []byte) (ListSpacesResponse, error) {
+	var r ListSpacesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpaceListResponse) Marshal() ([]byte, error) {
+func (r *ListSpacesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskDeleteParams(data []byte) (TaskDeleteParams, error) {
-	var r TaskDeleteParams
+func UnmarshalDeleteTaskParams(data []byte) (DeleteTaskParams, error) {
+	var r DeleteTaskParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskDeleteParams) Marshal() ([]byte, error) {
+func (r *DeleteTaskParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type TaskDeleteRequest map[string]interface{}
+type DeleteTaskRequest map[string]interface{}
 
-func UnmarshalTaskDeleteRequest(data []byte) (TaskDeleteRequest, error) {
-	var r TaskDeleteRequest
+func UnmarshalDeleteTaskRequest(data []byte) (DeleteTaskRequest, error) {
+	var r DeleteTaskRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskDeleteRequest) Marshal() ([]byte, error) {
+func (r *DeleteTaskRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskDeleteResponse(data []byte) (TaskDeleteResponse, error) {
-	var r TaskDeleteResponse
+func UnmarshalDeleteTaskResponse(data []byte) (DeleteTaskResponse, error) {
+	var r DeleteTaskResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskDeleteResponse) Marshal() ([]byte, error) {
+func (r *DeleteTaskResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskFetchParams(data []byte) (TaskFetchParams, error) {
-	var r TaskFetchParams
+func UnmarshalFetchTaskParams(data []byte) (FetchTaskParams, error) {
+	var r FetchTaskParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskFetchParams) Marshal() ([]byte, error) {
+func (r *FetchTaskParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskFetchResponse(data []byte) (TaskFetchResponse, error) {
-	var r TaskFetchResponse
+func UnmarshalFetchTaskResponse(data []byte) (FetchTaskResponse, error) {
+	var r FetchTaskResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchTaskResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskTriggerParams(data []byte) (TaskTriggerParams, error) {
-	var r TaskTriggerParams
+func UnmarshalTriggerTaskParams(data []byte) (TriggerTaskParams, error) {
+	var r TriggerTaskParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskTriggerParams) Marshal() ([]byte, error) {
+func (r *TriggerTaskParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type TaskTriggerRequest map[string]interface{}
+type TriggerTaskRequest map[string]interface{}
 
-func UnmarshalTaskTriggerRequest(data []byte) (TaskTriggerRequest, error) {
-	var r TaskTriggerRequest
+func UnmarshalTriggerTaskRequest(data []byte) (TriggerTaskRequest, error) {
+	var r TriggerTaskRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskTriggerRequest) Marshal() ([]byte, error) {
+func (r *TriggerTaskRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskTriggerResponse(data []byte) (TaskTriggerResponse, error) {
-	var r TaskTriggerResponse
+func UnmarshalTriggerTaskResponse(data []byte) (TriggerTaskResponse, error) {
+	var r TriggerTaskResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskTriggerResponse) Marshal() ([]byte, error) {
+func (r *TriggerTaskResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskUpdateParams(data []byte) (TaskUpdateParams, error) {
-	var r TaskUpdateParams
+func UnmarshalUpdateTaskParams(data []byte) (UpdateTaskParams, error) {
+	var r UpdateTaskParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskUpdateParams) Marshal() ([]byte, error) {
+func (r *UpdateTaskParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskUpdateRequest(data []byte) (TaskUpdateRequest, error) {
-	var r TaskUpdateRequest
+func UnmarshalUpdateTaskRequest(data []byte) (UpdateTaskRequest, error) {
+	var r UpdateTaskRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskUpdateRequest) Marshal() ([]byte, error) {
+func (r *UpdateTaskRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskUpdateResponse(data []byte) (TaskUpdateResponse, error) {
-	var r TaskUpdateResponse
+func UnmarshalUpdateTaskResponse(data []byte) (UpdateTaskResponse, error) {
+	var r UpdateTaskResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskUpdateResponse) Marshal() ([]byte, error) {
+func (r *UpdateTaskResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskCreateRequest(data []byte) (TaskCreateRequest, error) {
-	var r TaskCreateRequest
+func UnmarshalCreateTaskRequest(data []byte) (CreateTaskRequest, error) {
+	var r CreateTaskRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskCreateRequest) Marshal() ([]byte, error) {
+func (r *CreateTaskRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskCreateResponse(data []byte) (TaskCreateResponse, error) {
-	var r TaskCreateResponse
+func UnmarshalCreateTaskResponse(data []byte) (CreateTaskResponse, error) {
+	var r CreateTaskResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskCreateResponse) Marshal() ([]byte, error) {
+func (r *CreateTaskResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskExportParams(data []byte) (TaskExportParams, error) {
-	var r TaskExportParams
+func UnmarshalExportTasksParams(data []byte) (ExportTasksParams, error) {
+	var r ExportTasksParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskExportParams) Marshal() ([]byte, error) {
+func (r *ExportTasksParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskExportResponse(data []byte) (TaskExportResponse, error) {
-	var r TaskExportResponse
+func UnmarshalExportTasksResponse(data []byte) (ExportTasksResponse, error) {
+	var r ExportTasksResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskExportResponse) Marshal() ([]byte, error) {
+func (r *ExportTasksResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskListParams(data []byte) (TaskListParams, error) {
-	var r TaskListParams
+func UnmarshalListTasksParams(data []byte) (ListTasksParams, error) {
+	var r ListTasksParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskListParams) Marshal() ([]byte, error) {
+func (r *ListTasksParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTaskListResponse(data []byte) (TaskListResponse, error) {
-	var r TaskListResponse
+func UnmarshalListTasksResponse(data []byte) (ListTasksResponse, error) {
+	var r ListTasksResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TaskListResponse) Marshal() ([]byte, error) {
+func (r *ListTasksResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTeamListParams(data []byte) (TeamListParams, error) {
-	var r TeamListParams
+func UnmarshalListTeamsParams(data []byte) (ListTeamsParams, error) {
+	var r ListTeamsParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TeamListParams) Marshal() ([]byte, error) {
+func (r *ListTeamsParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTeamListResponse(data []byte) (TeamListResponse, error) {
-	var r TeamListResponse
+func UnmarshalListTeamsResponse(data []byte) (ListTeamsResponse, error) {
+	var r ListTeamsResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TeamListResponse) Marshal() ([]byte, error) {
+func (r *ListTeamsResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalUsageFetchResponse(data []byte) (UsageFetchResponse, error) {
-	var r UsageFetchResponse
+func UnmarshalFetchUsageResponse(data []byte) (FetchUsageResponse, error) {
+	var r FetchUsageResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *UsageFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchUsageResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalUsageSeriesFetchResponse(data []byte) (UsageSeriesFetchResponse, error) {
-	var r UsageSeriesFetchResponse
+func UnmarshalFetchUsageSeriesResponse(data []byte) (FetchUsageSeriesResponse, error) {
+	var r FetchUsageSeriesResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *UsageSeriesFetchResponse) Marshal() ([]byte, error) {
+func (r *FetchUsageSeriesResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8659,7 +8653,9 @@ func UnmarshalBlueprintVisibility(data []byte) (BlueprintVisibility, error) {
 	return r, err
 }
 
-// BlueprintVisibility.Marshal is provided by SecretVisibility.Marshal (type alias)
+func (r *BlueprintVisibility) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
 
 func UnmarshalBotVisibility(data []byte) (BotVisibility, error) {
 	var r BotVisibility
@@ -8667,7 +8663,9 @@ func UnmarshalBotVisibility(data []byte) (BotVisibility, error) {
 	return r, err
 }
 
-// BotVisibility.Marshal is provided by SecretVisibility.Marshal (type alias)
+func (r *BotVisibility) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
 
 func UnmarshalDatasetVisibility(data []byte) (DatasetVisibility, error) {
 	var r DatasetVisibility
@@ -8675,7 +8673,9 @@ func UnmarshalDatasetVisibility(data []byte) (DatasetVisibility, error) {
 	return r, err
 }
 
-// DatasetVisibility.Marshal is provided by SecretVisibility.Marshal (type alias)
+func (r *DatasetVisibility) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
 
 func UnmarshalDatasetFileAttachmentType(data []byte) (DatasetFileAttachmentType, error) {
 	var r DatasetFileAttachmentType
@@ -8705,7 +8705,9 @@ func UnmarshalSkillsetVisibility(data []byte) (SkillsetVisibility, error) {
 	return r, err
 }
 
-// SkillsetVisibility.Marshal is provided by SecretVisibility.Marshal (type alias)
+func (r *SkillsetVisibility) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
 
 func UnmarshalFileVisibility(data []byte) (FileVisibility, error) {
 	var r FileVisibility
@@ -8713,7 +8715,9 @@ func UnmarshalFileVisibility(data []byte) (FileVisibility, error) {
 	return r, err
 }
 
-// FileVisibility.Marshal is provided by SecretVisibility.Marshal (type alias)
+func (r *FileVisibility) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
 
 func UnmarshalSecretType(data []byte) (SecretType, error) {
 	var r SecretType
@@ -8971,7 +8975,7 @@ type Error struct {
 	Message *string `json:"message,omitempty"`
 }
 
-type PlatformReportListParams struct {
+type ListPlatformReportsParams struct {
 	// The cursor to use for pagination        
 	Cursor                             *string `json:"cursor,omitempty"`
 	// The order of the paginated items        
@@ -8980,12 +8984,12 @@ type PlatformReportListParams struct {
 	Take                               *int64  `json:"take,omitempty"`
 }
 
-type PlatformReportListResponse struct {
-	Items []PlatformReportListResponseItem `json:"items"`
+type ListPlatformReportsResponse struct {
+	Items []ListPlatformReportsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformReportListResponseItem struct {
+type ListPlatformReportsResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -9000,52 +9004,52 @@ type PlatformReportListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type ReportGenerateParams struct {
+type GenerateReportParams struct {
 	// The ID of the report to generate       
 	ReportID                           string `json:"reportId"`
 }
 
 // Successful report output data
-type ReportGenerateResponse1_Value struct {
+type GenerateReportsResponseValue struct {
 	// Error message if report generation failed        
 	Error                                       *string `json:"error,omitempty"`
 }
 
-type BlueprintCloneParams struct {
+type CloneBlueprintParams struct {
 	// The ID of the blueprint to clone       
 	BlueprintID                        string `json:"blueprintId"`
 }
 
-type BlueprintCloneResponse struct {
+type CloneBlueprintResponse struct {
 	// The ID of the cloned blueprint                                
 	ID                                        string                 `json:"id"`
 	// A map of the resources that were cloned                       
 	Resources                                 map[string]interface{} `json:"resources"`
 }
 
-type BlueprintDeleteParams struct {
+type DeleteBlueprintParams struct {
 	// The ID of the blueprint to delete       
 	BlueprintID                         string `json:"blueprintId"`
 }
 
-type BlueprintDeleteRequest struct {
+type DeleteBlueprintRequest struct {
 	// If true, deletes all resources associated with the blueprint. If false or omitted, only      
 	// the blueprint is deleted.                                                                    
 	DeleteResources                                                                           *bool `json:"deleteResources,omitempty"`
 }
 
-type BlueprintDeleteResponse struct {
+type DeleteBlueprintResponse struct {
 	// The ID of the deleted blueprint       
 	ID                                string `json:"id"`
 }
 
-type BlueprintFetchParams struct {
+type FetchBlueprintParams struct {
 	// The ID of the blueprint to retrieve       
 	BlueprintID                           string `json:"blueprintId"`
 }
 
 // Instance list properties
-type BlueprintFetchResponse struct {
+type FetchBlueprintResponse struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -9062,24 +9066,24 @@ type BlueprintFetchResponse struct {
 	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type BlueprintResourceListParams struct {
+type ListBlueprintResourcesParams struct {
 	// The ID of the blueprint to clone       
 	BlueprintID                        string `json:"blueprintId"`
 }
 
-type BlueprintResourceListResponse struct {
+type ListBlueprintResourcesResponse struct {
 	// The ID of the blueprint                       
 	ID                        string                 `json:"id"`
 	// A map of the resources                        
 	Resources                 map[string]interface{} `json:"resources"`
 }
 
-type BlueprintUpdateParams struct {
+type UpdateBlueprintParams struct {
 	BlueprintID string `json:"blueprintId"`
 }
 
 // Instance crud properties
-type BlueprintUpdateRequest struct {
+type UpdateBlueprintRequest struct {
 	// The unique alias for the instance                       
 	Alias                               *string                `json:"alias,omitempty"`
 	// The associated description                              
@@ -9092,13 +9096,13 @@ type BlueprintUpdateRequest struct {
 	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type BlueprintUpdateResponse struct {
+type UpdateBlueprintResponse struct {
 	// The ID of the updated blueprint       
 	ID                                string `json:"id"`
 }
 
 // Instance crud properties
-type BlueprintCreateRequest struct {
+type CreateBlueprintRequest struct {
 	// The unique alias for the instance                       
 	Alias                               *string                `json:"alias,omitempty"`
 	// The associated description                              
@@ -9111,12 +9115,12 @@ type BlueprintCreateRequest struct {
 	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type BlueprintCreateResponse struct {
+type CreateBlueprintResponse struct {
 	// The ID of the created blueprint       
 	ID                                string `json:"id"`
 }
 
-type BlueprintListParams struct {
+type ListBlueprintsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -9127,12 +9131,12 @@ type BlueprintListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type BlueprintListResponse struct {
-	Items []BlueprintListResponseItem `json:"items"`
+type ListBlueprintsResponse struct {
+	Items []ListBlueprintsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type BlueprintListResponseItem struct {
+type ListBlueprintsResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -9149,49 +9153,49 @@ type BlueprintListResponseItem struct {
 	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type BotCloneParams struct {
+type CloneBotParams struct {
 	BotID string `json:"botId"`
 }
 
-type BotCloneResponse struct {
+type CloneBotResponse struct {
 	// The ID of the cloned bot       
 	ID                         string `json:"id"`
 }
 
-type BotDeleteParams struct {
+type DeleteBotParams struct {
 	// The ID of the bot to delete       
 	BotID                         string `json:"botId"`
 }
 
-type BotDeleteResponse struct {
+type DeleteBotResponse struct {
 	// The ID of the deleted bot       
 	ID                          string `json:"id"`
 }
 
-type BotDownvoteParams struct {
+type DownvoteBotParams struct {
 	// The ID of the bot       
 	BotID               string `json:"botId"`
 }
 
-type BotDownvoteRequest struct {
+type DownvoteBotRequest struct {
 	// The reason for the downvote        
 	Reason                        *string `json:"reason,omitempty"`
 	// The value of the downvote          
 	Value                         *int64  `json:"value,omitempty"`
 }
 
-type BotDownvoteResponse struct {
+type DownvoteBotResponse struct {
 	// The bot ID of the downvoted bot       
 	ID                                string `json:"id"`
 }
 
-type BotFetchParams struct {
+type FetchBotParams struct {
 	// The ID of the bot to retrieve       
 	BotID                           string `json:"botId"`
 }
 
 // Blueprint properties
-type BotFetchResponse struct {
+type FetchBotResponse struct {
 	// The backstory this configuration is using                                
 	Backstory                                            *string                `json:"backstory,omitempty"`
 	// The ID of the blueprint                                                  
@@ -9222,49 +9226,49 @@ type BotFetchResponse struct {
 	Visibility                                           *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type BotMemorySearchParams struct {
+type SearchBotMemoryParams struct {
 	// The ID of the bot to search memories for       
 	BotID                                      string `json:"botId"`
 }
 
-type BotMemorySearchRequest struct {
+type SearchBotMemoryRequest struct {
 	// The keyword/phrase to search for       
 	Search                             string `json:"search"`
 }
 
-type BotMemorySearchResponse struct {
+type SearchBotMemoryResponse struct {
 	// An array of memories matching the search query                              
-	Items                                            []BotMemorySearchResponseItem `json:"items"`
+	Items                                            []SearchBotMemoryResponseItem `json:"items"`
 }
 
-type BotMemorySearchResponseItem struct {
+type SearchBotMemoryResponseItem struct {
 	ID   string                 `json:"id"`
 	Meta map[string]interface{} `json:"meta,omitempty"`
 	Text string                 `json:"text"`
 }
 
-type BotSessionCreateParams struct {
+type CreateBotSessionParams struct {
 	// The ID of the bot for this session       
 	BotID                                string `json:"botId"`
 }
 
-type BotSessionCreateRequest struct {
+type CreateBotSessionRequest struct {
 	// The maximum amount of time this session will stay open                                  
 	DurationInSeconds                                         *float64                         `json:"durationInSeconds,omitempty"`
 	// An array of messages to be included in the conversation                                 
-	Messages                                                  []BotSessionCreateRequestMessage `json:"messages,omitempty"`
+	Messages                                                  []CreateBotSessionRequestMessage `json:"messages,omitempty"`
 	// Meta data information                                                                   
 	Meta                                                      map[string]interface{}           `json:"meta,omitempty"`
 }
 
-type BotSessionCreateRequestMessage struct {
+type CreateBotSessionRequestMessage struct {
 	// The text of the message            
 	Text                      string      `json:"text"`
 	// The type of the message            
 	Type                      MessageType `json:"type"`
 }
 
-type BotSessionCreateResponse struct {
+type CreateBotSessionResponse struct {
 	// The ID of the conversation                                                         
 	ConversationID                                      string                            `json:"conversationId"`
 	// The time the token will expire in milliseconds                                     
@@ -9272,24 +9276,24 @@ type BotSessionCreateResponse struct {
 	// The ID of the bot                                                                  
 	ID                                                  string                            `json:"id"`
 	// An array of messages included in the conversation                                  
-	Messages                                            []BotSessionCreateResponseMessage `json:"messages,omitempty"`
+	Messages                                            []CreateBotSessionResponseMessage `json:"messages,omitempty"`
 	// The token for this conversation                                                    
 	Token                                               string                            `json:"token"`
 }
 
-type BotSessionCreateResponseMessage struct {
+type CreateBotSessionResponseMessage struct {
 	// The text of the message            
 	Text                      string      `json:"text"`
 	// The type of the message            
 	Type                      MessageType `json:"type"`
 }
 
-type BotUpdateParams struct {
+type UpdateBotParams struct {
 	BotID string `json:"botId"`
 }
 
 // Blueprint properties
-type BotUpdateRequest struct {
+type UpdateBotRequest struct {
 	// The unique alias for the instance                                        
 	Alias                                                *string                `json:"alias,omitempty"`
 	// The backstory this configuration is using                                
@@ -9316,29 +9320,29 @@ type BotUpdateRequest struct {
 	Visibility                                           *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type BotUpdateResponse struct {
+type UpdateBotResponse struct {
 	// The ID of the updated bot       
 	ID                          string `json:"id"`
 }
 
-type BotUpvoteParams struct {
+type UpvoteBotParams struct {
 	// The ID of the bot       
 	BotID               string `json:"botId"`
 }
 
-type BotUpvoteRequest struct {
+type UpvoteBotRequest struct {
 	// The reason for the upvote        
 	Reason                      *string `json:"reason,omitempty"`
 	// The value of the upvote          
 	Value                       *int64  `json:"value,omitempty"`
 }
 
-type BotUpvoteResponse struct {
+type UpvoteBotResponse struct {
 	// The ID of the upvoted bot       
 	ID                          string `json:"id"`
 }
 
-type BotUsageFetchParams struct {
+type FetchBotUsageParams struct {
 	// The ID of the bot                                     
 	BotID                                         string     `json:"botId"`
 	// Start date for the period (ISO 8601 format)           
@@ -9347,7 +9351,7 @@ type BotUsageFetchParams struct {
 	To                                            *time.Time `json:"to,omitempty"`
 }
 
-type BotUsageFetchResponse struct {
+type FetchBotUsageResponse struct {
 	// Total number of conversations          
 	Conversations                      *int64 `json:"conversations,omitempty"`
 	// Total number of messages               
@@ -9357,7 +9361,7 @@ type BotUsageFetchResponse struct {
 }
 
 // Blueprint properties
-type BotCreateRequest struct {
+type CreateBotRequest struct {
 	// The unique alias for the instance                                        
 	Alias                                                *string                `json:"alias,omitempty"`
 	// The backstory this configuration is using                                
@@ -9384,12 +9388,12 @@ type BotCreateRequest struct {
 	Visibility                                           *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type BotCreateResponse struct {
+type CreateBotResponse struct {
 	// The ID of the created bot       
 	ID                          string `json:"id"`
 }
 
-type BotListParams struct {
+type ListBotsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -9400,12 +9404,12 @@ type BotListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type BotListResponse struct {
-	Items []BotListResponseItem `json:"items"`
+type ListBotsResponse struct {
+	Items []ListBotsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type BotListResponseItem struct {
+type ListBotsResponseItem struct {
 	// The backstory this configuration is using                                
 	Backstory                                            *string                `json:"backstory,omitempty"`
 	// The ID of the blueprint                                                  
@@ -9436,27 +9440,27 @@ type BotListResponseItem struct {
 	Visibility                                           *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type ChannelPublishParams struct {
+type PublishChannelMessageParams struct {
 	// The ID of the channel to publish to (minimum 16 characters)       
 	ChannelID                                                     string `json:"channelId"`
 }
 
-type ChannelPublishRequest struct {
+type PublishChannelMessageRequest struct {
 	// The message to publish to the channel                       
 	Message                                 map[string]interface{} `json:"message"`
 }
 
-type ChannelPublishResponse struct {
+type PublishChannelMessageResponse struct {
 	// The ID of the channel the message was published to       
 	ID                                                   string `json:"id"`
 }
 
-type ChannelSubscribeParams struct {
+type SubscribeChannelMessagesParams struct {
 	// The ID of the channel to subscribe to (minimum 16 characters)       
 	ChannelID                                                       string `json:"channelId"`
 }
 
-type ChannelSubscribeRequest struct {
+type SubscribeChannelMessagesRequest struct {
 	// Number of historical messages to replay from the channel       
 	// before subscribing to live updates. When provided, the         
 	// subscriber will first receive up to this many recent           
@@ -9466,7 +9470,7 @@ type ChannelSubscribeRequest struct {
 	HistoryLength                                              *int64 `json:"historyLength,omitempty"`
 }
 
-type ContactConversationListParams struct {
+type ListContactConversationsParams struct {
 	// The ID of the contact to list conversations for        
 	ContactID                                         string  `json:"contactId"`
 	// The cursor to use for pagination                       
@@ -9477,14 +9481,14 @@ type ContactConversationListParams struct {
 	Take                                              *int64  `json:"take,omitempty"`
 }
 
-type ContactConversationListResponse struct {
-	Items []ContactConversationListResponseItem `json:"items"`
+type ListContactConversationsResponse struct {
+	Items []ListContactConversationsResponseItem `json:"items"`
 }
 
 // A bot configuration or reference
 //
 // A bot configuration that can be applied without a dedicated bot instance.
-type ContactConversationListResponseItem struct {
+type ListContactConversationsResponseItem struct {
 	// The contact id assigned to this conversation                             
 	ContactID                                            *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                         
@@ -9517,23 +9521,23 @@ type ContactConversationListResponseItem struct {
 	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
 }
 
-type ContactDeleteParams struct {
+type DeleteContactParams struct {
 	// The ID of the contact to delete       
 	ContactID                         string `json:"contactId"`
 }
 
-type ContactDeleteResponse struct {
+type DeleteContactResponse struct {
 	// The ID of the deleted contact       
 	ID                              string `json:"id"`
 }
 
-type ContactFetchParams struct {
+type FetchContactParams struct {
 	// The ID of the contact to retrieve       
 	ContactID                           string `json:"contactId"`
 }
 
 // Instance list properties
-type ContactFetchResponse struct {
+type FetchContactResponse struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -9560,7 +9564,7 @@ type ContactFetchResponse struct {
 	VerifiedAt                                         *float64               `json:"verifiedAt,omitempty"`
 }
 
-type ContactMemoryListParams struct {
+type ListContactMemoriesParams struct {
 	// The ID of the contact to list memories for        
 	ContactID                                    string  `json:"contactId"`
 	// The cursor to use for pagination                  
@@ -9571,12 +9575,12 @@ type ContactMemoryListParams struct {
 	Take                                         *int64  `json:"take,omitempty"`
 }
 
-type ContactMemoryListResponse struct {
-	Items []ContactMemoryListResponseItem `json:"items"`
+type ListContactMemoriesResponse struct {
+	Items []ListContactMemoriesResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ContactMemoryListResponseItem struct {
+type ListContactMemoriesResponseItem struct {
 	// The ID of the bot the memory belongs to                                
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -9595,62 +9599,62 @@ type ContactMemoryListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type ContactMemorySearchParams struct {
+type SearchContactMemoryParams struct {
 	// The ID of the contact to search memories for       
 	ContactID                                      string `json:"contactId"`
 }
 
-type ContactMemorySearchRequest struct {
+type SearchContactMemoryRequest struct {
 	// The keyword/phrase to search for       
 	Search                             string `json:"search"`
 }
 
-type ContactMemorySearchResponse struct {
+type SearchContactMemoryResponse struct {
 	// An array of memories matching the search query                                  
-	Items                                            []ContactMemorySearchResponseItem `json:"items"`
+	Items                                            []SearchContactMemoryResponseItem `json:"items"`
 }
 
-type ContactMemorySearchResponseItem struct {
+type SearchContactMemoryResponseItem struct {
 	ID   string                 `json:"id"`
 	Meta map[string]interface{} `json:"meta,omitempty"`
 	Text string                 `json:"text"`
 }
 
-type ContactSecretAuthenticateParams struct {
+type AuthenticateContactSecretParams struct {
 	// The ID of the contact the secret belongs to       
 	ContactID                                     string `json:"contactId"`
 	// The ID of the secret to authenticate              
 	SecretID                                      string `json:"secretId"`
 }
 
-type ContactSecretAuthenticateResponse struct {
+type AuthenticateContactSecretResponse struct {
 	// The ID of the secret to authenticate       
 	ID                                     string `json:"id"`
 	// The URL to authenticate the secret         
 	URL                                    string `json:"url"`
 }
 
-type ContactSecretRevokeParams struct {
+type RevokeContactSecretParams struct {
 	// The ID of the contact the secret belongs to       
 	ContactID                                     string `json:"contactId"`
 	// The ID of the secret to be revoked                
 	SecretID                                      string `json:"secretId"`
 }
 
-type ContactSecretRevokeResponse struct {
+type RevokeContactSecretResponse struct {
 	// The ID of the revoked secret       
 	ID                             string `json:"id"`
 }
 
-type ContactSecretVerifyParams struct {
+type VerifyContactSecretParams struct {
 	// The ID of the contact the secret belongs to       
 	ContactID                                     string `json:"contactId"`
 	// The ID of the secret to be verified               
 	SecretID                                      string `json:"secretId"`
 }
 
-type ContactSecretVerifyResponse struct {
-	Action                          *ContactSecretVerifyResponseAction `json:"action,omitempty"`
+type VerifyContactSecretResponse struct {
+	Action                          *VerifyContactSecretResponseAction `json:"action,omitempty"`
 	// The ID of the verified secret                                   
 	ID                              string                             `json:"id"`
 	// The status of the secret                                        
@@ -9658,14 +9662,14 @@ type ContactSecretVerifyResponse struct {
 }
 
 // The action to take next
-type ContactSecretVerifyResponseAction struct {
+type VerifyContactSecretResponseAction struct {
 	// The type of action to take                   
 	Type                                 ActionType `json:"type"`
 	// The URL to authenticate the secret           
 	URL                                  string     `json:"url"`
 }
 
-type ContactSecretListParams struct {
+type ListContactSecretsParams struct {
 	// The ID of the contact to list secrets for        
 	ContactID                                   string  `json:"contactId"`
 	// The cursor to use for pagination                 
@@ -9676,12 +9680,12 @@ type ContactSecretListParams struct {
 	Take                                        *int64  `json:"take,omitempty"`
 }
 
-type ContactSecretListResponse struct {
-	Items []ContactSecretListResponseItem `json:"items"`
+type ListContactSecretsResponse struct {
+	Items []ListContactSecretsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ContactSecretListResponseItem struct {
+type ListContactSecretsResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -9698,7 +9702,7 @@ type ContactSecretListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type ContactSpaceListParams struct {
+type ListContactSpacesParams struct {
 	// The ID of the contact to list spaces for        
 	ContactID                                  string  `json:"contactId"`
 	// The cursor to use for pagination                
@@ -9709,12 +9713,12 @@ type ContactSpaceListParams struct {
 	Take                                       *int64  `json:"take,omitempty"`
 }
 
-type ContactSpaceListResponse struct {
-	Items []ContactSpaceListResponseItem `json:"items"`
+type ListContactSpacesResponse struct {
+	Items []ListContactSpacesResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ContactSpaceListResponseItem struct {
+type ListContactSpacesResponseItem struct {
 	// The contact id assigned to this rating                                 
 	ContactID                                          *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -9731,7 +9735,7 @@ type ContactSpaceListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type ContactTaskListParams struct {
+type ListContactTasksParams struct {
 	// The ID of the contact to list tasks for        
 	ContactID                                 string  `json:"contactId"`
 	// The cursor to use for pagination               
@@ -9742,12 +9746,12 @@ type ContactTaskListParams struct {
 	Take                                      *int64  `json:"take,omitempty"`
 }
 
-type ContactTaskListResponse struct {
-	Items []ContactTaskListResponseItem `json:"items"`
+type ListContactTasksResponse struct {
+	Items []ListContactTasksResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ContactTaskListResponseItem struct {
+type ListContactTasksResponseItem struct {
 	// The bot associated with the task                                       
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The contact id assigned to this task                                   
@@ -9772,12 +9776,12 @@ type ContactTaskListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type ContactUpdateParams struct {
+type UpdateContactParams struct {
 	ContactID string `json:"contactId"`
 }
 
 // Instance crud properties
-type ContactUpdateRequest struct {
+type UpdateContactRequest struct {
 	// The associated description                                             
 	Description                                        *string                `json:"description,omitempty"`
 	// The email address of the contact                                       
@@ -9798,13 +9802,13 @@ type ContactUpdateRequest struct {
 	VerifiedAt                                         *float64               `json:"verifiedAt,omitempty"`
 }
 
-type ContactUpdateResponse struct {
+type UpdateContactResponse struct {
 	// The ID of the updated contact       
 	ID                              string `json:"id"`
 }
 
 // Instance crud properties
-type ContactCreateRequest struct {
+type CreateContactRequest struct {
 	// The associated description                                             
 	Description                                        *string                `json:"description,omitempty"`
 	// The email address of the contact                                       
@@ -9825,13 +9829,13 @@ type ContactCreateRequest struct {
 	VerifiedAt                                         *float64               `json:"verifiedAt,omitempty"`
 }
 
-type ContactCreateResponse struct {
+type CreateContactResponse struct {
 	// The ID of the created contact       
 	ID                              string `json:"id"`
 }
 
 // Instance crud properties
-type ContactEnsureRequest struct {
+type EnsureContactRequest struct {
 	// The associated description                                             
 	Description                                        *string                `json:"description,omitempty"`
 	// The email address of the contact                                       
@@ -9852,12 +9856,12 @@ type ContactEnsureRequest struct {
 	VerifiedAt                                         *float64               `json:"verifiedAt,omitempty"`
 }
 
-type ContactEnsureResponse struct {
+type EnsureContactResponse struct {
 	// The ID of the ensured contact       
 	ID                              string `json:"id"`
 }
 
-type ContactExportParams struct {
+type ExportContactsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -9868,12 +9872,12 @@ type ContactExportParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type ContactExportResponse struct {
-	Items []ContactExportResponseItem `json:"items"`
+type ExportContactsResponse struct {
+	Items []ExportContactsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ContactExportResponseItem struct {
+type ExportContactsResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -9900,7 +9904,7 @@ type ContactExportResponseItem struct {
 	VerifiedAt                                         *float64               `json:"verifiedAt,omitempty"`
 }
 
-type ContactListParams struct {
+type ListContactsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -9911,12 +9915,12 @@ type ContactListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type ContactListResponse struct {
-	Items []ContactListResponseItem `json:"items"`
+type ListContactsResponse struct {
+	Items []ListContactsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ContactListResponseItem struct {
+type ListContactsResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -9943,15 +9947,15 @@ type ContactListResponseItem struct {
 	VerifiedAt                                         *float64               `json:"verifiedAt,omitempty"`
 }
 
-type ConversationAttachmentUploadParams struct {
+type UploadConversationAttachmentParams struct {
 	ConversationID string `json:"conversationId"`
 }
 
-type ConversationAttachmentUploadRequest struct {
+type UploadConversationAttachmentRequest struct {
 	// The file to upload either as http: or data: URL                                         
 	//                                                                                         
 	// The file definition to upload                                                           
-	File                                              *ConversationAttachmentUploadRequestFile `json:"file"`
+	File                                              *UploadConversationAttachmentRequestFile `json:"file"`
 }
 
 // The file definition to upload
@@ -9964,17 +9968,17 @@ type PurpleFile struct {
 	Type            string  `json:"type"`
 }
 
-type ConversationAttachmentUploadResponse struct {
+type UploadConversationAttachmentResponse struct {
 	// The ID of the upload file                                                                 
 	ID                                        string                                             `json:"id"`
 	// The name of the uploaded file                                                             
 	Name                                      *string                                            `json:"name,omitempty"`
 	// The request required to upload the file                                                   
-	UploadRequest                             *ConversationAttachmentUploadResponseUploadRequest `json:"uploadRequest,omitempty"`
+	UploadRequest                             *UploadConversationAttachmentResponseUploadRequest `json:"uploadRequest,omitempty"`
 }
 
 // The request required to upload the file
-type ConversationAttachmentUploadResponseUploadRequest struct {
+type UploadConversationAttachmentResponseUploadRequest struct {
 	// The HTTP headers to use                       
 	Headers                   map[string]interface{} `json:"headers"`
 	// The HTTP method to use                        
@@ -9983,26 +9987,26 @@ type ConversationAttachmentUploadResponseUploadRequest struct {
 	URL                       string                 `json:"url"`
 }
 
-type ConversationCompleteParams struct {
+type CompleteConversationMessageParams struct {
 	// The ID of the conversation to receive message from       
 	ConversationID                                       string `json:"conversationId"`
 }
 
-type ConversationCompleteRequest struct {
-	// Known entities                                                                                   
-	Entities                                                     []ConversationCompleteRequestEntity    `json:"entities,omitempty"`
-	// Extensions to enhance the bot's capabilities                                                     
-	Extensions                                                   *ConversationCompleteRequestExtensions `json:"extensions,omitempty"`
-	// An array of functions to be added to the conversation                                            
-	Functions                                                    []ConversationCompleteRequestFunction  `json:"functions,omitempty"`
-	// Execution limits to control conversation processing bounds                                       
-	Limits                                                       *ConversationCompleteRequestLimits     `json:"limits,omitempty"`
-	// The text of the message to send                                                                  
-	Text                                                         string                                 `json:"text"`
+type CompleteConversationMessageRequest struct {
+	// Known entities                                                                                          
+	Entities                                                     []CompleteConversationMessageRequestEntity    `json:"entities,omitempty"`
+	// Extensions to enhance the bot's capabilities                                                            
+	Extensions                                                   *CompleteConversationMessageRequestExtensions `json:"extensions,omitempty"`
+	// An array of functions to be added to the conversation                                                   
+	Functions                                                    []CompleteConversationMessageRequestFunction  `json:"functions,omitempty"`
+	// Execution limits to control conversation processing bounds                                              
+	Limits                                                       *CompleteConversationMessageRequestLimits     `json:"limits,omitempty"`
+	// The text of the message to send                                                                         
+	Text                                                         string                                        `json:"text"`
 }
 
 // Extracted entity from the message
-type ConversationCompleteRequestEntity struct {
+type CompleteConversationMessageRequestEntity struct {
 	// Start offset                                   
 	Begin                          float64            `json:"begin"`
 	// End offset                                     
@@ -10024,7 +10028,7 @@ type PurpleReplacement struct {
 }
 
 // Extensions to enhance the bot's capabilities
-type ConversationCompleteRequestExtensions struct {
+type CompleteConversationMessageRequestExtensions struct {
 	// Additional backstory for the bot                                  
 	Backstory                                           *string          `json:"backstory,omitempty"`
 	// Inline datasets to provide additional context                     
@@ -10080,7 +10084,7 @@ type PurpleAbility struct {
 	SecretID                              *string                `json:"secretId,omitempty"`
 }
 
-type ConversationCompleteRequestFunction struct {
+type CompleteConversationMessageRequestFunction struct {
 	// Configuration for when this function should be automatically called                    
 	Call                                                                     *PurpleCall      `json:"call,omitempty"`
 	// The description of the function                                                        
@@ -10120,7 +10124,7 @@ type PurpleResult struct {
 }
 
 // Execution limits to control conversation processing bounds
-type ConversationCompleteRequestLimits struct {
+type CompleteConversationMessageRequestLimits struct {
 	// Maximum number of function/tool calls. Controls how many total function calls can be made       
 	// during the conversation.                                                                        
 	Calls                                                                                       *int64 `json:"calls,omitempty"`
@@ -10132,36 +10136,36 @@ type ConversationCompleteRequestLimits struct {
 	Iterations                                                                                  *int64 `json:"iterations,omitempty"`
 }
 
-type ConversationCompleteResponse struct {
-	// Information about why the completion ended                                  
-	End                                          ConversationCompleteResponseEnd   `json:"end"`
-	// The ID of the created message                                               
-	ID                                           string                            `json:"id"`
-	// The text of the message received                                            
-	Text                                         string                            `json:"text"`
-	// Usage information                                                           
-	Usage                                        ConversationCompleteResponseUsage `json:"usage"`
+type CompleteConversationMessageResponse struct {
+	// Information about why the completion ended                                         
+	End                                          CompleteConversationMessageResponseEnd   `json:"end"`
+	// The ID of the created message                                                      
+	ID                                           string                                   `json:"id"`
+	// The text of the message received                                                   
+	Text                                         string                                   `json:"text"`
+	// Usage information                                                                  
+	Usage                                        CompleteConversationMessageResponseUsage `json:"usage"`
 }
 
 // Information about why the completion ended
-type ConversationCompleteResponseEnd struct {
+type CompleteConversationMessageResponseEnd struct {
 	// The reason why the completion ended               
 	Reason                                CompleteReason `json:"reason"`
 }
 
 // Usage information
-type ConversationCompleteResponseUsage struct {
+type CompleteConversationMessageResponseUsage struct {
 	// The tokens used in this exchange        
 	Token                              float64 `json:"token"`
 }
 
-type ConversationContactUpsertParams struct {
+type UpsertConversationContactParams struct {
 	// The ID of the conversation       
 	ConversationID               string `json:"conversationId"`
 }
 
 // Instance crud properties
-type ConversationContactUpsertRequest struct {
+type UpsertConversationContactRequest struct {
 	// The associated description                             
 	Description                        *string                `json:"description,omitempty"`
 	// The email address of the contact                       
@@ -10178,38 +10182,38 @@ type ConversationContactUpsertRequest struct {
 	Phone                              *string                `json:"phone,omitempty"`
 }
 
-type ConversationContactUpsertResponse struct {
+type UpsertConversationContactResponse struct {
 	// The ID of the created contact       
 	ID                              string `json:"id"`
 }
 
-type ConversationDeleteParams struct {
+type DeleteConversationParams struct {
 	// The ID of the conversation to delete       
 	ConversationID                         string `json:"conversationId"`
 }
 
-type ConversationDeleteResponse struct {
+type DeleteConversationResponse struct {
 	// The ID of the deleted conversation       
 	ID                                   string `json:"id"`
 }
 
-type ConversationDispatchRequest struct {
-	// A unique ID to deduplicate dispatch requests                                                     
-	ChannelID                                                    *string                                `json:"channelId,omitempty"`
-	// Known entities                                                                                   
-	Entities                                                     []ConversationDispatchRequestEntity    `json:"entities,omitempty"`
-	// Extensions to enhance the bot's capabilities                                                     
-	Extensions                                                   *ConversationDispatchRequestExtensions `json:"extensions,omitempty"`
-	// An array of functions to be added to the conversation                                            
-	Functions                                                    []ConversationDispatchRequestFunction  `json:"functions,omitempty"`
-	// Execution limits to control conversation processing bounds                                       
-	Limits                                                       *ConversationDispatchRequestLimits     `json:"limits,omitempty"`
-	// The text of the message to send                                                                  
-	Text                                                         string                                 `json:"text"`
+type DispatchStatefulConversationRequest struct {
+	// A unique ID to deduplicate dispatch requests                                                             
+	ChannelID                                                    *string                                        `json:"channelId,omitempty"`
+	// Known entities                                                                                           
+	Entities                                                     []DispatchStatefulConversationRequestEntity    `json:"entities,omitempty"`
+	// Extensions to enhance the bot's capabilities                                                             
+	Extensions                                                   *DispatchStatefulConversationRequestExtensions `json:"extensions,omitempty"`
+	// An array of functions to be added to the conversation                                                    
+	Functions                                                    []DispatchStatefulConversationRequestFunction  `json:"functions,omitempty"`
+	// Execution limits to control conversation processing bounds                                               
+	Limits                                                       *DispatchStatefulConversationRequestLimits     `json:"limits,omitempty"`
+	// The text of the message to send                                                                          
+	Text                                                         string                                         `json:"text"`
 }
 
 // Extracted entity from the message
-type ConversationDispatchRequestEntity struct {
+type DispatchStatefulConversationRequestEntity struct {
 	// Start offset                                   
 	Begin                          float64            `json:"begin"`
 	// End offset                                     
@@ -10231,7 +10235,7 @@ type FluffyReplacement struct {
 }
 
 // Extensions to enhance the bot's capabilities
-type ConversationDispatchRequestExtensions struct {
+type DispatchStatefulConversationRequestExtensions struct {
 	// Additional backstory for the bot                                  
 	Backstory                                           *string          `json:"backstory,omitempty"`
 	// Inline datasets to provide additional context                     
@@ -10287,7 +10291,7 @@ type FluffyAbility struct {
 	SecretID                              *string                `json:"secretId,omitempty"`
 }
 
-type ConversationDispatchRequestFunction struct {
+type DispatchStatefulConversationRequestFunction struct {
 	// Configuration for when this function should be automatically called                    
 	Call                                                                     *FluffyCall      `json:"call,omitempty"`
 	// The description of the function                                                        
@@ -10327,7 +10331,7 @@ type FluffyResult struct {
 }
 
 // Execution limits to control conversation processing bounds
-type ConversationDispatchRequestLimits struct {
+type DispatchStatefulConversationRequestLimits struct {
 	// Maximum number of function/tool calls. Controls how many total function calls can be made       
 	// during the conversation.                                                                        
 	Calls                                                                                       *int64 `json:"calls,omitempty"`
@@ -10339,29 +10343,29 @@ type ConversationDispatchRequestLimits struct {
 	Iterations                                                                                  *int64 `json:"iterations,omitempty"`
 }
 
-type ConversationDispatchResponse struct {
+type DispatchStatefulConversationResponse struct {
 	// The channel ID to subscribe to for completion events       
 	ChannelID                                              string `json:"channelId"`
 }
 
-type ConversationDownvoteParams struct {
+type DownvoteConversationParams struct {
 	// The ID of the conversation       
 	ConversationID               string `json:"conversationId"`
 }
 
-type ConversationDownvoteRequest struct {
+type DownvoteConversationRequest struct {
 	// The reason for the downvote        
 	Reason                        *string `json:"reason,omitempty"`
 	// The value of the downvote          
 	Value                         *int64  `json:"value,omitempty"`
 }
 
-type ConversationDownvoteResponse struct {
+type DownvoteConversationResponse struct {
 	// The conversation ID of the downvoted conversation       
 	ID                                                  string `json:"id"`
 }
 
-type ConversationFetchParams struct {
+type FetchConversationParams struct {
 	// The ID of the conversation to retrieve       
 	ConversationID                           string `json:"conversationId"`
 }
@@ -10369,7 +10373,7 @@ type ConversationFetchParams struct {
 // A bot configuration or reference
 //
 // A bot configuration that can be applied without a dedicated bot instance.
-type ConversationFetchResponse struct {
+type FetchConversationResponse struct {
 	// The contact id assigned to this conversation                             
 	ContactID                                            *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                         
@@ -10402,38 +10406,38 @@ type ConversationFetchResponse struct {
 	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
 }
 
-type ConversationMessageDeleteParams struct {
+type DeleteConversationMessageParams struct {
 	// The ID of the conversation containing the message       
 	ConversationID                                      string `json:"conversationId"`
 	// The ID of the message to delete                         
 	MessageID                                           string `json:"messageId"`
 }
 
-type ConversationMessageDeleteResponse struct {
+type DeleteConversationMessageResponse struct {
 	// The ID of the deleted message       
 	ID                              string `json:"id"`
 }
 
-type ConversationMessageDownvoteParams struct {
+type DownvoteConversationMessageParams struct {
 	// The ID of the conversation       
 	ConversationID               string `json:"conversationId"`
 	// The ID of the message            
 	MessageID                    string `json:"messageId"`
 }
 
-type ConversationMessageDownvoteRequest struct {
+type DownvoteConversationMessageRequest struct {
 	// The reason for the downvote        
 	Reason                        *string `json:"reason,omitempty"`
 	// The value of the downvote          
 	Value                         *int64  `json:"value,omitempty"`
 }
 
-type ConversationMessageDownvoteResponse struct {
+type DownvoteConversationMessageResponse struct {
 	// The ID of the downvoted message       
 	ID                                string `json:"id"`
 }
 
-type ConversationMessageFetchParams struct {
+type FetchConversationMessageParams struct {
 	// The ID of the conversation containing the message       
 	ConversationID                                      string `json:"conversationId"`
 	// The ID of the message to retrieve                       
@@ -10441,7 +10445,7 @@ type ConversationMessageFetchParams struct {
 }
 
 // Instance list properties
-type ConversationMessageFetchResponse struct {
+type FetchConversationMessageResponse struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -10460,19 +10464,19 @@ type ConversationMessageFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type ConversationMessageSynthesizeParams struct {
+type SynthesizeConversationMessageParams struct {
 	// The ID of the conversation       
 	ConversationID               string `json:"conversationId"`
 	// The ID of the message            
 	MessageID                    string `json:"messageId"`
 }
 
-type ConversationMessageSynthesizeResponse struct {
+type SynthesizeConversationMessageResponse struct {
 	// The ID of the synthesized message       
 	ID                                  string `json:"id"`
 }
 
-type ConversationMessageUpdateParams struct {
+type UpdateConversationMessageParams struct {
 	// The ID of the conversation       
 	ConversationID               string `json:"conversationId"`
 	// The ID of the message            
@@ -10480,11 +10484,11 @@ type ConversationMessageUpdateParams struct {
 }
 
 // Instance crud properties
-type ConversationMessageUpdateRequest struct {
+type UpdateConversationMessageRequest struct {
 	// The associated description                                              
 	Description                       *string                                  `json:"description,omitempty"`
 	// Known entities                                                          
-	Entities                          []ConversationMessageUpdateRequestEntity `json:"entities,omitempty"`
+	Entities                          []UpdateConversationMessageRequestEntity `json:"entities,omitempty"`
 	// Meta data information                                                   
 	Meta                              map[string]interface{}                   `json:"meta,omitempty"`
 	// The associated name                                                     
@@ -10496,7 +10500,7 @@ type ConversationMessageUpdateRequest struct {
 }
 
 // Extracted entity from the message
-type ConversationMessageUpdateRequestEntity struct {
+type UpdateConversationMessageRequestEntity struct {
 	// Start offset                                      
 	Begin                          float64               `json:"begin"`
 	// End offset                                        
@@ -10517,41 +10521,41 @@ type TentacledReplacement struct {
 	Text                                string  `json:"text"`
 }
 
-type ConversationMessageUpdateResponse struct {
+type UpdateConversationMessageResponse struct {
 	// The ID of the updated message       
 	ID                              string `json:"id"`
 }
 
-type ConversationMessageUpvoteParams struct {
+type UpvoteConversationMessageParams struct {
 	// The ID of the conversation       
 	ConversationID               string `json:"conversationId"`
 	// The ID of the message            
 	MessageID                    string `json:"messageId"`
 }
 
-type ConversationMessageUpvoteRequest struct {
+type UpvoteConversationMessageRequest struct {
 	// The reason for the upvote        
 	Reason                      *string `json:"reason,omitempty"`
 	// The value of the upvote          
 	Value                       *int64  `json:"value,omitempty"`
 }
 
-type ConversationMessageUpvoteResponse struct {
+type UpvoteConversationMessageResponse struct {
 	// The ID of the upvoted message       
 	ID                              string `json:"id"`
 }
 
-type ConversationMessageCreateParams struct {
+type CreateConversationMessageParams struct {
 	// The ID of the conversation       
 	ConversationID               string `json:"conversationId"`
 }
 
 // Instance crud properties
-type ConversationMessageCreateRequest struct {
+type CreateConversationMessageRequest struct {
 	// The associated description                                         
 	Description                  *string                                  `json:"description,omitempty"`
 	// Known entities                                                     
-	Entities                     []ConversationMessageCreateRequestEntity `json:"entities,omitempty"`
+	Entities                     []CreateConversationMessageRequestEntity `json:"entities,omitempty"`
 	// Meta data information                                              
 	Meta                         map[string]interface{}                   `json:"meta,omitempty"`
 	// The associated name                                                
@@ -10563,7 +10567,7 @@ type ConversationMessageCreateRequest struct {
 }
 
 // Extracted entity from the message
-type ConversationMessageCreateRequestEntity struct {
+type CreateConversationMessageRequestEntity struct {
 	// Start offset                                   
 	Begin                          float64            `json:"begin"`
 	// End offset                                     
@@ -10584,15 +10588,15 @@ type StickyReplacement struct {
 	Text                                string  `json:"text"`
 }
 
-type ConversationMessageCreateResponse struct {
+type CreateConversationMessageResponse struct {
 	// Extracted entities from the message                                          
-	Entities                              []ConversationMessageCreateResponseEntity `json:"entities"`
+	Entities                              []CreateConversationMessageResponseEntity `json:"entities"`
 	// The ID of the created message                                                
 	ID                                    string                                    `json:"id"`
 }
 
 // Extracted entity from the message
-type ConversationMessageCreateResponseEntity struct {
+type CreateConversationMessageResponseEntity struct {
 	// Start offset                                   
 	Begin                          float64            `json:"begin"`
 	// End offset                                     
@@ -10613,7 +10617,7 @@ type IndigoReplacement struct {
 	Text                                string  `json:"text"`
 }
 
-type ConversationMessageListParams struct {
+type ListConversationMessagesParams struct {
 	// The ID of the conversation to list messages for        
 	ConversationID                                    string  `json:"conversationId"`
 	// The cursor to use for pagination                       
@@ -10624,12 +10628,12 @@ type ConversationMessageListParams struct {
 	Take                                              *int64  `json:"take,omitempty"`
 }
 
-type ConversationMessageListResponse struct {
-	Items []ConversationMessageListResponseItem `json:"items"`
+type ListConversationMessagesResponse struct {
+	Items []ListConversationMessagesResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ConversationMessageListResponseItem struct {
+type ListConversationMessagesResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -10648,20 +10652,20 @@ type ConversationMessageListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type ConversationReceiveParams struct {
+type ReceiveConversationMessageParams struct {
 	// The ID of the conversation to receive message from       
 	ConversationID                                       string `json:"conversationId"`
 }
 
-type ConversationReceiveRequest struct {
-	// Extensions to enhance the bot's capabilities                                               
-	Extensions                                              *ConversationReceiveRequestExtensions `json:"extensions,omitempty"`
-	// An array of functions to be added to the conversation                                      
-	Functions                                               []ConversationReceiveRequestFunction  `json:"functions,omitempty"`
+type ReceiveConversationMessageRequest struct {
+	// Extensions to enhance the bot's capabilities                                                      
+	Extensions                                              *ReceiveConversationMessageRequestExtensions `json:"extensions,omitempty"`
+	// An array of functions to be added to the conversation                                             
+	Functions                                               []ReceiveConversationMessageRequestFunction  `json:"functions,omitempty"`
 }
 
 // Extensions to enhance the bot's capabilities
-type ConversationReceiveRequestExtensions struct {
+type ReceiveConversationMessageRequestExtensions struct {
 	// Additional backstory for the bot                                     
 	Backstory                                           *string             `json:"backstory,omitempty"`
 	// Inline datasets to provide additional context                        
@@ -10717,7 +10721,7 @@ type TentacledAbility struct {
 	SecretID                              *string                `json:"secretId,omitempty"`
 }
 
-type ConversationReceiveRequestFunction struct {
+type ReceiveConversationMessageRequestFunction struct {
 	// Configuration for when this function should be automatically called                       
 	Call                                                                     *TentacledCall      `json:"call,omitempty"`
 	// The description of the function                                                           
@@ -10756,39 +10760,39 @@ type TentacledResult struct {
 	Channel                                               *string     `json:"channel,omitempty"`
 }
 
-type ConversationReceiveResponse struct {
-	// The ID of the created message                                    
-	ID                                 string                           `json:"id"`
-	// The text of the message received                                 
-	Text                               string                           `json:"text"`
-	// Usage information                                                
-	Usage                              ConversationReceiveResponseUsage `json:"usage"`
+type ReceiveConversationMessageResponse struct {
+	// The ID of the created message                                           
+	ID                                 string                                  `json:"id"`
+	// The text of the message received                                        
+	Text                               string                                  `json:"text"`
+	// Usage information                                                       
+	Usage                              ReceiveConversationMessageResponseUsage `json:"usage"`
 }
 
 // Usage information
-type ConversationReceiveResponseUsage struct {
+type ReceiveConversationMessageResponseUsage struct {
 	// The tokens used in this exchange        
 	Token                              float64 `json:"token"`
 }
 
-type ConversationSendParams struct {
+type SendConversationMessageParams struct {
 	// The ID of the conversation to send the message to       
 	ConversationID                                      string `json:"conversationId"`
 }
 
-type ConversationSendRequest struct {
-	// Known entities                                                                          
-	Entities                                                []ConversationSendRequestEntity    `json:"entities,omitempty"`
-	// Extensions to enhance the bot's capabilities                                            
-	Extensions                                              *ConversationSendRequestExtensions `json:"extensions,omitempty"`
-	// An array of functions to be added to the conversation                                   
-	Functions                                               []ConversationSendRequestFunction  `json:"functions,omitempty"`
-	// The text of the message to send                                                         
-	Text                                                    string                             `json:"text"`
+type SendConversationMessageRequest struct {
+	// Known entities                                                                                 
+	Entities                                                []SendConversationMessageRequestEntity    `json:"entities,omitempty"`
+	// Extensions to enhance the bot's capabilities                                                   
+	Extensions                                              *SendConversationMessageRequestExtensions `json:"extensions,omitempty"`
+	// An array of functions to be added to the conversation                                          
+	Functions                                               []SendConversationMessageRequestFunction  `json:"functions,omitempty"`
+	// The text of the message to send                                                                
+	Text                                                    string                                    `json:"text"`
 }
 
 // Extracted entity from the message
-type ConversationSendRequestEntity struct {
+type SendConversationMessageRequestEntity struct {
 	// Start offset                                     
 	Begin                          float64              `json:"begin"`
 	// End offset                                       
@@ -10810,7 +10814,7 @@ type IndecentReplacement struct {
 }
 
 // Extensions to enhance the bot's capabilities
-type ConversationSendRequestExtensions struct {
+type SendConversationMessageRequestExtensions struct {
 	// Additional backstory for the bot                                  
 	Backstory                                           *string          `json:"backstory,omitempty"`
 	// Inline datasets to provide additional context                     
@@ -10866,7 +10870,7 @@ type StickyAbility struct {
 	SecretID                              *string                `json:"secretId,omitempty"`
 }
 
-type ConversationSendRequestFunction struct {
+type SendConversationMessageRequestFunction struct {
 	// Configuration for when this function should be automatically called                    
 	Call                                                                     *StickyCall      `json:"call,omitempty"`
 	// The description of the function                                                        
@@ -10905,15 +10909,15 @@ type StickyResult struct {
 	Channel                                               *string     `json:"channel,omitempty"`
 }
 
-type ConversationSendResponse struct {
-	// Extracted entities from the message                                 
-	Entities                              []ConversationSendResponseEntity `json:"entities"`
-	// The ID of the sent message                                          
-	ID                                    string                           `json:"id"`
+type SendConversationMessageResponse struct {
+	// Extracted entities from the message                                        
+	Entities                              []SendConversationMessageResponseEntity `json:"entities"`
+	// The ID of the sent message                                                 
+	ID                                    string                                  `json:"id"`
 }
 
 // Extracted entity from the message
-type ConversationSendResponseEntity struct {
+type SendConversationMessageResponseEntity struct {
 	// Start offset                                      
 	Begin                          float64               `json:"begin"`
 	// End offset                                        
@@ -10934,17 +10938,17 @@ type HilariousReplacement struct {
 	Text                                string  `json:"text"`
 }
 
-type ConversationSessionCreateParams struct {
+type CreateConversationSessionParams struct {
 	// The ID of the conversation       
 	ConversationID               string `json:"conversationId"`
 }
 
-type ConversationSessionCreateRequest struct {
+type CreateConversationSessionRequest struct {
 	// The maximum amount of time this session will stay open         
 	DurationInSeconds                                        *float64 `json:"durationInSeconds,omitempty"`
 }
 
-type ConversationSessionCreateResponse struct {
+type CreateConversationSessionResponse struct {
 	// The time the token will expire in milliseconds        
 	ExpiresAt                                        float64 `json:"expiresAt"`
 	// The ID of the conversation                            
@@ -10953,14 +10957,14 @@ type ConversationSessionCreateResponse struct {
 	Token                                            string  `json:"token"`
 }
 
-type ConversationUpdateParams struct {
+type UpdateConversationParams struct {
 	ConversationID string `json:"conversationId"`
 }
 
 // A bot configuration or reference
 //
 // A bot configuration that can be applied without a dedicated bot instance.
-type ConversationUpdateRequest struct {
+type UpdateConversationRequest struct {
 	// The contact id assigned to this conversation                             
 	ContactID                                            *string                `json:"contactId,omitempty"`
 	// The associated description                                               
@@ -10989,29 +10993,29 @@ type ConversationUpdateRequest struct {
 	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
 }
 
-type ConversationUpdateResponse struct {
+type UpdateConversationResponse struct {
 	// The ID of the updated conversation       
 	ID                                   string `json:"id"`
 }
 
-type ConversationUpvoteParams struct {
+type UpvoteConversationParams struct {
 	// The ID of the conversation       
 	ConversationID               string `json:"conversationId"`
 }
 
-type ConversationUpvoteRequest struct {
+type UpvoteConversationRequest struct {
 	// The reason for the upvote        
 	Reason                      *string `json:"reason,omitempty"`
 	// The value of the upvote          
 	Value                       *int64  `json:"value,omitempty"`
 }
 
-type ConversationUpvoteResponse struct {
+type UpvoteConversationResponse struct {
 	// The ID of the upvoted conversation       
 	ID                                   string `json:"id"`
 }
 
-type ConversationUsageFetchParams struct {
+type FetchConversationUsageParams struct {
 	// The ID of the conversation                            
 	ConversationID                                string     `json:"conversationId"`
 	// Start date for the period (ISO 8601 format)           
@@ -11020,7 +11024,7 @@ type ConversationUsageFetchParams struct {
 	To                                            *time.Time `json:"to,omitempty"`
 }
 
-type ConversationUsageFetchResponse struct {
+type FetchConversationUsageResponse struct {
 	// Total number of messages               
 	Messages                           *int64 `json:"messages,omitempty"`
 	// Total number of BASE tokens used       
@@ -11030,36 +11034,36 @@ type ConversationUsageFetchResponse struct {
 // A bot configuration or reference
 //
 // A bot configuration that can be applied without a dedicated bot instance.
-type ConversationCompleteRequest1 struct {
-	// An array of attachments to be added to the conversation                                             
-	Attachments                                                  []ConversationCompleteRequest1_Attachment `json:"attachments,omitempty"`
-	// The contact ID to associate with this conversation                                                  
-	ContactID                                                    *ConversationCompleteRequest1_ContactID   `json:"contactId"`
-	// Extensions to enhance the bot's capabilities                                                        
-	Extensions                                                   *ConversationCompleteRequest1_Extensions  `json:"extensions,omitempty"`
-	// An array of functions to be added to the conversation                                               
-	Functions                                                    []ConversationCompleteRequest1_Function   `json:"functions,omitempty"`
-	// Execution limits to control conversation processing bounds                                          
-	Limits                                                       *ConversationCompleteRequest1_Limits      `json:"limits,omitempty"`
-	// An array of messages to be added to the conversation                                                
-	Messages                                                     []ConversationCompleteRequest1_Message    `json:"messages"`
-	// The ID of the bot this configuration is using                                                       
-	BotID                                                        *string                                   `json:"botId,omitempty"`
-	// The backstory this configuration is using                                                           
-	Backstory                                                    *string                                   `json:"backstory,omitempty"`
-	// The id of the dataset this configuration is using                                                   
-	DatasetID                                                    *string                                   `json:"datasetId,omitempty"`
-	// A model definition                                                                                  
-	Model                                                        *string                                   `json:"model,omitempty"`
-	// The moderation flag for this configuration                                                          
-	Moderation                                                   *bool                                     `json:"moderation,omitempty"`
-	// The privacy flag for this configuration                                                             
-	Privacy                                                      *bool                                     `json:"privacy,omitempty"`
-	// The id of the skillset this configuration is using                                                  
-	SkillsetID                                                   *string                                   `json:"skillsetId,omitempty"`
+type CompleteConversationRequest struct {
+	// An array of attachments to be added to the conversation                                           
+	Attachments                                                  []CompleteConversationRequestAttachment `json:"attachments,omitempty"`
+	// The contact ID to associate with this conversation                                                
+	ContactID                                                    *CompleteConversationRequestContactID   `json:"contactId"`
+	// Extensions to enhance the bot's capabilities                                                      
+	Extensions                                                   *CompleteConversationRequestExtensions  `json:"extensions,omitempty"`
+	// An array of functions to be added to the conversation                                             
+	Functions                                                    []CompleteConversationRequestFunction   `json:"functions,omitempty"`
+	// Execution limits to control conversation processing bounds                                        
+	Limits                                                       *CompleteConversationRequestLimits      `json:"limits,omitempty"`
+	// An array of messages to be added to the conversation                                              
+	Messages                                                     []CompleteConversationRequestMessage    `json:"messages"`
+	// The ID of the bot this configuration is using                                                     
+	BotID                                                        *string                                 `json:"botId,omitempty"`
+	// The backstory this configuration is using                                                         
+	Backstory                                                    *string                                 `json:"backstory,omitempty"`
+	// The id of the dataset this configuration is using                                                 
+	DatasetID                                                    *string                                 `json:"datasetId,omitempty"`
+	// A model definition                                                                                
+	Model                                                        *string                                 `json:"model,omitempty"`
+	// The moderation flag for this configuration                                                        
+	Moderation                                                   *bool                                   `json:"moderation,omitempty"`
+	// The privacy flag for this configuration                                                           
+	Privacy                                                      *bool                                   `json:"privacy,omitempty"`
+	// The id of the skillset this configuration is using                                                
+	SkillsetID                                                   *string                                 `json:"skillsetId,omitempty"`
 }
 
-type ConversationCompleteRequest1_Attachment struct {
+type CompleteConversationRequestAttachment struct {
 	// The URL of the attachment        
 	URL                         *string `json:"url,omitempty"`
 }
@@ -11083,7 +11087,7 @@ type PurpleContactID struct {
 }
 
 // Extensions to enhance the bot's capabilities
-type ConversationCompleteRequest1_Extensions struct {
+type CompleteConversationRequestExtensions struct {
 	// Additional backstory for the bot                                  
 	Backstory                                           *string          `json:"backstory,omitempty"`
 	// Inline datasets to provide additional context                     
@@ -11139,7 +11143,7 @@ type IndigoAbility struct {
 	SecretID                              *string                `json:"secretId,omitempty"`
 }
 
-type ConversationCompleteRequest1_Function struct {
+type CompleteConversationRequestFunction struct {
 	// Configuration for when this function should be automatically called                    
 	Call                                                                     *IndigoCall      `json:"call,omitempty"`
 	// The description of the function                                                        
@@ -11179,7 +11183,7 @@ type IndigoResult struct {
 }
 
 // Execution limits to control conversation processing bounds
-type ConversationCompleteRequest1_Limits struct {
+type CompleteConversationRequestLimits struct {
 	// Maximum number of function/tool calls. Controls how many total function calls can be made       
 	// during the conversation.                                                                        
 	Calls                                                                                       *int64 `json:"calls,omitempty"`
@@ -11192,7 +11196,7 @@ type ConversationCompleteRequest1_Limits struct {
 }
 
 // A message in the conversation
-type ConversationCompleteRequest1_Message struct {
+type CompleteConversationRequestMessage struct {
 	// Meta data information                         
 	Meta                      map[string]interface{} `json:"meta,omitempty"`
 	// The text of the message                       
@@ -11201,23 +11205,23 @@ type ConversationCompleteRequest1_Message struct {
 	Type                      MessageType            `json:"type"`
 }
 
-type ConversationCompleteResponse1 struct {
-	// Information about why the completion ended                                    
-	End                                          ConversationCompleteResponse1_End   `json:"end"`
-	// The text of the message received                                              
-	Text                                         string                              `json:"text"`
-	// Usage information                                                             
-	Usage                                        ConversationCompleteResponse1_Usage `json:"usage"`
+type CompleteConversationResponse struct {
+	// Information about why the completion ended                                  
+	End                                          CompleteConversationResponseEnd   `json:"end"`
+	// The text of the message received                                            
+	Text                                         string                            `json:"text"`
+	// Usage information                                                           
+	Usage                                        CompleteConversationResponseUsage `json:"usage"`
 }
 
 // Information about why the completion ended
-type ConversationCompleteResponse1_End struct {
+type CompleteConversationResponseEnd struct {
 	// The reason why the completion ended               
 	Reason                                CompleteReason `json:"reason"`
 }
 
 // Usage information
-type ConversationCompleteResponse1_Usage struct {
+type CompleteConversationResponseUsage struct {
 	// The tokens used in this exchange        
 	Token                              float64 `json:"token"`
 }
@@ -11225,13 +11229,13 @@ type ConversationCompleteResponse1_Usage struct {
 // A bot configuration or reference
 //
 // A bot configuration that can be applied without a dedicated bot instance.
-type ConversationCreateRequest struct {
+type CreateConversationRequest struct {
 	// The contact id assigned to this conversation                                           
 	ContactID                                              *string                            `json:"contactId,omitempty"`
 	// The associated description                                                             
 	Description                                            *string                            `json:"description,omitempty"`
 	// An array of messages to be added to the conversation                                   
-	Messages                                               []ConversationCreateRequestMessage `json:"messages,omitempty"`
+	Messages                                               []CreateConversationRequestMessage `json:"messages,omitempty"`
 	// Meta data information                                                                  
 	Meta                                                   map[string]interface{}             `json:"meta,omitempty"`
 	// The associated name                                                                    
@@ -11256,21 +11260,21 @@ type ConversationCreateRequest struct {
 	SkillsetID                                             *string                            `json:"skillsetId,omitempty"`
 }
 
-type ConversationCreateRequestMessage struct {
+type CreateConversationRequestMessage struct {
 	// The text of the message            
 	Text                      string      `json:"text"`
 	// The type of the message            
 	Type                      MessageType `json:"type"`
 }
 
-type ConversationCreateResponse struct {
+type CreateConversationResponse struct {
 	// The ID of the created conversation                                                   
 	ID                                                  string                              `json:"id"`
 	// An array of messages included in the conversation                                    
-	Messages                                            []ConversationCreateResponseMessage `json:"messages,omitempty"`
+	Messages                                            []CreateConversationResponseMessage `json:"messages,omitempty"`
 }
 
-type ConversationCreateResponseMessage struct {
+type CreateConversationResponseMessage struct {
 	// The text of the message            
 	Text                      string      `json:"text"`
 	// The type of the message            
@@ -11280,38 +11284,38 @@ type ConversationCreateResponseMessage struct {
 // A bot configuration or reference
 //
 // A bot configuration that can be applied without a dedicated bot instance.
-type ConversationDispatchRequest1 struct {
-	// An array of attachments to be added to the conversation                                             
-	Attachments                                                  []ConversationDispatchRequest1_Attachment `json:"attachments,omitempty"`
-	// A unique channel ID to subscribe to for completion events                                           
-	ChannelID                                                    *string                                   `json:"channelId,omitempty"`
-	// The contact ID to associate with this conversation                                                  
-	ContactID                                                    *ConversationDispatchRequest1_ContactID   `json:"contactId"`
-	// Extensions to enhance the bot's capabilities                                                        
-	Extensions                                                   *ConversationDispatchRequest1_Extensions  `json:"extensions,omitempty"`
-	// An array of functions to be added to the conversation                                               
-	Functions                                                    []ConversationDispatchRequest1_Function   `json:"functions,omitempty"`
-	// Execution limits to control conversation processing bounds                                          
-	Limits                                                       *ConversationDispatchRequest1_Limits      `json:"limits,omitempty"`
-	// An array of messages to be added to the conversation                                                
-	Messages                                                     []ConversationDispatchRequest1_Message    `json:"messages"`
-	// The ID of the bot this configuration is using                                                       
-	BotID                                                        *string                                   `json:"botId,omitempty"`
-	// The backstory this configuration is using                                                           
-	Backstory                                                    *string                                   `json:"backstory,omitempty"`
-	// The id of the dataset this configuration is using                                                   
-	DatasetID                                                    *string                                   `json:"datasetId,omitempty"`
-	// A model definition                                                                                  
-	Model                                                        *string                                   `json:"model,omitempty"`
-	// The moderation flag for this configuration                                                          
-	Moderation                                                   *bool                                     `json:"moderation,omitempty"`
-	// The privacy flag for this configuration                                                             
-	Privacy                                                      *bool                                     `json:"privacy,omitempty"`
-	// The id of the skillset this configuration is using                                                  
-	SkillsetID                                                   *string                                   `json:"skillsetId,omitempty"`
+type DispatchConversationRequest struct {
+	// An array of attachments to be added to the conversation                                           
+	Attachments                                                  []DispatchConversationRequestAttachment `json:"attachments,omitempty"`
+	// A unique channel ID to subscribe to for completion events                                         
+	ChannelID                                                    *string                                 `json:"channelId,omitempty"`
+	// The contact ID to associate with this conversation                                                
+	ContactID                                                    *DispatchConversationRequestContactID   `json:"contactId"`
+	// Extensions to enhance the bot's capabilities                                                      
+	Extensions                                                   *DispatchConversationRequestExtensions  `json:"extensions,omitempty"`
+	// An array of functions to be added to the conversation                                             
+	Functions                                                    []DispatchConversationRequestFunction   `json:"functions,omitempty"`
+	// Execution limits to control conversation processing bounds                                        
+	Limits                                                       *DispatchConversationRequestLimits      `json:"limits,omitempty"`
+	// An array of messages to be added to the conversation                                              
+	Messages                                                     []DispatchConversationRequestMessage    `json:"messages"`
+	// The ID of the bot this configuration is using                                                     
+	BotID                                                        *string                                 `json:"botId,omitempty"`
+	// The backstory this configuration is using                                                         
+	Backstory                                                    *string                                 `json:"backstory,omitempty"`
+	// The id of the dataset this configuration is using                                                 
+	DatasetID                                                    *string                                 `json:"datasetId,omitempty"`
+	// A model definition                                                                                
+	Model                                                        *string                                 `json:"model,omitempty"`
+	// The moderation flag for this configuration                                                        
+	Moderation                                                   *bool                                   `json:"moderation,omitempty"`
+	// The privacy flag for this configuration                                                           
+	Privacy                                                      *bool                                   `json:"privacy,omitempty"`
+	// The id of the skillset this configuration is using                                                
+	SkillsetID                                                   *string                                 `json:"skillsetId,omitempty"`
 }
 
-type ConversationDispatchRequest1_Attachment struct {
+type DispatchConversationRequestAttachment struct {
 	// The URL of the attachment        
 	URL                         *string `json:"url,omitempty"`
 }
@@ -11335,7 +11339,7 @@ type FluffyContactID struct {
 }
 
 // Extensions to enhance the bot's capabilities
-type ConversationDispatchRequest1_Extensions struct {
+type DispatchConversationRequestExtensions struct {
 	// Additional backstory for the bot                                    
 	Backstory                                           *string            `json:"backstory,omitempty"`
 	// Inline datasets to provide additional context                       
@@ -11391,7 +11395,7 @@ type IndecentAbility struct {
 	SecretID                              *string                `json:"secretId,omitempty"`
 }
 
-type ConversationDispatchRequest1_Function struct {
+type DispatchConversationRequestFunction struct {
 	// Configuration for when this function should be automatically called                      
 	Call                                                                     *IndecentCall      `json:"call,omitempty"`
 	// The description of the function                                                          
@@ -11431,7 +11435,7 @@ type IndecentResult struct {
 }
 
 // Execution limits to control conversation processing bounds
-type ConversationDispatchRequest1_Limits struct {
+type DispatchConversationRequestLimits struct {
 	// Maximum number of function/tool calls. Controls how many total function calls can be made       
 	// during the conversation.                                                                        
 	Calls                                                                                       *int64 `json:"calls,omitempty"`
@@ -11444,7 +11448,7 @@ type ConversationDispatchRequest1_Limits struct {
 }
 
 // A message in the conversation
-type ConversationDispatchRequest1_Message struct {
+type DispatchConversationRequestMessage struct {
 	// Meta data information                         
 	Meta                      map[string]interface{} `json:"meta,omitempty"`
 	// The text of the message                       
@@ -11453,12 +11457,12 @@ type ConversationDispatchRequest1_Message struct {
 	Type                      MessageType            `json:"type"`
 }
 
-type ConversationDispatchResponse1 struct {
+type DispatchConversationResponse struct {
 	// The channel ID to subscribe to for completion events       
 	ChannelID                                              string `json:"channelId"`
 }
 
-type ConversationExportParams struct {
+type ExportConversationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -11469,14 +11473,14 @@ type ConversationExportParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type ConversationExportResponse struct {
-	Items []ConversationExportResponseItem `json:"items"`
+type ExportConversationsResponse struct {
+	Items []ExportConversationsResponseItem `json:"items"`
 }
 
 // A bot configuration or reference
 //
 // A bot configuration that can be applied without a dedicated bot instance.
-type ConversationExportResponseItem struct {
+type ExportConversationsResponseItem struct {
 	// The contact id assigned to this conversation                             
 	ContactID                                            *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                         
@@ -11511,7 +11515,7 @@ type ConversationExportResponseItem struct {
 	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
 }
 
-type ConversationListParams struct {
+type ListConversationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -11522,14 +11526,14 @@ type ConversationListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type ConversationListResponse struct {
-	Items []ConversationListResponseItem `json:"items"`
+type ListConversationsResponse struct {
+	Items []ListConversationsResponseItem `json:"items"`
 }
 
 // A bot configuration or reference
 //
 // A bot configuration that can be applied without a dedicated bot instance.
-type ConversationListResponseItem struct {
+type ListConversationsResponseItem struct {
 	// The contact id assigned to this conversation                             
 	ContactID                                            *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                         
@@ -11564,23 +11568,23 @@ type ConversationListResponseItem struct {
 	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
 }
 
-type DatasetDeleteParams struct {
+type DeleteDatasetParams struct {
 	// The ID of the dataset to delete       
 	DatasetID                         string `json:"datasetId"`
 }
 
-type DatasetDeleteResponse struct {
+type DeleteDatasetResponse struct {
 	// The ID of the deleted dataset       
 	ID                              string `json:"id"`
 }
 
-type DatasetFetchParams struct {
+type FetchDatasetParams struct {
 	// The ID of the dataset to retrieve       
 	DatasetID                           string `json:"datasetId"`
 }
 
 // Blueprint properties
-type DatasetFetchResponse struct {
+type FetchDatasetResponse struct {
 	// The ID of the blueprint                                                   
 	BlueprintID                                           *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                          
@@ -11617,53 +11621,53 @@ type DatasetFetchResponse struct {
 	Visibility                                            *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type DatasetFileAttachParams struct {
+type AttachDatasetFileParams struct {
 	// The ID of the dataset       
 	DatasetID               string `json:"datasetId"`
 	// The ID of the file          
 	FileID                  string `json:"fileId"`
 }
 
-type DatasetFileAttachRequest struct {
+type AttachDatasetFileRequest struct {
 	// The dataset file attachment type                           
 	Type                               *DatasetFileAttachmentType `json:"type,omitempty"`
 }
 
-type DatasetFileAttachResponse struct {
+type AttachDatasetFileResponse struct {
 	// The ID of the dataset file       
 	ID                           string `json:"id"`
 }
 
-type DatasetFileDetachParams struct {
+type DetachDatasetFileParams struct {
 	// The ID of the dataset       
 	DatasetID               string `json:"datasetId"`
 	// The ID of the file          
 	FileID                  string `json:"fileId"`
 }
 
-type DatasetFileDetachRequest struct {
+type DetachDatasetFileRequest struct {
 	// Delete records associated with the file      
 	DeleteRecords                             *bool `json:"deleteRecords,omitempty"`
 }
 
-type DatasetFileDetachResponse struct {
+type DetachDatasetFileResponse struct {
 	// The ID of the dataset file       
 	ID                           string `json:"id"`
 }
 
-type DatasetFileSyncParams struct {
+type SyncDatasetFileParams struct {
 	// The ID of the dataset       
 	DatasetID               string `json:"datasetId"`
 	// The ID of the file          
 	FileID                  string `json:"fileId"`
 }
 
-type DatasetFileSyncResponse struct {
+type SyncDatasetFileResponse struct {
 	// The ID of the dataset file       
 	ID                           string `json:"id"`
 }
 
-type DatasetFileListParams struct {
+type ListDatasetFilesParams struct {
 	// The cursor to use for pagination        
 	Cursor                             *string `json:"cursor,omitempty"`
 	// The ID of the dataset                   
@@ -11674,12 +11678,12 @@ type DatasetFileListParams struct {
 	Take                               *int64  `json:"take,omitempty"`
 }
 
-type DatasetFileListResponse struct {
-	Items []DatasetFileListResponseItem `json:"items"`
+type ListDatasetFilesResponse struct {
+	Items []ListDatasetFilesResponseItem `json:"items"`
 }
 
 // Instance list properties
-type DatasetFileListResponseItem struct {
+type ListDatasetFilesResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -11696,19 +11700,19 @@ type DatasetFileListResponseItem struct {
 	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type DatasetRecordDeleteParams struct {
+type DeleteDatasetRecordParams struct {
 	// The ID of the dataset                
 	DatasetID                        string `json:"datasetId"`
 	// The ID of the record to delete       
 	RecordID                         string `json:"recordId"`
 }
 
-type DatasetRecordDeleteResponse struct {
+type DeleteDatasetRecordResponse struct {
 	// The ID of the deleted record       
 	ID                             string `json:"id"`
 }
 
-type DatasetRecordFetchParams struct {
+type FetchDatasetRecordParams struct {
 	// The ID of the dataset                  
 	DatasetID                          string `json:"datasetId"`
 	// The ID of the record to retrieve       
@@ -11716,7 +11720,7 @@ type DatasetRecordFetchParams struct {
 }
 
 // Instance list properties
-type DatasetRecordFetchResponse struct {
+type FetchDatasetRecordResponse struct {
 	// The timestamp (ms) when the instance was created        
 	CreatedAt                                          float64 `json:"createdAt"`
 	// The instance ID                                         
@@ -11729,12 +11733,12 @@ type DatasetRecordFetchResponse struct {
 	UpdatedAt                                          float64 `json:"updatedAt"`
 }
 
-type DatasetRecordUpdateParams struct {
+type UpdateDatasetRecordParams struct {
 	DatasetID string `json:"datasetId"`
 	RecordID  string `json:"recordId"`
 }
 
-type DatasetRecordUpdateRequest struct {
+type UpdateDatasetRecordRequest struct {
 	// Meta data information                                      
 	Meta                                   map[string]interface{} `json:"meta,omitempty"`
 	// The source to update the record with                       
@@ -11743,16 +11747,16 @@ type DatasetRecordUpdateRequest struct {
 	Text                                   *string                `json:"text,omitempty"`
 }
 
-type DatasetRecordUpdateResponse struct {
+type UpdateDatasetRecordResponse struct {
 	// The ID of the updated record       
 	ID                             string `json:"id"`
 }
 
-type DatasetRecordCreateParams struct {
+type CreateDatasetRecordParams struct {
 	DatasetID string `json:"datasetId"`
 }
 
-type DatasetRecordCreateRequest struct {
+type CreateDatasetRecordRequest struct {
 	// Meta data information                          
 	Meta                       map[string]interface{} `json:"meta,omitempty"`
 	// The source of the record                       
@@ -11761,12 +11765,12 @@ type DatasetRecordCreateRequest struct {
 	Text                       string                 `json:"text"`
 }
 
-type DatasetRecordCreateResponse struct {
+type CreateDatasetRecordResponse struct {
 	// The ID of the created record       
 	ID                             string `json:"id"`
 }
 
-type DatasetRecordExportParams struct {
+type ExportDatasetRecordsParams struct {
 	// The cursor to use for pagination        
 	Cursor                             *string `json:"cursor,omitempty"`
 	// The ID of the dataset to export         
@@ -11777,12 +11781,12 @@ type DatasetRecordExportParams struct {
 	Take                               *int64  `json:"take,omitempty"`
 }
 
-type DatasetRecordExportResponse struct {
-	Items []DatasetRecordExportResponseItem `json:"items"`
+type ExportDatasetRecordsResponse struct {
+	Items []ExportDatasetRecordsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type DatasetRecordExportResponseItem struct {
+type ExportDatasetRecordsResponseItem struct {
 	// The timestamp (ms) when the instance was created        
 	CreatedAt                                          float64 `json:"createdAt"`
 	// The instance ID                                         
@@ -11793,7 +11797,7 @@ type DatasetRecordExportResponseItem struct {
 	UpdatedAt                                          float64 `json:"updatedAt"`
 }
 
-type DatasetRecordListParams struct {
+type ListDatasetRecordsParams struct {
 	// The cursor to use for pagination        
 	Cursor                             *string `json:"cursor,omitempty"`
 	// The ID of the dataset                   
@@ -11804,12 +11808,12 @@ type DatasetRecordListParams struct {
 	Take                               *int64  `json:"take,omitempty"`
 }
 
-type DatasetRecordListResponse struct {
-	Items []DatasetRecordListResponseItem `json:"items"`
+type ListDatasetRecordsResponse struct {
+	Items []ListDatasetRecordsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type DatasetRecordListResponseItem struct {
+type ListDatasetRecordsResponseItem struct {
 	// The timestamp (ms) when the instance was created        
 	CreatedAt                                          float64 `json:"createdAt"`
 	// The instance ID                                         
@@ -11820,12 +11824,12 @@ type DatasetRecordListResponseItem struct {
 	UpdatedAt                                          float64 `json:"updatedAt"`
 }
 
-type DatasetSearchParams struct {
+type SearchDatasetParams struct {
 	// The ID of the dataset to search       
 	DatasetID                         string `json:"datasetId"`
 }
 
-type DatasetSearchRequest struct {
+type SearchDatasetRequest struct {
 	Filter                             map[string]*FilterValue `json:"filter,omitempty"`
 	// The keyword/phrase to search for                        
 	Search                             string                  `json:"search"`
@@ -11840,14 +11844,14 @@ type FilterClass struct {
 	LTE *float64 `json:"$lte,omitempty"`
 }
 
-type DatasetSearchResponse struct {
+type SearchDatasetResponse struct {
 	// The ID of the dataset that was searched                                    
 	ID                                              string                        `json:"id"`
 	// An array of records matching the search query                              
-	Records                                         []DatasetSearchResponseRecord `json:"records"`
+	Records                                         []SearchDatasetResponseRecord `json:"records"`
 }
 
-type DatasetSearchResponseRecord struct {
+type SearchDatasetResponseRecord struct {
 	ID     string                 `json:"id"`
 	Meta   map[string]interface{} `json:"meta,omitempty"`
 	Score  float64                `json:"score"`
@@ -11855,12 +11859,12 @@ type DatasetSearchResponseRecord struct {
 	Text   string                 `json:"text"`
 }
 
-type DatasetUpdateParams struct {
+type UpdateDatasetParams struct {
 	DatasetID string `json:"datasetId"`
 }
 
 // Blueprint properties
-type DatasetUpdateRequest struct {
+type UpdateDatasetRequest struct {
 	// The unique alias for the instance                                         
 	Alias                                                 *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                   
@@ -11891,13 +11895,13 @@ type DatasetUpdateRequest struct {
 	Visibility                                            *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type DatasetUpdateResponse struct {
+type UpdateDatasetResponse struct {
 	// The ID of the updated dataset       
 	ID                              string `json:"id"`
 }
 
 // Blueprint properties
-type DatasetCreateRequest struct {
+type CreateDatasetRequest struct {
 	// The unique alias for the instance                                         
 	Alias                                                 *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                   
@@ -11930,12 +11934,12 @@ type DatasetCreateRequest struct {
 	Visibility                                            *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type DatasetCreateResponse struct {
+type CreateDatasetResponse struct {
 	// The ID of the created dataset       
 	ID                              string `json:"id"`
 }
 
-type DatasetListParams struct {
+type ListDatasetsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -11946,12 +11950,12 @@ type DatasetListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type DatasetListResponse struct {
-	Items []DatasetListResponseItem `json:"items"`
+type ListDatasetsResponse struct {
+	Items []ListDatasetsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type DatasetListResponseItem struct {
+type ListDatasetsResponseItem struct {
 	// The ID of the blueprint                                                   
 	BlueprintID                                           *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                          
@@ -11988,7 +11992,7 @@ type DatasetListResponseItem struct {
 	Visibility                                            *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type EventLogExportParams struct {
+type ExportEventLogsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -11999,12 +12003,12 @@ type EventLogExportParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type EventLogExportResponse struct {
-	Items []EventLogExportResponseItem `json:"items"`
+type ExportEventLogsResponse struct {
+	Items []ExportEventLogsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type EventLogExportResponseItem struct {
+type ExportEventLogsResponseItem struct {
 	// Related ability ID if applicable                                       
 	AbilityID                                          *string                `json:"abilityId,omitempty"`
 	// Related blueprint ID if applicable                                     
@@ -12073,7 +12077,7 @@ type EventLogExportResponseItem struct {
 	WidgetIntegrationID                                *string                `json:"widgetIntegrationId,omitempty"`
 }
 
-type EventLogListParams struct {
+type ListEventLogsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -12084,12 +12088,12 @@ type EventLogListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type EventLogListResponse struct {
-	Items []EventLogListResponseItem `json:"items"`
+type ListEventLogsResponse struct {
+	Items []ListEventLogsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type EventLogListResponseItem struct {
+type ListEventLogsResponseItem struct {
 	// Related ability ID if applicable                                       
 	AbilityID                                          *string                `json:"abilityId,omitempty"`
 	// Related blueprint ID if applicable                                     
@@ -12158,7 +12162,7 @@ type EventLogListResponseItem struct {
 	WidgetIntegrationID                                *string                `json:"widgetIntegrationId,omitempty"`
 }
 
-type EventLogSubscribeRequest struct {
+type SubscribeEventLogsRequest struct {
 	// Number of recent historical events to replay before              
 	// subscribing to live updates. When provided, the subscriber       
 	// will first receive up to this many recent events that were       
@@ -12168,33 +12172,33 @@ type EventLogSubscribeRequest struct {
 	HistoryLength                                                *int64 `json:"historyLength,omitempty"`
 }
 
-type FileDeleteParams struct {
+type DeleteFileParams struct {
 	// The ID of the file to delete       
 	FileID                         string `json:"fileId"`
 }
 
-type FileDeleteResponse struct {
+type DeleteFileResponse struct {
 	// The ID of the deleted file       
 	ID                           string `json:"id"`
 }
 
-type FileDownloadParams struct {
+type DownloadFileParams struct {
 	// The ID of the file to download       
 	FileID                           string `json:"fileId"`
 }
 
-type FileDownloadResponse struct {
+type DownloadFileResponse struct {
 	// The URL to download the file       
 	URL                            string `json:"url"`
 }
 
-type FileFetchParams struct {
+type FetchFileParams struct {
 	// The ID of the file to retrieve       
 	FileID                           string `json:"fileId"`
 }
 
 // Blueprint properties
-type FileFetchResponse struct {
+type FetchFileResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -12213,22 +12217,22 @@ type FileFetchResponse struct {
 	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type FileSyncParams struct {
+type SyncFileParams struct {
 	// The ID of the file to sync       
 	FileID                       string `json:"fileId"`
 }
 
-type FileSyncResponse struct {
+type SyncFileResponse struct {
 	// The ID of the file       
 	ID                   string `json:"id"`
 }
 
-type FileUpdateParams struct {
+type UpdateFileParams struct {
 	FileID string `json:"fileId"`
 }
 
 // Blueprint properties
-type FileUpdateRequest struct {
+type UpdateFileRequest struct {
 	// The unique alias for the instance                       
 	Alias                               *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                 
@@ -12243,20 +12247,20 @@ type FileUpdateRequest struct {
 	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type FileUpdateResponse struct {
+type UpdateFileResponse struct {
 	// The ID of the updated file       
 	ID                           string `json:"id"`
 }
 
-type FileUploadParams struct {
+type UploadFileParams struct {
 	FileID string `json:"fileId"`
 }
 
-type FileUploadRequest struct {
+type UploadFileRequest struct {
 	// The file to upload either as http: or data: URL                       
 	//                                                                       
 	// The file definition to upload                                         
-	File                                              *FileUploadRequestFile `json:"file"`
+	File                                              *UploadFileRequestFile `json:"file"`
 }
 
 // The file definition to upload
@@ -12269,15 +12273,15 @@ type FluffyFile struct {
 	Type            string  `json:"type"`
 }
 
-type FileUploadResponse struct {
+type UploadFileResponse struct {
 	// The ID of the upload file                                               
 	ID                                        string                           `json:"id"`
 	// The request required to upload the file                                 
-	UploadRequest                             *FileUploadResponseUploadRequest `json:"uploadRequest,omitempty"`
+	UploadRequest                             *UploadFileResponseUploadRequest `json:"uploadRequest,omitempty"`
 }
 
 // The request required to upload the file
-type FileUploadResponseUploadRequest struct {
+type UploadFileResponseUploadRequest struct {
 	// The HTTP headers to use                       
 	Headers                   map[string]interface{} `json:"headers"`
 	// The HTTP method to use                        
@@ -12287,7 +12291,7 @@ type FileUploadResponseUploadRequest struct {
 }
 
 // Blueprint properties
-type FileCreateRequest struct {
+type CreateFileRequest struct {
 	// The unique alias for the instance                       
 	Alias                               *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                 
@@ -12302,12 +12306,12 @@ type FileCreateRequest struct {
 	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type FileCreateResponse struct {
+type CreateFileResponse struct {
 	// The ID of the created file       
 	ID                           string `json:"id"`
 }
 
-type FileListParams struct {
+type ListFilesParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -12318,12 +12322,12 @@ type FileListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type FileListResponse struct {
-	Items []FileListResponseItem `json:"items"`
+type ListFilesResponse struct {
+	Items []ListFilesResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type FileListResponseItem struct {
+type ListFilesResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -12342,23 +12346,23 @@ type FileListResponseItem struct {
 	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type IntegrationDiscordDeleteParams struct {
+type DeleteDiscordIntegrationParams struct {
 	// The ID of the Discord integration       
 	DiscordIntegrationID                string `json:"discordIntegrationId"`
 }
 
-type IntegrationDiscordDeleteResponse struct {
+type DeleteDiscordIntegrationResponse struct {
 	// The ID of the deleted Discord integration       
 	ID                                          string `json:"id"`
 }
 
-type IntegrationDiscordFetchParams struct {
+type FetchDiscordIntegrationParams struct {
 	// The ID of the Discord integration to retrieve       
 	DiscordIntegrationID                            string `json:"discordIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationDiscordFetchResponse struct {
+type FetchDiscordIntegrationResponse struct {
 	// The Discord application ID                                             
 	AppID                                              *string                `json:"appId,omitempty"`
 	// The ID of the blueprint                                                
@@ -12385,23 +12389,23 @@ type IntegrationDiscordFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type IntegrationDiscordSetupParams struct {
+type SetupDiscordIntegrationParams struct {
 	// The ID of the Discord integration       
 	DiscordIntegrationID                string `json:"discordIntegrationId"`
 }
 
-type IntegrationDiscordSetupResponse struct {
+type SetupDiscordIntegrationResponse struct {
 	// The ID of the setup Discord integration       
 	ID                                        string `json:"id"`
 }
 
-type IntegrationDiscordUpdateParams struct {
+type UpdateDiscordIntegrationParams struct {
 	// The ID of the Discord integration       
 	DiscordIntegrationID                string `json:"discordIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationDiscordUpdateRequest struct {
+type UpdateDiscordIntegrationRequest struct {
 	// The Discord application ID                                          
 	AppID                                           *string                `json:"appId,omitempty"`
 	// The ID of the blueprint                                             
@@ -12426,13 +12430,13 @@ type IntegrationDiscordUpdateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationDiscordUpdateResponse struct {
+type UpdateDiscordIntegrationResponse struct {
 	// The ID of the Discord Integration       
 	ID                                  string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationDiscordCreateRequest struct {
+type CreateDiscordIntegrationRequest struct {
 	// The Discord application ID                                          
 	AppID                                           *string                `json:"appId,omitempty"`
 	// The ID of the blueprint                                             
@@ -12457,12 +12461,12 @@ type IntegrationDiscordCreateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationDiscordCreateResponse struct {
+type CreateDiscordIntegrationResponse struct {
 	// The ID of the Discord Integration       
 	ID                                  string `json:"id"`
 }
 
-type IntegrationDiscordListParams struct {
+type ListDiscordIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -12473,12 +12477,12 @@ type IntegrationDiscordListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationDiscordListResponse struct {
-	Items []IntegrationDiscordListResponseItem `json:"items"`
+type ListDiscordIntegrationsResponse struct {
+	Items []ListDiscordIntegrationsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type IntegrationDiscordListResponseItem struct {
+type ListDiscordIntegrationsResponseItem struct {
 	// The Discord application ID                                             
 	AppID                                              *string                `json:"appId,omitempty"`
 	// The ID of the blueprint                                                
@@ -12505,23 +12509,23 @@ type IntegrationDiscordListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type IntegrationEmailDeleteParams struct {
+type DeleteEmailIntegrationParams struct {
 	// The ID of the Email integration       
 	EmailIntegrationID                string `json:"emailIntegrationId"`
 }
 
-type IntegrationEmailDeleteResponse struct {
+type DeleteEmailIntegrationResponse struct {
 	// The ID of the deleted Email integration       
 	ID                                        string `json:"id"`
 }
 
-type IntegrationEmailFetchParams struct {
+type FetchEmailIntegrationParams struct {
 	// The ID of the Email integration to retrieve       
 	EmailIntegrationID                            string `json:"emailIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationEmailFetchResponse struct {
+type FetchEmailIntegrationResponse struct {
 	// Newline-separated list of email patterns allowed to send messages to this integration                       
 	AllowedSenderEmails                                                                     *string                `json:"allowedSenderEmails,omitempty"`
 	// Weather the bot supports attachments                                                                        
@@ -12548,23 +12552,23 @@ type IntegrationEmailFetchResponse struct {
 	UpdatedAt                                                                               float64                `json:"updatedAt"`
 }
 
-type IntegrationEmailSetupParams struct {
+type SetupEmailIntegrationParams struct {
 	// The ID of the Email integration       
 	EmailIntegrationID                string `json:"emailIntegrationId"`
 }
 
-type IntegrationEmailSetupResponse struct {
+type SetupEmailIntegrationResponse struct {
 	// The ID of the Email Integration       
 	ID                                string `json:"id"`
 }
 
-type IntegrationEmailUpdateParams struct {
+type UpdateEmailIntegrationParams struct {
 	// The ID of the Email integration       
 	EmailIntegrationID                string `json:"emailIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationEmailUpdateRequest struct {
+type UpdateEmailIntegrationRequest struct {
 	// Newline-separated list of email patterns allowed to send messages to this integration                       
 	AllowedSenderEmails                                                                     *string                `json:"allowedSenderEmails,omitempty"`
 	// Weather the bot supports attachments                                                                        
@@ -12585,13 +12589,13 @@ type IntegrationEmailUpdateRequest struct {
 	SessionDuration                                                                         *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationEmailUpdateResponse struct {
+type UpdateEmailIntegrationResponse struct {
 	// The ID of the Email Integration       
 	ID                                string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationEmailCreateRequest struct {
+type CreateEmailIntegrationRequest struct {
 	// Newline-separated list of email patterns allowed to send messages to this integration                       
 	AllowedSenderEmails                                                                     *string                `json:"allowedSenderEmails,omitempty"`
 	// Weather the bot supports attachments                                                                        
@@ -12612,12 +12616,12 @@ type IntegrationEmailCreateRequest struct {
 	SessionDuration                                                                         *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationEmailCreateResponse struct {
+type CreateEmailIntegrationResponse struct {
 	// The ID of the Email Integration       
 	ID                                string `json:"id"`
 }
 
-type IntegrationEmailListParams struct {
+type ListEmailIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -12628,12 +12632,12 @@ type IntegrationEmailListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationEmailListResponse struct {
-	Items []IntegrationEmailListResponseItem `json:"items"`
+type ListEmailIntegrationsResponse struct {
+	Items []ListEmailIntegrationsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type IntegrationEmailListResponseItem struct {
+type ListEmailIntegrationsResponseItem struct {
 	// Newline-separated list of email patterns allowed to send messages to this integration                       
 	AllowedSenderEmails                                                                     *string                `json:"allowedSenderEmails,omitempty"`
 	// Weather the bot supports attachments                                                                        
@@ -12660,23 +12664,23 @@ type IntegrationEmailListResponseItem struct {
 	UpdatedAt                                                                               float64                `json:"updatedAt"`
 }
 
-type IntegrationExtractDeleteParams struct {
+type DeleteExtractIntegrationParams struct {
 	// The ID of the Extract integration       
 	ExtractIntegrationID                string `json:"extractIntegrationId"`
 }
 
-type IntegrationExtractDeleteResponse struct {
+type DeleteExtractIntegrationResponse struct {
 	// The ID of the deleted Extract integration       
 	ID                                          string `json:"id"`
 }
 
-type IntegrationExtractFetchParams struct {
+type FetchExtractIntegrationParams struct {
 	// The ID of the Extract integration to retrieve       
 	ExtractIntegrationID                            string `json:"extractIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationExtractFetchResponse struct {
+type FetchExtractIntegrationResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the Bot to use                                               
@@ -12699,13 +12703,13 @@ type IntegrationExtractFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type IntegrationExtractUpdateParams struct {
+type UpdateExtractIntegrationParams struct {
 	// The ID of the Extract integration       
 	ExtractIntegrationID                string `json:"extractIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationExtractUpdateRequest struct {
+type UpdateExtractIntegrationRequest struct {
 	// The ID of the blueprint                                              
 	BlueprintID                                      *string                `json:"blueprintId,omitempty"`
 	// The ID of the Bot to use                                             
@@ -12724,13 +12728,13 @@ type IntegrationExtractUpdateRequest struct {
 	Schema                                           map[string]interface{} `json:"schema,omitempty"`
 }
 
-type IntegrationExtractUpdateResponse struct {
+type UpdateExtractIntegrationResponse struct {
 	// The ID of the Extract Integration       
 	ID                                  string `json:"id"`
 }
 
 // Blueprint properties
-type IntegrationExtractCreateRequest struct {
+type CreateExtractIntegrationRequest struct {
 	// The ID of the blueprint                                              
 	BlueprintID                                      *string                `json:"blueprintId,omitempty"`
 	// The ID of the Bot to use                                             
@@ -12749,12 +12753,12 @@ type IntegrationExtractCreateRequest struct {
 	Schema                                           map[string]interface{} `json:"schema,omitempty"`
 }
 
-type IntegrationExtractCreateResponse struct {
+type CreateExtractIntegrationResponse struct {
 	// The ID of the Extract Integration       
 	ID                                  string `json:"id"`
 }
 
-type IntegrationExtractListParams struct {
+type ListExtractIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -12765,12 +12769,12 @@ type IntegrationExtractListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationExtractListResponse struct {
-	Items []IntegrationExtractListResponseItem `json:"items"`
+type ListExtractIntegrationsResponse struct {
+	Items []ListExtractIntegrationsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type IntegrationExtractListResponseItem struct {
+type ListExtractIntegrationsResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the Bot to use                                               
@@ -12793,23 +12797,23 @@ type IntegrationExtractListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type IntegrationInstagramDeleteParams struct {
+type DeleteInstagramIntegrationParams struct {
 	// The ID of the Instagram integration       
 	InstagramIntegrationID                string `json:"instagramIntegrationId"`
 }
 
-type IntegrationInstagramDeleteResponse struct {
+type DeleteInstagramIntegrationResponse struct {
 	// The ID of the deleted Instagram integration       
 	ID                                            string `json:"id"`
 }
 
-type IntegrationInstagramFetchParams struct {
+type FetchInstagramIntegrationParams struct {
 	// The ID of the Instagram integration to retrieve       
 	InstagramIntegrationID                            string `json:"instagramIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationInstagramFetchResponse struct {
+type FetchInstagramIntegrationResponse struct {
 	// The Instagram integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
@@ -12839,23 +12843,23 @@ type IntegrationInstagramFetchResponse struct {
 	VerifyToken                                                                          string                 `json:"verifyToken"`
 }
 
-type IntegrationInstagramSetupParams struct {
+type SetupInstagramIntegrationParams struct {
 	// The ID of the Instagram integration       
 	InstagramIntegrationID                string `json:"instagramIntegrationId"`
 }
 
-type IntegrationInstagramSetupResponse struct {
+type SetupInstagramIntegrationResponse struct {
 	// The ID of the Instagram Integration       
 	ID                                    string `json:"id"`
 }
 
-type IntegrationInstagramUpdateParams struct {
+type UpdateInstagramIntegrationParams struct {
 	// The ID of the Instagram integration       
 	InstagramIntegrationID                string `json:"instagramIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationInstagramUpdateRequest struct {
+type UpdateInstagramIntegrationRequest struct {
 	// The Instagram integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
 	// Whether the bot supports attachments                                
@@ -12876,13 +12880,13 @@ type IntegrationInstagramUpdateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationInstagramUpdateResponse struct {
+type UpdateInstagramIntegrationResponse struct {
 	// The ID of the Instagram Integration       
 	ID                                    string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationInstagramCreateRequest struct {
+type CreateInstagramIntegrationRequest struct {
 	// The Instagram integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
 	// Whether the bot supports attachments                                
@@ -12903,12 +12907,12 @@ type IntegrationInstagramCreateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationInstagramCreateResponse struct {
+type CreateInstagramIntegrationResponse struct {
 	// The ID of the Instagram Integration       
 	ID                                    string `json:"id"`
 }
 
-type IntegrationInstagramListParams struct {
+type ListInstagramIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -12919,12 +12923,12 @@ type IntegrationInstagramListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationInstagramListResponse struct {
-	Items []IntegrationInstagramListResponseItem `json:"items"`
+type ListInstagramIntegrationsResponse struct {
+	Items []ListInstagramIntegrationsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type IntegrationInstagramListResponseItem struct {
+type ListInstagramIntegrationsResponseItem struct {
 	// The Instagram integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
@@ -12954,23 +12958,23 @@ type IntegrationInstagramListResponseItem struct {
 	VerifyToken                                                                          string                 `json:"verifyToken"`
 }
 
-type IntegrationMcpserverDeleteParams struct {
+type DeleteMCPServerIntegrationParams struct {
 	// The ID of the McpServer integration       
 	McpserverIntegrationID                string `json:"mcpserverIntegrationId"`
 }
 
-type IntegrationMcpserverDeleteResponse struct {
+type DeleteMCPServerIntegrationResponse struct {
 	// The ID of the deleted McpServer integration       
 	ID                                            string `json:"id"`
 }
 
-type IntegrationMcpserverFetchParams struct {
+type FetchMCPServerIntegrationParams struct {
 	// The ID of the McpServer integration to retrieve       
 	McpserverIntegrationID                            string `json:"mcpserverIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationMcpserverFetchResponse struct {
+type FetchMCPServerIntegrationResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -12989,13 +12993,13 @@ type IntegrationMcpserverFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type IntegrationMcpserverUpdateParams struct {
+type UpdateMCPServerIntegrationParams struct {
 	// The ID of the McpServer integration       
 	McpserverIntegrationID                string `json:"mcpserverIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationMcpserverUpdateRequest struct {
+type UpdateMCPServerIntegrationRequest struct {
 	// The ID of the blueprint                          
 	BlueprintID                  *string                `json:"blueprintId,omitempty"`
 	// The associated description                       
@@ -13008,13 +13012,13 @@ type IntegrationMcpserverUpdateRequest struct {
 	SkillsetID                   *string                `json:"skillsetId,omitempty"`
 }
 
-type IntegrationMcpserverUpdateResponse struct {
+type UpdateMCPServerIntegrationResponse struct {
 	// The ID of the McpServer Integration       
 	ID                                    string `json:"id"`
 }
 
 // Blueprint properties
-type IntegrationMcpserverCreateRequest struct {
+type CreateMCPServerIntegrationRequest struct {
 	// The ID of the blueprint                          
 	BlueprintID                  *string                `json:"blueprintId,omitempty"`
 	// The associated description                       
@@ -13027,12 +13031,12 @@ type IntegrationMcpserverCreateRequest struct {
 	SkillsetID                   *string                `json:"skillsetId,omitempty"`
 }
 
-type IntegrationMcpserverCreateResponse struct {
+type CreateMCPServerIntegrationResponse struct {
 	// The ID of the McpServer Integration       
 	ID                                    string `json:"id"`
 }
 
-type IntegrationMcpserverListParams struct {
+type ListMCPServerIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -13043,12 +13047,12 @@ type IntegrationMcpserverListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationMcpserverListResponse struct {
-	Items []IntegrationMcpserverListResponseItem `json:"items"`
+type ListMCPServerIntegrationsResponse struct {
+	Items []ListMCPServerIntegrationsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type IntegrationMcpserverListResponseItem struct {
+type ListMCPServerIntegrationsResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -13067,23 +13071,23 @@ type IntegrationMcpserverListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type IntegrationMessengerDeleteParams struct {
+type DeleteMessengerIntegrationParams struct {
 	// The ID of the Messenger integration       
 	MessengerIntegrationID                string `json:"messengerIntegrationId"`
 }
 
-type IntegrationMessengerDeleteResponse struct {
+type DeleteMessengerIntegrationResponse struct {
 	// The ID of the deleted Messenger integration       
 	ID                                            string `json:"id"`
 }
 
-type IntegrationMessengerFetchParams struct {
+type FetchMessengerIntegrationParams struct {
 	// The ID of the Messenger integration to retrieve       
 	MessengerIntegrationID                            string `json:"messengerIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationMessengerFetchResponse struct {
+type FetchMessengerIntegrationResponse struct {
 	// The Messenger integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
@@ -13111,23 +13115,23 @@ type IntegrationMessengerFetchResponse struct {
 	VerifyToken                                                                          string                 `json:"verifyToken"`
 }
 
-type IntegrationMessengerSetupParams struct {
+type SetupMessengerIntegrationParams struct {
 	// The ID of the Messenger integration       
 	MessengerIntegrationID                string `json:"messengerIntegrationId"`
 }
 
-type IntegrationMessengerSetupResponse struct {
+type SetupMessengerIntegrationResponse struct {
 	// The ID of the Messenger Integration       
 	ID                                    string `json:"id"`
 }
 
-type IntegrationMessengerUpdateParams struct {
+type UpdateMessengerIntegrationParams struct {
 	// The ID of the Messenger integration       
 	MessengerIntegrationID                string `json:"messengerIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationMessengerUpdateRequest struct {
+type UpdateMessengerIntegrationRequest struct {
 	// The Messenger integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
 	// Weather the bot supports attachments                                
@@ -13146,13 +13150,13 @@ type IntegrationMessengerUpdateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationMessengerUpdateResponse struct {
+type UpdateMessengerIntegrationResponse struct {
 	// The ID of the Messenger Integration       
 	ID                                    string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationMessengerCreateRequest struct {
+type CreateMessengerIntegrationRequest struct {
 	// The Messenger integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
 	// Weather the bot supports attachments                                
@@ -13171,12 +13175,12 @@ type IntegrationMessengerCreateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationMessengerCreateResponse struct {
+type CreateMessengerIntegrationResponse struct {
 	// The ID of the Messenger Integration       
 	ID                                    string `json:"id"`
 }
 
-type IntegrationMessengerListParams struct {
+type ListMessengerIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -13187,12 +13191,12 @@ type IntegrationMessengerListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationMessengerListResponse struct {
-	Items []IntegrationMessengerListResponseItem `json:"items"`
+type ListMessengerIntegrationsResponse struct {
+	Items []ListMessengerIntegrationsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type IntegrationMessengerListResponseItem struct {
+type ListMessengerIntegrationsResponseItem struct {
 	// The Messenger integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
@@ -13220,23 +13224,23 @@ type IntegrationMessengerListResponseItem struct {
 	VerifyToken                                                                          string                 `json:"verifyToken"`
 }
 
-type IntegrationNotionDeleteParams struct {
+type DeleteNotionIntegrationParams struct {
 	// The ID of the Notion integration       
 	NotionIntegrationID                string `json:"notionIntegrationId"`
 }
 
-type IntegrationNotionDeleteResponse struct {
+type DeleteNotionIntegrationResponse struct {
 	// The ID of the deleted Notion integration       
 	ID                                         string `json:"id"`
 }
 
-type IntegrationNotionFetchParams struct {
+type FetchNotionIntegrationParams struct {
 	// The ID of the Notion integration to retrieve       
 	NotionIntegrationID                            string `json:"notionIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationNotionFetchResponse struct {
+type FetchNotionIntegrationResponse struct {
 	// The ID of the blueprint                                                                           
 	BlueprintID                                                                   *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                                  
@@ -13265,23 +13269,23 @@ type IntegrationNotionFetchResponse struct {
 	UpdatedAt                                                                     float64                `json:"updatedAt"`
 }
 
-type IntegrationNotionSyncParams struct {
+type SyncNotionIntegrationParams struct {
 	// The ID of the Notion integration       
 	NotionIntegrationID                string `json:"notionIntegrationId"`
 }
 
-type IntegrationNotionSyncResponse struct {
+type SyncNotionIntegrationResponse struct {
 	// The ID of the synced Notion integration       
 	ID                                        string `json:"id"`
 }
 
-type IntegrationNotionUpdateParams struct {
+type UpdateNotionIntegrationParams struct {
 	// The ID of the Notion integration       
 	NotionIntegrationID                string `json:"notionIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationNotionUpdateRequest struct {
+type UpdateNotionIntegrationRequest struct {
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the dataset to sync into                                  
@@ -13300,13 +13304,13 @@ type IntegrationNotionUpdateRequest struct {
 	Token                                           *string                `json:"token,omitempty"`
 }
 
-type IntegrationNotionUpdateResponse struct {
+type UpdateNotionIntegrationResponse struct {
 	// The ID of the Notion Integration       
 	ID                                 string `json:"id"`
 }
 
 // Blueprint properties
-type IntegrationNotionCreateRequest struct {
+type CreateNotionIntegrationRequest struct {
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the dataset to sync into                                  
@@ -13325,12 +13329,12 @@ type IntegrationNotionCreateRequest struct {
 	Token                                           *string                `json:"token,omitempty"`
 }
 
-type IntegrationNotionCreateResponse struct {
+type CreateNotionIntegrationResponse struct {
 	// The ID of the Notion Integration       
 	ID                                 string `json:"id"`
 }
 
-type IntegrationNotionListParams struct {
+type ListNotionIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -13341,12 +13345,12 @@ type IntegrationNotionListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationNotionListResponse struct {
-	Items []IntegrationNotionListResponseItem `json:"items"`
+type ListNotionIntegrationsResponse struct {
+	Items []ListNotionIntegrationsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type IntegrationNotionListResponseItem struct {
+type ListNotionIntegrationsResponseItem struct {
 	// The ID of the blueprint                                                                           
 	BlueprintID                                                                   *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                                  
@@ -13375,23 +13379,23 @@ type IntegrationNotionListResponseItem struct {
 	UpdatedAt                                                                     float64                `json:"updatedAt"`
 }
 
-type IntegrationSitemapDeleteParams struct {
+type DeleteSitemapIntegrationParams struct {
 	// The ID of the Sitemap integration       
 	SitemapIntegrationID                string `json:"sitemapIntegrationId"`
 }
 
-type IntegrationSitemapDeleteResponse struct {
+type DeleteSitemapIntegrationResponse struct {
 	// The ID of the deleted Sitemap integration       
 	ID                                          string `json:"id"`
 }
 
-type IntegrationSitemapFetchParams struct {
+type FetchSitemapIntegrationParams struct {
 	// The ID of the Sitemap integration to retrieve       
 	SitemapIntegrationID                            string `json:"sitemapIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationSitemapFetchResponse struct {
+type FetchSitemapIntegrationResponse struct {
 	// The ID of the blueprint                                                                                       
 	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                                              
@@ -13426,23 +13430,23 @@ type IntegrationSitemapFetchResponse struct {
 	URL                                                                                       *string                `json:"url,omitempty"`
 }
 
-type IntegrationSitemapSyncParams struct {
+type SyncSitemapIntegrationParams struct {
 	// The ID of the Sitemap integration       
 	SitemapIntegrationID                string `json:"sitemapIntegrationId"`
 }
 
-type IntegrationSitemapSyncResponse struct {
+type SyncSitemapIntegrationResponse struct {
 	// The ID of the Sitemap Integration       
 	ID                                  string `json:"id"`
 }
 
-type IntegrationSitemapUpdateParams struct {
+type UpdateSitemapIntegrationParams struct {
 	// The ID of the Sitemap integration       
 	SitemapIntegrationID                string `json:"sitemapIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationSitemapUpdateRequest struct {
+type UpdateSitemapIntegrationRequest struct {
 	// The ID of the blueprint                                                                                       
 	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
 	// The ID of the dataset to use for this Sitemap integration                                                     
@@ -13467,13 +13471,13 @@ type IntegrationSitemapUpdateRequest struct {
 	URL                                                                                       *string                `json:"url,omitempty"`
 }
 
-type IntegrationSitemapUpdateResponse struct {
+type UpdateSitemapIntegrationResponse struct {
 	// The ID of the Sitemap Integration       
 	ID                                  string `json:"id"`
 }
 
 // Blueprint properties
-type IntegrationSitemapCreateRequest struct {
+type CreateSitemapIntegrationRequest struct {
 	// The ID of the blueprint                                                                                       
 	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
 	// The ID of the dataset to use for this Sitemap integration                                                     
@@ -13498,12 +13502,12 @@ type IntegrationSitemapCreateRequest struct {
 	URL                                                                                       *string                `json:"url,omitempty"`
 }
 
-type IntegrationSitemapCreateResponse struct {
+type CreateSitemapIntegrationResponse struct {
 	// The ID of the Sitemap Integration       
 	ID                                  string `json:"id"`
 }
 
-type IntegrationSitemapListParams struct {
+type ListSitemapIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -13514,12 +13518,12 @@ type IntegrationSitemapListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationSitemapListResponse struct {
-	Items []IntegrationSitemapListResponseItem `json:"items"`
+type ListSitemapIntegrationsResponse struct {
+	Items []ListSitemapIntegrationsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type IntegrationSitemapListResponseItem struct {
+type ListSitemapIntegrationsResponseItem struct {
 	// The ID of the blueprint                                                                                       
 	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                                              
@@ -13554,23 +13558,23 @@ type IntegrationSitemapListResponseItem struct {
 	URL                                                                                       *string                `json:"url,omitempty"`
 }
 
-type IntegrationSlackDeleteParams struct {
+type DeleteSlackIntegrationParams struct {
 	// The ID of the Slack integration       
 	SlackIntegrationID                string `json:"slackIntegrationId"`
 }
 
-type IntegrationSlackDeleteResponse struct {
+type DeleteSlackIntegrationResponse struct {
 	// The ID of the deleted Slack integration       
 	ID                                        string `json:"id"`
 }
 
-type IntegrationSlackFetchParams struct {
+type FetchSlackIntegrationParams struct {
 	// The ID of the Slack integration to retrieve       
 	SlackIntegrationID                            string `json:"slackIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationSlackFetchResponse struct {
+type FetchSlackIntegrationResponse struct {
 	// Configure automatic response behavior. Use '@all' to respond to all messages, '@agent                         
 	// <instructions>' for agent-powered decisions, or custom instructions for lightweight LLM                       
 	// filtering. Null/empty defaults to current behavior (DMs, mentions, threads only).                             
@@ -13609,23 +13613,23 @@ type IntegrationSlackFetchResponse struct {
 	VisibleMessages                                                                           *float64               `json:"visibleMessages,omitempty"`
 }
 
-type IntegrationSlackSetupParams struct {
+type SetupSlackIntegrationParams struct {
 	// The ID of the Slack integration       
 	SlackIntegrationID                string `json:"slackIntegrationId"`
 }
 
-type IntegrationSlackSetupResponse struct {
+type SetupSlackIntegrationResponse struct {
 	// The ID of the setup Slack integration       
 	ID                                      string `json:"id"`
 }
 
-type IntegrationSlackUpdateParams struct {
+type UpdateSlackIntegrationParams struct {
 	// The ID of the Slack integration       
 	SlackIntegrationID                string `json:"slackIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationSlackUpdateRequest struct {
+type UpdateSlackIntegrationRequest struct {
 	// Configure automatic response behavior. Use '@all' to respond to all messages, '@agent                         
 	// <instructions>' for agent-powered decisions, or custom instructions for lightweight LLM                       
 	// filtering. Null/empty defaults to current behavior (DMs, mentions, threads only).                             
@@ -13658,13 +13662,13 @@ type IntegrationSlackUpdateRequest struct {
 	VisibleMessages                                                                           *float64               `json:"visibleMessages,omitempty"`
 }
 
-type IntegrationSlackUpdateResponse struct {
+type UpdateSlackIntegrationResponse struct {
 	// The ID of the Slack Integration       
 	ID                                string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationSlackCreateRequest struct {
+type CreateSlackIntegrationRequest struct {
 	// Configure automatic response behavior. Use '@all' to respond to all messages, '@agent                         
 	// <instructions>' for agent-powered decisions, or custom instructions for lightweight LLM                       
 	// filtering. Null/empty defaults to current behavior (DMs, mentions, threads only).                             
@@ -13697,12 +13701,12 @@ type IntegrationSlackCreateRequest struct {
 	VisibleMessages                                                                           *float64               `json:"visibleMessages,omitempty"`
 }
 
-type IntegrationSlackCreateResponse struct {
+type CreateSlackIntegrationResponse struct {
 	// The ID of the Slack Integration       
 	ID                                string `json:"id"`
 }
 
-type IntegrationSlackListParams struct {
+type ListSlackIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -13713,12 +13717,12 @@ type IntegrationSlackListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationSlackListResponse struct {
-	Items []IntegrationSlackListResponseItem `json:"items"`
+type ListSlackIntegrationsResponse struct {
+	Items []ListSlackIntegrationsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type IntegrationSlackListResponseItem struct {
+type ListSlackIntegrationsResponseItem struct {
 	// Configure automatic response behavior. Use '@all' to respond to all messages, '@agent                         
 	// <instructions>' for agent-powered decisions, or custom instructions for lightweight LLM                       
 	// filtering. Null/empty defaults to current behavior (DMs, mentions, threads only).                             
@@ -13757,23 +13761,23 @@ type IntegrationSlackListResponseItem struct {
 	VisibleMessages                                                                           *float64               `json:"visibleMessages,omitempty"`
 }
 
-type IntegrationSupportDeleteParams struct {
+type DeleteSupportIntegrationParams struct {
 	// The ID of the Support integration       
 	SupportIntegrationID                string `json:"supportIntegrationId"`
 }
 
-type IntegrationSupportDeleteResponse struct {
+type DeleteSupportIntegrationResponse struct {
 	// The ID of the deleted Support integration       
 	ID                                          string `json:"id"`
 }
 
-type IntegrationSupportFetchParams struct {
+type FetchSupportIntegrationParams struct {
 	// The ID of the Support integration to retrieve       
 	SupportIntegrationID                            string `json:"supportIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationSupportFetchResponse struct {
+type FetchSupportIntegrationResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                          
@@ -13794,13 +13798,13 @@ type IntegrationSupportFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type IntegrationSupportUpdateParams struct {
+type UpdateSupportIntegrationParams struct {
 	// The ID of the Support integration       
 	SupportIntegrationID                string `json:"supportIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationSupportUpdateRequest struct {
+type UpdateSupportIntegrationRequest struct {
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                       
@@ -13815,13 +13819,13 @@ type IntegrationSupportUpdateRequest struct {
 	Name                                            *string                `json:"name,omitempty"`
 }
 
-type IntegrationSupportUpdateResponse struct {
+type UpdateSupportIntegrationResponse struct {
 	// The ID of the Support Integration       
 	ID                                  string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationSupportCreateRequest struct {
+type CreateSupportIntegrationRequest struct {
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                       
@@ -13836,12 +13840,12 @@ type IntegrationSupportCreateRequest struct {
 	Name                                            *string                `json:"name,omitempty"`
 }
 
-type IntegrationSupportCreateResponse struct {
+type CreateSupportIntegrationResponse struct {
 	// The ID of the Support Integration       
 	ID                                  string `json:"id"`
 }
 
-type IntegrationSupportListParams struct {
+type ListSupportIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -13852,12 +13856,12 @@ type IntegrationSupportListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationSupportListResponse struct {
-	Items []IntegrationSupportListResponseItem `json:"items"`
+type ListSupportIntegrationsResponse struct {
+	Items []ListSupportIntegrationsResponseItem `json:"items"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationSupportListResponseItem struct {
+type ListSupportIntegrationsResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                          
@@ -13878,23 +13882,23 @@ type IntegrationSupportListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type IntegrationTelegramDeleteParams struct {
+type DeleteTelegramIntegrationParams struct {
 	// The ID of the Telegram integration       
 	TelegramIntegrationID                string `json:"telegramIntegrationId"`
 }
 
-type IntegrationTelegramDeleteResponse struct {
+type DeleteTelegramIntegrationResponse struct {
 	// The ID of the deleted Telegram integration       
 	ID                                           string `json:"id"`
 }
 
-type IntegrationTelegramFetchParams struct {
+type FetchTelegramIntegrationParams struct {
 	// The ID of the Telegram integration to retrieve       
 	TelegramIntegrationID                            string `json:"telegramIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationTelegramFetchResponse struct {
+type FetchTelegramIntegrationResponse struct {
 	// Weather the bot supports attachments                                   
 	Attachments                                        *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                                
@@ -13919,23 +13923,23 @@ type IntegrationTelegramFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type IntegrationTelegramSetupParams struct {
+type SetupTelegramIntegrationParams struct {
 	// The ID of the Telegram integration       
 	TelegramIntegrationID                string `json:"telegramIntegrationId"`
 }
 
-type IntegrationTelegramSetupResponse struct {
+type SetupTelegramIntegrationResponse struct {
 	// The ID of the Telegram Integration       
 	ID                                   string `json:"id"`
 }
 
-type IntegrationTelegramUpdateParams struct {
+type UpdateTelegramIntegrationParams struct {
 	// The ID of the Telegram integration       
 	TelegramIntegrationID                string `json:"telegramIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationTelegramUpdateRequest struct {
+type UpdateTelegramIntegrationRequest struct {
 	// Weather the bot supports attachments                                
 	Attachments                                     *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                             
@@ -13956,13 +13960,13 @@ type IntegrationTelegramUpdateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationTelegramUpdateResponse struct {
+type UpdateTelegramIntegrationResponse struct {
 	// The ID of the Telegram Integration       
 	ID                                   string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationTelegramCreateRequest struct {
+type CreateTelegramIntegrationRequest struct {
 	// Weather the bot supports attachments                                
 	Attachments                                     *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                             
@@ -13983,12 +13987,12 @@ type IntegrationTelegramCreateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationTelegramCreateResponse struct {
+type CreateTelegramIntegrationResponse struct {
 	// The ID of the Telegram Integration       
 	ID                                   string `json:"id"`
 }
 
-type IntegrationTelegramListParams struct {
+type ListTelegramIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -13999,12 +14003,12 @@ type IntegrationTelegramListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationTelegramListResponse struct {
-	Items []IntegrationTelegramListResponseItem `json:"items"`
+type ListTelegramIntegrationsResponse struct {
+	Items []ListTelegramIntegrationsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type IntegrationTelegramListResponseItem struct {
+type ListTelegramIntegrationsResponseItem struct {
 	// Weather the bot supports attachments                                   
 	Attachments                                        *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                                
@@ -14029,23 +14033,23 @@ type IntegrationTelegramListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type IntegrationTriggerDeleteParams struct {
+type DeleteTriggerIntegrationParams struct {
 	// The ID of the Trigger integration       
 	TriggerIntegrationID                string `json:"triggerIntegrationId"`
 }
 
-type IntegrationTriggerDeleteResponse struct {
+type DeleteTriggerIntegrationResponse struct {
 	// The ID of the deleted Trigger integration       
 	ID                                          string `json:"id"`
 }
 
-type IntegrationTriggerFetchParams struct {
+type FetchTriggerIntegrationParams struct {
 	// The ID of the Trigger integration to retrieve       
 	TriggerIntegrationID                            string `json:"triggerIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationTriggerFetchResponse struct {
+type FetchTriggerIntegrationResponse struct {
 	// When enabled the integration requires authentication                       
 	Authenticate                                           *bool                  `json:"authenticate,omitempty"`
 	// The ID of the blueprint                                                    
@@ -14072,33 +14076,33 @@ type IntegrationTriggerFetchResponse struct {
 	UpdatedAt                                              float64                `json:"updatedAt"`
 }
 
-type IntegrationTriggerInvokeParams struct {
+type InvokeTriggerIntegrationParams struct {
 	// The ID of the Trigger integration       
 	TriggerIntegrationID                string `json:"triggerIntegrationId"`
 }
 
-type IntegrationTriggerInvokeResponse struct {
+type InvokeTriggerIntegrationResponse struct {
 	// The ID of the trigged Trigger integration       
 	ID                                          string `json:"id"`
 }
 
-type IntegrationTriggerSetupParams struct {
+type SetupTriggerIntegrationParams struct {
 	// The ID of the Trigger integration       
 	TriggerIntegrationID                string `json:"triggerIntegrationId"`
 }
 
-type IntegrationTriggerSetupResponse struct {
+type SetupTriggerIntegrationResponse struct {
 	// The ID of the Trigger Integration       
 	ID                                  string `json:"id"`
 }
 
-type IntegrationTriggerUpdateParams struct {
+type UpdateTriggerIntegrationParams struct {
 	// The ID of the Trigger integration       
 	TriggerIntegrationID                string `json:"triggerIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationTriggerUpdateRequest struct {
+type UpdateTriggerIntegrationRequest struct {
 	// When enabled the integration requires authentication                       
 	Authenticate                                           *bool                  `json:"authenticate,omitempty"`
 	// The ID of the blueprint                                                    
@@ -14117,13 +14121,13 @@ type IntegrationTriggerUpdateRequest struct {
 	TriggerSchedule                                        *Schedule              `json:"triggerSchedule,omitempty"`
 }
 
-type IntegrationTriggerUpdateResponse struct {
+type UpdateTriggerIntegrationResponse struct {
 	// The ID of the Trigger Integration       
 	ID                                  string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationTriggerCreateRequest struct {
+type CreateTriggerIntegrationRequest struct {
 	// When enabled the integration requires authentication                       
 	Authenticate                                           *bool                  `json:"authenticate,omitempty"`
 	// The ID of the blueprint                                                    
@@ -14142,12 +14146,12 @@ type IntegrationTriggerCreateRequest struct {
 	TriggerSchedule                                        *Schedule              `json:"triggerSchedule,omitempty"`
 }
 
-type IntegrationTriggerCreateResponse struct {
+type CreateTriggerIntegrationResponse struct {
 	// The ID of the Trigger Integration       
 	ID                                  string `json:"id"`
 }
 
-type IntegrationTriggerListParams struct {
+type ListTriggerIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -14158,12 +14162,12 @@ type IntegrationTriggerListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationTriggerListResponse struct {
-	Items []IntegrationTriggerListResponseItem `json:"items"`
+type ListTriggerIntegrationsResponse struct {
+	Items []ListTriggerIntegrationsResponseItem `json:"items"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationTriggerListResponseItem struct {
+type ListTriggerIntegrationsResponseItem struct {
 	// When enabled the integration requires authentication                       
 	Authenticate                                           *bool                  `json:"authenticate,omitempty"`
 	// The ID of the blueprint                                                    
@@ -14190,23 +14194,23 @@ type IntegrationTriggerListResponseItem struct {
 	UpdatedAt                                              float64                `json:"updatedAt"`
 }
 
-type IntegrationTwilioDeleteParams struct {
+type DeleteTwilioIntegrationParams struct {
 	// The ID of the Twilio integration       
 	TwilioIntegrationID                string `json:"twilioIntegrationId"`
 }
 
-type IntegrationTwilioDeleteResponse struct {
+type DeleteTwilioIntegrationResponse struct {
 	// The ID of the deleted Twilio integration       
 	ID                                         string `json:"id"`
 }
 
-type IntegrationTwilioFetchParams struct {
+type FetchTwilioIntegrationParams struct {
 	// The ID of the Twilio integration to retrieve       
 	TwilioIntegrationID                            string `json:"twilioIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationTwilioFetchResponse struct {
+type FetchTwilioIntegrationResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                          
@@ -14229,23 +14233,23 @@ type IntegrationTwilioFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type IntegrationTwilioSetupParams struct {
+type SetupTwilioIntegrationParams struct {
 	// The ID of the Twilio integration       
 	TwilioIntegrationID                string `json:"twilioIntegrationId"`
 }
 
-type IntegrationTwilioSetupResponse struct {
+type SetupTwilioIntegrationResponse struct {
 	// The ID of the Twilio Integration       
 	ID                                 string `json:"id"`
 }
 
-type IntegrationTwilioUpdateParams struct {
+type UpdateTwilioIntegrationParams struct {
 	// The ID of the Twilio integration       
 	TwilioIntegrationID                string `json:"twilioIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationTwilioUpdateRequest struct {
+type UpdateTwilioIntegrationRequest struct {
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                       
@@ -14262,13 +14266,13 @@ type IntegrationTwilioUpdateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationTwilioUpdateResponse struct {
+type UpdateTwilioIntegrationResponse struct {
 	// The ID of the Twilio Integration       
 	ID                                 string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationTwilioCreateRequest struct {
+type CreateTwilioIntegrationRequest struct {
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                       
@@ -14285,12 +14289,12 @@ type IntegrationTwilioCreateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationTwilioCreateResponse struct {
+type CreateTwilioIntegrationResponse struct {
 	// The ID of the Twilio Integration       
 	ID                                 string `json:"id"`
 }
 
-type IntegrationTwilioListParams struct {
+type ListTwilioIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -14301,12 +14305,12 @@ type IntegrationTwilioListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationTwilioListResponse struct {
-	Items []IntegrationTwilioListResponseItem `json:"items"`
+type ListTwilioIntegrationsResponse struct {
+	Items []ListTwilioIntegrationsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type IntegrationTwilioListResponseItem struct {
+type ListTwilioIntegrationsResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                          
@@ -14329,23 +14333,23 @@ type IntegrationTwilioListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type IntegrationWhatsappDeleteParams struct {
+type DeleteWhatsAppIntegrationParams struct {
 	// The ID of the WhatsApp integration       
 	WhatsappIntegrationID                string `json:"whatsappIntegrationId"`
 }
 
-type IntegrationWhatsappDeleteResponse struct {
+type DeleteWhatsAppIntegrationResponse struct {
 	// The ID of the deleted WhatsApp integration       
 	ID                                           string `json:"id"`
 }
 
-type IntegrationWhatsappFetchParams struct {
+type FetchWhatsAppIntegrationParams struct {
 	// The ID of the WhatsApp integration to retrieve       
 	WhatsappIntegrationID                            string `json:"whatsappIntegrationId"`
 }
 
 // Blueprint properties
-type IntegrationWhatsappFetchResponse struct {
+type FetchWhatsAppIntegrationResponse struct {
 	// The WhatsApp integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                              
 	AccessToken                                                                         *string                `json:"accessToken,omitempty"`
@@ -14377,23 +14381,23 @@ type IntegrationWhatsappFetchResponse struct {
 	VerifyToken                                                                         string                 `json:"verifyToken"`
 }
 
-type IntegrationWhatsappSetupParams struct {
+type SetupWhatsAppIntegrationParams struct {
 	// The ID of the WhatsApp integration       
 	WhatsappIntegrationID                string `json:"whatsappIntegrationId"`
 }
 
-type IntegrationWhatsappSetupResponse struct {
+type SetupWhatsAppIntegrationResponse struct {
 	// The ID of the WhatsApp Integration       
 	ID                                   string `json:"id"`
 }
 
-type IntegrationWhatsappUpdateParams struct {
+type UpdateWhatsAppIntegrationParams struct {
 	// The ID of the WhatsApp integration       
 	WhatsappIntegrationID                string `json:"whatsappIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationWhatsappUpdateRequest struct {
+type UpdateWhatsAppIntegrationRequest struct {
 	// The WhatsApp integration access token                               
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
 	// Weather the bot supports attachments                                
@@ -14416,13 +14420,13 @@ type IntegrationWhatsappUpdateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationWhatsappUpdateResponse struct {
+type UpdateWhatsAppIntegrationResponse struct {
 	// The ID of the WhatsApp Integration       
 	ID                                   string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationWhatsappCreateRequest struct {
+type CreateWhatsAppIntegrationRequest struct {
 	// The WhatsApp integration access token                               
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
 	// Weather the bot supports attachments                                
@@ -14445,12 +14449,12 @@ type IntegrationWhatsappCreateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type IntegrationWhatsappCreateResponse struct {
+type CreateWhatsAppIntegrationResponse struct {
 	// The ID of the WhatsApp Integration       
 	ID                                   string `json:"id"`
 }
 
-type IntegrationWhatsappListParams struct {
+type ListWhatsAppIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -14461,12 +14465,12 @@ type IntegrationWhatsappListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationWhatsappListResponse struct {
-	Items []IntegrationWhatsappListResponseItem `json:"items"`
+type ListWhatsAppIntegrationsResponse struct {
+	Items []ListWhatsAppIntegrationsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type IntegrationWhatsappListResponseItem struct {
+type ListWhatsAppIntegrationsResponseItem struct {
 	// The WhatsApp integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                              
 	AccessToken                                                                         *string                `json:"accessToken,omitempty"`
@@ -14498,23 +14502,23 @@ type IntegrationWhatsappListResponseItem struct {
 	VerifyToken                                                                         string                 `json:"verifyToken"`
 }
 
-type IntegrationWidgetDeleteParams struct {
+type DeleteWidgetIntegrationParams struct {
 	// The ID of the Widget integration       
 	WidgetIntegrationID                string `json:"widgetIntegrationId"`
 }
 
-type IntegrationWidgetDeleteResponse struct {
+type DeleteWidgetIntegrationResponse struct {
 	// The ID of the deleted Widget integration       
 	ID                                         string `json:"id"`
 }
 
-type IntegrationWidgetFetchParams struct {
+type FetchWidgetIntegrationParams struct {
 	// The ID of the Widget integration to retrieve       
 	WidgetIntegrationID                            string `json:"widgetIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationWidgetFetchResponse struct {
+type FetchWidgetIntegrationResponse struct {
 	// Whether the Widget integration supports attachments                                         
 	Attachments                                                             *bool                  `json:"attachments,omitempty"`
 	// Whether the Widget integration auto scrolls                                                 
@@ -14589,23 +14593,23 @@ type IntegrationWidgetFetchResponse struct {
 	VoiceOut                                                                *bool                  `json:"voiceOut,omitempty"`
 }
 
-type IntegrationWidgetSetupParams struct {
+type SetupWidgetIntegrationParams struct {
 	// The ID of the Widget integration       
 	WidgetIntegrationID                string `json:"widgetIntegrationId"`
 }
 
-type IntegrationWidgetSetupResponse struct {
+type SetupWidgetIntegrationResponse struct {
 	// The ID of the Widget integration       
 	ID                                 string `json:"id"`
 }
 
-type IntegrationWidgetUpdateParams struct {
+type UpdateWidgetIntegrationParams struct {
 	// The ID of the Widget integration       
 	WidgetIntegrationID                string `json:"widgetIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationWidgetUpdateRequest struct {
+type UpdateWidgetIntegrationRequest struct {
 	// Whether the Widget integration supports attachments                                         
 	Attachments                                                             *bool                  `json:"attachments,omitempty"`
 	// Whether the Widget integration auto scrolls                                                 
@@ -14674,13 +14678,13 @@ type IntegrationWidgetUpdateRequest struct {
 	VoiceOut                                                                *bool                  `json:"voiceOut,omitempty"`
 }
 
-type IntegrationWidgetUpdateResponse struct {
+type UpdateWidgetIntegrationResponse struct {
 	// The ID of the Widget Integration       
 	ID                                 string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationWidgetCreateRequest struct {
+type CreateWidgetIntegrationRequest struct {
 	// Weather the Widget integration supports attachments                                         
 	Attachments                                                             *bool                  `json:"attachments,omitempty"`
 	// Whether the Widget integration auto scrolls                                                 
@@ -14749,12 +14753,12 @@ type IntegrationWidgetCreateRequest struct {
 	VoiceOut                                                                *bool                  `json:"voiceOut,omitempty"`
 }
 
-type IntegrationWidgetCreateResponse struct {
+type CreateWidgetIntegrationResponse struct {
 	// The ID of the Widget Integration       
 	ID                                 string `json:"id"`
 }
 
-type IntegrationWidgetListParams struct {
+type ListWidgetIntegrationsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -14765,12 +14769,12 @@ type IntegrationWidgetListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type IntegrationWidgetListResponse struct {
-	Items []IntegrationWidgetListResponseItem `json:"items"`
+type ListWidgetIntegrationsResponse struct {
+	Items []ListWidgetIntegrationsResponseItem `json:"items"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type IntegrationWidgetListResponseItem struct {
+type ListWidgetIntegrationsResponseItem struct {
 	// Weather the Widget integration supports attachments                                         
 	Attachments                                                             *bool                  `json:"attachments,omitempty"`
 	// Whether the Widget integration auto scrolls                                                 
@@ -14845,12 +14849,12 @@ type IntegrationWidgetListResponseItem struct {
 	VoiceOut                                                                *bool                  `json:"voiceOut,omitempty"`
 }
 
-type MagicGenerateParams struct {
+type GenerateMagicFromPromptParams struct {
 	// The ID of the prompt to use for generation       
 	PromptID                                     string `json:"promptId"`
 }
 
-type MagicGenerateRequest struct {
+type GenerateMagicFromPromptRequest struct {
 	// Optional language model to use for generation                       
 	Model                                           *string                `json:"model,omitempty"`
 	// Additional properties to pass to the prompt                         
@@ -14859,20 +14863,20 @@ type MagicGenerateRequest struct {
 	Text                                            string                 `json:"text"`
 }
 
-type MagicGenerateResponse struct {
-	// The input text                              
-	Text                string                     `json:"text"`
-	// Usage information                           
-	Usage               MagicGenerateResponseUsage `json:"usage"`
+type GenerateMagicFromPromptResponse struct {
+	// The input text                                        
+	Text                string                               `json:"text"`
+	// Usage information                                     
+	Usage               GenerateMagicFromPromptResponseUsage `json:"usage"`
 }
 
 // Usage information
-type MagicGenerateResponseUsage struct {
+type GenerateMagicFromPromptResponseUsage struct {
 	// The tokens used in this exchange        
 	Token                              float64 `json:"token"`
 }
 
-type MagicListParams struct {
+type ListMagicPromptsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -14883,12 +14887,12 @@ type MagicListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type MagicListResponse struct {
-	Items []MagicListResponseItem `json:"items"`
+type ListMagicPromptsResponse struct {
+	Items []ListMagicPromptsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type MagicListResponseItem struct {
+type ListMagicPromptsResponseItem struct {
 	// The alias of the item                                                  
 	Alias                                              string                 `json:"alias"`
 	// The timestamp (ms) when the instance was created                       
@@ -14905,23 +14909,23 @@ type MagicListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type MemoryDeleteParams struct {
+type DeleteMemoryParams struct {
 	// The ID of the memory to delete       
 	MemoryID                         string `json:"memoryId"`
 }
 
-type MemoryDeleteResponse struct {
+type DeleteMemoryResponse struct {
 	// The ID of the deleted memory       
 	ID                             string `json:"id"`
 }
 
-type MemoryFetchParams struct {
+type FetchMemoryParams struct {
 	// The ID of the memory to retrieve       
 	MemoryID                           string `json:"memoryId"`
 }
 
 // Instance list properties
-type MemoryFetchResponse struct {
+type FetchMemoryResponse struct {
 	// The bot associated with the memory                                     
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The contact associated with the memory                                 
@@ -14942,12 +14946,12 @@ type MemoryFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type MemoryUpdateParams struct {
+type UpdateMemoryParams struct {
 	MemoryID string `json:"memoryId"`
 }
 
 // Instance crud properties
-type MemoryUpdateRequest struct {
+type UpdateMemoryRequest struct {
 	// The bot associated with the memory                           
 	BotID                                    *string                `json:"botId,omitempty"`
 	// The contact associated with the memory                       
@@ -14962,13 +14966,13 @@ type MemoryUpdateRequest struct {
 	Text                                     *string                `json:"text,omitempty"`
 }
 
-type MemoryUpdateResponse struct {
+type UpdateMemoryResponse struct {
 	// The ID of the updated memory       
 	ID                             string `json:"id"`
 }
 
 // Instance crud properties
-type MemoryCreateRequest struct {
+type CreateMemoryRequest struct {
 	// The bot associated with the memory                           
 	BotID                                    *string                `json:"botId,omitempty"`
 	// The contact associated with the memory                       
@@ -14983,12 +14987,12 @@ type MemoryCreateRequest struct {
 	Text                                     *string                `json:"text,omitempty"`
 }
 
-type MemoryCreateResponse struct {
+type CreateMemoryResponse struct {
 	// The ID of the created memory       
 	ID                             string `json:"id"`
 }
 
-type MemoryExportParams struct {
+type ExportMemoriesParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -14999,12 +15003,12 @@ type MemoryExportParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type MemoryExportResponse struct {
-	Items []MemoryExportResponseItem `json:"items"`
+type ExportMemoriesResponse struct {
+	Items []ExportMemoriesResponseItem `json:"items"`
 }
 
 // Instance list properties
-type MemoryExportResponseItem struct {
+type ExportMemoriesResponseItem struct {
 	// The bot associated with the memory                                     
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The contact associated with the memory                                 
@@ -15025,7 +15029,7 @@ type MemoryExportResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type MemoryListParams struct {
+type ListMemoriesParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -15036,12 +15040,12 @@ type MemoryListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type MemoryListResponse struct {
-	Items []MemoryListResponseItem `json:"items"`
+type ListMemoriesResponse struct {
+	Items []ListMemoriesResponseItem `json:"items"`
 }
 
 // Instance list properties
-type MemoryListResponseItem struct {
+type ListMemoriesResponseItem struct {
 	// The bot associated with the memory                                     
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The contact associated with the memory                                 
@@ -15062,7 +15066,7 @@ type MemoryListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type MemorySearchRequest struct {
+type SearchMemoryRequest struct {
 	// The ID of the bot to filter memories by            
 	BotID                                         *string `json:"botId,omitempty"`
 	// The ID of the contact to filter memories by        
@@ -15071,34 +15075,34 @@ type MemorySearchRequest struct {
 	Search                                        string  `json:"search"`
 }
 
-type MemorySearchResponse struct {
+type SearchMemoryResponse struct {
 	// An array of memories matching the search query                           
-	Items                                            []MemorySearchResponseItem `json:"items"`
+	Items                                            []SearchMemoryResponseItem `json:"items"`
 }
 
-type MemorySearchResponseItem struct {
+type SearchMemoryResponseItem struct {
 	ID   string                 `json:"id"`
 	Meta map[string]interface{} `json:"meta,omitempty"`
 	Text string                 `json:"text"`
 }
 
-type PartnerUserDeleteParams struct {
+type DeletePartnerUserParams struct {
 	// The ID of the user to delete       
 	UserID                         string `json:"userId"`
 }
 
-type PartnerUserDeleteResponse struct {
+type DeletePartnerUserResponse struct {
 	// The ID of the deleted user       
 	ID                           string `json:"id"`
 }
 
-type PartnerUserFetchParams struct {
+type FetchPartnerUserParams struct {
 	// The ID of the partner user to retrieve       
 	UserID                                   string `json:"userId"`
 }
 
 // Instance list properties
-type PartnerUserFetchResponse struct {
+type FetchPartnerUserResponse struct {
 	// The timestamp (ms) when the instance was created                                
 	CreatedAt                                          float64                         `json:"createdAt"`
 	// The associated description                                                      
@@ -15110,7 +15114,7 @@ type PartnerUserFetchResponse struct {
 	// The image of the partner user                                                   
 	Image                                              *string                         `json:"image,omitempty"`
 	// Limits information                                                              
-	Limits                                             *PartnerUserFetchResponseLimits `json:"limits,omitempty"`
+	Limits                                             *FetchPartnerUserResponseLimits `json:"limits,omitempty"`
 	// Meta data information                                                           
 	Meta                                               map[string]interface{}          `json:"meta,omitempty"`
 	// The associated name                                                             
@@ -15120,7 +15124,7 @@ type PartnerUserFetchResponse struct {
 }
 
 // Limits information
-type PartnerUserFetchResponseLimits struct {
+type FetchPartnerUserResponseLimits struct {
 	// The conversations limit                
 	Conversations             *float64        `json:"conversations,omitempty"`
 	// The database limits                    
@@ -15145,24 +15149,24 @@ type PurpleDatabase struct {
 	Skillsets             *float64 `json:"skillsets,omitempty"`
 }
 
-type PartnerUserTokenDeleteParams struct {
+type DeletePartnerUserTokenParams struct {
 	// The ID of the user token to delete       
 	TokenID                              string `json:"tokenId"`
 	// The ID of the user                       
 	UserID                               string `json:"userId"`
 }
 
-type PartnerUserTokenDeleteResponse struct {
+type DeletePartnerUserTokenResponse struct {
 	// The ID of the deleted user token       
 	ID                                 string `json:"id"`
 }
 
-type PartnerUserTokenCreateParams struct {
+type CreatePartnerUserTokenParams struct {
 	// The ID of the user       
 	UserID               string `json:"userId"`
 }
 
-type PartnerUserTokenCreateResponse struct {
+type CreatePartnerUserTokenResponse struct {
 	// The timestamp for when the user token was created (in milliseconds)        
 	CreatedAt                                                             float64 `json:"createdAt"`
 	// The ID of the created user token                                           
@@ -15171,7 +15175,7 @@ type PartnerUserTokenCreateResponse struct {
 	Token                                                                 string  `json:"token"`
 }
 
-type PartnerUserTokenListParams struct {
+type ListPartnerUserTokensParams struct {
 	// The cursor to use for pagination        
 	Cursor                             *string `json:"cursor,omitempty"`
 	// The order of the paginated items        
@@ -15182,12 +15186,12 @@ type PartnerUserTokenListParams struct {
 	UserID                             string  `json:"userId"`
 }
 
-type PartnerUserTokenListResponse struct {
-	Items []PartnerUserTokenListResponseItem `json:"items"`
+type ListPartnerUserTokensResponse struct {
+	Items []ListPartnerUserTokensResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PartnerUserTokenListResponseItem struct {
+type ListPartnerUserTokensResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -15202,13 +15206,13 @@ type PartnerUserTokenListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PartnerUserUpdateParams struct {
+type UpdatePartnerUserParams struct {
 	// The ID of the partner user       
 	UserID                       string `json:"userId"`
 }
 
 // Instance crud properties
-type PartnerUserUpdateRequest struct {
+type UpdatePartnerUserRequest struct {
 	// The associated description                                   
 	Description                     *string                         `json:"description,omitempty"`
 	// The email of the partner user                                
@@ -15216,7 +15220,7 @@ type PartnerUserUpdateRequest struct {
 	// The image of the partner user                                
 	Image                           *string                         `json:"image,omitempty"`
 	// Limits information                                           
-	Limits                          *PartnerUserUpdateRequestLimits `json:"limits,omitempty"`
+	Limits                          *UpdatePartnerUserRequestLimits `json:"limits,omitempty"`
 	// Meta data information                                        
 	Meta                            map[string]interface{}          `json:"meta,omitempty"`
 	// The associated name                                          
@@ -15224,7 +15228,7 @@ type PartnerUserUpdateRequest struct {
 }
 
 // Limits information
-type PartnerUserUpdateRequestLimits struct {
+type UpdatePartnerUserRequestLimits struct {
 	// The conversations limit                
 	Conversations             *float64        `json:"conversations,omitempty"`
 	// The database limits                    
@@ -15249,13 +15253,13 @@ type FluffyDatabase struct {
 	Skillsets             *float64 `json:"skillsets,omitempty"`
 }
 
-type PartnerUserUpdateResponse struct {
+type UpdatePartnerUserResponse struct {
 	// The ID of the updated partner user       
 	ID                                   string `json:"id"`
 }
 
 // Instance crud properties
-type PartnerUserCreateRequest struct {
+type CreatePartnerUserRequest struct {
 	// The associated description                                   
 	Description                     *string                         `json:"description,omitempty"`
 	// The email of the partner user                                
@@ -15263,7 +15267,7 @@ type PartnerUserCreateRequest struct {
 	// The image of the partner user                                
 	Image                           *string                         `json:"image,omitempty"`
 	// Limits information                                           
-	Limits                          *PartnerUserCreateRequestLimits `json:"limits,omitempty"`
+	Limits                          *CreatePartnerUserRequestLimits `json:"limits,omitempty"`
 	// Meta data information                                        
 	Meta                            map[string]interface{}          `json:"meta,omitempty"`
 	// The associated name                                          
@@ -15271,7 +15275,7 @@ type PartnerUserCreateRequest struct {
 }
 
 // Limits information
-type PartnerUserCreateRequestLimits struct {
+type CreatePartnerUserRequestLimits struct {
 	// The conversations limit                   
 	Conversations             *float64           `json:"conversations,omitempty"`
 	// The database limits                       
@@ -15296,12 +15300,12 @@ type TentacledDatabase struct {
 	Skillsets             *float64 `json:"skillsets,omitempty"`
 }
 
-type PartnerUserCreateResponse struct {
+type CreatePartnerUserResponse struct {
 	// The ID of the created user       
 	ID                           string `json:"id"`
 }
 
-type PartnerUserListParams struct {
+type ListPartnerUsersParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -15312,12 +15316,12 @@ type PartnerUserListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type PartnerUserListResponse struct {
-	Items []PartnerUserListResponseItem `json:"items"`
+type ListPartnerUsersResponse struct {
+	Items []ListPartnerUsersResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PartnerUserListResponseItem struct {
+type ListPartnerUsersResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -15364,7 +15368,7 @@ type StickyDatabase struct {
 	Skillsets             *float64 `json:"skillsets,omitempty"`
 }
 
-type PlatformAbilityListParams struct {
+type ListPlatformAbilitiesParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -15375,12 +15379,12 @@ type PlatformAbilityListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type PlatformAbilityListResponse struct {
-	Items []PlatformAbilityListResponseItem `json:"items"`
+type ListPlatformAbilitiesResponse struct {
+	Items []ListPlatformAbilitiesResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformAbilityListResponseItem struct {
+type ListPlatformAbilitiesResponseItem struct {
 	// The ID of the bot associated with the ability                                                               
 	Bot                                                                                     *string                `json:"bot,omitempty"`
 	Commentary                                                                              *string                `json:"commentary,omitempty"`
@@ -15428,7 +15432,7 @@ type Schema struct {
 	Type                                ParametersType         `json:"type"`
 }
 
-type PlatformActionListParams struct {
+type ListPlatformActionsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -15439,12 +15443,12 @@ type PlatformActionListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type PlatformActionListResponse struct {
-	Items []PlatformActionListResponseItem `json:"items"`
+type ListPlatformActionsResponse struct {
+	Items []ListPlatformActionsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformActionListResponseItem struct {
+type ListPlatformActionsResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The description of the action                                          
@@ -15461,13 +15465,13 @@ type PlatformActionListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformDocFetchParams struct {
+type FetchPlatformDocParams struct {
 	// The ID of the doc to fetch (e.g., "datasets", "skillsets")       
 	DocID                                                        string `json:"docId"`
 }
 
 // Instance list properties
-type PlatformDocFetchResponse struct {
+type FetchPlatformDocResponse struct {
 	// The category of the manual                                             
 	Category                                           *string                `json:"category,omitempty"`
 	// The markdown content of the doc                                        
@@ -15492,7 +15496,7 @@ type PlatformDocFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformDocListParams struct {
+type ListPlatformDocsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -15503,12 +15507,12 @@ type PlatformDocListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type PlatformDocListResponse struct {
-	Items []PlatformDocListResponseItem `json:"items"`
+type ListPlatformDocsResponse struct {
+	Items []ListPlatformDocsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformDocListResponseItem struct {
+type ListPlatformDocsResponseItem struct {
 	// The category of the doc                                                
 	Category                                           *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -15531,19 +15535,19 @@ type PlatformDocListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformDocSearchRequest struct {
+type SearchPlatformDocsRequest struct {
 	// The search query to find relevant docs                            
 	Search                                                        string `json:"search"`
 	// The maximum number of results to return (1-100, default 10)       
 	Take                                                          *int64 `json:"take,omitempty"`
 }
 
-type PlatformDocSearchResponse struct {
-	Items []PlatformDocSearchResponseItem `json:"items"`
+type SearchPlatformDocsResponse struct {
+	Items []SearchPlatformDocsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformDocSearchResponseItem struct {
+type SearchPlatformDocsResponseItem struct {
 	// The category of the doc                                                 
 	Category                                            *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                        
@@ -15570,12 +15574,12 @@ type PlatformDocSearchResponseItem struct {
 	UpdatedAt                                           float64                `json:"updatedAt"`
 }
 
-type PlatformExampleCloneParams struct {
+type ClonePlatformExampleParams struct {
 	// The ID (slug) of the example to clone       
 	ExampleID                               string `json:"exampleId"`
 }
 
-type PlatformExampleCloneResponse struct {
+type ClonePlatformExampleResponse struct {
 	// A map of resource types to arrays of created resources                      
 	Resources                                                map[string][]Resource `json:"resources"`
 }
@@ -15589,12 +15593,12 @@ type Resource struct {
 	Name                                    *string `json:"name,omitempty"`
 }
 
-type PlatformExampleFetchParams struct {
+type FetchPlatformExampleParams struct {
 	// The ID (slug) of the example       
 	ExampleID                      string `json:"exampleId"`
 }
 
-type PlatformExampleFetchResponse struct {
+type FetchPlatformExampleResponse struct {
 	// The full configuration details of the example                                 
 	Config                                          map[string]interface{}           `json:"config"`
 	// The creation timestamp                                                        
@@ -15610,12 +15614,12 @@ type PlatformExampleFetchResponse struct {
 	// Tags associated with the example                                              
 	Tags                                            []string                         `json:"tags,omitempty"`
 	// The type of the example                                                       
-	Type                                            PlatformExampleFetchResponseType `json:"type"`
+	Type                                            FetchPlatformExampleResponseType `json:"type"`
 	// The last update timestamp                                                     
 	UpdatedAt                                       *float64                         `json:"updatedAt,omitempty"`
 }
 
-type PlatformExampleListParams struct {
+type ListPlatformExamplesParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -15626,12 +15630,12 @@ type PlatformExampleListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type PlatformExampleListResponse struct {
-	Items []PlatformExampleListResponseItem `json:"items"`
+type ListPlatformExamplesResponse struct {
+	Items []ListPlatformExamplesResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformExampleListResponseItem struct {
+type ListPlatformExamplesResponseItem struct {
 	// The timestamp (ms) when the instance was created                                 
 	CreatedAt                                          float64                          `json:"createdAt"`
 	// The associated description                                                       
@@ -15647,24 +15651,24 @@ type PlatformExampleListResponseItem struct {
 	// Tags associated with the example                                                 
 	Tags                                               []string                         `json:"tags,omitempty"`
 	// The type of the example                                                          
-	Type                                               PlatformExampleFetchResponseType `json:"type"`
+	Type                                               FetchPlatformExampleResponseType `json:"type"`
 	// The timestamp (ms) when the instance was updated                                 
 	UpdatedAt                                          float64                          `json:"updatedAt"`
 }
 
-type PlatformExampleSearchRequest struct {
+type SearchPlatformExamplesRequest struct {
 	// The search query to find relevant examples                        
 	Search                                                        string `json:"search"`
 	// The maximum number of results to return (1-100, default 10)       
 	Take                                                          *int64 `json:"take,omitempty"`
 }
 
-type PlatformExampleSearchResponse struct {
-	Items []PlatformExampleSearchResponseItem `json:"items"`
+type SearchPlatformExamplesResponse struct {
+	Items []SearchPlatformExamplesResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformExampleSearchResponseItem struct {
+type SearchPlatformExamplesResponseItem struct {
 	// The timestamp (ms) when the instance was created                                 
 	CreatedAt                                          float64                          `json:"createdAt"`
 	// The associated description                                                       
@@ -15680,18 +15684,18 @@ type PlatformExampleSearchResponseItem struct {
 	// Tags associated with the example                                                 
 	Tags                                               []string                         `json:"tags,omitempty"`
 	// The type of the example                                                          
-	Type                                               PlatformExampleFetchResponseType `json:"type"`
+	Type                                               FetchPlatformExampleResponseType `json:"type"`
 	// The timestamp (ms) when the instance was updated                                 
 	UpdatedAt                                          float64                          `json:"updatedAt"`
 }
 
-type PlatformGuideFetchParams struct {
+type FetchPlatformGuideParams struct {
 	// The ID of the guide to fetch       
 	GuideID                        string `json:"guideId"`
 }
 
 // Instance list properties
-type PlatformGuideFetchResponse struct {
+type FetchPlatformGuideResponse struct {
 	// The category of the guide                                              
 	Category                                           *string                `json:"category,omitempty"`
 	// The markdown content of the guide                                      
@@ -15716,7 +15720,7 @@ type PlatformGuideFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformGuideListParams struct {
+type ListPlatformGuidesParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -15727,12 +15731,12 @@ type PlatformGuideListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type PlatformGuideListResponse struct {
-	Items []PlatformGuideListResponseItem `json:"items"`
+type ListPlatformGuidesResponse struct {
+	Items []ListPlatformGuidesResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformGuideListResponseItem struct {
+type ListPlatformGuidesResponseItem struct {
 	// The category of the guide                                              
 	Category                                           *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -15755,19 +15759,19 @@ type PlatformGuideListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformGuideSearchRequest struct {
+type SearchPlatformGuidesRequest struct {
 	// The search query to find relevant guides                          
 	Search                                                        string `json:"search"`
 	// The maximum number of results to return (1-100, default 10)       
 	Take                                                          *int64 `json:"take,omitempty"`
 }
 
-type PlatformGuideSearchResponse struct {
-	Items []PlatformGuideSearchResponseItem `json:"items"`
+type SearchPlatformGuidesResponse struct {
+	Items []SearchPlatformGuidesResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformGuideSearchResponseItem struct {
+type SearchPlatformGuidesResponseItem struct {
 	// The category of the guide                                                 
 	Category                                              *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                          
@@ -15794,13 +15798,13 @@ type PlatformGuideSearchResponseItem struct {
 	UpdatedAt                                             float64                `json:"updatedAt"`
 }
 
-type PlatformManualFetchParams struct {
+type FetchPlatformManualParams struct {
 	// The ID of the manual to fetch (e.g., "datasets", "skillsets")       
 	ManualID                                                        string `json:"manualId"`
 }
 
 // Instance list properties
-type PlatformManualFetchResponse struct {
+type FetchPlatformManualResponse struct {
 	// The category of the manual                                             
 	Category                                           *string                `json:"category,omitempty"`
 	// The markdown content of the manual                                     
@@ -15825,7 +15829,7 @@ type PlatformManualFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformManualListParams struct {
+type ListPlatformManualsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -15836,12 +15840,12 @@ type PlatformManualListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type PlatformManualListResponse struct {
-	Items []PlatformManualListResponseItem `json:"items"`
+type ListPlatformManualsResponse struct {
+	Items []ListPlatformManualsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformManualListResponseItem struct {
+type ListPlatformManualsResponseItem struct {
 	// The category of the manual                                             
 	Category                                           *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -15864,19 +15868,19 @@ type PlatformManualListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformManualSearchRequest struct {
+type SearchPlatformManualsRequest struct {
 	// The search query to find relevant manuals                         
 	Search                                                        string `json:"search"`
 	// The maximum number of results to return (1-100, default 10)       
 	Take                                                          *int64 `json:"take,omitempty"`
 }
 
-type PlatformManualSearchResponse struct {
-	Items []PlatformManualSearchResponseItem `json:"items"`
+type SearchPlatformManualsResponse struct {
+	Items []SearchPlatformManualsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformManualSearchResponseItem struct {
+type SearchPlatformManualsResponseItem struct {
 	// The category of the manual                                                 
 	Category                                               *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                           
@@ -15903,7 +15907,7 @@ type PlatformManualSearchResponseItem struct {
 	UpdatedAt                                              float64                `json:"updatedAt"`
 }
 
-type PlatformModelListParams struct {
+type ListPlatformModelsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -15914,12 +15918,12 @@ type PlatformModelListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type PlatformModelListResponse struct {
-	Items []PlatformModelListResponseItem `json:"items"`
+type ListPlatformModelsResponse struct {
+	Items []ListPlatformModelsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformModelListResponseItem struct {
+type ListPlatformModelsResponseItem struct {
 	// The timestamp (ms) when the instance was created                          
 	CreatedAt                                             float64                `json:"createdAt"`
 	// The associated description                                                
@@ -15944,7 +15948,7 @@ type PlatformModelListResponseItem struct {
 	UpdatedAt                                             float64                `json:"updatedAt"`
 }
 
-type PlatformSecretListParams struct {
+type ListPlatformSecretsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -15955,12 +15959,12 @@ type PlatformSecretListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type PlatformSecretListResponse struct {
-	Items []PlatformSecretListResponseItem `json:"items"`
+type ListPlatformSecretsResponse struct {
+	Items []ListPlatformSecretsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformSecretListResponseItem struct {
+type ListPlatformSecretsResponseItem struct {
 	Commentary                                         *string                `json:"commentary,omitempty"`
 	Config                                             map[string]interface{} `json:"config,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -15984,13 +15988,13 @@ type PlatformSecretListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformTutorialFetchParams struct {
+type FetchPlatformTutorialParams struct {
 	// The ID of the tutorial to fetch (e.g., "how-to-get-started-with-chatbotkit")       
 	TutorialID                                                                     string `json:"tutorialId"`
 }
 
 // Instance list properties
-type PlatformTutorialFetchResponse struct {
+type FetchPlatformTutorialResponse struct {
 	// The category of the tutorial                                           
 	Category                                           *string                `json:"category,omitempty"`
 	// The markdown content of the tutorial                                   
@@ -16015,7 +16019,7 @@ type PlatformTutorialFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformTutorialListParams struct {
+type ListPlatformTutorialsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -16026,12 +16030,12 @@ type PlatformTutorialListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type PlatformTutorialListResponse struct {
-	Items []PlatformTutorialListResponseItem `json:"items"`
+type ListPlatformTutorialsResponse struct {
+	Items []ListPlatformTutorialsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformTutorialListResponseItem struct {
+type ListPlatformTutorialsResponseItem struct {
 	// The category of the tutorial                                           
 	Category                                           *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -16054,19 +16058,19 @@ type PlatformTutorialListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformTutorialSearchRequest struct {
+type SearchPlatformTutorialsRequest struct {
 	// The search query to find relevant tutorials                       
 	Search                                                        string `json:"search"`
 	// The maximum number of results to return (1-100, default 10)       
 	Take                                                          *int64 `json:"take,omitempty"`
 }
 
-type PlatformTutorialSearchResponse struct {
-	Items []PlatformTutorialSearchResponseItem `json:"items"`
+type SearchPlatformTutorialsResponse struct {
+	Items []SearchPlatformTutorialsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformTutorialSearchResponseItem struct {
+type SearchPlatformTutorialsResponseItem struct {
 	// The category of the tutorial                                                 
 	Category                                                 *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                             
@@ -16093,23 +16097,23 @@ type PlatformTutorialSearchResponseItem struct {
 	UpdatedAt                                                float64                `json:"updatedAt"`
 }
 
-type PolicyDeleteParams struct {
+type DeletePolicyParams struct {
 	// The ID of the policy to delete       
 	ID                               string `json:"id"`
 }
 
-type PolicyDeleteResponse struct {
+type DeletePolicyResponse struct {
 	// The ID of the deleted policy       
 	ID                             string `json:"id"`
 }
 
-type PolicyFetchParams struct {
+type FetchPolicyParams struct {
 	// The ID of the policy to fetch       
 	ID                              string `json:"id"`
 }
 
 // Blueprint properties
-type PolicyFetchResponse struct {
+type FetchPolicyResponse struct {
 	// The ID of the blueprint                                
 	BlueprintID                        *string                `json:"blueprintId,omitempty"`
 	// The policy configuration as JSON                       
@@ -16124,13 +16128,13 @@ type PolicyFetchResponse struct {
 	Type                               PolicyType             `json:"type"`
 }
 
-type PolicyUpdateParams struct {
+type UpdatePolicyParams struct {
 	// The ID of the policy to update       
 	ID                               string `json:"id"`
 }
 
 // Blueprint properties
-type PolicyUpdateRequest struct {
+type UpdatePolicyRequest struct {
 	// The ID of the blueprint                                
 	BlueprintID                        *string                `json:"blueprintId,omitempty"`
 	// The policy configuration as JSON                       
@@ -16145,13 +16149,13 @@ type PolicyUpdateRequest struct {
 	Type                               *PolicyType            `json:"type,omitempty"`
 }
 
-type PolicyUpdateResponse struct {
+type UpdatePolicyResponse struct {
 	// The ID of the updated policy       
 	ID                             string `json:"id"`
 }
 
 // Blueprint properties
-type PolicyCreateRequest struct {
+type CreatePolicyRequest struct {
 	// The ID of the blueprint                                
 	BlueprintID                        *string                `json:"blueprintId,omitempty"`
 	// The policy configuration as JSON                       
@@ -16166,12 +16170,12 @@ type PolicyCreateRequest struct {
 	Type                               PolicyType             `json:"type"`
 }
 
-type PolicyCreateResponse struct {
+type CreatePolicyResponse struct {
 	// The ID of the created policy       
 	ID                             string `json:"id"`
 }
 
-type PolicyListParams struct {
+type ListPoliciesParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -16182,12 +16186,12 @@ type PolicyListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type PolicyListResponse struct {
-	Items []PolicyListResponseItem `json:"items"`
+type ListPoliciesResponse struct {
+	Items []ListPoliciesResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type PolicyListResponseItem struct {
+type ListPoliciesResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The policy configuration as JSON                                       
@@ -16208,23 +16212,23 @@ type PolicyListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PortalDeleteParams struct {
+type DeletePortalParams struct {
 	// The ID of the portal to delete       
 	PortalID                         string `json:"portalId"`
 }
 
-type PortalDeleteResponse struct {
+type DeletePortalResponse struct {
 	// The ID of the deleted portal       
 	ID                             string `json:"id"`
 }
 
-type PortalFetchParams struct {
+type FetchPortalParams struct {
 	// The ID of the portal to retrieve       
 	PortalID                           string `json:"portalId"`
 }
 
 // Blueprint properties
-type PortalFetchResponse struct {
+type FetchPortalResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The config of the portal                                               
@@ -16245,12 +16249,12 @@ type PortalFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PortalUpdateParams struct {
+type UpdatePortalParams struct {
 	PortalID string `json:"portalId"`
 }
 
 // Blueprint properties
-type PortalUpdateRequest struct {
+type UpdatePortalRequest struct {
 	// The unique alias for the instance                       
 	Alias                               *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                 
@@ -16267,13 +16271,13 @@ type PortalUpdateRequest struct {
 	Slug                                *string                `json:"slug,omitempty"`
 }
 
-type PortalUpdateResponse struct {
+type UpdatePortalResponse struct {
 	// The ID of the updated portal       
 	ID                             string `json:"id"`
 }
 
 // Blueprint properties
-type PortalCreateRequest struct {
+type CreatePortalRequest struct {
 	// The unique alias for the instance                       
 	Alias                               *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                 
@@ -16290,12 +16294,12 @@ type PortalCreateRequest struct {
 	Slug                                *string                `json:"slug,omitempty"`
 }
 
-type PortalCreateResponse struct {
+type CreatePortalResponse struct {
 	// The ID of the created portal       
 	ID                             string `json:"id"`
 }
 
-type PortalListParams struct {
+type ListPortalsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -16306,12 +16310,12 @@ type PortalListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type PortalListResponse struct {
-	Items []PortalListResponseItem `json:"items"`
+type ListPortalsResponse struct {
+	Items []ListPortalsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type PortalListResponseItem struct {
+type ListPortalsResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The config of the portal                                               
@@ -16332,35 +16336,35 @@ type PortalListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type SecretAuthenticateParams struct {
+type AuthenticateSecretParams struct {
 	// The ID of the secret to authenticate       
 	SecretID                               string `json:"secretId"`
 }
 
-type SecretAuthenticateResponse struct {
+type AuthenticateSecretResponse struct {
 	// The ID of the secret to authenticate       
 	ID                                     string `json:"id"`
 	// The URL to authenticate the secret         
 	URL                                    string `json:"url"`
 }
 
-type SecretDeleteParams struct {
+type DeleteSecretParams struct {
 	// The ID of the secret to delete       
 	SecretID                         string `json:"secretId"`
 }
 
-type SecretDeleteResponse struct {
+type DeleteSecretResponse struct {
 	// The ID of the deleted secret       
 	ID                             string `json:"id"`
 }
 
-type SecretFetchParams struct {
+type FetchSecretParams struct {
 	// The ID of the secret to retrieve       
 	SecretID                           string `json:"secretId"`
 }
 
 // Blueprint properties
-type SecretFetchResponse struct {
+type FetchSecretResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The config of the secret                                               
@@ -16385,21 +16389,21 @@ type SecretFetchResponse struct {
 	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type SecretRevokeParams struct {
+type RevokeSecretParams struct {
 	SecretID string `json:"secretId"`
 }
 
-type SecretRevokeResponse struct {
+type RevokeSecretResponse struct {
 	// The ID of the revoked secret       
 	ID                             string `json:"id"`
 }
 
-type SecretUpdateParams struct {
+type UpdateSecretParams struct {
 	SecretID string `json:"secretId"`
 }
 
 // Blueprint properties
-type SecretUpdateRequest struct {
+type UpdateSecretRequest struct {
 	// The unique alias for the instance                       
 	Alias                               *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                 
@@ -16422,18 +16426,18 @@ type SecretUpdateRequest struct {
 	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type SecretUpdateResponse struct {
+type UpdateSecretResponse struct {
 	// The ID of the updated secret       
 	ID                             string `json:"id"`
 }
 
-type SecretVerifyParams struct {
+type VerifySecretParams struct {
 	// The ID of the secret to be verified       
 	SecretID                              string `json:"secretId"`
 }
 
-type SecretVerifyResponse struct {
-	Action                          *SecretVerifyResponseAction `json:"action,omitempty"`
+type VerifySecretResponse struct {
+	Action                          *VerifySecretResponseAction `json:"action,omitempty"`
 	// The ID of the verified secret                            
 	ID                              string                      `json:"id"`
 	// The status of the secret                                 
@@ -16441,7 +16445,7 @@ type SecretVerifyResponse struct {
 }
 
 // The action to take next
-type SecretVerifyResponseAction struct {
+type VerifySecretResponseAction struct {
 	// The type of action to take                   
 	Type                                 ActionType `json:"type"`
 	// The URL to authenticate the secret           
@@ -16449,7 +16453,7 @@ type SecretVerifyResponseAction struct {
 }
 
 // Blueprint properties
-type SecretCreateRequest struct {
+type CreateSecretRequest struct {
 	// The unique alias for the instance                       
 	Alias                               *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                 
@@ -16472,12 +16476,12 @@ type SecretCreateRequest struct {
 	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type SecretCreateResponse struct {
+type CreateSecretResponse struct {
 	// The ID of the created secret       
 	ID                             string `json:"id"`
 }
 
-type SecretListParams struct {
+type ListSecretsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -16488,12 +16492,12 @@ type SecretListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type SecretListResponse struct {
-	Items []SecretListResponseItem `json:"items"`
+type ListSecretsResponse struct {
+	Items []ListSecretsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type SecretListResponseItem struct {
+type ListSecretsResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The config of the secret                                               
@@ -16518,26 +16522,26 @@ type SecretListResponseItem struct {
 	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type SkillsetAbilityDeleteParams struct {
+type DeleteSkillsetAbilityParams struct {
 	// The ID of the ability to delete       
 	AbilityID                         string `json:"abilityId"`
 	// The ID of the skillset                
 	SkillsetID                        string `json:"skillsetId"`
 }
 
-type SkillsetAbilityDeleteResponse struct {
+type DeleteSkillsetAbilityResponse struct {
 	// The ID of the deleted ability       
 	ID                              string `json:"id"`
 }
 
-type SkillsetAbilityExecuteParams struct {
+type ExecuteSkillsetAbilityParams struct {
 	// The ID of the ability to execute                    
 	AbilityID                                       string `json:"abilityId"`
 	// The ID of the skillset containing the ability       
 	SkillsetID                                      string `json:"skillsetId"`
 }
 
-type SkillsetAbilityExecuteRequest struct {
+type ExecuteSkillsetAbilityRequest struct {
 	// The ID of the contact to associate with the execution                 
 	ContactID                                                        *string `json:"contactId,omitempty"`
 	// The input to process with the ability. This can be structured         
@@ -16548,19 +16552,19 @@ type SkillsetAbilityExecuteRequest struct {
 	Input                                                            *string `json:"input,omitempty"`
 }
 
-type SkillsetAbilityExecuteResponse struct {
+type ExecuteSkillsetAbilityResponse struct {
 	// Error message if execution failed                                          
 	Error                                 *string                                 `json:"error,omitempty"`
 	// Messages generated during execution                                        
-	Messages                              []SkillsetAbilityExecuteResponseMessage `json:"messages,omitempty"`
+	Messages                              []ExecuteSkillsetAbilityResponseMessage `json:"messages,omitempty"`
 	// The result of the ability execution                                        
 	Result                                interface{}                             `json:"result"`
 	// Usage information                                                          
-	Usage                                 SkillsetAbilityExecuteResponseUsage     `json:"usage"`
+	Usage                                 ExecuteSkillsetAbilityResponseUsage     `json:"usage"`
 }
 
 // A message in the conversation
-type SkillsetAbilityExecuteResponseMessage struct {
+type ExecuteSkillsetAbilityResponseMessage struct {
 	// Meta data information                         
 	Meta                      map[string]interface{} `json:"meta,omitempty"`
 	// The text of the message                       
@@ -16570,12 +16574,12 @@ type SkillsetAbilityExecuteResponseMessage struct {
 }
 
 // Usage information
-type SkillsetAbilityExecuteResponseUsage struct {
+type ExecuteSkillsetAbilityResponseUsage struct {
 	// The tokens used in this exchange        
 	Token                              float64 `json:"token"`
 }
 
-type SkillsetAbilityFetchParams struct {
+type FetchSkillsetAbilityParams struct {
 	// The ID of the ability to retrieve       
 	AbilityID                           string `json:"abilityId"`
 	// The ID of the skillset                  
@@ -16583,7 +16587,7 @@ type SkillsetAbilityFetchParams struct {
 }
 
 // Blueprint properties
-type SkillsetAbilityFetchResponse struct {
+type FetchSkillsetAbilityResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot associated with the ability                          
@@ -16610,13 +16614,13 @@ type SkillsetAbilityFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type SkillsetAbilityUpdateParams struct {
+type UpdateSkillsetAbilityParams struct {
 	AbilityID  string `json:"abilityId"`
 	SkillsetID string `json:"skillsetId"`
 }
 
 // Blueprint properties
-type SkillsetAbilityUpdateRequest struct {
+type UpdateSkillsetAbilityRequest struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot associated with the ability                          
@@ -16637,17 +16641,17 @@ type SkillsetAbilityUpdateRequest struct {
 	SpaceID                                            *string                `json:"spaceId,omitempty"`
 }
 
-type SkillsetAbilityUpdateResponse struct {
+type UpdateSkillsetAbilityResponse struct {
 	// The ID of the updated ability       
 	ID                              string `json:"id"`
 }
 
-type SkillsetAbilityCreateParams struct {
+type CreateSkillsetAbilityParams struct {
 	SkillsetID string `json:"skillsetId"`
 }
 
 // Blueprint properties
-type SkillsetAbilityCreateRequest struct {
+type CreateSkillsetAbilityRequest struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot associated with the ability                          
@@ -16668,12 +16672,12 @@ type SkillsetAbilityCreateRequest struct {
 	SpaceID                                            *string                `json:"spaceId,omitempty"`
 }
 
-type SkillsetAbilityCreateResponse struct {
+type CreateSkillsetAbilityResponse struct {
 	// The ID of the created ability       
 	ID                              string `json:"id"`
 }
 
-type SkillsetAbilityExportParams struct {
+type ExportSkillsetAbilitiesParams struct {
 	// The cursor to use for pagination        
 	Cursor                             *string `json:"cursor,omitempty"`
 	// The order of the paginated items        
@@ -16684,12 +16688,12 @@ type SkillsetAbilityExportParams struct {
 	Take                               *int64  `json:"take,omitempty"`
 }
 
-type SkillsetAbilityExportResponse struct {
-	Items []SkillsetAbilityExportResponseItem `json:"items"`
+type ExportSkillsetAbilitiesResponse struct {
+	Items []ExportSkillsetAbilitiesResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type SkillsetAbilityExportResponseItem struct {
+type ExportSkillsetAbilitiesResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot associated with the ability                          
@@ -16715,7 +16719,7 @@ type SkillsetAbilityExportResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type SkillsetAbilityListParams struct {
+type ListSkillsetAbilitiesParams struct {
 	// The cursor to use for pagination        
 	Cursor                             *string `json:"cursor,omitempty"`
 	// The order of the paginated items        
@@ -16726,12 +16730,12 @@ type SkillsetAbilityListParams struct {
 	Take                               *int64  `json:"take,omitempty"`
 }
 
-type SkillsetAbilityListResponse struct {
-	Items []SkillsetAbilityListResponseItem `json:"items"`
+type ListSkillsetAbilitiesResponse struct {
+	Items []ListSkillsetAbilitiesResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type SkillsetAbilityListResponseItem struct {
+type ListSkillsetAbilitiesResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot associated with the ability                          
@@ -16757,23 +16761,23 @@ type SkillsetAbilityListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type SkillsetDeleteParams struct {
+type DeleteSkillsetParams struct {
 	// The ID of the skillset to delete       
 	SkillsetID                         string `json:"skillsetId"`
 }
 
-type SkillsetDeleteResponse struct {
+type DeleteSkillsetResponse struct {
 	// The ID of the deleted skillset       
 	ID                               string `json:"id"`
 }
 
-type SkillsetFetchParams struct {
+type FetchSkillsetParams struct {
 	// The ID of the skillset to retrieve       
 	SkillsetID                           string `json:"skillsetId"`
 }
 
 // Blueprint properties
-type SkillsetFetchResponse struct {
+type FetchSkillsetResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -16792,12 +16796,12 @@ type SkillsetFetchResponse struct {
 	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type SkillsetUpdateParams struct {
+type UpdateSkillsetParams struct {
 	SkillsetID string `json:"skillsetId"`
 }
 
 // Blueprint properties
-type SkillsetUpdateRequest struct {
+type UpdateSkillsetRequest struct {
 	// The unique alias for the instance                       
 	Alias                               *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                 
@@ -16812,13 +16816,13 @@ type SkillsetUpdateRequest struct {
 	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type SkillsetUpdateResponse struct {
+type UpdateSkillsetResponse struct {
 	// The ID of the updated skillset       
 	ID                               string `json:"id"`
 }
 
 // Blueprint properties
-type SkillsetCreateRequest struct {
+type CreateSkillsetRequest struct {
 	// The unique alias for the instance                       
 	Alias                               *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                 
@@ -16833,12 +16837,12 @@ type SkillsetCreateRequest struct {
 	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type SkillsetCreateResponse struct {
+type CreateSkillsetResponse struct {
 	// The ID of the created skillset       
 	ID                               string `json:"id"`
 }
 
-type SkillsetListParams struct {
+type ListSkillsetsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -16849,12 +16853,12 @@ type SkillsetListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type SkillsetListResponse struct {
-	Items []SkillsetListResponseItem `json:"items"`
+type ListSkillsetsResponse struct {
+	Items []ListSkillsetsResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type SkillsetListResponseItem struct {
+type ListSkillsetsResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -16873,13 +16877,13 @@ type SkillsetListResponseItem struct {
 	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
 }
 
-type SpaceFetchParams struct {
+type FetchSpaceParams struct {
 	// The ID of the space to retrieve       
 	SpaceID                           string `json:"spaceId"`
 }
 
 // Blueprint properties
-type SpaceFetchResponse struct {
+type FetchSpaceResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The contact associated with the space                                  
@@ -16898,12 +16902,12 @@ type SpaceFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type SpaceUpdateParams struct {
+type UpdateSpaceParams struct {
 	SpaceID string `json:"spaceId"`
 }
 
 // Blueprint properties
-type SpaceUpdateRequest struct {
+type UpdateSpaceRequest struct {
 	// The unique alias for the instance                           
 	Alias                                   *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                     
@@ -16918,13 +16922,13 @@ type SpaceUpdateRequest struct {
 	Name                                    *string                `json:"name,omitempty"`
 }
 
-type SpaceUpdateResponse struct {
+type UpdateSpaceResponse struct {
 	// The ID of the updated space       
 	ID                            string `json:"id"`
 }
 
 // Blueprint properties
-type SpaceCreateRequest struct {
+type CreateSpaceRequest struct {
 	// The unique alias for the instance                           
 	Alias                                   *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                     
@@ -16939,12 +16943,12 @@ type SpaceCreateRequest struct {
 	Name                                    *string                `json:"name,omitempty"`
 }
 
-type SpaceCreateResponse struct {
+type CreateSpaceResponse struct {
 	// The ID of the created space       
 	ID                            string `json:"id"`
 }
 
-type SpaceExportParams struct {
+type ExportSpacesParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -16955,12 +16959,12 @@ type SpaceExportParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type SpaceExportResponse struct {
-	Items []SpaceExportResponseItem `json:"items"`
+type ExportSpacesResponse struct {
+	Items []ExportSpacesResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type SpaceExportResponseItem struct {
+type ExportSpacesResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The contact associated with the space                                  
@@ -16979,7 +16983,7 @@ type SpaceExportResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type SpaceListParams struct {
+type ListSpacesParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -16990,12 +16994,12 @@ type SpaceListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type SpaceListResponse struct {
-	Items []SpaceListResponseItem `json:"items"`
+type ListSpacesResponse struct {
+	Items []ListSpacesResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type SpaceListResponseItem struct {
+type ListSpacesResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The contact associated with the space                                  
@@ -17014,23 +17018,23 @@ type SpaceListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type TaskDeleteParams struct {
+type DeleteTaskParams struct {
 	// The ID of the task to delete       
 	TaskID                         string `json:"taskId"`
 }
 
-type TaskDeleteResponse struct {
+type DeleteTaskResponse struct {
 	// The ID of the deleted task       
 	ID                           string `json:"id"`
 }
 
-type TaskFetchParams struct {
+type FetchTaskParams struct {
 	// The ID of the task to retrieve       
 	TaskID                           string `json:"taskId"`
 }
 
 // Instance list properties
-type TaskFetchResponse struct {
+type FetchTaskResponse struct {
 	// The bot associated with the task                                       
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The contact associated with the task                                   
@@ -17055,21 +17059,21 @@ type TaskFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type TaskTriggerParams struct {
+type TriggerTaskParams struct {
 	TaskID string `json:"taskId"`
 }
 
-type TaskTriggerResponse struct {
+type TriggerTaskResponse struct {
 	// The ID of the triggered task       
 	ID                             string `json:"id"`
 }
 
-type TaskUpdateParams struct {
+type UpdateTaskParams struct {
 	TaskID string `json:"taskId"`
 }
 
 // Instance crud properties
-type TaskUpdateRequest struct {
+type UpdateTaskRequest struct {
 	// The bot associated with the task                                     
 	BotID                                            *string                `json:"botId,omitempty"`
 	// The contact associated with the task                                 
@@ -17086,13 +17090,13 @@ type TaskUpdateRequest struct {
 	SessionDuration                                  *float64               `json:"sessionDuration,omitempty"`
 }
 
-type TaskUpdateResponse struct {
+type UpdateTaskResponse struct {
 	// The ID of the updated task       
 	ID                           string `json:"id"`
 }
 
 // Instance crud properties
-type TaskCreateRequest struct {
+type CreateTaskRequest struct {
 	// The bot associated with the task                                     
 	BotID                                            *string                `json:"botId,omitempty"`
 	// The contact associated with the task                                 
@@ -17109,12 +17113,12 @@ type TaskCreateRequest struct {
 	SessionDuration                                  *float64               `json:"sessionDuration,omitempty"`
 }
 
-type TaskCreateResponse struct {
+type CreateTaskResponse struct {
 	// The ID of the created task       
 	ID                           string `json:"id"`
 }
 
-type TaskExportParams struct {
+type ExportTasksParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -17125,12 +17129,12 @@ type TaskExportParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type TaskExportResponse struct {
-	Items []TaskExportResponseItem `json:"items"`
+type ExportTasksResponse struct {
+	Items []ExportTasksResponseItem `json:"items"`
 }
 
 // Instance list properties
-type TaskExportResponseItem struct {
+type ExportTasksResponseItem struct {
 	// The bot associated with the task                                       
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The contact associated with the task                                   
@@ -17151,7 +17155,7 @@ type TaskExportResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type TaskListParams struct {
+type ListTasksParams struct {
 	// Filter by associated bot                                                 
 	BotID                                                     *string           `json:"botId,omitempty"`
 	// Filter by associated contact                                             
@@ -17168,12 +17172,12 @@ type TaskListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type TaskListResponse struct {
-	Items []TaskListResponseItem `json:"items"`
+type ListTasksResponse struct {
+	Items []ListTasksResponseItem `json:"items"`
 }
 
 // Instance list properties
-type TaskListResponseItem struct {
+type ListTasksResponseItem struct {
 	// The bot associated with the task                                       
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The contact associated with the task                                   
@@ -17198,7 +17202,7 @@ type TaskListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type TeamListParams struct {
+type ListTeamsParams struct {
 	// The cursor to use for pagination                                         
 	Cursor                                                    *string           `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                  
@@ -17209,12 +17213,12 @@ type TeamListParams struct {
 	Take                                                      *int64            `json:"take,omitempty"`
 }
 
-type TeamListResponse struct {
-	Items []TeamListResponseItem `json:"items"`
+type ListTeamsResponse struct {
+	Items []ListTeamsResponseItem `json:"items"`
 }
 
 // Instance list properties
-type TeamListResponseItem struct {
+type ListTeamsResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -17229,11 +17233,11 @@ type TeamListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type UsageFetchResponse struct {
+type FetchUsageResponse struct {
 	// The number of conversations the user has created                           
 	Conversations                                      float64                    `json:"conversations"`
 	// Database usage information                                                 
-	Database                                           UsageFetchResponseDatabase `json:"database"`
+	Database                                           FetchUsageResponseDatabase `json:"database"`
 	// The number of messages the user has sent                                   
 	Messages                                           float64                    `json:"messages"`
 	// The number of tokens the user has used                                     
@@ -17241,7 +17245,7 @@ type UsageFetchResponse struct {
 }
 
 // Database usage information
-type UsageFetchResponseDatabase struct {
+type FetchUsageResponseDatabase struct {
 	// The number of abilities the user has created        
 	Abilities                                      float64 `json:"abilities"`
 	// The number of datasets the user has created         
@@ -17256,11 +17260,11 @@ type UsageFetchResponseDatabase struct {
 	Users                                          float64 `json:"users"`
 }
 
-type UsageSeriesFetchResponse struct {
+type FetchUsageSeriesResponse struct {
 	// The number of conversations the user has created                                  
 	Conversations                                      []Conversation                    `json:"conversations"`
 	// The number of messages the user has created                                       
-	Messages                                           []UsageSeriesFetchResponseMessage `json:"messages"`
+	Messages                                           []FetchUsageSeriesResponseMessage `json:"messages"`
 	// The number of tokens the user has used                                            
 	Tokens                                             []TokenElement                    `json:"tokens"`
 }
@@ -17272,7 +17276,7 @@ type Conversation struct {
 	Total                                                 float64 `json:"total"`
 }
 
-type UsageSeriesFetchResponseMessage struct {
+type FetchUsageSeriesResponseMessage struct {
 	// The date of the data point                            
 	Date                                             float64 `json:"date"`
 	// The total number of messages the user has used        
@@ -17734,20 +17738,20 @@ const (
 )
 
 // The type of the example
-type PlatformExampleFetchResponseType string
+type FetchPlatformExampleResponseType string
 
 const (
-	Blueprint   PlatformExampleFetchResponseType = "blueprint"
-	Discord     PlatformExampleFetchResponseType = "discord"
-	Email       PlatformExampleFetchResponseType = "email"
-	Messenger   PlatformExampleFetchResponseType = "messenger"
-	Project     PlatformExampleFetchResponseType = "project"
-	Slack       PlatformExampleFetchResponseType = "slack"
-	Telegram    PlatformExampleFetchResponseType = "telegram"
-	Twilio      PlatformExampleFetchResponseType = "twilio"
-	TypeTrigger PlatformExampleFetchResponseType = "trigger"
-	Whatsapp    PlatformExampleFetchResponseType = "whatsapp"
-	Widget      PlatformExampleFetchResponseType = "widget"
+	Blueprint   FetchPlatformExampleResponseType = "blueprint"
+	Discord     FetchPlatformExampleResponseType = "discord"
+	Email       FetchPlatformExampleResponseType = "email"
+	Messenger   FetchPlatformExampleResponseType = "messenger"
+	Project     FetchPlatformExampleResponseType = "project"
+	Slack       FetchPlatformExampleResponseType = "slack"
+	Telegram    FetchPlatformExampleResponseType = "telegram"
+	Twilio      FetchPlatformExampleResponseType = "twilio"
+	TypeTrigger FetchPlatformExampleResponseType = "trigger"
+	Whatsapp    FetchPlatformExampleResponseType = "whatsapp"
+	Widget      FetchPlatformExampleResponseType = "widget"
 )
 
 // The kind of the secret
@@ -17800,12 +17804,12 @@ const (
 	WaitForChannelMessageEnd   CompleteStreamingResponseItemType = "waitForChannelMessageEnd"
 )
 
-type ConversationAttachmentUploadRequestFile struct {
+type UploadConversationAttachmentRequestFile struct {
 	PurpleFile *PurpleFile
 	String     *string
 }
 
-func (x *ConversationAttachmentUploadRequestFile) UnmarshalJSON(data []byte) error {
+func (x *UploadConversationAttachmentRequestFile) UnmarshalJSON(data []byte) error {
 	x.PurpleFile = nil
 	var c PurpleFile
 	object, err := unmarshalUnion(data, nil, nil, nil, &x.String, false, nil, true, &c, false, nil, false, nil, false)
@@ -17818,17 +17822,17 @@ func (x *ConversationAttachmentUploadRequestFile) UnmarshalJSON(data []byte) err
 	return nil
 }
 
-func (x *ConversationAttachmentUploadRequestFile) MarshalJSON() ([]byte, error) {
+func (x *UploadConversationAttachmentRequestFile) MarshalJSON() ([]byte, error) {
 	return marshalUnion(nil, nil, nil, x.String, false, nil, x.PurpleFile != nil, x.PurpleFile, false, nil, false, nil, false)
 }
 
 // The contact ID to associate with this conversation
-type ConversationCompleteRequest1_ContactID struct {
+type CompleteConversationRequestContactID struct {
 	PurpleContactID *PurpleContactID
 	String          *string
 }
 
-func (x *ConversationCompleteRequest1_ContactID) UnmarshalJSON(data []byte) error {
+func (x *CompleteConversationRequestContactID) UnmarshalJSON(data []byte) error {
 	x.PurpleContactID = nil
 	var c PurpleContactID
 	object, err := unmarshalUnion(data, nil, nil, nil, &x.String, false, nil, true, &c, false, nil, false, nil, false)
@@ -17841,17 +17845,17 @@ func (x *ConversationCompleteRequest1_ContactID) UnmarshalJSON(data []byte) erro
 	return nil
 }
 
-func (x *ConversationCompleteRequest1_ContactID) MarshalJSON() ([]byte, error) {
+func (x *CompleteConversationRequestContactID) MarshalJSON() ([]byte, error) {
 	return marshalUnion(nil, nil, nil, x.String, false, nil, x.PurpleContactID != nil, x.PurpleContactID, false, nil, false, nil, false)
 }
 
 // The contact ID to associate with this conversation
-type ConversationDispatchRequest1_ContactID struct {
+type DispatchConversationRequestContactID struct {
 	FluffyContactID *FluffyContactID
 	String          *string
 }
 
-func (x *ConversationDispatchRequest1_ContactID) UnmarshalJSON(data []byte) error {
+func (x *DispatchConversationRequestContactID) UnmarshalJSON(data []byte) error {
 	x.FluffyContactID = nil
 	var c FluffyContactID
 	object, err := unmarshalUnion(data, nil, nil, nil, &x.String, false, nil, true, &c, false, nil, false, nil, false)
@@ -17864,7 +17868,7 @@ func (x *ConversationDispatchRequest1_ContactID) UnmarshalJSON(data []byte) erro
 	return nil
 }
 
-func (x *ConversationDispatchRequest1_ContactID) MarshalJSON() ([]byte, error) {
+func (x *DispatchConversationRequestContactID) MarshalJSON() ([]byte, error) {
 	return marshalUnion(nil, nil, nil, x.String, false, nil, x.FluffyContactID != nil, x.FluffyContactID, false, nil, false, nil, false)
 }
 
@@ -17912,12 +17916,12 @@ func (x *Eq) MarshalJSON() ([]byte, error) {
 	return marshalUnion(nil, x.Double, x.Bool, x.String, false, nil, false, nil, false, nil, false, nil, false)
 }
 
-type FileUploadRequestFile struct {
+type UploadFileRequestFile struct {
 	FluffyFile *FluffyFile
 	String     *string
 }
 
-func (x *FileUploadRequestFile) UnmarshalJSON(data []byte) error {
+func (x *UploadFileRequestFile) UnmarshalJSON(data []byte) error {
 	x.FluffyFile = nil
 	var c FluffyFile
 	object, err := unmarshalUnion(data, nil, nil, nil, &x.String, false, nil, true, &c, false, nil, false, nil, false)
@@ -17930,7 +17934,7 @@ func (x *FileUploadRequestFile) UnmarshalJSON(data []byte) error {
 	return nil
 }
 
-func (x *FileUploadRequestFile) MarshalJSON() ([]byte, error) {
+func (x *UploadFileRequestFile) MarshalJSON() ([]byte, error) {
 	return marshalUnion(nil, nil, nil, x.String, false, nil, x.FluffyFile != nil, x.FluffyFile, false, nil, false, nil, false)
 }
 
