@@ -105,8 +105,8 @@ func (c *ConversationClient) Delete(ctx context.Context, conversationID string) 
 // - Build simple chatbots without server-side state
 //
 // For stateful conversations (where the server tracks history), use CompleteMessage instead.
-func (c *ConversationClient) Complete(ctx context.Context, req types.ConversationCompleteRequest1) (*types.ConversationCompleteResponse1, error) {
-	var result types.ConversationCompleteResponse1
+func (c *ConversationClient) Complete(ctx context.Context, req types.ConversationCompleteRequest) (*types.ConversationCompleteResponse, error) {
+	var result types.ConversationCompleteResponse
 	if err := c.httpClient.Post(ctx, "/api/v1/conversation/complete", req, &result); err != nil {
 		return nil, err
 	}
@@ -130,7 +130,7 @@ func (c *ConversationClient) Complete(ctx context.Context, req types.Conversatio
 //	if err := <-errs; err != nil {
 //	    log.Fatal(err)
 //	}
-func (c *ConversationClient) CompleteStream(ctx context.Context, req types.ConversationCompleteRequest1) (<-chan Event, <-chan error) {
+func (c *ConversationClient) CompleteStream(ctx context.Context, req types.ConversationCompleteRequest) (<-chan Event, <-chan error) {
 	rawEvents, rawErrs := c.httpClient.PostStream(ctx, "/api/v1/conversation/complete", req)
 	return wrapStreamEvents(rawEvents, rawErrs)
 }
@@ -144,10 +144,10 @@ func (c *ConversationClient) CompleteStream(ctx context.Context, req types.Conve
 // - Build multi-turn conversations with persistence
 //
 // For stateless completions (where you pass all messages), use Complete instead.
-func (c *ConversationClient) CompleteMessage(ctx context.Context, conversationID string, req types.ConversationCompleteRequest) (*types.ConversationCompleteResponse, error) {
+func (c *ConversationClient) CompleteMessage(ctx context.Context, conversationID string, req types.ConversationMessageCompleteRequest) (*types.ConversationMessageCompleteResponse, error) {
 	path := fmt.Sprintf("/api/v1/conversation/%s/complete", conversationID)
 
-	var result types.ConversationCompleteResponse
+	var result types.ConversationMessageCompleteResponse
 	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
 		return nil, err
 	}
@@ -171,17 +171,17 @@ func (c *ConversationClient) CompleteMessage(ctx context.Context, conversationID
 //	if err := <-errs; err != nil {
 //	    log.Fatal(err)
 //	}
-func (c *ConversationClient) CompleteMessageStream(ctx context.Context, conversationID string, req types.ConversationCompleteRequest) (<-chan Event, <-chan error) {
+func (c *ConversationClient) CompleteMessageStream(ctx context.Context, conversationID string, req types.ConversationMessageCompleteRequest) (<-chan Event, <-chan error) {
 	path := fmt.Sprintf("/api/v1/conversation/%s/complete", conversationID)
 	rawEvents, rawErrs := c.httpClient.PostStream(ctx, path, req)
 	return wrapStreamEvents(rawEvents, rawErrs)
 }
 
 // Send sends a user message to the conversation.
-func (c *ConversationClient) Send(ctx context.Context, conversationID string, req types.ConversationSendRequest) (*types.ConversationSendResponse, error) {
+func (c *ConversationClient) Send(ctx context.Context, conversationID string, req types.ConversationMessageSendRequest) (*types.ConversationMessageSendResponse, error) {
 	path := fmt.Sprintf("/api/v1/conversation/%s/send", conversationID)
 
-	var result types.ConversationSendResponse
+	var result types.ConversationMessageSendResponse
 	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
 		return nil, err
 	}
@@ -204,16 +204,16 @@ func (c *ConversationClient) Send(ctx context.Context, conversationID string, re
 //	if err := <-errs; err != nil {
 //	    log.Fatal(err)
 //	}
-func (c *ConversationClient) SendStream(ctx context.Context, conversationID string, req types.ConversationSendRequest) (<-chan httpclient.StreamEvent, <-chan error) {
+func (c *ConversationClient) SendStream(ctx context.Context, conversationID string, req types.ConversationMessageSendRequest) (<-chan httpclient.StreamEvent, <-chan error) {
 	path := fmt.Sprintf("/api/v1/conversation/%s/send", conversationID)
 	return c.httpClient.PostStream(ctx, path, req)
 }
 
 // Receive receives the latest bot response from the conversation.
-func (c *ConversationClient) Receive(ctx context.Context, conversationID string, req types.ConversationReceiveRequest) (*types.ConversationReceiveResponse, error) {
+func (c *ConversationClient) Receive(ctx context.Context, conversationID string, req types.ConversationMessageReceiveRequest) (*types.ConversationMessageReceiveResponse, error) {
 	path := fmt.Sprintf("/api/v1/conversation/%s/receive", conversationID)
 
-	var result types.ConversationReceiveResponse
+	var result types.ConversationMessageReceiveResponse
 	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
 		return nil, err
 	}
@@ -236,7 +236,7 @@ func (c *ConversationClient) Receive(ctx context.Context, conversationID string,
 //	if err := <-errs; err != nil {
 //	    log.Fatal(err)
 //	}
-func (c *ConversationClient) ReceiveStream(ctx context.Context, conversationID string, req types.ConversationReceiveRequest) (<-chan httpclient.StreamEvent, <-chan error) {
+func (c *ConversationClient) ReceiveStream(ctx context.Context, conversationID string, req types.ConversationMessageReceiveRequest) (<-chan httpclient.StreamEvent, <-chan error) {
 	path := fmt.Sprintf("/api/v1/conversation/%s/receive", conversationID)
 	return c.httpClient.PostStream(ctx, path, req)
 }

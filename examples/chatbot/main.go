@@ -43,7 +43,7 @@ func main() {
 	ctx := context.Background()
 
 	// Initialize conversation history
-	var messages []types.ConversationCompleteRequest1_Message
+	var messages []types.ConversationCompleteRequestMessage
 
 	// Create a scanner for reading user input
 	scanner := bufio.NewScanner(os.Stdin)
@@ -78,8 +78,8 @@ func main() {
 		}
 
 		// Add user message to history
-		messages = append(messages, types.ConversationCompleteRequest1_Message{
-			Type: types.User,
+		messages = append(messages, types.ConversationCompleteRequestMessage{
+			Type: types.HilariousUser,
 			Text: userInput,
 		})
 
@@ -87,7 +87,7 @@ func main() {
 		fmt.Print("bot: ")
 
 		// Stream the response using the SDK's stateless complete
-		events, errs := client.Conversation.CompleteStream(ctx, types.ConversationCompleteRequest1{
+		events, errs := client.Conversation.CompleteStream(ctx, types.ConversationCompleteRequest{
 			Model:    &model,
 			Messages: messages,
 		})
@@ -113,8 +113,8 @@ func main() {
 		}
 
 		// Add bot response to history
-		messages = append(messages, types.ConversationCompleteRequest1_Message{
-			Type: types.Bot,
+		messages = append(messages, types.ConversationCompleteRequestMessage{
+			Type: types.HilariousBot,
 			Text: responseText.String(),
 		})
 

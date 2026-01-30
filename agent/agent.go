@@ -82,17 +82,17 @@ type CompleteResult struct {
 // method directly.
 func Complete(ctx context.Context, client *sdk.Client, opts CompleteOptions) (*CompleteResult, error) {
 	// Convert messages to API format
-	apiMessages := make([]types.ConversationCompleteRequest1_Message, 0, len(opts.Messages))
+	apiMessages := make([]types.ConversationCompleteRequestMessage, 0, len(opts.Messages))
 	for _, msg := range opts.Messages {
-		apiMessages = append(apiMessages, types.ConversationCompleteRequest1_Message{
-			Type: types.MessageType(msg.Type),
+		apiMessages = append(apiMessages, types.ConversationCompleteRequestMessage{
+			Type: types.MagentaType(msg.Type),
 			Text: msg.Text,
 			Meta: msg.Meta,
 		})
 	}
 
 	// Build request
-	req := types.ConversationCompleteRequest1{
+	req := types.ConversationCompleteRequest{
 		Messages: apiMessages,
 	}
 
@@ -113,7 +113,7 @@ func Complete(ctx context.Context, client *sdk.Client, opts CompleteOptions) (*C
 	}
 
 	// Call the stateless complete endpoint
-	var result types.ConversationCompleteResponse1
+	var result types.ConversationCompleteResponse
 	if err := client.HTTPClient().Post(ctx, "/api/v1/conversation/complete", req, &result); err != nil {
 		return nil, err
 	}
@@ -146,17 +146,17 @@ func Complete(ctx context.Context, client *sdk.Client, opts CompleteOptions) (*C
 //	}
 func CompleteStream(ctx context.Context, client *sdk.Client, opts CompleteOptions) (<-chan httpclient.StreamEvent, <-chan error) {
 	// Convert messages to API format
-	apiMessages := make([]types.ConversationCompleteRequest1_Message, 0, len(opts.Messages))
+	apiMessages := make([]types.ConversationCompleteRequestMessage, 0, len(opts.Messages))
 	for _, msg := range opts.Messages {
-		apiMessages = append(apiMessages, types.ConversationCompleteRequest1_Message{
-			Type: types.MessageType(msg.Type),
+		apiMessages = append(apiMessages, types.ConversationCompleteRequestMessage{
+			Type: types.MagentaType(msg.Type),
 			Text: msg.Text,
 			Meta: msg.Meta,
 		})
 	}
 
 	// Build request
-	req := types.ConversationCompleteRequest1{
+	req := types.ConversationCompleteRequest{
 		Messages: apiMessages,
 	}
 

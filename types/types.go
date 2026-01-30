@@ -7,11 +7,11 @@
 //    graphqlResponse, err := UnmarshalGraphqlResponse(bytes)
 //    bytes, err = graphqlResponse.Marshal()
 //
-//    platformReportsListParams, err := UnmarshalPlatformReportsListParams(bytes)
-//    bytes, err = platformReportsListParams.Marshal()
+//    platformReportListParams, err := UnmarshalPlatformReportListParams(bytes)
+//    bytes, err = platformReportListParams.Marshal()
 //
-//    platformReportsListResponse, err := UnmarshalPlatformReportsListResponse(bytes)
-//    bytes, err = platformReportsListResponse.Marshal()
+//    platformReportListResponse, err := UnmarshalPlatformReportListResponse(bytes)
+//    bytes, err = platformReportListResponse.Marshal()
 //
 //    reportGenerateParams, err := UnmarshalReportGenerateParams(bytes)
 //    bytes, err = reportGenerateParams.Marshal()
@@ -52,11 +52,11 @@
 //    blueprintFetchResponse, err := UnmarshalBlueprintFetchResponse(bytes)
 //    bytes, err = blueprintFetchResponse.Marshal()
 //
-//    blueprintResourcesListParams, err := UnmarshalBlueprintResourcesListParams(bytes)
-//    bytes, err = blueprintResourcesListParams.Marshal()
+//    blueprintResourceListParams, err := UnmarshalBlueprintResourceListParams(bytes)
+//    bytes, err = blueprintResourceListParams.Marshal()
 //
-//    blueprintResourcesListResponse, err := UnmarshalBlueprintResourcesListResponse(bytes)
-//    bytes, err = blueprintResourcesListResponse.Marshal()
+//    blueprintResourceListResponse, err := UnmarshalBlueprintResourceListResponse(bytes)
+//    bytes, err = blueprintResourceListResponse.Marshal()
 //
 //    blueprintUpdateParams, err := UnmarshalBlueprintUpdateParams(bytes)
 //    bytes, err = blueprintUpdateParams.Marshal()
@@ -73,11 +73,11 @@
 //    blueprintCreateResponse, err := UnmarshalBlueprintCreateResponse(bytes)
 //    bytes, err = blueprintCreateResponse.Marshal()
 //
-//    blueprintsListParams, err := UnmarshalBlueprintsListParams(bytes)
-//    bytes, err = blueprintsListParams.Marshal()
+//    blueprintListParams, err := UnmarshalBlueprintListParams(bytes)
+//    bytes, err = blueprintListParams.Marshal()
 //
-//    blueprintsListResponse, err := UnmarshalBlueprintsListResponse(bytes)
-//    bytes, err = blueprintsListResponse.Marshal()
+//    blueprintListResponse, err := UnmarshalBlueprintListResponse(bytes)
+//    bytes, err = blueprintListResponse.Marshal()
 //
 //    botCloneParams, err := UnmarshalBotCloneParams(bytes)
 //    bytes, err = botCloneParams.Marshal()
@@ -160,11 +160,11 @@
 //    botCreateResponse, err := UnmarshalBotCreateResponse(bytes)
 //    bytes, err = botCreateResponse.Marshal()
 //
-//    botsListParams, err := UnmarshalBotsListParams(bytes)
-//    bytes, err = botsListParams.Marshal()
+//    botListParams, err := UnmarshalBotListParams(bytes)
+//    bytes, err = botListParams.Marshal()
 //
-//    botsListResponse, err := UnmarshalBotsListResponse(bytes)
-//    bytes, err = botsListResponse.Marshal()
+//    botListResponse, err := UnmarshalBotListResponse(bytes)
+//    bytes, err = botListResponse.Marshal()
 //
 //    channelMessagePublishParams, err := UnmarshalChannelMessagePublishParams(bytes)
 //    bytes, err = channelMessagePublishParams.Marshal()
@@ -181,11 +181,11 @@
 //    channelMessagesSubscribeRequest, err := UnmarshalChannelMessagesSubscribeRequest(bytes)
 //    bytes, err = channelMessagesSubscribeRequest.Marshal()
 //
-//    contactConversationsListParams, err := UnmarshalContactConversationsListParams(bytes)
-//    bytes, err = contactConversationsListParams.Marshal()
+//    contactConversationListParams, err := UnmarshalContactConversationListParams(bytes)
+//    bytes, err = contactConversationListParams.Marshal()
 //
-//    contactConversationsListResponse, err := UnmarshalContactConversationsListResponse(bytes)
-//    bytes, err = contactConversationsListResponse.Marshal()
+//    contactConversationListResponse, err := UnmarshalContactConversationListResponse(bytes)
+//    bytes, err = contactConversationListResponse.Marshal()
 //
 //    contactDeleteParams, err := UnmarshalContactDeleteParams(bytes)
 //    bytes, err = contactDeleteParams.Marshal()
@@ -202,11 +202,11 @@
 //    contactFetchResponse, err := UnmarshalContactFetchResponse(bytes)
 //    bytes, err = contactFetchResponse.Marshal()
 //
-//    contactMemoriesListParams, err := UnmarshalContactMemoriesListParams(bytes)
-//    bytes, err = contactMemoriesListParams.Marshal()
+//    contactMemoryListParams, err := UnmarshalContactMemoryListParams(bytes)
+//    bytes, err = contactMemoryListParams.Marshal()
 //
-//    contactMemoriesListResponse, err := UnmarshalContactMemoriesListResponse(bytes)
-//    bytes, err = contactMemoriesListResponse.Marshal()
+//    contactMemoryListResponse, err := UnmarshalContactMemoryListResponse(bytes)
+//    bytes, err = contactMemoryListResponse.Marshal()
 //
 //    contactMemorySearchParams, err := UnmarshalContactMemorySearchParams(bytes)
 //    bytes, err = contactMemorySearchParams.Marshal()
@@ -244,23 +244,23 @@
 //    contactSecretVerifyResponse, err := UnmarshalContactSecretVerifyResponse(bytes)
 //    bytes, err = contactSecretVerifyResponse.Marshal()
 //
-//    contactSecretsListParams, err := UnmarshalContactSecretsListParams(bytes)
-//    bytes, err = contactSecretsListParams.Marshal()
+//    contactSecretListParams, err := UnmarshalContactSecretListParams(bytes)
+//    bytes, err = contactSecretListParams.Marshal()
 //
-//    contactSecretsListResponse, err := UnmarshalContactSecretsListResponse(bytes)
-//    bytes, err = contactSecretsListResponse.Marshal()
+//    contactSecretListResponse, err := UnmarshalContactSecretListResponse(bytes)
+//    bytes, err = contactSecretListResponse.Marshal()
 //
-//    contactSpacesListParams, err := UnmarshalContactSpacesListParams(bytes)
-//    bytes, err = contactSpacesListParams.Marshal()
+//    contactSpaceListParams, err := UnmarshalContactSpaceListParams(bytes)
+//    bytes, err = contactSpaceListParams.Marshal()
 //
-//    contactSpacesListResponse, err := UnmarshalContactSpacesListResponse(bytes)
-//    bytes, err = contactSpacesListResponse.Marshal()
+//    contactSpaceListResponse, err := UnmarshalContactSpaceListResponse(bytes)
+//    bytes, err = contactSpaceListResponse.Marshal()
 //
-//    contactTasksListParams, err := UnmarshalContactTasksListParams(bytes)
-//    bytes, err = contactTasksListParams.Marshal()
+//    contactTaskListParams, err := UnmarshalContactTaskListParams(bytes)
+//    bytes, err = contactTaskListParams.Marshal()
 //
-//    contactTasksListResponse, err := UnmarshalContactTasksListResponse(bytes)
-//    bytes, err = contactTasksListResponse.Marshal()
+//    contactTaskListResponse, err := UnmarshalContactTaskListResponse(bytes)
+//    bytes, err = contactTaskListResponse.Marshal()
 //
 //    contactUpdateParams, err := UnmarshalContactUpdateParams(bytes)
 //    bytes, err = contactUpdateParams.Marshal()
@@ -289,11 +289,11 @@
 //    contactsExportResponse, err := UnmarshalContactsExportResponse(bytes)
 //    bytes, err = contactsExportResponse.Marshal()
 //
-//    contactsListParams, err := UnmarshalContactsListParams(bytes)
-//    bytes, err = contactsListParams.Marshal()
+//    contactListParams, err := UnmarshalContactListParams(bytes)
+//    bytes, err = contactListParams.Marshal()
 //
-//    contactsListResponse, err := UnmarshalContactsListResponse(bytes)
-//    bytes, err = contactsListResponse.Marshal()
+//    contactListResponse, err := UnmarshalContactListResponse(bytes)
+//    bytes, err = contactListResponse.Marshal()
 //
 //    conversationAttachmentUploadParams, err := UnmarshalConversationAttachmentUploadParams(bytes)
 //    bytes, err = conversationAttachmentUploadParams.Marshal()
@@ -412,11 +412,11 @@
 //    conversationMessageCreateResponse, err := UnmarshalConversationMessageCreateResponse(bytes)
 //    bytes, err = conversationMessageCreateResponse.Marshal()
 //
-//    conversationMessagesListParams, err := UnmarshalConversationMessagesListParams(bytes)
-//    bytes, err = conversationMessagesListParams.Marshal()
+//    conversationMessageListParams, err := UnmarshalConversationMessageListParams(bytes)
+//    bytes, err = conversationMessageListParams.Marshal()
 //
-//    conversationMessagesListResponse, err := UnmarshalConversationMessagesListResponse(bytes)
-//    bytes, err = conversationMessagesListResponse.Marshal()
+//    conversationMessageListResponse, err := UnmarshalConversationMessageListResponse(bytes)
+//    bytes, err = conversationMessageListResponse.Marshal()
 //
 //    conversationMessageReceiveParams, err := UnmarshalConversationMessageReceiveParams(bytes)
 //    bytes, err = conversationMessageReceiveParams.Marshal()
@@ -493,11 +493,11 @@
 //    conversationsExportResponse, err := UnmarshalConversationsExportResponse(bytes)
 //    bytes, err = conversationsExportResponse.Marshal()
 //
-//    conversationsListParams, err := UnmarshalConversationsListParams(bytes)
-//    bytes, err = conversationsListParams.Marshal()
+//    conversationListParams, err := UnmarshalConversationListParams(bytes)
+//    bytes, err = conversationListParams.Marshal()
 //
-//    conversationsListResponse, err := UnmarshalConversationsListResponse(bytes)
-//    bytes, err = conversationsListResponse.Marshal()
+//    conversationListResponse, err := UnmarshalConversationListResponse(bytes)
+//    bytes, err = conversationListResponse.Marshal()
 //
 //    datasetDeleteParams, err := UnmarshalDatasetDeleteParams(bytes)
 //    bytes, err = datasetDeleteParams.Marshal()
@@ -541,11 +541,11 @@
 //    datasetFileSyncResponse, err := UnmarshalDatasetFileSyncResponse(bytes)
 //    bytes, err = datasetFileSyncResponse.Marshal()
 //
-//    datasetFilesListParams, err := UnmarshalDatasetFilesListParams(bytes)
-//    bytes, err = datasetFilesListParams.Marshal()
+//    datasetFileListParams, err := UnmarshalDatasetFileListParams(bytes)
+//    bytes, err = datasetFileListParams.Marshal()
 //
-//    datasetFilesListResponse, err := UnmarshalDatasetFilesListResponse(bytes)
-//    bytes, err = datasetFilesListResponse.Marshal()
+//    datasetFileListResponse, err := UnmarshalDatasetFileListResponse(bytes)
+//    bytes, err = datasetFileListResponse.Marshal()
 //
 //    datasetRecordDeleteParams, err := UnmarshalDatasetRecordDeleteParams(bytes)
 //    bytes, err = datasetRecordDeleteParams.Marshal()
@@ -586,11 +586,11 @@
 //    datasetRecordsExportResponse, err := UnmarshalDatasetRecordsExportResponse(bytes)
 //    bytes, err = datasetRecordsExportResponse.Marshal()
 //
-//    datasetRecordsListParams, err := UnmarshalDatasetRecordsListParams(bytes)
-//    bytes, err = datasetRecordsListParams.Marshal()
+//    datasetRecordListParams, err := UnmarshalDatasetRecordListParams(bytes)
+//    bytes, err = datasetRecordListParams.Marshal()
 //
-//    datasetRecordsListResponse, err := UnmarshalDatasetRecordsListResponse(bytes)
-//    bytes, err = datasetRecordsListResponse.Marshal()
+//    datasetRecordListResponse, err := UnmarshalDatasetRecordListResponse(bytes)
+//    bytes, err = datasetRecordListResponse.Marshal()
 //
 //    datasetSearchParams, err := UnmarshalDatasetSearchParams(bytes)
 //    bytes, err = datasetSearchParams.Marshal()
@@ -616,11 +616,11 @@
 //    datasetCreateResponse, err := UnmarshalDatasetCreateResponse(bytes)
 //    bytes, err = datasetCreateResponse.Marshal()
 //
-//    datasetsListParams, err := UnmarshalDatasetsListParams(bytes)
-//    bytes, err = datasetsListParams.Marshal()
+//    datasetListParams, err := UnmarshalDatasetListParams(bytes)
+//    bytes, err = datasetListParams.Marshal()
 //
-//    datasetsListResponse, err := UnmarshalDatasetsListResponse(bytes)
-//    bytes, err = datasetsListResponse.Marshal()
+//    datasetListResponse, err := UnmarshalDatasetListResponse(bytes)
+//    bytes, err = datasetListResponse.Marshal()
 //
 //    eventLogsExportParams, err := UnmarshalEventLogsExportParams(bytes)
 //    bytes, err = eventLogsExportParams.Marshal()
@@ -628,11 +628,11 @@
 //    eventLogsExportResponse, err := UnmarshalEventLogsExportResponse(bytes)
 //    bytes, err = eventLogsExportResponse.Marshal()
 //
-//    eventLogsListParams, err := UnmarshalEventLogsListParams(bytes)
-//    bytes, err = eventLogsListParams.Marshal()
+//    eventLogListParams, err := UnmarshalEventLogListParams(bytes)
+//    bytes, err = eventLogListParams.Marshal()
 //
-//    eventLogsListResponse, err := UnmarshalEventLogsListResponse(bytes)
-//    bytes, err = eventLogsListResponse.Marshal()
+//    eventLogListResponse, err := UnmarshalEventLogListResponse(bytes)
+//    bytes, err = eventLogListResponse.Marshal()
 //
 //    eventLogsSubscribeRequest, err := UnmarshalEventLogsSubscribeRequest(bytes)
 //    bytes, err = eventLogsSubscribeRequest.Marshal()
@@ -691,56 +691,56 @@
 //    fileCreateResponse, err := UnmarshalFileCreateResponse(bytes)
 //    bytes, err = fileCreateResponse.Marshal()
 //
-//    filesListParams, err := UnmarshalFilesListParams(bytes)
-//    bytes, err = filesListParams.Marshal()
+//    fileListParams, err := UnmarshalFileListParams(bytes)
+//    bytes, err = fileListParams.Marshal()
 //
-//    filesListResponse, err := UnmarshalFilesListResponse(bytes)
-//    bytes, err = filesListResponse.Marshal()
+//    fileListResponse, err := UnmarshalFileListResponse(bytes)
+//    bytes, err = fileListResponse.Marshal()
 //
-//    discordIntegrationDeleteParams, err := UnmarshalDiscordIntegrationDeleteParams(bytes)
-//    bytes, err = discordIntegrationDeleteParams.Marshal()
+//    integrationDiscordDeleteParams, err := UnmarshalIntegrationDiscordDeleteParams(bytes)
+//    bytes, err = integrationDiscordDeleteParams.Marshal()
 //
-//    discordIntegrationDeleteRequest, err := UnmarshalDiscordIntegrationDeleteRequest(bytes)
-//    bytes, err = discordIntegrationDeleteRequest.Marshal()
+//    integrationDiscordDeleteRequest, err := UnmarshalIntegrationDiscordDeleteRequest(bytes)
+//    bytes, err = integrationDiscordDeleteRequest.Marshal()
 //
-//    discordIntegrationDeleteResponse, err := UnmarshalDiscordIntegrationDeleteResponse(bytes)
-//    bytes, err = discordIntegrationDeleteResponse.Marshal()
+//    integrationDiscordDeleteResponse, err := UnmarshalIntegrationDiscordDeleteResponse(bytes)
+//    bytes, err = integrationDiscordDeleteResponse.Marshal()
 //
-//    discordIntegrationFetchParams, err := UnmarshalDiscordIntegrationFetchParams(bytes)
-//    bytes, err = discordIntegrationFetchParams.Marshal()
+//    integrationDiscordFetchParams, err := UnmarshalIntegrationDiscordFetchParams(bytes)
+//    bytes, err = integrationDiscordFetchParams.Marshal()
 //
-//    discordIntegrationFetchResponse, err := UnmarshalDiscordIntegrationFetchResponse(bytes)
-//    bytes, err = discordIntegrationFetchResponse.Marshal()
+//    integrationDiscordFetchResponse, err := UnmarshalIntegrationDiscordFetchResponse(bytes)
+//    bytes, err = integrationDiscordFetchResponse.Marshal()
 //
-//    discordIntegrationSetupParams, err := UnmarshalDiscordIntegrationSetupParams(bytes)
-//    bytes, err = discordIntegrationSetupParams.Marshal()
+//    integrationDiscordSetupParams, err := UnmarshalIntegrationDiscordSetupParams(bytes)
+//    bytes, err = integrationDiscordSetupParams.Marshal()
 //
-//    discordIntegrationSetupRequest, err := UnmarshalDiscordIntegrationSetupRequest(bytes)
-//    bytes, err = discordIntegrationSetupRequest.Marshal()
+//    integrationDiscordSetupRequest, err := UnmarshalIntegrationDiscordSetupRequest(bytes)
+//    bytes, err = integrationDiscordSetupRequest.Marshal()
 //
-//    discordIntegrationSetupResponse, err := UnmarshalDiscordIntegrationSetupResponse(bytes)
-//    bytes, err = discordIntegrationSetupResponse.Marshal()
+//    integrationDiscordSetupResponse, err := UnmarshalIntegrationDiscordSetupResponse(bytes)
+//    bytes, err = integrationDiscordSetupResponse.Marshal()
 //
-//    discordIntegrationUpdateParams, err := UnmarshalDiscordIntegrationUpdateParams(bytes)
-//    bytes, err = discordIntegrationUpdateParams.Marshal()
+//    integrationDiscordUpdateParams, err := UnmarshalIntegrationDiscordUpdateParams(bytes)
+//    bytes, err = integrationDiscordUpdateParams.Marshal()
 //
-//    discordIntegrationUpdateRequest, err := UnmarshalDiscordIntegrationUpdateRequest(bytes)
-//    bytes, err = discordIntegrationUpdateRequest.Marshal()
+//    integrationDiscordUpdateRequest, err := UnmarshalIntegrationDiscordUpdateRequest(bytes)
+//    bytes, err = integrationDiscordUpdateRequest.Marshal()
 //
-//    discordIntegrationUpdateResponse, err := UnmarshalDiscordIntegrationUpdateResponse(bytes)
-//    bytes, err = discordIntegrationUpdateResponse.Marshal()
+//    integrationDiscordUpdateResponse, err := UnmarshalIntegrationDiscordUpdateResponse(bytes)
+//    bytes, err = integrationDiscordUpdateResponse.Marshal()
 //
-//    discordIntegrationCreateRequest, err := UnmarshalDiscordIntegrationCreateRequest(bytes)
-//    bytes, err = discordIntegrationCreateRequest.Marshal()
+//    integrationDiscordCreateRequest, err := UnmarshalIntegrationDiscordCreateRequest(bytes)
+//    bytes, err = integrationDiscordCreateRequest.Marshal()
 //
-//    discordIntegrationCreateResponse, err := UnmarshalDiscordIntegrationCreateResponse(bytes)
-//    bytes, err = discordIntegrationCreateResponse.Marshal()
+//    integrationDiscordCreateResponse, err := UnmarshalIntegrationDiscordCreateResponse(bytes)
+//    bytes, err = integrationDiscordCreateResponse.Marshal()
 //
-//    discordIntegrationsListParams, err := UnmarshalDiscordIntegrationsListParams(bytes)
-//    bytes, err = discordIntegrationsListParams.Marshal()
+//    integrationDiscordListParams, err := UnmarshalIntegrationDiscordListParams(bytes)
+//    bytes, err = integrationDiscordListParams.Marshal()
 //
-//    discordIntegrationsListResponse, err := UnmarshalDiscordIntegrationsListResponse(bytes)
-//    bytes, err = discordIntegrationsListResponse.Marshal()
+//    integrationDiscordListResponse, err := UnmarshalIntegrationDiscordListResponse(bytes)
+//    bytes, err = integrationDiscordListResponse.Marshal()
 //
 //    emailIntegrationDeleteParams, err := UnmarshalEmailIntegrationDeleteParams(bytes)
 //    bytes, err = emailIntegrationDeleteParams.Marshal()
@@ -781,389 +781,389 @@
 //    emailIntegrationCreateResponse, err := UnmarshalEmailIntegrationCreateResponse(bytes)
 //    bytes, err = emailIntegrationCreateResponse.Marshal()
 //
-//    emailIntegrationsListParams, err := UnmarshalEmailIntegrationsListParams(bytes)
-//    bytes, err = emailIntegrationsListParams.Marshal()
+//    emailIntegrationListParams, err := UnmarshalEmailIntegrationListParams(bytes)
+//    bytes, err = emailIntegrationListParams.Marshal()
 //
-//    emailIntegrationsListResponse, err := UnmarshalEmailIntegrationsListResponse(bytes)
-//    bytes, err = emailIntegrationsListResponse.Marshal()
+//    emailIntegrationListResponse, err := UnmarshalEmailIntegrationListResponse(bytes)
+//    bytes, err = emailIntegrationListResponse.Marshal()
 //
-//    extractIntegrationDeleteParams, err := UnmarshalExtractIntegrationDeleteParams(bytes)
-//    bytes, err = extractIntegrationDeleteParams.Marshal()
+//    integrationExtractDeleteParams, err := UnmarshalIntegrationExtractDeleteParams(bytes)
+//    bytes, err = integrationExtractDeleteParams.Marshal()
 //
-//    extractIntegrationDeleteRequest, err := UnmarshalExtractIntegrationDeleteRequest(bytes)
-//    bytes, err = extractIntegrationDeleteRequest.Marshal()
+//    integrationExtractDeleteRequest, err := UnmarshalIntegrationExtractDeleteRequest(bytes)
+//    bytes, err = integrationExtractDeleteRequest.Marshal()
 //
-//    extractIntegrationDeleteResponse, err := UnmarshalExtractIntegrationDeleteResponse(bytes)
-//    bytes, err = extractIntegrationDeleteResponse.Marshal()
+//    integrationExtractDeleteResponse, err := UnmarshalIntegrationExtractDeleteResponse(bytes)
+//    bytes, err = integrationExtractDeleteResponse.Marshal()
 //
-//    extractIntegrationFetchParams, err := UnmarshalExtractIntegrationFetchParams(bytes)
-//    bytes, err = extractIntegrationFetchParams.Marshal()
+//    integrationExtractFetchParams, err := UnmarshalIntegrationExtractFetchParams(bytes)
+//    bytes, err = integrationExtractFetchParams.Marshal()
 //
-//    extractIntegrationFetchResponse, err := UnmarshalExtractIntegrationFetchResponse(bytes)
-//    bytes, err = extractIntegrationFetchResponse.Marshal()
+//    integrationExtractFetchResponse, err := UnmarshalIntegrationExtractFetchResponse(bytes)
+//    bytes, err = integrationExtractFetchResponse.Marshal()
 //
-//    extractIntegrationUpdateParams, err := UnmarshalExtractIntegrationUpdateParams(bytes)
-//    bytes, err = extractIntegrationUpdateParams.Marshal()
+//    integrationExtractUpdateParams, err := UnmarshalIntegrationExtractUpdateParams(bytes)
+//    bytes, err = integrationExtractUpdateParams.Marshal()
 //
-//    extractIntegrationUpdateRequest, err := UnmarshalExtractIntegrationUpdateRequest(bytes)
-//    bytes, err = extractIntegrationUpdateRequest.Marshal()
+//    integrationExtractUpdateRequest, err := UnmarshalIntegrationExtractUpdateRequest(bytes)
+//    bytes, err = integrationExtractUpdateRequest.Marshal()
 //
-//    extractIntegrationUpdateResponse, err := UnmarshalExtractIntegrationUpdateResponse(bytes)
-//    bytes, err = extractIntegrationUpdateResponse.Marshal()
+//    integrationExtractUpdateResponse, err := UnmarshalIntegrationExtractUpdateResponse(bytes)
+//    bytes, err = integrationExtractUpdateResponse.Marshal()
 //
-//    extractIntegrationCreateRequest, err := UnmarshalExtractIntegrationCreateRequest(bytes)
-//    bytes, err = extractIntegrationCreateRequest.Marshal()
+//    integrationExtractCreateRequest, err := UnmarshalIntegrationExtractCreateRequest(bytes)
+//    bytes, err = integrationExtractCreateRequest.Marshal()
 //
-//    extractIntegrationCreateResponse, err := UnmarshalExtractIntegrationCreateResponse(bytes)
-//    bytes, err = extractIntegrationCreateResponse.Marshal()
+//    integrationExtractCreateResponse, err := UnmarshalIntegrationExtractCreateResponse(bytes)
+//    bytes, err = integrationExtractCreateResponse.Marshal()
 //
-//    extractIntegrationsListParams, err := UnmarshalExtractIntegrationsListParams(bytes)
-//    bytes, err = extractIntegrationsListParams.Marshal()
+//    integrationExtractListParams, err := UnmarshalIntegrationExtractListParams(bytes)
+//    bytes, err = integrationExtractListParams.Marshal()
 //
-//    extractIntegrationsListResponse, err := UnmarshalExtractIntegrationsListResponse(bytes)
-//    bytes, err = extractIntegrationsListResponse.Marshal()
+//    integrationExtractListResponse, err := UnmarshalIntegrationExtractListResponse(bytes)
+//    bytes, err = integrationExtractListResponse.Marshal()
 //
-//    instagramIntegrationDeleteParams, err := UnmarshalInstagramIntegrationDeleteParams(bytes)
-//    bytes, err = instagramIntegrationDeleteParams.Marshal()
+//    integrationInstagramDeleteParams, err := UnmarshalIntegrationInstagramDeleteParams(bytes)
+//    bytes, err = integrationInstagramDeleteParams.Marshal()
 //
-//    instagramIntegrationDeleteRequest, err := UnmarshalInstagramIntegrationDeleteRequest(bytes)
-//    bytes, err = instagramIntegrationDeleteRequest.Marshal()
+//    integrationInstagramDeleteRequest, err := UnmarshalIntegrationInstagramDeleteRequest(bytes)
+//    bytes, err = integrationInstagramDeleteRequest.Marshal()
 //
-//    instagramIntegrationDeleteResponse, err := UnmarshalInstagramIntegrationDeleteResponse(bytes)
-//    bytes, err = instagramIntegrationDeleteResponse.Marshal()
+//    integrationInstagramDeleteResponse, err := UnmarshalIntegrationInstagramDeleteResponse(bytes)
+//    bytes, err = integrationInstagramDeleteResponse.Marshal()
 //
-//    instagramIntegrationFetchParams, err := UnmarshalInstagramIntegrationFetchParams(bytes)
-//    bytes, err = instagramIntegrationFetchParams.Marshal()
+//    integrationInstagramFetchParams, err := UnmarshalIntegrationInstagramFetchParams(bytes)
+//    bytes, err = integrationInstagramFetchParams.Marshal()
 //
-//    instagramIntegrationFetchResponse, err := UnmarshalInstagramIntegrationFetchResponse(bytes)
-//    bytes, err = instagramIntegrationFetchResponse.Marshal()
+//    integrationInstagramFetchResponse, err := UnmarshalIntegrationInstagramFetchResponse(bytes)
+//    bytes, err = integrationInstagramFetchResponse.Marshal()
 //
-//    instagramIntegrationSetupParams, err := UnmarshalInstagramIntegrationSetupParams(bytes)
-//    bytes, err = instagramIntegrationSetupParams.Marshal()
+//    integrationInstagramSetupParams, err := UnmarshalIntegrationInstagramSetupParams(bytes)
+//    bytes, err = integrationInstagramSetupParams.Marshal()
 //
-//    instagramIntegrationSetupRequest, err := UnmarshalInstagramIntegrationSetupRequest(bytes)
-//    bytes, err = instagramIntegrationSetupRequest.Marshal()
+//    integrationInstagramSetupRequest, err := UnmarshalIntegrationInstagramSetupRequest(bytes)
+//    bytes, err = integrationInstagramSetupRequest.Marshal()
 //
-//    instagramIntegrationSetupResponse, err := UnmarshalInstagramIntegrationSetupResponse(bytes)
-//    bytes, err = instagramIntegrationSetupResponse.Marshal()
+//    integrationInstagramSetupResponse, err := UnmarshalIntegrationInstagramSetupResponse(bytes)
+//    bytes, err = integrationInstagramSetupResponse.Marshal()
 //
-//    instagramIntegrationUpdateParams, err := UnmarshalInstagramIntegrationUpdateParams(bytes)
-//    bytes, err = instagramIntegrationUpdateParams.Marshal()
+//    integrationInstagramUpdateParams, err := UnmarshalIntegrationInstagramUpdateParams(bytes)
+//    bytes, err = integrationInstagramUpdateParams.Marshal()
 //
-//    instagramIntegrationUpdateRequest, err := UnmarshalInstagramIntegrationUpdateRequest(bytes)
-//    bytes, err = instagramIntegrationUpdateRequest.Marshal()
+//    integrationInstagramUpdateRequest, err := UnmarshalIntegrationInstagramUpdateRequest(bytes)
+//    bytes, err = integrationInstagramUpdateRequest.Marshal()
 //
-//    instagramIntegrationUpdateResponse, err := UnmarshalInstagramIntegrationUpdateResponse(bytes)
-//    bytes, err = instagramIntegrationUpdateResponse.Marshal()
+//    integrationInstagramUpdateResponse, err := UnmarshalIntegrationInstagramUpdateResponse(bytes)
+//    bytes, err = integrationInstagramUpdateResponse.Marshal()
 //
-//    instagramIntegrationCreateRequest, err := UnmarshalInstagramIntegrationCreateRequest(bytes)
-//    bytes, err = instagramIntegrationCreateRequest.Marshal()
+//    integrationInstagramCreateRequest, err := UnmarshalIntegrationInstagramCreateRequest(bytes)
+//    bytes, err = integrationInstagramCreateRequest.Marshal()
 //
-//    instagramIntegrationCreateResponse, err := UnmarshalInstagramIntegrationCreateResponse(bytes)
-//    bytes, err = instagramIntegrationCreateResponse.Marshal()
+//    integrationInstagramCreateResponse, err := UnmarshalIntegrationInstagramCreateResponse(bytes)
+//    bytes, err = integrationInstagramCreateResponse.Marshal()
 //
-//    instagramIntegrationsListParams, err := UnmarshalInstagramIntegrationsListParams(bytes)
-//    bytes, err = instagramIntegrationsListParams.Marshal()
+//    integrationInstagramListParams, err := UnmarshalIntegrationInstagramListParams(bytes)
+//    bytes, err = integrationInstagramListParams.Marshal()
 //
-//    instagramIntegrationsListResponse, err := UnmarshalInstagramIntegrationsListResponse(bytes)
-//    bytes, err = instagramIntegrationsListResponse.Marshal()
+//    integrationInstagramListResponse, err := UnmarshalIntegrationInstagramListResponse(bytes)
+//    bytes, err = integrationInstagramListResponse.Marshal()
 //
-//    mCPServerIntegrationDeleteParams, err := UnmarshalMCPServerIntegrationDeleteParams(bytes)
-//    bytes, err = mCPServerIntegrationDeleteParams.Marshal()
+//    integrationMCPServerDeleteParams, err := UnmarshalIntegrationMCPServerDeleteParams(bytes)
+//    bytes, err = integrationMCPServerDeleteParams.Marshal()
 //
-//    mCPServerIntegrationDeleteRequest, err := UnmarshalMCPServerIntegrationDeleteRequest(bytes)
-//    bytes, err = mCPServerIntegrationDeleteRequest.Marshal()
+//    integrationMCPServerDeleteRequest, err := UnmarshalIntegrationMCPServerDeleteRequest(bytes)
+//    bytes, err = integrationMCPServerDeleteRequest.Marshal()
 //
-//    mCPServerIntegrationDeleteResponse, err := UnmarshalMCPServerIntegrationDeleteResponse(bytes)
-//    bytes, err = mCPServerIntegrationDeleteResponse.Marshal()
+//    integrationMCPServerDeleteResponse, err := UnmarshalIntegrationMCPServerDeleteResponse(bytes)
+//    bytes, err = integrationMCPServerDeleteResponse.Marshal()
 //
-//    mCPServerIntegrationFetchParams, err := UnmarshalMCPServerIntegrationFetchParams(bytes)
-//    bytes, err = mCPServerIntegrationFetchParams.Marshal()
+//    integrationMCPServerFetchParams, err := UnmarshalIntegrationMCPServerFetchParams(bytes)
+//    bytes, err = integrationMCPServerFetchParams.Marshal()
 //
-//    mCPServerIntegrationFetchResponse, err := UnmarshalMCPServerIntegrationFetchResponse(bytes)
-//    bytes, err = mCPServerIntegrationFetchResponse.Marshal()
+//    integrationMCPServerFetchResponse, err := UnmarshalIntegrationMCPServerFetchResponse(bytes)
+//    bytes, err = integrationMCPServerFetchResponse.Marshal()
 //
-//    mCPServerIntegrationUpdateParams, err := UnmarshalMCPServerIntegrationUpdateParams(bytes)
-//    bytes, err = mCPServerIntegrationUpdateParams.Marshal()
+//    integrationMCPServerUpdateParams, err := UnmarshalIntegrationMCPServerUpdateParams(bytes)
+//    bytes, err = integrationMCPServerUpdateParams.Marshal()
 //
-//    mCPServerIntegrationUpdateRequest, err := UnmarshalMCPServerIntegrationUpdateRequest(bytes)
-//    bytes, err = mCPServerIntegrationUpdateRequest.Marshal()
+//    integrationMCPServerUpdateRequest, err := UnmarshalIntegrationMCPServerUpdateRequest(bytes)
+//    bytes, err = integrationMCPServerUpdateRequest.Marshal()
 //
-//    mCPServerIntegrationUpdateResponse, err := UnmarshalMCPServerIntegrationUpdateResponse(bytes)
-//    bytes, err = mCPServerIntegrationUpdateResponse.Marshal()
+//    integrationMCPServerUpdateResponse, err := UnmarshalIntegrationMCPServerUpdateResponse(bytes)
+//    bytes, err = integrationMCPServerUpdateResponse.Marshal()
 //
-//    mCPServerIntegrationCreateRequest, err := UnmarshalMCPServerIntegrationCreateRequest(bytes)
-//    bytes, err = mCPServerIntegrationCreateRequest.Marshal()
+//    integrationMCPServerCreateRequest, err := UnmarshalIntegrationMCPServerCreateRequest(bytes)
+//    bytes, err = integrationMCPServerCreateRequest.Marshal()
 //
-//    mCPServerIntegrationCreateResponse, err := UnmarshalMCPServerIntegrationCreateResponse(bytes)
-//    bytes, err = mCPServerIntegrationCreateResponse.Marshal()
+//    integrationMCPServerCreateResponse, err := UnmarshalIntegrationMCPServerCreateResponse(bytes)
+//    bytes, err = integrationMCPServerCreateResponse.Marshal()
 //
-//    mCPServerIntegrationsListParams, err := UnmarshalMCPServerIntegrationsListParams(bytes)
-//    bytes, err = mCPServerIntegrationsListParams.Marshal()
+//    integrationMCPServerListParams, err := UnmarshalIntegrationMCPServerListParams(bytes)
+//    bytes, err = integrationMCPServerListParams.Marshal()
 //
-//    mCPServerIntegrationsListResponse, err := UnmarshalMCPServerIntegrationsListResponse(bytes)
-//    bytes, err = mCPServerIntegrationsListResponse.Marshal()
+//    integrationMCPServerListResponse, err := UnmarshalIntegrationMCPServerListResponse(bytes)
+//    bytes, err = integrationMCPServerListResponse.Marshal()
 //
-//    messengerIntegrationDeleteParams, err := UnmarshalMessengerIntegrationDeleteParams(bytes)
-//    bytes, err = messengerIntegrationDeleteParams.Marshal()
+//    integrationMessengerDeleteParams, err := UnmarshalIntegrationMessengerDeleteParams(bytes)
+//    bytes, err = integrationMessengerDeleteParams.Marshal()
 //
-//    messengerIntegrationDeleteRequest, err := UnmarshalMessengerIntegrationDeleteRequest(bytes)
-//    bytes, err = messengerIntegrationDeleteRequest.Marshal()
+//    integrationMessengerDeleteRequest, err := UnmarshalIntegrationMessengerDeleteRequest(bytes)
+//    bytes, err = integrationMessengerDeleteRequest.Marshal()
 //
-//    messengerIntegrationDeleteResponse, err := UnmarshalMessengerIntegrationDeleteResponse(bytes)
-//    bytes, err = messengerIntegrationDeleteResponse.Marshal()
+//    integrationMessengerDeleteResponse, err := UnmarshalIntegrationMessengerDeleteResponse(bytes)
+//    bytes, err = integrationMessengerDeleteResponse.Marshal()
 //
-//    messengerIntegrationFetchParams, err := UnmarshalMessengerIntegrationFetchParams(bytes)
-//    bytes, err = messengerIntegrationFetchParams.Marshal()
+//    integrationMessengerFetchParams, err := UnmarshalIntegrationMessengerFetchParams(bytes)
+//    bytes, err = integrationMessengerFetchParams.Marshal()
 //
-//    messengerIntegrationFetchResponse, err := UnmarshalMessengerIntegrationFetchResponse(bytes)
-//    bytes, err = messengerIntegrationFetchResponse.Marshal()
+//    integrationMessengerFetchResponse, err := UnmarshalIntegrationMessengerFetchResponse(bytes)
+//    bytes, err = integrationMessengerFetchResponse.Marshal()
 //
-//    messengerIntegrationSetupParams, err := UnmarshalMessengerIntegrationSetupParams(bytes)
-//    bytes, err = messengerIntegrationSetupParams.Marshal()
+//    integrationMessengerSetupParams, err := UnmarshalIntegrationMessengerSetupParams(bytes)
+//    bytes, err = integrationMessengerSetupParams.Marshal()
 //
-//    messengerIntegrationSetupRequest, err := UnmarshalMessengerIntegrationSetupRequest(bytes)
-//    bytes, err = messengerIntegrationSetupRequest.Marshal()
+//    integrationMessengerSetupRequest, err := UnmarshalIntegrationMessengerSetupRequest(bytes)
+//    bytes, err = integrationMessengerSetupRequest.Marshal()
 //
-//    messengerIntegrationSetupResponse, err := UnmarshalMessengerIntegrationSetupResponse(bytes)
-//    bytes, err = messengerIntegrationSetupResponse.Marshal()
+//    integrationMessengerSetupResponse, err := UnmarshalIntegrationMessengerSetupResponse(bytes)
+//    bytes, err = integrationMessengerSetupResponse.Marshal()
 //
-//    messengerIntegrationUpdateParams, err := UnmarshalMessengerIntegrationUpdateParams(bytes)
-//    bytes, err = messengerIntegrationUpdateParams.Marshal()
+//    integrationMessengerUpdateParams, err := UnmarshalIntegrationMessengerUpdateParams(bytes)
+//    bytes, err = integrationMessengerUpdateParams.Marshal()
 //
-//    messengerIntegrationUpdateRequest, err := UnmarshalMessengerIntegrationUpdateRequest(bytes)
-//    bytes, err = messengerIntegrationUpdateRequest.Marshal()
+//    integrationMessengerUpdateRequest, err := UnmarshalIntegrationMessengerUpdateRequest(bytes)
+//    bytes, err = integrationMessengerUpdateRequest.Marshal()
 //
-//    messengerIntegrationUpdateResponse, err := UnmarshalMessengerIntegrationUpdateResponse(bytes)
-//    bytes, err = messengerIntegrationUpdateResponse.Marshal()
+//    integrationMessengerUpdateResponse, err := UnmarshalIntegrationMessengerUpdateResponse(bytes)
+//    bytes, err = integrationMessengerUpdateResponse.Marshal()
 //
-//    messengerIntegrationCreateRequest, err := UnmarshalMessengerIntegrationCreateRequest(bytes)
-//    bytes, err = messengerIntegrationCreateRequest.Marshal()
+//    integrationMessengerCreateRequest, err := UnmarshalIntegrationMessengerCreateRequest(bytes)
+//    bytes, err = integrationMessengerCreateRequest.Marshal()
 //
-//    messengerIntegrationCreateResponse, err := UnmarshalMessengerIntegrationCreateResponse(bytes)
-//    bytes, err = messengerIntegrationCreateResponse.Marshal()
+//    integrationMessengerCreateResponse, err := UnmarshalIntegrationMessengerCreateResponse(bytes)
+//    bytes, err = integrationMessengerCreateResponse.Marshal()
 //
-//    messengerIntegrationsListParams, err := UnmarshalMessengerIntegrationsListParams(bytes)
-//    bytes, err = messengerIntegrationsListParams.Marshal()
+//    integrationMessengerListParams, err := UnmarshalIntegrationMessengerListParams(bytes)
+//    bytes, err = integrationMessengerListParams.Marshal()
 //
-//    messengerIntegrationsListResponse, err := UnmarshalMessengerIntegrationsListResponse(bytes)
-//    bytes, err = messengerIntegrationsListResponse.Marshal()
+//    integrationMessengerListResponse, err := UnmarshalIntegrationMessengerListResponse(bytes)
+//    bytes, err = integrationMessengerListResponse.Marshal()
 //
-//    notionIntegrationDeleteParams, err := UnmarshalNotionIntegrationDeleteParams(bytes)
-//    bytes, err = notionIntegrationDeleteParams.Marshal()
+//    integrationNotionDeleteParams, err := UnmarshalIntegrationNotionDeleteParams(bytes)
+//    bytes, err = integrationNotionDeleteParams.Marshal()
 //
-//    notionIntegrationDeleteRequest, err := UnmarshalNotionIntegrationDeleteRequest(bytes)
-//    bytes, err = notionIntegrationDeleteRequest.Marshal()
+//    integrationNotionDeleteRequest, err := UnmarshalIntegrationNotionDeleteRequest(bytes)
+//    bytes, err = integrationNotionDeleteRequest.Marshal()
 //
-//    notionIntegrationDeleteResponse, err := UnmarshalNotionIntegrationDeleteResponse(bytes)
-//    bytes, err = notionIntegrationDeleteResponse.Marshal()
+//    integrationNotionDeleteResponse, err := UnmarshalIntegrationNotionDeleteResponse(bytes)
+//    bytes, err = integrationNotionDeleteResponse.Marshal()
 //
-//    notionIntegrationFetchParams, err := UnmarshalNotionIntegrationFetchParams(bytes)
-//    bytes, err = notionIntegrationFetchParams.Marshal()
+//    integrationNotionFetchParams, err := UnmarshalIntegrationNotionFetchParams(bytes)
+//    bytes, err = integrationNotionFetchParams.Marshal()
 //
-//    notionIntegrationFetchResponse, err := UnmarshalNotionIntegrationFetchResponse(bytes)
-//    bytes, err = notionIntegrationFetchResponse.Marshal()
+//    integrationNotionFetchResponse, err := UnmarshalIntegrationNotionFetchResponse(bytes)
+//    bytes, err = integrationNotionFetchResponse.Marshal()
 //
-//    notionIntegrationSyncParams, err := UnmarshalNotionIntegrationSyncParams(bytes)
-//    bytes, err = notionIntegrationSyncParams.Marshal()
+//    integrationNotionSyncParams, err := UnmarshalIntegrationNotionSyncParams(bytes)
+//    bytes, err = integrationNotionSyncParams.Marshal()
 //
-//    notionIntegrationSyncRequest, err := UnmarshalNotionIntegrationSyncRequest(bytes)
-//    bytes, err = notionIntegrationSyncRequest.Marshal()
+//    integrationNotionSyncRequest, err := UnmarshalIntegrationNotionSyncRequest(bytes)
+//    bytes, err = integrationNotionSyncRequest.Marshal()
 //
-//    notionIntegrationSyncResponse, err := UnmarshalNotionIntegrationSyncResponse(bytes)
-//    bytes, err = notionIntegrationSyncResponse.Marshal()
+//    integrationNotionSyncResponse, err := UnmarshalIntegrationNotionSyncResponse(bytes)
+//    bytes, err = integrationNotionSyncResponse.Marshal()
 //
-//    notionIntegrationUpdateParams, err := UnmarshalNotionIntegrationUpdateParams(bytes)
-//    bytes, err = notionIntegrationUpdateParams.Marshal()
+//    integrationNotionUpdateParams, err := UnmarshalIntegrationNotionUpdateParams(bytes)
+//    bytes, err = integrationNotionUpdateParams.Marshal()
 //
-//    notionIntegrationUpdateRequest, err := UnmarshalNotionIntegrationUpdateRequest(bytes)
-//    bytes, err = notionIntegrationUpdateRequest.Marshal()
+//    integrationNotionUpdateRequest, err := UnmarshalIntegrationNotionUpdateRequest(bytes)
+//    bytes, err = integrationNotionUpdateRequest.Marshal()
 //
-//    notionIntegrationUpdateResponse, err := UnmarshalNotionIntegrationUpdateResponse(bytes)
-//    bytes, err = notionIntegrationUpdateResponse.Marshal()
+//    integrationNotionUpdateResponse, err := UnmarshalIntegrationNotionUpdateResponse(bytes)
+//    bytes, err = integrationNotionUpdateResponse.Marshal()
 //
-//    notionIntegrationCreateRequest, err := UnmarshalNotionIntegrationCreateRequest(bytes)
-//    bytes, err = notionIntegrationCreateRequest.Marshal()
+//    integrationNotionCreateRequest, err := UnmarshalIntegrationNotionCreateRequest(bytes)
+//    bytes, err = integrationNotionCreateRequest.Marshal()
 //
-//    notionIntegrationCreateResponse, err := UnmarshalNotionIntegrationCreateResponse(bytes)
-//    bytes, err = notionIntegrationCreateResponse.Marshal()
+//    integrationNotionCreateResponse, err := UnmarshalIntegrationNotionCreateResponse(bytes)
+//    bytes, err = integrationNotionCreateResponse.Marshal()
 //
-//    notionIntegrationsListParams, err := UnmarshalNotionIntegrationsListParams(bytes)
-//    bytes, err = notionIntegrationsListParams.Marshal()
+//    integrationNotionListParams, err := UnmarshalIntegrationNotionListParams(bytes)
+//    bytes, err = integrationNotionListParams.Marshal()
 //
-//    notionIntegrationsListResponse, err := UnmarshalNotionIntegrationsListResponse(bytes)
-//    bytes, err = notionIntegrationsListResponse.Marshal()
+//    integrationNotionListResponse, err := UnmarshalIntegrationNotionListResponse(bytes)
+//    bytes, err = integrationNotionListResponse.Marshal()
 //
-//    sitemapIntegrationDeleteParams, err := UnmarshalSitemapIntegrationDeleteParams(bytes)
-//    bytes, err = sitemapIntegrationDeleteParams.Marshal()
+//    integrationSitemapDeleteParams, err := UnmarshalIntegrationSitemapDeleteParams(bytes)
+//    bytes, err = integrationSitemapDeleteParams.Marshal()
 //
-//    sitemapIntegrationDeleteRequest, err := UnmarshalSitemapIntegrationDeleteRequest(bytes)
-//    bytes, err = sitemapIntegrationDeleteRequest.Marshal()
+//    integrationSitemapDeleteRequest, err := UnmarshalIntegrationSitemapDeleteRequest(bytes)
+//    bytes, err = integrationSitemapDeleteRequest.Marshal()
 //
-//    sitemapIntegrationDeleteResponse, err := UnmarshalSitemapIntegrationDeleteResponse(bytes)
-//    bytes, err = sitemapIntegrationDeleteResponse.Marshal()
+//    integrationSitemapDeleteResponse, err := UnmarshalIntegrationSitemapDeleteResponse(bytes)
+//    bytes, err = integrationSitemapDeleteResponse.Marshal()
 //
-//    sitemapIntegrationFetchParams, err := UnmarshalSitemapIntegrationFetchParams(bytes)
-//    bytes, err = sitemapIntegrationFetchParams.Marshal()
+//    integrationSitemapFetchParams, err := UnmarshalIntegrationSitemapFetchParams(bytes)
+//    bytes, err = integrationSitemapFetchParams.Marshal()
 //
-//    sitemapIntegrationFetchResponse, err := UnmarshalSitemapIntegrationFetchResponse(bytes)
-//    bytes, err = sitemapIntegrationFetchResponse.Marshal()
+//    integrationSitemapFetchResponse, err := UnmarshalIntegrationSitemapFetchResponse(bytes)
+//    bytes, err = integrationSitemapFetchResponse.Marshal()
 //
-//    sitemapIntegrationSyncParams, err := UnmarshalSitemapIntegrationSyncParams(bytes)
-//    bytes, err = sitemapIntegrationSyncParams.Marshal()
+//    integrationSitemapSyncParams, err := UnmarshalIntegrationSitemapSyncParams(bytes)
+//    bytes, err = integrationSitemapSyncParams.Marshal()
 //
-//    sitemapIntegrationSyncRequest, err := UnmarshalSitemapIntegrationSyncRequest(bytes)
-//    bytes, err = sitemapIntegrationSyncRequest.Marshal()
+//    integrationSitemapSyncRequest, err := UnmarshalIntegrationSitemapSyncRequest(bytes)
+//    bytes, err = integrationSitemapSyncRequest.Marshal()
 //
-//    sitemapIntegrationSyncResponse, err := UnmarshalSitemapIntegrationSyncResponse(bytes)
-//    bytes, err = sitemapIntegrationSyncResponse.Marshal()
+//    integrationSitemapSyncResponse, err := UnmarshalIntegrationSitemapSyncResponse(bytes)
+//    bytes, err = integrationSitemapSyncResponse.Marshal()
 //
-//    sitemapIntegrationUpdateParams, err := UnmarshalSitemapIntegrationUpdateParams(bytes)
-//    bytes, err = sitemapIntegrationUpdateParams.Marshal()
+//    integrationSitemapUpdateParams, err := UnmarshalIntegrationSitemapUpdateParams(bytes)
+//    bytes, err = integrationSitemapUpdateParams.Marshal()
 //
-//    sitemapIntegrationUpdateRequest, err := UnmarshalSitemapIntegrationUpdateRequest(bytes)
-//    bytes, err = sitemapIntegrationUpdateRequest.Marshal()
+//    integrationSitemapUpdateRequest, err := UnmarshalIntegrationSitemapUpdateRequest(bytes)
+//    bytes, err = integrationSitemapUpdateRequest.Marshal()
 //
-//    sitemapIntegrationUpdateResponse, err := UnmarshalSitemapIntegrationUpdateResponse(bytes)
-//    bytes, err = sitemapIntegrationUpdateResponse.Marshal()
+//    integrationSitemapUpdateResponse, err := UnmarshalIntegrationSitemapUpdateResponse(bytes)
+//    bytes, err = integrationSitemapUpdateResponse.Marshal()
 //
-//    sitemapIntegrationCreateRequest, err := UnmarshalSitemapIntegrationCreateRequest(bytes)
-//    bytes, err = sitemapIntegrationCreateRequest.Marshal()
+//    integrationSitemapCreateRequest, err := UnmarshalIntegrationSitemapCreateRequest(bytes)
+//    bytes, err = integrationSitemapCreateRequest.Marshal()
 //
-//    sitemapIntegrationCreateResponse, err := UnmarshalSitemapIntegrationCreateResponse(bytes)
-//    bytes, err = sitemapIntegrationCreateResponse.Marshal()
+//    integrationSitemapCreateResponse, err := UnmarshalIntegrationSitemapCreateResponse(bytes)
+//    bytes, err = integrationSitemapCreateResponse.Marshal()
 //
-//    sitemapIntegrationsListParams, err := UnmarshalSitemapIntegrationsListParams(bytes)
-//    bytes, err = sitemapIntegrationsListParams.Marshal()
+//    integrationSitemapListParams, err := UnmarshalIntegrationSitemapListParams(bytes)
+//    bytes, err = integrationSitemapListParams.Marshal()
 //
-//    sitemapIntegrationsListResponse, err := UnmarshalSitemapIntegrationsListResponse(bytes)
-//    bytes, err = sitemapIntegrationsListResponse.Marshal()
+//    integrationSitemapListResponse, err := UnmarshalIntegrationSitemapListResponse(bytes)
+//    bytes, err = integrationSitemapListResponse.Marshal()
 //
-//    slackIntegrationDeleteParams, err := UnmarshalSlackIntegrationDeleteParams(bytes)
-//    bytes, err = slackIntegrationDeleteParams.Marshal()
+//    integrationSlackDeleteParams, err := UnmarshalIntegrationSlackDeleteParams(bytes)
+//    bytes, err = integrationSlackDeleteParams.Marshal()
 //
-//    slackIntegrationDeleteRequest, err := UnmarshalSlackIntegrationDeleteRequest(bytes)
-//    bytes, err = slackIntegrationDeleteRequest.Marshal()
+//    integrationSlackDeleteRequest, err := UnmarshalIntegrationSlackDeleteRequest(bytes)
+//    bytes, err = integrationSlackDeleteRequest.Marshal()
 //
-//    slackIntegrationDeleteResponse, err := UnmarshalSlackIntegrationDeleteResponse(bytes)
-//    bytes, err = slackIntegrationDeleteResponse.Marshal()
+//    integrationSlackDeleteResponse, err := UnmarshalIntegrationSlackDeleteResponse(bytes)
+//    bytes, err = integrationSlackDeleteResponse.Marshal()
 //
-//    slackIntegrationFetchParams, err := UnmarshalSlackIntegrationFetchParams(bytes)
-//    bytes, err = slackIntegrationFetchParams.Marshal()
+//    integrationSlackFetchParams, err := UnmarshalIntegrationSlackFetchParams(bytes)
+//    bytes, err = integrationSlackFetchParams.Marshal()
 //
-//    slackIntegrationFetchResponse, err := UnmarshalSlackIntegrationFetchResponse(bytes)
-//    bytes, err = slackIntegrationFetchResponse.Marshal()
+//    integrationSlackFetchResponse, err := UnmarshalIntegrationSlackFetchResponse(bytes)
+//    bytes, err = integrationSlackFetchResponse.Marshal()
 //
-//    slackIntegrationSetupParams, err := UnmarshalSlackIntegrationSetupParams(bytes)
-//    bytes, err = slackIntegrationSetupParams.Marshal()
+//    integrationSlackSetupParams, err := UnmarshalIntegrationSlackSetupParams(bytes)
+//    bytes, err = integrationSlackSetupParams.Marshal()
 //
-//    slackIntegrationSetupRequest, err := UnmarshalSlackIntegrationSetupRequest(bytes)
-//    bytes, err = slackIntegrationSetupRequest.Marshal()
+//    integrationSlackSetupRequest, err := UnmarshalIntegrationSlackSetupRequest(bytes)
+//    bytes, err = integrationSlackSetupRequest.Marshal()
 //
-//    slackIntegrationSetupResponse, err := UnmarshalSlackIntegrationSetupResponse(bytes)
-//    bytes, err = slackIntegrationSetupResponse.Marshal()
+//    integrationSlackSetupResponse, err := UnmarshalIntegrationSlackSetupResponse(bytes)
+//    bytes, err = integrationSlackSetupResponse.Marshal()
 //
-//    slackIntegrationUpdateParams, err := UnmarshalSlackIntegrationUpdateParams(bytes)
-//    bytes, err = slackIntegrationUpdateParams.Marshal()
+//    integrationSlackUpdateParams, err := UnmarshalIntegrationSlackUpdateParams(bytes)
+//    bytes, err = integrationSlackUpdateParams.Marshal()
 //
-//    slackIntegrationUpdateRequest, err := UnmarshalSlackIntegrationUpdateRequest(bytes)
-//    bytes, err = slackIntegrationUpdateRequest.Marshal()
+//    integrationSlackUpdateRequest, err := UnmarshalIntegrationSlackUpdateRequest(bytes)
+//    bytes, err = integrationSlackUpdateRequest.Marshal()
 //
-//    slackIntegrationUpdateResponse, err := UnmarshalSlackIntegrationUpdateResponse(bytes)
-//    bytes, err = slackIntegrationUpdateResponse.Marshal()
+//    integrationSlackUpdateResponse, err := UnmarshalIntegrationSlackUpdateResponse(bytes)
+//    bytes, err = integrationSlackUpdateResponse.Marshal()
 //
-//    slackIntegrationCreateRequest, err := UnmarshalSlackIntegrationCreateRequest(bytes)
-//    bytes, err = slackIntegrationCreateRequest.Marshal()
+//    integrationSlackCreateRequest, err := UnmarshalIntegrationSlackCreateRequest(bytes)
+//    bytes, err = integrationSlackCreateRequest.Marshal()
 //
-//    slackIntegrationCreateResponse, err := UnmarshalSlackIntegrationCreateResponse(bytes)
-//    bytes, err = slackIntegrationCreateResponse.Marshal()
+//    integrationSlackCreateResponse, err := UnmarshalIntegrationSlackCreateResponse(bytes)
+//    bytes, err = integrationSlackCreateResponse.Marshal()
 //
-//    slackIntegrationsListParams, err := UnmarshalSlackIntegrationsListParams(bytes)
-//    bytes, err = slackIntegrationsListParams.Marshal()
+//    integrationSlackListParams, err := UnmarshalIntegrationSlackListParams(bytes)
+//    bytes, err = integrationSlackListParams.Marshal()
 //
-//    slackIntegrationsListResponse, err := UnmarshalSlackIntegrationsListResponse(bytes)
-//    bytes, err = slackIntegrationsListResponse.Marshal()
+//    integrationSlackListResponse, err := UnmarshalIntegrationSlackListResponse(bytes)
+//    bytes, err = integrationSlackListResponse.Marshal()
 //
-//    supportIntegrationDeleteParams, err := UnmarshalSupportIntegrationDeleteParams(bytes)
-//    bytes, err = supportIntegrationDeleteParams.Marshal()
+//    integrationSupportDeleteParams, err := UnmarshalIntegrationSupportDeleteParams(bytes)
+//    bytes, err = integrationSupportDeleteParams.Marshal()
 //
-//    supportIntegrationDeleteRequest, err := UnmarshalSupportIntegrationDeleteRequest(bytes)
-//    bytes, err = supportIntegrationDeleteRequest.Marshal()
+//    integrationSupportDeleteRequest, err := UnmarshalIntegrationSupportDeleteRequest(bytes)
+//    bytes, err = integrationSupportDeleteRequest.Marshal()
 //
-//    supportIntegrationDeleteResponse, err := UnmarshalSupportIntegrationDeleteResponse(bytes)
-//    bytes, err = supportIntegrationDeleteResponse.Marshal()
+//    integrationSupportDeleteResponse, err := UnmarshalIntegrationSupportDeleteResponse(bytes)
+//    bytes, err = integrationSupportDeleteResponse.Marshal()
 //
-//    supportIntegrationFetchParams, err := UnmarshalSupportIntegrationFetchParams(bytes)
-//    bytes, err = supportIntegrationFetchParams.Marshal()
+//    integrationSupportFetchParams, err := UnmarshalIntegrationSupportFetchParams(bytes)
+//    bytes, err = integrationSupportFetchParams.Marshal()
 //
-//    supportIntegrationFetchResponse, err := UnmarshalSupportIntegrationFetchResponse(bytes)
-//    bytes, err = supportIntegrationFetchResponse.Marshal()
+//    integrationSupportFetchResponse, err := UnmarshalIntegrationSupportFetchResponse(bytes)
+//    bytes, err = integrationSupportFetchResponse.Marshal()
 //
-//    supportIntegrationUpdateParams, err := UnmarshalSupportIntegrationUpdateParams(bytes)
-//    bytes, err = supportIntegrationUpdateParams.Marshal()
+//    integrationSupportUpdateParams, err := UnmarshalIntegrationSupportUpdateParams(bytes)
+//    bytes, err = integrationSupportUpdateParams.Marshal()
 //
-//    supportIntegrationUpdateRequest, err := UnmarshalSupportIntegrationUpdateRequest(bytes)
-//    bytes, err = supportIntegrationUpdateRequest.Marshal()
+//    integrationSupportUpdateRequest, err := UnmarshalIntegrationSupportUpdateRequest(bytes)
+//    bytes, err = integrationSupportUpdateRequest.Marshal()
 //
-//    supportIntegrationUpdateResponse, err := UnmarshalSupportIntegrationUpdateResponse(bytes)
-//    bytes, err = supportIntegrationUpdateResponse.Marshal()
+//    integrationSupportUpdateResponse, err := UnmarshalIntegrationSupportUpdateResponse(bytes)
+//    bytes, err = integrationSupportUpdateResponse.Marshal()
 //
-//    supportIntegrationCreateRequest, err := UnmarshalSupportIntegrationCreateRequest(bytes)
-//    bytes, err = supportIntegrationCreateRequest.Marshal()
+//    integrationSupportCreateRequest, err := UnmarshalIntegrationSupportCreateRequest(bytes)
+//    bytes, err = integrationSupportCreateRequest.Marshal()
 //
-//    supportIntegrationCreateResponse, err := UnmarshalSupportIntegrationCreateResponse(bytes)
-//    bytes, err = supportIntegrationCreateResponse.Marshal()
+//    integrationSupportCreateResponse, err := UnmarshalIntegrationSupportCreateResponse(bytes)
+//    bytes, err = integrationSupportCreateResponse.Marshal()
 //
-//    supportIntegrationsListParams, err := UnmarshalSupportIntegrationsListParams(bytes)
-//    bytes, err = supportIntegrationsListParams.Marshal()
+//    integrationSupportListParams, err := UnmarshalIntegrationSupportListParams(bytes)
+//    bytes, err = integrationSupportListParams.Marshal()
 //
-//    supportIntegrationsListResponse, err := UnmarshalSupportIntegrationsListResponse(bytes)
-//    bytes, err = supportIntegrationsListResponse.Marshal()
+//    integrationSupportListResponse, err := UnmarshalIntegrationSupportListResponse(bytes)
+//    bytes, err = integrationSupportListResponse.Marshal()
 //
-//    telegramIntegrationDeleteParams, err := UnmarshalTelegramIntegrationDeleteParams(bytes)
-//    bytes, err = telegramIntegrationDeleteParams.Marshal()
+//    integrationTelegramDeleteParams, err := UnmarshalIntegrationTelegramDeleteParams(bytes)
+//    bytes, err = integrationTelegramDeleteParams.Marshal()
 //
-//    telegramIntegrationDeleteRequest, err := UnmarshalTelegramIntegrationDeleteRequest(bytes)
-//    bytes, err = telegramIntegrationDeleteRequest.Marshal()
+//    integrationTelegramDeleteRequest, err := UnmarshalIntegrationTelegramDeleteRequest(bytes)
+//    bytes, err = integrationTelegramDeleteRequest.Marshal()
 //
-//    telegramIntegrationDeleteResponse, err := UnmarshalTelegramIntegrationDeleteResponse(bytes)
-//    bytes, err = telegramIntegrationDeleteResponse.Marshal()
+//    integrationTelegramDeleteResponse, err := UnmarshalIntegrationTelegramDeleteResponse(bytes)
+//    bytes, err = integrationTelegramDeleteResponse.Marshal()
 //
-//    telegramIntegrationFetchParams, err := UnmarshalTelegramIntegrationFetchParams(bytes)
-//    bytes, err = telegramIntegrationFetchParams.Marshal()
+//    integrationTelegramFetchParams, err := UnmarshalIntegrationTelegramFetchParams(bytes)
+//    bytes, err = integrationTelegramFetchParams.Marshal()
 //
-//    telegramIntegrationFetchResponse, err := UnmarshalTelegramIntegrationFetchResponse(bytes)
-//    bytes, err = telegramIntegrationFetchResponse.Marshal()
+//    integrationTelegramFetchResponse, err := UnmarshalIntegrationTelegramFetchResponse(bytes)
+//    bytes, err = integrationTelegramFetchResponse.Marshal()
 //
-//    telegramIntegrationSetupParams, err := UnmarshalTelegramIntegrationSetupParams(bytes)
-//    bytes, err = telegramIntegrationSetupParams.Marshal()
+//    integrationTelegramSetupParams, err := UnmarshalIntegrationTelegramSetupParams(bytes)
+//    bytes, err = integrationTelegramSetupParams.Marshal()
 //
-//    telegramIntegrationSetupRequest, err := UnmarshalTelegramIntegrationSetupRequest(bytes)
-//    bytes, err = telegramIntegrationSetupRequest.Marshal()
+//    integrationTelegramSetupRequest, err := UnmarshalIntegrationTelegramSetupRequest(bytes)
+//    bytes, err = integrationTelegramSetupRequest.Marshal()
 //
-//    telegramIntegrationSetupResponse, err := UnmarshalTelegramIntegrationSetupResponse(bytes)
-//    bytes, err = telegramIntegrationSetupResponse.Marshal()
+//    integrationTelegramSetupResponse, err := UnmarshalIntegrationTelegramSetupResponse(bytes)
+//    bytes, err = integrationTelegramSetupResponse.Marshal()
 //
-//    telegramIntegrationUpdateParams, err := UnmarshalTelegramIntegrationUpdateParams(bytes)
-//    bytes, err = telegramIntegrationUpdateParams.Marshal()
+//    integrationTelegramUpdateParams, err := UnmarshalIntegrationTelegramUpdateParams(bytes)
+//    bytes, err = integrationTelegramUpdateParams.Marshal()
 //
-//    telegramIntegrationUpdateRequest, err := UnmarshalTelegramIntegrationUpdateRequest(bytes)
-//    bytes, err = telegramIntegrationUpdateRequest.Marshal()
+//    integrationTelegramUpdateRequest, err := UnmarshalIntegrationTelegramUpdateRequest(bytes)
+//    bytes, err = integrationTelegramUpdateRequest.Marshal()
 //
-//    telegramIntegrationUpdateResponse, err := UnmarshalTelegramIntegrationUpdateResponse(bytes)
-//    bytes, err = telegramIntegrationUpdateResponse.Marshal()
+//    integrationTelegramUpdateResponse, err := UnmarshalIntegrationTelegramUpdateResponse(bytes)
+//    bytes, err = integrationTelegramUpdateResponse.Marshal()
 //
-//    telegramIntegrationCreateRequest, err := UnmarshalTelegramIntegrationCreateRequest(bytes)
-//    bytes, err = telegramIntegrationCreateRequest.Marshal()
+//    integrationTelegramCreateRequest, err := UnmarshalIntegrationTelegramCreateRequest(bytes)
+//    bytes, err = integrationTelegramCreateRequest.Marshal()
 //
-//    telegramIntegrationCreateResponse, err := UnmarshalTelegramIntegrationCreateResponse(bytes)
-//    bytes, err = telegramIntegrationCreateResponse.Marshal()
+//    integrationTelegramCreateResponse, err := UnmarshalIntegrationTelegramCreateResponse(bytes)
+//    bytes, err = integrationTelegramCreateResponse.Marshal()
 //
-//    telegramIntegrationsListParams, err := UnmarshalTelegramIntegrationsListParams(bytes)
-//    bytes, err = telegramIntegrationsListParams.Marshal()
+//    integrationTelegramListParams, err := UnmarshalIntegrationTelegramListParams(bytes)
+//    bytes, err = integrationTelegramListParams.Marshal()
 //
-//    telegramIntegrationsListResponse, err := UnmarshalTelegramIntegrationsListResponse(bytes)
-//    bytes, err = telegramIntegrationsListResponse.Marshal()
+//    integrationTelegramListResponse, err := UnmarshalIntegrationTelegramListResponse(bytes)
+//    bytes, err = integrationTelegramListResponse.Marshal()
 //
 //    triggerIntegrationDeleteParams, err := UnmarshalTriggerIntegrationDeleteParams(bytes)
 //    bytes, err = triggerIntegrationDeleteParams.Marshal()
@@ -1213,146 +1213,146 @@
 //    triggerIntegrationCreateResponse, err := UnmarshalTriggerIntegrationCreateResponse(bytes)
 //    bytes, err = triggerIntegrationCreateResponse.Marshal()
 //
-//    triggerIntegrationsListParams, err := UnmarshalTriggerIntegrationsListParams(bytes)
-//    bytes, err = triggerIntegrationsListParams.Marshal()
+//    triggerIntegrationListParams, err := UnmarshalTriggerIntegrationListParams(bytes)
+//    bytes, err = triggerIntegrationListParams.Marshal()
 //
-//    triggerIntegrationsListResponse, err := UnmarshalTriggerIntegrationsListResponse(bytes)
-//    bytes, err = triggerIntegrationsListResponse.Marshal()
+//    triggerIntegrationListResponse, err := UnmarshalTriggerIntegrationListResponse(bytes)
+//    bytes, err = triggerIntegrationListResponse.Marshal()
 //
-//    twilioIntegrationDeleteParams, err := UnmarshalTwilioIntegrationDeleteParams(bytes)
-//    bytes, err = twilioIntegrationDeleteParams.Marshal()
+//    integrationTwilioDeleteParams, err := UnmarshalIntegrationTwilioDeleteParams(bytes)
+//    bytes, err = integrationTwilioDeleteParams.Marshal()
 //
-//    twilioIntegrationDeleteRequest, err := UnmarshalTwilioIntegrationDeleteRequest(bytes)
-//    bytes, err = twilioIntegrationDeleteRequest.Marshal()
+//    integrationTwilioDeleteRequest, err := UnmarshalIntegrationTwilioDeleteRequest(bytes)
+//    bytes, err = integrationTwilioDeleteRequest.Marshal()
 //
-//    twilioIntegrationDeleteResponse, err := UnmarshalTwilioIntegrationDeleteResponse(bytes)
-//    bytes, err = twilioIntegrationDeleteResponse.Marshal()
+//    integrationTwilioDeleteResponse, err := UnmarshalIntegrationTwilioDeleteResponse(bytes)
+//    bytes, err = integrationTwilioDeleteResponse.Marshal()
 //
-//    twilioIntegrationFetchParams, err := UnmarshalTwilioIntegrationFetchParams(bytes)
-//    bytes, err = twilioIntegrationFetchParams.Marshal()
+//    integrationTwilioFetchParams, err := UnmarshalIntegrationTwilioFetchParams(bytes)
+//    bytes, err = integrationTwilioFetchParams.Marshal()
 //
-//    twilioIntegrationFetchResponse, err := UnmarshalTwilioIntegrationFetchResponse(bytes)
-//    bytes, err = twilioIntegrationFetchResponse.Marshal()
+//    integrationTwilioFetchResponse, err := UnmarshalIntegrationTwilioFetchResponse(bytes)
+//    bytes, err = integrationTwilioFetchResponse.Marshal()
 //
-//    twilioIntegrationSetupParams, err := UnmarshalTwilioIntegrationSetupParams(bytes)
-//    bytes, err = twilioIntegrationSetupParams.Marshal()
+//    integrationTwilioSetupParams, err := UnmarshalIntegrationTwilioSetupParams(bytes)
+//    bytes, err = integrationTwilioSetupParams.Marshal()
 //
-//    twilioIntegrationSetupRequest, err := UnmarshalTwilioIntegrationSetupRequest(bytes)
-//    bytes, err = twilioIntegrationSetupRequest.Marshal()
+//    integrationTwilioSetupRequest, err := UnmarshalIntegrationTwilioSetupRequest(bytes)
+//    bytes, err = integrationTwilioSetupRequest.Marshal()
 //
-//    twilioIntegrationSetupResponse, err := UnmarshalTwilioIntegrationSetupResponse(bytes)
-//    bytes, err = twilioIntegrationSetupResponse.Marshal()
+//    integrationTwilioSetupResponse, err := UnmarshalIntegrationTwilioSetupResponse(bytes)
+//    bytes, err = integrationTwilioSetupResponse.Marshal()
 //
-//    twilioIntegrationUpdateParams, err := UnmarshalTwilioIntegrationUpdateParams(bytes)
-//    bytes, err = twilioIntegrationUpdateParams.Marshal()
+//    integrationTwilioUpdateParams, err := UnmarshalIntegrationTwilioUpdateParams(bytes)
+//    bytes, err = integrationTwilioUpdateParams.Marshal()
 //
-//    twilioIntegrationUpdateRequest, err := UnmarshalTwilioIntegrationUpdateRequest(bytes)
-//    bytes, err = twilioIntegrationUpdateRequest.Marshal()
+//    integrationTwilioUpdateRequest, err := UnmarshalIntegrationTwilioUpdateRequest(bytes)
+//    bytes, err = integrationTwilioUpdateRequest.Marshal()
 //
-//    twilioIntegrationUpdateResponse, err := UnmarshalTwilioIntegrationUpdateResponse(bytes)
-//    bytes, err = twilioIntegrationUpdateResponse.Marshal()
+//    integrationTwilioUpdateResponse, err := UnmarshalIntegrationTwilioUpdateResponse(bytes)
+//    bytes, err = integrationTwilioUpdateResponse.Marshal()
 //
-//    twilioIntegrationCreateRequest, err := UnmarshalTwilioIntegrationCreateRequest(bytes)
-//    bytes, err = twilioIntegrationCreateRequest.Marshal()
+//    integrationTwilioCreateRequest, err := UnmarshalIntegrationTwilioCreateRequest(bytes)
+//    bytes, err = integrationTwilioCreateRequest.Marshal()
 //
-//    twilioIntegrationCreateResponse, err := UnmarshalTwilioIntegrationCreateResponse(bytes)
-//    bytes, err = twilioIntegrationCreateResponse.Marshal()
+//    integrationTwilioCreateResponse, err := UnmarshalIntegrationTwilioCreateResponse(bytes)
+//    bytes, err = integrationTwilioCreateResponse.Marshal()
 //
-//    twilioIntegrationsListParams, err := UnmarshalTwilioIntegrationsListParams(bytes)
-//    bytes, err = twilioIntegrationsListParams.Marshal()
+//    integrationTwilioListParams, err := UnmarshalIntegrationTwilioListParams(bytes)
+//    bytes, err = integrationTwilioListParams.Marshal()
 //
-//    twilioIntegrationsListResponse, err := UnmarshalTwilioIntegrationsListResponse(bytes)
-//    bytes, err = twilioIntegrationsListResponse.Marshal()
+//    integrationTwilioListResponse, err := UnmarshalIntegrationTwilioListResponse(bytes)
+//    bytes, err = integrationTwilioListResponse.Marshal()
 //
-//    whatsAppIntegrationDeleteParams, err := UnmarshalWhatsAppIntegrationDeleteParams(bytes)
-//    bytes, err = whatsAppIntegrationDeleteParams.Marshal()
+//    integrationWhatsAppDeleteParams, err := UnmarshalIntegrationWhatsAppDeleteParams(bytes)
+//    bytes, err = integrationWhatsAppDeleteParams.Marshal()
 //
-//    whatsAppIntegrationDeleteRequest, err := UnmarshalWhatsAppIntegrationDeleteRequest(bytes)
-//    bytes, err = whatsAppIntegrationDeleteRequest.Marshal()
+//    integrationWhatsAppDeleteRequest, err := UnmarshalIntegrationWhatsAppDeleteRequest(bytes)
+//    bytes, err = integrationWhatsAppDeleteRequest.Marshal()
 //
-//    whatsAppIntegrationDeleteResponse, err := UnmarshalWhatsAppIntegrationDeleteResponse(bytes)
-//    bytes, err = whatsAppIntegrationDeleteResponse.Marshal()
+//    integrationWhatsAppDeleteResponse, err := UnmarshalIntegrationWhatsAppDeleteResponse(bytes)
+//    bytes, err = integrationWhatsAppDeleteResponse.Marshal()
 //
-//    whatsAppIntegrationFetchParams, err := UnmarshalWhatsAppIntegrationFetchParams(bytes)
-//    bytes, err = whatsAppIntegrationFetchParams.Marshal()
+//    integrationWhatsAppFetchParams, err := UnmarshalIntegrationWhatsAppFetchParams(bytes)
+//    bytes, err = integrationWhatsAppFetchParams.Marshal()
 //
-//    whatsAppIntegrationFetchResponse, err := UnmarshalWhatsAppIntegrationFetchResponse(bytes)
-//    bytes, err = whatsAppIntegrationFetchResponse.Marshal()
+//    integrationWhatsAppFetchResponse, err := UnmarshalIntegrationWhatsAppFetchResponse(bytes)
+//    bytes, err = integrationWhatsAppFetchResponse.Marshal()
 //
-//    whatsAppIntegrationSetupParams, err := UnmarshalWhatsAppIntegrationSetupParams(bytes)
-//    bytes, err = whatsAppIntegrationSetupParams.Marshal()
+//    integrationWhatsAppSetupParams, err := UnmarshalIntegrationWhatsAppSetupParams(bytes)
+//    bytes, err = integrationWhatsAppSetupParams.Marshal()
 //
-//    whatsAppIntegrationSetupRequest, err := UnmarshalWhatsAppIntegrationSetupRequest(bytes)
-//    bytes, err = whatsAppIntegrationSetupRequest.Marshal()
+//    integrationWhatsAppSetupRequest, err := UnmarshalIntegrationWhatsAppSetupRequest(bytes)
+//    bytes, err = integrationWhatsAppSetupRequest.Marshal()
 //
-//    whatsAppIntegrationSetupResponse, err := UnmarshalWhatsAppIntegrationSetupResponse(bytes)
-//    bytes, err = whatsAppIntegrationSetupResponse.Marshal()
+//    integrationWhatsAppSetupResponse, err := UnmarshalIntegrationWhatsAppSetupResponse(bytes)
+//    bytes, err = integrationWhatsAppSetupResponse.Marshal()
 //
-//    whatsAppIntegrationUpdateParams, err := UnmarshalWhatsAppIntegrationUpdateParams(bytes)
-//    bytes, err = whatsAppIntegrationUpdateParams.Marshal()
+//    integrationWhatsAppUpdateParams, err := UnmarshalIntegrationWhatsAppUpdateParams(bytes)
+//    bytes, err = integrationWhatsAppUpdateParams.Marshal()
 //
-//    whatsAppIntegrationUpdateRequest, err := UnmarshalWhatsAppIntegrationUpdateRequest(bytes)
-//    bytes, err = whatsAppIntegrationUpdateRequest.Marshal()
+//    integrationWhatsAppUpdateRequest, err := UnmarshalIntegrationWhatsAppUpdateRequest(bytes)
+//    bytes, err = integrationWhatsAppUpdateRequest.Marshal()
 //
-//    whatsAppIntegrationUpdateResponse, err := UnmarshalWhatsAppIntegrationUpdateResponse(bytes)
-//    bytes, err = whatsAppIntegrationUpdateResponse.Marshal()
+//    integrationWhatsAppUpdateResponse, err := UnmarshalIntegrationWhatsAppUpdateResponse(bytes)
+//    bytes, err = integrationWhatsAppUpdateResponse.Marshal()
 //
-//    whatsAppIntegrationCreateRequest, err := UnmarshalWhatsAppIntegrationCreateRequest(bytes)
-//    bytes, err = whatsAppIntegrationCreateRequest.Marshal()
+//    integrationWhatsAppCreateRequest, err := UnmarshalIntegrationWhatsAppCreateRequest(bytes)
+//    bytes, err = integrationWhatsAppCreateRequest.Marshal()
 //
-//    whatsAppIntegrationCreateResponse, err := UnmarshalWhatsAppIntegrationCreateResponse(bytes)
-//    bytes, err = whatsAppIntegrationCreateResponse.Marshal()
+//    integrationWhatsAppCreateResponse, err := UnmarshalIntegrationWhatsAppCreateResponse(bytes)
+//    bytes, err = integrationWhatsAppCreateResponse.Marshal()
 //
-//    whatsAppIntegrationsListParams, err := UnmarshalWhatsAppIntegrationsListParams(bytes)
-//    bytes, err = whatsAppIntegrationsListParams.Marshal()
+//    integrationWhatsAppListParams, err := UnmarshalIntegrationWhatsAppListParams(bytes)
+//    bytes, err = integrationWhatsAppListParams.Marshal()
 //
-//    whatsAppIntegrationsListResponse, err := UnmarshalWhatsAppIntegrationsListResponse(bytes)
-//    bytes, err = whatsAppIntegrationsListResponse.Marshal()
+//    integrationWhatsAppListResponse, err := UnmarshalIntegrationWhatsAppListResponse(bytes)
+//    bytes, err = integrationWhatsAppListResponse.Marshal()
 //
-//    widgetIntegrationDeleteParams, err := UnmarshalWidgetIntegrationDeleteParams(bytes)
-//    bytes, err = widgetIntegrationDeleteParams.Marshal()
+//    integrationWidgetDeleteParams, err := UnmarshalIntegrationWidgetDeleteParams(bytes)
+//    bytes, err = integrationWidgetDeleteParams.Marshal()
 //
-//    widgetIntegrationDeleteRequest, err := UnmarshalWidgetIntegrationDeleteRequest(bytes)
-//    bytes, err = widgetIntegrationDeleteRequest.Marshal()
+//    integrationWidgetDeleteRequest, err := UnmarshalIntegrationWidgetDeleteRequest(bytes)
+//    bytes, err = integrationWidgetDeleteRequest.Marshal()
 //
-//    widgetIntegrationDeleteResponse, err := UnmarshalWidgetIntegrationDeleteResponse(bytes)
-//    bytes, err = widgetIntegrationDeleteResponse.Marshal()
+//    integrationWidgetDeleteResponse, err := UnmarshalIntegrationWidgetDeleteResponse(bytes)
+//    bytes, err = integrationWidgetDeleteResponse.Marshal()
 //
-//    widgetIntegrationFetchParams, err := UnmarshalWidgetIntegrationFetchParams(bytes)
-//    bytes, err = widgetIntegrationFetchParams.Marshal()
+//    integrationWidgetFetchParams, err := UnmarshalIntegrationWidgetFetchParams(bytes)
+//    bytes, err = integrationWidgetFetchParams.Marshal()
 //
-//    widgetIntegrationFetchResponse, err := UnmarshalWidgetIntegrationFetchResponse(bytes)
-//    bytes, err = widgetIntegrationFetchResponse.Marshal()
+//    integrationWidgetFetchResponse, err := UnmarshalIntegrationWidgetFetchResponse(bytes)
+//    bytes, err = integrationWidgetFetchResponse.Marshal()
 //
-//    widgetIntegrationSetupParams, err := UnmarshalWidgetIntegrationSetupParams(bytes)
-//    bytes, err = widgetIntegrationSetupParams.Marshal()
+//    integrationWidgetSetupParams, err := UnmarshalIntegrationWidgetSetupParams(bytes)
+//    bytes, err = integrationWidgetSetupParams.Marshal()
 //
-//    widgetIntegrationSetupRequest, err := UnmarshalWidgetIntegrationSetupRequest(bytes)
-//    bytes, err = widgetIntegrationSetupRequest.Marshal()
+//    integrationWidgetSetupRequest, err := UnmarshalIntegrationWidgetSetupRequest(bytes)
+//    bytes, err = integrationWidgetSetupRequest.Marshal()
 //
-//    widgetIntegrationSetupResponse, err := UnmarshalWidgetIntegrationSetupResponse(bytes)
-//    bytes, err = widgetIntegrationSetupResponse.Marshal()
+//    integrationWidgetSetupResponse, err := UnmarshalIntegrationWidgetSetupResponse(bytes)
+//    bytes, err = integrationWidgetSetupResponse.Marshal()
 //
-//    widgetIntegrationUpdateParams, err := UnmarshalWidgetIntegrationUpdateParams(bytes)
-//    bytes, err = widgetIntegrationUpdateParams.Marshal()
+//    integrationWidgetUpdateParams, err := UnmarshalIntegrationWidgetUpdateParams(bytes)
+//    bytes, err = integrationWidgetUpdateParams.Marshal()
 //
-//    widgetIntegrationUpdateRequest, err := UnmarshalWidgetIntegrationUpdateRequest(bytes)
-//    bytes, err = widgetIntegrationUpdateRequest.Marshal()
+//    integrationWidgetUpdateRequest, err := UnmarshalIntegrationWidgetUpdateRequest(bytes)
+//    bytes, err = integrationWidgetUpdateRequest.Marshal()
 //
-//    widgetIntegrationUpdateResponse, err := UnmarshalWidgetIntegrationUpdateResponse(bytes)
-//    bytes, err = widgetIntegrationUpdateResponse.Marshal()
+//    integrationWidgetUpdateResponse, err := UnmarshalIntegrationWidgetUpdateResponse(bytes)
+//    bytes, err = integrationWidgetUpdateResponse.Marshal()
 //
-//    widgetIntegrationCreateRequest, err := UnmarshalWidgetIntegrationCreateRequest(bytes)
-//    bytes, err = widgetIntegrationCreateRequest.Marshal()
+//    integrationWidgetCreateRequest, err := UnmarshalIntegrationWidgetCreateRequest(bytes)
+//    bytes, err = integrationWidgetCreateRequest.Marshal()
 //
-//    widgetIntegrationCreateResponse, err := UnmarshalWidgetIntegrationCreateResponse(bytes)
-//    bytes, err = widgetIntegrationCreateResponse.Marshal()
+//    integrationWidgetCreateResponse, err := UnmarshalIntegrationWidgetCreateResponse(bytes)
+//    bytes, err = integrationWidgetCreateResponse.Marshal()
 //
-//    widgetIntegrationsListParams, err := UnmarshalWidgetIntegrationsListParams(bytes)
-//    bytes, err = widgetIntegrationsListParams.Marshal()
+//    integrationWidgetListParams, err := UnmarshalIntegrationWidgetListParams(bytes)
+//    bytes, err = integrationWidgetListParams.Marshal()
 //
-//    widgetIntegrationsListResponse, err := UnmarshalWidgetIntegrationsListResponse(bytes)
-//    bytes, err = widgetIntegrationsListResponse.Marshal()
+//    integrationWidgetListResponse, err := UnmarshalIntegrationWidgetListResponse(bytes)
+//    bytes, err = integrationWidgetListResponse.Marshal()
 //
 //    magicFromPromptGenerateParams, err := UnmarshalMagicFromPromptGenerateParams(bytes)
 //    bytes, err = magicFromPromptGenerateParams.Marshal()
@@ -1363,11 +1363,11 @@
 //    magicFromPromptGenerateResponse, err := UnmarshalMagicFromPromptGenerateResponse(bytes)
 //    bytes, err = magicFromPromptGenerateResponse.Marshal()
 //
-//    magicPromptsListParams, err := UnmarshalMagicPromptsListParams(bytes)
-//    bytes, err = magicPromptsListParams.Marshal()
+//    magicPromptListParams, err := UnmarshalMagicPromptListParams(bytes)
+//    bytes, err = magicPromptListParams.Marshal()
 //
-//    magicPromptsListResponse, err := UnmarshalMagicPromptsListResponse(bytes)
-//    bytes, err = magicPromptsListResponse.Marshal()
+//    magicPromptListResponse, err := UnmarshalMagicPromptListResponse(bytes)
+//    bytes, err = magicPromptListResponse.Marshal()
 //
 //    memoryDeleteParams, err := UnmarshalMemoryDeleteParams(bytes)
 //    bytes, err = memoryDeleteParams.Marshal()
@@ -1405,11 +1405,11 @@
 //    memoriesExportResponse, err := UnmarshalMemoriesExportResponse(bytes)
 //    bytes, err = memoriesExportResponse.Marshal()
 //
-//    memoriesListParams, err := UnmarshalMemoriesListParams(bytes)
-//    bytes, err = memoriesListParams.Marshal()
+//    memoryListParams, err := UnmarshalMemoryListParams(bytes)
+//    bytes, err = memoryListParams.Marshal()
 //
-//    memoriesListResponse, err := UnmarshalMemoriesListResponse(bytes)
-//    bytes, err = memoriesListResponse.Marshal()
+//    memoryListResponse, err := UnmarshalMemoryListResponse(bytes)
+//    bytes, err = memoryListResponse.Marshal()
 //
 //    memorySearchRequest, err := UnmarshalMemorySearchRequest(bytes)
 //    bytes, err = memorySearchRequest.Marshal()
@@ -1450,11 +1450,11 @@
 //    partnerUserTokenCreateResponse, err := UnmarshalPartnerUserTokenCreateResponse(bytes)
 //    bytes, err = partnerUserTokenCreateResponse.Marshal()
 //
-//    partnerUserTokensListParams, err := UnmarshalPartnerUserTokensListParams(bytes)
-//    bytes, err = partnerUserTokensListParams.Marshal()
+//    partnerUserTokenListParams, err := UnmarshalPartnerUserTokenListParams(bytes)
+//    bytes, err = partnerUserTokenListParams.Marshal()
 //
-//    partnerUserTokensListResponse, err := UnmarshalPartnerUserTokensListResponse(bytes)
-//    bytes, err = partnerUserTokensListResponse.Marshal()
+//    partnerUserTokenListResponse, err := UnmarshalPartnerUserTokenListResponse(bytes)
+//    bytes, err = partnerUserTokenListResponse.Marshal()
 //
 //    partnerUserUpdateParams, err := UnmarshalPartnerUserUpdateParams(bytes)
 //    bytes, err = partnerUserUpdateParams.Marshal()
@@ -1471,23 +1471,23 @@
 //    partnerUserCreateResponse, err := UnmarshalPartnerUserCreateResponse(bytes)
 //    bytes, err = partnerUserCreateResponse.Marshal()
 //
-//    partnerUsersListParams, err := UnmarshalPartnerUsersListParams(bytes)
-//    bytes, err = partnerUsersListParams.Marshal()
+//    partnerUserListParams, err := UnmarshalPartnerUserListParams(bytes)
+//    bytes, err = partnerUserListParams.Marshal()
 //
-//    partnerUsersListResponse, err := UnmarshalPartnerUsersListResponse(bytes)
-//    bytes, err = partnerUsersListResponse.Marshal()
+//    partnerUserListResponse, err := UnmarshalPartnerUserListResponse(bytes)
+//    bytes, err = partnerUserListResponse.Marshal()
 //
-//    platformAbilitiesListParams, err := UnmarshalPlatformAbilitiesListParams(bytes)
-//    bytes, err = platformAbilitiesListParams.Marshal()
+//    platformAbilityListParams, err := UnmarshalPlatformAbilityListParams(bytes)
+//    bytes, err = platformAbilityListParams.Marshal()
 //
-//    platformAbilitiesListResponse, err := UnmarshalPlatformAbilitiesListResponse(bytes)
-//    bytes, err = platformAbilitiesListResponse.Marshal()
+//    platformAbilityListResponse, err := UnmarshalPlatformAbilityListResponse(bytes)
+//    bytes, err = platformAbilityListResponse.Marshal()
 //
-//    platformActionsListParams, err := UnmarshalPlatformActionsListParams(bytes)
-//    bytes, err = platformActionsListParams.Marshal()
+//    platformActionListParams, err := UnmarshalPlatformActionListParams(bytes)
+//    bytes, err = platformActionListParams.Marshal()
 //
-//    platformActionsListResponse, err := UnmarshalPlatformActionsListResponse(bytes)
-//    bytes, err = platformActionsListResponse.Marshal()
+//    platformActionListResponse, err := UnmarshalPlatformActionListResponse(bytes)
+//    bytes, err = platformActionListResponse.Marshal()
 //
 //    platformDocFetchParams, err := UnmarshalPlatformDocFetchParams(bytes)
 //    bytes, err = platformDocFetchParams.Marshal()
@@ -1495,11 +1495,11 @@
 //    platformDocFetchResponse, err := UnmarshalPlatformDocFetchResponse(bytes)
 //    bytes, err = platformDocFetchResponse.Marshal()
 //
-//    platformDocsListParams, err := UnmarshalPlatformDocsListParams(bytes)
-//    bytes, err = platformDocsListParams.Marshal()
+//    platformDocListParams, err := UnmarshalPlatformDocListParams(bytes)
+//    bytes, err = platformDocListParams.Marshal()
 //
-//    platformDocsListResponse, err := UnmarshalPlatformDocsListResponse(bytes)
-//    bytes, err = platformDocsListResponse.Marshal()
+//    platformDocListResponse, err := UnmarshalPlatformDocListResponse(bytes)
+//    bytes, err = platformDocListResponse.Marshal()
 //
 //    platformDocsSearchRequest, err := UnmarshalPlatformDocsSearchRequest(bytes)
 //    bytes, err = platformDocsSearchRequest.Marshal()
@@ -1522,11 +1522,11 @@
 //    platformExampleFetchResponse, err := UnmarshalPlatformExampleFetchResponse(bytes)
 //    bytes, err = platformExampleFetchResponse.Marshal()
 //
-//    platformExamplesListParams, err := UnmarshalPlatformExamplesListParams(bytes)
-//    bytes, err = platformExamplesListParams.Marshal()
+//    platformExampleListParams, err := UnmarshalPlatformExampleListParams(bytes)
+//    bytes, err = platformExampleListParams.Marshal()
 //
-//    platformExamplesListResponse, err := UnmarshalPlatformExamplesListResponse(bytes)
-//    bytes, err = platformExamplesListResponse.Marshal()
+//    platformExampleListResponse, err := UnmarshalPlatformExampleListResponse(bytes)
+//    bytes, err = platformExampleListResponse.Marshal()
 //
 //    platformExamplesSearchRequest, err := UnmarshalPlatformExamplesSearchRequest(bytes)
 //    bytes, err = platformExamplesSearchRequest.Marshal()
@@ -1540,11 +1540,11 @@
 //    platformGuideFetchResponse, err := UnmarshalPlatformGuideFetchResponse(bytes)
 //    bytes, err = platformGuideFetchResponse.Marshal()
 //
-//    platformGuidesListParams, err := UnmarshalPlatformGuidesListParams(bytes)
-//    bytes, err = platformGuidesListParams.Marshal()
+//    platformGuideListParams, err := UnmarshalPlatformGuideListParams(bytes)
+//    bytes, err = platformGuideListParams.Marshal()
 //
-//    platformGuidesListResponse, err := UnmarshalPlatformGuidesListResponse(bytes)
-//    bytes, err = platformGuidesListResponse.Marshal()
+//    platformGuideListResponse, err := UnmarshalPlatformGuideListResponse(bytes)
+//    bytes, err = platformGuideListResponse.Marshal()
 //
 //    platformGuidesSearchRequest, err := UnmarshalPlatformGuidesSearchRequest(bytes)
 //    bytes, err = platformGuidesSearchRequest.Marshal()
@@ -1558,11 +1558,11 @@
 //    platformManualFetchResponse, err := UnmarshalPlatformManualFetchResponse(bytes)
 //    bytes, err = platformManualFetchResponse.Marshal()
 //
-//    platformManualsListParams, err := UnmarshalPlatformManualsListParams(bytes)
-//    bytes, err = platformManualsListParams.Marshal()
+//    platformManualListParams, err := UnmarshalPlatformManualListParams(bytes)
+//    bytes, err = platformManualListParams.Marshal()
 //
-//    platformManualsListResponse, err := UnmarshalPlatformManualsListResponse(bytes)
-//    bytes, err = platformManualsListResponse.Marshal()
+//    platformManualListResponse, err := UnmarshalPlatformManualListResponse(bytes)
+//    bytes, err = platformManualListResponse.Marshal()
 //
 //    platformManualsSearchRequest, err := UnmarshalPlatformManualsSearchRequest(bytes)
 //    bytes, err = platformManualsSearchRequest.Marshal()
@@ -1570,17 +1570,17 @@
 //    platformManualsSearchResponse, err := UnmarshalPlatformManualsSearchResponse(bytes)
 //    bytes, err = platformManualsSearchResponse.Marshal()
 //
-//    platformModelsListParams, err := UnmarshalPlatformModelsListParams(bytes)
-//    bytes, err = platformModelsListParams.Marshal()
+//    platformModelListParams, err := UnmarshalPlatformModelListParams(bytes)
+//    bytes, err = platformModelListParams.Marshal()
 //
-//    platformModelsListResponse, err := UnmarshalPlatformModelsListResponse(bytes)
-//    bytes, err = platformModelsListResponse.Marshal()
+//    platformModelListResponse, err := UnmarshalPlatformModelListResponse(bytes)
+//    bytes, err = platformModelListResponse.Marshal()
 //
-//    platformSecretsListParams, err := UnmarshalPlatformSecretsListParams(bytes)
-//    bytes, err = platformSecretsListParams.Marshal()
+//    platformSecretListParams, err := UnmarshalPlatformSecretListParams(bytes)
+//    bytes, err = platformSecretListParams.Marshal()
 //
-//    platformSecretsListResponse, err := UnmarshalPlatformSecretsListResponse(bytes)
-//    bytes, err = platformSecretsListResponse.Marshal()
+//    platformSecretListResponse, err := UnmarshalPlatformSecretListResponse(bytes)
+//    bytes, err = platformSecretListResponse.Marshal()
 //
 //    platformTutorialFetchParams, err := UnmarshalPlatformTutorialFetchParams(bytes)
 //    bytes, err = platformTutorialFetchParams.Marshal()
@@ -1588,11 +1588,11 @@
 //    platformTutorialFetchResponse, err := UnmarshalPlatformTutorialFetchResponse(bytes)
 //    bytes, err = platformTutorialFetchResponse.Marshal()
 //
-//    platformTutorialsListParams, err := UnmarshalPlatformTutorialsListParams(bytes)
-//    bytes, err = platformTutorialsListParams.Marshal()
+//    platformTutorialListParams, err := UnmarshalPlatformTutorialListParams(bytes)
+//    bytes, err = platformTutorialListParams.Marshal()
 //
-//    platformTutorialsListResponse, err := UnmarshalPlatformTutorialsListResponse(bytes)
-//    bytes, err = platformTutorialsListResponse.Marshal()
+//    platformTutorialListResponse, err := UnmarshalPlatformTutorialListResponse(bytes)
+//    bytes, err = platformTutorialListResponse.Marshal()
 //
 //    platformTutorialsSearchRequest, err := UnmarshalPlatformTutorialsSearchRequest(bytes)
 //    bytes, err = platformTutorialsSearchRequest.Marshal()
@@ -1630,11 +1630,11 @@
 //    policyCreateResponse, err := UnmarshalPolicyCreateResponse(bytes)
 //    bytes, err = policyCreateResponse.Marshal()
 //
-//    policiesListParams, err := UnmarshalPoliciesListParams(bytes)
-//    bytes, err = policiesListParams.Marshal()
+//    policyListParams, err := UnmarshalPolicyListParams(bytes)
+//    bytes, err = policyListParams.Marshal()
 //
-//    policiesListResponse, err := UnmarshalPoliciesListResponse(bytes)
-//    bytes, err = policiesListResponse.Marshal()
+//    policyListResponse, err := UnmarshalPolicyListResponse(bytes)
+//    bytes, err = policyListResponse.Marshal()
 //
 //    portalDeleteParams, err := UnmarshalPortalDeleteParams(bytes)
 //    bytes, err = portalDeleteParams.Marshal()
@@ -1666,11 +1666,11 @@
 //    portalCreateResponse, err := UnmarshalPortalCreateResponse(bytes)
 //    bytes, err = portalCreateResponse.Marshal()
 //
-//    portalsListParams, err := UnmarshalPortalsListParams(bytes)
-//    bytes, err = portalsListParams.Marshal()
+//    portalListParams, err := UnmarshalPortalListParams(bytes)
+//    bytes, err = portalListParams.Marshal()
 //
-//    portalsListResponse, err := UnmarshalPortalsListResponse(bytes)
-//    bytes, err = portalsListResponse.Marshal()
+//    portalListResponse, err := UnmarshalPortalListResponse(bytes)
+//    bytes, err = portalListResponse.Marshal()
 //
 //    secretAuthenticateParams, err := UnmarshalSecretAuthenticateParams(bytes)
 //    bytes, err = secretAuthenticateParams.Marshal()
@@ -1729,11 +1729,11 @@
 //    secretCreateResponse, err := UnmarshalSecretCreateResponse(bytes)
 //    bytes, err = secretCreateResponse.Marshal()
 //
-//    secretsListParams, err := UnmarshalSecretsListParams(bytes)
-//    bytes, err = secretsListParams.Marshal()
+//    secretListParams, err := UnmarshalSecretListParams(bytes)
+//    bytes, err = secretListParams.Marshal()
 //
-//    secretsListResponse, err := UnmarshalSecretsListResponse(bytes)
-//    bytes, err = secretsListResponse.Marshal()
+//    secretListResponse, err := UnmarshalSecretListResponse(bytes)
+//    bytes, err = secretListResponse.Marshal()
 //
 //    skillsetAbilityDeleteParams, err := UnmarshalSkillsetAbilityDeleteParams(bytes)
 //    bytes, err = skillsetAbilityDeleteParams.Marshal()
@@ -1783,11 +1783,11 @@
 //    skillsetAbilitiesExportResponse, err := UnmarshalSkillsetAbilitiesExportResponse(bytes)
 //    bytes, err = skillsetAbilitiesExportResponse.Marshal()
 //
-//    skillsetAbilitiesListParams, err := UnmarshalSkillsetAbilitiesListParams(bytes)
-//    bytes, err = skillsetAbilitiesListParams.Marshal()
+//    skillsetAbilityListParams, err := UnmarshalSkillsetAbilityListParams(bytes)
+//    bytes, err = skillsetAbilityListParams.Marshal()
 //
-//    skillsetAbilitiesListResponse, err := UnmarshalSkillsetAbilitiesListResponse(bytes)
-//    bytes, err = skillsetAbilitiesListResponse.Marshal()
+//    skillsetAbilityListResponse, err := UnmarshalSkillsetAbilityListResponse(bytes)
+//    bytes, err = skillsetAbilityListResponse.Marshal()
 //
 //    skillsetDeleteParams, err := UnmarshalSkillsetDeleteParams(bytes)
 //    bytes, err = skillsetDeleteParams.Marshal()
@@ -1819,11 +1819,11 @@
 //    skillsetCreateResponse, err := UnmarshalSkillsetCreateResponse(bytes)
 //    bytes, err = skillsetCreateResponse.Marshal()
 //
-//    skillsetsListParams, err := UnmarshalSkillsetsListParams(bytes)
-//    bytes, err = skillsetsListParams.Marshal()
+//    skillsetListParams, err := UnmarshalSkillsetListParams(bytes)
+//    bytes, err = skillsetListParams.Marshal()
 //
-//    skillsetsListResponse, err := UnmarshalSkillsetsListResponse(bytes)
-//    bytes, err = skillsetsListResponse.Marshal()
+//    skillsetListResponse, err := UnmarshalSkillsetListResponse(bytes)
+//    bytes, err = skillsetListResponse.Marshal()
 //
 //    spaceFetchParams, err := UnmarshalSpaceFetchParams(bytes)
 //    bytes, err = spaceFetchParams.Marshal()
@@ -1852,11 +1852,11 @@
 //    spacesExportResponse, err := UnmarshalSpacesExportResponse(bytes)
 //    bytes, err = spacesExportResponse.Marshal()
 //
-//    spacesListParams, err := UnmarshalSpacesListParams(bytes)
-//    bytes, err = spacesListParams.Marshal()
+//    spaceListParams, err := UnmarshalSpaceListParams(bytes)
+//    bytes, err = spaceListParams.Marshal()
 //
-//    spacesListResponse, err := UnmarshalSpacesListResponse(bytes)
-//    bytes, err = spacesListResponse.Marshal()
+//    spaceListResponse, err := UnmarshalSpaceListResponse(bytes)
+//    bytes, err = spaceListResponse.Marshal()
 //
 //    taskDeleteParams, err := UnmarshalTaskDeleteParams(bytes)
 //    bytes, err = taskDeleteParams.Marshal()
@@ -1903,17 +1903,17 @@
 //    tasksExportResponse, err := UnmarshalTasksExportResponse(bytes)
 //    bytes, err = tasksExportResponse.Marshal()
 //
-//    tasksListParams, err := UnmarshalTasksListParams(bytes)
-//    bytes, err = tasksListParams.Marshal()
+//    taskListParams, err := UnmarshalTaskListParams(bytes)
+//    bytes, err = taskListParams.Marshal()
 //
-//    tasksListResponse, err := UnmarshalTasksListResponse(bytes)
-//    bytes, err = tasksListResponse.Marshal()
+//    taskListResponse, err := UnmarshalTaskListResponse(bytes)
+//    bytes, err = taskListResponse.Marshal()
 //
-//    teamsListParams, err := UnmarshalTeamsListParams(bytes)
-//    bytes, err = teamsListParams.Marshal()
+//    teamListParams, err := UnmarshalTeamListParams(bytes)
+//    bytes, err = teamListParams.Marshal()
 //
-//    teamsListResponse, err := UnmarshalTeamsListResponse(bytes)
-//    bytes, err = teamsListResponse.Marshal()
+//    teamListResponse, err := UnmarshalTeamListResponse(bytes)
+//    bytes, err = teamListResponse.Marshal()
 //
 //    usageFetchResponse, err := UnmarshalUsageFetchResponse(bytes)
 //    bytes, err = usageFetchResponse.Marshal()
@@ -2063,23 +2063,23 @@ func (r *GraphqlResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformReportsListParams(data []byte) (PlatformReportsListParams, error) {
-	var r PlatformReportsListParams
+func UnmarshalPlatformReportListParams(data []byte) (PlatformReportListParams, error) {
+	var r PlatformReportListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformReportsListParams) Marshal() ([]byte, error) {
+func (r *PlatformReportListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformReportsListResponse(data []byte) (PlatformReportsListResponse, error) {
-	var r PlatformReportsListResponse
+func UnmarshalPlatformReportListResponse(data []byte) (PlatformReportListResponse, error) {
+	var r PlatformReportListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformReportsListResponse) Marshal() ([]byte, error) {
+func (r *PlatformReportListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -2223,23 +2223,23 @@ func (r *BlueprintFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintResourcesListParams(data []byte) (BlueprintResourcesListParams, error) {
-	var r BlueprintResourcesListParams
+func UnmarshalBlueprintResourceListParams(data []byte) (BlueprintResourceListParams, error) {
+	var r BlueprintResourceListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintResourcesListParams) Marshal() ([]byte, error) {
+func (r *BlueprintResourceListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintResourcesListResponse(data []byte) (BlueprintResourcesListResponse, error) {
-	var r BlueprintResourcesListResponse
+func UnmarshalBlueprintResourceListResponse(data []byte) (BlueprintResourceListResponse, error) {
+	var r BlueprintResourceListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintResourcesListResponse) Marshal() ([]byte, error) {
+func (r *BlueprintResourceListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -2293,23 +2293,23 @@ func (r *BlueprintCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintsListParams(data []byte) (BlueprintsListParams, error) {
-	var r BlueprintsListParams
+func UnmarshalBlueprintListParams(data []byte) (BlueprintListParams, error) {
+	var r BlueprintListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintsListParams) Marshal() ([]byte, error) {
+func (r *BlueprintListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBlueprintsListResponse(data []byte) (BlueprintsListResponse, error) {
-	var r BlueprintsListResponse
+func UnmarshalBlueprintListResponse(data []byte) (BlueprintListResponse, error) {
+	var r BlueprintListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BlueprintsListResponse) Marshal() ([]byte, error) {
+func (r *BlueprintListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -2323,7 +2323,7 @@ func (r *BotCloneParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type BotCloneRequest interface{}
+type BotCloneRequest map[string]interface{}
 
 func UnmarshalBotCloneRequest(data []byte) (BotCloneRequest, error) {
 	var r BotCloneRequest
@@ -2587,23 +2587,23 @@ func (r *BotCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotsListParams(data []byte) (BotsListParams, error) {
-	var r BotsListParams
+func UnmarshalBotListParams(data []byte) (BotListParams, error) {
+	var r BotListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotsListParams) Marshal() ([]byte, error) {
+func (r *BotListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalBotsListResponse(data []byte) (BotsListResponse, error) {
-	var r BotsListResponse
+func UnmarshalBotListResponse(data []byte) (BotListResponse, error) {
+	var r BotListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *BotsListResponse) Marshal() ([]byte, error) {
+func (r *BotListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -2657,23 +2657,23 @@ func (r *ChannelMessagesSubscribeRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactConversationsListParams(data []byte) (ContactConversationsListParams, error) {
-	var r ContactConversationsListParams
+func UnmarshalContactConversationListParams(data []byte) (ContactConversationListParams, error) {
+	var r ContactConversationListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactConversationsListParams) Marshal() ([]byte, error) {
+func (r *ContactConversationListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactConversationsListResponse(data []byte) (ContactConversationsListResponse, error) {
-	var r ContactConversationsListResponse
+func UnmarshalContactConversationListResponse(data []byte) (ContactConversationListResponse, error) {
+	var r ContactConversationListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactConversationsListResponse) Marshal() ([]byte, error) {
+func (r *ContactConversationListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -2729,23 +2729,23 @@ func (r *ContactFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactMemoriesListParams(data []byte) (ContactMemoriesListParams, error) {
-	var r ContactMemoriesListParams
+func UnmarshalContactMemoryListParams(data []byte) (ContactMemoryListParams, error) {
+	var r ContactMemoryListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactMemoriesListParams) Marshal() ([]byte, error) {
+func (r *ContactMemoryListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactMemoriesListResponse(data []byte) (ContactMemoriesListResponse, error) {
-	var r ContactMemoriesListResponse
+func UnmarshalContactMemoryListResponse(data []byte) (ContactMemoryListResponse, error) {
+	var r ContactMemoryListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactMemoriesListResponse) Marshal() ([]byte, error) {
+func (r *ContactMemoryListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -2875,63 +2875,63 @@ func (r *ContactSecretVerifyResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSecretsListParams(data []byte) (ContactSecretsListParams, error) {
-	var r ContactSecretsListParams
+func UnmarshalContactSecretListParams(data []byte) (ContactSecretListParams, error) {
+	var r ContactSecretListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretsListParams) Marshal() ([]byte, error) {
+func (r *ContactSecretListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSecretsListResponse(data []byte) (ContactSecretsListResponse, error) {
-	var r ContactSecretsListResponse
+func UnmarshalContactSecretListResponse(data []byte) (ContactSecretListResponse, error) {
+	var r ContactSecretListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSecretsListResponse) Marshal() ([]byte, error) {
+func (r *ContactSecretListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSpacesListParams(data []byte) (ContactSpacesListParams, error) {
-	var r ContactSpacesListParams
+func UnmarshalContactSpaceListParams(data []byte) (ContactSpaceListParams, error) {
+	var r ContactSpaceListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSpacesListParams) Marshal() ([]byte, error) {
+func (r *ContactSpaceListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactSpacesListResponse(data []byte) (ContactSpacesListResponse, error) {
-	var r ContactSpacesListResponse
+func UnmarshalContactSpaceListResponse(data []byte) (ContactSpaceListResponse, error) {
+	var r ContactSpaceListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactSpacesListResponse) Marshal() ([]byte, error) {
+func (r *ContactSpaceListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactTasksListParams(data []byte) (ContactTasksListParams, error) {
-	var r ContactTasksListParams
+func UnmarshalContactTaskListParams(data []byte) (ContactTaskListParams, error) {
+	var r ContactTaskListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactTasksListParams) Marshal() ([]byte, error) {
+func (r *ContactTaskListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactTasksListResponse(data []byte) (ContactTasksListResponse, error) {
-	var r ContactTasksListResponse
+func UnmarshalContactTaskListResponse(data []byte) (ContactTaskListResponse, error) {
+	var r ContactTaskListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactTasksListResponse) Marshal() ([]byte, error) {
+func (r *ContactTaskListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -3025,23 +3025,23 @@ func (r *ContactsExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactsListParams(data []byte) (ContactsListParams, error) {
-	var r ContactsListParams
+func UnmarshalContactListParams(data []byte) (ContactListParams, error) {
+	var r ContactListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactsListParams) Marshal() ([]byte, error) {
+func (r *ContactListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalContactsListResponse(data []byte) (ContactsListResponse, error) {
-	var r ContactsListResponse
+func UnmarshalContactListResponse(data []byte) (ContactListResponse, error) {
+	var r ContactListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ContactsListResponse) Marshal() ([]byte, error) {
+func (r *ContactListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -3441,23 +3441,23 @@ func (r *ConversationMessageCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessagesListParams(data []byte) (ConversationMessagesListParams, error) {
-	var r ConversationMessagesListParams
+func UnmarshalConversationMessageListParams(data []byte) (ConversationMessageListParams, error) {
+	var r ConversationMessageListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessagesListParams) Marshal() ([]byte, error) {
+func (r *ConversationMessageListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationMessagesListResponse(data []byte) (ConversationMessagesListResponse, error) {
-	var r ConversationMessagesListResponse
+func UnmarshalConversationMessageListResponse(data []byte) (ConversationMessageListResponse, error) {
+	var r ConversationMessageListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationMessagesListResponse) Marshal() ([]byte, error) {
+func (r *ConversationMessageListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -3711,23 +3711,23 @@ func (r *ConversationsExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationsListParams(data []byte) (ConversationsListParams, error) {
-	var r ConversationsListParams
+func UnmarshalConversationListParams(data []byte) (ConversationListParams, error) {
+	var r ConversationListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationsListParams) Marshal() ([]byte, error) {
+func (r *ConversationListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalConversationsListResponse(data []byte) (ConversationsListResponse, error) {
-	var r ConversationsListResponse
+func UnmarshalConversationListResponse(data []byte) (ConversationListResponse, error) {
+	var r ConversationListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ConversationsListResponse) Marshal() ([]byte, error) {
+func (r *ConversationListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -3875,23 +3875,23 @@ func (r *DatasetFileSyncResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFilesListParams(data []byte) (DatasetFilesListParams, error) {
-	var r DatasetFilesListParams
+func UnmarshalDatasetFileListParams(data []byte) (DatasetFileListParams, error) {
+	var r DatasetFileListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFilesListParams) Marshal() ([]byte, error) {
+func (r *DatasetFileListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetFilesListResponse(data []byte) (DatasetFilesListResponse, error) {
-	var r DatasetFilesListResponse
+func UnmarshalDatasetFileListResponse(data []byte) (DatasetFileListResponse, error) {
+	var r DatasetFileListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetFilesListResponse) Marshal() ([]byte, error) {
+func (r *DatasetFileListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -4027,23 +4027,23 @@ func (r *DatasetRecordsExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordsListParams(data []byte) (DatasetRecordsListParams, error) {
-	var r DatasetRecordsListParams
+func UnmarshalDatasetRecordListParams(data []byte) (DatasetRecordListParams, error) {
+	var r DatasetRecordListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordsListParams) Marshal() ([]byte, error) {
+func (r *DatasetRecordListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetRecordsListResponse(data []byte) (DatasetRecordsListResponse, error) {
-	var r DatasetRecordsListResponse
+func UnmarshalDatasetRecordListResponse(data []byte) (DatasetRecordListResponse, error) {
+	var r DatasetRecordListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetRecordsListResponse) Marshal() ([]byte, error) {
+func (r *DatasetRecordListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -4127,23 +4127,23 @@ func (r *DatasetCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetsListParams(data []byte) (DatasetsListParams, error) {
-	var r DatasetsListParams
+func UnmarshalDatasetListParams(data []byte) (DatasetListParams, error) {
+	var r DatasetListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetsListParams) Marshal() ([]byte, error) {
+func (r *DatasetListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDatasetsListResponse(data []byte) (DatasetsListResponse, error) {
-	var r DatasetsListResponse
+func UnmarshalDatasetListResponse(data []byte) (DatasetListResponse, error) {
+	var r DatasetListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DatasetsListResponse) Marshal() ([]byte, error) {
+func (r *DatasetListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -4167,23 +4167,23 @@ func (r *EventLogsExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalEventLogsListParams(data []byte) (EventLogsListParams, error) {
-	var r EventLogsListParams
+func UnmarshalEventLogListParams(data []byte) (EventLogListParams, error) {
+	var r EventLogListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *EventLogsListParams) Marshal() ([]byte, error) {
+func (r *EventLogListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalEventLogsListResponse(data []byte) (EventLogsListResponse, error) {
-	var r EventLogsListResponse
+func UnmarshalEventLogListResponse(data []byte) (EventLogListResponse, error) {
+	var r EventLogListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *EventLogsListResponse) Marshal() ([]byte, error) {
+func (r *EventLogListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -4381,177 +4381,177 @@ func (r *FileCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFilesListParams(data []byte) (FilesListParams, error) {
-	var r FilesListParams
+func UnmarshalFileListParams(data []byte) (FileListParams, error) {
+	var r FileListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FilesListParams) Marshal() ([]byte, error) {
+func (r *FileListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalFilesListResponse(data []byte) (FilesListResponse, error) {
-	var r FilesListResponse
+func UnmarshalFileListResponse(data []byte) (FileListResponse, error) {
+	var r FileListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *FilesListResponse) Marshal() ([]byte, error) {
+func (r *FileListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationDeleteParams(data []byte) (DiscordIntegrationDeleteParams, error) {
-	var r DiscordIntegrationDeleteParams
+func UnmarshalIntegrationDiscordDeleteParams(data []byte) (IntegrationDiscordDeleteParams, error) {
+	var r IntegrationDiscordDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type DiscordIntegrationDeleteRequest map[string]interface{}
+type IntegrationDiscordDeleteRequest map[string]interface{}
 
-func UnmarshalDiscordIntegrationDeleteRequest(data []byte) (DiscordIntegrationDeleteRequest, error) {
-	var r DiscordIntegrationDeleteRequest
+func UnmarshalIntegrationDiscordDeleteRequest(data []byte) (IntegrationDiscordDeleteRequest, error) {
+	var r IntegrationDiscordDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationDeleteResponse(data []byte) (DiscordIntegrationDeleteResponse, error) {
-	var r DiscordIntegrationDeleteResponse
+func UnmarshalIntegrationDiscordDeleteResponse(data []byte) (IntegrationDiscordDeleteResponse, error) {
+	var r IntegrationDiscordDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationFetchParams(data []byte) (DiscordIntegrationFetchParams, error) {
-	var r DiscordIntegrationFetchParams
+func UnmarshalIntegrationDiscordFetchParams(data []byte) (IntegrationDiscordFetchParams, error) {
+	var r IntegrationDiscordFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationFetchResponse(data []byte) (DiscordIntegrationFetchResponse, error) {
-	var r DiscordIntegrationFetchResponse
+func UnmarshalIntegrationDiscordFetchResponse(data []byte) (IntegrationDiscordFetchResponse, error) {
+	var r IntegrationDiscordFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationSetupParams(data []byte) (DiscordIntegrationSetupParams, error) {
-	var r DiscordIntegrationSetupParams
+func UnmarshalIntegrationDiscordSetupParams(data []byte) (IntegrationDiscordSetupParams, error) {
+	var r IntegrationDiscordSetupParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationSetupParams) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordSetupParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type DiscordIntegrationSetupRequest map[string]interface{}
+type IntegrationDiscordSetupRequest map[string]interface{}
 
-func UnmarshalDiscordIntegrationSetupRequest(data []byte) (DiscordIntegrationSetupRequest, error) {
-	var r DiscordIntegrationSetupRequest
+func UnmarshalIntegrationDiscordSetupRequest(data []byte) (IntegrationDiscordSetupRequest, error) {
+	var r IntegrationDiscordSetupRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationSetupRequest) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordSetupRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationSetupResponse(data []byte) (DiscordIntegrationSetupResponse, error) {
-	var r DiscordIntegrationSetupResponse
+func UnmarshalIntegrationDiscordSetupResponse(data []byte) (IntegrationDiscordSetupResponse, error) {
+	var r IntegrationDiscordSetupResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationSetupResponse) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordSetupResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationUpdateParams(data []byte) (DiscordIntegrationUpdateParams, error) {
-	var r DiscordIntegrationUpdateParams
+func UnmarshalIntegrationDiscordUpdateParams(data []byte) (IntegrationDiscordUpdateParams, error) {
+	var r IntegrationDiscordUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationUpdateRequest(data []byte) (DiscordIntegrationUpdateRequest, error) {
-	var r DiscordIntegrationUpdateRequest
+func UnmarshalIntegrationDiscordUpdateRequest(data []byte) (IntegrationDiscordUpdateRequest, error) {
+	var r IntegrationDiscordUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationUpdateResponse(data []byte) (DiscordIntegrationUpdateResponse, error) {
-	var r DiscordIntegrationUpdateResponse
+func UnmarshalIntegrationDiscordUpdateResponse(data []byte) (IntegrationDiscordUpdateResponse, error) {
+	var r IntegrationDiscordUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationCreateRequest(data []byte) (DiscordIntegrationCreateRequest, error) {
-	var r DiscordIntegrationCreateRequest
+func UnmarshalIntegrationDiscordCreateRequest(data []byte) (IntegrationDiscordCreateRequest, error) {
+	var r IntegrationDiscordCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationCreateResponse(data []byte) (DiscordIntegrationCreateResponse, error) {
-	var r DiscordIntegrationCreateResponse
+func UnmarshalIntegrationDiscordCreateResponse(data []byte) (IntegrationDiscordCreateResponse, error) {
+	var r IntegrationDiscordCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationsListParams(data []byte) (DiscordIntegrationsListParams, error) {
-	var r DiscordIntegrationsListParams
+func UnmarshalIntegrationDiscordListParams(data []byte) (IntegrationDiscordListParams, error) {
+	var r IntegrationDiscordListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalDiscordIntegrationsListResponse(data []byte) (DiscordIntegrationsListResponse, error) {
-	var r DiscordIntegrationsListResponse
+func UnmarshalIntegrationDiscordListResponse(data []byte) (IntegrationDiscordListResponse, error) {
+	var r IntegrationDiscordListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *DiscordIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationDiscordListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -4689,1313 +4689,1313 @@ func (r *EmailIntegrationCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalEmailIntegrationsListParams(data []byte) (EmailIntegrationsListParams, error) {
-	var r EmailIntegrationsListParams
+func UnmarshalEmailIntegrationListParams(data []byte) (EmailIntegrationListParams, error) {
+	var r EmailIntegrationListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *EmailIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *EmailIntegrationListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalEmailIntegrationsListResponse(data []byte) (EmailIntegrationsListResponse, error) {
-	var r EmailIntegrationsListResponse
+func UnmarshalEmailIntegrationListResponse(data []byte) (EmailIntegrationListResponse, error) {
+	var r EmailIntegrationListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *EmailIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *EmailIntegrationListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalExtractIntegrationDeleteParams(data []byte) (ExtractIntegrationDeleteParams, error) {
-	var r ExtractIntegrationDeleteParams
+func UnmarshalIntegrationExtractDeleteParams(data []byte) (IntegrationExtractDeleteParams, error) {
+	var r IntegrationExtractDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ExtractIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationExtractDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type ExtractIntegrationDeleteRequest map[string]interface{}
+type IntegrationExtractDeleteRequest map[string]interface{}
 
-func UnmarshalExtractIntegrationDeleteRequest(data []byte) (ExtractIntegrationDeleteRequest, error) {
-	var r ExtractIntegrationDeleteRequest
+func UnmarshalIntegrationExtractDeleteRequest(data []byte) (IntegrationExtractDeleteRequest, error) {
+	var r IntegrationExtractDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ExtractIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationExtractDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalExtractIntegrationDeleteResponse(data []byte) (ExtractIntegrationDeleteResponse, error) {
-	var r ExtractIntegrationDeleteResponse
+func UnmarshalIntegrationExtractDeleteResponse(data []byte) (IntegrationExtractDeleteResponse, error) {
+	var r IntegrationExtractDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ExtractIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationExtractDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalExtractIntegrationFetchParams(data []byte) (ExtractIntegrationFetchParams, error) {
-	var r ExtractIntegrationFetchParams
+func UnmarshalIntegrationExtractFetchParams(data []byte) (IntegrationExtractFetchParams, error) {
+	var r IntegrationExtractFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ExtractIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationExtractFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalExtractIntegrationFetchResponse(data []byte) (ExtractIntegrationFetchResponse, error) {
-	var r ExtractIntegrationFetchResponse
+func UnmarshalIntegrationExtractFetchResponse(data []byte) (IntegrationExtractFetchResponse, error) {
+	var r IntegrationExtractFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ExtractIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationExtractFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalExtractIntegrationUpdateParams(data []byte) (ExtractIntegrationUpdateParams, error) {
-	var r ExtractIntegrationUpdateParams
+func UnmarshalIntegrationExtractUpdateParams(data []byte) (IntegrationExtractUpdateParams, error) {
+	var r IntegrationExtractUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ExtractIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationExtractUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalExtractIntegrationUpdateRequest(data []byte) (ExtractIntegrationUpdateRequest, error) {
-	var r ExtractIntegrationUpdateRequest
+func UnmarshalIntegrationExtractUpdateRequest(data []byte) (IntegrationExtractUpdateRequest, error) {
+	var r IntegrationExtractUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ExtractIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationExtractUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalExtractIntegrationUpdateResponse(data []byte) (ExtractIntegrationUpdateResponse, error) {
-	var r ExtractIntegrationUpdateResponse
+func UnmarshalIntegrationExtractUpdateResponse(data []byte) (IntegrationExtractUpdateResponse, error) {
+	var r IntegrationExtractUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ExtractIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationExtractUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalExtractIntegrationCreateRequest(data []byte) (ExtractIntegrationCreateRequest, error) {
-	var r ExtractIntegrationCreateRequest
+func UnmarshalIntegrationExtractCreateRequest(data []byte) (IntegrationExtractCreateRequest, error) {
+	var r IntegrationExtractCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ExtractIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationExtractCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalExtractIntegrationCreateResponse(data []byte) (ExtractIntegrationCreateResponse, error) {
-	var r ExtractIntegrationCreateResponse
+func UnmarshalIntegrationExtractCreateResponse(data []byte) (IntegrationExtractCreateResponse, error) {
+	var r IntegrationExtractCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ExtractIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationExtractCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalExtractIntegrationsListParams(data []byte) (ExtractIntegrationsListParams, error) {
-	var r ExtractIntegrationsListParams
+func UnmarshalIntegrationExtractListParams(data []byte) (IntegrationExtractListParams, error) {
+	var r IntegrationExtractListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ExtractIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationExtractListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalExtractIntegrationsListResponse(data []byte) (ExtractIntegrationsListResponse, error) {
-	var r ExtractIntegrationsListResponse
+func UnmarshalIntegrationExtractListResponse(data []byte) (IntegrationExtractListResponse, error) {
+	var r IntegrationExtractListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *ExtractIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationExtractListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationDeleteParams(data []byte) (InstagramIntegrationDeleteParams, error) {
-	var r InstagramIntegrationDeleteParams
+func UnmarshalIntegrationInstagramDeleteParams(data []byte) (IntegrationInstagramDeleteParams, error) {
+	var r IntegrationInstagramDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type InstagramIntegrationDeleteRequest map[string]interface{}
+type IntegrationInstagramDeleteRequest map[string]interface{}
 
-func UnmarshalInstagramIntegrationDeleteRequest(data []byte) (InstagramIntegrationDeleteRequest, error) {
-	var r InstagramIntegrationDeleteRequest
+func UnmarshalIntegrationInstagramDeleteRequest(data []byte) (IntegrationInstagramDeleteRequest, error) {
+	var r IntegrationInstagramDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationDeleteResponse(data []byte) (InstagramIntegrationDeleteResponse, error) {
-	var r InstagramIntegrationDeleteResponse
+func UnmarshalIntegrationInstagramDeleteResponse(data []byte) (IntegrationInstagramDeleteResponse, error) {
+	var r IntegrationInstagramDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationFetchParams(data []byte) (InstagramIntegrationFetchParams, error) {
-	var r InstagramIntegrationFetchParams
+func UnmarshalIntegrationInstagramFetchParams(data []byte) (IntegrationInstagramFetchParams, error) {
+	var r IntegrationInstagramFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationFetchResponse(data []byte) (InstagramIntegrationFetchResponse, error) {
-	var r InstagramIntegrationFetchResponse
+func UnmarshalIntegrationInstagramFetchResponse(data []byte) (IntegrationInstagramFetchResponse, error) {
+	var r IntegrationInstagramFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationSetupParams(data []byte) (InstagramIntegrationSetupParams, error) {
-	var r InstagramIntegrationSetupParams
+func UnmarshalIntegrationInstagramSetupParams(data []byte) (IntegrationInstagramSetupParams, error) {
+	var r IntegrationInstagramSetupParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationSetupParams) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramSetupParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type InstagramIntegrationSetupRequest map[string]interface{}
+type IntegrationInstagramSetupRequest map[string]interface{}
 
-func UnmarshalInstagramIntegrationSetupRequest(data []byte) (InstagramIntegrationSetupRequest, error) {
-	var r InstagramIntegrationSetupRequest
+func UnmarshalIntegrationInstagramSetupRequest(data []byte) (IntegrationInstagramSetupRequest, error) {
+	var r IntegrationInstagramSetupRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationSetupRequest) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramSetupRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationSetupResponse(data []byte) (InstagramIntegrationSetupResponse, error) {
-	var r InstagramIntegrationSetupResponse
+func UnmarshalIntegrationInstagramSetupResponse(data []byte) (IntegrationInstagramSetupResponse, error) {
+	var r IntegrationInstagramSetupResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationSetupResponse) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramSetupResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationUpdateParams(data []byte) (InstagramIntegrationUpdateParams, error) {
-	var r InstagramIntegrationUpdateParams
+func UnmarshalIntegrationInstagramUpdateParams(data []byte) (IntegrationInstagramUpdateParams, error) {
+	var r IntegrationInstagramUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationUpdateRequest(data []byte) (InstagramIntegrationUpdateRequest, error) {
-	var r InstagramIntegrationUpdateRequest
+func UnmarshalIntegrationInstagramUpdateRequest(data []byte) (IntegrationInstagramUpdateRequest, error) {
+	var r IntegrationInstagramUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationUpdateResponse(data []byte) (InstagramIntegrationUpdateResponse, error) {
-	var r InstagramIntegrationUpdateResponse
+func UnmarshalIntegrationInstagramUpdateResponse(data []byte) (IntegrationInstagramUpdateResponse, error) {
+	var r IntegrationInstagramUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationCreateRequest(data []byte) (InstagramIntegrationCreateRequest, error) {
-	var r InstagramIntegrationCreateRequest
+func UnmarshalIntegrationInstagramCreateRequest(data []byte) (IntegrationInstagramCreateRequest, error) {
+	var r IntegrationInstagramCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationCreateResponse(data []byte) (InstagramIntegrationCreateResponse, error) {
-	var r InstagramIntegrationCreateResponse
+func UnmarshalIntegrationInstagramCreateResponse(data []byte) (IntegrationInstagramCreateResponse, error) {
+	var r IntegrationInstagramCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationsListParams(data []byte) (InstagramIntegrationsListParams, error) {
-	var r InstagramIntegrationsListParams
+func UnmarshalIntegrationInstagramListParams(data []byte) (IntegrationInstagramListParams, error) {
+	var r IntegrationInstagramListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalInstagramIntegrationsListResponse(data []byte) (InstagramIntegrationsListResponse, error) {
-	var r InstagramIntegrationsListResponse
+func UnmarshalIntegrationInstagramListResponse(data []byte) (IntegrationInstagramListResponse, error) {
+	var r IntegrationInstagramListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *InstagramIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationInstagramListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMCPServerIntegrationDeleteParams(data []byte) (MCPServerIntegrationDeleteParams, error) {
-	var r MCPServerIntegrationDeleteParams
+func UnmarshalIntegrationMCPServerDeleteParams(data []byte) (IntegrationMCPServerDeleteParams, error) {
+	var r IntegrationMCPServerDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MCPServerIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationMCPServerDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type MCPServerIntegrationDeleteRequest map[string]interface{}
+type IntegrationMCPServerDeleteRequest map[string]interface{}
 
-func UnmarshalMCPServerIntegrationDeleteRequest(data []byte) (MCPServerIntegrationDeleteRequest, error) {
-	var r MCPServerIntegrationDeleteRequest
+func UnmarshalIntegrationMCPServerDeleteRequest(data []byte) (IntegrationMCPServerDeleteRequest, error) {
+	var r IntegrationMCPServerDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MCPServerIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationMCPServerDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMCPServerIntegrationDeleteResponse(data []byte) (MCPServerIntegrationDeleteResponse, error) {
-	var r MCPServerIntegrationDeleteResponse
+func UnmarshalIntegrationMCPServerDeleteResponse(data []byte) (IntegrationMCPServerDeleteResponse, error) {
+	var r IntegrationMCPServerDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MCPServerIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationMCPServerDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMCPServerIntegrationFetchParams(data []byte) (MCPServerIntegrationFetchParams, error) {
-	var r MCPServerIntegrationFetchParams
+func UnmarshalIntegrationMCPServerFetchParams(data []byte) (IntegrationMCPServerFetchParams, error) {
+	var r IntegrationMCPServerFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MCPServerIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationMCPServerFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMCPServerIntegrationFetchResponse(data []byte) (MCPServerIntegrationFetchResponse, error) {
-	var r MCPServerIntegrationFetchResponse
+func UnmarshalIntegrationMCPServerFetchResponse(data []byte) (IntegrationMCPServerFetchResponse, error) {
+	var r IntegrationMCPServerFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MCPServerIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationMCPServerFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMCPServerIntegrationUpdateParams(data []byte) (MCPServerIntegrationUpdateParams, error) {
-	var r MCPServerIntegrationUpdateParams
+func UnmarshalIntegrationMCPServerUpdateParams(data []byte) (IntegrationMCPServerUpdateParams, error) {
+	var r IntegrationMCPServerUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MCPServerIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationMCPServerUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMCPServerIntegrationUpdateRequest(data []byte) (MCPServerIntegrationUpdateRequest, error) {
-	var r MCPServerIntegrationUpdateRequest
+func UnmarshalIntegrationMCPServerUpdateRequest(data []byte) (IntegrationMCPServerUpdateRequest, error) {
+	var r IntegrationMCPServerUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MCPServerIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationMCPServerUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMCPServerIntegrationUpdateResponse(data []byte) (MCPServerIntegrationUpdateResponse, error) {
-	var r MCPServerIntegrationUpdateResponse
+func UnmarshalIntegrationMCPServerUpdateResponse(data []byte) (IntegrationMCPServerUpdateResponse, error) {
+	var r IntegrationMCPServerUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MCPServerIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationMCPServerUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMCPServerIntegrationCreateRequest(data []byte) (MCPServerIntegrationCreateRequest, error) {
-	var r MCPServerIntegrationCreateRequest
+func UnmarshalIntegrationMCPServerCreateRequest(data []byte) (IntegrationMCPServerCreateRequest, error) {
+	var r IntegrationMCPServerCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MCPServerIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationMCPServerCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMCPServerIntegrationCreateResponse(data []byte) (MCPServerIntegrationCreateResponse, error) {
-	var r MCPServerIntegrationCreateResponse
+func UnmarshalIntegrationMCPServerCreateResponse(data []byte) (IntegrationMCPServerCreateResponse, error) {
+	var r IntegrationMCPServerCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MCPServerIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationMCPServerCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMCPServerIntegrationsListParams(data []byte) (MCPServerIntegrationsListParams, error) {
-	var r MCPServerIntegrationsListParams
+func UnmarshalIntegrationMCPServerListParams(data []byte) (IntegrationMCPServerListParams, error) {
+	var r IntegrationMCPServerListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MCPServerIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationMCPServerListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMCPServerIntegrationsListResponse(data []byte) (MCPServerIntegrationsListResponse, error) {
-	var r MCPServerIntegrationsListResponse
+func UnmarshalIntegrationMCPServerListResponse(data []byte) (IntegrationMCPServerListResponse, error) {
+	var r IntegrationMCPServerListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MCPServerIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationMCPServerListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationDeleteParams(data []byte) (MessengerIntegrationDeleteParams, error) {
-	var r MessengerIntegrationDeleteParams
+func UnmarshalIntegrationMessengerDeleteParams(data []byte) (IntegrationMessengerDeleteParams, error) {
+	var r IntegrationMessengerDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type MessengerIntegrationDeleteRequest map[string]interface{}
+type IntegrationMessengerDeleteRequest map[string]interface{}
 
-func UnmarshalMessengerIntegrationDeleteRequest(data []byte) (MessengerIntegrationDeleteRequest, error) {
-	var r MessengerIntegrationDeleteRequest
+func UnmarshalIntegrationMessengerDeleteRequest(data []byte) (IntegrationMessengerDeleteRequest, error) {
+	var r IntegrationMessengerDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationDeleteResponse(data []byte) (MessengerIntegrationDeleteResponse, error) {
-	var r MessengerIntegrationDeleteResponse
+func UnmarshalIntegrationMessengerDeleteResponse(data []byte) (IntegrationMessengerDeleteResponse, error) {
+	var r IntegrationMessengerDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationFetchParams(data []byte) (MessengerIntegrationFetchParams, error) {
-	var r MessengerIntegrationFetchParams
+func UnmarshalIntegrationMessengerFetchParams(data []byte) (IntegrationMessengerFetchParams, error) {
+	var r IntegrationMessengerFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationFetchResponse(data []byte) (MessengerIntegrationFetchResponse, error) {
-	var r MessengerIntegrationFetchResponse
+func UnmarshalIntegrationMessengerFetchResponse(data []byte) (IntegrationMessengerFetchResponse, error) {
+	var r IntegrationMessengerFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationSetupParams(data []byte) (MessengerIntegrationSetupParams, error) {
-	var r MessengerIntegrationSetupParams
+func UnmarshalIntegrationMessengerSetupParams(data []byte) (IntegrationMessengerSetupParams, error) {
+	var r IntegrationMessengerSetupParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationSetupParams) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerSetupParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type MessengerIntegrationSetupRequest map[string]interface{}
+type IntegrationMessengerSetupRequest map[string]interface{}
 
-func UnmarshalMessengerIntegrationSetupRequest(data []byte) (MessengerIntegrationSetupRequest, error) {
-	var r MessengerIntegrationSetupRequest
+func UnmarshalIntegrationMessengerSetupRequest(data []byte) (IntegrationMessengerSetupRequest, error) {
+	var r IntegrationMessengerSetupRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationSetupRequest) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerSetupRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationSetupResponse(data []byte) (MessengerIntegrationSetupResponse, error) {
-	var r MessengerIntegrationSetupResponse
+func UnmarshalIntegrationMessengerSetupResponse(data []byte) (IntegrationMessengerSetupResponse, error) {
+	var r IntegrationMessengerSetupResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationSetupResponse) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerSetupResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationUpdateParams(data []byte) (MessengerIntegrationUpdateParams, error) {
-	var r MessengerIntegrationUpdateParams
+func UnmarshalIntegrationMessengerUpdateParams(data []byte) (IntegrationMessengerUpdateParams, error) {
+	var r IntegrationMessengerUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationUpdateRequest(data []byte) (MessengerIntegrationUpdateRequest, error) {
-	var r MessengerIntegrationUpdateRequest
+func UnmarshalIntegrationMessengerUpdateRequest(data []byte) (IntegrationMessengerUpdateRequest, error) {
+	var r IntegrationMessengerUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationUpdateResponse(data []byte) (MessengerIntegrationUpdateResponse, error) {
-	var r MessengerIntegrationUpdateResponse
+func UnmarshalIntegrationMessengerUpdateResponse(data []byte) (IntegrationMessengerUpdateResponse, error) {
+	var r IntegrationMessengerUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationCreateRequest(data []byte) (MessengerIntegrationCreateRequest, error) {
-	var r MessengerIntegrationCreateRequest
+func UnmarshalIntegrationMessengerCreateRequest(data []byte) (IntegrationMessengerCreateRequest, error) {
+	var r IntegrationMessengerCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationCreateResponse(data []byte) (MessengerIntegrationCreateResponse, error) {
-	var r MessengerIntegrationCreateResponse
+func UnmarshalIntegrationMessengerCreateResponse(data []byte) (IntegrationMessengerCreateResponse, error) {
+	var r IntegrationMessengerCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationsListParams(data []byte) (MessengerIntegrationsListParams, error) {
-	var r MessengerIntegrationsListParams
+func UnmarshalIntegrationMessengerListParams(data []byte) (IntegrationMessengerListParams, error) {
+	var r IntegrationMessengerListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMessengerIntegrationsListResponse(data []byte) (MessengerIntegrationsListResponse, error) {
-	var r MessengerIntegrationsListResponse
+func UnmarshalIntegrationMessengerListResponse(data []byte) (IntegrationMessengerListResponse, error) {
+	var r IntegrationMessengerListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MessengerIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationMessengerListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationDeleteParams(data []byte) (NotionIntegrationDeleteParams, error) {
-	var r NotionIntegrationDeleteParams
+func UnmarshalIntegrationNotionDeleteParams(data []byte) (IntegrationNotionDeleteParams, error) {
+	var r IntegrationNotionDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationNotionDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type NotionIntegrationDeleteRequest map[string]interface{}
+type IntegrationNotionDeleteRequest map[string]interface{}
 
-func UnmarshalNotionIntegrationDeleteRequest(data []byte) (NotionIntegrationDeleteRequest, error) {
-	var r NotionIntegrationDeleteRequest
+func UnmarshalIntegrationNotionDeleteRequest(data []byte) (IntegrationNotionDeleteRequest, error) {
+	var r IntegrationNotionDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationNotionDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationDeleteResponse(data []byte) (NotionIntegrationDeleteResponse, error) {
-	var r NotionIntegrationDeleteResponse
+func UnmarshalIntegrationNotionDeleteResponse(data []byte) (IntegrationNotionDeleteResponse, error) {
+	var r IntegrationNotionDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationNotionDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationFetchParams(data []byte) (NotionIntegrationFetchParams, error) {
-	var r NotionIntegrationFetchParams
+func UnmarshalIntegrationNotionFetchParams(data []byte) (IntegrationNotionFetchParams, error) {
+	var r IntegrationNotionFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationNotionFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationFetchResponse(data []byte) (NotionIntegrationFetchResponse, error) {
-	var r NotionIntegrationFetchResponse
+func UnmarshalIntegrationNotionFetchResponse(data []byte) (IntegrationNotionFetchResponse, error) {
+	var r IntegrationNotionFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationNotionFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationSyncParams(data []byte) (NotionIntegrationSyncParams, error) {
-	var r NotionIntegrationSyncParams
+func UnmarshalIntegrationNotionSyncParams(data []byte) (IntegrationNotionSyncParams, error) {
+	var r IntegrationNotionSyncParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationSyncParams) Marshal() ([]byte, error) {
+func (r *IntegrationNotionSyncParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type NotionIntegrationSyncRequest map[string]interface{}
+type IntegrationNotionSyncRequest map[string]interface{}
 
-func UnmarshalNotionIntegrationSyncRequest(data []byte) (NotionIntegrationSyncRequest, error) {
-	var r NotionIntegrationSyncRequest
+func UnmarshalIntegrationNotionSyncRequest(data []byte) (IntegrationNotionSyncRequest, error) {
+	var r IntegrationNotionSyncRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationSyncRequest) Marshal() ([]byte, error) {
+func (r *IntegrationNotionSyncRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationSyncResponse(data []byte) (NotionIntegrationSyncResponse, error) {
-	var r NotionIntegrationSyncResponse
+func UnmarshalIntegrationNotionSyncResponse(data []byte) (IntegrationNotionSyncResponse, error) {
+	var r IntegrationNotionSyncResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationSyncResponse) Marshal() ([]byte, error) {
+func (r *IntegrationNotionSyncResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationUpdateParams(data []byte) (NotionIntegrationUpdateParams, error) {
-	var r NotionIntegrationUpdateParams
+func UnmarshalIntegrationNotionUpdateParams(data []byte) (IntegrationNotionUpdateParams, error) {
+	var r IntegrationNotionUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationNotionUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationUpdateRequest(data []byte) (NotionIntegrationUpdateRequest, error) {
-	var r NotionIntegrationUpdateRequest
+func UnmarshalIntegrationNotionUpdateRequest(data []byte) (IntegrationNotionUpdateRequest, error) {
+	var r IntegrationNotionUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationNotionUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationUpdateResponse(data []byte) (NotionIntegrationUpdateResponse, error) {
-	var r NotionIntegrationUpdateResponse
+func UnmarshalIntegrationNotionUpdateResponse(data []byte) (IntegrationNotionUpdateResponse, error) {
+	var r IntegrationNotionUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationNotionUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationCreateRequest(data []byte) (NotionIntegrationCreateRequest, error) {
-	var r NotionIntegrationCreateRequest
+func UnmarshalIntegrationNotionCreateRequest(data []byte) (IntegrationNotionCreateRequest, error) {
+	var r IntegrationNotionCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationNotionCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationCreateResponse(data []byte) (NotionIntegrationCreateResponse, error) {
-	var r NotionIntegrationCreateResponse
+func UnmarshalIntegrationNotionCreateResponse(data []byte) (IntegrationNotionCreateResponse, error) {
+	var r IntegrationNotionCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationNotionCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationsListParams(data []byte) (NotionIntegrationsListParams, error) {
-	var r NotionIntegrationsListParams
+func UnmarshalIntegrationNotionListParams(data []byte) (IntegrationNotionListParams, error) {
+	var r IntegrationNotionListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationNotionListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalNotionIntegrationsListResponse(data []byte) (NotionIntegrationsListResponse, error) {
-	var r NotionIntegrationsListResponse
+func UnmarshalIntegrationNotionListResponse(data []byte) (IntegrationNotionListResponse, error) {
+	var r IntegrationNotionListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *NotionIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationNotionListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationDeleteParams(data []byte) (SitemapIntegrationDeleteParams, error) {
-	var r SitemapIntegrationDeleteParams
+func UnmarshalIntegrationSitemapDeleteParams(data []byte) (IntegrationSitemapDeleteParams, error) {
+	var r IntegrationSitemapDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type SitemapIntegrationDeleteRequest map[string]interface{}
+type IntegrationSitemapDeleteRequest map[string]interface{}
 
-func UnmarshalSitemapIntegrationDeleteRequest(data []byte) (SitemapIntegrationDeleteRequest, error) {
-	var r SitemapIntegrationDeleteRequest
+func UnmarshalIntegrationSitemapDeleteRequest(data []byte) (IntegrationSitemapDeleteRequest, error) {
+	var r IntegrationSitemapDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationDeleteResponse(data []byte) (SitemapIntegrationDeleteResponse, error) {
-	var r SitemapIntegrationDeleteResponse
+func UnmarshalIntegrationSitemapDeleteResponse(data []byte) (IntegrationSitemapDeleteResponse, error) {
+	var r IntegrationSitemapDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationFetchParams(data []byte) (SitemapIntegrationFetchParams, error) {
-	var r SitemapIntegrationFetchParams
+func UnmarshalIntegrationSitemapFetchParams(data []byte) (IntegrationSitemapFetchParams, error) {
+	var r IntegrationSitemapFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationFetchResponse(data []byte) (SitemapIntegrationFetchResponse, error) {
-	var r SitemapIntegrationFetchResponse
+func UnmarshalIntegrationSitemapFetchResponse(data []byte) (IntegrationSitemapFetchResponse, error) {
+	var r IntegrationSitemapFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationSyncParams(data []byte) (SitemapIntegrationSyncParams, error) {
-	var r SitemapIntegrationSyncParams
+func UnmarshalIntegrationSitemapSyncParams(data []byte) (IntegrationSitemapSyncParams, error) {
+	var r IntegrationSitemapSyncParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationSyncParams) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapSyncParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type SitemapIntegrationSyncRequest map[string]interface{}
+type IntegrationSitemapSyncRequest map[string]interface{}
 
-func UnmarshalSitemapIntegrationSyncRequest(data []byte) (SitemapIntegrationSyncRequest, error) {
-	var r SitemapIntegrationSyncRequest
+func UnmarshalIntegrationSitemapSyncRequest(data []byte) (IntegrationSitemapSyncRequest, error) {
+	var r IntegrationSitemapSyncRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationSyncRequest) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapSyncRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationSyncResponse(data []byte) (SitemapIntegrationSyncResponse, error) {
-	var r SitemapIntegrationSyncResponse
+func UnmarshalIntegrationSitemapSyncResponse(data []byte) (IntegrationSitemapSyncResponse, error) {
+	var r IntegrationSitemapSyncResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationSyncResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapSyncResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationUpdateParams(data []byte) (SitemapIntegrationUpdateParams, error) {
-	var r SitemapIntegrationUpdateParams
+func UnmarshalIntegrationSitemapUpdateParams(data []byte) (IntegrationSitemapUpdateParams, error) {
+	var r IntegrationSitemapUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationUpdateRequest(data []byte) (SitemapIntegrationUpdateRequest, error) {
-	var r SitemapIntegrationUpdateRequest
+func UnmarshalIntegrationSitemapUpdateRequest(data []byte) (IntegrationSitemapUpdateRequest, error) {
+	var r IntegrationSitemapUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationUpdateResponse(data []byte) (SitemapIntegrationUpdateResponse, error) {
-	var r SitemapIntegrationUpdateResponse
+func UnmarshalIntegrationSitemapUpdateResponse(data []byte) (IntegrationSitemapUpdateResponse, error) {
+	var r IntegrationSitemapUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationCreateRequest(data []byte) (SitemapIntegrationCreateRequest, error) {
-	var r SitemapIntegrationCreateRequest
+func UnmarshalIntegrationSitemapCreateRequest(data []byte) (IntegrationSitemapCreateRequest, error) {
+	var r IntegrationSitemapCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationCreateResponse(data []byte) (SitemapIntegrationCreateResponse, error) {
-	var r SitemapIntegrationCreateResponse
+func UnmarshalIntegrationSitemapCreateResponse(data []byte) (IntegrationSitemapCreateResponse, error) {
+	var r IntegrationSitemapCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationsListParams(data []byte) (SitemapIntegrationsListParams, error) {
-	var r SitemapIntegrationsListParams
+func UnmarshalIntegrationSitemapListParams(data []byte) (IntegrationSitemapListParams, error) {
+	var r IntegrationSitemapListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSitemapIntegrationsListResponse(data []byte) (SitemapIntegrationsListResponse, error) {
-	var r SitemapIntegrationsListResponse
+func UnmarshalIntegrationSitemapListResponse(data []byte) (IntegrationSitemapListResponse, error) {
+	var r IntegrationSitemapListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SitemapIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSitemapListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationDeleteParams(data []byte) (SlackIntegrationDeleteParams, error) {
-	var r SlackIntegrationDeleteParams
+func UnmarshalIntegrationSlackDeleteParams(data []byte) (IntegrationSlackDeleteParams, error) {
+	var r IntegrationSlackDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationSlackDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type SlackIntegrationDeleteRequest map[string]interface{}
+type IntegrationSlackDeleteRequest map[string]interface{}
 
-func UnmarshalSlackIntegrationDeleteRequest(data []byte) (SlackIntegrationDeleteRequest, error) {
-	var r SlackIntegrationDeleteRequest
+func UnmarshalIntegrationSlackDeleteRequest(data []byte) (IntegrationSlackDeleteRequest, error) {
+	var r IntegrationSlackDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationSlackDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationDeleteResponse(data []byte) (SlackIntegrationDeleteResponse, error) {
-	var r SlackIntegrationDeleteResponse
+func UnmarshalIntegrationSlackDeleteResponse(data []byte) (IntegrationSlackDeleteResponse, error) {
+	var r IntegrationSlackDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSlackDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationFetchParams(data []byte) (SlackIntegrationFetchParams, error) {
-	var r SlackIntegrationFetchParams
+func UnmarshalIntegrationSlackFetchParams(data []byte) (IntegrationSlackFetchParams, error) {
+	var r IntegrationSlackFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationSlackFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationFetchResponse(data []byte) (SlackIntegrationFetchResponse, error) {
-	var r SlackIntegrationFetchResponse
+func UnmarshalIntegrationSlackFetchResponse(data []byte) (IntegrationSlackFetchResponse, error) {
+	var r IntegrationSlackFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSlackFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationSetupParams(data []byte) (SlackIntegrationSetupParams, error) {
-	var r SlackIntegrationSetupParams
+func UnmarshalIntegrationSlackSetupParams(data []byte) (IntegrationSlackSetupParams, error) {
+	var r IntegrationSlackSetupParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationSetupParams) Marshal() ([]byte, error) {
+func (r *IntegrationSlackSetupParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type SlackIntegrationSetupRequest map[string]interface{}
+type IntegrationSlackSetupRequest map[string]interface{}
 
-func UnmarshalSlackIntegrationSetupRequest(data []byte) (SlackIntegrationSetupRequest, error) {
-	var r SlackIntegrationSetupRequest
+func UnmarshalIntegrationSlackSetupRequest(data []byte) (IntegrationSlackSetupRequest, error) {
+	var r IntegrationSlackSetupRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationSetupRequest) Marshal() ([]byte, error) {
+func (r *IntegrationSlackSetupRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationSetupResponse(data []byte) (SlackIntegrationSetupResponse, error) {
-	var r SlackIntegrationSetupResponse
+func UnmarshalIntegrationSlackSetupResponse(data []byte) (IntegrationSlackSetupResponse, error) {
+	var r IntegrationSlackSetupResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationSetupResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSlackSetupResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationUpdateParams(data []byte) (SlackIntegrationUpdateParams, error) {
-	var r SlackIntegrationUpdateParams
+func UnmarshalIntegrationSlackUpdateParams(data []byte) (IntegrationSlackUpdateParams, error) {
+	var r IntegrationSlackUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationSlackUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationUpdateRequest(data []byte) (SlackIntegrationUpdateRequest, error) {
-	var r SlackIntegrationUpdateRequest
+func UnmarshalIntegrationSlackUpdateRequest(data []byte) (IntegrationSlackUpdateRequest, error) {
+	var r IntegrationSlackUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationSlackUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationUpdateResponse(data []byte) (SlackIntegrationUpdateResponse, error) {
-	var r SlackIntegrationUpdateResponse
+func UnmarshalIntegrationSlackUpdateResponse(data []byte) (IntegrationSlackUpdateResponse, error) {
+	var r IntegrationSlackUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSlackUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationCreateRequest(data []byte) (SlackIntegrationCreateRequest, error) {
-	var r SlackIntegrationCreateRequest
+func UnmarshalIntegrationSlackCreateRequest(data []byte) (IntegrationSlackCreateRequest, error) {
+	var r IntegrationSlackCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationSlackCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationCreateResponse(data []byte) (SlackIntegrationCreateResponse, error) {
-	var r SlackIntegrationCreateResponse
+func UnmarshalIntegrationSlackCreateResponse(data []byte) (IntegrationSlackCreateResponse, error) {
+	var r IntegrationSlackCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSlackCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationsListParams(data []byte) (SlackIntegrationsListParams, error) {
-	var r SlackIntegrationsListParams
+func UnmarshalIntegrationSlackListParams(data []byte) (IntegrationSlackListParams, error) {
+	var r IntegrationSlackListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationSlackListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSlackIntegrationsListResponse(data []byte) (SlackIntegrationsListResponse, error) {
-	var r SlackIntegrationsListResponse
+func UnmarshalIntegrationSlackListResponse(data []byte) (IntegrationSlackListResponse, error) {
+	var r IntegrationSlackListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SlackIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSlackListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSupportIntegrationDeleteParams(data []byte) (SupportIntegrationDeleteParams, error) {
-	var r SupportIntegrationDeleteParams
+func UnmarshalIntegrationSupportDeleteParams(data []byte) (IntegrationSupportDeleteParams, error) {
+	var r IntegrationSupportDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SupportIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationSupportDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type SupportIntegrationDeleteRequest map[string]interface{}
+type IntegrationSupportDeleteRequest map[string]interface{}
 
-func UnmarshalSupportIntegrationDeleteRequest(data []byte) (SupportIntegrationDeleteRequest, error) {
-	var r SupportIntegrationDeleteRequest
+func UnmarshalIntegrationSupportDeleteRequest(data []byte) (IntegrationSupportDeleteRequest, error) {
+	var r IntegrationSupportDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SupportIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationSupportDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSupportIntegrationDeleteResponse(data []byte) (SupportIntegrationDeleteResponse, error) {
-	var r SupportIntegrationDeleteResponse
+func UnmarshalIntegrationSupportDeleteResponse(data []byte) (IntegrationSupportDeleteResponse, error) {
+	var r IntegrationSupportDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SupportIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSupportDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSupportIntegrationFetchParams(data []byte) (SupportIntegrationFetchParams, error) {
-	var r SupportIntegrationFetchParams
+func UnmarshalIntegrationSupportFetchParams(data []byte) (IntegrationSupportFetchParams, error) {
+	var r IntegrationSupportFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SupportIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationSupportFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSupportIntegrationFetchResponse(data []byte) (SupportIntegrationFetchResponse, error) {
-	var r SupportIntegrationFetchResponse
+func UnmarshalIntegrationSupportFetchResponse(data []byte) (IntegrationSupportFetchResponse, error) {
+	var r IntegrationSupportFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SupportIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSupportFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSupportIntegrationUpdateParams(data []byte) (SupportIntegrationUpdateParams, error) {
-	var r SupportIntegrationUpdateParams
+func UnmarshalIntegrationSupportUpdateParams(data []byte) (IntegrationSupportUpdateParams, error) {
+	var r IntegrationSupportUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SupportIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationSupportUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSupportIntegrationUpdateRequest(data []byte) (SupportIntegrationUpdateRequest, error) {
-	var r SupportIntegrationUpdateRequest
+func UnmarshalIntegrationSupportUpdateRequest(data []byte) (IntegrationSupportUpdateRequest, error) {
+	var r IntegrationSupportUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SupportIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationSupportUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSupportIntegrationUpdateResponse(data []byte) (SupportIntegrationUpdateResponse, error) {
-	var r SupportIntegrationUpdateResponse
+func UnmarshalIntegrationSupportUpdateResponse(data []byte) (IntegrationSupportUpdateResponse, error) {
+	var r IntegrationSupportUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SupportIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSupportUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSupportIntegrationCreateRequest(data []byte) (SupportIntegrationCreateRequest, error) {
-	var r SupportIntegrationCreateRequest
+func UnmarshalIntegrationSupportCreateRequest(data []byte) (IntegrationSupportCreateRequest, error) {
+	var r IntegrationSupportCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SupportIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationSupportCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSupportIntegrationCreateResponse(data []byte) (SupportIntegrationCreateResponse, error) {
-	var r SupportIntegrationCreateResponse
+func UnmarshalIntegrationSupportCreateResponse(data []byte) (IntegrationSupportCreateResponse, error) {
+	var r IntegrationSupportCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SupportIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSupportCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSupportIntegrationsListParams(data []byte) (SupportIntegrationsListParams, error) {
-	var r SupportIntegrationsListParams
+func UnmarshalIntegrationSupportListParams(data []byte) (IntegrationSupportListParams, error) {
+	var r IntegrationSupportListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SupportIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationSupportListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSupportIntegrationsListResponse(data []byte) (SupportIntegrationsListResponse, error) {
-	var r SupportIntegrationsListResponse
+func UnmarshalIntegrationSupportListResponse(data []byte) (IntegrationSupportListResponse, error) {
+	var r IntegrationSupportListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SupportIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationSupportListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationDeleteParams(data []byte) (TelegramIntegrationDeleteParams, error) {
-	var r TelegramIntegrationDeleteParams
+func UnmarshalIntegrationTelegramDeleteParams(data []byte) (IntegrationTelegramDeleteParams, error) {
+	var r IntegrationTelegramDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type TelegramIntegrationDeleteRequest map[string]interface{}
+type IntegrationTelegramDeleteRequest map[string]interface{}
 
-func UnmarshalTelegramIntegrationDeleteRequest(data []byte) (TelegramIntegrationDeleteRequest, error) {
-	var r TelegramIntegrationDeleteRequest
+func UnmarshalIntegrationTelegramDeleteRequest(data []byte) (IntegrationTelegramDeleteRequest, error) {
+	var r IntegrationTelegramDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationDeleteResponse(data []byte) (TelegramIntegrationDeleteResponse, error) {
-	var r TelegramIntegrationDeleteResponse
+func UnmarshalIntegrationTelegramDeleteResponse(data []byte) (IntegrationTelegramDeleteResponse, error) {
+	var r IntegrationTelegramDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationFetchParams(data []byte) (TelegramIntegrationFetchParams, error) {
-	var r TelegramIntegrationFetchParams
+func UnmarshalIntegrationTelegramFetchParams(data []byte) (IntegrationTelegramFetchParams, error) {
+	var r IntegrationTelegramFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationFetchResponse(data []byte) (TelegramIntegrationFetchResponse, error) {
-	var r TelegramIntegrationFetchResponse
+func UnmarshalIntegrationTelegramFetchResponse(data []byte) (IntegrationTelegramFetchResponse, error) {
+	var r IntegrationTelegramFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationSetupParams(data []byte) (TelegramIntegrationSetupParams, error) {
-	var r TelegramIntegrationSetupParams
+func UnmarshalIntegrationTelegramSetupParams(data []byte) (IntegrationTelegramSetupParams, error) {
+	var r IntegrationTelegramSetupParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationSetupParams) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramSetupParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type TelegramIntegrationSetupRequest map[string]interface{}
+type IntegrationTelegramSetupRequest map[string]interface{}
 
-func UnmarshalTelegramIntegrationSetupRequest(data []byte) (TelegramIntegrationSetupRequest, error) {
-	var r TelegramIntegrationSetupRequest
+func UnmarshalIntegrationTelegramSetupRequest(data []byte) (IntegrationTelegramSetupRequest, error) {
+	var r IntegrationTelegramSetupRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationSetupRequest) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramSetupRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationSetupResponse(data []byte) (TelegramIntegrationSetupResponse, error) {
-	var r TelegramIntegrationSetupResponse
+func UnmarshalIntegrationTelegramSetupResponse(data []byte) (IntegrationTelegramSetupResponse, error) {
+	var r IntegrationTelegramSetupResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationSetupResponse) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramSetupResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationUpdateParams(data []byte) (TelegramIntegrationUpdateParams, error) {
-	var r TelegramIntegrationUpdateParams
+func UnmarshalIntegrationTelegramUpdateParams(data []byte) (IntegrationTelegramUpdateParams, error) {
+	var r IntegrationTelegramUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationUpdateRequest(data []byte) (TelegramIntegrationUpdateRequest, error) {
-	var r TelegramIntegrationUpdateRequest
+func UnmarshalIntegrationTelegramUpdateRequest(data []byte) (IntegrationTelegramUpdateRequest, error) {
+	var r IntegrationTelegramUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationUpdateResponse(data []byte) (TelegramIntegrationUpdateResponse, error) {
-	var r TelegramIntegrationUpdateResponse
+func UnmarshalIntegrationTelegramUpdateResponse(data []byte) (IntegrationTelegramUpdateResponse, error) {
+	var r IntegrationTelegramUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationCreateRequest(data []byte) (TelegramIntegrationCreateRequest, error) {
-	var r TelegramIntegrationCreateRequest
+func UnmarshalIntegrationTelegramCreateRequest(data []byte) (IntegrationTelegramCreateRequest, error) {
+	var r IntegrationTelegramCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationCreateResponse(data []byte) (TelegramIntegrationCreateResponse, error) {
-	var r TelegramIntegrationCreateResponse
+func UnmarshalIntegrationTelegramCreateResponse(data []byte) (IntegrationTelegramCreateResponse, error) {
+	var r IntegrationTelegramCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationsListParams(data []byte) (TelegramIntegrationsListParams, error) {
-	var r TelegramIntegrationsListParams
+func UnmarshalIntegrationTelegramListParams(data []byte) (IntegrationTelegramListParams, error) {
+	var r IntegrationTelegramListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTelegramIntegrationsListResponse(data []byte) (TelegramIntegrationsListResponse, error) {
-	var r TelegramIntegrationsListResponse
+func UnmarshalIntegrationTelegramListResponse(data []byte) (IntegrationTelegramListResponse, error) {
+	var r IntegrationTelegramListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TelegramIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationTelegramListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -6165,485 +6165,485 @@ func (r *TriggerIntegrationCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTriggerIntegrationsListParams(data []byte) (TriggerIntegrationsListParams, error) {
-	var r TriggerIntegrationsListParams
+func UnmarshalTriggerIntegrationListParams(data []byte) (TriggerIntegrationListParams, error) {
+	var r TriggerIntegrationListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TriggerIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *TriggerIntegrationListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTriggerIntegrationsListResponse(data []byte) (TriggerIntegrationsListResponse, error) {
-	var r TriggerIntegrationsListResponse
+func UnmarshalTriggerIntegrationListResponse(data []byte) (TriggerIntegrationListResponse, error) {
+	var r TriggerIntegrationListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TriggerIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *TriggerIntegrationListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationDeleteParams(data []byte) (TwilioIntegrationDeleteParams, error) {
-	var r TwilioIntegrationDeleteParams
+func UnmarshalIntegrationTwilioDeleteParams(data []byte) (IntegrationTwilioDeleteParams, error) {
+	var r IntegrationTwilioDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type TwilioIntegrationDeleteRequest map[string]interface{}
+type IntegrationTwilioDeleteRequest map[string]interface{}
 
-func UnmarshalTwilioIntegrationDeleteRequest(data []byte) (TwilioIntegrationDeleteRequest, error) {
-	var r TwilioIntegrationDeleteRequest
+func UnmarshalIntegrationTwilioDeleteRequest(data []byte) (IntegrationTwilioDeleteRequest, error) {
+	var r IntegrationTwilioDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationDeleteResponse(data []byte) (TwilioIntegrationDeleteResponse, error) {
-	var r TwilioIntegrationDeleteResponse
+func UnmarshalIntegrationTwilioDeleteResponse(data []byte) (IntegrationTwilioDeleteResponse, error) {
+	var r IntegrationTwilioDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationFetchParams(data []byte) (TwilioIntegrationFetchParams, error) {
-	var r TwilioIntegrationFetchParams
+func UnmarshalIntegrationTwilioFetchParams(data []byte) (IntegrationTwilioFetchParams, error) {
+	var r IntegrationTwilioFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationFetchResponse(data []byte) (TwilioIntegrationFetchResponse, error) {
-	var r TwilioIntegrationFetchResponse
+func UnmarshalIntegrationTwilioFetchResponse(data []byte) (IntegrationTwilioFetchResponse, error) {
+	var r IntegrationTwilioFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationSetupParams(data []byte) (TwilioIntegrationSetupParams, error) {
-	var r TwilioIntegrationSetupParams
+func UnmarshalIntegrationTwilioSetupParams(data []byte) (IntegrationTwilioSetupParams, error) {
+	var r IntegrationTwilioSetupParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationSetupParams) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioSetupParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type TwilioIntegrationSetupRequest map[string]interface{}
+type IntegrationTwilioSetupRequest map[string]interface{}
 
-func UnmarshalTwilioIntegrationSetupRequest(data []byte) (TwilioIntegrationSetupRequest, error) {
-	var r TwilioIntegrationSetupRequest
+func UnmarshalIntegrationTwilioSetupRequest(data []byte) (IntegrationTwilioSetupRequest, error) {
+	var r IntegrationTwilioSetupRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationSetupRequest) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioSetupRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationSetupResponse(data []byte) (TwilioIntegrationSetupResponse, error) {
-	var r TwilioIntegrationSetupResponse
+func UnmarshalIntegrationTwilioSetupResponse(data []byte) (IntegrationTwilioSetupResponse, error) {
+	var r IntegrationTwilioSetupResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationSetupResponse) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioSetupResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationUpdateParams(data []byte) (TwilioIntegrationUpdateParams, error) {
-	var r TwilioIntegrationUpdateParams
+func UnmarshalIntegrationTwilioUpdateParams(data []byte) (IntegrationTwilioUpdateParams, error) {
+	var r IntegrationTwilioUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationUpdateRequest(data []byte) (TwilioIntegrationUpdateRequest, error) {
-	var r TwilioIntegrationUpdateRequest
+func UnmarshalIntegrationTwilioUpdateRequest(data []byte) (IntegrationTwilioUpdateRequest, error) {
+	var r IntegrationTwilioUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationUpdateResponse(data []byte) (TwilioIntegrationUpdateResponse, error) {
-	var r TwilioIntegrationUpdateResponse
+func UnmarshalIntegrationTwilioUpdateResponse(data []byte) (IntegrationTwilioUpdateResponse, error) {
+	var r IntegrationTwilioUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationCreateRequest(data []byte) (TwilioIntegrationCreateRequest, error) {
-	var r TwilioIntegrationCreateRequest
+func UnmarshalIntegrationTwilioCreateRequest(data []byte) (IntegrationTwilioCreateRequest, error) {
+	var r IntegrationTwilioCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationCreateResponse(data []byte) (TwilioIntegrationCreateResponse, error) {
-	var r TwilioIntegrationCreateResponse
+func UnmarshalIntegrationTwilioCreateResponse(data []byte) (IntegrationTwilioCreateResponse, error) {
+	var r IntegrationTwilioCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationsListParams(data []byte) (TwilioIntegrationsListParams, error) {
-	var r TwilioIntegrationsListParams
+func UnmarshalIntegrationTwilioListParams(data []byte) (IntegrationTwilioListParams, error) {
+	var r IntegrationTwilioListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTwilioIntegrationsListResponse(data []byte) (TwilioIntegrationsListResponse, error) {
-	var r TwilioIntegrationsListResponse
+func UnmarshalIntegrationTwilioListResponse(data []byte) (IntegrationTwilioListResponse, error) {
+	var r IntegrationTwilioListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TwilioIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationTwilioListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationDeleteParams(data []byte) (WhatsAppIntegrationDeleteParams, error) {
-	var r WhatsAppIntegrationDeleteParams
+func UnmarshalIntegrationWhatsAppDeleteParams(data []byte) (IntegrationWhatsAppDeleteParams, error) {
+	var r IntegrationWhatsAppDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type WhatsAppIntegrationDeleteRequest map[string]interface{}
+type IntegrationWhatsAppDeleteRequest map[string]interface{}
 
-func UnmarshalWhatsAppIntegrationDeleteRequest(data []byte) (WhatsAppIntegrationDeleteRequest, error) {
-	var r WhatsAppIntegrationDeleteRequest
+func UnmarshalIntegrationWhatsAppDeleteRequest(data []byte) (IntegrationWhatsAppDeleteRequest, error) {
+	var r IntegrationWhatsAppDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationDeleteResponse(data []byte) (WhatsAppIntegrationDeleteResponse, error) {
-	var r WhatsAppIntegrationDeleteResponse
+func UnmarshalIntegrationWhatsAppDeleteResponse(data []byte) (IntegrationWhatsAppDeleteResponse, error) {
+	var r IntegrationWhatsAppDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationFetchParams(data []byte) (WhatsAppIntegrationFetchParams, error) {
-	var r WhatsAppIntegrationFetchParams
+func UnmarshalIntegrationWhatsAppFetchParams(data []byte) (IntegrationWhatsAppFetchParams, error) {
+	var r IntegrationWhatsAppFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationFetchResponse(data []byte) (WhatsAppIntegrationFetchResponse, error) {
-	var r WhatsAppIntegrationFetchResponse
+func UnmarshalIntegrationWhatsAppFetchResponse(data []byte) (IntegrationWhatsAppFetchResponse, error) {
+	var r IntegrationWhatsAppFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationSetupParams(data []byte) (WhatsAppIntegrationSetupParams, error) {
-	var r WhatsAppIntegrationSetupParams
+func UnmarshalIntegrationWhatsAppSetupParams(data []byte) (IntegrationWhatsAppSetupParams, error) {
+	var r IntegrationWhatsAppSetupParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationSetupParams) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppSetupParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type WhatsAppIntegrationSetupRequest map[string]interface{}
+type IntegrationWhatsAppSetupRequest map[string]interface{}
 
-func UnmarshalWhatsAppIntegrationSetupRequest(data []byte) (WhatsAppIntegrationSetupRequest, error) {
-	var r WhatsAppIntegrationSetupRequest
+func UnmarshalIntegrationWhatsAppSetupRequest(data []byte) (IntegrationWhatsAppSetupRequest, error) {
+	var r IntegrationWhatsAppSetupRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationSetupRequest) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppSetupRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationSetupResponse(data []byte) (WhatsAppIntegrationSetupResponse, error) {
-	var r WhatsAppIntegrationSetupResponse
+func UnmarshalIntegrationWhatsAppSetupResponse(data []byte) (IntegrationWhatsAppSetupResponse, error) {
+	var r IntegrationWhatsAppSetupResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationSetupResponse) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppSetupResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationUpdateParams(data []byte) (WhatsAppIntegrationUpdateParams, error) {
-	var r WhatsAppIntegrationUpdateParams
+func UnmarshalIntegrationWhatsAppUpdateParams(data []byte) (IntegrationWhatsAppUpdateParams, error) {
+	var r IntegrationWhatsAppUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationUpdateRequest(data []byte) (WhatsAppIntegrationUpdateRequest, error) {
-	var r WhatsAppIntegrationUpdateRequest
+func UnmarshalIntegrationWhatsAppUpdateRequest(data []byte) (IntegrationWhatsAppUpdateRequest, error) {
+	var r IntegrationWhatsAppUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationUpdateResponse(data []byte) (WhatsAppIntegrationUpdateResponse, error) {
-	var r WhatsAppIntegrationUpdateResponse
+func UnmarshalIntegrationWhatsAppUpdateResponse(data []byte) (IntegrationWhatsAppUpdateResponse, error) {
+	var r IntegrationWhatsAppUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationCreateRequest(data []byte) (WhatsAppIntegrationCreateRequest, error) {
-	var r WhatsAppIntegrationCreateRequest
+func UnmarshalIntegrationWhatsAppCreateRequest(data []byte) (IntegrationWhatsAppCreateRequest, error) {
+	var r IntegrationWhatsAppCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationCreateResponse(data []byte) (WhatsAppIntegrationCreateResponse, error) {
-	var r WhatsAppIntegrationCreateResponse
+func UnmarshalIntegrationWhatsAppCreateResponse(data []byte) (IntegrationWhatsAppCreateResponse, error) {
+	var r IntegrationWhatsAppCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationsListParams(data []byte) (WhatsAppIntegrationsListParams, error) {
-	var r WhatsAppIntegrationsListParams
+func UnmarshalIntegrationWhatsAppListParams(data []byte) (IntegrationWhatsAppListParams, error) {
+	var r IntegrationWhatsAppListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWhatsAppIntegrationsListResponse(data []byte) (WhatsAppIntegrationsListResponse, error) {
-	var r WhatsAppIntegrationsListResponse
+func UnmarshalIntegrationWhatsAppListResponse(data []byte) (IntegrationWhatsAppListResponse, error) {
+	var r IntegrationWhatsAppListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WhatsAppIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationWhatsAppListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationDeleteParams(data []byte) (WidgetIntegrationDeleteParams, error) {
-	var r WidgetIntegrationDeleteParams
+func UnmarshalIntegrationWidgetDeleteParams(data []byte) (IntegrationWidgetDeleteParams, error) {
+	var r IntegrationWidgetDeleteParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationDeleteParams) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetDeleteParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type WidgetIntegrationDeleteRequest map[string]interface{}
+type IntegrationWidgetDeleteRequest map[string]interface{}
 
-func UnmarshalWidgetIntegrationDeleteRequest(data []byte) (WidgetIntegrationDeleteRequest, error) {
-	var r WidgetIntegrationDeleteRequest
+func UnmarshalIntegrationWidgetDeleteRequest(data []byte) (IntegrationWidgetDeleteRequest, error) {
+	var r IntegrationWidgetDeleteRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationDeleteRequest) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetDeleteRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationDeleteResponse(data []byte) (WidgetIntegrationDeleteResponse, error) {
-	var r WidgetIntegrationDeleteResponse
+func UnmarshalIntegrationWidgetDeleteResponse(data []byte) (IntegrationWidgetDeleteResponse, error) {
+	var r IntegrationWidgetDeleteResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationDeleteResponse) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationFetchParams(data []byte) (WidgetIntegrationFetchParams, error) {
-	var r WidgetIntegrationFetchParams
+func UnmarshalIntegrationWidgetFetchParams(data []byte) (IntegrationWidgetFetchParams, error) {
+	var r IntegrationWidgetFetchParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationFetchParams) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetFetchParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationFetchResponse(data []byte) (WidgetIntegrationFetchResponse, error) {
-	var r WidgetIntegrationFetchResponse
+func UnmarshalIntegrationWidgetFetchResponse(data []byte) (IntegrationWidgetFetchResponse, error) {
+	var r IntegrationWidgetFetchResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationFetchResponse) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationSetupParams(data []byte) (WidgetIntegrationSetupParams, error) {
-	var r WidgetIntegrationSetupParams
+func UnmarshalIntegrationWidgetSetupParams(data []byte) (IntegrationWidgetSetupParams, error) {
+	var r IntegrationWidgetSetupParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationSetupParams) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetSetupParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-type WidgetIntegrationSetupRequest map[string]interface{}
+type IntegrationWidgetSetupRequest map[string]interface{}
 
-func UnmarshalWidgetIntegrationSetupRequest(data []byte) (WidgetIntegrationSetupRequest, error) {
-	var r WidgetIntegrationSetupRequest
+func UnmarshalIntegrationWidgetSetupRequest(data []byte) (IntegrationWidgetSetupRequest, error) {
+	var r IntegrationWidgetSetupRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationSetupRequest) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetSetupRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationSetupResponse(data []byte) (WidgetIntegrationSetupResponse, error) {
-	var r WidgetIntegrationSetupResponse
+func UnmarshalIntegrationWidgetSetupResponse(data []byte) (IntegrationWidgetSetupResponse, error) {
+	var r IntegrationWidgetSetupResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationSetupResponse) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetSetupResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationUpdateParams(data []byte) (WidgetIntegrationUpdateParams, error) {
-	var r WidgetIntegrationUpdateParams
+func UnmarshalIntegrationWidgetUpdateParams(data []byte) (IntegrationWidgetUpdateParams, error) {
+	var r IntegrationWidgetUpdateParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationUpdateParams) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetUpdateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationUpdateRequest(data []byte) (WidgetIntegrationUpdateRequest, error) {
-	var r WidgetIntegrationUpdateRequest
+func UnmarshalIntegrationWidgetUpdateRequest(data []byte) (IntegrationWidgetUpdateRequest, error) {
+	var r IntegrationWidgetUpdateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationUpdateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetUpdateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationUpdateResponse(data []byte) (WidgetIntegrationUpdateResponse, error) {
-	var r WidgetIntegrationUpdateResponse
+func UnmarshalIntegrationWidgetUpdateResponse(data []byte) (IntegrationWidgetUpdateResponse, error) {
+	var r IntegrationWidgetUpdateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationUpdateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetUpdateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationCreateRequest(data []byte) (WidgetIntegrationCreateRequest, error) {
-	var r WidgetIntegrationCreateRequest
+func UnmarshalIntegrationWidgetCreateRequest(data []byte) (IntegrationWidgetCreateRequest, error) {
+	var r IntegrationWidgetCreateRequest
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationCreateRequest) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationCreateResponse(data []byte) (WidgetIntegrationCreateResponse, error) {
-	var r WidgetIntegrationCreateResponse
+func UnmarshalIntegrationWidgetCreateResponse(data []byte) (IntegrationWidgetCreateResponse, error) {
+	var r IntegrationWidgetCreateResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationCreateResponse) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationsListParams(data []byte) (WidgetIntegrationsListParams, error) {
-	var r WidgetIntegrationsListParams
+func UnmarshalIntegrationWidgetListParams(data []byte) (IntegrationWidgetListParams, error) {
+	var r IntegrationWidgetListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationsListParams) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalWidgetIntegrationsListResponse(data []byte) (WidgetIntegrationsListResponse, error) {
-	var r WidgetIntegrationsListResponse
+func UnmarshalIntegrationWidgetListResponse(data []byte) (IntegrationWidgetListResponse, error) {
+	var r IntegrationWidgetListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *WidgetIntegrationsListResponse) Marshal() ([]byte, error) {
+func (r *IntegrationWidgetListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -6677,23 +6677,23 @@ func (r *MagicFromPromptGenerateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMagicPromptsListParams(data []byte) (MagicPromptsListParams, error) {
-	var r MagicPromptsListParams
+func UnmarshalMagicPromptListParams(data []byte) (MagicPromptListParams, error) {
+	var r MagicPromptListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MagicPromptsListParams) Marshal() ([]byte, error) {
+func (r *MagicPromptListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMagicPromptsListResponse(data []byte) (MagicPromptsListResponse, error) {
-	var r MagicPromptsListResponse
+func UnmarshalMagicPromptListResponse(data []byte) (MagicPromptListResponse, error) {
+	var r MagicPromptListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MagicPromptsListResponse) Marshal() ([]byte, error) {
+func (r *MagicPromptListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -6819,23 +6819,23 @@ func (r *MemoriesExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoriesListParams(data []byte) (MemoriesListParams, error) {
-	var r MemoriesListParams
+func UnmarshalMemoryListParams(data []byte) (MemoryListParams, error) {
+	var r MemoryListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoriesListParams) Marshal() ([]byte, error) {
+func (r *MemoryListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalMemoriesListResponse(data []byte) (MemoriesListResponse, error) {
-	var r MemoriesListResponse
+func UnmarshalMemoryListResponse(data []byte) (MemoryListResponse, error) {
+	var r MemoryListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *MemoriesListResponse) Marshal() ([]byte, error) {
+func (r *MemoryListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -6975,23 +6975,23 @@ func (r *PartnerUserTokenCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserTokensListParams(data []byte) (PartnerUserTokensListParams, error) {
-	var r PartnerUserTokensListParams
+func UnmarshalPartnerUserTokenListParams(data []byte) (PartnerUserTokenListParams, error) {
+	var r PartnerUserTokenListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserTokensListParams) Marshal() ([]byte, error) {
+func (r *PartnerUserTokenListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUserTokensListResponse(data []byte) (PartnerUserTokensListResponse, error) {
-	var r PartnerUserTokensListResponse
+func UnmarshalPartnerUserTokenListResponse(data []byte) (PartnerUserTokenListResponse, error) {
+	var r PartnerUserTokenListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUserTokensListResponse) Marshal() ([]byte, error) {
+func (r *PartnerUserTokenListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7045,63 +7045,63 @@ func (r *PartnerUserCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUsersListParams(data []byte) (PartnerUsersListParams, error) {
-	var r PartnerUsersListParams
+func UnmarshalPartnerUserListParams(data []byte) (PartnerUserListParams, error) {
+	var r PartnerUserListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUsersListParams) Marshal() ([]byte, error) {
+func (r *PartnerUserListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPartnerUsersListResponse(data []byte) (PartnerUsersListResponse, error) {
-	var r PartnerUsersListResponse
+func UnmarshalPartnerUserListResponse(data []byte) (PartnerUserListResponse, error) {
+	var r PartnerUserListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PartnerUsersListResponse) Marshal() ([]byte, error) {
+func (r *PartnerUserListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformAbilitiesListParams(data []byte) (PlatformAbilitiesListParams, error) {
-	var r PlatformAbilitiesListParams
+func UnmarshalPlatformAbilityListParams(data []byte) (PlatformAbilityListParams, error) {
+	var r PlatformAbilityListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformAbilitiesListParams) Marshal() ([]byte, error) {
+func (r *PlatformAbilityListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformAbilitiesListResponse(data []byte) (PlatformAbilitiesListResponse, error) {
-	var r PlatformAbilitiesListResponse
+func UnmarshalPlatformAbilityListResponse(data []byte) (PlatformAbilityListResponse, error) {
+	var r PlatformAbilityListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformAbilitiesListResponse) Marshal() ([]byte, error) {
+func (r *PlatformAbilityListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformActionsListParams(data []byte) (PlatformActionsListParams, error) {
-	var r PlatformActionsListParams
+func UnmarshalPlatformActionListParams(data []byte) (PlatformActionListParams, error) {
+	var r PlatformActionListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformActionsListParams) Marshal() ([]byte, error) {
+func (r *PlatformActionListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformActionsListResponse(data []byte) (PlatformActionsListResponse, error) {
-	var r PlatformActionsListResponse
+func UnmarshalPlatformActionListResponse(data []byte) (PlatformActionListResponse, error) {
+	var r PlatformActionListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformActionsListResponse) Marshal() ([]byte, error) {
+func (r *PlatformActionListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7125,23 +7125,23 @@ func (r *PlatformDocFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformDocsListParams(data []byte) (PlatformDocsListParams, error) {
-	var r PlatformDocsListParams
+func UnmarshalPlatformDocListParams(data []byte) (PlatformDocListParams, error) {
+	var r PlatformDocListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformDocsListParams) Marshal() ([]byte, error) {
+func (r *PlatformDocListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformDocsListResponse(data []byte) (PlatformDocsListResponse, error) {
-	var r PlatformDocsListResponse
+func UnmarshalPlatformDocListResponse(data []byte) (PlatformDocListResponse, error) {
+	var r PlatformDocListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformDocsListResponse) Marshal() ([]byte, error) {
+func (r *PlatformDocListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7217,23 +7217,23 @@ func (r *PlatformExampleFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformExamplesListParams(data []byte) (PlatformExamplesListParams, error) {
-	var r PlatformExamplesListParams
+func UnmarshalPlatformExampleListParams(data []byte) (PlatformExampleListParams, error) {
+	var r PlatformExampleListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformExamplesListParams) Marshal() ([]byte, error) {
+func (r *PlatformExampleListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformExamplesListResponse(data []byte) (PlatformExamplesListResponse, error) {
-	var r PlatformExamplesListResponse
+func UnmarshalPlatformExampleListResponse(data []byte) (PlatformExampleListResponse, error) {
+	var r PlatformExampleListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformExamplesListResponse) Marshal() ([]byte, error) {
+func (r *PlatformExampleListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7277,23 +7277,23 @@ func (r *PlatformGuideFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformGuidesListParams(data []byte) (PlatformGuidesListParams, error) {
-	var r PlatformGuidesListParams
+func UnmarshalPlatformGuideListParams(data []byte) (PlatformGuideListParams, error) {
+	var r PlatformGuideListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformGuidesListParams) Marshal() ([]byte, error) {
+func (r *PlatformGuideListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformGuidesListResponse(data []byte) (PlatformGuidesListResponse, error) {
-	var r PlatformGuidesListResponse
+func UnmarshalPlatformGuideListResponse(data []byte) (PlatformGuideListResponse, error) {
+	var r PlatformGuideListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformGuidesListResponse) Marshal() ([]byte, error) {
+func (r *PlatformGuideListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7337,23 +7337,23 @@ func (r *PlatformManualFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformManualsListParams(data []byte) (PlatformManualsListParams, error) {
-	var r PlatformManualsListParams
+func UnmarshalPlatformManualListParams(data []byte) (PlatformManualListParams, error) {
+	var r PlatformManualListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformManualsListParams) Marshal() ([]byte, error) {
+func (r *PlatformManualListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformManualsListResponse(data []byte) (PlatformManualsListResponse, error) {
-	var r PlatformManualsListResponse
+func UnmarshalPlatformManualListResponse(data []byte) (PlatformManualListResponse, error) {
+	var r PlatformManualListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformManualsListResponse) Marshal() ([]byte, error) {
+func (r *PlatformManualListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7377,43 +7377,43 @@ func (r *PlatformManualsSearchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformModelsListParams(data []byte) (PlatformModelsListParams, error) {
-	var r PlatformModelsListParams
+func UnmarshalPlatformModelListParams(data []byte) (PlatformModelListParams, error) {
+	var r PlatformModelListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformModelsListParams) Marshal() ([]byte, error) {
+func (r *PlatformModelListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformModelsListResponse(data []byte) (PlatformModelsListResponse, error) {
-	var r PlatformModelsListResponse
+func UnmarshalPlatformModelListResponse(data []byte) (PlatformModelListResponse, error) {
+	var r PlatformModelListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformModelsListResponse) Marshal() ([]byte, error) {
+func (r *PlatformModelListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformSecretsListParams(data []byte) (PlatformSecretsListParams, error) {
-	var r PlatformSecretsListParams
+func UnmarshalPlatformSecretListParams(data []byte) (PlatformSecretListParams, error) {
+	var r PlatformSecretListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformSecretsListParams) Marshal() ([]byte, error) {
+func (r *PlatformSecretListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformSecretsListResponse(data []byte) (PlatformSecretsListResponse, error) {
-	var r PlatformSecretsListResponse
+func UnmarshalPlatformSecretListResponse(data []byte) (PlatformSecretListResponse, error) {
+	var r PlatformSecretListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformSecretsListResponse) Marshal() ([]byte, error) {
+func (r *PlatformSecretListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7437,23 +7437,23 @@ func (r *PlatformTutorialFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformTutorialsListParams(data []byte) (PlatformTutorialsListParams, error) {
-	var r PlatformTutorialsListParams
+func UnmarshalPlatformTutorialListParams(data []byte) (PlatformTutorialListParams, error) {
+	var r PlatformTutorialListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformTutorialsListParams) Marshal() ([]byte, error) {
+func (r *PlatformTutorialListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPlatformTutorialsListResponse(data []byte) (PlatformTutorialsListResponse, error) {
-	var r PlatformTutorialsListResponse
+func UnmarshalPlatformTutorialListResponse(data []byte) (PlatformTutorialListResponse, error) {
+	var r PlatformTutorialListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PlatformTutorialsListResponse) Marshal() ([]byte, error) {
+func (r *PlatformTutorialListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7579,23 +7579,23 @@ func (r *PolicyCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPoliciesListParams(data []byte) (PoliciesListParams, error) {
-	var r PoliciesListParams
+func UnmarshalPolicyListParams(data []byte) (PolicyListParams, error) {
+	var r PolicyListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PoliciesListParams) Marshal() ([]byte, error) {
+func (r *PolicyListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPoliciesListResponse(data []byte) (PoliciesListResponse, error) {
-	var r PoliciesListResponse
+func UnmarshalPolicyListResponse(data []byte) (PolicyListResponse, error) {
+	var r PolicyListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PoliciesListResponse) Marshal() ([]byte, error) {
+func (r *PolicyListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7701,23 +7701,23 @@ func (r *PortalCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalsListParams(data []byte) (PortalsListParams, error) {
-	var r PortalsListParams
+func UnmarshalPortalListParams(data []byte) (PortalListParams, error) {
+	var r PortalListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalsListParams) Marshal() ([]byte, error) {
+func (r *PortalListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalPortalsListResponse(data []byte) (PortalsListResponse, error) {
-	var r PortalsListResponse
+func UnmarshalPortalListResponse(data []byte) (PortalListResponse, error) {
+	var r PortalListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *PortalsListResponse) Marshal() ([]byte, error) {
+func (r *PortalListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7919,23 +7919,23 @@ func (r *SecretCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretsListParams(data []byte) (SecretsListParams, error) {
-	var r SecretsListParams
+func UnmarshalSecretListParams(data []byte) (SecretListParams, error) {
+	var r SecretListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretsListParams) Marshal() ([]byte, error) {
+func (r *SecretListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSecretsListResponse(data []byte) (SecretsListResponse, error) {
-	var r SecretsListResponse
+func UnmarshalSecretListResponse(data []byte) (SecretListResponse, error) {
+	var r SecretListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SecretsListResponse) Marshal() ([]byte, error) {
+func (r *SecretListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8101,23 +8101,23 @@ func (r *SkillsetAbilitiesExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilitiesListParams(data []byte) (SkillsetAbilitiesListParams, error) {
-	var r SkillsetAbilitiesListParams
+func UnmarshalSkillsetAbilityListParams(data []byte) (SkillsetAbilityListParams, error) {
+	var r SkillsetAbilityListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilitiesListParams) Marshal() ([]byte, error) {
+func (r *SkillsetAbilityListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetAbilitiesListResponse(data []byte) (SkillsetAbilitiesListResponse, error) {
-	var r SkillsetAbilitiesListResponse
+func UnmarshalSkillsetAbilityListResponse(data []byte) (SkillsetAbilityListResponse, error) {
+	var r SkillsetAbilityListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetAbilitiesListResponse) Marshal() ([]byte, error) {
+func (r *SkillsetAbilityListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8223,23 +8223,23 @@ func (r *SkillsetCreateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetsListParams(data []byte) (SkillsetsListParams, error) {
-	var r SkillsetsListParams
+func UnmarshalSkillsetListParams(data []byte) (SkillsetListParams, error) {
+	var r SkillsetListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetsListParams) Marshal() ([]byte, error) {
+func (r *SkillsetListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSkillsetsListResponse(data []byte) (SkillsetsListResponse, error) {
-	var r SkillsetsListResponse
+func UnmarshalSkillsetListResponse(data []byte) (SkillsetListResponse, error) {
+	var r SkillsetListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SkillsetsListResponse) Marshal() ([]byte, error) {
+func (r *SkillsetListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8333,23 +8333,23 @@ func (r *SpacesExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpacesListParams(data []byte) (SpacesListParams, error) {
-	var r SpacesListParams
+func UnmarshalSpaceListParams(data []byte) (SpaceListParams, error) {
+	var r SpaceListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpacesListParams) Marshal() ([]byte, error) {
+func (r *SpaceListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalSpacesListResponse(data []byte) (SpacesListResponse, error) {
-	var r SpacesListResponse
+func UnmarshalSpaceListResponse(data []byte) (SpaceListResponse, error) {
+	var r SpaceListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *SpacesListResponse) Marshal() ([]byte, error) {
+func (r *SpaceListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8507,43 +8507,43 @@ func (r *TasksExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTasksListParams(data []byte) (TasksListParams, error) {
-	var r TasksListParams
+func UnmarshalTaskListParams(data []byte) (TaskListParams, error) {
+	var r TaskListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TasksListParams) Marshal() ([]byte, error) {
+func (r *TaskListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTasksListResponse(data []byte) (TasksListResponse, error) {
-	var r TasksListResponse
+func UnmarshalTaskListResponse(data []byte) (TaskListResponse, error) {
+	var r TaskListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TasksListResponse) Marshal() ([]byte, error) {
+func (r *TaskListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTeamsListParams(data []byte) (TeamsListParams, error) {
-	var r TeamsListParams
+func UnmarshalTeamListParams(data []byte) (TeamListParams, error) {
+	var r TeamListParams
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TeamsListParams) Marshal() ([]byte, error) {
+func (r *TeamListParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTeamsListResponse(data []byte) (TeamsListResponse, error) {
-	var r TeamsListResponse
+func UnmarshalTeamListResponse(data []byte) (TeamListResponse, error) {
+	var r TeamListResponse
 	err := json.Unmarshal(data, &r)
 	return r, err
 }
 
-func (r *TeamsListResponse) Marshal() ([]byte, error) {
+func (r *TeamListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8975,21 +8975,21 @@ type Error struct {
 	Message *string `json:"message,omitempty"`
 }
 
-type PlatformReportsListParams struct {
-	// The cursor to use for pagination        
-	Cursor                             *string `json:"cursor,omitempty"`
-	// The order of the paginated items        
-	Order                              *Order  `json:"order,omitempty"`
-	// The number of items to retrieve         
-	Take                               *int64  `json:"take,omitempty"`
+type PlatformReportListParams struct {
+	// The cursor to use for pagination                               
+	Cursor                             *string                        `json:"cursor,omitempty"`
+	// The order of the paginated items                               
+	Order                              *PlatformReportListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                
+	Take                               *int64                         `json:"take,omitempty"`
 }
 
-type PlatformReportsListResponse struct {
-	Items []PlatformReportsListResponseItem `json:"items"`
+type PlatformReportListResponse struct {
+	Items []PlatformReportListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformReportsListResponseItem struct {
+type PlatformReportListResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -9050,28 +9050,28 @@ type BlueprintFetchParams struct {
 
 // Instance list properties
 type BlueprintFetchResponse struct {
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
-	// The blueprint visibility                                               
-	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
+	// The timestamp (ms) when the instance was created                                  
+	CreatedAt                                          float64                           `json:"createdAt"`
+	// The associated description                                                        
+	Description                                        *string                           `json:"description,omitempty"`
+	// The instance ID                                                                   
+	ID                                                 string                            `json:"id"`
+	// Meta data information                                                             
+	Meta                                               map[string]interface{}            `json:"meta,omitempty"`
+	// The associated name                                                               
+	Name                                               *string                           `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                                  
+	UpdatedAt                                          float64                           `json:"updatedAt"`
+	// The blueprint visibility                                                          
+	Visibility                                         *BlueprintFetchResponseVisibility `json:"visibility,omitempty"`
 }
 
-type BlueprintResourcesListParams struct {
+type BlueprintResourceListParams struct {
 	// The ID of the blueprint to clone       
 	BlueprintID                        string `json:"blueprintId"`
 }
 
-type BlueprintResourcesListResponse struct {
+type BlueprintResourceListResponse struct {
 	// The ID of the blueprint                       
 	ID                        string                 `json:"id"`
 	// A map of the resources                        
@@ -9084,16 +9084,16 @@ type BlueprintUpdateParams struct {
 
 // Instance crud properties
 type BlueprintUpdateRequest struct {
-	// The unique alias for the instance                       
-	Alias                               *string                `json:"alias,omitempty"`
-	// The associated description                              
-	Description                         *string                `json:"description,omitempty"`
-	// Meta data information                                   
-	Meta                                map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                     
-	Name                                *string                `json:"name,omitempty"`
-	// The blueprint visibility                                
-	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
+	// The unique alias for the instance                                  
+	Alias                               *string                           `json:"alias,omitempty"`
+	// The associated description                                         
+	Description                         *string                           `json:"description,omitempty"`
+	// Meta data information                                              
+	Meta                                map[string]interface{}            `json:"meta,omitempty"`
+	// The associated name                                                
+	Name                                *string                           `json:"name,omitempty"`
+	// The blueprint visibility                                           
+	Visibility                          *BlueprintUpdateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type BlueprintUpdateResponse struct {
@@ -9103,16 +9103,16 @@ type BlueprintUpdateResponse struct {
 
 // Instance crud properties
 type BlueprintCreateRequest struct {
-	// The unique alias for the instance                       
-	Alias                               *string                `json:"alias,omitempty"`
-	// The associated description                              
-	Description                         *string                `json:"description,omitempty"`
-	// Meta data information                                   
-	Meta                                map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                     
-	Name                                *string                `json:"name,omitempty"`
-	// The blueprint visibility                                
-	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
+	// The unique alias for the instance                                  
+	Alias                               *string                           `json:"alias,omitempty"`
+	// The associated description                                         
+	Description                         *string                           `json:"description,omitempty"`
+	// Meta data information                                              
+	Meta                                map[string]interface{}            `json:"meta,omitempty"`
+	// The associated name                                                
+	Name                                *string                           `json:"name,omitempty"`
+	// The blueprint visibility                                           
+	Visibility                          *BlueprintCreateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type BlueprintCreateResponse struct {
@@ -9120,23 +9120,23 @@ type BlueprintCreateResponse struct {
 	ID                                string `json:"id"`
 }
 
-type BlueprintsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type BlueprintListParams struct {
+	// The cursor to use for pagination                                                 
+	Cursor                                                    *string                   `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                          
+	Meta                                                      map[string]string         `json:"meta,omitempty"`
+	// The order of the paginated items                                                 
+	Order                                                     *BlueprintListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                  
+	Take                                                      *int64                    `json:"take,omitempty"`
 }
 
-type BlueprintsListResponse struct {
-	Items []BlueprintsListResponseItem `json:"items"`
+type BlueprintListResponse struct {
+	Items []BlueprintListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type BlueprintsListResponseItem struct {
+type BlueprintListResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -9150,7 +9150,7 @@ type BlueprintsListResponseItem struct {
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 	// The blueprint visibility                                               
-	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
+	Visibility                                         *PurpleVisibility      `json:"visibility,omitempty"`
 }
 
 type BotCloneParams struct {
@@ -9196,34 +9196,34 @@ type BotFetchParams struct {
 
 // Blueprint properties
 type BotFetchResponse struct {
-	// The backstory this configuration is using                                
-	Backstory                                            *string                `json:"backstory,omitempty"`
-	// The ID of the blueprint                                                  
-	BlueprintID                                          *string                `json:"blueprintId,omitempty"`
-	// The timestamp (ms) when the instance was created                         
-	CreatedAt                                            float64                `json:"createdAt"`
-	// The id of the dataset this configuration is using                        
-	DatasetID                                            *string                `json:"datasetId,omitempty"`
-	// The associated description                                               
-	Description                                          *string                `json:"description,omitempty"`
-	// The instance ID                                                          
-	ID                                                   string                 `json:"id"`
-	// Meta data information                                                    
-	Meta                                                 map[string]interface{} `json:"meta,omitempty"`
-	// A model definition                                                       
-	Model                                                *string                `json:"model,omitempty"`
-	// The moderation flag for this configuration                               
-	Moderation                                           *bool                  `json:"moderation,omitempty"`
-	// The associated name                                                      
-	Name                                                 *string                `json:"name,omitempty"`
-	// The privacy flag for this configuration                                  
-	Privacy                                              *bool                  `json:"privacy,omitempty"`
-	// The id of the skillset this configuration is using                       
-	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
-	// The timestamp (ms) when the instance was updated                         
-	UpdatedAt                                            float64                `json:"updatedAt"`
-	// The bot visibility                                                       
-	Visibility                                           *SecretVisibility      `json:"visibility,omitempty"`
+	// The backstory this configuration is using                                     
+	Backstory                                            *string                     `json:"backstory,omitempty"`
+	// The ID of the blueprint                                                       
+	BlueprintID                                          *string                     `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                              
+	CreatedAt                                            float64                     `json:"createdAt"`
+	// The id of the dataset this configuration is using                             
+	DatasetID                                            *string                     `json:"datasetId,omitempty"`
+	// The associated description                                                    
+	Description                                          *string                     `json:"description,omitempty"`
+	// The instance ID                                                               
+	ID                                                   string                      `json:"id"`
+	// Meta data information                                                         
+	Meta                                                 map[string]interface{}      `json:"meta,omitempty"`
+	// A model definition                                                            
+	Model                                                *string                     `json:"model,omitempty"`
+	// The moderation flag for this configuration                                    
+	Moderation                                           *bool                       `json:"moderation,omitempty"`
+	// The associated name                                                           
+	Name                                                 *string                     `json:"name,omitempty"`
+	// The privacy flag for this configuration                                       
+	Privacy                                              *bool                       `json:"privacy,omitempty"`
+	// The id of the skillset this configuration is using                            
+	SkillsetID                                           *string                     `json:"skillsetId,omitempty"`
+	// The timestamp (ms) when the instance was updated                              
+	UpdatedAt                                            float64                     `json:"updatedAt"`
+	// The bot visibility                                                            
+	Visibility                                           *BotFetchResponseVisibility `json:"visibility,omitempty"`
 }
 
 type BotMemorySearchParams struct {
@@ -9262,10 +9262,10 @@ type BotSessionCreateRequest struct {
 }
 
 type BotSessionCreateRequestMessage struct {
-	// The text of the message            
-	Text                      string      `json:"text"`
-	// The type of the message            
-	Type                      MessageType `json:"type"`
+	// The text of the message           
+	Text                      string     `json:"text"`
+	// The type of the message           
+	Type                      PurpleType `json:"type"`
 }
 
 type BotSessionCreateResponse struct {
@@ -9282,10 +9282,10 @@ type BotSessionCreateResponse struct {
 }
 
 type BotSessionCreateResponseMessage struct {
-	// The text of the message            
-	Text                      string      `json:"text"`
-	// The type of the message            
-	Type                      MessageType `json:"type"`
+	// The text of the message           
+	Text                      string     `json:"text"`
+	// The type of the message           
+	Type                      FluffyType `json:"type"`
 }
 
 type BotUpdateParams struct {
@@ -9294,30 +9294,30 @@ type BotUpdateParams struct {
 
 // Blueprint properties
 type BotUpdateRequest struct {
-	// The unique alias for the instance                                        
-	Alias                                                *string                `json:"alias,omitempty"`
-	// The backstory this configuration is using                                
-	Backstory                                            *string                `json:"backstory,omitempty"`
-	// The ID of the blueprint                                                  
-	BlueprintID                                          *string                `json:"blueprintId,omitempty"`
-	// The id of the dataset this configuration is using                        
-	DatasetID                                            *string                `json:"datasetId,omitempty"`
-	// The associated description                                               
-	Description                                          *string                `json:"description,omitempty"`
-	// Meta data information                                                    
-	Meta                                                 map[string]interface{} `json:"meta,omitempty"`
-	// A model definition                                                       
-	Model                                                *string                `json:"model,omitempty"`
-	// The moderation flag for this configuration                               
-	Moderation                                           *bool                  `json:"moderation,omitempty"`
-	// The associated name                                                      
-	Name                                                 *string                `json:"name,omitempty"`
-	// The privacy flag for this configuration                                  
-	Privacy                                              *bool                  `json:"privacy,omitempty"`
-	// The id of the skillset this configuration is using                       
-	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
-	// The bot visibility                                                       
-	Visibility                                           *SecretVisibility      `json:"visibility,omitempty"`
+	// The unique alias for the instance                                             
+	Alias                                                *string                     `json:"alias,omitempty"`
+	// The backstory this configuration is using                                     
+	Backstory                                            *string                     `json:"backstory,omitempty"`
+	// The ID of the blueprint                                                       
+	BlueprintID                                          *string                     `json:"blueprintId,omitempty"`
+	// The id of the dataset this configuration is using                             
+	DatasetID                                            *string                     `json:"datasetId,omitempty"`
+	// The associated description                                                    
+	Description                                          *string                     `json:"description,omitempty"`
+	// Meta data information                                                         
+	Meta                                                 map[string]interface{}      `json:"meta,omitempty"`
+	// A model definition                                                            
+	Model                                                *string                     `json:"model,omitempty"`
+	// The moderation flag for this configuration                                    
+	Moderation                                           *bool                       `json:"moderation,omitempty"`
+	// The associated name                                                           
+	Name                                                 *string                     `json:"name,omitempty"`
+	// The privacy flag for this configuration                                       
+	Privacy                                              *bool                       `json:"privacy,omitempty"`
+	// The id of the skillset this configuration is using                            
+	SkillsetID                                           *string                     `json:"skillsetId,omitempty"`
+	// The bot visibility                                                            
+	Visibility                                           *BotUpdateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type BotUpdateResponse struct {
@@ -9362,30 +9362,30 @@ type BotUsageFetchResponse struct {
 
 // Blueprint properties
 type BotCreateRequest struct {
-	// The unique alias for the instance                                        
-	Alias                                                *string                `json:"alias,omitempty"`
-	// The backstory this configuration is using                                
-	Backstory                                            *string                `json:"backstory,omitempty"`
-	// The ID of the blueprint                                                  
-	BlueprintID                                          *string                `json:"blueprintId,omitempty"`
-	// The id of the dataset this configuration is using                        
-	DatasetID                                            *string                `json:"datasetId,omitempty"`
-	// The associated description                                               
-	Description                                          *string                `json:"description,omitempty"`
-	// Meta data information                                                    
-	Meta                                                 map[string]interface{} `json:"meta,omitempty"`
-	// A model definition                                                       
-	Model                                                *string                `json:"model,omitempty"`
-	// The moderation flag for this configuration                               
-	Moderation                                           *bool                  `json:"moderation,omitempty"`
-	// The associated name                                                      
-	Name                                                 *string                `json:"name,omitempty"`
-	// The privacy flag for this configuration                                  
-	Privacy                                              *bool                  `json:"privacy,omitempty"`
-	// The id of the skillset this configuration is using                       
-	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
-	// The bot visibility                                                       
-	Visibility                                           *SecretVisibility      `json:"visibility,omitempty"`
+	// The unique alias for the instance                                             
+	Alias                                                *string                     `json:"alias,omitempty"`
+	// The backstory this configuration is using                                     
+	Backstory                                            *string                     `json:"backstory,omitempty"`
+	// The ID of the blueprint                                                       
+	BlueprintID                                          *string                     `json:"blueprintId,omitempty"`
+	// The id of the dataset this configuration is using                             
+	DatasetID                                            *string                     `json:"datasetId,omitempty"`
+	// The associated description                                                    
+	Description                                          *string                     `json:"description,omitempty"`
+	// Meta data information                                                         
+	Meta                                                 map[string]interface{}      `json:"meta,omitempty"`
+	// A model definition                                                            
+	Model                                                *string                     `json:"model,omitempty"`
+	// The moderation flag for this configuration                                    
+	Moderation                                           *bool                       `json:"moderation,omitempty"`
+	// The associated name                                                           
+	Name                                                 *string                     `json:"name,omitempty"`
+	// The privacy flag for this configuration                                       
+	Privacy                                              *bool                       `json:"privacy,omitempty"`
+	// The id of the skillset this configuration is using                            
+	SkillsetID                                           *string                     `json:"skillsetId,omitempty"`
+	// The bot visibility                                                            
+	Visibility                                           *BotCreateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type BotCreateResponse struct {
@@ -9393,23 +9393,23 @@ type BotCreateResponse struct {
 	ID                          string `json:"id"`
 }
 
-type BotsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type BotListParams struct {
+	// The cursor to use for pagination                                           
+	Cursor                                                    *string             `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                    
+	Meta                                                      map[string]string   `json:"meta,omitempty"`
+	// The order of the paginated items                                           
+	Order                                                     *BotListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                            
+	Take                                                      *int64              `json:"take,omitempty"`
 }
 
-type BotsListResponse struct {
-	Items []BotsListResponseItem `json:"items"`
+type BotListResponse struct {
+	Items []BotListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type BotsListResponseItem struct {
+type BotListResponseItem struct {
 	// The backstory this configuration is using                                
 	Backstory                                            *string                `json:"backstory,omitempty"`
 	// The ID of the blueprint                                                  
@@ -9437,7 +9437,7 @@ type BotsListResponseItem struct {
 	// The timestamp (ms) when the instance was updated                         
 	UpdatedAt                                            float64                `json:"updatedAt"`
 	// The bot visibility                                                       
-	Visibility                                           *SecretVisibility      `json:"visibility,omitempty"`
+	Visibility                                           *FluffyVisibility      `json:"visibility,omitempty"`
 }
 
 type ChannelMessagePublishParams struct {
@@ -9470,25 +9470,25 @@ type ChannelMessagesSubscribeRequest struct {
 	HistoryLength                                              *int64 `json:"historyLength,omitempty"`
 }
 
-type ContactConversationsListParams struct {
-	// The ID of the contact to list conversations for        
-	ContactID                                         string  `json:"contactId"`
-	// The cursor to use for pagination                       
-	Cursor                                            *string `json:"cursor,omitempty"`
-	// The order of the paginated items                       
-	Order                                             *Order  `json:"order,omitempty"`
-	// The number of items to retrieve                        
-	Take                                              *int64  `json:"take,omitempty"`
+type ContactConversationListParams struct {
+	// The ID of the contact to list conversations for                                    
+	ContactID                                         string                              `json:"contactId"`
+	// The cursor to use for pagination                                                   
+	Cursor                                            *string                             `json:"cursor,omitempty"`
+	// The order of the paginated items                                                   
+	Order                                             *ContactConversationListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                    
+	Take                                              *int64                              `json:"take,omitempty"`
 }
 
-type ContactConversationsListResponse struct {
-	Items []ContactConversationsListResponseItem `json:"items"`
+type ContactConversationListResponse struct {
+	Items []ContactConversationListResponseItem `json:"items"`
 }
 
 // A bot configuration or reference
 //
 // A bot configuration that can be applied without a dedicated bot instance.
-type ContactConversationsListResponseItem struct {
+type ContactConversationListResponseItem struct {
 	// The contact id assigned to this conversation                             
 	ContactID                                            *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                         
@@ -9564,23 +9564,23 @@ type ContactFetchResponse struct {
 	VerifiedAt                                         *float64               `json:"verifiedAt,omitempty"`
 }
 
-type ContactMemoriesListParams struct {
-	// The ID of the contact to list memories for        
-	ContactID                                    string  `json:"contactId"`
-	// The cursor to use for pagination                  
-	Cursor                                       *string `json:"cursor,omitempty"`
-	// The order of the paginated items                  
-	Order                                        *Order  `json:"order,omitempty"`
-	// The number of items to retrieve                   
-	Take                                         *int64  `json:"take,omitempty"`
+type ContactMemoryListParams struct {
+	// The ID of the contact to list memories for                              
+	ContactID                                    string                        `json:"contactId"`
+	// The cursor to use for pagination                                        
+	Cursor                                       *string                       `json:"cursor,omitempty"`
+	// The order of the paginated items                                        
+	Order                                        *ContactMemoryListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                         
+	Take                                         *int64                        `json:"take,omitempty"`
 }
 
-type ContactMemoriesListResponse struct {
-	Items []ContactMemoriesListResponseItem `json:"items"`
+type ContactMemoryListResponse struct {
+	Items []ContactMemoryListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ContactMemoriesListResponseItem struct {
+type ContactMemoryListResponseItem struct {
 	// The ID of the bot the memory belongs to                                
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -9658,34 +9658,34 @@ type ContactSecretVerifyResponse struct {
 	// The ID of the verified secret                                   
 	ID                              string                             `json:"id"`
 	// The status of the secret                                        
-	Status                          Status                             `json:"status"`
+	Status                          ContactSecretVerifyResponseStatus  `json:"status"`
 }
 
 // The action to take next
 type ContactSecretVerifyResponseAction struct {
-	// The type of action to take                   
-	Type                                 ActionType `json:"type"`
-	// The URL to authenticate the secret           
-	URL                                  string     `json:"url"`
+	// The type of action to take                      
+	Type                                 TentacledType `json:"type"`
+	// The URL to authenticate the secret              
+	URL                                  string        `json:"url"`
 }
 
-type ContactSecretsListParams struct {
-	// The ID of the contact to list secrets for        
-	ContactID                                   string  `json:"contactId"`
-	// The cursor to use for pagination                 
-	Cursor                                      *string `json:"cursor,omitempty"`
-	// The order of the paginated items                 
-	Order                                       *Order  `json:"order,omitempty"`
-	// The number of items to retrieve                  
-	Take                                        *int64  `json:"take,omitempty"`
+type ContactSecretListParams struct {
+	// The ID of the contact to list secrets for                              
+	ContactID                                   string                        `json:"contactId"`
+	// The cursor to use for pagination                                       
+	Cursor                                      *string                       `json:"cursor,omitempty"`
+	// The order of the paginated items                                       
+	Order                                       *ContactSecretListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                        
+	Take                                        *int64                        `json:"take,omitempty"`
 }
 
-type ContactSecretsListResponse struct {
-	Items []ContactSecretsListResponseItem `json:"items"`
+type ContactSecretListResponse struct {
+	Items []ContactSecretListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ContactSecretsListResponseItem struct {
+type ContactSecretListResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -9702,23 +9702,23 @@ type ContactSecretsListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type ContactSpacesListParams struct {
-	// The ID of the contact to list spaces for        
-	ContactID                                  string  `json:"contactId"`
-	// The cursor to use for pagination                
-	Cursor                                     *string `json:"cursor,omitempty"`
-	// The order of the paginated items                
-	Order                                      *Order  `json:"order,omitempty"`
-	// The number of items to retrieve                 
-	Take                                       *int64  `json:"take,omitempty"`
+type ContactSpaceListParams struct {
+	// The ID of the contact to list spaces for                             
+	ContactID                                  string                       `json:"contactId"`
+	// The cursor to use for pagination                                     
+	Cursor                                     *string                      `json:"cursor,omitempty"`
+	// The order of the paginated items                                     
+	Order                                      *ContactSpaceListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                      
+	Take                                       *int64                       `json:"take,omitempty"`
 }
 
-type ContactSpacesListResponse struct {
-	Items []ContactSpacesListResponseItem `json:"items"`
+type ContactSpaceListResponse struct {
+	Items []ContactSpaceListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ContactSpacesListResponseItem struct {
+type ContactSpaceListResponseItem struct {
 	// The contact id assigned to this rating                                 
 	ContactID                                          *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -9735,23 +9735,23 @@ type ContactSpacesListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type ContactTasksListParams struct {
-	// The ID of the contact to list tasks for        
-	ContactID                                 string  `json:"contactId"`
-	// The cursor to use for pagination               
-	Cursor                                    *string `json:"cursor,omitempty"`
-	// The order of the paginated items               
-	Order                                     *Order  `json:"order,omitempty"`
-	// The number of items to retrieve                
-	Take                                      *int64  `json:"take,omitempty"`
+type ContactTaskListParams struct {
+	// The ID of the contact to list tasks for                            
+	ContactID                                 string                      `json:"contactId"`
+	// The cursor to use for pagination                                   
+	Cursor                                    *string                     `json:"cursor,omitempty"`
+	// The order of the paginated items                                   
+	Order                                     *ContactTaskListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                    
+	Take                                      *int64                      `json:"take,omitempty"`
 }
 
-type ContactTasksListResponse struct {
-	Items []ContactTasksListResponseItem `json:"items"`
+type ContactTaskListResponse struct {
+	Items []ContactTaskListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ContactTasksListResponseItem struct {
+type ContactTaskListResponseItem struct {
 	// The bot associated with the task                                       
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The contact id assigned to this task                                   
@@ -9767,11 +9767,11 @@ type ContactTasksListResponseItem struct {
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
 	// The task execution outcome                                             
-	Outcome                                            *TaskOutcome           `json:"outcome,omitempty"`
+	Outcome                                            *PurpleOutcome         `json:"outcome,omitempty"`
 	// The schedule of the task                                               
 	Schedule                                           *string                `json:"schedule,omitempty"`
 	// The task execution status                                              
-	Status                                             *TaskStatus            `json:"status,omitempty"`
+	Status                                             *PurpleStatus          `json:"status,omitempty"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -9862,14 +9862,14 @@ type ContactEnsureResponse struct {
 }
 
 type ContactsExportParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+	// The cursor to use for pagination                                                  
+	Cursor                                                    *string                    `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                           
+	Meta                                                      map[string]string          `json:"meta,omitempty"`
+	// The order of the paginated items                                                  
+	Order                                                     *ContactsExportParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                   
+	Take                                                      *int64                     `json:"take,omitempty"`
 }
 
 type ContactsExportResponse struct {
@@ -9904,23 +9904,23 @@ type ContactsExportResponseItem struct {
 	VerifiedAt                                         *float64               `json:"verifiedAt,omitempty"`
 }
 
-type ContactsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type ContactListParams struct {
+	// The cursor to use for pagination                                               
+	Cursor                                                    *string                 `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                        
+	Meta                                                      map[string]string       `json:"meta,omitempty"`
+	// The order of the paginated items                                               
+	Order                                                     *ContactListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                
+	Take                                                      *int64                  `json:"take,omitempty"`
 }
 
-type ContactsListResponse struct {
-	Items []ContactsListResponseItem `json:"items"`
+type ContactListResponse struct {
+	Items []ContactListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ContactsListResponseItem struct {
+type ContactListResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -10112,7 +10112,7 @@ type PurpleParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                ParametersType         `json:"type"`
+	Type                                StickyType             `json:"type"`
 }
 
 // The result of the function execution
@@ -10149,8 +10149,8 @@ type ConversationMessageCompleteResponse struct {
 
 // Information about why the completion ended
 type ConversationMessageCompleteResponseEnd struct {
-	// The reason why the completion ended               
-	Reason                                CompleteReason `json:"reason"`
+	// The reason why the completion ended             
+	Reason                                PurpleReason `json:"reason"`
 }
 
 // Usage information
@@ -10319,7 +10319,7 @@ type FluffyParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                ParametersType         `json:"type"`
+	Type                                IndigoType             `json:"type"`
 }
 
 // The result of the function execution
@@ -10446,22 +10446,22 @@ type ConversationMessageFetchParams struct {
 
 // Instance list properties
 type ConversationMessageFetchResponse struct {
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The text of the fetched message                                        
-	Text                                               string                 `json:"text"`
-	// The type of the message                                                
-	Type                                               MessageType            `json:"type"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The timestamp (ms) when the instance was created                                     
+	CreatedAt                                          float64                              `json:"createdAt"`
+	// The associated description                                                           
+	Description                                        *string                              `json:"description,omitempty"`
+	// The instance ID                                                                      
+	ID                                                 string                               `json:"id"`
+	// Meta data information                                                                
+	Meta                                               map[string]interface{}               `json:"meta,omitempty"`
+	// The associated name                                                                  
+	Name                                               *string                              `json:"name,omitempty"`
+	// The text of the fetched message                                                      
+	Text                                               string                               `json:"text"`
+	// The type of the message                                                              
+	Type                                               ConversationMessageFetchResponseType `json:"type"`
+	// The timestamp (ms) when the instance was updated                                     
+	UpdatedAt                                          float64                              `json:"updatedAt"`
 }
 
 type ConversationMessageSynthesizeParams struct {
@@ -10496,7 +10496,7 @@ type ConversationMessageUpdateRequest struct {
 	// The updated text of the message                                         
 	Text                              *string                                  `json:"text,omitempty"`
 	// The type of the message                                                 
-	Type                              *MessageType                             `json:"type,omitempty"`
+	Type                              *ConversationMessageUpdateRequestType    `json:"type,omitempty"`
 }
 
 // Extracted entity from the message
@@ -10563,7 +10563,7 @@ type ConversationMessageCreateRequest struct {
 	// The text of the message                                            
 	Text                         string                                   `json:"text"`
 	// The type of the message                                            
-	Type                         MessageType                              `json:"type"`
+	Type                         ConversationMessageCreateRequestType     `json:"type"`
 }
 
 // Extracted entity from the message
@@ -10617,23 +10617,23 @@ type IndigoReplacement struct {
 	Text                                string  `json:"text"`
 }
 
-type ConversationMessagesListParams struct {
-	// The ID of the conversation to list messages for        
-	ConversationID                                    string  `json:"conversationId"`
-	// The cursor to use for pagination                       
-	Cursor                                            *string `json:"cursor,omitempty"`
-	// The order of the paginated items                       
-	Order                                             *Order  `json:"order,omitempty"`
-	// The number of items to retrieve                        
-	Take                                              *int64  `json:"take,omitempty"`
+type ConversationMessageListParams struct {
+	// The ID of the conversation to list messages for                                    
+	ConversationID                                    string                              `json:"conversationId"`
+	// The cursor to use for pagination                                                   
+	Cursor                                            *string                             `json:"cursor,omitempty"`
+	// The order of the paginated items                                                   
+	Order                                             *ConversationMessageListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                    
+	Take                                              *int64                              `json:"take,omitempty"`
 }
 
-type ConversationMessagesListResponse struct {
-	Items []ConversationMessagesListResponseItem `json:"items"`
+type ConversationMessageListResponse struct {
+	Items []ConversationMessageListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type ConversationMessagesListResponseItem struct {
+type ConversationMessageListResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -10647,7 +10647,7 @@ type ConversationMessagesListResponseItem struct {
 	// The text of the message                                                
 	Text                                               string                 `json:"text"`
 	// The type of the message                                                
-	Type                                               MessageType            `json:"type"`
+	Type                                               IndecentType           `json:"type"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -10749,7 +10749,7 @@ type TentacledParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                ParametersType         `json:"type"`
+	Type                                HilariousType          `json:"type"`
 }
 
 // The result of the function execution
@@ -10898,7 +10898,7 @@ type StickyParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                ParametersType         `json:"type"`
+	Type                                AmbitiousType          `json:"type"`
 }
 
 // The result of the function execution
@@ -11171,7 +11171,7 @@ type IndigoParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                ParametersType         `json:"type"`
+	Type                                CunningType            `json:"type"`
 }
 
 // The result of the function execution
@@ -11202,7 +11202,7 @@ type ConversationCompleteRequestMessage struct {
 	// The text of the message                       
 	Text                      string                 `json:"text"`
 	// The type of the message                       
-	Type                      MessageType            `json:"type"`
+	Type                      MagentaType            `json:"type"`
 }
 
 type ConversationCompleteResponse struct {
@@ -11216,8 +11216,8 @@ type ConversationCompleteResponse struct {
 
 // Information about why the completion ended
 type ConversationCompleteResponseEnd struct {
-	// The reason why the completion ended               
-	Reason                                CompleteReason `json:"reason"`
+	// The reason why the completion ended             
+	Reason                                FluffyReason `json:"reason"`
 }
 
 // Usage information
@@ -11261,10 +11261,10 @@ type ConversationCreateRequest struct {
 }
 
 type ConversationCreateRequestMessage struct {
-	// The text of the message            
-	Text                      string      `json:"text"`
-	// The type of the message            
-	Type                      MessageType `json:"type"`
+	// The text of the message           
+	Text                      string     `json:"text"`
+	// The type of the message           
+	Type                      FriskyType `json:"type"`
 }
 
 type ConversationCreateResponse struct {
@@ -11275,10 +11275,10 @@ type ConversationCreateResponse struct {
 }
 
 type ConversationCreateResponseMessage struct {
-	// The text of the message            
-	Text                      string      `json:"text"`
-	// The type of the message            
-	Type                      MessageType `json:"type"`
+	// The text of the message                
+	Text                      string          `json:"text"`
+	// The type of the message                
+	Type                      MischievousType `json:"type"`
 }
 
 // A bot configuration or reference
@@ -11423,7 +11423,7 @@ type IndecentParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                ParametersType         `json:"type"`
+	Type                                BraggadociousType      `json:"type"`
 }
 
 // The result of the function execution
@@ -11454,7 +11454,7 @@ type ConversationDispatchRequestMessage struct {
 	// The text of the message                       
 	Text                      string                 `json:"text"`
 	// The type of the message                       
-	Type                      MessageType            `json:"type"`
+	Type                      Type1                  `json:"type"`
 }
 
 type ConversationDispatchResponse struct {
@@ -11463,14 +11463,14 @@ type ConversationDispatchResponse struct {
 }
 
 type ConversationsExportParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+	// The cursor to use for pagination                                                       
+	Cursor                                                    *string                         `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                
+	Meta                                                      map[string]string               `json:"meta,omitempty"`
+	// The order of the paginated items                                                       
+	Order                                                     *ConversationsExportParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                        
+	Take                                                      *int64                          `json:"take,omitempty"`
 }
 
 type ConversationsExportResponse struct {
@@ -11515,25 +11515,25 @@ type ConversationsExportResponseItem struct {
 	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
 }
 
-type ConversationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type ConversationListParams struct {
+	// The cursor to use for pagination                                                    
+	Cursor                                                    *string                      `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                             
+	Meta                                                      map[string]string            `json:"meta,omitempty"`
+	// The order of the paginated items                                                    
+	Order                                                     *ConversationListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                     
+	Take                                                      *int64                       `json:"take,omitempty"`
 }
 
-type ConversationsListResponse struct {
-	Items []ConversationsListResponseItem `json:"items"`
+type ConversationListResponse struct {
+	Items []ConversationListResponseItem `json:"items"`
 }
 
 // A bot configuration or reference
 //
 // A bot configuration that can be applied without a dedicated bot instance.
-type ConversationsListResponseItem struct {
+type ConversationListResponseItem struct {
 	// The contact id assigned to this conversation                             
 	ContactID                                            *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                         
@@ -11585,40 +11585,40 @@ type DatasetFetchParams struct {
 
 // Blueprint properties
 type DatasetFetchResponse struct {
-	// The ID of the blueprint                                                   
-	BlueprintID                                           *string                `json:"blueprintId,omitempty"`
-	// The timestamp (ms) when the instance was created                          
-	CreatedAt                                             float64                `json:"createdAt"`
-	// The associated description                                                
-	Description                                           *string                `json:"description,omitempty"`
-	// The instance ID                                                           
-	ID                                                    string                 `json:"id"`
-	// An instruction to include before found records                            
-	MatchInstruction                                      *string                `json:"matchInstruction,omitempty"`
-	// Meta data information                                                     
-	Meta                                                  map[string]interface{} `json:"meta,omitempty"`
-	// An instruction to include if no records where found                       
-	MismatchInstruction                                   *string                `json:"mismatchInstruction,omitempty"`
-	// The associated name                                                       
-	Name                                                  *string                `json:"name,omitempty"`
-	// The total number of tokens for each record                                
-	RecordMaxTokens                                       *float64               `json:"recordMaxTokens,omitempty"`
-	// The reranker class for the dataset                                        
-	Reranker                                              *string                `json:"reranker,omitempty"`
-	// The total number of records to return during search                       
-	SearchMaxRecords                                      *float64               `json:"searchMaxRecords,omitempty"`
-	// The total number of tokens to use during search                           
-	SearchMaxTokens                                       *float64               `json:"searchMaxTokens,omitempty"`
-	// The minimum score to filter search results by                             
-	SearchMinScore                                        *float64               `json:"searchMinScore,omitempty"`
-	// A list of separators to use when tokenizing text                          
-	Separators                                            *string                `json:"separators,omitempty"`
-	// The storage class for the dataset                                         
-	Store                                                 string                 `json:"store"`
-	// The timestamp (ms) when the instance was updated                          
-	UpdatedAt                                             float64                `json:"updatedAt"`
-	// The dataset visibility                                                    
-	Visibility                                            *SecretVisibility      `json:"visibility,omitempty"`
+	// The ID of the blueprint                                                            
+	BlueprintID                                           *string                         `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                                   
+	CreatedAt                                             float64                         `json:"createdAt"`
+	// The associated description                                                         
+	Description                                           *string                         `json:"description,omitempty"`
+	// The instance ID                                                                    
+	ID                                                    string                          `json:"id"`
+	// An instruction to include before found records                                     
+	MatchInstruction                                      *string                         `json:"matchInstruction,omitempty"`
+	// Meta data information                                                              
+	Meta                                                  map[string]interface{}          `json:"meta,omitempty"`
+	// An instruction to include if no records where found                                
+	MismatchInstruction                                   *string                         `json:"mismatchInstruction,omitempty"`
+	// The associated name                                                                
+	Name                                                  *string                         `json:"name,omitempty"`
+	// The total number of tokens for each record                                         
+	RecordMaxTokens                                       *float64                        `json:"recordMaxTokens,omitempty"`
+	// The reranker class for the dataset                                                 
+	Reranker                                              *string                         `json:"reranker,omitempty"`
+	// The total number of records to return during search                                
+	SearchMaxRecords                                      *float64                        `json:"searchMaxRecords,omitempty"`
+	// The total number of tokens to use during search                                    
+	SearchMaxTokens                                       *float64                        `json:"searchMaxTokens,omitempty"`
+	// The minimum score to filter search results by                                      
+	SearchMinScore                                        *float64                        `json:"searchMinScore,omitempty"`
+	// A list of separators to use when tokenizing text                                   
+	Separators                                            *string                         `json:"separators,omitempty"`
+	// The storage class for the dataset                                                  
+	Store                                                 string                          `json:"store"`
+	// The timestamp (ms) when the instance was updated                                   
+	UpdatedAt                                             float64                         `json:"updatedAt"`
+	// The dataset visibility                                                             
+	Visibility                                            *DatasetFetchResponseVisibility `json:"visibility,omitempty"`
 }
 
 type DatasetFileAttachParams struct {
@@ -11629,8 +11629,8 @@ type DatasetFileAttachParams struct {
 }
 
 type DatasetFileAttachRequest struct {
-	// The dataset file attachment type                           
-	Type                               *DatasetFileAttachmentType `json:"type,omitempty"`
+	// The dataset file attachment type                              
+	Type                               *DatasetFileAttachRequestType `json:"type,omitempty"`
 }
 
 type DatasetFileAttachResponse struct {
@@ -11667,23 +11667,23 @@ type DatasetFileSyncResponse struct {
 	ID                           string `json:"id"`
 }
 
-type DatasetFilesListParams struct {
-	// The cursor to use for pagination        
-	Cursor                             *string `json:"cursor,omitempty"`
-	// The ID of the dataset                   
-	DatasetID                          string  `json:"datasetId"`
-	// The order of the paginated items        
-	Order                              *Order  `json:"order,omitempty"`
-	// The number of items to retrieve         
-	Take                               *int64  `json:"take,omitempty"`
+type DatasetFileListParams struct {
+	// The cursor to use for pagination                            
+	Cursor                             *string                     `json:"cursor,omitempty"`
+	// The ID of the dataset                                       
+	DatasetID                          string                      `json:"datasetId"`
+	// The order of the paginated items                            
+	Order                              *DatasetFileListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                             
+	Take                               *int64                      `json:"take,omitempty"`
 }
 
-type DatasetFilesListResponse struct {
-	Items []DatasetFilesListResponseItem `json:"items"`
+type DatasetFileListResponse struct {
+	Items []DatasetFileListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type DatasetFilesListResponseItem struct {
+type DatasetFileListResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -11697,7 +11697,7 @@ type DatasetFilesListResponseItem struct {
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 	// The file visibility                                                    
-	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
+	Visibility                                         *TentacledVisibility   `json:"visibility,omitempty"`
 }
 
 type DatasetRecordDeleteParams struct {
@@ -11771,14 +11771,14 @@ type DatasetRecordCreateResponse struct {
 }
 
 type DatasetRecordsExportParams struct {
-	// The cursor to use for pagination        
-	Cursor                             *string `json:"cursor,omitempty"`
-	// The ID of the dataset to export         
-	DatasetID                          string  `json:"datasetId"`
-	// The order of the paginated items        
-	Order                              *Order  `json:"order,omitempty"`
-	// The number of items to retrieve         
-	Take                               *int64  `json:"take,omitempty"`
+	// The cursor to use for pagination                                 
+	Cursor                             *string                          `json:"cursor,omitempty"`
+	// The ID of the dataset to export                                  
+	DatasetID                          string                           `json:"datasetId"`
+	// The order of the paginated items                                 
+	Order                              *DatasetRecordsExportParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                  
+	Take                               *int64                           `json:"take,omitempty"`
 }
 
 type DatasetRecordsExportResponse struct {
@@ -11797,23 +11797,23 @@ type DatasetRecordsExportResponseItem struct {
 	UpdatedAt                                          float64 `json:"updatedAt"`
 }
 
-type DatasetRecordsListParams struct {
-	// The cursor to use for pagination        
-	Cursor                             *string `json:"cursor,omitempty"`
-	// The ID of the dataset                   
-	DatasetID                          string  `json:"datasetId"`
-	// The order of the paginated items        
-	Order                              *Order  `json:"order,omitempty"`
-	// The number of items to retrieve         
-	Take                               *int64  `json:"take,omitempty"`
+type DatasetRecordListParams struct {
+	// The cursor to use for pagination                              
+	Cursor                             *string                       `json:"cursor,omitempty"`
+	// The ID of the dataset                                         
+	DatasetID                          string                        `json:"datasetId"`
+	// The order of the paginated items                              
+	Order                              *DatasetRecordListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                               
+	Take                               *int64                        `json:"take,omitempty"`
 }
 
-type DatasetRecordsListResponse struct {
-	Items []DatasetRecordsListResponseItem `json:"items"`
+type DatasetRecordListResponse struct {
+	Items []DatasetRecordListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type DatasetRecordsListResponseItem struct {
+type DatasetRecordListResponseItem struct {
 	// The timestamp (ms) when the instance was created        
 	CreatedAt                                          float64 `json:"createdAt"`
 	// The instance ID                                         
@@ -11865,34 +11865,34 @@ type DatasetUpdateParams struct {
 
 // Blueprint properties
 type DatasetUpdateRequest struct {
-	// The unique alias for the instance                                         
-	Alias                                                 *string                `json:"alias,omitempty"`
-	// The ID of the blueprint                                                   
-	BlueprintID                                           *string                `json:"blueprintId,omitempty"`
-	// The associated description                                                
-	Description                                           *string                `json:"description,omitempty"`
-	// An instruction to include before found records                            
-	MatchInstruction                                      *string                `json:"matchInstruction,omitempty"`
-	// Meta data information                                                     
-	Meta                                                  map[string]interface{} `json:"meta,omitempty"`
-	// An instruction to include if no records where found                       
-	MismatchInstruction                                   *string                `json:"mismatchInstruction,omitempty"`
-	// The associated name                                                       
-	Name                                                  *string                `json:"name,omitempty"`
-	// The total number of tokens to for each record                             
-	RecordMaxTokens                                       *float64               `json:"recordMaxTokens,omitempty"`
-	// The reranker class for the dataset                                        
-	Reranker                                              *string                `json:"reranker,omitempty"`
-	// The total number of records to return during search                       
-	SearchMaxRecords                                      *float64               `json:"searchMaxRecords,omitempty"`
-	// The total number of tokens to use during search                           
-	SearchMaxTokens                                       *float64               `json:"searchMaxTokens,omitempty"`
-	// The minimum score to filter search results by                             
-	SearchMinScore                                        *float64               `json:"searchMinScore,omitempty"`
-	// A list of separators to use when tokenizing text                          
-	Separators                                            *string                `json:"separators,omitempty"`
-	// The dataset visibility                                                    
-	Visibility                                            *SecretVisibility      `json:"visibility,omitempty"`
+	// The unique alias for the instance                                                  
+	Alias                                                 *string                         `json:"alias,omitempty"`
+	// The ID of the blueprint                                                            
+	BlueprintID                                           *string                         `json:"blueprintId,omitempty"`
+	// The associated description                                                         
+	Description                                           *string                         `json:"description,omitempty"`
+	// An instruction to include before found records                                     
+	MatchInstruction                                      *string                         `json:"matchInstruction,omitempty"`
+	// Meta data information                                                              
+	Meta                                                  map[string]interface{}          `json:"meta,omitempty"`
+	// An instruction to include if no records where found                                
+	MismatchInstruction                                   *string                         `json:"mismatchInstruction,omitempty"`
+	// The associated name                                                                
+	Name                                                  *string                         `json:"name,omitempty"`
+	// The total number of tokens to for each record                                      
+	RecordMaxTokens                                       *float64                        `json:"recordMaxTokens,omitempty"`
+	// The reranker class for the dataset                                                 
+	Reranker                                              *string                         `json:"reranker,omitempty"`
+	// The total number of records to return during search                                
+	SearchMaxRecords                                      *float64                        `json:"searchMaxRecords,omitempty"`
+	// The total number of tokens to use during search                                    
+	SearchMaxTokens                                       *float64                        `json:"searchMaxTokens,omitempty"`
+	// The minimum score to filter search results by                                      
+	SearchMinScore                                        *float64                        `json:"searchMinScore,omitempty"`
+	// A list of separators to use when tokenizing text                                   
+	Separators                                            *string                         `json:"separators,omitempty"`
+	// The dataset visibility                                                             
+	Visibility                                            *DatasetUpdateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type DatasetUpdateResponse struct {
@@ -11902,36 +11902,36 @@ type DatasetUpdateResponse struct {
 
 // Blueprint properties
 type DatasetCreateRequest struct {
-	// The unique alias for the instance                                         
-	Alias                                                 *string                `json:"alias,omitempty"`
-	// The ID of the blueprint                                                   
-	BlueprintID                                           *string                `json:"blueprintId,omitempty"`
-	// The associated description                                                
-	Description                                           *string                `json:"description,omitempty"`
-	// An instruction to include before found records                            
-	MatchInstruction                                      *string                `json:"matchInstruction,omitempty"`
-	// Meta data information                                                     
-	Meta                                                  map[string]interface{} `json:"meta,omitempty"`
-	// An instruction to include if no records where found                       
-	MismatchInstruction                                   *string                `json:"mismatchInstruction,omitempty"`
-	// The associated name                                                       
-	Name                                                  *string                `json:"name,omitempty"`
-	// The total number of tokens for each record                                
-	RecordMaxTokens                                       *float64               `json:"recordMaxTokens,omitempty"`
-	// The reranker class for the dataset                                        
-	Reranker                                              *string                `json:"reranker,omitempty"`
-	// The total number of records to return during search                       
-	SearchMaxRecords                                      *float64               `json:"searchMaxRecords,omitempty"`
-	// The total number of tokens to use during search                           
-	SearchMaxTokens                                       *float64               `json:"searchMaxTokens,omitempty"`
-	// The minimum score to filter search results by                             
-	SearchMinScore                                        *float64               `json:"searchMinScore,omitempty"`
-	// A list of separators to use when tokenizing text                          
-	Separators                                            *string                `json:"separators,omitempty"`
-	// The storage class for the dataset                                         
-	Store                                                 *string                `json:"store,omitempty"`
-	// The dataset visibility                                                    
-	Visibility                                            *SecretVisibility      `json:"visibility,omitempty"`
+	// The unique alias for the instance                                                  
+	Alias                                                 *string                         `json:"alias,omitempty"`
+	// The ID of the blueprint                                                            
+	BlueprintID                                           *string                         `json:"blueprintId,omitempty"`
+	// The associated description                                                         
+	Description                                           *string                         `json:"description,omitempty"`
+	// An instruction to include before found records                                     
+	MatchInstruction                                      *string                         `json:"matchInstruction,omitempty"`
+	// Meta data information                                                              
+	Meta                                                  map[string]interface{}          `json:"meta,omitempty"`
+	// An instruction to include if no records where found                                
+	MismatchInstruction                                   *string                         `json:"mismatchInstruction,omitempty"`
+	// The associated name                                                                
+	Name                                                  *string                         `json:"name,omitempty"`
+	// The total number of tokens for each record                                         
+	RecordMaxTokens                                       *float64                        `json:"recordMaxTokens,omitempty"`
+	// The reranker class for the dataset                                                 
+	Reranker                                              *string                         `json:"reranker,omitempty"`
+	// The total number of records to return during search                                
+	SearchMaxRecords                                      *float64                        `json:"searchMaxRecords,omitempty"`
+	// The total number of tokens to use during search                                    
+	SearchMaxTokens                                       *float64                        `json:"searchMaxTokens,omitempty"`
+	// The minimum score to filter search results by                                      
+	SearchMinScore                                        *float64                        `json:"searchMinScore,omitempty"`
+	// A list of separators to use when tokenizing text                                   
+	Separators                                            *string                         `json:"separators,omitempty"`
+	// The storage class for the dataset                                                  
+	Store                                                 *string                         `json:"store,omitempty"`
+	// The dataset visibility                                                             
+	Visibility                                            *DatasetCreateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type DatasetCreateResponse struct {
@@ -11939,23 +11939,23 @@ type DatasetCreateResponse struct {
 	ID                              string `json:"id"`
 }
 
-type DatasetsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type DatasetListParams struct {
+	// The cursor to use for pagination                                               
+	Cursor                                                    *string                 `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                        
+	Meta                                                      map[string]string       `json:"meta,omitempty"`
+	// The order of the paginated items                                               
+	Order                                                     *DatasetListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                
+	Take                                                      *int64                  `json:"take,omitempty"`
 }
 
-type DatasetsListResponse struct {
-	Items []DatasetsListResponseItem `json:"items"`
+type DatasetListResponse struct {
+	Items []DatasetListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type DatasetsListResponseItem struct {
+type DatasetListResponseItem struct {
 	// The ID of the blueprint                                                   
 	BlueprintID                                           *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                          
@@ -11989,18 +11989,18 @@ type DatasetsListResponseItem struct {
 	// The timestamp (ms) when the instance was updated                          
 	UpdatedAt                                             float64                `json:"updatedAt"`
 	// The dataset visibility                                                    
-	Visibility                                            *SecretVisibility      `json:"visibility,omitempty"`
+	Visibility                                            *StickyVisibility      `json:"visibility,omitempty"`
 }
 
 type EventLogsExportParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+	// The cursor to use for pagination                                                   
+	Cursor                                                    *string                     `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                            
+	Meta                                                      map[string]string           `json:"meta,omitempty"`
+	// The order of the paginated items                                                   
+	Order                                                     *EventLogsExportParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                    
+	Take                                                      *int64                      `json:"take,omitempty"`
 }
 
 type EventLogsExportResponse struct {
@@ -12077,23 +12077,23 @@ type EventLogsExportResponseItem struct {
 	WidgetIntegrationID                                *string                `json:"widgetIntegrationId,omitempty"`
 }
 
-type EventLogsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type EventLogListParams struct {
+	// The cursor to use for pagination                                                
+	Cursor                                                    *string                  `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                         
+	Meta                                                      map[string]string        `json:"meta,omitempty"`
+	// The order of the paginated items                                                
+	Order                                                     *EventLogListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                 
+	Take                                                      *int64                   `json:"take,omitempty"`
 }
 
-type EventLogsListResponse struct {
-	Items []EventLogsListResponseItem `json:"items"`
+type EventLogListResponse struct {
+	Items []EventLogListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type EventLogsListResponseItem struct {
+type EventLogListResponseItem struct {
 	// Related ability ID if applicable                                       
 	AbilityID                                          *string                `json:"abilityId,omitempty"`
 	// Related blueprint ID if applicable                                     
@@ -12199,22 +12199,22 @@ type FileFetchParams struct {
 
 // Blueprint properties
 type FileFetchResponse struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
-	// The file visibility                                                    
-	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
+	// The ID of the blueprint                                                      
+	BlueprintID                                        *string                      `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                             
+	CreatedAt                                          float64                      `json:"createdAt"`
+	// The associated description                                                   
+	Description                                        *string                      `json:"description,omitempty"`
+	// The instance ID                                                              
+	ID                                                 string                       `json:"id"`
+	// Meta data information                                                        
+	Meta                                               map[string]interface{}       `json:"meta,omitempty"`
+	// The associated name                                                          
+	Name                                               *string                      `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                             
+	UpdatedAt                                          float64                      `json:"updatedAt"`
+	// The file visibility                                                          
+	Visibility                                         *FileFetchResponseVisibility `json:"visibility,omitempty"`
 }
 
 type FileSyncParams struct {
@@ -12233,18 +12233,18 @@ type FileUpdateParams struct {
 
 // Blueprint properties
 type FileUpdateRequest struct {
-	// The unique alias for the instance                       
-	Alias                               *string                `json:"alias,omitempty"`
-	// The ID of the blueprint                                 
-	BlueprintID                         *string                `json:"blueprintId,omitempty"`
-	// The associated description                              
-	Description                         *string                `json:"description,omitempty"`
-	// Meta data information                                   
-	Meta                                map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                     
-	Name                                *string                `json:"name,omitempty"`
-	// The file visibility                                     
-	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
+	// The unique alias for the instance                             
+	Alias                               *string                      `json:"alias,omitempty"`
+	// The ID of the blueprint                                       
+	BlueprintID                         *string                      `json:"blueprintId,omitempty"`
+	// The associated description                                    
+	Description                         *string                      `json:"description,omitempty"`
+	// Meta data information                                         
+	Meta                                map[string]interface{}       `json:"meta,omitempty"`
+	// The associated name                                           
+	Name                                *string                      `json:"name,omitempty"`
+	// The file visibility                                           
+	Visibility                          *FileUpdateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type FileUpdateResponse struct {
@@ -12292,18 +12292,18 @@ type FileUploadResponseUploadRequest struct {
 
 // Blueprint properties
 type FileCreateRequest struct {
-	// The unique alias for the instance                       
-	Alias                               *string                `json:"alias,omitempty"`
-	// The ID of the blueprint                                 
-	BlueprintID                         *string                `json:"blueprintId,omitempty"`
-	// The associated description                              
-	Description                         *string                `json:"description,omitempty"`
-	// Meta data information                                   
-	Meta                                map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                     
-	Name                                *string                `json:"name,omitempty"`
-	// The file visibility                                     
-	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
+	// The unique alias for the instance                             
+	Alias                               *string                      `json:"alias,omitempty"`
+	// The ID of the blueprint                                       
+	BlueprintID                         *string                      `json:"blueprintId,omitempty"`
+	// The associated description                                    
+	Description                         *string                      `json:"description,omitempty"`
+	// Meta data information                                         
+	Meta                                map[string]interface{}       `json:"meta,omitempty"`
+	// The associated name                                           
+	Name                                *string                      `json:"name,omitempty"`
+	// The file visibility                                           
+	Visibility                          *FileCreateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type FileCreateResponse struct {
@@ -12311,23 +12311,23 @@ type FileCreateResponse struct {
 	ID                           string `json:"id"`
 }
 
-type FilesListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type FileListParams struct {
+	// The cursor to use for pagination                                            
+	Cursor                                                    *string              `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                     
+	Meta                                                      map[string]string    `json:"meta,omitempty"`
+	// The order of the paginated items                                            
+	Order                                                     *FileListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                             
+	Take                                                      *int64               `json:"take,omitempty"`
 }
 
-type FilesListResponse struct {
-	Items []FilesListResponseItem `json:"items"`
+type FileListResponse struct {
+	Items []FileListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type FilesListResponseItem struct {
+type FileListResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -12343,26 +12343,26 @@ type FilesListResponseItem struct {
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 	// The file visibility                                                    
-	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
+	Visibility                                         *IndigoVisibility      `json:"visibility,omitempty"`
 }
 
-type DiscordIntegrationDeleteParams struct {
+type IntegrationDiscordDeleteParams struct {
 	// The ID of the Discord integration       
 	DiscordIntegrationID                string `json:"discordIntegrationId"`
 }
 
-type DiscordIntegrationDeleteResponse struct {
+type IntegrationDiscordDeleteResponse struct {
 	// The ID of the deleted Discord integration       
 	ID                                          string `json:"id"`
 }
 
-type DiscordIntegrationFetchParams struct {
+type IntegrationDiscordFetchParams struct {
 	// The ID of the Discord integration to retrieve       
 	DiscordIntegrationID                            string `json:"discordIntegrationId"`
 }
 
 // Blueprint properties
-type DiscordIntegrationFetchResponse struct {
+type IntegrationDiscordFetchResponse struct {
 	// The Discord application ID                                             
 	AppID                                              *string                `json:"appId,omitempty"`
 	// The ID of the blueprint                                                
@@ -12389,23 +12389,23 @@ type DiscordIntegrationFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type DiscordIntegrationSetupParams struct {
+type IntegrationDiscordSetupParams struct {
 	// The ID of the Discord integration       
 	DiscordIntegrationID                string `json:"discordIntegrationId"`
 }
 
-type DiscordIntegrationSetupResponse struct {
+type IntegrationDiscordSetupResponse struct {
 	// The ID of the setup Discord integration       
 	ID                                        string `json:"id"`
 }
 
-type DiscordIntegrationUpdateParams struct {
+type IntegrationDiscordUpdateParams struct {
 	// The ID of the Discord integration       
 	DiscordIntegrationID                string `json:"discordIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type DiscordIntegrationUpdateRequest struct {
+type IntegrationDiscordUpdateRequest struct {
 	// The Discord application ID                                          
 	AppID                                           *string                `json:"appId,omitempty"`
 	// The ID of the blueprint                                             
@@ -12430,13 +12430,13 @@ type DiscordIntegrationUpdateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type DiscordIntegrationUpdateResponse struct {
+type IntegrationDiscordUpdateResponse struct {
 	// The ID of the Discord Integration       
 	ID                                  string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type DiscordIntegrationCreateRequest struct {
+type IntegrationDiscordCreateRequest struct {
 	// The Discord application ID                                          
 	AppID                                           *string                `json:"appId,omitempty"`
 	// The ID of the blueprint                                             
@@ -12461,28 +12461,28 @@ type DiscordIntegrationCreateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type DiscordIntegrationCreateResponse struct {
+type IntegrationDiscordCreateResponse struct {
 	// The ID of the Discord Integration       
 	ID                                  string `json:"id"`
 }
 
-type DiscordIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type IntegrationDiscordListParams struct {
+	// The cursor to use for pagination                                                          
+	Cursor                                                    *string                            `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                   
+	Meta                                                      map[string]string                  `json:"meta,omitempty"`
+	// The order of the paginated items                                                          
+	Order                                                     *IntegrationDiscordListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                           
+	Take                                                      *int64                             `json:"take,omitempty"`
 }
 
-type DiscordIntegrationsListResponse struct {
-	Items []DiscordIntegrationsListResponseItem `json:"items"`
+type IntegrationDiscordListResponse struct {
+	Items []IntegrationDiscordListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type DiscordIntegrationsListResponseItem struct {
+type IntegrationDiscordListResponseItem struct {
 	// The Discord application ID                                             
 	AppID                                              *string                `json:"appId,omitempty"`
 	// The ID of the blueprint                                                
@@ -12621,23 +12621,23 @@ type EmailIntegrationCreateResponse struct {
 	ID                                string `json:"id"`
 }
 
-type EmailIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type EmailIntegrationListParams struct {
+	// The cursor to use for pagination                                                        
+	Cursor                                                    *string                          `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                 
+	Meta                                                      map[string]string                `json:"meta,omitempty"`
+	// The order of the paginated items                                                        
+	Order                                                     *EmailIntegrationListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                         
+	Take                                                      *int64                           `json:"take,omitempty"`
 }
 
-type EmailIntegrationsListResponse struct {
-	Items []EmailIntegrationsListResponseItem `json:"items"`
+type EmailIntegrationListResponse struct {
+	Items []EmailIntegrationListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type EmailIntegrationsListResponseItem struct {
+type EmailIntegrationListResponseItem struct {
 	// Newline-separated list of email patterns allowed to send messages to this integration                       
 	AllowedSenderEmails                                                                     *string                `json:"allowedSenderEmails,omitempty"`
 	// Weather the bot supports attachments                                                                        
@@ -12664,23 +12664,23 @@ type EmailIntegrationsListResponseItem struct {
 	UpdatedAt                                                                               float64                `json:"updatedAt"`
 }
 
-type ExtractIntegrationDeleteParams struct {
+type IntegrationExtractDeleteParams struct {
 	// The ID of the Extract integration       
 	ExtractIntegrationID                string `json:"extractIntegrationId"`
 }
 
-type ExtractIntegrationDeleteResponse struct {
+type IntegrationExtractDeleteResponse struct {
 	// The ID of the deleted Extract integration       
 	ID                                          string `json:"id"`
 }
 
-type ExtractIntegrationFetchParams struct {
+type IntegrationExtractFetchParams struct {
 	// The ID of the Extract integration to retrieve       
 	ExtractIntegrationID                            string `json:"extractIntegrationId"`
 }
 
 // Blueprint properties
-type ExtractIntegrationFetchResponse struct {
+type IntegrationExtractFetchResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the Bot to use                                               
@@ -12703,13 +12703,13 @@ type ExtractIntegrationFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type ExtractIntegrationUpdateParams struct {
+type IntegrationExtractUpdateParams struct {
 	// The ID of the Extract integration       
 	ExtractIntegrationID                string `json:"extractIntegrationId"`
 }
 
 // Blueprint properties
-type ExtractIntegrationUpdateRequest struct {
+type IntegrationExtractUpdateRequest struct {
 	// The ID of the blueprint                                              
 	BlueprintID                                      *string                `json:"blueprintId,omitempty"`
 	// The ID of the Bot to use                                             
@@ -12728,13 +12728,13 @@ type ExtractIntegrationUpdateRequest struct {
 	Schema                                           map[string]interface{} `json:"schema,omitempty"`
 }
 
-type ExtractIntegrationUpdateResponse struct {
+type IntegrationExtractUpdateResponse struct {
 	// The ID of the Extract Integration       
 	ID                                  string `json:"id"`
 }
 
 // Blueprint properties
-type ExtractIntegrationCreateRequest struct {
+type IntegrationExtractCreateRequest struct {
 	// The ID of the blueprint                                              
 	BlueprintID                                      *string                `json:"blueprintId,omitempty"`
 	// The ID of the Bot to use                                             
@@ -12753,28 +12753,28 @@ type ExtractIntegrationCreateRequest struct {
 	Schema                                           map[string]interface{} `json:"schema,omitempty"`
 }
 
-type ExtractIntegrationCreateResponse struct {
+type IntegrationExtractCreateResponse struct {
 	// The ID of the Extract Integration       
 	ID                                  string `json:"id"`
 }
 
-type ExtractIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type IntegrationExtractListParams struct {
+	// The cursor to use for pagination                                                          
+	Cursor                                                    *string                            `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                   
+	Meta                                                      map[string]string                  `json:"meta,omitempty"`
+	// The order of the paginated items                                                          
+	Order                                                     *IntegrationExtractListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                           
+	Take                                                      *int64                             `json:"take,omitempty"`
 }
 
-type ExtractIntegrationsListResponse struct {
-	Items []ExtractIntegrationsListResponseItem `json:"items"`
+type IntegrationExtractListResponse struct {
+	Items []IntegrationExtractListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type ExtractIntegrationsListResponseItem struct {
+type IntegrationExtractListResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the Bot to use                                               
@@ -12797,23 +12797,23 @@ type ExtractIntegrationsListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type InstagramIntegrationDeleteParams struct {
+type IntegrationInstagramDeleteParams struct {
 	// The ID of the Instagram integration       
 	InstagramIntegrationID                string `json:"instagramIntegrationId"`
 }
 
-type InstagramIntegrationDeleteResponse struct {
+type IntegrationInstagramDeleteResponse struct {
 	// The ID of the deleted Instagram integration       
 	ID                                            string `json:"id"`
 }
 
-type InstagramIntegrationFetchParams struct {
+type IntegrationInstagramFetchParams struct {
 	// The ID of the Instagram integration to retrieve       
 	InstagramIntegrationID                            string `json:"instagramIntegrationId"`
 }
 
 // Blueprint properties
-type InstagramIntegrationFetchResponse struct {
+type IntegrationInstagramFetchResponse struct {
 	// The Instagram integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
@@ -12843,23 +12843,23 @@ type InstagramIntegrationFetchResponse struct {
 	VerifyToken                                                                          string                 `json:"verifyToken"`
 }
 
-type InstagramIntegrationSetupParams struct {
+type IntegrationInstagramSetupParams struct {
 	// The ID of the Instagram integration       
 	InstagramIntegrationID                string `json:"instagramIntegrationId"`
 }
 
-type InstagramIntegrationSetupResponse struct {
+type IntegrationInstagramSetupResponse struct {
 	// The ID of the Instagram Integration       
 	ID                                    string `json:"id"`
 }
 
-type InstagramIntegrationUpdateParams struct {
+type IntegrationInstagramUpdateParams struct {
 	// The ID of the Instagram integration       
 	InstagramIntegrationID                string `json:"instagramIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type InstagramIntegrationUpdateRequest struct {
+type IntegrationInstagramUpdateRequest struct {
 	// The Instagram integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
 	// Whether the bot supports attachments                                
@@ -12880,13 +12880,13 @@ type InstagramIntegrationUpdateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type InstagramIntegrationUpdateResponse struct {
+type IntegrationInstagramUpdateResponse struct {
 	// The ID of the Instagram Integration       
 	ID                                    string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type InstagramIntegrationCreateRequest struct {
+type IntegrationInstagramCreateRequest struct {
 	// The Instagram integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
 	// Whether the bot supports attachments                                
@@ -12907,28 +12907,28 @@ type InstagramIntegrationCreateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type InstagramIntegrationCreateResponse struct {
+type IntegrationInstagramCreateResponse struct {
 	// The ID of the Instagram Integration       
 	ID                                    string `json:"id"`
 }
 
-type InstagramIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type IntegrationInstagramListParams struct {
+	// The cursor to use for pagination                                                            
+	Cursor                                                    *string                              `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                     
+	Meta                                                      map[string]string                    `json:"meta,omitempty"`
+	// The order of the paginated items                                                            
+	Order                                                     *IntegrationInstagramListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                             
+	Take                                                      *int64                               `json:"take,omitempty"`
 }
 
-type InstagramIntegrationsListResponse struct {
-	Items []InstagramIntegrationsListResponseItem `json:"items"`
+type IntegrationInstagramListResponse struct {
+	Items []IntegrationInstagramListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type InstagramIntegrationsListResponseItem struct {
+type IntegrationInstagramListResponseItem struct {
 	// The Instagram integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
@@ -12958,23 +12958,23 @@ type InstagramIntegrationsListResponseItem struct {
 	VerifyToken                                                                          string                 `json:"verifyToken"`
 }
 
-type MCPServerIntegrationDeleteParams struct {
+type IntegrationMCPServerDeleteParams struct {
 	// The ID of the McpServer integration       
 	McpserverIntegrationID                string `json:"mcpserverIntegrationId"`
 }
 
-type MCPServerIntegrationDeleteResponse struct {
+type IntegrationMCPServerDeleteResponse struct {
 	// The ID of the deleted McpServer integration       
 	ID                                            string `json:"id"`
 }
 
-type MCPServerIntegrationFetchParams struct {
+type IntegrationMCPServerFetchParams struct {
 	// The ID of the McpServer integration to retrieve       
 	McpserverIntegrationID                            string `json:"mcpserverIntegrationId"`
 }
 
 // Blueprint properties
-type MCPServerIntegrationFetchResponse struct {
+type IntegrationMCPServerFetchResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -12993,13 +12993,13 @@ type MCPServerIntegrationFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type MCPServerIntegrationUpdateParams struct {
+type IntegrationMCPServerUpdateParams struct {
 	// The ID of the McpServer integration       
 	McpserverIntegrationID                string `json:"mcpserverIntegrationId"`
 }
 
 // Blueprint properties
-type MCPServerIntegrationUpdateRequest struct {
+type IntegrationMCPServerUpdateRequest struct {
 	// The ID of the blueprint                          
 	BlueprintID                  *string                `json:"blueprintId,omitempty"`
 	// The associated description                       
@@ -13012,13 +13012,13 @@ type MCPServerIntegrationUpdateRequest struct {
 	SkillsetID                   *string                `json:"skillsetId,omitempty"`
 }
 
-type MCPServerIntegrationUpdateResponse struct {
+type IntegrationMCPServerUpdateResponse struct {
 	// The ID of the McpServer Integration       
 	ID                                    string `json:"id"`
 }
 
 // Blueprint properties
-type MCPServerIntegrationCreateRequest struct {
+type IntegrationMCPServerCreateRequest struct {
 	// The ID of the blueprint                          
 	BlueprintID                  *string                `json:"blueprintId,omitempty"`
 	// The associated description                       
@@ -13031,28 +13031,28 @@ type MCPServerIntegrationCreateRequest struct {
 	SkillsetID                   *string                `json:"skillsetId,omitempty"`
 }
 
-type MCPServerIntegrationCreateResponse struct {
+type IntegrationMCPServerCreateResponse struct {
 	// The ID of the McpServer Integration       
 	ID                                    string `json:"id"`
 }
 
-type MCPServerIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type IntegrationMCPServerListParams struct {
+	// The cursor to use for pagination                                                            
+	Cursor                                                    *string                              `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                     
+	Meta                                                      map[string]string                    `json:"meta,omitempty"`
+	// The order of the paginated items                                                            
+	Order                                                     *IntegrationMCPServerListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                             
+	Take                                                      *int64                               `json:"take,omitempty"`
 }
 
-type MCPServerIntegrationsListResponse struct {
-	Items []MCPServerIntegrationsListResponseItem `json:"items"`
+type IntegrationMCPServerListResponse struct {
+	Items []IntegrationMCPServerListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type MCPServerIntegrationsListResponseItem struct {
+type IntegrationMCPServerListResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -13071,23 +13071,23 @@ type MCPServerIntegrationsListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type MessengerIntegrationDeleteParams struct {
+type IntegrationMessengerDeleteParams struct {
 	// The ID of the Messenger integration       
 	MessengerIntegrationID                string `json:"messengerIntegrationId"`
 }
 
-type MessengerIntegrationDeleteResponse struct {
+type IntegrationMessengerDeleteResponse struct {
 	// The ID of the deleted Messenger integration       
 	ID                                            string `json:"id"`
 }
 
-type MessengerIntegrationFetchParams struct {
+type IntegrationMessengerFetchParams struct {
 	// The ID of the Messenger integration to retrieve       
 	MessengerIntegrationID                            string `json:"messengerIntegrationId"`
 }
 
 // Blueprint properties
-type MessengerIntegrationFetchResponse struct {
+type IntegrationMessengerFetchResponse struct {
 	// The Messenger integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
@@ -13115,23 +13115,23 @@ type MessengerIntegrationFetchResponse struct {
 	VerifyToken                                                                          string                 `json:"verifyToken"`
 }
 
-type MessengerIntegrationSetupParams struct {
+type IntegrationMessengerSetupParams struct {
 	// The ID of the Messenger integration       
 	MessengerIntegrationID                string `json:"messengerIntegrationId"`
 }
 
-type MessengerIntegrationSetupResponse struct {
+type IntegrationMessengerSetupResponse struct {
 	// The ID of the Messenger Integration       
 	ID                                    string `json:"id"`
 }
 
-type MessengerIntegrationUpdateParams struct {
+type IntegrationMessengerUpdateParams struct {
 	// The ID of the Messenger integration       
 	MessengerIntegrationID                string `json:"messengerIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type MessengerIntegrationUpdateRequest struct {
+type IntegrationMessengerUpdateRequest struct {
 	// The Messenger integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
 	// Weather the bot supports attachments                                
@@ -13150,13 +13150,13 @@ type MessengerIntegrationUpdateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type MessengerIntegrationUpdateResponse struct {
+type IntegrationMessengerUpdateResponse struct {
 	// The ID of the Messenger Integration       
 	ID                                    string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type MessengerIntegrationCreateRequest struct {
+type IntegrationMessengerCreateRequest struct {
 	// The Messenger integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
 	// Weather the bot supports attachments                                
@@ -13175,28 +13175,28 @@ type MessengerIntegrationCreateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type MessengerIntegrationCreateResponse struct {
+type IntegrationMessengerCreateResponse struct {
 	// The ID of the Messenger Integration       
 	ID                                    string `json:"id"`
 }
 
-type MessengerIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type IntegrationMessengerListParams struct {
+	// The cursor to use for pagination                                                            
+	Cursor                                                    *string                              `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                     
+	Meta                                                      map[string]string                    `json:"meta,omitempty"`
+	// The order of the paginated items                                                            
+	Order                                                     *IntegrationMessengerListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                             
+	Take                                                      *int64                               `json:"take,omitempty"`
 }
 
-type MessengerIntegrationsListResponse struct {
-	Items []MessengerIntegrationsListResponseItem `json:"items"`
+type IntegrationMessengerListResponse struct {
+	Items []IntegrationMessengerListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type MessengerIntegrationsListResponseItem struct {
+type IntegrationMessengerListResponseItem struct {
 	// The Messenger integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
@@ -13224,68 +13224,68 @@ type MessengerIntegrationsListResponseItem struct {
 	VerifyToken                                                                          string                 `json:"verifyToken"`
 }
 
-type NotionIntegrationDeleteParams struct {
+type IntegrationNotionDeleteParams struct {
 	// The ID of the Notion integration       
 	NotionIntegrationID                string `json:"notionIntegrationId"`
 }
 
-type NotionIntegrationDeleteResponse struct {
+type IntegrationNotionDeleteResponse struct {
 	// The ID of the deleted Notion integration       
 	ID                                         string `json:"id"`
 }
 
-type NotionIntegrationFetchParams struct {
+type IntegrationNotionFetchParams struct {
 	// The ID of the Notion integration to retrieve       
 	NotionIntegrationID                            string `json:"notionIntegrationId"`
 }
 
 // Blueprint properties
-type NotionIntegrationFetchResponse struct {
-	// The ID of the blueprint                                                                           
-	BlueprintID                                                                   *string                `json:"blueprintId,omitempty"`
-	// The timestamp (ms) when the instance was created                                                  
-	CreatedAt                                                                     float64                `json:"createdAt"`
-	// The ID of the dataset to sync into                                                                
-	DatasetID                                                                     string                 `json:"datasetId"`
-	// The associated description                                                                        
-	Description                                                                   *string                `json:"description,omitempty"`
-	// The time in milliseconds until records expire                                                     
-	ExpiresIn                                                                     *float64               `json:"expiresIn,omitempty"`
-	// The instance ID                                                                                   
-	ID                                                                            string                 `json:"id"`
-	// The timestamp of the last successful sync                                                         
-	LastSyncedAt                                                                  *time.Time             `json:"lastSyncedAt,omitempty"`
-	// Meta data information                                                                             
-	Meta                                                                          map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                                               
-	Name                                                                          *string                `json:"name,omitempty"`
-	// The sync schedule                                                                                 
-	SyncSchedule                                                                  *string                `json:"syncSchedule,omitempty"`
-	// The sync status of an integration                                                                 
-	SyncStatus                                                                    *SyncStatus            `json:"syncStatus,omitempty"`
-	// The Notion API token (returned as '********' if configured, null otherwise)                       
-	Token                                                                         *string                `json:"token,omitempty"`
-	// The timestamp (ms) when the instance was updated                                                  
-	UpdatedAt                                                                     float64                `json:"updatedAt"`
+type IntegrationNotionFetchResponse struct {
+	// The ID of the blueprint                                                                                              
+	BlueprintID                                                                   *string                                   `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                                                                     
+	CreatedAt                                                                     float64                                   `json:"createdAt"`
+	// The ID of the dataset to sync into                                                                                   
+	DatasetID                                                                     string                                    `json:"datasetId"`
+	// The associated description                                                                                           
+	Description                                                                   *string                                   `json:"description,omitempty"`
+	// The time in milliseconds until records expire                                                                        
+	ExpiresIn                                                                     *float64                                  `json:"expiresIn,omitempty"`
+	// The instance ID                                                                                                      
+	ID                                                                            string                                    `json:"id"`
+	// The timestamp of the last successful sync                                                                            
+	LastSyncedAt                                                                  *time.Time                                `json:"lastSyncedAt,omitempty"`
+	// Meta data information                                                                                                
+	Meta                                                                          map[string]interface{}                    `json:"meta,omitempty"`
+	// The associated name                                                                                                  
+	Name                                                                          *string                                   `json:"name,omitempty"`
+	// The sync schedule                                                                                                    
+	SyncSchedule                                                                  *string                                   `json:"syncSchedule,omitempty"`
+	// The sync status of an integration                                                                                    
+	SyncStatus                                                                    *IntegrationNotionFetchResponseSyncStatus `json:"syncStatus,omitempty"`
+	// The Notion API token (returned as '********' if configured, null otherwise)                                          
+	Token                                                                         *string                                   `json:"token,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                                     
+	UpdatedAt                                                                     float64                                   `json:"updatedAt"`
 }
 
-type NotionIntegrationSyncParams struct {
+type IntegrationNotionSyncParams struct {
 	// The ID of the Notion integration       
 	NotionIntegrationID                string `json:"notionIntegrationId"`
 }
 
-type NotionIntegrationSyncResponse struct {
+type IntegrationNotionSyncResponse struct {
 	// The ID of the synced Notion integration       
 	ID                                        string `json:"id"`
 }
 
-type NotionIntegrationUpdateParams struct {
+type IntegrationNotionUpdateParams struct {
 	// The ID of the Notion integration       
 	NotionIntegrationID                string `json:"notionIntegrationId"`
 }
 
 // Blueprint properties
-type NotionIntegrationUpdateRequest struct {
+type IntegrationNotionUpdateRequest struct {
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the dataset to sync into                                  
@@ -13304,13 +13304,13 @@ type NotionIntegrationUpdateRequest struct {
 	Token                                           *string                `json:"token,omitempty"`
 }
 
-type NotionIntegrationUpdateResponse struct {
+type IntegrationNotionUpdateResponse struct {
 	// The ID of the Notion Integration       
 	ID                                 string `json:"id"`
 }
 
 // Blueprint properties
-type NotionIntegrationCreateRequest struct {
+type IntegrationNotionCreateRequest struct {
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the dataset to sync into                                  
@@ -13329,28 +13329,28 @@ type NotionIntegrationCreateRequest struct {
 	Token                                           *string                `json:"token,omitempty"`
 }
 
-type NotionIntegrationCreateResponse struct {
+type IntegrationNotionCreateResponse struct {
 	// The ID of the Notion Integration       
 	ID                                 string `json:"id"`
 }
 
-type NotionIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type IntegrationNotionListParams struct {
+	// The cursor to use for pagination                                                         
+	Cursor                                                    *string                           `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                  
+	Meta                                                      map[string]string                 `json:"meta,omitempty"`
+	// The order of the paginated items                                                         
+	Order                                                     *IntegrationNotionListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                          
+	Take                                                      *int64                            `json:"take,omitempty"`
 }
 
-type NotionIntegrationsListResponse struct {
-	Items []NotionIntegrationsListResponseItem `json:"items"`
+type IntegrationNotionListResponse struct {
+	Items []IntegrationNotionListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type NotionIntegrationsListResponseItem struct {
+type IntegrationNotionListResponseItem struct {
 	// The ID of the blueprint                                                                           
 	BlueprintID                                                                   *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                                  
@@ -13372,30 +13372,158 @@ type NotionIntegrationsListResponseItem struct {
 	// The sync schedule                                                                                 
 	SyncSchedule                                                                  *string                `json:"syncSchedule,omitempty"`
 	// The sync status of an integration                                                                 
-	SyncStatus                                                                    *SyncStatus            `json:"syncStatus,omitempty"`
+	SyncStatus                                                                    *PurpleSyncStatus      `json:"syncStatus,omitempty"`
 	// The Notion API token (returned as '********' if configured, null otherwise)                       
 	Token                                                                         *string                `json:"token,omitempty"`
 	// The timestamp (ms) when the instance was updated                                                  
 	UpdatedAt                                                                     float64                `json:"updatedAt"`
 }
 
-type SitemapIntegrationDeleteParams struct {
+type IntegrationSitemapDeleteParams struct {
 	// The ID of the Sitemap integration       
 	SitemapIntegrationID                string `json:"sitemapIntegrationId"`
 }
 
-type SitemapIntegrationDeleteResponse struct {
+type IntegrationSitemapDeleteResponse struct {
 	// The ID of the deleted Sitemap integration       
 	ID                                          string `json:"id"`
 }
 
-type SitemapIntegrationFetchParams struct {
+type IntegrationSitemapFetchParams struct {
 	// The ID of the Sitemap integration to retrieve       
 	SitemapIntegrationID                            string `json:"sitemapIntegrationId"`
 }
 
 // Blueprint properties
-type SitemapIntegrationFetchResponse struct {
+type IntegrationSitemapFetchResponse struct {
+	// The ID of the blueprint                                                                                                           
+	BlueprintID                                                                               *string                                    `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                                                                                  
+	CreatedAt                                                                                 float64                                    `json:"createdAt"`
+	// The ID of the dataset used in the Sitemap integration                                                                             
+	DatasetID                                                                                 string                                     `json:"datasetId"`
+	// The associated description                                                                                                        
+	Description                                                                               *string                                    `json:"description,omitempty"`
+	// Record expiry in milliseconds                                                                                                     
+	ExpiresIn                                                                                 *float64                                   `json:"expiresIn,omitempty"`
+	// The glob rules to use for this Sitemap integration                                                                                
+	Glob                                                                                      *string                                    `json:"glob,omitempty"`
+	// The instance ID                                                                                                                   
+	ID                                                                                        string                                     `json:"id"`
+	// Indicates if the Sitemap integration should use JavaScript during the spidering process                                           
+	Javascript                                                                                *bool                                      `json:"javascript,omitempty"`
+	// The timestamp of the last successful sync                                                                                         
+	LastSyncedAt                                                                              *time.Time                                 `json:"lastSyncedAt,omitempty"`
+	// Meta data information                                                                                                             
+	Meta                                                                                      map[string]interface{}                     `json:"meta,omitempty"`
+	// The associated name                                                                                                               
+	Name                                                                                      *string                                    `json:"name,omitempty"`
+	// The selector rules to use for this Sitemap integration                                                                            
+	Selectors                                                                                 *string                                    `json:"selectors,omitempty"`
+	// The sync schedule to use for this Sitemap integration                                                                             
+	SyncSchedule                                                                              *string                                    `json:"syncSchedule,omitempty"`
+	// The sync status of an integration                                                                                                 
+	SyncStatus                                                                                *IntegrationSitemapFetchResponseSyncStatus `json:"syncStatus,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                                                  
+	UpdatedAt                                                                                 float64                                    `json:"updatedAt"`
+	// The URL to use for this Sitemap integration                                                                                       
+	URL                                                                                       *string                                    `json:"url,omitempty"`
+}
+
+type IntegrationSitemapSyncParams struct {
+	// The ID of the Sitemap integration       
+	SitemapIntegrationID                string `json:"sitemapIntegrationId"`
+}
+
+type IntegrationSitemapSyncResponse struct {
+	// The ID of the Sitemap Integration       
+	ID                                  string `json:"id"`
+}
+
+type IntegrationSitemapUpdateParams struct {
+	// The ID of the Sitemap integration       
+	SitemapIntegrationID                string `json:"sitemapIntegrationId"`
+}
+
+// Blueprint properties
+type IntegrationSitemapUpdateRequest struct {
+	// The ID of the blueprint                                                                                       
+	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
+	// The ID of the dataset to use for this Sitemap integration                                                     
+	DatasetID                                                                                 *string                `json:"datasetId,omitempty"`
+	// The associated description                                                                                    
+	Description                                                                               *string                `json:"description,omitempty"`
+	// Record expiry in milliseconds                                                                                 
+	ExpiresIn                                                                                 *float64               `json:"expiresIn,omitempty"`
+	// The glob rules to use for this Sitemap integration                                                            
+	Glob                                                                                      *string                `json:"glob,omitempty"`
+	// Indicates if the Sitemap integration should use JavaScript during the spidering process                       
+	Javascript                                                                                *bool                  `json:"javascript,omitempty"`
+	// Meta data information                                                                                         
+	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                           
+	Name                                                                                      *string                `json:"name,omitempty"`
+	// The selector rules to use for this Sitemap integration                                                        
+	Selectors                                                                                 *string                `json:"selectors,omitempty"`
+	// The sync schedule to use for this Sitemap integration                                                         
+	SyncSchedule                                                                              *string                `json:"syncSchedule,omitempty"`
+	// The URL to use for this Sitemap integration                                                                   
+	URL                                                                                       *string                `json:"url,omitempty"`
+}
+
+type IntegrationSitemapUpdateResponse struct {
+	// The ID of the Sitemap Integration       
+	ID                                  string `json:"id"`
+}
+
+// Blueprint properties
+type IntegrationSitemapCreateRequest struct {
+	// The ID of the blueprint                                                                                       
+	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
+	// The ID of the dataset to use for this Sitemap integration                                                     
+	DatasetID                                                                                 *string                `json:"datasetId,omitempty"`
+	// The associated description                                                                                    
+	Description                                                                               *string                `json:"description,omitempty"`
+	// Record expiry in milliseconds                                                                                 
+	ExpiresIn                                                                                 *float64               `json:"expiresIn,omitempty"`
+	// The glob rules to use for this Sitemap integration                                                            
+	Glob                                                                                      *string                `json:"glob,omitempty"`
+	// Indicates if the Sitemap integration should use JavaScript during the spidering process                       
+	Javascript                                                                                *bool                  `json:"javascript,omitempty"`
+	// Meta data information                                                                                         
+	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                           
+	Name                                                                                      *string                `json:"name,omitempty"`
+	// The selector rules to use for this Sitemap integration                                                        
+	Selectors                                                                                 *string                `json:"selectors,omitempty"`
+	// The sync schedule to use for this Sitemap integration                                                         
+	SyncSchedule                                                                              *string                `json:"syncSchedule,omitempty"`
+	// The URL to use for this Sitemap integration                                                                   
+	URL                                                                                       *string                `json:"url,omitempty"`
+}
+
+type IntegrationSitemapCreateResponse struct {
+	// The ID of the Sitemap Integration       
+	ID                                  string `json:"id"`
+}
+
+type IntegrationSitemapListParams struct {
+	// The cursor to use for pagination                                                          
+	Cursor                                                    *string                            `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                   
+	Meta                                                      map[string]string                  `json:"meta,omitempty"`
+	// The order of the paginated items                                                          
+	Order                                                     *IntegrationSitemapListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                           
+	Take                                                      *int64                             `json:"take,omitempty"`
+}
+
+type IntegrationSitemapListResponse struct {
+	Items []IntegrationSitemapListResponseItem `json:"items"`
+}
+
+// Blueprint properties
+type IntegrationSitemapListResponseItem struct {
 	// The ID of the blueprint                                                                                       
 	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                                              
@@ -13423,158 +13551,30 @@ type SitemapIntegrationFetchResponse struct {
 	// The sync schedule to use for this Sitemap integration                                                         
 	SyncSchedule                                                                              *string                `json:"syncSchedule,omitempty"`
 	// The sync status of an integration                                                                             
-	SyncStatus                                                                                *SyncStatus            `json:"syncStatus,omitempty"`
+	SyncStatus                                                                                *FluffySyncStatus      `json:"syncStatus,omitempty"`
 	// The timestamp (ms) when the instance was updated                                                              
 	UpdatedAt                                                                                 float64                `json:"updatedAt"`
 	// The URL to use for this Sitemap integration                                                                   
 	URL                                                                                       *string                `json:"url,omitempty"`
 }
 
-type SitemapIntegrationSyncParams struct {
-	// The ID of the Sitemap integration       
-	SitemapIntegrationID                string `json:"sitemapIntegrationId"`
-}
-
-type SitemapIntegrationSyncResponse struct {
-	// The ID of the Sitemap Integration       
-	ID                                  string `json:"id"`
-}
-
-type SitemapIntegrationUpdateParams struct {
-	// The ID of the Sitemap integration       
-	SitemapIntegrationID                string `json:"sitemapIntegrationId"`
-}
-
-// Blueprint properties
-type SitemapIntegrationUpdateRequest struct {
-	// The ID of the blueprint                                                                                       
-	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
-	// The ID of the dataset to use for this Sitemap integration                                                     
-	DatasetID                                                                                 *string                `json:"datasetId,omitempty"`
-	// The associated description                                                                                    
-	Description                                                                               *string                `json:"description,omitempty"`
-	// Record expiry in milliseconds                                                                                 
-	ExpiresIn                                                                                 *float64               `json:"expiresIn,omitempty"`
-	// The glob rules to use for this Sitemap integration                                                            
-	Glob                                                                                      *string                `json:"glob,omitempty"`
-	// Indicates if the Sitemap integration should use JavaScript during the spidering process                       
-	Javascript                                                                                *bool                  `json:"javascript,omitempty"`
-	// Meta data information                                                                                         
-	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                                                           
-	Name                                                                                      *string                `json:"name,omitempty"`
-	// The selector rules to use for this Sitemap integration                                                        
-	Selectors                                                                                 *string                `json:"selectors,omitempty"`
-	// The sync schedule to use for this Sitemap integration                                                         
-	SyncSchedule                                                                              *string                `json:"syncSchedule,omitempty"`
-	// The URL to use for this Sitemap integration                                                                   
-	URL                                                                                       *string                `json:"url,omitempty"`
-}
-
-type SitemapIntegrationUpdateResponse struct {
-	// The ID of the Sitemap Integration       
-	ID                                  string `json:"id"`
-}
-
-// Blueprint properties
-type SitemapIntegrationCreateRequest struct {
-	// The ID of the blueprint                                                                                       
-	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
-	// The ID of the dataset to use for this Sitemap integration                                                     
-	DatasetID                                                                                 *string                `json:"datasetId,omitempty"`
-	// The associated description                                                                                    
-	Description                                                                               *string                `json:"description,omitempty"`
-	// Record expiry in milliseconds                                                                                 
-	ExpiresIn                                                                                 *float64               `json:"expiresIn,omitempty"`
-	// The glob rules to use for this Sitemap integration                                                            
-	Glob                                                                                      *string                `json:"glob,omitempty"`
-	// Indicates if the Sitemap integration should use JavaScript during the spidering process                       
-	Javascript                                                                                *bool                  `json:"javascript,omitempty"`
-	// Meta data information                                                                                         
-	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                                                           
-	Name                                                                                      *string                `json:"name,omitempty"`
-	// The selector rules to use for this Sitemap integration                                                        
-	Selectors                                                                                 *string                `json:"selectors,omitempty"`
-	// The sync schedule to use for this Sitemap integration                                                         
-	SyncSchedule                                                                              *string                `json:"syncSchedule,omitempty"`
-	// The URL to use for this Sitemap integration                                                                   
-	URL                                                                                       *string                `json:"url,omitempty"`
-}
-
-type SitemapIntegrationCreateResponse struct {
-	// The ID of the Sitemap Integration       
-	ID                                  string `json:"id"`
-}
-
-type SitemapIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
-}
-
-type SitemapIntegrationsListResponse struct {
-	Items []SitemapIntegrationsListResponseItem `json:"items"`
-}
-
-// Blueprint properties
-type SitemapIntegrationsListResponseItem struct {
-	// The ID of the blueprint                                                                                       
-	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
-	// The timestamp (ms) when the instance was created                                                              
-	CreatedAt                                                                                 float64                `json:"createdAt"`
-	// The ID of the dataset used in the Sitemap integration                                                         
-	DatasetID                                                                                 string                 `json:"datasetId"`
-	// The associated description                                                                                    
-	Description                                                                               *string                `json:"description,omitempty"`
-	// Record expiry in milliseconds                                                                                 
-	ExpiresIn                                                                                 *float64               `json:"expiresIn,omitempty"`
-	// The glob rules to use for this Sitemap integration                                                            
-	Glob                                                                                      *string                `json:"glob,omitempty"`
-	// The instance ID                                                                                               
-	ID                                                                                        string                 `json:"id"`
-	// Indicates if the Sitemap integration should use JavaScript during the spidering process                       
-	Javascript                                                                                *bool                  `json:"javascript,omitempty"`
-	// The timestamp of the last successful sync                                                                     
-	LastSyncedAt                                                                              *time.Time             `json:"lastSyncedAt,omitempty"`
-	// Meta data information                                                                                         
-	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                                                           
-	Name                                                                                      *string                `json:"name,omitempty"`
-	// The selector rules to use for this Sitemap integration                                                        
-	Selectors                                                                                 *string                `json:"selectors,omitempty"`
-	// The sync schedule to use for this Sitemap integration                                                         
-	SyncSchedule                                                                              *string                `json:"syncSchedule,omitempty"`
-	// The sync status of an integration                                                                             
-	SyncStatus                                                                                *SyncStatus            `json:"syncStatus,omitempty"`
-	// The timestamp (ms) when the instance was updated                                                              
-	UpdatedAt                                                                                 float64                `json:"updatedAt"`
-	// The URL to use for this Sitemap integration                                                                   
-	URL                                                                                       *string                `json:"url,omitempty"`
-}
-
-type SlackIntegrationDeleteParams struct {
+type IntegrationSlackDeleteParams struct {
 	// The ID of the Slack integration       
 	SlackIntegrationID                string `json:"slackIntegrationId"`
 }
 
-type SlackIntegrationDeleteResponse struct {
+type IntegrationSlackDeleteResponse struct {
 	// The ID of the deleted Slack integration       
 	ID                                        string `json:"id"`
 }
 
-type SlackIntegrationFetchParams struct {
+type IntegrationSlackFetchParams struct {
 	// The ID of the Slack integration to retrieve       
 	SlackIntegrationID                            string `json:"slackIntegrationId"`
 }
 
 // Blueprint properties
-type SlackIntegrationFetchResponse struct {
+type IntegrationSlackFetchResponse struct {
 	// Configure automatic response behavior. Use '@all' to respond to all messages, '@agent                         
 	// <instructions>' for agent-powered decisions, or custom instructions for lightweight LLM                       
 	// filtering. Null/empty defaults to current behavior (DMs, mentions, threads only).                             
@@ -13613,23 +13613,23 @@ type SlackIntegrationFetchResponse struct {
 	VisibleMessages                                                                           *float64               `json:"visibleMessages,omitempty"`
 }
 
-type SlackIntegrationSetupParams struct {
+type IntegrationSlackSetupParams struct {
 	// The ID of the Slack integration       
 	SlackIntegrationID                string `json:"slackIntegrationId"`
 }
 
-type SlackIntegrationSetupResponse struct {
+type IntegrationSlackSetupResponse struct {
 	// The ID of the setup Slack integration       
 	ID                                      string `json:"id"`
 }
 
-type SlackIntegrationUpdateParams struct {
+type IntegrationSlackUpdateParams struct {
 	// The ID of the Slack integration       
 	SlackIntegrationID                string `json:"slackIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type SlackIntegrationUpdateRequest struct {
+type IntegrationSlackUpdateRequest struct {
 	// Configure automatic response behavior. Use '@all' to respond to all messages, '@agent                         
 	// <instructions>' for agent-powered decisions, or custom instructions for lightweight LLM                       
 	// filtering. Null/empty defaults to current behavior (DMs, mentions, threads only).                             
@@ -13662,13 +13662,13 @@ type SlackIntegrationUpdateRequest struct {
 	VisibleMessages                                                                           *float64               `json:"visibleMessages,omitempty"`
 }
 
-type SlackIntegrationUpdateResponse struct {
+type IntegrationSlackUpdateResponse struct {
 	// The ID of the Slack Integration       
 	ID                                string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type SlackIntegrationCreateRequest struct {
+type IntegrationSlackCreateRequest struct {
 	// Configure automatic response behavior. Use '@all' to respond to all messages, '@agent                         
 	// <instructions>' for agent-powered decisions, or custom instructions for lightweight LLM                       
 	// filtering. Null/empty defaults to current behavior (DMs, mentions, threads only).                             
@@ -13701,28 +13701,28 @@ type SlackIntegrationCreateRequest struct {
 	VisibleMessages                                                                           *float64               `json:"visibleMessages,omitempty"`
 }
 
-type SlackIntegrationCreateResponse struct {
+type IntegrationSlackCreateResponse struct {
 	// The ID of the Slack Integration       
 	ID                                string `json:"id"`
 }
 
-type SlackIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type IntegrationSlackListParams struct {
+	// The cursor to use for pagination                                                        
+	Cursor                                                    *string                          `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                 
+	Meta                                                      map[string]string                `json:"meta,omitempty"`
+	// The order of the paginated items                                                        
+	Order                                                     *IntegrationSlackListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                         
+	Take                                                      *int64                           `json:"take,omitempty"`
 }
 
-type SlackIntegrationsListResponse struct {
-	Items []SlackIntegrationsListResponseItem `json:"items"`
+type IntegrationSlackListResponse struct {
+	Items []IntegrationSlackListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type SlackIntegrationsListResponseItem struct {
+type IntegrationSlackListResponseItem struct {
 	// Configure automatic response behavior. Use '@all' to respond to all messages, '@agent                         
 	// <instructions>' for agent-powered decisions, or custom instructions for lightweight LLM                       
 	// filtering. Null/empty defaults to current behavior (DMs, mentions, threads only).                             
@@ -13761,23 +13761,23 @@ type SlackIntegrationsListResponseItem struct {
 	VisibleMessages                                                                           *float64               `json:"visibleMessages,omitempty"`
 }
 
-type SupportIntegrationDeleteParams struct {
+type IntegrationSupportDeleteParams struct {
 	// The ID of the Support integration       
 	SupportIntegrationID                string `json:"supportIntegrationId"`
 }
 
-type SupportIntegrationDeleteResponse struct {
+type IntegrationSupportDeleteResponse struct {
 	// The ID of the deleted Support integration       
 	ID                                          string `json:"id"`
 }
 
-type SupportIntegrationFetchParams struct {
+type IntegrationSupportFetchParams struct {
 	// The ID of the Support integration to retrieve       
 	SupportIntegrationID                            string `json:"supportIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type SupportIntegrationFetchResponse struct {
+type IntegrationSupportFetchResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                          
@@ -13798,13 +13798,13 @@ type SupportIntegrationFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type SupportIntegrationUpdateParams struct {
+type IntegrationSupportUpdateParams struct {
 	// The ID of the Support integration       
 	SupportIntegrationID                string `json:"supportIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type SupportIntegrationUpdateRequest struct {
+type IntegrationSupportUpdateRequest struct {
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                       
@@ -13819,13 +13819,13 @@ type SupportIntegrationUpdateRequest struct {
 	Name                                            *string                `json:"name,omitempty"`
 }
 
-type SupportIntegrationUpdateResponse struct {
+type IntegrationSupportUpdateResponse struct {
 	// The ID of the Support Integration       
 	ID                                  string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type SupportIntegrationCreateRequest struct {
+type IntegrationSupportCreateRequest struct {
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                       
@@ -13840,28 +13840,28 @@ type SupportIntegrationCreateRequest struct {
 	Name                                            *string                `json:"name,omitempty"`
 }
 
-type SupportIntegrationCreateResponse struct {
+type IntegrationSupportCreateResponse struct {
 	// The ID of the Support Integration       
 	ID                                  string `json:"id"`
 }
 
-type SupportIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type IntegrationSupportListParams struct {
+	// The cursor to use for pagination                                                          
+	Cursor                                                    *string                            `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                   
+	Meta                                                      map[string]string                  `json:"meta,omitempty"`
+	// The order of the paginated items                                                          
+	Order                                                     *IntegrationSupportListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                           
+	Take                                                      *int64                             `json:"take,omitempty"`
 }
 
-type SupportIntegrationsListResponse struct {
-	Items []SupportIntegrationsListResponseItem `json:"items"`
+type IntegrationSupportListResponse struct {
+	Items []IntegrationSupportListResponseItem `json:"items"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type SupportIntegrationsListResponseItem struct {
+type IntegrationSupportListResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                          
@@ -13882,23 +13882,23 @@ type SupportIntegrationsListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type TelegramIntegrationDeleteParams struct {
+type IntegrationTelegramDeleteParams struct {
 	// The ID of the Telegram integration       
 	TelegramIntegrationID                string `json:"telegramIntegrationId"`
 }
 
-type TelegramIntegrationDeleteResponse struct {
+type IntegrationTelegramDeleteResponse struct {
 	// The ID of the deleted Telegram integration       
 	ID                                           string `json:"id"`
 }
 
-type TelegramIntegrationFetchParams struct {
+type IntegrationTelegramFetchParams struct {
 	// The ID of the Telegram integration to retrieve       
 	TelegramIntegrationID                            string `json:"telegramIntegrationId"`
 }
 
 // Blueprint properties
-type TelegramIntegrationFetchResponse struct {
+type IntegrationTelegramFetchResponse struct {
 	// Weather the bot supports attachments                                   
 	Attachments                                        *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                                
@@ -13923,23 +13923,23 @@ type TelegramIntegrationFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type TelegramIntegrationSetupParams struct {
+type IntegrationTelegramSetupParams struct {
 	// The ID of the Telegram integration       
 	TelegramIntegrationID                string `json:"telegramIntegrationId"`
 }
 
-type TelegramIntegrationSetupResponse struct {
+type IntegrationTelegramSetupResponse struct {
 	// The ID of the Telegram Integration       
 	ID                                   string `json:"id"`
 }
 
-type TelegramIntegrationUpdateParams struct {
+type IntegrationTelegramUpdateParams struct {
 	// The ID of the Telegram integration       
 	TelegramIntegrationID                string `json:"telegramIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type TelegramIntegrationUpdateRequest struct {
+type IntegrationTelegramUpdateRequest struct {
 	// Weather the bot supports attachments                                
 	Attachments                                     *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                             
@@ -13960,13 +13960,13 @@ type TelegramIntegrationUpdateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type TelegramIntegrationUpdateResponse struct {
+type IntegrationTelegramUpdateResponse struct {
 	// The ID of the Telegram Integration       
 	ID                                   string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type TelegramIntegrationCreateRequest struct {
+type IntegrationTelegramCreateRequest struct {
 	// Weather the bot supports attachments                                
 	Attachments                                     *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                             
@@ -13987,28 +13987,28 @@ type TelegramIntegrationCreateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type TelegramIntegrationCreateResponse struct {
+type IntegrationTelegramCreateResponse struct {
 	// The ID of the Telegram Integration       
 	ID                                   string `json:"id"`
 }
 
-type TelegramIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type IntegrationTelegramListParams struct {
+	// The cursor to use for pagination                                                           
+	Cursor                                                    *string                             `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                    
+	Meta                                                      map[string]string                   `json:"meta,omitempty"`
+	// The order of the paginated items                                                           
+	Order                                                     *IntegrationTelegramListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                            
+	Take                                                      *int64                              `json:"take,omitempty"`
 }
 
-type TelegramIntegrationsListResponse struct {
-	Items []TelegramIntegrationsListResponseItem `json:"items"`
+type IntegrationTelegramListResponse struct {
+	Items []IntegrationTelegramListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type TelegramIntegrationsListResponseItem struct {
+type IntegrationTelegramListResponseItem struct {
 	// Weather the bot supports attachments                                   
 	Attachments                                        *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                                
@@ -14050,30 +14050,30 @@ type TriggerIntegrationFetchParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type TriggerIntegrationFetchResponse struct {
-	// When enabled the integration requires authentication                       
-	Authenticate                                           *bool                  `json:"authenticate,omitempty"`
-	// The ID of the blueprint                                                    
-	BlueprintID                                            *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot this configuration is using                              
-	BotID                                                  *string                `json:"botId,omitempty"`
-	// The timestamp (ms) when the instance was created                           
-	CreatedAt                                              float64                `json:"createdAt"`
-	// The associated description                                                 
-	Description                                            *string                `json:"description,omitempty"`
-	// The instance ID                                                            
-	ID                                                     string                 `json:"id"`
-	// Meta data information                                                      
-	Meta                                                   map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                        
-	Name                                                   *string                `json:"name,omitempty"`
-	// The Trigger integration secret                                             
-	Secret                                                 string                 `json:"secret"`
-	// The session duration (in milliseconds)                                     
-	SessionDuration                                        *float64               `json:"sessionDuration,omitempty"`
-	// The schedule                                                               
-	TriggerSchedule                                        *Schedule              `json:"triggerSchedule,omitempty"`
-	// The timestamp (ms) when the instance was updated                           
-	UpdatedAt                                              float64                `json:"updatedAt"`
+	// When enabled the integration requires authentication                                                
+	Authenticate                                           *bool                                           `json:"authenticate,omitempty"`
+	// The ID of the blueprint                                                                             
+	BlueprintID                                            *string                                         `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                       
+	BotID                                                  *string                                         `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                                                    
+	CreatedAt                                              float64                                         `json:"createdAt"`
+	// The associated description                                                                          
+	Description                                            *string                                         `json:"description,omitempty"`
+	// The instance ID                                                                                     
+	ID                                                     string                                          `json:"id"`
+	// Meta data information                                                                               
+	Meta                                                   map[string]interface{}                          `json:"meta,omitempty"`
+	// The associated name                                                                                 
+	Name                                                   *string                                         `json:"name,omitempty"`
+	// The Trigger integration secret                                                                      
+	Secret                                                 string                                          `json:"secret"`
+	// The session duration (in milliseconds)                                                              
+	SessionDuration                                        *float64                                        `json:"sessionDuration,omitempty"`
+	// The schedule                                                                                        
+	TriggerSchedule                                        *TriggerIntegrationFetchResponseTriggerSchedule `json:"triggerSchedule,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                    
+	UpdatedAt                                              float64                                         `json:"updatedAt"`
 }
 
 type TriggerIntegrationInvokeParams struct {
@@ -14103,22 +14103,22 @@ type TriggerIntegrationUpdateParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type TriggerIntegrationUpdateRequest struct {
-	// When enabled the integration requires authentication                       
-	Authenticate                                           *bool                  `json:"authenticate,omitempty"`
-	// The ID of the blueprint                                                    
-	BlueprintID                                            *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot this configuration is using                              
-	BotID                                                  *string                `json:"botId,omitempty"`
-	// The associated description                                                 
-	Description                                            *string                `json:"description,omitempty"`
-	// Meta data information                                                      
-	Meta                                                   map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                        
-	Name                                                   *string                `json:"name,omitempty"`
-	// The session duration (in milliseconds)                                     
-	SessionDuration                                        *float64               `json:"sessionDuration,omitempty"`
-	// The schedule                                                               
-	TriggerSchedule                                        *Schedule              `json:"triggerSchedule,omitempty"`
+	// When enabled the integration requires authentication                                                
+	Authenticate                                           *bool                                           `json:"authenticate,omitempty"`
+	// The ID of the blueprint                                                                             
+	BlueprintID                                            *string                                         `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                       
+	BotID                                                  *string                                         `json:"botId,omitempty"`
+	// The associated description                                                                          
+	Description                                            *string                                         `json:"description,omitempty"`
+	// Meta data information                                                                               
+	Meta                                                   map[string]interface{}                          `json:"meta,omitempty"`
+	// The associated name                                                                                 
+	Name                                                   *string                                         `json:"name,omitempty"`
+	// The session duration (in milliseconds)                                                              
+	SessionDuration                                        *float64                                        `json:"sessionDuration,omitempty"`
+	// The schedule                                                                                        
+	TriggerSchedule                                        *TriggerIntegrationUpdateRequestTriggerSchedule `json:"triggerSchedule,omitempty"`
 }
 
 type TriggerIntegrationUpdateResponse struct {
@@ -14128,22 +14128,22 @@ type TriggerIntegrationUpdateResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type TriggerIntegrationCreateRequest struct {
-	// When enabled the integration requires authentication                       
-	Authenticate                                           *bool                  `json:"authenticate,omitempty"`
-	// The ID of the blueprint                                                    
-	BlueprintID                                            *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot this configuration is using                              
-	BotID                                                  *string                `json:"botId,omitempty"`
-	// The associated description                                                 
-	Description                                            *string                `json:"description,omitempty"`
-	// Meta data information                                                      
-	Meta                                                   map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                        
-	Name                                                   *string                `json:"name,omitempty"`
-	// The session duration (in milliseconds)                                     
-	SessionDuration                                        *float64               `json:"sessionDuration,omitempty"`
-	// The schedule                                                               
-	TriggerSchedule                                        *Schedule              `json:"triggerSchedule,omitempty"`
+	// When enabled the integration requires authentication                                                
+	Authenticate                                           *bool                                           `json:"authenticate,omitempty"`
+	// The ID of the blueprint                                                                             
+	BlueprintID                                            *string                                         `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                       
+	BotID                                                  *string                                         `json:"botId,omitempty"`
+	// The associated description                                                                          
+	Description                                            *string                                         `json:"description,omitempty"`
+	// Meta data information                                                                               
+	Meta                                                   map[string]interface{}                          `json:"meta,omitempty"`
+	// The associated name                                                                                 
+	Name                                                   *string                                         `json:"name,omitempty"`
+	// The session duration (in milliseconds)                                                              
+	SessionDuration                                        *float64                                        `json:"sessionDuration,omitempty"`
+	// The schedule                                                                                        
+	TriggerSchedule                                        *TriggerIntegrationCreateRequestTriggerSchedule `json:"triggerSchedule,omitempty"`
 }
 
 type TriggerIntegrationCreateResponse struct {
@@ -14151,23 +14151,23 @@ type TriggerIntegrationCreateResponse struct {
 	ID                                  string `json:"id"`
 }
 
-type TriggerIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type TriggerIntegrationListParams struct {
+	// The cursor to use for pagination                                                          
+	Cursor                                                    *string                            `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                   
+	Meta                                                      map[string]string                  `json:"meta,omitempty"`
+	// The order of the paginated items                                                          
+	Order                                                     *TriggerIntegrationListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                           
+	Take                                                      *int64                             `json:"take,omitempty"`
 }
 
-type TriggerIntegrationsListResponse struct {
-	Items []TriggerIntegrationsListResponseItem `json:"items"`
+type TriggerIntegrationListResponse struct {
+	Items []TriggerIntegrationListResponseItem `json:"items"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type TriggerIntegrationsListResponseItem struct {
+type TriggerIntegrationListResponseItem struct {
 	// When enabled the integration requires authentication                       
 	Authenticate                                           *bool                  `json:"authenticate,omitempty"`
 	// The ID of the blueprint                                                    
@@ -14189,28 +14189,28 @@ type TriggerIntegrationsListResponseItem struct {
 	// The session duration (in milliseconds)                                     
 	SessionDuration                                        *float64               `json:"sessionDuration,omitempty"`
 	// The schedule                                                               
-	TriggerSchedule                                        *Schedule              `json:"triggerSchedule,omitempty"`
+	TriggerSchedule                                        *ItemTriggerSchedule   `json:"triggerSchedule,omitempty"`
 	// The timestamp (ms) when the instance was updated                           
 	UpdatedAt                                              float64                `json:"updatedAt"`
 }
 
-type TwilioIntegrationDeleteParams struct {
+type IntegrationTwilioDeleteParams struct {
 	// The ID of the Twilio integration       
 	TwilioIntegrationID                string `json:"twilioIntegrationId"`
 }
 
-type TwilioIntegrationDeleteResponse struct {
+type IntegrationTwilioDeleteResponse struct {
 	// The ID of the deleted Twilio integration       
 	ID                                         string `json:"id"`
 }
 
-type TwilioIntegrationFetchParams struct {
+type IntegrationTwilioFetchParams struct {
 	// The ID of the Twilio integration to retrieve       
 	TwilioIntegrationID                            string `json:"twilioIntegrationId"`
 }
 
 // Blueprint properties
-type TwilioIntegrationFetchResponse struct {
+type IntegrationTwilioFetchResponse struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                          
@@ -14233,23 +14233,23 @@ type TwilioIntegrationFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type TwilioIntegrationSetupParams struct {
+type IntegrationTwilioSetupParams struct {
 	// The ID of the Twilio integration       
 	TwilioIntegrationID                string `json:"twilioIntegrationId"`
 }
 
-type TwilioIntegrationSetupResponse struct {
+type IntegrationTwilioSetupResponse struct {
 	// The ID of the Twilio Integration       
 	ID                                 string `json:"id"`
 }
 
-type TwilioIntegrationUpdateParams struct {
+type IntegrationTwilioUpdateParams struct {
 	// The ID of the Twilio integration       
 	TwilioIntegrationID                string `json:"twilioIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type TwilioIntegrationUpdateRequest struct {
+type IntegrationTwilioUpdateRequest struct {
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                       
@@ -14266,13 +14266,13 @@ type TwilioIntegrationUpdateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type TwilioIntegrationUpdateResponse struct {
+type IntegrationTwilioUpdateResponse struct {
 	// The ID of the Twilio Integration       
 	ID                                 string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type TwilioIntegrationCreateRequest struct {
+type IntegrationTwilioCreateRequest struct {
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                       
@@ -14289,28 +14289,28 @@ type TwilioIntegrationCreateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type TwilioIntegrationCreateResponse struct {
+type IntegrationTwilioCreateResponse struct {
 	// The ID of the Twilio Integration       
 	ID                                 string `json:"id"`
 }
 
-type TwilioIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type IntegrationTwilioListParams struct {
+	// The cursor to use for pagination                                                         
+	Cursor                                                    *string                           `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                  
+	Meta                                                      map[string]string                 `json:"meta,omitempty"`
+	// The order of the paginated items                                                         
+	Order                                                     *IntegrationTwilioListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                          
+	Take                                                      *int64                            `json:"take,omitempty"`
 }
 
-type TwilioIntegrationsListResponse struct {
-	Items []TwilioIntegrationsListResponseItem `json:"items"`
+type IntegrationTwilioListResponse struct {
+	Items []IntegrationTwilioListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type TwilioIntegrationsListResponseItem struct {
+type IntegrationTwilioListResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                          
@@ -14333,23 +14333,23 @@ type TwilioIntegrationsListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type WhatsAppIntegrationDeleteParams struct {
+type IntegrationWhatsAppDeleteParams struct {
 	// The ID of the WhatsApp integration       
 	WhatsappIntegrationID                string `json:"whatsappIntegrationId"`
 }
 
-type WhatsAppIntegrationDeleteResponse struct {
+type IntegrationWhatsAppDeleteResponse struct {
 	// The ID of the deleted WhatsApp integration       
 	ID                                           string `json:"id"`
 }
 
-type WhatsAppIntegrationFetchParams struct {
+type IntegrationWhatsAppFetchParams struct {
 	// The ID of the WhatsApp integration to retrieve       
 	WhatsappIntegrationID                            string `json:"whatsappIntegrationId"`
 }
 
 // Blueprint properties
-type WhatsAppIntegrationFetchResponse struct {
+type IntegrationWhatsAppFetchResponse struct {
 	// The WhatsApp integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                              
 	AccessToken                                                                         *string                `json:"accessToken,omitempty"`
@@ -14381,23 +14381,23 @@ type WhatsAppIntegrationFetchResponse struct {
 	VerifyToken                                                                         string                 `json:"verifyToken"`
 }
 
-type WhatsAppIntegrationSetupParams struct {
+type IntegrationWhatsAppSetupParams struct {
 	// The ID of the WhatsApp integration       
 	WhatsappIntegrationID                string `json:"whatsappIntegrationId"`
 }
 
-type WhatsAppIntegrationSetupResponse struct {
+type IntegrationWhatsAppSetupResponse struct {
 	// The ID of the WhatsApp Integration       
 	ID                                   string `json:"id"`
 }
 
-type WhatsAppIntegrationUpdateParams struct {
+type IntegrationWhatsAppUpdateParams struct {
 	// The ID of the WhatsApp integration       
 	WhatsappIntegrationID                string `json:"whatsappIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type WhatsAppIntegrationUpdateRequest struct {
+type IntegrationWhatsAppUpdateRequest struct {
 	// The WhatsApp integration access token                               
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
 	// Weather the bot supports attachments                                
@@ -14420,13 +14420,13 @@ type WhatsAppIntegrationUpdateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type WhatsAppIntegrationUpdateResponse struct {
+type IntegrationWhatsAppUpdateResponse struct {
 	// The ID of the WhatsApp Integration       
 	ID                                   string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type WhatsAppIntegrationCreateRequest struct {
+type IntegrationWhatsAppCreateRequest struct {
 	// The WhatsApp integration access token                               
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
 	// Weather the bot supports attachments                                
@@ -14449,28 +14449,28 @@ type WhatsAppIntegrationCreateRequest struct {
 	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
 }
 
-type WhatsAppIntegrationCreateResponse struct {
+type IntegrationWhatsAppCreateResponse struct {
 	// The ID of the WhatsApp Integration       
 	ID                                   string `json:"id"`
 }
 
-type WhatsAppIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type IntegrationWhatsAppListParams struct {
+	// The cursor to use for pagination                                                           
+	Cursor                                                    *string                             `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                    
+	Meta                                                      map[string]string                   `json:"meta,omitempty"`
+	// The order of the paginated items                                                           
+	Order                                                     *IntegrationWhatsAppListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                            
+	Take                                                      *int64                              `json:"take,omitempty"`
 }
 
-type WhatsAppIntegrationsListResponse struct {
-	Items []WhatsAppIntegrationsListResponseItem `json:"items"`
+type IntegrationWhatsAppListResponse struct {
+	Items []IntegrationWhatsAppListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type WhatsAppIntegrationsListResponseItem struct {
+type IntegrationWhatsAppListResponseItem struct {
 	// The WhatsApp integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                              
 	AccessToken                                                                         *string                `json:"accessToken,omitempty"`
@@ -14502,23 +14502,23 @@ type WhatsAppIntegrationsListResponseItem struct {
 	VerifyToken                                                                         string                 `json:"verifyToken"`
 }
 
-type WidgetIntegrationDeleteParams struct {
+type IntegrationWidgetDeleteParams struct {
 	// The ID of the Widget integration       
 	WidgetIntegrationID                string `json:"widgetIntegrationId"`
 }
 
-type WidgetIntegrationDeleteResponse struct {
+type IntegrationWidgetDeleteResponse struct {
 	// The ID of the deleted Widget integration       
 	ID                                         string `json:"id"`
 }
 
-type WidgetIntegrationFetchParams struct {
+type IntegrationWidgetFetchParams struct {
 	// The ID of the Widget integration to retrieve       
 	WidgetIntegrationID                            string `json:"widgetIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type WidgetIntegrationFetchResponse struct {
+type IntegrationWidgetFetchResponse struct {
 	// Whether the Widget integration supports attachments                                         
 	Attachments                                                             *bool                  `json:"attachments,omitempty"`
 	// Whether the Widget integration auto scrolls                                                 
@@ -14593,23 +14593,23 @@ type WidgetIntegrationFetchResponse struct {
 	VoiceOut                                                                *bool                  `json:"voiceOut,omitempty"`
 }
 
-type WidgetIntegrationSetupParams struct {
+type IntegrationWidgetSetupParams struct {
 	// The ID of the Widget integration       
 	WidgetIntegrationID                string `json:"widgetIntegrationId"`
 }
 
-type WidgetIntegrationSetupResponse struct {
+type IntegrationWidgetSetupResponse struct {
 	// The ID of the Widget integration       
 	ID                                 string `json:"id"`
 }
 
-type WidgetIntegrationUpdateParams struct {
+type IntegrationWidgetUpdateParams struct {
 	// The ID of the Widget integration       
 	WidgetIntegrationID                string `json:"widgetIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type WidgetIntegrationUpdateRequest struct {
+type IntegrationWidgetUpdateRequest struct {
 	// Whether the Widget integration supports attachments                                         
 	Attachments                                                             *bool                  `json:"attachments,omitempty"`
 	// Whether the Widget integration auto scrolls                                                 
@@ -14678,13 +14678,13 @@ type WidgetIntegrationUpdateRequest struct {
 	VoiceOut                                                                *bool                  `json:"voiceOut,omitempty"`
 }
 
-type WidgetIntegrationUpdateResponse struct {
+type IntegrationWidgetUpdateResponse struct {
 	// The ID of the Widget Integration       
 	ID                                 string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type WidgetIntegrationCreateRequest struct {
+type IntegrationWidgetCreateRequest struct {
 	// Weather the Widget integration supports attachments                                         
 	Attachments                                                             *bool                  `json:"attachments,omitempty"`
 	// Whether the Widget integration auto scrolls                                                 
@@ -14753,28 +14753,28 @@ type WidgetIntegrationCreateRequest struct {
 	VoiceOut                                                                *bool                  `json:"voiceOut,omitempty"`
 }
 
-type WidgetIntegrationCreateResponse struct {
+type IntegrationWidgetCreateResponse struct {
 	// The ID of the Widget Integration       
 	ID                                 string `json:"id"`
 }
 
-type WidgetIntegrationsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type IntegrationWidgetListParams struct {
+	// The cursor to use for pagination                                                         
+	Cursor                                                    *string                           `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                  
+	Meta                                                      map[string]string                 `json:"meta,omitempty"`
+	// The order of the paginated items                                                         
+	Order                                                     *IntegrationWidgetListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                          
+	Take                                                      *int64                            `json:"take,omitempty"`
 }
 
-type WidgetIntegrationsListResponse struct {
-	Items []WidgetIntegrationsListResponseItem `json:"items"`
+type IntegrationWidgetListResponse struct {
+	Items []IntegrationWidgetListResponseItem `json:"items"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
-type WidgetIntegrationsListResponseItem struct {
+type IntegrationWidgetListResponseItem struct {
 	// Weather the Widget integration supports attachments                                         
 	Attachments                                                             *bool                  `json:"attachments,omitempty"`
 	// Whether the Widget integration auto scrolls                                                 
@@ -14876,23 +14876,23 @@ type MagicFromPromptGenerateResponseUsage struct {
 	Token                              float64 `json:"token"`
 }
 
-type MagicPromptsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type MagicPromptListParams struct {
+	// The cursor to use for pagination                                                   
+	Cursor                                                    *string                     `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                            
+	Meta                                                      map[string]string           `json:"meta,omitempty"`
+	// The order of the paginated items                                                   
+	Order                                                     *MagicPromptListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                    
+	Take                                                      *int64                      `json:"take,omitempty"`
 }
 
-type MagicPromptsListResponse struct {
-	Items []MagicPromptsListResponseItem `json:"items"`
+type MagicPromptListResponse struct {
+	Items []MagicPromptListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type MagicPromptsListResponseItem struct {
+type MagicPromptListResponseItem struct {
 	// The alias of the item                                                  
 	Alias                                              string                 `json:"alias"`
 	// The timestamp (ms) when the instance was created                       
@@ -14993,14 +14993,14 @@ type MemoryCreateResponse struct {
 }
 
 type MemoriesExportParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+	// The cursor to use for pagination                                                  
+	Cursor                                                    *string                    `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                           
+	Meta                                                      map[string]string          `json:"meta,omitempty"`
+	// The order of the paginated items                                                  
+	Order                                                     *MemoriesExportParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                   
+	Take                                                      *int64                     `json:"take,omitempty"`
 }
 
 type MemoriesExportResponse struct {
@@ -15029,23 +15029,23 @@ type MemoriesExportResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type MemoriesListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type MemoryListParams struct {
+	// The cursor to use for pagination                                              
+	Cursor                                                    *string                `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                       
+	Meta                                                      map[string]string      `json:"meta,omitempty"`
+	// The order of the paginated items                                              
+	Order                                                     *MemoryListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                               
+	Take                                                      *int64                 `json:"take,omitempty"`
 }
 
-type MemoriesListResponse struct {
-	Items []MemoriesListResponseItem `json:"items"`
+type MemoryListResponse struct {
+	Items []MemoryListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type MemoriesListResponseItem struct {
+type MemoryListResponseItem struct {
 	// The bot associated with the memory                                     
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The contact associated with the memory                                 
@@ -15175,23 +15175,23 @@ type PartnerUserTokenCreateResponse struct {
 	Token                                                                 string  `json:"token"`
 }
 
-type PartnerUserTokensListParams struct {
-	// The cursor to use for pagination        
-	Cursor                             *string `json:"cursor,omitempty"`
-	// The order of the paginated items        
-	Order                              *Order  `json:"order,omitempty"`
-	// The number of items to retrieve         
-	Take                               *int64  `json:"take,omitempty"`
-	// The ID of the user                      
-	UserID                             string  `json:"userId"`
+type PartnerUserTokenListParams struct {
+	// The cursor to use for pagination                                 
+	Cursor                             *string                          `json:"cursor,omitempty"`
+	// The order of the paginated items                                 
+	Order                              *PartnerUserTokenListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                  
+	Take                               *int64                           `json:"take,omitempty"`
+	// The ID of the user                                               
+	UserID                             string                           `json:"userId"`
 }
 
-type PartnerUserTokensListResponse struct {
-	Items []PartnerUserTokensListResponseItem `json:"items"`
+type PartnerUserTokenListResponse struct {
+	Items []PartnerUserTokenListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PartnerUserTokensListResponseItem struct {
+type PartnerUserTokenListResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -15305,23 +15305,23 @@ type PartnerUserCreateResponse struct {
 	ID                           string `json:"id"`
 }
 
-type PartnerUsersListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type PartnerUserListParams struct {
+	// The cursor to use for pagination                                                   
+	Cursor                                                    *string                     `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                            
+	Meta                                                      map[string]string           `json:"meta,omitempty"`
+	// The order of the paginated items                                                   
+	Order                                                     *PartnerUserListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                    
+	Take                                                      *int64                      `json:"take,omitempty"`
 }
 
-type PartnerUsersListResponse struct {
-	Items []PartnerUsersListResponseItem `json:"items"`
+type PartnerUserListResponse struct {
+	Items []PartnerUserListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PartnerUsersListResponseItem struct {
+type PartnerUserListResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -15368,23 +15368,23 @@ type StickyDatabase struct {
 	Skillsets             *float64 `json:"skillsets,omitempty"`
 }
 
-type PlatformAbilitiesListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type PlatformAbilityListParams struct {
+	// The cursor to use for pagination                                                       
+	Cursor                                                    *string                         `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                
+	Meta                                                      map[string]string               `json:"meta,omitempty"`
+	// The order of the paginated items                                                       
+	Order                                                     *PlatformAbilityListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                        
+	Take                                                      *int64                          `json:"take,omitempty"`
 }
 
-type PlatformAbilitiesListResponse struct {
-	Items []PlatformAbilitiesListResponseItem `json:"items"`
+type PlatformAbilityListResponse struct {
+	Items []PlatformAbilityListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformAbilitiesListResponseItem struct {
+type PlatformAbilityListResponseItem struct {
 	// The ID of the bot associated with the ability                                                               
 	Bot                                                                                     *string                `json:"bot,omitempty"`
 	Commentary                                                                              *string                `json:"commentary,omitempty"`
@@ -15429,26 +15429,26 @@ type Schema struct {
 	// The schema title                                        
 	Title                               *string                `json:"title,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                ParametersType         `json:"type"`
+	Type                                SchemaType             `json:"type"`
 }
 
-type PlatformActionsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type PlatformActionListParams struct {
+	// The cursor to use for pagination                                                      
+	Cursor                                                    *string                        `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                               
+	Meta                                                      map[string]string              `json:"meta,omitempty"`
+	// The order of the paginated items                                                      
+	Order                                                     *PlatformActionListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                       
+	Take                                                      *int64                         `json:"take,omitempty"`
 }
 
-type PlatformActionsListResponse struct {
-	Items []PlatformActionsListResponseItem `json:"items"`
+type PlatformActionListResponse struct {
+	Items []PlatformActionListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformActionsListResponseItem struct {
+type PlatformActionListResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The description of the action                                          
@@ -15496,23 +15496,23 @@ type PlatformDocFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformDocsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type PlatformDocListParams struct {
+	// The cursor to use for pagination                                                   
+	Cursor                                                    *string                     `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                            
+	Meta                                                      map[string]string           `json:"meta,omitempty"`
+	// The order of the paginated items                                                   
+	Order                                                     *PlatformDocListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                    
+	Take                                                      *int64                      `json:"take,omitempty"`
 }
 
-type PlatformDocsListResponse struct {
-	Items []PlatformDocsListResponseItem `json:"items"`
+type PlatformDocListResponse struct {
+	Items []PlatformDocListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformDocsListResponseItem struct {
+type PlatformDocListResponseItem struct {
 	// The category of the doc                                                
 	Category                                           *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -15619,41 +15619,41 @@ type PlatformExampleFetchResponse struct {
 	UpdatedAt                                       *float64                         `json:"updatedAt,omitempty"`
 }
 
-type PlatformExamplesListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type PlatformExampleListParams struct {
+	// The cursor to use for pagination                                                       
+	Cursor                                                    *string                         `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                
+	Meta                                                      map[string]string               `json:"meta,omitempty"`
+	// The order of the paginated items                                                       
+	Order                                                     *PlatformExampleListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                        
+	Take                                                      *int64                          `json:"take,omitempty"`
 }
 
-type PlatformExamplesListResponse struct {
-	Items []PlatformExamplesListResponseItem `json:"items"`
+type PlatformExampleListResponse struct {
+	Items []PlatformExampleListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformExamplesListResponseItem struct {
-	// The timestamp (ms) when the instance was created                                 
-	CreatedAt                                          float64                          `json:"createdAt"`
-	// The associated description                                                       
-	Description                                        string                           `json:"description"`
-	// The instance ID                                                                  
-	ID                                                 string                           `json:"id"`
-	// The URL to the official example page                                             
-	Link                                               string                           `json:"link"`
-	// Meta data information                                                            
-	Meta                                               map[string]interface{}           `json:"meta,omitempty"`
-	// The associated name                                                              
-	Name                                               string                           `json:"name"`
-	// Tags associated with the example                                                 
-	Tags                                               []string                         `json:"tags,omitempty"`
-	// The type of the example                                                          
-	Type                                               PlatformExampleFetchResponseType `json:"type"`
-	// The timestamp (ms) when the instance was updated                                 
-	UpdatedAt                                          float64                          `json:"updatedAt"`
+type PlatformExampleListResponseItem struct {
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        string                 `json:"description"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// The URL to the official example page                                   
+	Link                                               string                 `json:"link"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               string                 `json:"name"`
+	// Tags associated with the example                                       
+	Tags                                               []string               `json:"tags,omitempty"`
+	// The type of the example                                                
+	Type                                               Type2                  `json:"type"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
 type PlatformExamplesSearchRequest struct {
@@ -15669,24 +15669,24 @@ type PlatformExamplesSearchResponse struct {
 
 // Instance list properties
 type PlatformExamplesSearchResponseItem struct {
-	// The timestamp (ms) when the instance was created                                 
-	CreatedAt                                          float64                          `json:"createdAt"`
-	// The associated description                                                       
-	Description                                        string                           `json:"description"`
-	// The instance ID                                                                  
-	ID                                                 string                           `json:"id"`
-	// The URL to the official example page                                             
-	Link                                               string                           `json:"link"`
-	// Meta data information                                                            
-	Meta                                               map[string]interface{}           `json:"meta,omitempty"`
-	// The associated name                                                              
-	Name                                               string                           `json:"name"`
-	// Tags associated with the example                                                 
-	Tags                                               []string                         `json:"tags,omitempty"`
-	// The type of the example                                                          
-	Type                                               PlatformExampleFetchResponseType `json:"type"`
-	// The timestamp (ms) when the instance was updated                                 
-	UpdatedAt                                          float64                          `json:"updatedAt"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        string                 `json:"description"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// The URL to the official example page                                   
+	Link                                               string                 `json:"link"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               string                 `json:"name"`
+	// Tags associated with the example                                       
+	Tags                                               []string               `json:"tags,omitempty"`
+	// The type of the example                                                
+	Type                                               Type3                  `json:"type"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
 type PlatformGuideFetchParams struct {
@@ -15720,23 +15720,23 @@ type PlatformGuideFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformGuidesListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type PlatformGuideListParams struct {
+	// The cursor to use for pagination                                                     
+	Cursor                                                    *string                       `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                              
+	Meta                                                      map[string]string             `json:"meta,omitempty"`
+	// The order of the paginated items                                                     
+	Order                                                     *PlatformGuideListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                      
+	Take                                                      *int64                        `json:"take,omitempty"`
 }
 
-type PlatformGuidesListResponse struct {
-	Items []PlatformGuidesListResponseItem `json:"items"`
+type PlatformGuideListResponse struct {
+	Items []PlatformGuideListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformGuidesListResponseItem struct {
+type PlatformGuideListResponseItem struct {
 	// The category of the guide                                              
 	Category                                           *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -15829,23 +15829,23 @@ type PlatformManualFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformManualsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type PlatformManualListParams struct {
+	// The cursor to use for pagination                                                      
+	Cursor                                                    *string                        `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                               
+	Meta                                                      map[string]string              `json:"meta,omitempty"`
+	// The order of the paginated items                                                      
+	Order                                                     *PlatformManualListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                       
+	Take                                                      *int64                         `json:"take,omitempty"`
 }
 
-type PlatformManualsListResponse struct {
-	Items []PlatformManualsListResponseItem `json:"items"`
+type PlatformManualListResponse struct {
+	Items []PlatformManualListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformManualsListResponseItem struct {
+type PlatformManualListResponseItem struct {
 	// The category of the manual                                             
 	Category                                           *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -15907,23 +15907,23 @@ type PlatformManualsSearchResponseItem struct {
 	UpdatedAt                                              float64                `json:"updatedAt"`
 }
 
-type PlatformModelsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type PlatformModelListParams struct {
+	// The cursor to use for pagination                                                     
+	Cursor                                                    *string                       `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                              
+	Meta                                                      map[string]string             `json:"meta,omitempty"`
+	// The order of the paginated items                                                     
+	Order                                                     *PlatformModelListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                      
+	Take                                                      *int64                        `json:"take,omitempty"`
 }
 
-type PlatformModelsListResponse struct {
-	Items []PlatformModelsListResponseItem `json:"items"`
+type PlatformModelListResponse struct {
+	Items []PlatformModelListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformModelsListResponseItem struct {
+type PlatformModelListResponseItem struct {
 	// The timestamp (ms) when the instance was created                          
 	CreatedAt                                             float64                `json:"createdAt"`
 	// The associated description                                                
@@ -15948,23 +15948,23 @@ type PlatformModelsListResponseItem struct {
 	UpdatedAt                                             float64                `json:"updatedAt"`
 }
 
-type PlatformSecretsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type PlatformSecretListParams struct {
+	// The cursor to use for pagination                                                      
+	Cursor                                                    *string                        `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                               
+	Meta                                                      map[string]string              `json:"meta,omitempty"`
+	// The order of the paginated items                                                      
+	Order                                                     *PlatformSecretListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                       
+	Take                                                      *int64                         `json:"take,omitempty"`
 }
 
-type PlatformSecretsListResponse struct {
-	Items []PlatformSecretsListResponseItem `json:"items"`
+type PlatformSecretListResponse struct {
+	Items []PlatformSecretListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformSecretsListResponseItem struct {
+type PlatformSecretListResponseItem struct {
 	Commentary                                         *string                `json:"commentary,omitempty"`
 	Config                                             map[string]interface{} `json:"config,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -15975,7 +15975,7 @@ type PlatformSecretsListResponseItem struct {
 	// The instance ID                                                        
 	ID                                                 string                 `json:"id"`
 	// The kind of the secret                                                 
-	Kind                                               *SecretKind            `json:"kind,omitempty"`
+	Kind                                               *PurpleKind            `json:"kind,omitempty"`
 	// Meta data information                                                  
 	Meta                                               map[string]interface{} `json:"meta,omitempty"`
 	// The associated name                                                    
@@ -15983,7 +15983,7 @@ type PlatformSecretsListResponseItem struct {
 	Setup                                              *string                `json:"setup,omitempty"`
 	Tags                                               []string               `json:"tags,omitempty"`
 	// The type of the secret                                                 
-	Type                                               SecretType             `json:"type"`
+	Type                                               Type4                  `json:"type"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -16019,23 +16019,23 @@ type PlatformTutorialFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type PlatformTutorialsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type PlatformTutorialListParams struct {
+	// The cursor to use for pagination                                                        
+	Cursor                                                    *string                          `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                 
+	Meta                                                      map[string]string                `json:"meta,omitempty"`
+	// The order of the paginated items                                                        
+	Order                                                     *PlatformTutorialListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                         
+	Take                                                      *int64                           `json:"take,omitempty"`
 }
 
-type PlatformTutorialsListResponse struct {
-	Items []PlatformTutorialsListResponseItem `json:"items"`
+type PlatformTutorialListResponse struct {
+	Items []PlatformTutorialListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type PlatformTutorialsListResponseItem struct {
+type PlatformTutorialListResponseItem struct {
 	// The category of the tutorial                                           
 	Category                                           *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -16114,18 +16114,18 @@ type PolicyFetchParams struct {
 
 // Blueprint properties
 type PolicyFetchResponse struct {
-	// The ID of the blueprint                                
-	BlueprintID                        *string                `json:"blueprintId,omitempty"`
-	// The policy configuration as JSON                       
-	Config                             map[string]interface{} `json:"config,omitempty"`
-	// The associated description                             
-	Description                        *string                `json:"description,omitempty"`
-	// Meta data information                                  
-	Meta                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                    
-	Name                               *string                `json:"name,omitempty"`
-	// The policy type                                        
-	Type                               PolicyType             `json:"type"`
+	// The ID of the blueprint                                 
+	BlueprintID                        *string                 `json:"blueprintId,omitempty"`
+	// The policy configuration as JSON                        
+	Config                             map[string]interface{}  `json:"config,omitempty"`
+	// The associated description                              
+	Description                        *string                 `json:"description,omitempty"`
+	// Meta data information                                   
+	Meta                               map[string]interface{}  `json:"meta,omitempty"`
+	// The associated name                                     
+	Name                               *string                 `json:"name,omitempty"`
+	// The policy type                                         
+	Type                               PolicyFetchResponseType `json:"type"`
 }
 
 type PolicyUpdateParams struct {
@@ -16135,18 +16135,18 @@ type PolicyUpdateParams struct {
 
 // Blueprint properties
 type PolicyUpdateRequest struct {
-	// The ID of the blueprint                                
-	BlueprintID                        *string                `json:"blueprintId,omitempty"`
-	// The policy configuration as JSON                       
-	Config                             map[string]interface{} `json:"config,omitempty"`
-	// The associated description                             
-	Description                        *string                `json:"description,omitempty"`
-	// Meta data information                                  
-	Meta                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                    
-	Name                               *string                `json:"name,omitempty"`
-	// The policy type                                        
-	Type                               *PolicyType            `json:"type,omitempty"`
+	// The ID of the blueprint                                  
+	BlueprintID                        *string                  `json:"blueprintId,omitempty"`
+	// The policy configuration as JSON                         
+	Config                             map[string]interface{}   `json:"config,omitempty"`
+	// The associated description                               
+	Description                        *string                  `json:"description,omitempty"`
+	// Meta data information                                    
+	Meta                               map[string]interface{}   `json:"meta,omitempty"`
+	// The associated name                                      
+	Name                               *string                  `json:"name,omitempty"`
+	// The policy type                                          
+	Type                               *PolicyUpdateRequestType `json:"type,omitempty"`
 }
 
 type PolicyUpdateResponse struct {
@@ -16156,18 +16156,18 @@ type PolicyUpdateResponse struct {
 
 // Blueprint properties
 type PolicyCreateRequest struct {
-	// The ID of the blueprint                                
-	BlueprintID                        *string                `json:"blueprintId,omitempty"`
-	// The policy configuration as JSON                       
-	Config                             map[string]interface{} `json:"config,omitempty"`
-	// The associated description                             
-	Description                        *string                `json:"description,omitempty"`
-	// Meta data information                                  
-	Meta                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                    
-	Name                               *string                `json:"name,omitempty"`
-	// The policy type                                        
-	Type                               PolicyType             `json:"type"`
+	// The ID of the blueprint                                 
+	BlueprintID                        *string                 `json:"blueprintId,omitempty"`
+	// The policy configuration as JSON                        
+	Config                             map[string]interface{}  `json:"config,omitempty"`
+	// The associated description                              
+	Description                        *string                 `json:"description,omitempty"`
+	// Meta data information                                   
+	Meta                               map[string]interface{}  `json:"meta,omitempty"`
+	// The associated name                                     
+	Name                               *string                 `json:"name,omitempty"`
+	// The policy type                                         
+	Type                               PolicyCreateRequestType `json:"type"`
 }
 
 type PolicyCreateResponse struct {
@@ -16175,23 +16175,23 @@ type PolicyCreateResponse struct {
 	ID                             string `json:"id"`
 }
 
-type PoliciesListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type PolicyListParams struct {
+	// The cursor to use for pagination                                              
+	Cursor                                                    *string                `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                       
+	Meta                                                      map[string]string      `json:"meta,omitempty"`
+	// The order of the paginated items                                              
+	Order                                                     *PolicyListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                               
+	Take                                                      *int64                 `json:"take,omitempty"`
 }
 
-type PoliciesListResponse struct {
-	Items []PoliciesListResponseItem `json:"items"`
+type PolicyListResponse struct {
+	Items []PolicyListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type PoliciesListResponseItem struct {
+type PolicyListResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The policy configuration as JSON                                       
@@ -16207,7 +16207,7 @@ type PoliciesListResponseItem struct {
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
 	// The policy type                                                        
-	Type                                               PolicyType             `json:"type"`
+	Type                                               Type5                  `json:"type"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -16299,23 +16299,23 @@ type PortalCreateResponse struct {
 	ID                             string `json:"id"`
 }
 
-type PortalsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type PortalListParams struct {
+	// The cursor to use for pagination                                              
+	Cursor                                                    *string                `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                       
+	Meta                                                      map[string]string      `json:"meta,omitempty"`
+	// The order of the paginated items                                              
+	Order                                                     *PortalListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                               
+	Take                                                      *int64                 `json:"take,omitempty"`
 }
 
-type PortalsListResponse struct {
-	Items []PortalsListResponseItem `json:"items"`
+type PortalListResponse struct {
+	Items []PortalListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type PortalsListResponseItem struct {
+type PortalListResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The config of the portal                                               
@@ -16365,28 +16365,28 @@ type SecretFetchParams struct {
 
 // Blueprint properties
 type SecretFetchResponse struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The config of the secret                                               
-	Config                                             map[string]interface{} `json:"config,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// The kind of the secret                                                 
-	Kind                                               *SecretKind            `json:"kind,omitempty"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The type of the secret                                                 
-	Type                                               *SecretType            `json:"type,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
-	// The visibility of the secret                                           
-	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
+	// The ID of the blueprint                                                        
+	BlueprintID                                        *string                        `json:"blueprintId,omitempty"`
+	// The config of the secret                                                       
+	Config                                             map[string]interface{}         `json:"config,omitempty"`
+	// The timestamp (ms) when the instance was created                               
+	CreatedAt                                          float64                        `json:"createdAt"`
+	// The associated description                                                     
+	Description                                        *string                        `json:"description,omitempty"`
+	// The instance ID                                                                
+	ID                                                 string                         `json:"id"`
+	// The kind of the secret                                                         
+	Kind                                               *SecretFetchResponseKind       `json:"kind,omitempty"`
+	// Meta data information                                                          
+	Meta                                               map[string]interface{}         `json:"meta,omitempty"`
+	// The associated name                                                            
+	Name                                               *string                        `json:"name,omitempty"`
+	// The type of the secret                                                         
+	Type                                               *SecretFetchResponseType       `json:"type,omitempty"`
+	// The timestamp (ms) when the instance was updated                               
+	UpdatedAt                                          float64                        `json:"updatedAt"`
+	// The visibility of the secret                                                   
+	Visibility                                         *SecretFetchResponseVisibility `json:"visibility,omitempty"`
 }
 
 type SecretRevokeParams struct {
@@ -16404,26 +16404,26 @@ type SecretUpdateParams struct {
 
 // Blueprint properties
 type SecretUpdateRequest struct {
-	// The unique alias for the instance                       
-	Alias                               *string                `json:"alias,omitempty"`
-	// The ID of the blueprint                                 
-	BlueprintID                         *string                `json:"blueprintId,omitempty"`
-	// The config of the secret                                
-	Config                              map[string]interface{} `json:"config,omitempty"`
-	// The associated description                              
-	Description                         *string                `json:"description,omitempty"`
-	// The kind of the secret                                  
-	Kind                                *SecretKind            `json:"kind,omitempty"`
-	// Meta data information                                   
-	Meta                                map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                     
-	Name                                *string                `json:"name,omitempty"`
-	// The type of the secret                                  
-	Type                                *SecretType            `json:"type,omitempty"`
-	// The value of the secret                                 
-	Value                               *string                `json:"value,omitempty"`
-	// The visibility of the secret                            
-	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
+	// The unique alias for the instance                               
+	Alias                               *string                        `json:"alias,omitempty"`
+	// The ID of the blueprint                                         
+	BlueprintID                         *string                        `json:"blueprintId,omitempty"`
+	// The config of the secret                                        
+	Config                              map[string]interface{}         `json:"config,omitempty"`
+	// The associated description                                      
+	Description                         *string                        `json:"description,omitempty"`
+	// The kind of the secret                                          
+	Kind                                *SecretUpdateRequestKind       `json:"kind,omitempty"`
+	// Meta data information                                           
+	Meta                                map[string]interface{}         `json:"meta,omitempty"`
+	// The associated name                                             
+	Name                                *string                        `json:"name,omitempty"`
+	// The type of the secret                                          
+	Type                                *SecretUpdateRequestType       `json:"type,omitempty"`
+	// The value of the secret                                         
+	Value                               *string                        `json:"value,omitempty"`
+	// The visibility of the secret                                    
+	Visibility                          *SecretUpdateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type SecretUpdateResponse struct {
@@ -16441,39 +16441,39 @@ type SecretVerifyResponse struct {
 	// The ID of the verified secret                            
 	ID                              string                      `json:"id"`
 	// The status of the secret                                 
-	Status                          Status                      `json:"status"`
+	Status                          SecretVerifyResponseStatus  `json:"status"`
 }
 
 // The action to take next
 type SecretVerifyResponseAction struct {
-	// The type of action to take                   
-	Type                                 ActionType `json:"type"`
-	// The URL to authenticate the secret           
-	URL                                  string     `json:"url"`
+	// The type of action to take               
+	Type                                 Type6  `json:"type"`
+	// The URL to authenticate the secret       
+	URL                                  string `json:"url"`
 }
 
 // Blueprint properties
 type SecretCreateRequest struct {
-	// The unique alias for the instance                       
-	Alias                               *string                `json:"alias,omitempty"`
-	// The ID of the blueprint                                 
-	BlueprintID                         *string                `json:"blueprintId,omitempty"`
-	// The config of the secret                                
-	Config                              map[string]interface{} `json:"config,omitempty"`
-	// The associated description                              
-	Description                         *string                `json:"description,omitempty"`
-	// The kind of the secret                                  
-	Kind                                *SecretKind            `json:"kind,omitempty"`
-	// Meta data information                                   
-	Meta                                map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                     
-	Name                                *string                `json:"name,omitempty"`
-	// The type of the secret                                  
-	Type                                *SecretType            `json:"type,omitempty"`
-	// The value of the secret                                 
-	Value                               *string                `json:"value,omitempty"`
-	// The visibility of the secret                            
-	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
+	// The unique alias for the instance                               
+	Alias                               *string                        `json:"alias,omitempty"`
+	// The ID of the blueprint                                         
+	BlueprintID                         *string                        `json:"blueprintId,omitempty"`
+	// The config of the secret                                        
+	Config                              map[string]interface{}         `json:"config,omitempty"`
+	// The associated description                                      
+	Description                         *string                        `json:"description,omitempty"`
+	// The kind of the secret                                          
+	Kind                                *SecretCreateRequestKind       `json:"kind,omitempty"`
+	// Meta data information                                           
+	Meta                                map[string]interface{}         `json:"meta,omitempty"`
+	// The associated name                                             
+	Name                                *string                        `json:"name,omitempty"`
+	// The type of the secret                                          
+	Type                                *SecretCreateRequestType       `json:"type,omitempty"`
+	// The value of the secret                                         
+	Value                               *string                        `json:"value,omitempty"`
+	// The visibility of the secret                                    
+	Visibility                          *SecretCreateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type SecretCreateResponse struct {
@@ -16481,23 +16481,23 @@ type SecretCreateResponse struct {
 	ID                             string `json:"id"`
 }
 
-type SecretsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type SecretListParams struct {
+	// The cursor to use for pagination                                              
+	Cursor                                                    *string                `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                       
+	Meta                                                      map[string]string      `json:"meta,omitempty"`
+	// The order of the paginated items                                              
+	Order                                                     *SecretListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                               
+	Take                                                      *int64                 `json:"take,omitempty"`
 }
 
-type SecretsListResponse struct {
-	Items []SecretsListResponseItem `json:"items"`
+type SecretListResponse struct {
+	Items []SecretListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type SecretsListResponseItem struct {
+type SecretListResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The config of the secret                                               
@@ -16509,17 +16509,17 @@ type SecretsListResponseItem struct {
 	// The instance ID                                                        
 	ID                                                 string                 `json:"id"`
 	// The kind of the secret                                                 
-	Kind                                               *SecretKind            `json:"kind,omitempty"`
+	Kind                                               *FluffyKind            `json:"kind,omitempty"`
 	// Meta data information                                                  
 	Meta                                               map[string]interface{} `json:"meta,omitempty"`
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
 	// The type of the secret                                                 
-	Type                                               *SecretType            `json:"type,omitempty"`
+	Type                                               *Type7                 `json:"type,omitempty"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 	// The visibility of the secret                                           
-	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
+	Visibility                                         *IndecentVisibility    `json:"visibility,omitempty"`
 }
 
 type SkillsetAbilityDeleteParams struct {
@@ -16570,7 +16570,7 @@ type SkillsetAbilityExecuteResponseMessage struct {
 	// The text of the message                       
 	Text                      string                 `json:"text"`
 	// The type of the message                       
-	Type                      MessageType            `json:"type"`
+	Type                      Type8                  `json:"type"`
 }
 
 // Usage information
@@ -16678,14 +16678,14 @@ type SkillsetAbilityCreateResponse struct {
 }
 
 type SkillsetAbilitiesExportParams struct {
-	// The cursor to use for pagination        
-	Cursor                             *string `json:"cursor,omitempty"`
-	// The order of the paginated items        
-	Order                              *Order  `json:"order,omitempty"`
-	// The ID of the skillset to export        
-	SkillsetID                         string  `json:"skillsetId"`
-	// The number of items to retrieve         
-	Take                               *int64  `json:"take,omitempty"`
+	// The cursor to use for pagination                                    
+	Cursor                             *string                             `json:"cursor,omitempty"`
+	// The order of the paginated items                                    
+	Order                              *SkillsetAbilitiesExportParamsOrder `json:"order,omitempty"`
+	// The ID of the skillset to export                                    
+	SkillsetID                         string                              `json:"skillsetId"`
+	// The number of items to retrieve                                     
+	Take                               *int64                              `json:"take,omitempty"`
 }
 
 type SkillsetAbilitiesExportResponse struct {
@@ -16719,23 +16719,23 @@ type SkillsetAbilitiesExportResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type SkillsetAbilitiesListParams struct {
-	// The cursor to use for pagination        
-	Cursor                             *string `json:"cursor,omitempty"`
-	// The order of the paginated items        
-	Order                              *Order  `json:"order,omitempty"`
-	// The ID of the skillset                  
-	SkillsetID                         string  `json:"skillsetId"`
-	// The number of items to retrieve         
-	Take                               *int64  `json:"take,omitempty"`
+type SkillsetAbilityListParams struct {
+	// The cursor to use for pagination                                
+	Cursor                             *string                         `json:"cursor,omitempty"`
+	// The order of the paginated items                                
+	Order                              *SkillsetAbilityListParamsOrder `json:"order,omitempty"`
+	// The ID of the skillset                                          
+	SkillsetID                         string                          `json:"skillsetId"`
+	// The number of items to retrieve                                 
+	Take                               *int64                          `json:"take,omitempty"`
 }
 
-type SkillsetAbilitiesListResponse struct {
-	Items []SkillsetAbilitiesListResponseItem `json:"items"`
+type SkillsetAbilityListResponse struct {
+	Items []SkillsetAbilityListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type SkillsetAbilitiesListResponseItem struct {
+type SkillsetAbilityListResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot associated with the ability                          
@@ -16778,22 +16778,22 @@ type SkillsetFetchParams struct {
 
 // Blueprint properties
 type SkillsetFetchResponse struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
-	// The skillset visibility                                                
-	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
+	// The ID of the blueprint                                                          
+	BlueprintID                                        *string                          `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                                 
+	CreatedAt                                          float64                          `json:"createdAt"`
+	// The associated description                                                       
+	Description                                        *string                          `json:"description,omitempty"`
+	// The instance ID                                                                  
+	ID                                                 string                           `json:"id"`
+	// Meta data information                                                            
+	Meta                                               map[string]interface{}           `json:"meta,omitempty"`
+	// The associated name                                                              
+	Name                                               *string                          `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                                 
+	UpdatedAt                                          float64                          `json:"updatedAt"`
+	// The skillset visibility                                                          
+	Visibility                                         *SkillsetFetchResponseVisibility `json:"visibility,omitempty"`
 }
 
 type SkillsetUpdateParams struct {
@@ -16802,18 +16802,18 @@ type SkillsetUpdateParams struct {
 
 // Blueprint properties
 type SkillsetUpdateRequest struct {
-	// The unique alias for the instance                       
-	Alias                               *string                `json:"alias,omitempty"`
-	// The ID of the blueprint                                 
-	BlueprintID                         *string                `json:"blueprintId,omitempty"`
-	// The associated description                              
-	Description                         *string                `json:"description,omitempty"`
-	// Meta data information                                   
-	Meta                                map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                     
-	Name                                *string                `json:"name,omitempty"`
-	// The skillset visibility                                 
-	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
+	// The unique alias for the instance                                 
+	Alias                               *string                          `json:"alias,omitempty"`
+	// The ID of the blueprint                                           
+	BlueprintID                         *string                          `json:"blueprintId,omitempty"`
+	// The associated description                                        
+	Description                         *string                          `json:"description,omitempty"`
+	// Meta data information                                             
+	Meta                                map[string]interface{}           `json:"meta,omitempty"`
+	// The associated name                                               
+	Name                                *string                          `json:"name,omitempty"`
+	// The skillset visibility                                           
+	Visibility                          *SkillsetUpdateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type SkillsetUpdateResponse struct {
@@ -16823,18 +16823,18 @@ type SkillsetUpdateResponse struct {
 
 // Blueprint properties
 type SkillsetCreateRequest struct {
-	// The unique alias for the instance                       
-	Alias                               *string                `json:"alias,omitempty"`
-	// The ID of the blueprint                                 
-	BlueprintID                         *string                `json:"blueprintId,omitempty"`
-	// The associated description                              
-	Description                         *string                `json:"description,omitempty"`
-	// Meta data information                                   
-	Meta                                map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                     
-	Name                                *string                `json:"name,omitempty"`
-	// The skillset visibility                                 
-	Visibility                          *SecretVisibility      `json:"visibility,omitempty"`
+	// The unique alias for the instance                                 
+	Alias                               *string                          `json:"alias,omitempty"`
+	// The ID of the blueprint                                           
+	BlueprintID                         *string                          `json:"blueprintId,omitempty"`
+	// The associated description                                        
+	Description                         *string                          `json:"description,omitempty"`
+	// Meta data information                                             
+	Meta                                map[string]interface{}           `json:"meta,omitempty"`
+	// The associated name                                               
+	Name                                *string                          `json:"name,omitempty"`
+	// The skillset visibility                                           
+	Visibility                          *SkillsetCreateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type SkillsetCreateResponse struct {
@@ -16842,23 +16842,23 @@ type SkillsetCreateResponse struct {
 	ID                               string `json:"id"`
 }
 
-type SkillsetsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type SkillsetListParams struct {
+	// The cursor to use for pagination                                                
+	Cursor                                                    *string                  `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                         
+	Meta                                                      map[string]string        `json:"meta,omitempty"`
+	// The order of the paginated items                                                
+	Order                                                     *SkillsetListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                 
+	Take                                                      *int64                   `json:"take,omitempty"`
 }
 
-type SkillsetsListResponse struct {
-	Items []SkillsetsListResponseItem `json:"items"`
+type SkillsetListResponse struct {
+	Items []SkillsetListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type SkillsetsListResponseItem struct {
+type SkillsetListResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -16874,7 +16874,7 @@ type SkillsetsListResponseItem struct {
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 	// The skillset visibility                                                
-	Visibility                                         *SecretVisibility      `json:"visibility,omitempty"`
+	Visibility                                         *HilariousVisibility   `json:"visibility,omitempty"`
 }
 
 type SpaceFetchParams struct {
@@ -16949,14 +16949,14 @@ type SpaceCreateResponse struct {
 }
 
 type SpacesExportParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+	// The cursor to use for pagination                                                
+	Cursor                                                    *string                  `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                         
+	Meta                                                      map[string]string        `json:"meta,omitempty"`
+	// The order of the paginated items                                                
+	Order                                                     *SpacesExportParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                 
+	Take                                                      *int64                   `json:"take,omitempty"`
 }
 
 type SpacesExportResponse struct {
@@ -16983,23 +16983,23 @@ type SpacesExportResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type SpacesListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type SpaceListParams struct {
+	// The cursor to use for pagination                                             
+	Cursor                                                    *string               `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                      
+	Meta                                                      map[string]string     `json:"meta,omitempty"`
+	// The order of the paginated items                                             
+	Order                                                     *SpaceListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                              
+	Take                                                      *int64                `json:"take,omitempty"`
 }
 
-type SpacesListResponse struct {
-	Items []SpacesListResponseItem `json:"items"`
+type SpaceListResponse struct {
+	Items []SpaceListResponseItem `json:"items"`
 }
 
 // Blueprint properties
-type SpacesListResponseItem struct {
+type SpaceListResponseItem struct {
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The contact associated with the space                                  
@@ -17035,28 +17035,28 @@ type TaskFetchParams struct {
 
 // Instance list properties
 type TaskFetchResponse struct {
-	// The bot associated with the task                                       
-	BotID                                              *string                `json:"botId,omitempty"`
-	// The contact associated with the task                                   
-	ContactID                                          *string                `json:"contactId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The task execution outcome                                             
-	Outcome                                            *TaskOutcome           `json:"outcome,omitempty"`
-	// The schedule of the task                                               
-	Schedule                                           *string                `json:"schedule,omitempty"`
-	// The task execution status                                              
-	Status                                             *TaskStatus            `json:"status,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The bot associated with the task                                          
+	BotID                                              *string                   `json:"botId,omitempty"`
+	// The contact associated with the task                                      
+	ContactID                                          *string                   `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                          
+	CreatedAt                                          float64                   `json:"createdAt"`
+	// The associated description                                                
+	Description                                        *string                   `json:"description,omitempty"`
+	// The instance ID                                                           
+	ID                                                 string                    `json:"id"`
+	// Meta data information                                                     
+	Meta                                               map[string]interface{}    `json:"meta,omitempty"`
+	// The associated name                                                       
+	Name                                               *string                   `json:"name,omitempty"`
+	// The task execution outcome                                                
+	Outcome                                            *TaskFetchResponseOutcome `json:"outcome,omitempty"`
+	// The schedule of the task                                                  
+	Schedule                                           *string                   `json:"schedule,omitempty"`
+	// The task execution status                                                 
+	Status                                             *TaskFetchResponseStatus  `json:"status,omitempty"`
+	// The timestamp (ms) when the instance was updated                          
+	UpdatedAt                                          float64                   `json:"updatedAt"`
 }
 
 type TaskTriggerParams struct {
@@ -17119,14 +17119,14 @@ type TaskCreateResponse struct {
 }
 
 type TasksExportParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+	// The cursor to use for pagination                                               
+	Cursor                                                    *string                 `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                        
+	Meta                                                      map[string]string       `json:"meta,omitempty"`
+	// The order of the paginated items                                               
+	Order                                                     *TasksExportParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                
+	Take                                                      *int64                  `json:"take,omitempty"`
 }
 
 type TasksExportResponse struct {
@@ -17155,29 +17155,29 @@ type TasksExportResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type TasksListParams struct {
-	// Filter by associated bot                                                 
-	BotID                                                     *string           `json:"botId,omitempty"`
-	// Filter by associated contact                                             
-	ContactID                                                 *string           `json:"contactId,omitempty"`
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// Filter by task status                                                    
-	Status                                                    *TaskStatus       `json:"status,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type TaskListParams struct {
+	// Filter by associated bot                                                     
+	BotID                                                     *string               `json:"botId,omitempty"`
+	// Filter by associated contact                                                 
+	ContactID                                                 *string               `json:"contactId,omitempty"`
+	// The cursor to use for pagination                                             
+	Cursor                                                    *string               `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                      
+	Meta                                                      map[string]string     `json:"meta,omitempty"`
+	// The order of the paginated items                                             
+	Order                                                     *TaskListParamsOrder  `json:"order,omitempty"`
+	// Filter by task status                                                        
+	Status                                                    *TaskListParamsStatus `json:"status,omitempty"`
+	// The number of items to retrieve                                              
+	Take                                                      *int64                `json:"take,omitempty"`
 }
 
-type TasksListResponse struct {
-	Items []TasksListResponseItem `json:"items"`
+type TaskListResponse struct {
+	Items []TaskListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type TasksListResponseItem struct {
+type TaskListResponseItem struct {
 	// The bot associated with the task                                       
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The contact associated with the task                                   
@@ -17193,32 +17193,32 @@ type TasksListResponseItem struct {
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
 	// The task execution outcome                                             
-	Outcome                                            *TaskOutcome           `json:"outcome,omitempty"`
+	Outcome                                            *FluffyOutcome         `json:"outcome,omitempty"`
 	// The schedule of the task                                               
 	Schedule                                           *string                `json:"schedule,omitempty"`
 	// The task execution status                                              
-	Status                                             *TaskStatus            `json:"status,omitempty"`
+	Status                                             *FluffyStatus          `json:"status,omitempty"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
-type TeamsListParams struct {
-	// The cursor to use for pagination                                         
-	Cursor                                                    *string           `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                  
-	Meta                                                      map[string]string `json:"meta,omitempty"`
-	// The order of the paginated items                                         
-	Order                                                     *Order            `json:"order,omitempty"`
-	// The number of items to retrieve                                          
-	Take                                                      *int64            `json:"take,omitempty"`
+type TeamListParams struct {
+	// The cursor to use for pagination                                            
+	Cursor                                                    *string              `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                     
+	Meta                                                      map[string]string    `json:"meta,omitempty"`
+	// The order of the paginated items                                            
+	Order                                                     *TeamListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                             
+	Take                                                      *int64               `json:"take,omitempty"`
 }
 
-type TeamsListResponse struct {
-	Items []TeamsListResponseItem `json:"items"`
+type TeamListResponse struct {
+	Items []TeamListResponseItem `json:"items"`
 }
 
 // Instance list properties
-type TeamsListResponseItem struct {
+type TeamListResponseItem struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -17297,7 +17297,7 @@ type Message struct {
 	// The text of the message                       
 	Text                      string                 `json:"text"`
 	// The type of the message                       
-	Type                      MessageType            `json:"type"`
+	Type                      MessageTypeEnum        `json:"type"`
 }
 
 // Extracted entity from the message
@@ -17339,8 +17339,8 @@ type Usage struct {
 
 // Information about why the completion ended
 type CompleteEnd struct {
-	// The reason why the completion ended               
-	Reason                                CompleteReason `json:"reason"`
+	// The reason why the completion ended                  
+	Reason                                CompleteEndReason `json:"reason"`
 }
 
 // Execution limits to control conversation processing bounds
@@ -17484,7 +17484,7 @@ type JSONSchemaObject struct {
 	// The schema title                                        
 	Title                               *string                `json:"title,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                ParametersType         `json:"type"`
+	Type                                JSONSchemaObjectType   `json:"type"`
 }
 
 // An array of functions to be added to the conversation
@@ -17516,7 +17516,7 @@ type FunctionsDefinitionParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                ParametersType         `json:"type"`
+	Type                                Type9                  `json:"type"`
 }
 
 // The result of the function execution
@@ -17607,7 +17607,7 @@ type Data struct {
 	// The text of the message                                
 	Text                               *string                `json:"text,omitempty"`
 	// The type of the message                                
-	Type                               *MessageType           `json:"type,omitempty"`
+	Type                               *DataType              `json:"type,omitempty"`
 	// The number of input tokens used                        
 	InputTokensUsed                    *float64               `json:"inputTokensUsed,omitempty"`
 	// The model used                                         
@@ -17617,191 +17617,1683 @@ type Data struct {
 }
 
 // The order of the paginated items
-type Order string
+type PlatformReportListParamsOrder string
 
 const (
-	Asc  Order = "asc"
-	Desc Order = "desc"
+	PurpleAsc                             PlatformReportListParamsOrder = "asc"
+	PurpleDesc                            PlatformReportListParamsOrder = "desc"
+
 )
 
 // The blueprint visibility
-//
-// The bot visibility
-//
-// The dataset visibility
-//
-// The file visibility
-//
-// The visibility of the secret
-//
-// The skillset visibility
-type SecretVisibility string
+type BlueprintFetchResponseVisibility string
 
 const (
-	Private   SecretVisibility = "private"
-	Protected SecretVisibility = "protected"
-	Public    SecretVisibility = "public"
+	PurplePrivate                            BlueprintFetchResponseVisibility = "private"
+	PurpleProtected                          BlueprintFetchResponseVisibility = "protected"
+	PurplePublic                             BlueprintFetchResponseVisibility = "public"
+
+)
+
+// The blueprint visibility
+type BlueprintUpdateRequestVisibility string
+
+const (
+	FluffyPrivate                            BlueprintUpdateRequestVisibility = "private"
+	FluffyProtected                          BlueprintUpdateRequestVisibility = "protected"
+	FluffyPublic                             BlueprintUpdateRequestVisibility = "public"
+
+)
+
+// The blueprint visibility
+type BlueprintCreateRequestVisibility string
+
+const (
+
+	TentacledPrivate                         BlueprintCreateRequestVisibility = "private"
+	TentacledProtected                       BlueprintCreateRequestVisibility = "protected"
+	TentacledPublic                          BlueprintCreateRequestVisibility = "public"
+)
+
+// The order of the paginated items
+type BlueprintListParamsOrder string
+
+const (
+	FluffyAsc                        BlueprintListParamsOrder = "asc"
+	FluffyDesc                       BlueprintListParamsOrder = "desc"
+
+)
+
+// The blueprint visibility
+type PurpleVisibility string
+
+const (
+
+	StickyPrivate                                    PurpleVisibility = "private"
+	StickyProtected                                  PurpleVisibility = "protected"
+	StickyPublic                                     PurpleVisibility = "public"
+)
+
+// The bot visibility
+type BotFetchResponseVisibility string
+
+const (
+	IndigoPrivate                      BotFetchResponseVisibility = "private"
+	IndigoProtected                    BotFetchResponseVisibility = "protected"
+	IndigoPublic                       BotFetchResponseVisibility = "public"
+
 )
 
 // The type of the message
-type MessageType string
+type PurpleType string
 
 const (
-	Backstory           MessageType = "backstory"
-	Bot                 MessageType = "bot"
-	Context             MessageType = "context"
-	Instruction         MessageType = "instruction"
-	MessageTypeActivity MessageType = "activity"
-	Reasoning           MessageType = "reasoning"
-	User                MessageType = "user"
+	PurpleActivity                                  PurpleType = "activity"
+	PurpleBackstory                                 PurpleType = "backstory"
+	PurpleBot                                       PurpleType = "bot"
+	PurpleContext                                   PurpleType = "context"
+	PurpleInstruction                               PurpleType = "instruction"
+	PurpleReasoning                                 PurpleType = "reasoning"
+	PurpleUser                                      PurpleType = "user"
+
+)
+
+// The type of the message
+type FluffyType string
+
+const (
+	FluffyActivity                                   FluffyType = "activity"
+	FluffyBackstory                                  FluffyType = "backstory"
+	FluffyBot                                        FluffyType = "bot"
+	FluffyContext                                    FluffyType = "context"
+	FluffyInstruction                                FluffyType = "instruction"
+	FluffyReasoning                                  FluffyType = "reasoning"
+	FluffyUser                                       FluffyType = "user"
+
+)
+
+// The bot visibility
+type BotUpdateRequestVisibility string
+
+const (
+	IndecentPrivate                    BotUpdateRequestVisibility = "private"
+	IndecentProtected                  BotUpdateRequestVisibility = "protected"
+	IndecentPublic                     BotUpdateRequestVisibility = "public"
+
+)
+
+// The bot visibility
+type BotCreateRequestVisibility string
+
+const (
+	HilariousPrivate                   BotCreateRequestVisibility = "private"
+	HilariousProtected                 BotCreateRequestVisibility = "protected"
+	HilariousPublic                    BotCreateRequestVisibility = "public"
+
+)
+
+// The order of the paginated items
+type BotListParamsOrder string
+
+const (
+
+	TentacledAsc               BotListParamsOrder = "asc"
+	TentacledDesc              BotListParamsOrder = "desc"
+)
+
+// The bot visibility
+type FluffyVisibility string
+
+const (
+	AmbitiousPrivate                           FluffyVisibility = "private"
+	AmbitiousProtected                         FluffyVisibility = "protected"
+	AmbitiousPublic                            FluffyVisibility = "public"
+
+)
+
+// The order of the paginated items
+type ContactConversationListParamsOrder string
+
+const (
+
+	StickyAsc                                  ContactConversationListParamsOrder = "asc"
+	StickyDesc                                 ContactConversationListParamsOrder = "desc"
+)
+
+// The order of the paginated items
+type ContactMemoryListParamsOrder string
+
+const (
+	IndigoAsc                            ContactMemoryListParamsOrder = "asc"
+	IndigoDesc                           ContactMemoryListParamsOrder = "desc"
+
 )
 
 // The type of action to take
-type ActionType string
+type TentacledType string
 
 const (
-	Authenticate ActionType = "authenticate"
+	PurpleAuthenticate                                  TentacledType = "authenticate"
+
 )
 
 // The status of the secret
-type Status string
+type ContactSecretVerifyResponseStatus string
 
 const (
-	Authenticated   Status = "authenticated"
-	Unauthenticated Status = "unauthenticated"
+	PurpleAuthenticated                       ContactSecretVerifyResponseStatus = "authenticated"
+	PurpleUnauthenticated                     ContactSecretVerifyResponseStatus = "unauthenticated"
+
+)
+
+// The order of the paginated items
+type ContactSecretListParamsOrder string
+
+const (
+	IndecentAsc                          ContactSecretListParamsOrder = "asc"
+	IndecentDesc                         ContactSecretListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type ContactSpaceListParamsOrder string
+
+const (
+	HilariousAsc                        ContactSpaceListParamsOrder = "asc"
+	HilariousDesc                       ContactSpaceListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type ContactTaskListParamsOrder string
+
+const (
+	AmbitiousAsc                       ContactTaskListParamsOrder = "asc"
+	AmbitiousDesc                      ContactTaskListParamsOrder = "desc"
+
 )
 
 // The task execution outcome
-type TaskOutcome string
+type PurpleOutcome string
 
 const (
-	Failure            TaskOutcome = "failure"
-	Success            TaskOutcome = "success"
-	TaskOutcomePending TaskOutcome = "pending"
+	PurpleFailure                                   PurpleOutcome = "failure"
+	PurplePending                                   PurpleOutcome = "pending"
+	PurpleSuccess                                   PurpleOutcome = "success"
+
 )
 
 // The task execution status
-//
-// Filter by task status
-type TaskStatus string
+type PurpleStatus string
 
 const (
-	Idle    TaskStatus = "idle"
-	Running TaskStatus = "running"
+	PurpleIdle                                     PurpleStatus = "idle"
+	PurpleRunning                                  PurpleStatus = "running"
+
+)
+
+// The order of the paginated items
+type ContactsExportParamsOrder string
+
+const (
+	CunningAsc                        ContactsExportParamsOrder = "asc"
+	CunningDesc                       ContactsExportParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type ContactListParamsOrder string
+
+const (
+	MagentaAsc                     ContactListParamsOrder = "asc"
+	MagentaDesc                    ContactListParamsOrder = "desc"
+
 )
 
 // The schema type, must be "object"
-type ParametersType string
+type StickyType string
 
 const (
-	Object ParametersType = "object"
+	PurpleObject                                                          StickyType = "object"
+
 )
 
 // The reason why the completion ended
-type CompleteReason string
+type PurpleReason string
 
 const (
-	CompleteReasonActivity CompleteReason = "activity"
-	CompleteReasonError    CompleteReason = "error"
-	Iteration              CompleteReason = "iteration"
-	Length                 CompleteReason = "length"
-	Stop                   CompleteReason = "stop"
+	PurpleError                                          PurpleReason = "error"
+	PurpleIteration                                      PurpleReason = "iteration"
+	PurpleLength                                         PurpleReason = "length"
+	PurpleStop                                           PurpleReason = "stop"
+
+	TentacledActivity                                    PurpleReason = "activity"
+)
+
+// The schema type, must be "object"
+type IndigoType string
+
+const (
+	FluffyObject                                                           IndigoType = "object"
+
+)
+
+// The type of the message
+type ConversationMessageFetchResponseType string
+
+const (
+
+	StickyActivity                               ConversationMessageFetchResponseType = "activity"
+	TentacledBackstory                           ConversationMessageFetchResponseType = "backstory"
+	TentacledBot                                 ConversationMessageFetchResponseType = "bot"
+	TentacledContext                             ConversationMessageFetchResponseType = "context"
+	TentacledInstruction                         ConversationMessageFetchResponseType = "instruction"
+	TentacledReasoning                           ConversationMessageFetchResponseType = "reasoning"
+	TentacledUser                                ConversationMessageFetchResponseType = "user"
+)
+
+// The type of the message
+type ConversationMessageUpdateRequestType string
+
+const (
+	IndigoActivity                               ConversationMessageUpdateRequestType = "activity"
+
+	StickyBackstory                              ConversationMessageUpdateRequestType = "backstory"
+	StickyBot                                    ConversationMessageUpdateRequestType = "bot"
+	StickyContext                                ConversationMessageUpdateRequestType = "context"
+	StickyInstruction                            ConversationMessageUpdateRequestType = "instruction"
+	StickyReasoning                              ConversationMessageUpdateRequestType = "reasoning"
+	StickyUser                                   ConversationMessageUpdateRequestType = "user"
+)
+
+// The type of the message
+type ConversationMessageCreateRequestType string
+
+const (
+	IndecentActivity                             ConversationMessageCreateRequestType = "activity"
+	IndigoBackstory                              ConversationMessageCreateRequestType = "backstory"
+	IndigoBot                                    ConversationMessageCreateRequestType = "bot"
+	IndigoContext                                ConversationMessageCreateRequestType = "context"
+	IndigoInstruction                            ConversationMessageCreateRequestType = "instruction"
+	IndigoReasoning                              ConversationMessageCreateRequestType = "reasoning"
+	IndigoUser                                   ConversationMessageCreateRequestType = "user"
+
+)
+
+// The order of the paginated items
+type ConversationMessageListParamsOrder string
+
+const (
+	FriskyAsc                                  ConversationMessageListParamsOrder = "asc"
+	FriskyDesc                                 ConversationMessageListParamsOrder = "desc"
+
+)
+
+// The type of the message
+type IndecentType string
+
+const (
+	HilariousActivity                                    IndecentType = "activity"
+	IndecentBackstory                                    IndecentType = "backstory"
+	IndecentBot                                          IndecentType = "bot"
+	IndecentContext                                      IndecentType = "context"
+	IndecentInstruction                                  IndecentType = "instruction"
+	IndecentReasoning                                    IndecentType = "reasoning"
+	IndecentUser                                         IndecentType = "user"
+
+)
+
+// The schema type, must be "object"
+type HilariousType string
+
+const (
+
+	TentacledObject                                                      HilariousType = "object"
+)
+
+// The schema type, must be "object"
+type AmbitiousType string
+
+const (
+
+	StickyObject                                                      AmbitiousType = "object"
+)
+
+// The schema type, must be "object"
+type CunningType string
+
+const (
+	IndigoObject                                                   CunningType = "object"
+
+)
+
+// The type of the message
+type MagentaType string
+
+const (
+	AmbitiousActivity                                   MagentaType = "activity"
+	HilariousBackstory                                  MagentaType = "backstory"
+	HilariousBot                                        MagentaType = "bot"
+	HilariousContext                                    MagentaType = "context"
+	HilariousInstruction                                MagentaType = "instruction"
+	HilariousReasoning                                  MagentaType = "reasoning"
+	HilariousUser                                       MagentaType = "user"
+
+)
+
+// The reason why the completion ended
+type FluffyReason string
+
+const (
+	CunningActivity                               FluffyReason = "activity"
+	FluffyError                                   FluffyReason = "error"
+	FluffyIteration                               FluffyReason = "iteration"
+	FluffyLength                                  FluffyReason = "length"
+	FluffyStop                                    FluffyReason = "stop"
+
+)
+
+// The type of the message
+type FriskyType string
+
+const (
+	AmbitiousBackstory                                FriskyType = "backstory"
+	AmbitiousBot                                      FriskyType = "bot"
+	AmbitiousContext                                  FriskyType = "context"
+	AmbitiousInstruction                              FriskyType = "instruction"
+	AmbitiousReasoning                                FriskyType = "reasoning"
+	AmbitiousUser                                     FriskyType = "user"
+	MagentaActivity                                   FriskyType = "activity"
+
+)
+
+// The type of the message
+type MischievousType string
+
+const (
+	CunningBackstory                                   MischievousType = "backstory"
+	CunningBot                                         MischievousType = "bot"
+	CunningContext                                     MischievousType = "context"
+	CunningInstruction                                 MischievousType = "instruction"
+	CunningReasoning                                   MischievousType = "reasoning"
+	CunningUser                                        MischievousType = "user"
+	FriskyActivity                                     MischievousType = "activity"
+
+)
+
+// The schema type, must be "object"
+type BraggadociousType string
+
+const (
+	IndecentObject                                                 BraggadociousType = "object"
+
+)
+
+// The type of the message
+type Type1 string
+
+const (
+	MagentaBackstory                                    Type1 = "backstory"
+	MagentaBot                                          Type1 = "bot"
+	MagentaContext                                      Type1 = "context"
+	MagentaInstruction                                  Type1 = "instruction"
+	MagentaReasoning                                    Type1 = "reasoning"
+	MagentaUser                                         Type1 = "user"
+	MischievousActivity                                 Type1 = "activity"
+
+)
+
+// The order of the paginated items
+type ConversationsExportParamsOrder string
+
+const (
+	MischievousAsc                         ConversationsExportParamsOrder = "asc"
+	MischievousDesc                        ConversationsExportParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type ConversationListParamsOrder string
+
+const (
+	BraggadociousAsc                    ConversationListParamsOrder = "asc"
+	BraggadociousDesc                   ConversationListParamsOrder = "desc"
+
+)
+
+// The dataset visibility
+type DatasetFetchResponseVisibility string
+
+const (
+	CunningPrivate                         DatasetFetchResponseVisibility = "private"
+	CunningProtected                       DatasetFetchResponseVisibility = "protected"
+	CunningPublic                          DatasetFetchResponseVisibility = "public"
+
 )
 
 // The dataset file attachment type
-type DatasetFileAttachmentType string
+type DatasetFileAttachRequestType string
 
 const (
-	Source DatasetFileAttachmentType = "source"
+
+	TypeSource                           DatasetFileAttachRequestType = "source"
+)
+
+// The order of the paginated items
+type DatasetFileListParamsOrder string
+
+const (
+	Asc1                               DatasetFileListParamsOrder = "asc"
+	Desc1                              DatasetFileListParamsOrder = "desc"
+
+)
+
+// The file visibility
+type TentacledVisibility string
+
+const (
+	MagentaPrivate                                     TentacledVisibility = "private"
+	MagentaProtected                                   TentacledVisibility = "protected"
+	MagentaPublic                                      TentacledVisibility = "public"
+
+)
+
+// The order of the paginated items
+type DatasetRecordsExportParamsOrder string
+
+const (
+	Asc2                                    DatasetRecordsExportParamsOrder = "asc"
+	Desc2                                   DatasetRecordsExportParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type DatasetRecordListParamsOrder string
+
+const (
+	Asc3                                 DatasetRecordListParamsOrder = "asc"
+	Desc3                                DatasetRecordListParamsOrder = "desc"
+
+)
+
+// The dataset visibility
+type DatasetUpdateRequestVisibility string
+
+const (
+	FriskyPrivate                          DatasetUpdateRequestVisibility = "private"
+	FriskyProtected                        DatasetUpdateRequestVisibility = "protected"
+	FriskyPublic                           DatasetUpdateRequestVisibility = "public"
+
+)
+
+// The dataset visibility
+type DatasetCreateRequestVisibility string
+
+const (
+	MischievousPrivate                     DatasetCreateRequestVisibility = "private"
+	MischievousProtected                   DatasetCreateRequestVisibility = "protected"
+	MischievousPublic                      DatasetCreateRequestVisibility = "public"
+
+)
+
+// The order of the paginated items
+type DatasetListParamsOrder string
+
+const (
+	Asc4                           DatasetListParamsOrder = "asc"
+	Desc4                          DatasetListParamsOrder = "desc"
+
+)
+
+// The dataset visibility
+type StickyVisibility string
+
+const (
+	BraggadociousPrivate                           StickyVisibility = "private"
+	BraggadociousProtected                         StickyVisibility = "protected"
+	BraggadociousPublic                            StickyVisibility = "public"
+
+)
+
+// The order of the paginated items
+type EventLogsExportParamsOrder string
+
+const (
+	Asc5                               EventLogsExportParamsOrder = "asc"
+	Desc5                              EventLogsExportParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type EventLogListParamsOrder string
+
+const (
+	Asc6                            EventLogListParamsOrder = "asc"
+	Desc6                           EventLogListParamsOrder = "desc"
+
+)
+
+// The file visibility
+type FileFetchResponseVisibility string
+
+const (
+	Private1                            FileFetchResponseVisibility = "private"
+	Protected1                          FileFetchResponseVisibility = "protected"
+	Public1                             FileFetchResponseVisibility = "public"
+
+)
+
+// The file visibility
+type FileUpdateRequestVisibility string
+
+const (
+	Private2                            FileUpdateRequestVisibility = "private"
+	Protected2                          FileUpdateRequestVisibility = "protected"
+	Public2                             FileUpdateRequestVisibility = "public"
+
+)
+
+// The file visibility
+type FileCreateRequestVisibility string
+
+const (
+	Private3                            FileCreateRequestVisibility = "private"
+	Protected3                          FileCreateRequestVisibility = "protected"
+	Public3                             FileCreateRequestVisibility = "public"
+
+)
+
+// The order of the paginated items
+type FileListParamsOrder string
+
+const (
+	Asc7                        FileListParamsOrder = "asc"
+	Desc7                       FileListParamsOrder = "desc"
+
+)
+
+// The file visibility
+type IndigoVisibility string
+
+const (
+	Private4                                    IndigoVisibility = "private"
+	Protected4                                  IndigoVisibility = "protected"
+	Public4                                     IndigoVisibility = "public"
+
+)
+
+// The order of the paginated items
+type IntegrationDiscordListParamsOrder string
+
+const (
+	Asc8                                      IntegrationDiscordListParamsOrder = "asc"
+	Desc8                                     IntegrationDiscordListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type EmailIntegrationListParamsOrder string
+
+const (
+	Asc9                                    EmailIntegrationListParamsOrder = "asc"
+	Desc9                                   EmailIntegrationListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type IntegrationExtractListParamsOrder string
+
+const (
+	Asc10                                     IntegrationExtractListParamsOrder = "asc"
+	Desc10                                    IntegrationExtractListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type IntegrationInstagramListParamsOrder string
+
+const (
+	Asc11                                       IntegrationInstagramListParamsOrder = "asc"
+	Desc11                                      IntegrationInstagramListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type IntegrationMCPServerListParamsOrder string
+
+const (
+	Asc12                                       IntegrationMCPServerListParamsOrder = "asc"
+	Desc12                                      IntegrationMCPServerListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type IntegrationMessengerListParamsOrder string
+
+const (
+	Asc13                                       IntegrationMessengerListParamsOrder = "asc"
+	Desc13                                      IntegrationMessengerListParamsOrder = "desc"
+
 )
 
 // The sync status of an integration
-type SyncStatus string
+type IntegrationNotionFetchResponseSyncStatus string
 
 const (
-	SyncStatusError   SyncStatus = "error"
-	SyncStatusPending SyncStatus = "pending"
-	Synced            SyncStatus = "synced"
+	FluffyPending                                    IntegrationNotionFetchResponseSyncStatus = "pending"
+	PurpleSynced                                     IntegrationNotionFetchResponseSyncStatus = "synced"
+
+	TentacledError                                   IntegrationNotionFetchResponseSyncStatus = "error"
+)
+
+// The order of the paginated items
+type IntegrationNotionListParamsOrder string
+
+const (
+	Asc14                                    IntegrationNotionListParamsOrder = "asc"
+	Desc14                                   IntegrationNotionListParamsOrder = "desc"
+
+)
+
+// The sync status of an integration
+type PurpleSyncStatus string
+
+const (
+	FluffySynced                                             PurpleSyncStatus = "synced"
+
+	StickyError                                              PurpleSyncStatus = "error"
+	TentacledPending                                         PurpleSyncStatus = "pending"
+)
+
+// The sync status of an integration
+type IntegrationSitemapFetchResponseSyncStatus string
+
+const (
+	IndigoError                                       IntegrationSitemapFetchResponseSyncStatus = "error"
+
+	StickyPending                                     IntegrationSitemapFetchResponseSyncStatus = "pending"
+	TentacledSynced                                   IntegrationSitemapFetchResponseSyncStatus = "synced"
+)
+
+// The order of the paginated items
+type IntegrationSitemapListParamsOrder string
+
+const (
+	Asc15                                     IntegrationSitemapListParamsOrder = "asc"
+	Desc15                                    IntegrationSitemapListParamsOrder = "desc"
+
+)
+
+// The sync status of an integration
+type FluffySyncStatus string
+
+const (
+	IndecentError                                             FluffySyncStatus = "error"
+	IndigoPending                                             FluffySyncStatus = "pending"
+
+	StickySynced                                              FluffySyncStatus = "synced"
+)
+
+// The order of the paginated items
+type IntegrationSlackListParamsOrder string
+
+const (
+	Asc16                                   IntegrationSlackListParamsOrder = "asc"
+	Desc16                                  IntegrationSlackListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type IntegrationSupportListParamsOrder string
+
+const (
+	Asc17                                     IntegrationSupportListParamsOrder = "asc"
+	Desc17                                    IntegrationSupportListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type IntegrationTelegramListParamsOrder string
+
+const (
+	Asc18                                      IntegrationTelegramListParamsOrder = "asc"
+	Desc18                                     IntegrationTelegramListParamsOrder = "desc"
+
 )
 
 // The schedule
-type Schedule string
+type TriggerIntegrationFetchResponseTriggerSchedule string
 
 const (
-	Daily         Schedule = "daily"
-	Halfhourly    Schedule = "halfhourly"
-	Hourly        Schedule = "hourly"
-	Monthly       Schedule = "monthly"
-	Quarterhourly Schedule = "quarterhourly"
-	ScheduleNever Schedule = "never"
-	Weekly        Schedule = "weekly"
+	PurpleDaily                                            TriggerIntegrationFetchResponseTriggerSchedule = "daily"
+	PurpleHalfhourly                                       TriggerIntegrationFetchResponseTriggerSchedule = "halfhourly"
+	PurpleHourly                                           TriggerIntegrationFetchResponseTriggerSchedule = "hourly"
+	PurpleMonthly                                          TriggerIntegrationFetchResponseTriggerSchedule = "monthly"
+	PurpleNever                                            TriggerIntegrationFetchResponseTriggerSchedule = "never"
+	PurpleQuarterhourly                                    TriggerIntegrationFetchResponseTriggerSchedule = "quarterhourly"
+	PurpleWeekly                                           TriggerIntegrationFetchResponseTriggerSchedule = "weekly"
+
+)
+
+// The schedule
+type TriggerIntegrationUpdateRequestTriggerSchedule string
+
+const (
+	FluffyDaily                                            TriggerIntegrationUpdateRequestTriggerSchedule = "daily"
+	FluffyHalfhourly                                       TriggerIntegrationUpdateRequestTriggerSchedule = "halfhourly"
+	FluffyHourly                                           TriggerIntegrationUpdateRequestTriggerSchedule = "hourly"
+	FluffyMonthly                                          TriggerIntegrationUpdateRequestTriggerSchedule = "monthly"
+	FluffyNever                                            TriggerIntegrationUpdateRequestTriggerSchedule = "never"
+	FluffyQuarterhourly                                    TriggerIntegrationUpdateRequestTriggerSchedule = "quarterhourly"
+	FluffyWeekly                                           TriggerIntegrationUpdateRequestTriggerSchedule = "weekly"
+
+)
+
+// The schedule
+type TriggerIntegrationCreateRequestTriggerSchedule string
+
+const (
+
+	TentacledDaily                                         TriggerIntegrationCreateRequestTriggerSchedule = "daily"
+	TentacledHalfhourly                                    TriggerIntegrationCreateRequestTriggerSchedule = "halfhourly"
+	TentacledHourly                                        TriggerIntegrationCreateRequestTriggerSchedule = "hourly"
+	TentacledMonthly                                       TriggerIntegrationCreateRequestTriggerSchedule = "monthly"
+	TentacledNever                                         TriggerIntegrationCreateRequestTriggerSchedule = "never"
+	TentacledQuarterhourly                                 TriggerIntegrationCreateRequestTriggerSchedule = "quarterhourly"
+	TentacledWeekly                                        TriggerIntegrationCreateRequestTriggerSchedule = "weekly"
+)
+
+// The order of the paginated items
+type TriggerIntegrationListParamsOrder string
+
+const (
+	Asc19                                     TriggerIntegrationListParamsOrder = "asc"
+	Desc19                                    TriggerIntegrationListParamsOrder = "desc"
+
+)
+
+// The schedule
+type ItemTriggerSchedule string
+
+const (
+
+	StickyDaily                                                    ItemTriggerSchedule = "daily"
+	StickyHalfhourly                                               ItemTriggerSchedule = "halfhourly"
+	StickyHourly                                                   ItemTriggerSchedule = "hourly"
+	StickyMonthly                                                  ItemTriggerSchedule = "monthly"
+	StickyNever                                                    ItemTriggerSchedule = "never"
+	StickyQuarterhourly                                            ItemTriggerSchedule = "quarterhourly"
+	StickyWeekly                                                   ItemTriggerSchedule = "weekly"
+)
+
+// The order of the paginated items
+type IntegrationTwilioListParamsOrder string
+
+const (
+	Asc20                                    IntegrationTwilioListParamsOrder = "asc"
+	Desc20                                   IntegrationTwilioListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type IntegrationWhatsAppListParamsOrder string
+
+const (
+	Asc21                                      IntegrationWhatsAppListParamsOrder = "asc"
+	Desc21                                     IntegrationWhatsAppListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type IntegrationWidgetListParamsOrder string
+
+const (
+	Asc22                                    IntegrationWidgetListParamsOrder = "asc"
+	Desc22                                   IntegrationWidgetListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type MagicPromptListParamsOrder string
+
+const (
+	Asc23                              MagicPromptListParamsOrder = "asc"
+	Desc23                             MagicPromptListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type MemoriesExportParamsOrder string
+
+const (
+	Asc24                             MemoriesExportParamsOrder = "asc"
+	Desc24                            MemoriesExportParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type MemoryListParamsOrder string
+
+const (
+	Asc25                         MemoryListParamsOrder = "asc"
+	Desc25                        MemoryListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type PartnerUserTokenListParamsOrder string
+
+const (
+	Asc26                                   PartnerUserTokenListParamsOrder = "asc"
+	Desc26                                  PartnerUserTokenListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type PartnerUserListParamsOrder string
+
+const (
+	Asc27                              PartnerUserListParamsOrder = "asc"
+	Desc27                             PartnerUserListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type PlatformAbilityListParamsOrder string
+
+const (
+	Asc28                                  PlatformAbilityListParamsOrder = "asc"
+	Desc28                                 PlatformAbilityListParamsOrder = "desc"
+
+)
+
+// The schema type, must be "object"
+type SchemaType string
+
+const (
+	HilariousObject                                        SchemaType = "object"
+
+)
+
+// The order of the paginated items
+type PlatformActionListParamsOrder string
+
+const (
+	Asc29                                 PlatformActionListParamsOrder = "asc"
+	Desc29                                PlatformActionListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type PlatformDocListParamsOrder string
+
+const (
+	Asc30                              PlatformDocListParamsOrder = "asc"
+	Desc30                             PlatformDocListParamsOrder = "desc"
+
 )
 
 // The type of the example
 type PlatformExampleFetchResponseType string
 
 const (
-	Blueprint   PlatformExampleFetchResponseType = "blueprint"
-	Discord     PlatformExampleFetchResponseType = "discord"
-	Email       PlatformExampleFetchResponseType = "email"
-	Messenger   PlatformExampleFetchResponseType = "messenger"
-	Project     PlatformExampleFetchResponseType = "project"
-	Slack       PlatformExampleFetchResponseType = "slack"
-	Telegram    PlatformExampleFetchResponseType = "telegram"
-	Twilio      PlatformExampleFetchResponseType = "twilio"
-	TypeTrigger PlatformExampleFetchResponseType = "trigger"
-	Whatsapp    PlatformExampleFetchResponseType = "whatsapp"
-	Widget      PlatformExampleFetchResponseType = "widget"
+	PurpleBlueprint                          PlatformExampleFetchResponseType = "blueprint"
+	PurpleDiscord                            PlatformExampleFetchResponseType = "discord"
+	PurpleEmail                              PlatformExampleFetchResponseType = "email"
+	PurpleMessenger                          PlatformExampleFetchResponseType = "messenger"
+	PurpleProject                            PlatformExampleFetchResponseType = "project"
+	PurpleSlack                              PlatformExampleFetchResponseType = "slack"
+	PurpleTelegram                           PlatformExampleFetchResponseType = "telegram"
+	PurpleTrigger                            PlatformExampleFetchResponseType = "trigger"
+	PurpleTwilio                             PlatformExampleFetchResponseType = "twilio"
+	PurpleWhatsapp                           PlatformExampleFetchResponseType = "whatsapp"
+	PurpleWidget                             PlatformExampleFetchResponseType = "widget"
+
+)
+
+// The order of the paginated items
+type PlatformExampleListParamsOrder string
+
+const (
+	Asc31                                  PlatformExampleListParamsOrder = "asc"
+	Desc31                                 PlatformExampleListParamsOrder = "desc"
+
+)
+
+// The type of the example
+type Type2 string
+
+const (
+	FluffyBlueprint                                  Type2 = "blueprint"
+	FluffyDiscord                                    Type2 = "discord"
+	FluffyEmail                                      Type2 = "email"
+	FluffyMessenger                                  Type2 = "messenger"
+	FluffyProject                                    Type2 = "project"
+	FluffySlack                                      Type2 = "slack"
+	FluffyTelegram                                   Type2 = "telegram"
+	FluffyTrigger                                    Type2 = "trigger"
+	FluffyTwilio                                     Type2 = "twilio"
+	FluffyWhatsapp                                   Type2 = "whatsapp"
+	FluffyWidget                                     Type2 = "widget"
+
+)
+
+// The type of the example
+type Type3 string
+
+const (
+
+	TentacledBlueprint                                  Type3 = "blueprint"
+	TentacledDiscord                                    Type3 = "discord"
+	TentacledEmail                                      Type3 = "email"
+	TentacledMessenger                                  Type3 = "messenger"
+	TentacledProject                                    Type3 = "project"
+	TentacledSlack                                      Type3 = "slack"
+	TentacledTelegram                                   Type3 = "telegram"
+	TentacledTrigger                                    Type3 = "trigger"
+	TentacledTwilio                                     Type3 = "twilio"
+	TentacledWhatsapp                                   Type3 = "whatsapp"
+	TentacledWidget                                     Type3 = "widget"
+)
+
+// The order of the paginated items
+type PlatformGuideListParamsOrder string
+
+const (
+	Asc32                                PlatformGuideListParamsOrder = "asc"
+	Desc32                               PlatformGuideListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type PlatformManualListParamsOrder string
+
+const (
+	Asc33                                 PlatformManualListParamsOrder = "asc"
+	Desc33                                PlatformManualListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type PlatformModelListParamsOrder string
+
+const (
+	Asc34                                PlatformModelListParamsOrder = "asc"
+	Desc34                               PlatformModelListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type PlatformSecretListParamsOrder string
+
+const (
+	Asc35                                 PlatformSecretListParamsOrder = "asc"
+	Desc35                                PlatformSecretListParamsOrder = "desc"
+
 )
 
 // The kind of the secret
-type SecretKind string
+type PurpleKind string
 
 const (
-	Personal SecretKind = "personal"
-	Shared   SecretKind = "shared"
+	PurplePersonal                                  PurpleKind = "personal"
+	PurpleShared                                    PurpleKind = "shared"
+
 )
 
 // The type of the secret
-type SecretType string
+type Type4 string
 
 const (
-	Basic     SecretType = "basic"
-	Bearer    SecretType = "bearer"
-	Oauth     SecretType = "oauth"
-	Plain     SecretType = "plain"
-	Reference SecretType = "reference"
-	Template  SecretType = "template"
+	PurpleBasic                                     Type4 = "basic"
+	PurpleBearer                                    Type4 = "bearer"
+	PurpleOauth                                     Type4 = "oauth"
+	PurplePlain                                     Type4 = "plain"
+	PurpleReference                                 Type4 = "reference"
+	PurpleTemplate                                  Type4 = "template"
+
+)
+
+// The order of the paginated items
+type PlatformTutorialListParamsOrder string
+
+const (
+	Asc36                                   PlatformTutorialListParamsOrder = "asc"
+	Desc36                                  PlatformTutorialListParamsOrder = "desc"
+
 )
 
 // The policy type
-type PolicyType string
+type PolicyFetchResponseType string
 
 const (
-	Retention PolicyType = "retention"
+	PurpleRetention                 PolicyFetchResponseType = "retention"
+
+)
+
+// The policy type
+type PolicyUpdateRequestType string
+
+const (
+	FluffyRetention                 PolicyUpdateRequestType = "retention"
+
+)
+
+// The policy type
+type PolicyCreateRequestType string
+
+const (
+
+	TentacledRetention              PolicyCreateRequestType = "retention"
+)
+
+// The order of the paginated items
+type PolicyListParamsOrder string
+
+const (
+	Asc37                         PolicyListParamsOrder = "asc"
+	Desc37                        PolicyListParamsOrder = "desc"
+
+)
+
+// The policy type
+type Type5 string
+
+const (
+
+	StickyRetention                         Type5 = "retention"
+)
+
+// The order of the paginated items
+type PortalListParamsOrder string
+
+const (
+	Asc38                         PortalListParamsOrder = "asc"
+	Desc38                        PortalListParamsOrder = "desc"
+
+)
+
+// The kind of the secret
+type SecretFetchResponseKind string
+
+const (
+	FluffyPersonal                  SecretFetchResponseKind = "personal"
+	FluffyShared                    SecretFetchResponseKind = "shared"
+
+)
+
+// The type of the secret
+type SecretFetchResponseType string
+
+const (
+	FluffyBasic                     SecretFetchResponseType = "basic"
+	FluffyBearer                    SecretFetchResponseType = "bearer"
+	FluffyOauth                     SecretFetchResponseType = "oauth"
+	FluffyPlain                     SecretFetchResponseType = "plain"
+	FluffyReference                 SecretFetchResponseType = "reference"
+	FluffyTemplate                  SecretFetchResponseType = "template"
+
+)
+
+// The visibility of the secret
+type SecretFetchResponseVisibility string
+
+const (
+	Private5                              SecretFetchResponseVisibility = "private"
+	Protected5                            SecretFetchResponseVisibility = "protected"
+	Public5                               SecretFetchResponseVisibility = "public"
+
+)
+
+// The kind of the secret
+type SecretUpdateRequestKind string
+
+const (
+
+	TentacledPersonal               SecretUpdateRequestKind = "personal"
+	TentacledShared                 SecretUpdateRequestKind = "shared"
+)
+
+// The type of the secret
+type SecretUpdateRequestType string
+
+const (
+
+	TentacledBasic                  SecretUpdateRequestType = "basic"
+	TentacledBearer                 SecretUpdateRequestType = "bearer"
+	TentacledOauth                  SecretUpdateRequestType = "oauth"
+	TentacledPlain                  SecretUpdateRequestType = "plain"
+	TentacledReference              SecretUpdateRequestType = "reference"
+	TentacledTemplate               SecretUpdateRequestType = "template"
+)
+
+// The visibility of the secret
+type SecretUpdateRequestVisibility string
+
+const (
+	Private6                              SecretUpdateRequestVisibility = "private"
+	Protected6                            SecretUpdateRequestVisibility = "protected"
+	Public6                               SecretUpdateRequestVisibility = "public"
+
+)
+
+// The type of action to take
+type Type6 string
+
+const (
+	FluffyAuthenticate                           Type6 = "authenticate"
+
+)
+
+// The status of the secret
+type SecretVerifyResponseStatus string
+
+const (
+	FluffyAuthenticated                SecretVerifyResponseStatus = "authenticated"
+	FluffyUnauthenticated              SecretVerifyResponseStatus = "unauthenticated"
+
+)
+
+// The kind of the secret
+type SecretCreateRequestKind string
+
+const (
+
+	StickyPersonal                  SecretCreateRequestKind = "personal"
+	StickyShared                    SecretCreateRequestKind = "shared"
+)
+
+// The type of the secret
+type SecretCreateRequestType string
+
+const (
+
+	StickyBasic                     SecretCreateRequestType = "basic"
+	StickyBearer                    SecretCreateRequestType = "bearer"
+	StickyOauth                     SecretCreateRequestType = "oauth"
+	StickyPlain                     SecretCreateRequestType = "plain"
+	StickyReference                 SecretCreateRequestType = "reference"
+	StickyTemplate                  SecretCreateRequestType = "template"
+)
+
+// The visibility of the secret
+type SecretCreateRequestVisibility string
+
+const (
+	Private7                              SecretCreateRequestVisibility = "private"
+	Protected7                            SecretCreateRequestVisibility = "protected"
+	Public7                               SecretCreateRequestVisibility = "public"
+
+)
+
+// The order of the paginated items
+type SecretListParamsOrder string
+
+const (
+	Asc39                         SecretListParamsOrder = "asc"
+	Desc39                        SecretListParamsOrder = "desc"
+
+)
+
+// The kind of the secret
+type FluffyKind string
+
+const (
+	IndigoPersonal                          FluffyKind = "personal"
+	IndigoShared                            FluffyKind = "shared"
+
+)
+
+// The type of the secret
+type Type7 string
+
+const (
+	IndigoBasic                             Type7 = "basic"
+	IndigoBearer                            Type7 = "bearer"
+	IndigoOauth                             Type7 = "oauth"
+	IndigoPlain                             Type7 = "plain"
+	IndigoReference                         Type7 = "reference"
+	IndigoTemplate                          Type7 = "template"
+
+)
+
+// The visibility of the secret
+type IndecentVisibility string
+
+const (
+	Private8                                      IndecentVisibility = "private"
+	Protected8                                    IndecentVisibility = "protected"
+	Public8                                       IndecentVisibility = "public"
+
+)
+
+// The type of the message
+type Type8 string
+
+const (
+	BraggadociousActivity                                  Type8 = "activity"
+	FriskyBackstory                                        Type8 = "backstory"
+	FriskyBot                                              Type8 = "bot"
+	FriskyContext                                          Type8 = "context"
+	FriskyInstruction                                      Type8 = "instruction"
+	FriskyReasoning                                        Type8 = "reasoning"
+	FriskyUser                                             Type8 = "user"
+
+)
+
+// The order of the paginated items
+type SkillsetAbilitiesExportParamsOrder string
+
+const (
+	Asc40                                      SkillsetAbilitiesExportParamsOrder = "asc"
+	Desc40                                     SkillsetAbilitiesExportParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type SkillsetAbilityListParamsOrder string
+
+const (
+	Asc41                                  SkillsetAbilityListParamsOrder = "asc"
+	Desc41                                 SkillsetAbilityListParamsOrder = "desc"
+
+)
+
+// The skillset visibility
+type SkillsetFetchResponseVisibility string
+
+const (
+	Private9                                SkillsetFetchResponseVisibility = "private"
+	Protected9                              SkillsetFetchResponseVisibility = "protected"
+	Public9                                 SkillsetFetchResponseVisibility = "public"
+
+)
+
+// The skillset visibility
+type SkillsetUpdateRequestVisibility string
+
+const (
+	Private10                               SkillsetUpdateRequestVisibility = "private"
+	Protected10                             SkillsetUpdateRequestVisibility = "protected"
+	Public10                                SkillsetUpdateRequestVisibility = "public"
+
+)
+
+// The skillset visibility
+type SkillsetCreateRequestVisibility string
+
+const (
+	Private11                               SkillsetCreateRequestVisibility = "private"
+	Protected11                             SkillsetCreateRequestVisibility = "protected"
+	Public11                                SkillsetCreateRequestVisibility = "public"
+
+)
+
+// The order of the paginated items
+type SkillsetListParamsOrder string
+
+const (
+	Asc42                           SkillsetListParamsOrder = "asc"
+	Desc42                          SkillsetListParamsOrder = "desc"
+
+)
+
+// The skillset visibility
+type HilariousVisibility string
+
+const (
+	Private12                                       HilariousVisibility = "private"
+	Protected12                                     HilariousVisibility = "protected"
+	Public12                                        HilariousVisibility = "public"
+
+)
+
+// The order of the paginated items
+type SpacesExportParamsOrder string
+
+const (
+	Asc43                           SpacesExportParamsOrder = "asc"
+	Desc43                          SpacesExportParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type SpaceListParamsOrder string
+
+const (
+	Asc44                        SpaceListParamsOrder = "asc"
+	Desc44                       SpaceListParamsOrder = "desc"
+
+)
+
+// The task execution outcome
+type TaskFetchResponseOutcome string
+
+const (
+	FluffyFailure                    TaskFetchResponseOutcome = "failure"
+	FluffySuccess                    TaskFetchResponseOutcome = "success"
+	IndecentPending                  TaskFetchResponseOutcome = "pending"
+
+)
+
+// The task execution status
+type TaskFetchResponseStatus string
+
+const (
+	FluffyIdle                      TaskFetchResponseStatus = "idle"
+	FluffyRunning                   TaskFetchResponseStatus = "running"
+
+)
+
+// The order of the paginated items
+type TasksExportParamsOrder string
+
+const (
+	Asc45                          TasksExportParamsOrder = "asc"
+	Desc45                         TasksExportParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type TaskListParamsOrder string
+
+const (
+	Asc46                       TaskListParamsOrder = "asc"
+	Desc46                      TaskListParamsOrder = "desc"
+
+)
+
+// Filter by task status
+type TaskListParamsStatus string
+
+const (
+
+	TentacledIdle                TaskListParamsStatus = "idle"
+	TentacledRunning             TaskListParamsStatus = "running"
+)
+
+// The task execution outcome
+type FluffyOutcome string
+
+const (
+	HilariousPending                         FluffyOutcome = "pending"
+
+	TentacledFailure                         FluffyOutcome = "failure"
+	TentacledSuccess                         FluffyOutcome = "success"
+)
+
+// The task execution status
+type FluffyStatus string
+
+const (
+
+	StickyIdle                              FluffyStatus = "idle"
+	StickyRunning                           FluffyStatus = "running"
+)
+
+// The order of the paginated items
+type TeamListParamsOrder string
+
+const (
+	Asc47                       TeamListParamsOrder = "asc"
+	Desc47                      TeamListParamsOrder = "desc"
+
+)
+
+// The type of the message
+type MessageTypeEnum string
+
+const (
+	Activity1              MessageTypeEnum = "activity"
+	MischievousBackstory   MessageTypeEnum = "backstory"
+	MischievousBot         MessageTypeEnum = "bot"
+	MischievousContext     MessageTypeEnum = "context"
+	MischievousInstruction MessageTypeEnum = "instruction"
+	MischievousReasoning   MessageTypeEnum = "reasoning"
+	MischievousUser        MessageTypeEnum = "user"
+
+)
+
+// The type of the message
+type MessageType string
+
+const (
+	MessageTypeActivity            MessageType = "activity"
+	MessageTypeBackstory           MessageType = "backstory"
+	MessageTypeBot                 MessageType = "bot"
+	MessageTypeContext             MessageType = "context"
+	MessageTypeInstruction         MessageType = "instruction"
+
+	MessageTypeReasoning           MessageType = "reasoning"
+	MessageTypeUser                MessageType = "user"
 )
 
 // The type of the trigger
 type Trigger string
 
 const (
-	Automatic    Trigger = "automatic"
-	TriggerNever Trigger = "never"
+	Automatic       Trigger = "automatic"
+
+	TriggerNever    Trigger = "never"
+)
+
+// The schedule
+type Schedule string
+
+const (
+
+	ScheduleDaily         Schedule = "daily"
+	ScheduleHalfhourly    Schedule = "halfhourly"
+	ScheduleHourly        Schedule = "hourly"
+	ScheduleMonthly       Schedule = "monthly"
+	ScheduleNever         Schedule = "never"
+	ScheduleQuarterhourly Schedule = "quarterhourly"
+	ScheduleWeekly        Schedule = "weekly"
+)
+
+// The sync status of an integration
+type SyncStatus string
+
+const (
+
+	SyncStatusError    SyncStatus = "error"
+	SyncStatusPending  SyncStatus = "pending"
+	SyncStatusSynced   SyncStatus = "synced"
+)
+
+// The task execution status
+type TaskStatus string
+
+const (
+
+	TaskStatusIdle     TaskStatus = "idle"
+	TaskStatusRunning  TaskStatus = "running"
+)
+
+// The task execution outcome
+type TaskOutcome string
+
+const (
+
+	TaskOutcomeFailure  TaskOutcome = "failure"
+	TaskOutcomePending  TaskOutcome = "pending"
+	TaskOutcomeSuccess  TaskOutcome = "success"
+)
+
+// The blueprint visibility
+type BlueprintVisibility string
+
+const (
+	BlueprintVisibilityPrivate   BlueprintVisibility = "private"
+	BlueprintVisibilityProtected BlueprintVisibility = "protected"
+	BlueprintVisibilityPublic    BlueprintVisibility = "public"
+
+)
+
+// The bot visibility
+type BotVisibility string
+
+const (
+	BotVisibilityPrivate   BotVisibility = "private"
+	BotVisibilityProtected BotVisibility = "protected"
+	BotVisibilityPublic    BotVisibility = "public"
+
+)
+
+// The dataset visibility
+type DatasetVisibility string
+
+const (
+	DatasetVisibilityPrivate   DatasetVisibility = "private"
+	DatasetVisibilityProtected DatasetVisibility = "protected"
+	DatasetVisibilityPublic    DatasetVisibility = "public"
+
+)
+
+// The dataset file attachment type
+type DatasetFileAttachmentType string
+
+const (
+	DatasetFileAttachmentTypeSource   DatasetFileAttachmentType = "source"
+
+)
+
+// The skillset visibility
+type SkillsetVisibility string
+
+const (
+
+	SkillsetVisibilityPrivate   SkillsetVisibility = "private"
+	SkillsetVisibilityProtected SkillsetVisibility = "protected"
+	SkillsetVisibilityPublic    SkillsetVisibility = "public"
+)
+
+// The file visibility
+type FileVisibility string
+
+const (
+	FileVisibilityPrivate   FileVisibility = "private"
+	FileVisibilityProtected FileVisibility = "protected"
+	FileVisibilityPublic    FileVisibility = "public"
+
+)
+
+// The type of the secret
+type SecretType string
+
+const (
+
+	SecretTypeBasic     SecretType = "basic"
+	SecretTypeBearer    SecretType = "bearer"
+	SecretTypeOauth     SecretType = "oauth"
+	SecretTypePlain     SecretType = "plain"
+	SecretTypeReference SecretType = "reference"
+	SecretTypeTemplate  SecretType = "template"
+)
+
+// The kind of the secret
+type SecretKind string
+
+const (
+
+	SecretKindPersonal SecretKind = "personal"
+	SecretKindShared   SecretKind = "shared"
+)
+
+// The visibility of the secret
+type SecretVisibility string
+
+const (
+
+	SecretVisibilityPrivate   SecretVisibility = "private"
+	SecretVisibilityProtected SecretVisibility = "protected"
+	SecretVisibilityPublic    SecretVisibility = "public"
+)
+
+// The reason why the completion ended
+type CompleteReason string
+
+const (
+	CompleteReasonActivity  CompleteReason = "activity"
+	CompleteReasonError     CompleteReason = "error"
+	CompleteReasonIteration CompleteReason = "iteration"
+	CompleteReasonLength    CompleteReason = "length"
+	CompleteReasonStop      CompleteReason = "stop"
+
+)
+
+// The reason why the completion ended
+type CompleteEndReason string
+
+const (
+	Activity2                 CompleteEndReason = "activity"
+	HilariousError            CompleteEndReason = "error"
+
+	TentacledIteration        CompleteEndReason = "iteration"
+	TentacledLength           CompleteEndReason = "length"
+	TentacledStop             CompleteEndReason = "stop"
+)
+
+// The policy type
+type PolicyType string
+
+const (
+	PolicyTypeRetention PolicyType = "retention"
+
+)
+
+// The schema type, must be "object"
+type JSONSchemaObjectType string
+
+const (
+	AmbitiousObject              JSONSchemaObjectType = "object"
+
+)
+
+// The schema type, must be "object"
+type Type9 string
+
+const (
+	CunningObject                                 Type9 = "object"
+
+)
+
+// The type of the message
+type DataType string
+
+const (
+	Activity3                                           DataType = "activity"
+	BraggadociousBackstory                              DataType = "backstory"
+	BraggadociousBot                                    DataType = "bot"
+	BraggadociousContext                                DataType = "context"
+	BraggadociousInstruction                            DataType = "instruction"
+	BraggadociousReasoning                              DataType = "reasoning"
+	BraggadociousUser                                   DataType = "user"
+
 )
 
 // The type of event
 type CompleteStreamingResponseItemType string
 
 const (
-	CompleteBegin              CompleteStreamingResponseItemType = "completeBegin"
-	ReasoningToken             CompleteStreamingResponseItemType = "reasoningToken"
-	Token                      CompleteStreamingResponseItemType = "token"
-	TypeCompleteEnd            CompleteStreamingResponseItemType = "completeEnd"
-	TypeError                  CompleteStreamingResponseItemType = "error"
-	TypeMessage                CompleteStreamingResponseItemType = "message"
-	TypeUsage                  CompleteStreamingResponseItemType = "usage"
-	WaitForChannelMessageBegin CompleteStreamingResponseItemType = "waitForChannelMessageBegin"
-	WaitForChannelMessageEnd   CompleteStreamingResponseItemType = "waitForChannelMessageEnd"
+	CompleteBegin                                   CompleteStreamingResponseItemType = "completeBegin"
+
+
+
+
+
+
+
+
+
+	ReasoningToken                                  CompleteStreamingResponseItemType = "reasoningToken"
+	Token                                           CompleteStreamingResponseItemType = "token"
+	TypeCompleteEnd                                 CompleteStreamingResponseItemType = "completeEnd"
+	TypeError                                       CompleteStreamingResponseItemType = "error"
+	TypeMessage                                     CompleteStreamingResponseItemType = "message"
+	TypeUsage                                       CompleteStreamingResponseItemType = "usage"
+	WaitForChannelMessageBegin                      CompleteStreamingResponseItemType = "waitForChannelMessageBegin"
+	WaitForChannelMessageEnd                        CompleteStreamingResponseItemType = "waitForChannelMessageEnd"
 )
 
 type ConversationAttachmentUploadRequestFile struct {

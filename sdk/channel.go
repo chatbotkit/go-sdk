@@ -21,10 +21,10 @@ func NewChannelClient(httpClient *httpclient.Client) *ChannelClient {
 }
 
 // Publish publishes a message to a channel.
-func (c *ChannelClient) Publish(ctx context.Context, channel string, req types.ChannelPublishRequest) (*types.ChannelPublishResponse, error) {
+func (c *ChannelClient) Publish(ctx context.Context, channel string, req types.ChannelMessagePublishRequest) (*types.ChannelMessagePublishResponse, error) {
 	path := fmt.Sprintf("/api/v1/channel/%s/publish", channel)
 
-	var result types.ChannelPublishResponse
+	var result types.ChannelMessagePublishResponse
 	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
 		return nil, err
 	}
