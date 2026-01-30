@@ -189,6 +189,97 @@ for _, response := range result.Responses {
 fmt.Printf("Exit: %d - %s\n", result.Exit.Code, result.Exit.Message)
 ```
 
+### Complete with Tools
+
+Run a conversation with custom tool handlers that execute when the AI calls them:
+
+```go
+// Define your tools
+tools := agent.Tools{
+	"get_weather": {
+		Description: "Get the current weather for a location",
+		Parameters: &agent.Parameters{
+			Properties: map[string]agent.Property{
+				"location": {Type: "string", Description: "The city name"},
+				"unit": {
+					Type:        "string",
+					Description: "Temperature unit",
+					Enum:        []string{"celsius", "fahrenheit"},
+				},
+			},
+			Required: []string{"location"},
+		},
+		Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {
+			location, ok := args["location"].(string)
+			if !ok {
+				return nil, fmt.Errorf("location is required")
+			}
+			return map[string]interface{}{
+				"temperature": 72,
+				"location":    location,
+			}, nil
+		},
+	},
+}
+
+// Stream with tool support
+events, errs := agent.CompleteWithTools(ctx, client, agent.CompleteWithToolsOptions{
+	Model:     "gpt-4o",
+	Backstory: "You are a helpful assistant with access to tools.",
+	Messages:  messages,
+	Tools:     tools,
+})
+
+// Process events including tool calls
+for event := range events {
+	switch e := event.(type) {
+	case agent.TokenAgentEvent:
+		fmt.Print(e.Token)
+	case agent.ToolCallStartEvent:
+		fmt.Printf("[Calling %s...]\n", e.Name)
+	case agent.ToolCallEndEvent:
+		fmt.Printf("[%s returned: %v]\n", e.Name, e.Result)
+	case agent.ToolCallErrorEvent:
+		fmt.Printf("[%s error: %s]\n", e.Name, e.Error)
+	}
+}
+```
+
+### Execute with Tools
+
+Run an autonomous agent task with built-in planning, progress tracking, and exit control:
+
+```go
+events, errs := agent.ExecuteWithTools(ctx, client, agent.ExecuteWithToolsOptions{
+	Model:         "gpt-4o",
+	Backstory:     "You are an autonomous task executor.",
+	MaxIterations: 20,
+	Messages: []agent.Message{
+		{Type: "user", Text: "Research and summarize the topic..."},
+	},
+	Tools: tools,  // Your custom tools
+})
+
+// Process events
+for event := range events {
+	switch e := event.(type) {
+	case agent.IterationEvent:
+		fmt.Printf("=== Iteration %d ===\n", e.Iteration)
+	case agent.TokenAgentEvent:
+		fmt.Print(e.Token)
+	case agent.ToolCallStartEvent:
+		fmt.Printf("[Calling %s...]\n", e.Name)
+	case agent.AgentExitEvent:
+		fmt.Printf("Exit: code=%d, message=%s\n", e.Code, e.Message)
+	}
+}
+```
+
+The `ExecuteWithTools` function automatically includes three system tools:
+- **plan**: Create or update a task execution plan
+- **progress**: Track completed steps and current status
+- **exit**: Exit the execution with a status code
+
 ## Streaming
 
 The SDK supports streaming responses for real-time processing of AI responses. This is useful for showing tokens as they arrive or processing events incrementally.
@@ -246,6 +337,8 @@ if err := <-errs; err != nil {
 | `Conversation.SendStream` | Stream a send message operation |
 | `Conversation.ReceiveStream` | Stream a receive message operation |
 | `agent.CompleteStream` | Stream agent completion |
+| `agent.CompleteWithTools` | Stream agent completion with tool execution |
+| `agent.ExecuteWithTools` | Stream autonomous agent execution with tools |
 
 ## Types Package
 
