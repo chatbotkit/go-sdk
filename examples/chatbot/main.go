@@ -3,7 +3,7 @@
 // This example demonstrates how to:
 // - Create a ChatBotKit client
 // - Run an interactive conversation loop
-// - Stream responses in real-time
+// - Stream responses in real-time using the SDK's typed events
 //
 // Usage:
 //
@@ -14,13 +14,12 @@ package main
 import (
 	"bufio"
 	"context"
-	"encoding/json"
 	"fmt"
 	"os"
 	"strings"
 
-	"github.com/chatbotkit/go-sdk/agent"
 	"github.com/chatbotkit/go-sdk/sdk"
+	"github.com/chatbotkit/go-sdk/types"
 	"github.com/joho/godotenv"
 )
 
@@ -44,13 +43,16 @@ func main() {
 	ctx := context.Background()
 
 	// Initialize conversation history
-	var messages []agent.Message
+	var messages []types.ConversationCompleteRequest1_Message
 
 	// Create a scanner for reading user input
 	scanner := bufio.NewScanner(os.Stdin)
 
 	fmt.Println("ChatBot ready! Type your message and press Enter. Type 'exit' to quit.")
 	fmt.Println()
+
+	// Model to use
+	model := "gpt-4o"
 
 	// Main conversation loop
 	for {
@@ -76,47 +78,31 @@ func main() {
 		}
 
 		// Add user message to history
-		messages = append(messages, agent.Message{
-			Type: "user",
+		messages = append(messages, types.ConversationCompleteRequest1_Message{
+			Type: types.User,
 			Text: userInput,
 		})
 
 		// Print bot prefix
 		fmt.Print("bot: ")
 
-		// Stream the response
-		events, errs := agent.CompleteStream(ctx, client, agent.CompleteOptions{
-			Model:    "gpt-4o",
+		// Stream the response using the SDK's stateless complete
+		events, errs := client.Conversation.CompleteStream(ctx, types.ConversationCompleteRequest1{
+			Model:    &model,
 			Messages: messages,
 		})
 
 		var responseText strings.Builder
 
-		// Process streaming events
+		// Process streaming events - clean typed API, no manual JSON parsing!
 		for event := range events {
-			switch event.Type {
-			case "token":
-				// Parse token event data - nested structure: {"type":"token","data":{"token":"..."}}
-				var tokenData struct {
-					Data struct {
-						Token string `json:"token"`
-					} `json:"data"`
-				}
-				if err := json.Unmarshal(event.Data, &tokenData); err == nil {
-					fmt.Print(tokenData.Data.Token)
-					responseText.WriteString(tokenData.Data.Token)
-				}
-			case "result":
-				// Parse result event data - nested structure: {"type":"result","data":{"text":"..."}}
-				var resultData struct {
-					Data struct {
-						Text string `json:"text"`
-					} `json:"data"`
-				}
-				if err := json.Unmarshal(event.Data, &resultData); err == nil {
-					responseText.Reset()
-					responseText.WriteString(resultData.Data.Text)
-				}
+			switch e := event.(type) {
+			case *sdk.TokenEvent:
+				fmt.Print(e.Token)
+				responseText.WriteString(e.Token)
+			case *sdk.ResultEvent:
+				responseText.Reset()
+				responseText.WriteString(e.Text)
 			}
 		}
 
@@ -127,8 +113,8 @@ func main() {
 		}
 
 		// Add bot response to history
-		messages = append(messages, agent.Message{
-			Type: "bot",
+		messages = append(messages, types.ConversationCompleteRequest1_Message{
+			Type: types.Bot,
 			Text: responseText.String(),
 		})
 

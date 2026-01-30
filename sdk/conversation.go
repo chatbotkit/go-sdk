@@ -95,19 +95,57 @@ func (c *ConversationClient) Delete(ctx context.Context, conversationID string) 
 	return &result, nil
 }
 
-// Complete sends a complete request to continue the conversation with AI.
-// This is the main method for having conversations with bots.
+// Complete runs a stateless conversation completion.
+// This is for simple, one-off conversations where you pass the full message history.
+// No conversation is created or stored on the server.
 //
-// If conversationID is empty, this uses the stateless endpoint that doesn't
-// require a pre-existing conversation. When conversationID is provided, it
-// continues an existing conversation.
-func (c *ConversationClient) Complete(ctx context.Context, conversationID string, req types.ConversationCompleteRequest) (*types.ConversationCompleteResponse, error) {
-	var path string
-	if conversationID != "" {
-		path = fmt.Sprintf("/api/v1/conversation/%s/complete", conversationID)
-	} else {
-		path = "/api/v1/conversation/complete"
+// Use this when you want to:
+// - Run a quick completion without persisting conversation state
+// - Manage conversation history yourself
+// - Build simple chatbots without server-side state
+//
+// For stateful conversations (where the server tracks history), use CompleteMessage instead.
+func (c *ConversationClient) Complete(ctx context.Context, req types.ConversationCompleteRequest1) (*types.ConversationCompleteResponse1, error) {
+	var result types.ConversationCompleteResponse1
+	if err := c.httpClient.Post(ctx, "/api/v1/conversation/complete", req, &result); err != nil {
+		return nil, err
 	}
+	return &result, nil
+}
+
+// CompleteStream runs a stateless streaming conversation completion.
+// Returns events as they arrive, allowing for real-time token streaming.
+//
+// Example:
+//
+//	events, errs := client.Conversation.CompleteStream(ctx, req)
+//	for event := range events {
+//	    switch e := event.(type) {
+//	    case *sdk.TokenEvent:
+//	        fmt.Print(e.Token)
+//	    case *sdk.ResultEvent:
+//	        fmt.Println(e.Text)
+//	    }
+//	}
+//	if err := <-errs; err != nil {
+//	    log.Fatal(err)
+//	}
+func (c *ConversationClient) CompleteStream(ctx context.Context, req types.ConversationCompleteRequest1) (<-chan Event, <-chan error) {
+	rawEvents, rawErrs := c.httpClient.PostStream(ctx, "/api/v1/conversation/complete", req)
+	return wrapStreamEvents(rawEvents, rawErrs)
+}
+
+// CompleteMessage continues an existing conversation with a new message.
+// This is for stateful conversations where the server tracks conversation history.
+//
+// Use this when you want to:
+// - Continue an existing conversation
+// - Let the server manage conversation history
+// - Build multi-turn conversations with persistence
+//
+// For stateless completions (where you pass all messages), use Complete instead.
+func (c *ConversationClient) CompleteMessage(ctx context.Context, conversationID string, req types.ConversationCompleteRequest) (*types.ConversationCompleteResponse, error) {
+	path := fmt.Sprintf("/api/v1/conversation/%s/complete", conversationID)
 
 	var result types.ConversationCompleteResponse
 	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
@@ -116,34 +154,27 @@ func (c *ConversationClient) Complete(ctx context.Context, conversationID string
 	return &result, nil
 }
 
-// CompleteStream sends a complete request and returns a stream of events.
-// This allows processing events as they arrive rather than waiting for the full response.
+// CompleteMessageStream continues an existing conversation with streaming.
+// Returns events as they arrive, allowing for real-time token streaming.
 //
-// If conversationID is empty, this uses the stateless endpoint.
+// Example:
 //
-// Example usage:
-//
-//	events, errs := client.Conversation.CompleteStream(ctx, convID, req)
+//	events, errs := client.Conversation.CompleteMessageStream(ctx, convID, req)
 //	for event := range events {
-//	    switch event.Type {
-//	    case "token":
-//	        // Process partial token
-//	    case "result":
-//	        // Final result
+//	    switch e := event.(type) {
+//	    case *sdk.TokenEvent:
+//	        fmt.Print(e.Token)
+//	    case *sdk.ResultEvent:
+//	        fmt.Println(e.Text)
 //	    }
 //	}
 //	if err := <-errs; err != nil {
-//	    // Handle error
+//	    log.Fatal(err)
 //	}
-func (c *ConversationClient) CompleteStream(ctx context.Context, conversationID string, req types.ConversationCompleteRequest) (<-chan httpclient.StreamEvent, <-chan error) {
-	var path string
-	if conversationID != "" {
-		path = fmt.Sprintf("/api/v1/conversation/%s/complete", conversationID)
-	} else {
-		path = "/api/v1/conversation/complete"
-	}
-
-	return c.httpClient.PostStream(ctx, path, req)
+func (c *ConversationClient) CompleteMessageStream(ctx context.Context, conversationID string, req types.ConversationCompleteRequest) (<-chan Event, <-chan error) {
+	path := fmt.Sprintf("/api/v1/conversation/%s/complete", conversationID)
+	rawEvents, rawErrs := c.httpClient.PostStream(ctx, path, req)
+	return wrapStreamEvents(rawEvents, rawErrs)
 }
 
 // Send sends a user message to the conversation.
