@@ -14,6 +14,7 @@ package main
 import (
 	"bufio"
 	"context"
+	"encoding/json"
 	"fmt"
 	"os"
 	"strings"
@@ -95,16 +96,26 @@ func main() {
 		for event := range events {
 			switch event.Type {
 			case "token":
-				// Print tokens as they arrive
-				if token, ok := event.Data["token"].(string); ok {
-					fmt.Print(token)
-					responseText.WriteString(token)
+				// Parse token event data - nested structure: {"type":"token","data":{"token":"..."}}
+				var tokenData struct {
+					Data struct {
+						Token string `json:"token"`
+					} `json:"data"`
+				}
+				if err := json.Unmarshal(event.Data, &tokenData); err == nil {
+					fmt.Print(tokenData.Data.Token)
+					responseText.WriteString(tokenData.Data.Token)
 				}
 			case "result":
-				// Capture the final result text
-				if text, ok := event.Data["text"].(string); ok {
+				// Parse result event data - nested structure: {"type":"result","data":{"text":"..."}}
+				var resultData struct {
+					Data struct {
+						Text string `json:"text"`
+					} `json:"data"`
+				}
+				if err := json.Unmarshal(event.Data, &resultData); err == nil {
 					responseText.Reset()
-					responseText.WriteString(text)
+					responseText.WriteString(resultData.Data.Text)
 				}
 			}
 		}
