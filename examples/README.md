@@ -47,14 +47,67 @@ user: exit
 Goodbye!
 ```
 
-### Agent with Tools
+### Agent (Script-like Task Execution)
 
-An advanced example demonstrating agent execution with custom tool registration:
+An autonomous agent that completes tasks end-to-end without interactive input:
 
-- Defining tools with JSON Schema parameters
+- Takes an initial prompt/task and runs autonomously until completion
+- Uses built-in default tools (read, write, edit, exec) for file and shell operations
+- Plans and executes steps automatically
+- Exits with a success/failure code when done
+
+**Run the example:**
+
+```bash
+cd examples/agent
+
+# Set your API key
+export CHATBOTKIT_API_SECRET="your-api-key"
+
+# Run with a custom task
+go run main.go "Create a file called hello.txt with the content 'Hello, World!'"
+
+# Or run with the default demo task
+go run main.go
+```
+
+**Example session:**
+
+```
+Starting agent with task: Create a file called hello.txt with the content 'Hello, World!'
+
+--- Iteration 1 ---
+I'll create the file for you.
+
+[write] calling with map[content:Hello, World! path:hello.txt]
+[write] returned: map[success:true]
+
+The file hello.txt has been created with the content "Hello, World!".
+
+[exit] calling with map[code:0 message:Task completed successfully]
+[exit] returned: map[message:Task exiting with code 0: Task completed successfully success:true]
+
+=== Agent exited with code 0 ===
+Message: Task completed successfully
+```
+
+**Default Tools:**
+
+The `agent.DefaultTools()` function provides a standard set of tools:
+
+- `read` - Read file contents with optional line ranges
+- `write` - Write or modify file contents
+- `edit` - Replace exact string occurrences in files
+- `exec` - Execute shell commands with timeout
+
+### Agent with Custom Tools
+
+An example demonstrating interactive chat with custom tool registration:
+
+- Defining custom tools with JSON Schema parameters
 - Registering tool handlers that execute when called
 - Streaming events including tool call start/end notifications
-- Building autonomous agents that can use tools
+- Interactive conversation with tool access
 
 **Run the example:**
 
@@ -125,6 +178,7 @@ You can also run examples from the SDK root directory:
 ```bash
 export CHATBOTKIT_API_SECRET="your-api-key"
 go run ./examples/chatbot
+go run ./examples/agent "Create a file called test.txt"
 go run ./examples/agent-with-tools
 ```
 
@@ -148,7 +202,26 @@ events, errs := agent.CompleteStream(ctx, client, agent.CompleteOptions{
 
 ## Creating Agents with Tools
 
-For more advanced use cases, use `CompleteWithTools` to register custom functions:
+### Using Default Tools
+
+The SDK provides a set of default tools for common file and shell operations:
+
+```go
+// Get the default tools (read, write, edit, exec)
+tools := agent.DefaultTools()
+
+events, errs := agent.ExecuteWithTools(ctx, client, agent.ExecuteWithToolsOptions{
+    Model:         "gpt-4o",
+    Messages:      []agent.Message{{Type: "user", Text: "Create a hello.txt file"}},
+    Backstory:     "You are an autonomous task executor.",
+    Tools:         tools,
+    MaxIterations: 20,
+})
+```
+
+### Using Custom Tools
+
+For interactive conversations with tools, use `CompleteWithTools`:
 
 ```go
 events, errs := agent.CompleteWithTools(ctx, client, agent.CompleteWithToolsOptions{
@@ -159,9 +232,20 @@ events, errs := agent.CompleteWithTools(ctx, client, agent.CompleteWithToolsOpti
 })
 ```
 
-For autonomous task execution with built-in planning and progress tracking:
+### Combining Default and Custom Tools
+
+You can merge default tools with your own custom tools:
 
 ```go
+tools := agent.DefaultTools()
+tools["my_custom_tool"] = agent.ToolDefinition{
+    Description: "My custom tool",
+    Parameters: &agent.Parameters{...},
+    Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {
+        return map[string]interface{}{"result": "done"}, nil
+    },
+}
+
 events, errs := agent.ExecuteWithTools(ctx, client, agent.ExecuteWithToolsOptions{
     Model:         "gpt-4o",
     Messages:      []agent.Message{{Type: "user", Text: "Complete this task..."}},

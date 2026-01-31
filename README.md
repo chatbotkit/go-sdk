@@ -294,6 +294,42 @@ The `ExecuteWithTools` function automatically includes three system tools:
 - **progress**: Track completed steps and current status
 - **exit**: Exit the execution with a status code
 
+### Default Tools
+
+The SDK provides a set of default tools for common file and shell operations:
+
+```go
+// Get the default tools
+tools := agent.DefaultTools()
+
+// Available tools:
+// - read: Read file contents with optional line ranges
+// - write: Write or modify file contents
+// - edit: Replace exact string occurrences in files
+// - exec: Execute shell commands with timeout
+
+events, errs := agent.ExecuteWithTools(ctx, client, agent.ExecuteWithToolsOptions{
+	Model:         "gpt-4o",
+	Backstory:     "You are an autonomous agent.",
+	Messages: []agent.Message{
+		{Type: "user", Text: "Create a file called hello.txt with 'Hello World'"},
+	},
+	Tools:         tools,
+	MaxIterations: 20,
+})
+```
+
+You can also combine default tools with custom tools:
+
+```go
+tools := agent.DefaultTools()
+tools["my_custom_tool"] = agent.ToolDefinition{
+	Description: "My custom tool",
+	Parameters:  &agent.Parameters{...},
+	Handler:     myHandler,
+}
+```
+
 ## Streaming
 
 The SDK supports streaming responses for real-time processing of AI responses. This is useful for showing tokens as they arrive or processing events incrementally.
