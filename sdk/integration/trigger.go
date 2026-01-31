@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewTriggerClient(httpClient *httpclient.Client) *TriggerClient {
 
 // List retrieves a list of all Trigger integrations.
 func (c *TriggerClient) List(ctx context.Context, opts *types.TriggerIntegrationListParams) (*types.TriggerIntegrationListResponse, error) {
-	var query = params.BuildListQuery[types.TriggerIntegrationListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

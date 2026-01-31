@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewMessengerClient(httpClient *httpclient.Client) *MessengerClient {
 
 // List retrieves a list of all Messenger integrations.
 func (c *MessengerClient) List(ctx context.Context, opts *types.IntegrationMessengerListParams) (*types.IntegrationMessengerListResponse, error) {
-	var query = params.BuildListQuery[types.IntegrationMessengerListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

@@ -3,6 +3,7 @@ package sdk
 import (
 	"context"
 	"fmt"
+	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
 	"github.com/chatbotkit/go-sdk/internal/params"
@@ -26,7 +27,7 @@ func NewBotClient(httpClient *httpclient.Client) *BotClient {
 
 // List retrieves a list of all bots.
 func (c *BotClient) List(ctx context.Context, opts *types.BotListParams) (*types.BotListResponse, error) {
-	var query = params.BuildListQuery[types.BotListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

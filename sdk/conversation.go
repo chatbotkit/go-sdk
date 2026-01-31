@@ -3,6 +3,7 @@ package sdk
 import (
 	"context"
 	"fmt"
+	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
 	"github.com/chatbotkit/go-sdk/internal/params"
@@ -26,7 +27,7 @@ func NewConversationClient(httpClient *httpclient.Client) *ConversationClient {
 
 // List retrieves a list of all conversations.
 func (c *ConversationClient) List(ctx context.Context, opts *types.ConversationListParams) (*types.ConversationListResponse, error) {
-	var query = params.BuildListQuery[types.ConversationListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
@@ -263,7 +264,7 @@ func NewConversationMessageClient(httpClient *httpclient.Client) *ConversationMe
 // List retrieves a list of messages in a conversation.
 func (c *ConversationMessageClient) List(ctx context.Context, conversationID string, opts *types.ConversationMessageListParams) (*types.ConversationMessageListResponse, error) {
 	path := fmt.Sprintf("/api/v1/conversation/%s/message/list", conversationID)
-	var query = params.BuildListQuery[types.ConversationMessageListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
 	}

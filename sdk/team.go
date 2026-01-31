@@ -2,6 +2,7 @@ package sdk
 
 import (
 	"context"
+	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
 	"github.com/chatbotkit/go-sdk/internal/params"
@@ -22,7 +23,7 @@ func NewTeamClient(httpClient *httpclient.Client) *TeamClient {
 
 // List retrieves a list of all teams.
 func (c *TeamClient) List(ctx context.Context, opts *types.TeamListParams) (*types.TeamListResponse, error) {
-	var query = params.BuildListQuery[types.TeamListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

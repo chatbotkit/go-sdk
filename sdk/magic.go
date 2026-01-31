@@ -2,6 +2,7 @@ package sdk
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -49,7 +50,7 @@ func NewMagicPromptClient(httpClient *httpclient.Client) *MagicPromptClient {
 
 // List retrieves a list of all magic prompts.
 func (c *MagicPromptClient) List(ctx context.Context, opts *types.MagicPromptListParams) (*types.MagicPromptListResponse, error) {
-	var query = params.BuildListQuery[types.MagicPromptListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

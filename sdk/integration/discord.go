@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewDiscordClient(httpClient *httpclient.Client) *DiscordClient {
 
 // List retrieves a list of all Discord integrations.
 func (c *DiscordClient) List(ctx context.Context, opts *types.IntegrationDiscordListParams) (*types.IntegrationDiscordListResponse, error) {
-	var query = params.BuildListQuery[types.IntegrationDiscordListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

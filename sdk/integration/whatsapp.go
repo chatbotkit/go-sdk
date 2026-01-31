@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewWhatsAppClient(httpClient *httpclient.Client) *WhatsAppClient {
 
 // List retrieves a list of all WhatsApp integrations.
 func (c *WhatsAppClient) List(ctx context.Context, opts *types.IntegrationWhatsAppListParams) (*types.IntegrationWhatsAppListResponse, error) {
-	var query = params.BuildListQuery[types.IntegrationWhatsAppListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

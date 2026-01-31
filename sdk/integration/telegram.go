@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewTelegramClient(httpClient *httpclient.Client) *TelegramClient {
 
 // List retrieves a list of all Telegram integrations.
 func (c *TelegramClient) List(ctx context.Context, opts *types.IntegrationTelegramListParams) (*types.IntegrationTelegramListResponse, error) {
-	var query = params.BuildListQuery[types.IntegrationTelegramListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

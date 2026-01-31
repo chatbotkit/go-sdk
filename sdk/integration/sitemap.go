@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewSitemapClient(httpClient *httpclient.Client) *SitemapClient {
 
 // List retrieves a list of all Sitemap integrations.
 func (c *SitemapClient) List(ctx context.Context, opts *types.IntegrationSitemapListParams) (*types.IntegrationSitemapListResponse, error) {
-	var query = params.BuildListQuery[types.IntegrationSitemapListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

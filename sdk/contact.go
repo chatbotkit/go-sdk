@@ -2,6 +2,7 @@ package sdk
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewContactClient(httpClient *httpclient.Client) *ContactClient {
 
 // List retrieves a list of all contacts.
 func (c *ContactClient) List(ctx context.Context, opts *types.ContactListParams) (*types.ContactListResponse, error) {
-	var query = params.BuildListQuery[types.ContactListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

@@ -2,6 +2,7 @@ package sdk
 
 import (
 	"context"
+	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
 	"github.com/chatbotkit/go-sdk/internal/params"
@@ -37,7 +38,7 @@ func NewEventLogClient(httpClient *httpclient.Client) *EventLogClient {
 
 // List retrieves a list of event logs.
 func (c *EventLogClient) List(ctx context.Context, opts *types.EventLogListParams) (*types.EventLogListResponse, error) {
-	var query = params.BuildListQuery[types.EventLogListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
@@ -58,7 +59,7 @@ type EventLogsExportOptions struct {
 
 // Export exports event logs.
 func (c *EventLogClient) Export(ctx context.Context, opts *EventLogsExportOptions) (*types.EventLogsExportResponse, error) {
-	var query = params.BuildListQuery[types.EventLogsExportParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 		if opts.ConversationID != nil {

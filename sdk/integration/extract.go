@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewExtractClient(httpClient *httpclient.Client) *ExtractClient {
 
 // List retrieves a list of all Extract integrations.
 func (c *ExtractClient) List(ctx context.Context, opts *types.IntegrationExtractListParams) (*types.IntegrationExtractListResponse, error) {
-	var query = params.BuildListQuery[types.IntegrationExtractListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

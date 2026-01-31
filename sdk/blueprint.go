@@ -2,6 +2,7 @@ package sdk
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewBlueprintClient(httpClient *httpclient.Client) *BlueprintClient {
 
 // List retrieves a list of all blueprints.
 func (c *BlueprintClient) List(ctx context.Context, opts *types.BlueprintListParams) (*types.BlueprintListResponse, error) {
-	var query = params.BuildListQuery[types.BlueprintListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

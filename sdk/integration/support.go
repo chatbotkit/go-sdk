@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewSupportClient(httpClient *httpclient.Client) *SupportClient {
 
 // List retrieves a list of all Support integrations.
 func (c *SupportClient) List(ctx context.Context, opts *types.IntegrationSupportListParams) (*types.IntegrationSupportListResponse, error) {
-	var query = params.BuildListQuery[types.IntegrationSupportListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

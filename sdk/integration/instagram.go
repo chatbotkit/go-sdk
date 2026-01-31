@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewInstagramClient(httpClient *httpclient.Client) *InstagramClient {
 
 // List retrieves a list of all Instagram integrations.
 func (c *InstagramClient) List(ctx context.Context, opts *types.IntegrationInstagramListParams) (*types.IntegrationInstagramListResponse, error) {
-	var query = params.BuildListQuery[types.IntegrationInstagramListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

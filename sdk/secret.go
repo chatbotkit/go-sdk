@@ -2,6 +2,7 @@ package sdk
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewSecretClient(httpClient *httpclient.Client) *SecretClient {
 
 // List retrieves a list of all secrets.
 func (c *SecretClient) List(ctx context.Context, opts *types.SecretListParams) (*types.SecretListResponse, error) {
-	var query = params.BuildListQuery[types.SecretListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

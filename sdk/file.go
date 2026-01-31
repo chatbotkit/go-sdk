@@ -3,6 +3,7 @@ package sdk
 import (
 	"context"
 	"fmt"
+	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
 	"github.com/chatbotkit/go-sdk/internal/params"
@@ -23,7 +24,7 @@ func NewFileClient(httpClient *httpclient.Client) *FileClient {
 
 // List retrieves a list of all files.
 func (c *FileClient) List(ctx context.Context, opts *types.FileListParams) (*types.FileListResponse, error) {
-	var query = params.BuildListQuery[types.FileListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

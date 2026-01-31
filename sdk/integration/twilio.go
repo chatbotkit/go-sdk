@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewTwilioClient(httpClient *httpclient.Client) *TwilioClient {
 
 // List retrieves a list of all Twilio integrations.
 func (c *TwilioClient) List(ctx context.Context, opts *types.IntegrationTwilioListParams) (*types.IntegrationTwilioListResponse, error) {
-	var query = params.BuildListQuery[types.IntegrationTwilioListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

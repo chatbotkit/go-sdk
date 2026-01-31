@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewNotionClient(httpClient *httpclient.Client) *NotionClient {
 
 // List retrieves a list of all Notion integrations.
 func (c *NotionClient) List(ctx context.Context, opts *types.IntegrationNotionListParams) (*types.IntegrationNotionListResponse, error) {
-	var query = params.BuildListQuery[types.IntegrationNotionListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

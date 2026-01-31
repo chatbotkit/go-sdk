@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -23,7 +24,7 @@ func NewSlackClient(httpClient *httpclient.Client) *SlackClient {
 
 // List retrieves a list of all Slack integrations.
 func (c *SlackClient) List(ctx context.Context, opts *types.IntegrationSlackListParams) (*types.IntegrationSlackListResponse, error) {
-	var query = params.BuildListQuery[types.IntegrationSlackListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}

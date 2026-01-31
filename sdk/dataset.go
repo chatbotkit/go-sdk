@@ -2,6 +2,7 @@ package sdk
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -29,7 +30,7 @@ func NewDatasetClient(httpClient *httpclient.Client) *DatasetClient {
 
 // List retrieves a list of all datasets.
 func (c *DatasetClient) List(ctx context.Context, opts *types.DatasetListParams) (*types.DatasetListResponse, error) {
-	var query = params.BuildListQuery[types.DatasetListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
@@ -109,7 +110,7 @@ func NewDatasetRecordClient(httpClient *httpclient.Client) *DatasetRecordClient 
 // List retrieves a list of records in a dataset.
 func (c *DatasetRecordClient) List(ctx context.Context, datasetID string, opts *types.DatasetRecordListParams) (*types.DatasetRecordListResponse, error) {
 	path := fmt.Sprintf("/api/v1/dataset/%s/record/list", datasetID)
-	var query = params.BuildListQuery[types.DatasetRecordListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
 	}
@@ -180,7 +181,7 @@ func NewDatasetFileClient(httpClient *httpclient.Client) *DatasetFileClient {
 // List retrieves a list of files attached to a dataset.
 func (c *DatasetFileClient) List(ctx context.Context, datasetID string, opts *types.DatasetFileListParams) (*types.DatasetFileListResponse, error) {
 	path := fmt.Sprintf("/api/v1/dataset/%s/file/list", datasetID)
-	var query = params.BuildListQuery[types.DatasetFileListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
 	}

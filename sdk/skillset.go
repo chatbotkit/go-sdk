@@ -2,6 +2,7 @@ package sdk
 
 import (
 	"context"
+	"net/url"
 	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -26,7 +27,7 @@ func NewSkillsetClient(httpClient *httpclient.Client) *SkillsetClient {
 
 // List retrieves a list of all skillsets.
 func (c *SkillsetClient) List(ctx context.Context, opts *types.SkillsetListParams) (*types.SkillsetListResponse, error) {
-	var query = params.BuildListQuery[types.SkillsetListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
@@ -95,7 +96,7 @@ func NewSkillsetAbilityClient(httpClient *httpclient.Client) *SkillsetAbilityCli
 // List retrieves a list of abilities in a skillset.
 func (c *SkillsetAbilityClient) List(ctx context.Context, skillsetID string, opts *types.SkillsetAbilityListParams) (*types.SkillsetAbilityListResponse, error) {
 	path := fmt.Sprintf("/api/v1/skillset/%s/ability/list", skillsetID)
-	var query = params.BuildListQuery[types.SkillsetAbilityListParamsOrder](nil, nil, nil, nil)
+	query := url.Values{}
 	if opts != nil {
 		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
 	}
