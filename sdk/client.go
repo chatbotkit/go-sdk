@@ -63,6 +63,12 @@ type Client struct {
 	Team *TeamClient
 	// Task provides access to task resources.
 	Task *TaskClient
+	// Space provides access to space resources.
+	Space *SpaceClient
+	// Event provides access to event resources.
+	Event *EventClient
+	// Magic provides access to magic AI generation resources.
+	Magic *MagicClient
 }
 
 // New creates a new ChatBotKit SDK client.
@@ -88,6 +94,9 @@ func New(opts Options) *Client {
 		Integration:  integration.NewClient(httpClient),
 		Team:         NewTeamClient(httpClient),
 		Task:         NewTaskClient(httpClient),
+		Space:        NewSpaceClient(httpClient),
+		Event:        NewEventClient(httpClient),
+		Magic:        NewMagicClient(httpClient),
 	}
 }
 

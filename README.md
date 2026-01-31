@@ -92,6 +92,11 @@ client.Integration.Trigger       // Trigger integrations
 client.Integration.Twilio        // Twilio integrations
 client.Team                      // Team management
 client.Task                      // Task management
+client.Space                     // Space management
+client.Event                     // Event log access
+client.Event.Log                 // Event log operations
+client.Magic                     // Magic AI generation
+client.Magic.Prompt              // Magic prompt templates
 ```
 
 ## Resource Operations

@@ -90,6 +90,21 @@ func TestNewClient(t *testing.T) {
 	if client.Task == nil {
 		t.Error("expected non-nil Task client")
 	}
+	if client.Space == nil {
+		t.Error("expected non-nil Space client")
+	}
+	if client.Event == nil {
+		t.Error("expected non-nil Event client")
+	}
+	if client.Event.Log == nil {
+		t.Error("expected non-nil Event.Log client")
+	}
+	if client.Magic == nil {
+		t.Error("expected non-nil Magic client")
+	}
+	if client.Magic.Prompt == nil {
+		t.Error("expected non-nil Magic.Prompt client")
+	}
 }
 
 func TestNewClientWithOptions(t *testing.T) {
