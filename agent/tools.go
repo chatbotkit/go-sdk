@@ -108,7 +108,7 @@ func DefaultTools() Tools {
 						Description: "The command to execute",
 					},
 					"timeout": {
-						Type:        "integer",
+						Type:        "number",
 						Description: "Timeout in seconds. The command will be killed if it runs longer than this. Default is 30 seconds.",
 					},
 				},
