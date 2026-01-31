@@ -1,19 +1,24 @@
 // Package main provides an example of using the ChatBotKit Go SDK agent with tools.
 //
-// This example demonstrates how to:
-// - Create a ChatBotKit client
-// - Define custom tools with JSON Schema parameters
-// - Run an agent with tool execution support
-// - Handle streaming events including tool calls
+// This example demonstrates how to run an autonomous agent that completes
+// tasks end-to-end using custom tools without requiring interactive input. The agent:
+//
+//   - Takes an initial prompt/task as input
+//   - Uses custom tools (get_current_time, calculate, search_knowledge) to complete the task
+//   - Plans and executes steps autonomously
+//   - Exits when done with a success/failure code
 //
 // Usage:
 //
 //	export CHATBOTKIT_API_SECRET="your-api-key"
+//	go run main.go "What is the current time?"
+//
+// Or run without arguments to use a default demo task:
+//
 //	go run main.go
 package main
 
 import (
-	"bufio"
 	"context"
 	"fmt"
 	"os"
@@ -36,6 +41,14 @@ func main() {
 		os.Exit(1)
 	}
 
+	// Determine the task from command line arguments or use default
+	var task string
+	if len(os.Args) > 1 {
+		task = strings.Join(os.Args[1:], " ")
+	} else {
+		task = "What is the current time and then calculate 42 multiplied by 17?"
+	}
+
 	// Create a ChatBotKit client
 	client := sdk.New(sdk.Options{
 		Secret: apiSecret,
@@ -44,7 +57,10 @@ func main() {
 	// Create a context for API calls
 	ctx := context.Background()
 
-	// Define tools that the agent can use
+	// Model to use
+	model := "claude-sonnet-4.5"
+
+	// Define custom tools that the agent can use
 	tools := agent.Tools{
 		"get_current_time": {
 			Description: "Get the current date and time",
@@ -141,107 +157,82 @@ func main() {
 				}, nil
 			},
 		},
+		"exit": {
+			Description: "Exit the agent when the task is complete",
+			Parameters: &agent.Parameters{
+				Properties: map[string]agent.Property{
+					"code": {
+						Type:        "number",
+						Description: "Exit code (0 for success, non-zero for failure)",
+					},
+					"message": {
+						Type:        "string",
+						Description: "Exit message summarizing what was accomplished",
+					},
+				},
+				Required: []string{"code"},
+			},
+		},
 	}
 
-	// Initialize conversation history
-	var messages []agent.Message
+	// Define the backstory
+	backstory := `You are an autonomous agent that completes tasks efficiently.
+You have access to custom tools for getting the current time, performing calculations, and searching knowledge.
+Work through the task step by step and call the exit function when done.`
 
-	// Create a scanner for reading user input
-	scanner := bufio.NewScanner(os.Stdin)
+	// Initial message with the task
+	messages := []agent.Message{
+		{
+			Type: "user",
+			Text: task,
+		},
+	}
 
-	fmt.Println("Agent with Tools ready! Type your message and press Enter. Type 'exit' to quit.")
+	fmt.Printf("Starting agent with task: %s\n\n", task)
 	fmt.Println("Available tools: get_current_time, calculate, search_knowledge")
 	fmt.Println()
 
-	// Model to use
-	model := "gpt-4o"
+	// Run the agent with tools - this executes until the task is complete
+	events, errs := agent.ExecuteWithTools(ctx, client, agent.ExecuteWithToolsOptions{
+		Model:         model,
+		Messages:      messages,
+		Backstory:     backstory,
+		Tools:         tools,
+		MaxIterations: 20,
+	})
 
-	// Backstory for the agent
-	backstory := `You are a helpful assistant with access to tools. 
-Use the available tools when appropriate to help answer questions:
-- get_current_time: Use when asked about the current time or date
-- calculate: Use for math operations
-- search_knowledge: Use to look up information`
+	// Track the exit code
+	exitCode := 0
 
-	// Main conversation loop
-	for {
-		// Prompt for user input
-		fmt.Print("user: ")
-
-		// Read user input
-		if !scanner.Scan() {
-			break
-		}
-
-		userInput := strings.TrimSpace(scanner.Text())
-
-		// Check for exit command
-		if strings.ToLower(userInput) == "exit" {
-			fmt.Println("Goodbye!")
-			break
-		}
-
-		// Skip empty input
-		if userInput == "" {
-			continue
-		}
-
-		// Add user message to history
-		messages = append(messages, agent.Message{
-			Type: "user",
-			Text: userInput,
-		})
-
-		// Print bot prefix
-		fmt.Print("bot: ")
-
-		// Stream the response with tools
-		events, errs := agent.CompleteWithTools(ctx, client, agent.CompleteWithToolsOptions{
-			Model:     model,
-			Messages:  messages,
-			Backstory: backstory,
-			Tools:     tools,
-		})
-
-		var responseText strings.Builder
-
-		// Process streaming events
-		for event := range events {
-			switch e := event.(type) {
-			case agent.TokenAgentEvent:
-				fmt.Print(e.Token)
-				responseText.WriteString(e.Token)
-			case agent.ResultAgentEvent:
-				responseText.Reset()
-				responseText.WriteString(e.Text)
-			case agent.ToolCallStartEvent:
-				fmt.Printf("\n  [Calling %s with %v...]\n", e.Name, e.Args)
-			case agent.ToolCallEndEvent:
-				fmt.Printf("  [%s returned: %v]\n", e.Name, e.Result)
-			case agent.ToolCallErrorEvent:
-				fmt.Printf("  [%s error: %s]\n", e.Name, e.Error)
+	// Process streaming events
+	for event := range events {
+		switch e := event.(type) {
+		case agent.TokenAgentEvent:
+			fmt.Print(e.Token)
+		case agent.ResultAgentEvent:
+			// Result is the final text after streaming - we already streamed tokens
+		case agent.IterationEvent:
+			fmt.Printf("\n--- Iteration %d ---\n", e.Iteration)
+		case agent.ToolCallStartEvent:
+			fmt.Printf("\n[%s] calling with %v\n", e.Name, e.Args)
+		case agent.ToolCallEndEvent:
+			fmt.Printf("[%s] returned: %v\n", e.Name, e.Result)
+		case agent.ToolCallErrorEvent:
+			fmt.Printf("[%s] error: %s\n", e.Name, e.Error)
+		case agent.AgentExitEvent:
+			fmt.Printf("\n\n=== Agent exited with code %d ===\n", e.Code)
+			if e.Message != "" {
+				fmt.Printf("Message: %s\n", e.Message)
 			}
+			exitCode = e.Code
 		}
-
-		// Check for errors
-		if err := <-errs; err != nil {
-			fmt.Fprintf(os.Stderr, "\nError: %v\n", err)
-			continue
-		}
-
-		// Add bot response to history
-		messages = append(messages, agent.Message{
-			Type: "bot",
-			Text: responseText.String(),
-		})
-
-		// Print newline after response
-		fmt.Println()
 	}
 
-	// Check for scanner errors
-	if err := scanner.Err(); err != nil {
-		fmt.Fprintf(os.Stderr, "Error reading input: %v\n", err)
+	// Check for errors
+	if err := <-errs; err != nil {
+		fmt.Fprintf(os.Stderr, "\nError: %v\n", err)
 		os.Exit(1)
 	}
+
+	os.Exit(exitCode)
 }

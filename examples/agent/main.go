@@ -57,7 +57,7 @@ func main() {
 	ctx := context.Background()
 
 	// Model to use
-	model := "gpt-4o"
+	model := "claude-sonnet-4.5"
 
 	// Get the default tools (read, write, edit, exec)
 	tools := agent.DefaultTools()
