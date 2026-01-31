@@ -81,7 +81,7 @@ func (c *InstagramClient) Update(ctx context.Context, instagramID string, req ty
 	return &result, nil
 }
 
-// Delete deletes a Instagram integration.
+// Delete deletes an Instagram integration.
 func (c *InstagramClient) Delete(ctx context.Context, instagramID string) (*types.IntegrationInstagramDeleteResponse, error) {
 	path := fmt.Sprintf("/api/v1/integration/instagram/%s/delete", instagramID)
 
