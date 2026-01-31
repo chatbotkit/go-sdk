@@ -2,10 +2,11 @@ package integration
 
 import (
 	"context"
-	"fmt"
 	"net/url"
+	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
+	"github.com/chatbotkit/go-sdk/internal/params"
 	"github.com/chatbotkit/go-sdk/types"
 )
 
@@ -21,26 +22,11 @@ func NewSupportClient(httpClient *httpclient.Client) *SupportClient {
 	}
 }
 
-// SupportListOptions are options for listing Support integrations.
-type SupportListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of all Support integrations.
-func (c *SupportClient) List(ctx context.Context, opts *SupportListOptions) (*types.IntegrationSupportListResponse, error) {
+func (c *SupportClient) List(ctx context.Context, opts *types.IntegrationSupportListParams) (*types.IntegrationSupportListResponse, error) {
 	query := url.Values{}
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
 
 	var result types.IntegrationSupportListResponse

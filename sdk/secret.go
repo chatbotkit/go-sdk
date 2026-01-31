@@ -2,10 +2,11 @@ package sdk
 
 import (
 	"context"
-	"fmt"
 	"net/url"
+	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
+	"github.com/chatbotkit/go-sdk/internal/params"
 	"github.com/chatbotkit/go-sdk/types"
 )
 
@@ -21,26 +22,11 @@ func NewSecretClient(httpClient *httpclient.Client) *SecretClient {
 	}
 }
 
-// SecretListOptions are options for listing secrets.
-type SecretListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of all secrets.
-func (c *SecretClient) List(ctx context.Context, opts *SecretListOptions) (*types.SecretListResponse, error) {
+func (c *SecretClient) List(ctx context.Context, opts *types.SecretListParams) (*types.SecretListResponse, error) {
 	query := url.Values{}
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
 
 	var result types.SecretListResponse

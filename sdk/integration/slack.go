@@ -2,10 +2,11 @@ package integration
 
 import (
 	"context"
-	"fmt"
 	"net/url"
+	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
+	"github.com/chatbotkit/go-sdk/internal/params"
 	"github.com/chatbotkit/go-sdk/types"
 )
 
@@ -21,26 +22,11 @@ func NewSlackClient(httpClient *httpclient.Client) *SlackClient {
 	}
 }
 
-// SlackListOptions are options for listing Slack integrations.
-type SlackListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of all Slack integrations.
-func (c *SlackClient) List(ctx context.Context, opts *SlackListOptions) (*types.IntegrationSlackListResponse, error) {
+func (c *SlackClient) List(ctx context.Context, opts *types.IntegrationSlackListParams) (*types.IntegrationSlackListResponse, error) {
 	query := url.Values{}
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
 
 	var result types.IntegrationSlackListResponse

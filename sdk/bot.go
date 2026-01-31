@@ -6,6 +6,7 @@ import (
 	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
+	"github.com/chatbotkit/go-sdk/internal/params"
 	"github.com/chatbotkit/go-sdk/types"
 )
 
@@ -24,26 +25,11 @@ func NewBotClient(httpClient *httpclient.Client) *BotClient {
 	}
 }
 
-// BotListOptions are options for listing bots.
-type BotListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of all bots.
-func (c *BotClient) List(ctx context.Context, opts *BotListOptions) (*types.BotListResponse, error) {
+func (c *BotClient) List(ctx context.Context, opts *types.BotListParams) (*types.BotListResponse, error) {
 	query := url.Values{}
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
 
 	var result types.BotListResponse

@@ -2,10 +2,10 @@ package sdk
 
 import (
 	"context"
-	"fmt"
 	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
+	"github.com/chatbotkit/go-sdk/internal/params"
 	"github.com/chatbotkit/go-sdk/types"
 )
 
@@ -36,26 +36,11 @@ func NewEventLogClient(httpClient *httpclient.Client) *EventLogClient {
 	}
 }
 
-// EventLogListOptions are options for listing event logs.
-type EventLogListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of event logs.
-func (c *EventLogClient) List(ctx context.Context, opts *EventLogListOptions) (*types.EventLogListResponse, error) {
+func (c *EventLogClient) List(ctx context.Context, opts *types.EventLogListParams) (*types.EventLogListResponse, error) {
 	query := url.Values{}
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
 
 	var result types.EventLogListResponse
@@ -66,10 +51,9 @@ func (c *EventLogClient) List(ctx context.Context, opts *EventLogListOptions) (*
 }
 
 // EventLogsExportOptions are options for exporting event logs.
+// This type extends the base list params with additional export-specific fields.
 type EventLogsExportOptions struct {
-	Cursor         *string
-	Order          *string
-	Take           *int
+	types.EventLogsExportParams
 	ConversationID *string
 }
 
@@ -77,15 +61,7 @@ type EventLogsExportOptions struct {
 func (c *EventLogClient) Export(ctx context.Context, opts *EventLogsExportOptions) (*types.EventLogsExportResponse, error) {
 	query := url.Values{}
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 		if opts.ConversationID != nil {
 			query.Set("conversationId", *opts.ConversationID)
 		}

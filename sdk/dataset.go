@@ -2,10 +2,11 @@ package sdk
 
 import (
 	"context"
-	"fmt"
 	"net/url"
+	"fmt"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
+	"github.com/chatbotkit/go-sdk/internal/params"
 	"github.com/chatbotkit/go-sdk/types"
 )
 
@@ -27,26 +28,11 @@ func NewDatasetClient(httpClient *httpclient.Client) *DatasetClient {
 	}
 }
 
-// DatasetListOptions are options for listing datasets.
-type DatasetListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of all datasets.
-func (c *DatasetClient) List(ctx context.Context, opts *DatasetListOptions) (*types.DatasetListResponse, error) {
+func (c *DatasetClient) List(ctx context.Context, opts *types.DatasetListParams) (*types.DatasetListResponse, error) {
 	query := url.Values{}
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
 
 	var result types.DatasetListResponse
@@ -121,27 +107,12 @@ func NewDatasetRecordClient(httpClient *httpclient.Client) *DatasetRecordClient 
 	}
 }
 
-// DatasetRecordListOptions are options for listing records.
-type DatasetRecordListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of records in a dataset.
-func (c *DatasetRecordClient) List(ctx context.Context, datasetID string, opts *DatasetRecordListOptions) (*types.DatasetRecordListResponse, error) {
+func (c *DatasetRecordClient) List(ctx context.Context, datasetID string, opts *types.DatasetRecordListParams) (*types.DatasetRecordListResponse, error) {
 	path := fmt.Sprintf("/api/v1/dataset/%s/record/list", datasetID)
 	query := url.Values{}
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
 	}
 
 	var result types.DatasetRecordListResponse
@@ -207,27 +178,12 @@ func NewDatasetFileClient(httpClient *httpclient.Client) *DatasetFileClient {
 	}
 }
 
-// DatasetFileListOptions are options for listing dataset files.
-type DatasetFileListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of files attached to a dataset.
-func (c *DatasetFileClient) List(ctx context.Context, datasetID string, opts *DatasetFileListOptions) (*types.DatasetFileListResponse, error) {
+func (c *DatasetFileClient) List(ctx context.Context, datasetID string, opts *types.DatasetFileListParams) (*types.DatasetFileListResponse, error) {
 	path := fmt.Sprintf("/api/v1/dataset/%s/file/list", datasetID)
 	query := url.Values{}
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
 	}
 
 	var result types.DatasetFileListResponse
