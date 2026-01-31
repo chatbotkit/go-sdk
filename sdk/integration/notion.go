@@ -3,9 +3,9 @@ package integration
 import (
 	"context"
 	"fmt"
-	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
+	"github.com/chatbotkit/go-sdk/internal/params"
 	"github.com/chatbotkit/go-sdk/types"
 )
 
@@ -21,26 +21,11 @@ func NewNotionClient(httpClient *httpclient.Client) *NotionClient {
 	}
 }
 
-// NotionListOptions are options for listing Notion integrations.
-type NotionListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of all Notion integrations.
-func (c *NotionClient) List(ctx context.Context, opts *NotionListOptions) (*types.IntegrationNotionListResponse, error) {
-	query := url.Values{}
+func (c *NotionClient) List(ctx context.Context, opts *types.IntegrationNotionListParams) (*types.IntegrationNotionListResponse, error) {
+	var query = params.BuildListQuery[types.IntegrationNotionListParamsOrder](nil, nil, nil, nil)
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
 
 	var result types.IntegrationNotionListResponse

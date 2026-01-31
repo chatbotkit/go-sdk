@@ -3,9 +3,9 @@ package sdk
 import (
 	"context"
 	"fmt"
-	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
+	"github.com/chatbotkit/go-sdk/internal/params"
 	"github.com/chatbotkit/go-sdk/types"
 )
 
@@ -24,26 +24,11 @@ func NewConversationClient(httpClient *httpclient.Client) *ConversationClient {
 	}
 }
 
-// ConversationListOptions are options for listing conversations.
-type ConversationListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of all conversations.
-func (c *ConversationClient) List(ctx context.Context, opts *ConversationListOptions) (*types.ConversationListResponse, error) {
-	query := url.Values{}
+func (c *ConversationClient) List(ctx context.Context, opts *types.ConversationListParams) (*types.ConversationListResponse, error) {
+	var query = params.BuildListQuery[types.ConversationListParamsOrder](nil, nil, nil, nil)
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
 
 	var result types.ConversationListResponse
@@ -275,27 +260,12 @@ func NewConversationMessageClient(httpClient *httpclient.Client) *ConversationMe
 	}
 }
 
-// ConversationMessageListOptions are options for listing messages.
-type ConversationMessageListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of messages in a conversation.
-func (c *ConversationMessageClient) List(ctx context.Context, conversationID string, opts *ConversationMessageListOptions) (*types.ConversationMessageListResponse, error) {
+func (c *ConversationMessageClient) List(ctx context.Context, conversationID string, opts *types.ConversationMessageListParams) (*types.ConversationMessageListResponse, error) {
 	path := fmt.Sprintf("/api/v1/conversation/%s/message/list", conversationID)
-	query := url.Values{}
+	var query = params.BuildListQuery[types.ConversationMessageListParamsOrder](nil, nil, nil, nil)
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
 	}
 
 	var result types.ConversationMessageListResponse

@@ -2,10 +2,9 @@ package sdk
 
 import (
 	"context"
-	"fmt"
-	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
+	"github.com/chatbotkit/go-sdk/internal/params"
 	"github.com/chatbotkit/go-sdk/types"
 )
 
@@ -21,26 +20,11 @@ func NewTeamClient(httpClient *httpclient.Client) *TeamClient {
 	}
 }
 
-// TeamListOptions are options for listing teams.
-type TeamListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of all teams.
-func (c *TeamClient) List(ctx context.Context, opts *TeamListOptions) (*types.TeamListResponse, error) {
-	query := url.Values{}
+func (c *TeamClient) List(ctx context.Context, opts *types.TeamListParams) (*types.TeamListResponse, error) {
+	var query = params.BuildListQuery[types.TeamListParamsOrder](nil, nil, nil, nil)
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
 
 	var result types.TeamListResponse

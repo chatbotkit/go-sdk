@@ -3,9 +3,9 @@ package integration
 import (
 	"context"
 	"fmt"
-	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
+	"github.com/chatbotkit/go-sdk/internal/params"
 	"github.com/chatbotkit/go-sdk/types"
 )
 
@@ -21,26 +21,11 @@ func NewTwilioClient(httpClient *httpclient.Client) *TwilioClient {
 	}
 }
 
-// TwilioListOptions are options for listing Twilio integrations.
-type TwilioListOptions struct {
-	Cursor *string
-	Order  *string
-	Take   *int
-}
-
 // List retrieves a list of all Twilio integrations.
-func (c *TwilioClient) List(ctx context.Context, opts *TwilioListOptions) (*types.IntegrationTwilioListResponse, error) {
-	query := url.Values{}
+func (c *TwilioClient) List(ctx context.Context, opts *types.IntegrationTwilioListParams) (*types.IntegrationTwilioListResponse, error) {
+	var query = params.BuildListQuery[types.IntegrationTwilioListParamsOrder](nil, nil, nil, nil)
 	if opts != nil {
-		if opts.Cursor != nil {
-			query.Set("cursor", *opts.Cursor)
-		}
-		if opts.Order != nil {
-			query.Set("order", *opts.Order)
-		}
-		if opts.Take != nil {
-			query.Set("take", fmt.Sprintf("%d", *opts.Take))
-		}
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
 	}
 
 	var result types.IntegrationTwilioListResponse
