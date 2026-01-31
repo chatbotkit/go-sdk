@@ -117,6 +117,17 @@ func (c *BotClient) Downvote(ctx context.Context, botID string, req types.BotDow
 	return &result, nil
 }
 
+// Clone clones a bot.
+func (c *BotClient) Clone(ctx context.Context, botID string, req types.BotCloneRequest) (*types.BotCloneResponse, error) {
+	path := fmt.Sprintf("/api/v1/bot/%s/clone", botID)
+
+	var result types.BotCloneResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
 // BotSessionClient provides access to bot session resources.
 type BotSessionClient struct {
 	httpClient *httpclient.Client

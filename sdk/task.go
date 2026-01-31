@@ -70,6 +70,17 @@ func (c *TaskClient) Create(ctx context.Context, req types.TaskCreateRequest) (*
 	return &result, nil
 }
 
+// Update updates an existing task.
+func (c *TaskClient) Update(ctx context.Context, taskID string, req types.TaskUpdateRequest) (*types.TaskUpdateResponse, error) {
+	path := fmt.Sprintf("/api/v1/task/%s/update", taskID)
+
+	var result types.TaskUpdateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
 // Delete deletes a task.
 func (c *TaskClient) Delete(ctx context.Context, taskID string) (*types.TaskDeleteResponse, error) {
 	path := fmt.Sprintf("/api/v1/task/%s/delete", taskID)

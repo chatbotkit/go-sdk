@@ -16,6 +16,24 @@ type Client struct {
 	Discord *DiscordClient
 	// WhatsApp provides access to WhatsApp integration resources.
 	WhatsApp *WhatsAppClient
+	// Telegram provides access to Telegram integration resources.
+	Telegram *TelegramClient
+	// Messenger provides access to Messenger integration resources.
+	Messenger *MessengerClient
+	// Instagram provides access to Instagram integration resources.
+	Instagram *InstagramClient
+	// Notion provides access to Notion integration resources.
+	Notion *NotionClient
+	// Sitemap provides access to Sitemap integration resources.
+	Sitemap *SitemapClient
+	// Support provides access to Support integration resources.
+	Support *SupportClient
+	// Extract provides access to Extract integration resources.
+	Extract *ExtractClient
+	// Trigger provides access to Trigger integration resources.
+	Trigger *TriggerClient
+	// Twilio provides access to Twilio integration resources.
+	Twilio *TwilioClient
 }
 
 // NewClient creates a new IntegrationClient.
@@ -26,5 +44,14 @@ func NewClient(httpClient *httpclient.Client) *Client {
 		Slack:      NewSlackClient(httpClient),
 		Discord:    NewDiscordClient(httpClient),
 		WhatsApp:   NewWhatsAppClient(httpClient),
+		Telegram:   NewTelegramClient(httpClient),
+		Messenger:  NewMessengerClient(httpClient),
+		Instagram:  NewInstagramClient(httpClient),
+		Notion:     NewNotionClient(httpClient),
+		Sitemap:    NewSitemapClient(httpClient),
+		Support:    NewSupportClient(httpClient),
+		Extract:    NewExtractClient(httpClient),
+		Trigger:    NewTriggerClient(httpClient),
+		Twilio:     NewTwilioClient(httpClient),
 	}
 }

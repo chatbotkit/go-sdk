@@ -57,6 +57,33 @@ func TestNewClient(t *testing.T) {
 	if client.Integration.WhatsApp == nil {
 		t.Error("expected non-nil Integration.WhatsApp client")
 	}
+	if client.Integration.Telegram == nil {
+		t.Error("expected non-nil Integration.Telegram client")
+	}
+	if client.Integration.Messenger == nil {
+		t.Error("expected non-nil Integration.Messenger client")
+	}
+	if client.Integration.Instagram == nil {
+		t.Error("expected non-nil Integration.Instagram client")
+	}
+	if client.Integration.Notion == nil {
+		t.Error("expected non-nil Integration.Notion client")
+	}
+	if client.Integration.Sitemap == nil {
+		t.Error("expected non-nil Integration.Sitemap client")
+	}
+	if client.Integration.Support == nil {
+		t.Error("expected non-nil Integration.Support client")
+	}
+	if client.Integration.Extract == nil {
+		t.Error("expected non-nil Integration.Extract client")
+	}
+	if client.Integration.Trigger == nil {
+		t.Error("expected non-nil Integration.Trigger client")
+	}
+	if client.Integration.Twilio == nil {
+		t.Error("expected non-nil Integration.Twilio client")
+	}
 	if client.Team == nil {
 		t.Error("expected non-nil Team client")
 	}

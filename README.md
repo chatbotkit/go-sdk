@@ -48,7 +48,7 @@ func main() {
 ```
 go.mod                    # Single Go module
 ├── sdk/                  # Main SDK client
-│   └── integration/      # Integration clients (Widget, Slack, Discord, WhatsApp)
+│   └── integration/      # Integration clients (Widget, Slack, Discord, WhatsApp, Telegram, Messenger, Instagram, Notion, Sitemap, Support, Extract, Trigger, Twilio)
 ├── agent/                # Agent execution functionality
 ├── types/                # Generated API types
 └── internal/httpclient/  # Internal HTTP client with streaming support
@@ -67,22 +67,31 @@ client := sdk.New(sdk.Options{
 })
 
 // Access resources
-client.Bot                    // Bot management
-client.Conversation           // Conversation management
-client.Dataset                // Dataset management
-client.Skillset               // Skillset management
-client.File                   // File management
-client.Contact                // Contact management
-client.Secret                 // Secret management
-client.Channel                // Channel operations
-client.Blueprint              // Blueprint management
-client.Integration            // Integration management
-client.Integration.Widget     // Widget integrations
-client.Integration.Slack      // Slack integrations
-client.Integration.Discord    // Discord integrations
-client.Integration.WhatsApp   // WhatsApp integrations
-client.Team                   // Team management
-client.Task                   // Task management
+client.Bot                       // Bot management
+client.Conversation              // Conversation management
+client.Dataset                   // Dataset management
+client.Skillset                  // Skillset management
+client.File                      // File management
+client.Contact                   // Contact management
+client.Secret                    // Secret management
+client.Channel                   // Channel operations
+client.Blueprint                 // Blueprint management
+client.Integration               // Integration management
+client.Integration.Widget        // Widget integrations
+client.Integration.Slack         // Slack integrations
+client.Integration.Discord       // Discord integrations
+client.Integration.WhatsApp      // WhatsApp integrations
+client.Integration.Telegram      // Telegram integrations
+client.Integration.Messenger     // Messenger integrations
+client.Integration.Instagram     // Instagram integrations
+client.Integration.Notion        // Notion integrations
+client.Integration.Sitemap       // Sitemap integrations
+client.Integration.Support       // Support integrations
+client.Integration.Extract       // Extract integrations
+client.Integration.Trigger       // Trigger integrations
+client.Integration.Twilio        // Twilio integrations
+client.Team                      // Team management
+client.Task                      // Task management
 ```
 
 ## Resource Operations
