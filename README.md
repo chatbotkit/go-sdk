@@ -2,6 +2,20 @@
 
 The official Go SDK for [ChatBotKit](https://chatbotkit.com) - a platform for building and deploying conversational AI applications.
 
+## Why ChatBotKit?
+
+**Build lighter, future-proof AI agents.** When you build with ChatBotKit, the heavy lifting happens on our servers—not in your application. This architectural advantage delivers:
+
+- 🪶 **Lightweight Agents**: Your agents stay lean because complex AI processing, model orchestration, and tool execution happen server-side. Less code in your app means faster load times and simpler maintenance.
+
+- 🛡️ **Robust & Streamlined**: Server-side processing provides a more reliable experience with built-in error handling, automatic retries, and consistent behavior across all platforms.
+
+- 🔄 **Backward & Forward Compatible**: As AI technology evolves—new models, new capabilities, new paradigms—your agents automatically benefit. No code changes required on your end.
+
+- 🔮 **Future-Proof**: Agents you build today will remain capable tomorrow. When we add support for new AI models or capabilities, your existing agents gain those powers without any updates to your codebase.
+
+This means you can focus on building great user experiences while ChatBotKit handles the complexity of the ever-changing AI landscape.
+
 ## Installation
 
 ```bash
@@ -293,6 +307,55 @@ The `ExecuteWithTools` function automatically includes three system tools:
 - **plan**: Create or update a task execution plan
 - **progress**: Track completed steps and current status
 - **exit**: Exit the execution with a status code
+
+### Skills Loading
+
+Load skills from local directories and pass them as a feature to the agent. Skills are defined using `SKILL.md` files with front matter containing name and description.
+
+```go
+// Load skills from directories
+skillsResult, err := agent.LoadSkills([]string{"./skills"})
+if err != nil {
+	log.Fatal(err)
+}
+
+// Create the skills feature for the API
+skillsFeature := agent.CreateSkillsFeature(skillsResult.Skills)
+
+// Use in API calls via extensions.features
+events, errs := agent.CompleteWithTools(ctx, client, agent.CompleteWithToolsOptions{
+	Model:     "gpt-4o",
+	Backstory: "You are a helpful assistant.",
+	Messages:  messages,
+	Tools:     tools,
+	// Pass skillsFeature to the API via extensions
+})
+
+// Reload skills when needed
+skillsResult.Reload()
+```
+
+#### SKILL.md Format
+
+Create a `SKILL.md` file in each skill directory:
+
+```markdown
+---
+name: My Skill
+description: A brief description of what this skill does
+---
+
+# My Skill
+
+Additional documentation for the skill...
+```
+
+#### Skills API
+
+- **`LoadSkills(directories)`** - Load skills from directories containing SKILL.md files
+- **`CreateSkillsFeature(skills)`** - Create a feature map for the API
+- **`GetSkills()`** - Get a thread-safe copy of loaded skills
+- **`Reload()`** - Rescan directories for skill changes
 
 ### Default Tools
 

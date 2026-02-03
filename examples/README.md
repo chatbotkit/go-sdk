@@ -171,6 +171,67 @@ tools := agent.Tools{
 }
 ```
 
+### Stateless Agentic Loop
+
+Demonstrates how to manually drive the agentic loop with `MaxIterations: 1`, giving you full control over each iteration:
+
+- Uses simple mock tools (`get_weather`, `get_time`) to demonstrate the pattern
+- Returns control after each iteration for custom logic injection
+- Enables observability, rate limiting, and early termination
+- Mirrors the Node SDK's `stateless-agentic-loop.js` example
+
+**Run the example:**
+
+```bash
+cd examples/stateless-agentic-loop
+
+# Set your API key
+export CHATBOTKIT_API_SECRET="your-api-key"
+
+# Run the example
+go run main.go
+```
+
+**Example session:**
+
+```
+Starting manually-driven agentic loop...
+User: What is the weather in San Francisco and what time is it in Los Angeles?
+---
+
+[Iteration 1]
+
+🔧 Calling get_weather...
+   ✓ get_weather returned
+
+🔧 Calling get_time...
+   ✓ get_time returned
+
+The weather in San Francisco is sunny with a temperature of 72°F and 45% humidity.
+The current time in Los Angeles is 2:30 PM on Monday, January 26, 2026.
+
+→ Agent completed successfully
+```
+
+**When to use this pattern:**
+
+- **Observability**: Log, monitor, or audit each step
+- **Custom logic**: Inject logic between iterations
+- **Rate limiting**: Add delays between API calls
+- **Early termination**: Custom conditions to stop the loop
+- **State persistence**: Save state between iterations
+
+```go
+// Manual agentic loop with iteration control
+for iterationCount < maxIterations {
+    events, errs := agent.ExecuteWithTools(ctx, client, agent.ExecuteWithToolsOptions{
+        // ...
+        MaxIterations: 1, // Return after each iteration
+    })
+    // Process events, add custom logic, decide whether to continue
+}
+```
+
 ## Running Examples from the SDK Root
 
 You can also run examples from the SDK root directory:
