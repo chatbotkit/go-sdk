@@ -49,14 +49,14 @@ func main() {
 	tools := agent.Tools{
 		"get_weather": {
 			Description: "Get the current weather for a location",
-			Parameters: &agent.Parameters{
-				Properties: map[string]agent.Property{
-					"location": {
-						Type:        "string",
-						Description: "The city and state, e.g. San Francisco, CA",
+			Parameters: agent.FunctionParameters{
+				"properties": map[string]any{
+					"location": map[string]any{
+						"type":        "string",
+						"description": "The city and state, e.g. San Francisco, CA",
 					},
 				},
-				Required: []string{"location"},
+				"required": []string{"location"},
 			},
 			// Return mock weather data
 			Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {
@@ -71,14 +71,14 @@ func main() {
 		},
 		"get_time": {
 			Description: "Get the current time for a timezone",
-			Parameters: &agent.Parameters{
-				Properties: map[string]agent.Property{
-					"timezone": {
-						Type:        "string",
-						Description: "The timezone, e.g. America/Los_Angeles",
+			Parameters: agent.FunctionParameters{
+				"properties": map[string]any{
+					"timezone": map[string]any{
+						"type":        "string",
+						"description": "The timezone, e.g. America/Los_Angeles",
 					},
 				},
-				Required: []string{"timezone"},
+				"required": []string{"timezone"},
 			},
 			// Return mock time data
 			Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {

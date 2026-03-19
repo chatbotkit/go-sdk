@@ -12,6 +12,7 @@ import (
 	"os"
 	"os/exec"
 	"strings"
+	"syscall"
 	"time"
 )
 
@@ -34,85 +35,49 @@ func DefaultTools() Tools {
 	return Tools{
 		"read": {
 			Description: "Read the contents of a file. Supports optional line range to read specific sections.",
-			Parameters: &Parameters{
-				Properties: map[string]Property{
-					"path": {
-						Type:        "string",
-						Description: "The file path to read",
-					},
-					"startLine": {
-						Type:        "integer",
-						Description: "The line number to start reading from (1-indexed)",
-					},
-					"endLine": {
-						Type:        "integer",
-						Description: "The line number to end reading at, inclusive (1-indexed)",
-					},
+			Parameters: FunctionParameters{
+				"properties": map[string]any{
+					"path":      map[string]any{"type": "string", "description": "The file path to read"},
+					"startLine": map[string]any{"type": "integer", "description": "The line number to start reading from (1-indexed)"},
+					"endLine":   map[string]any{"type": "integer", "description": "The line number to end reading at, inclusive (1-indexed)"},
 				},
-				Required: []string{"path"},
+				"required": []string{"path"},
 			},
 			Handler: readFileHandler,
 		},
 		"write": {
 			Description: "Write content to a file. Without line parameters, overwrites the entire file. With startLine only, inserts before that line. With startLine and endLine, replaces that range.",
-			Parameters: &Parameters{
-				Properties: map[string]Property{
-					"path": {
-						Type:        "string",
-						Description: "The file path to write to",
-					},
-					"content": {
-						Type:        "string",
-						Description: "The content to write",
-					},
-					"startLine": {
-						Type:        "integer",
-						Description: "The line number to start writing at (1-indexed). If only startLine is provided, content is inserted before this line.",
-					},
-					"endLine": {
-						Type:        "integer",
-						Description: "The line number to end writing at, inclusive (1-indexed). Used with startLine to replace a range of lines.",
-					},
+			Parameters: FunctionParameters{
+				"properties": map[string]any{
+					"path":      map[string]any{"type": "string", "description": "The file path to write to"},
+					"content":   map[string]any{"type": "string", "description": "The content to write"},
+					"startLine": map[string]any{"type": "integer", "description": "The line number to start writing at (1-indexed). If only startLine is provided, content is inserted before this line."},
+					"endLine":   map[string]any{"type": "integer", "description": "The line number to end writing at, inclusive (1-indexed). Used with startLine to replace a range of lines."},
 				},
-				Required: []string{"path", "content"},
+				"required": []string{"path", "content"},
 			},
 			Handler: writeFileHandler,
 		},
 		"edit": {
 			Description: "Edit a file by replacing an exact string occurrence with a new string. Only one occurrence must exist.",
-			Parameters: &Parameters{
-				Properties: map[string]Property{
-					"path": {
-						Type:        "string",
-						Description: "The file path to edit",
-					},
-					"oldString": {
-						Type:        "string",
-						Description: "The exact string to find and replace (must match exactly)",
-					},
-					"newString": {
-						Type:        "string",
-						Description: "The new string to replace with",
-					},
+			Parameters: FunctionParameters{
+				"properties": map[string]any{
+					"path":      map[string]any{"type": "string", "description": "The file path to edit"},
+					"oldString": map[string]any{"type": "string", "description": "The exact string to find and replace (must match exactly)"},
+					"newString": map[string]any{"type": "string", "description": "The new string to replace with"},
 				},
-				Required: []string{"path", "oldString", "newString"},
+				"required": []string{"path", "oldString", "newString"},
 			},
 			Handler: editFileHandler,
 		},
 		"exec": {
 			Description: "Execute a shell command (non-interactive only) using the current sh shell. Commands timeout after the specified duration (default 30 seconds). Use only for commands that run and exit automatically.",
-			Parameters: &Parameters{
-				Properties: map[string]Property{
-					"command": {
-						Type:        "string",
-						Description: "The command to execute",
-					},
-					"timeout": {
-						Type:        "number",
-						Description: "Timeout in seconds. The command will be killed if it runs longer than this. Default is 30 seconds.",
-					},
+			Parameters: FunctionParameters{
+				"properties": map[string]any{
+					"command": map[string]any{"type": "string", "description": "The command to execute"},
+					"timeout": map[string]any{"type": "number", "description": "Timeout in seconds. The command will be killed if it runs longer than this. Default is 30 seconds."},
 				},
-				Required: []string{"command"},
+				"required": []string{"command"},
 			},
 			Handler: execCommandHandler,
 		},
@@ -392,6 +357,15 @@ func execCommandHandler(ctx context.Context, args map[string]interface{}) (inter
 
 	cmd := exec.CommandContext(ctx, "sh", "-c", command)
 
+	// Start the command in its own process group so that cancellation kills
+	// all child processes (e.g. sleep, long-running builds) - not just the
+	// top-level shell.
+	cmd.SysProcAttr = &syscall.SysProcAttr{Setpgid: true}
+	cmd.Cancel = func() error {
+		// Send SIGKILL to the entire process group (negative PID).
+		return syscall.Kill(-cmd.Process.Pid, syscall.SIGKILL)
+	}
+
 	var stdout, stderr bytes.Buffer
 	cmd.Stdout = &stdout
 	cmd.Stderr = &stderr
@@ -402,6 +376,15 @@ func execCommandHandler(ctx context.Context, args map[string]interface{}) (inter
 		return map[string]interface{}{
 			"success": false,
 			"error":   fmt.Sprintf("Command timed out after %d seconds. This may indicate an interactive command.", timeoutSecs),
+		}, nil
+	}
+
+	if ctx.Err() == context.Canceled {
+		return map[string]interface{}{
+			"success": false,
+			"error":   "Command cancelled",
+			"stdout":  stdout.String(),
+			"stderr":  stderr.String(),
 		}, nil
 	}
 

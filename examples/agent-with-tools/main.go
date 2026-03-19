@@ -22,6 +22,7 @@ import (
 
 	"github.com/chatbotkit/go-sdk/agent"
 	"github.com/chatbotkit/go-sdk/sdk"
+	"github.com/chatbotkit/go-sdk/types"
 	"github.com/joho/godotenv"
 )
 
@@ -57,23 +58,17 @@ func main() {
 		},
 		"calculate": {
 			Description: "Perform a mathematical calculation",
-			Parameters: &agent.Parameters{
-				Properties: map[string]agent.Property{
-					"operation": {
-						Type:        "string",
-						Description: "The operation to perform",
-						Enum:        []string{"add", "subtract", "multiply", "divide"},
+			Parameters: agent.FunctionParameters{
+				"properties": map[string]any{
+					"operation": map[string]any{
+						"type":        "string",
+						"description": "The operation to perform",
+						"enum":        []string{"add", "subtract", "multiply", "divide"},
 					},
-					"a": {
-						Type:        "number",
-						Description: "First operand",
-					},
-					"b": {
-						Type:        "number",
-						Description: "Second operand",
-					},
+					"a": map[string]any{"type": "number", "description": "First operand"},
+					"b": map[string]any{"type": "number", "description": "Second operand"},
 				},
-				Required: []string{"operation", "a", "b"},
+				"required": []string{"operation", "a", "b"},
 			},
 			Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {
 				operation, ok := args["operation"].(string)
@@ -116,14 +111,11 @@ func main() {
 		},
 		"search_knowledge": {
 			Description: "Search a knowledge base for information on a topic",
-			Parameters: &agent.Parameters{
-				Properties: map[string]agent.Property{
-					"query": {
-						Type:        "string",
-						Description: "The search query",
-					},
+			Parameters: agent.FunctionParameters{
+				"properties": map[string]any{
+					"query": map[string]any{"type": "string", "description": "The search query"},
 				},
-				Required: []string{"query"},
+				"required": []string{"query"},
 			},
 			Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {
 				query, ok := args["query"].(string)
@@ -197,10 +189,12 @@ Use the available tools when appropriate to help answer questions:
 
 		// Stream the response with tools
 		events, errs := agent.CompleteWithTools(ctx, client, agent.CompleteWithToolsOptions{
-			Model:     model,
-			Messages:  messages,
-			Backstory: backstory,
-			Tools:     tools,
+			Model:    model,
+			Messages: messages,
+			Tools:    tools,
+			Extensions: &types.ConversationCompleteRequestExtensions{
+				Backstory: &backstory,
+			},
 		})
 
 		var responseText strings.Builder
