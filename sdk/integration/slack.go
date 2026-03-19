@@ -2,8 +2,8 @@ package integration
 
 import (
 	"context"
-	"net/url"
 	"fmt"
+	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
 	"github.com/chatbotkit/go-sdk/internal/params"

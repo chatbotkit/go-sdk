@@ -4,13 +4,13 @@ The official Go SDK for [ChatBotKit](https://chatbotkit.com) - a platform for bu
 
 ## Why ChatBotKit?
 
-**Build lighter, future-proof AI agents.** When you build with ChatBotKit, the heavy lifting happens on our servers—not in your application. This architectural advantage delivers:
+**Build lighter, future-proof AI agents.** When you build with ChatBotKit, the heavy lifting happens on our servers-not in your application. This architectural advantage delivers:
 
 - 🪶 **Lightweight Agents**: Your agents stay lean because complex AI processing, model orchestration, and tool execution happen server-side. Less code in your app means faster load times and simpler maintenance.
 
 - 🛡️ **Robust & Streamlined**: Server-side processing provides a more reliable experience with built-in error handling, automatic retries, and consistent behavior across all platforms.
 
-- 🔄 **Backward & Forward Compatible**: As AI technology evolves—new models, new capabilities, new paradigms—your agents automatically benefit. No code changes required on your end.
+- 🔄 **Backward & Forward Compatible**: As AI technology evolves-new models, new capabilities, new paradigms-your agents automatically benefit. No code changes required on your end.
 
 - 🔮 **Future-Proof**: Agents you build today will remain capable tomorrow. When we add support for new AI models or capabilities, your existing agents gain those powers without any updates to your codebase.
 
@@ -226,16 +226,16 @@ Run a conversation with custom tool handlers that execute when the AI calls them
 tools := agent.Tools{
 	"get_weather": {
 		Description: "Get the current weather for a location",
-		Parameters: &agent.Parameters{
-			Properties: map[string]agent.Property{
-				"location": {Type: "string", Description: "The city name"},
-				"unit": {
-					Type:        "string",
-					Description: "Temperature unit",
-					Enum:        []string{"celsius", "fahrenheit"},
+		Parameters: agent.FunctionParameters{
+			"properties": map[string]any{
+				"location": map[string]any{"type": "string", "description": "The city name"},
+				"unit": map[string]any{
+					"type":        "string",
+					"description": "Temperature unit",
+					"enum":        []string{"celsius", "fahrenheit"},
 				},
 			},
-			Required: []string{"location"},
+			"required": []string{"location"},
 		},
 		Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {
 			location, ok := args["location"].(string)
@@ -304,6 +304,7 @@ for event := range events {
 ```
 
 The `ExecuteWithTools` function automatically includes three system tools:
+
 - **plan**: Create or update a task execution plan
 - **progress**: Track completed steps and current status
 - **exit**: Exit the execution with a status code
@@ -388,7 +389,7 @@ You can also combine default tools with custom tools:
 tools := agent.DefaultTools()
 tools["my_custom_tool"] = agent.ToolDefinition{
 	Description: "My custom tool",
-	Parameters:  &agent.Parameters{...},
+	Parameters:  agent.FunctionParameters{"properties": map[string]any{...}},
 	Handler:     myHandler,
 }
 ```
@@ -444,14 +445,14 @@ if err := <-errs; err != nil {
 
 ### Available Streaming Methods
 
-| Method | Description |
-|--------|-------------|
-| `Conversation.CompleteStream` | Stream a conversation completion |
-| `Conversation.SendStream` | Stream a send message operation |
-| `Conversation.ReceiveStream` | Stream a receive message operation |
-| `agent.CompleteStream` | Stream agent completion |
-| `agent.CompleteWithTools` | Stream agent completion with tool execution |
-| `agent.ExecuteWithTools` | Stream autonomous agent execution with tools |
+| Method                        | Description                                  |
+| ----------------------------- | -------------------------------------------- |
+| `Conversation.CompleteStream` | Stream a conversation completion             |
+| `Conversation.SendStream`     | Stream a send message operation              |
+| `Conversation.ReceiveStream`  | Stream a receive message operation           |
+| `agent.CompleteStream`        | Stream agent completion                      |
+| `agent.CompleteWithTools`     | Stream agent completion with tool execution  |
+| `agent.ExecuteWithTools`      | Stream autonomous agent execution with tools |
 
 ## Types Package
 
@@ -493,12 +494,12 @@ if err != nil {
 
 ## Configuration Options
 
-| Option | Description |
-|--------|-------------|
-| `Secret` | API authentication token (required) |
-| `BaseURL` | Custom API base URL |
+| Option        | Description                         |
+| ------------- | ----------------------------------- |
+| `Secret`      | API authentication token (required) |
+| `BaseURL`     | Custom API base URL                 |
 | `RunAsUserID` | Execute requests as a specific user |
-| `Timezone` | Timezone for timestamp handling |
+| `Timezone`    | Timezone for timestamp handling     |
 
 ## Requirements
 

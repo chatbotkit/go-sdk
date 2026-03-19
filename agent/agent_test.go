@@ -5,22 +5,23 @@ import (
 	"testing"
 
 	"github.com/chatbotkit/go-sdk/agent"
+	"github.com/chatbotkit/go-sdk/types"
 )
 
 func TestToolDefinition(t *testing.T) {
 	tools := agent.Tools{
 		"get_weather": {
 			Description: "Get the current weather for a location",
-			Parameters: &agent.Parameters{
-				Properties: map[string]agent.Property{
-					"location": {Type: "string", Description: "The city name"},
-					"unit": {
-						Type:        "string",
-						Description: "Temperature unit",
-						Enum:        []string{"celsius", "fahrenheit"},
+			Parameters: agent.FunctionParameters{
+				"properties": map[string]any{
+					"location": map[string]any{"type": "string", "description": "The city name"},
+					"unit": map[string]any{
+						"type":        "string",
+						"description": "Temperature unit",
+						"enum":        []string{"celsius", "fahrenheit"},
 					},
 				},
-				Required: []string{"location"},
+				"required": []string{"location"},
 			},
 			Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {
 				location := args["location"].(string)
@@ -50,33 +51,43 @@ func TestToolDefinition(t *testing.T) {
 		t.Fatal("expected non-nil parameters")
 	}
 
-	if len(weather.Parameters.Properties) != 2 {
-		t.Errorf("expected 2 properties, got %d", len(weather.Parameters.Properties))
+	props, ok := weather.Parameters["properties"].(map[string]any)
+	if !ok {
+		t.Fatal("expected properties map")
 	}
 
-	locationProp, ok := weather.Parameters.Properties["location"]
+	if len(props) != 2 {
+		t.Errorf("expected 2 properties, got %d", len(props))
+	}
+
+	locationProp, ok := props["location"].(map[string]any)
 	if !ok {
 		t.Fatal("expected location property")
 	}
 
-	if locationProp.Type != "string" {
-		t.Errorf("expected type 'string', got '%s'", locationProp.Type)
+	if locationProp["type"] != "string" {
+		t.Errorf("expected type 'string', got '%v'", locationProp["type"])
 	}
 
-	if len(weather.Parameters.Required) != 1 || weather.Parameters.Required[0] != "location" {
-		t.Errorf("expected required=['location'], got %v", weather.Parameters.Required)
+	required, ok := weather.Parameters["required"].([]string)
+	if !ok {
+		t.Fatal("expected required array")
+	}
+
+	if len(required) != 1 || required[0] != "location" {
+		t.Errorf("expected required=['location'], got %v", required)
 	}
 }
 
 func TestToolHandler(t *testing.T) {
 	tool := agent.ToolDefinition{
 		Description: "Add two numbers",
-		Parameters: &agent.Parameters{
-			Properties: map[string]agent.Property{
-				"a": {Type: "number", Description: "First number"},
-				"b": {Type: "number", Description: "Second number"},
+		Parameters: agent.FunctionParameters{
+			"properties": map[string]any{
+				"a": map[string]any{"type": "number", "description": "First number"},
+				"b": map[string]any{"type": "number", "description": "Second number"},
 			},
-			Required: []string{"a", "b"},
+			"required": []string{"a", "b"},
 		},
 		Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {
 			a := args["a"].(float64)
@@ -157,36 +168,54 @@ func TestAgentEventTypes(t *testing.T) {
 	}
 
 	// Test ResultAgentEvent
-	resultEvent := agent.ResultAgentEvent{Text: "Full response"}
+	resultEvent := agent.ResultAgentEvent{Text: "Full response", EndReason: "stop"}
 	if resultEvent.Text != "Full response" {
 		t.Errorf("unexpected text: %s", resultEvent.Text)
 	}
+	if resultEvent.EndReason != "stop" {
+		t.Errorf("unexpected end reason: %s", resultEvent.EndReason)
+	}
 }
 
-func TestPropertyWithEnum(t *testing.T) {
-	prop := agent.Property{
-		Type:        "string",
-		Description: "The unit of measurement",
-		Enum:        []string{"metric", "imperial"},
+func TestFunctionParametersMap(t *testing.T) {
+	params := agent.FunctionParameters{
+		"properties": map[string]any{
+			"unit": map[string]any{
+				"type":        "string",
+				"description": "The unit of measurement",
+				"enum":        []string{"metric", "imperial"},
+			},
+		},
 	}
 
-	if prop.Type != "string" {
-		t.Errorf("expected type 'string', got '%s'", prop.Type)
+	props, ok := params["properties"].(map[string]any)
+	if !ok {
+		t.Fatal("expected properties map")
 	}
 
-	if len(prop.Enum) != 2 {
-		t.Errorf("expected 2 enum values, got %d", len(prop.Enum))
+	unit, ok := props["unit"].(map[string]any)
+	if !ok {
+		t.Fatal("expected unit property")
 	}
 
-	if prop.Enum[0] != "metric" || prop.Enum[1] != "imperial" {
-		t.Errorf("unexpected enum values: %v", prop.Enum)
+	if unit["type"] != "string" {
+		t.Errorf("expected type 'string', got '%v'", unit["type"])
+	}
+
+	enum, ok := unit["enum"].([]string)
+	if !ok {
+		t.Fatal("expected enum array")
+	}
+
+	if len(enum) != 2 || enum[0] != "metric" || enum[1] != "imperial" {
+		t.Errorf("unexpected enum values: %v", enum)
 	}
 }
 
 func TestCompleteWithToolsOptions(t *testing.T) {
+	backstory := "You are a helpful assistant"
 	opts := agent.CompleteWithToolsOptions{
 		Model:      "gpt-4o",
-		Backstory:  "You are a helpful assistant",
 		BotID:      "bot-123",
 		DatasetID:  "dataset-456",
 		SkillsetID: "skillset-789",
@@ -200,6 +229,9 @@ func TestCompleteWithToolsOptions(t *testing.T) {
 					return "ok", nil
 				},
 			},
+		},
+		Extensions: &types.ConversationCompleteRequestExtensions{
+			Backstory: &backstory,
 		},
 	}
 

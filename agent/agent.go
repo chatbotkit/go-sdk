@@ -1,8 +1,7 @@
 // Package agent provides agent execution functionality for ChatBotKit.
 //
 // This package provides high-level functions for running autonomous AI agents
-// that can use tools and complete complex tasks. It is inspired by the Node.js
-// agent SDK but adapted for Go's concurrency model.
+// that can use tools and complete complex tasks.
 //
 // Example usage:
 //
@@ -35,11 +34,11 @@
 //	tools := agent.Tools{
 //	    "get_weather": {
 //	        Description: "Get the current weather for a location",
-//	        Parameters: &agent.Parameters{
-//	            Properties: map[string]agent.Property{
-//	                "location": {Type: "string", Description: "The city name"},
+//	        Parameters: agent.FunctionParameters{
+//	            "properties": map[string]any{
+//	                "location": map[string]any{"type": "string", "description": "The city name"},
 //	            },
-//	            Required: []string{"location"},
+//	            "required": []string{"location"},
 //	        },
 //	        Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {
 //	            location, _ := args["location"].(string)
@@ -314,26 +313,12 @@ func containsCompletionIndicator(text string) bool {
 }
 
 // ----------------------------------------------------------------------------
-// Tool Registration and Execution (matching Node SDK capabilities)
+// Tool Registration and Execution
 // ----------------------------------------------------------------------------
 
-// Property defines a single parameter property for a tool.
-type Property struct {
-	// Type is the JSON Schema type (string, number, integer, boolean, object, array).
-	Type string `json:"type"`
-	// Description explains what this property is for.
-	Description string `json:"description,omitempty"`
-	// Enum is an optional list of allowed values.
-	Enum []string `json:"enum,omitempty"`
-}
-
-// Parameters defines the JSON Schema parameters for a tool.
-type Parameters struct {
-	// Properties are the parameter definitions.
-	Properties map[string]Property `json:"properties"`
-	// Required lists the names of required properties.
-	Required []string `json:"required,omitempty"`
-}
+// FunctionParameters describes the JSON Schema parameters for a tool.
+// Follows the same convention as the OpenAI Go SDK.
+type FunctionParameters = map[string]any
 
 // ToolHandler is the function signature for tool handlers.
 // It receives the context and parsed arguments, and returns a result or error.
@@ -343,8 +328,9 @@ type ToolHandler func(ctx context.Context, args map[string]interface{}) (interfa
 type ToolDefinition struct {
 	// Description explains what the tool does.
 	Description string
-	// Parameters defines the JSON Schema for the tool's input.
-	Parameters *Parameters
+	// Parameters defines the JSON Schema for the tool's input as a
+	// map[string]any with standard JSON Schema shape (properties, required, etc.).
+	Parameters FunctionParameters
 	// Handler is the function to execute when the tool is called.
 	Handler ToolHandler
 }
@@ -406,9 +392,25 @@ func (TokenAgentEvent) agentEventType() string { return "token" }
 // ResultAgentEvent wraps a result for the agent event stream.
 type ResultAgentEvent struct {
 	Text string
+	// EndReason indicates why the completion ended. Known values from the
+	// API: "stop" (model finished naturally), "activity" (tool calls in
+	// progress), "iteration" (server iteration limit), "length" (token
+	// limit), "error".
+	EndReason string
 }
 
 func (ResultAgentEvent) agentEventType() string { return "result" }
+
+// MessageAgentEvent is emitted when the server appends a message to the
+// conversation (type "message"). ExecuteWithTools tracks these to build the
+// live conversation history.
+type MessageAgentEvent struct {
+	Type string
+	Text string
+	Meta map[string]interface{}
+}
+
+func (e MessageAgentEvent) agentEventType() string { return "message" }
 
 // OtherAgentEvent represents any other event type not explicitly handled.
 type OtherAgentEvent struct {
@@ -437,8 +439,6 @@ type CompleteWithToolsOptions struct {
 	Model string
 	// Messages are the conversation messages.
 	Messages []Message
-	// Backstory provides context about the AI's role and behavior.
-	Backstory string
 	// BotID is the optional bot ID to use.
 	BotID string
 	// DatasetID is the optional dataset ID to use.
@@ -447,6 +447,8 @@ type CompleteWithToolsOptions struct {
 	SkillsetID string
 	// Tools are the tools available for the agent to use.
 	Tools Tools
+	// Extensions provides inline backstory, datasets, skillsets, and features.
+	Extensions *types.ConversationCompleteRequestExtensions
 }
 
 // CompleteWithTools runs a streaming conversation completion with tool support.
@@ -480,27 +482,28 @@ func CompleteWithTools(ctx context.Context, client *sdk.Client, opts CompleteWit
 
 				channelToTool[channel] = toolInfo{name: name, tool: tool}
 
-				// Build parameters
+				// Build parameters from the FunctionParameters map
 				params := types.IndigoParameters{
 					Type:       types.IndigoObject,
 					Properties: make(map[string]interface{}),
 				}
 
 				if tool.Parameters != nil {
-					for propName, prop := range tool.Parameters.Properties {
-						propDef := map[string]interface{}{
-							"type": prop.Type,
+					if props, ok := tool.Parameters["properties"].(map[string]any); ok {
+						for propName, v := range props {
+							if prop, ok := v.(map[string]any); ok {
+								params.Properties[propName] = prop
+							}
 						}
-						if prop.Description != "" {
-							propDef["description"] = prop.Description
-						}
-						if len(prop.Enum) > 0 {
-							propDef["enum"] = prop.Enum
-						}
-						params.Properties[propName] = propDef
 					}
-					if len(tool.Parameters.Required) > 0 {
-						params.Required = tool.Parameters.Required
+					if req, ok := tool.Parameters["required"].([]string); ok {
+						params.Required = req
+					} else if req, ok := tool.Parameters["required"].([]any); ok {
+						for _, r := range req {
+							if s, ok := r.(string); ok {
+								params.Required = append(params.Required, s)
+							}
+						}
 					}
 				}
 
@@ -534,9 +537,6 @@ func CompleteWithTools(ctx context.Context, client *sdk.Client, opts CompleteWit
 		if opts.Model != "" {
 			req.Model = &opts.Model
 		}
-		if opts.Backstory != "" {
-			req.Backstory = &opts.Backstory
-		}
 		if opts.BotID != "" {
 			req.BotID = &opts.BotID
 		}
@@ -547,6 +547,20 @@ func CompleteWithTools(ctx context.Context, client *sdk.Client, opts CompleteWit
 			req.SkillsetID = &opts.SkillsetID
 		}
 
+		// Pass extensions (backstory, inline datasets/skillsets/features)
+		// through to the server.
+		if opts.Extensions != nil {
+			req.Extensions = opts.Extensions
+		}
+
+		// Always cap each individual server call at one iteration so the
+		// client-side loop in ExecuteWithTools retains full control over
+		// continuation, message injection, and exit handling.
+		one := int64(1)
+		req.Limits = &types.ConversationCompleteRequestLimits{
+			Iterations: &one,
+		}
+
 		// Start the stream
 		rawEvents, rawErrs := client.HTTPClient().PostStream(ctx, "/api/v1/conversation/complete", req)
 
@@ -554,6 +568,15 @@ func CompleteWithTools(ctx context.Context, client *sdk.Client, opts CompleteWit
 		var wg sync.WaitGroup
 		toolEventQueue := make(chan AgentEvent, 100)
 		drainDone := make(chan struct{})
+
+		// Ensure all tool goroutines finish and the drain goroutine exits
+		// before we close the events channel (deferred above). This prevents
+		// the drain goroutine from sending on a closed channel.
+		defer func() {
+			wg.Wait()
+			close(toolEventQueue)
+			<-drainDone
+		}()
 
 		// Goroutine to drain tool events
 		go func() {
@@ -611,7 +634,6 @@ func CompleteWithTools(ctx context.Context, client *sdk.Client, opts CompleteWit
 								publishMsg = map[string]interface{}{"data": result}
 							}
 
-							// Send event to queue with context cancellation check
 							select {
 							case toolEventQueue <- toolEvent:
 							case <-ctx.Done():
@@ -639,13 +661,6 @@ func CompleteWithTools(ctx context.Context, client *sdk.Client, opts CompleteWit
 			}
 		}
 
-		// Wait for all tool handlers to complete, then close the queue
-		wg.Wait()
-		close(toolEventQueue)
-
-		// Wait for drain goroutine to finish
-		<-drainDone
-
 		// Forward any error from the raw stream
 		if err := <-rawErrs; err != nil {
 			errs <- err
@@ -672,10 +687,25 @@ func convertStreamEvent(raw httpclient.StreamEvent) AgentEvent {
 		var data struct {
 			Data struct {
 				Text string `json:"text"`
+				End  struct {
+					Reason string `json:"reason"`
+				} `json:"end"`
 			} `json:"data"`
 		}
 		if err := json.Unmarshal(raw.Data, &data); err == nil {
-			return ResultAgentEvent{Text: data.Data.Text}
+			return ResultAgentEvent{Text: data.Data.Text, EndReason: data.Data.End.Reason}
+		}
+
+	case "message":
+		var data struct {
+			Data struct {
+				Type string                 `json:"type"`
+				Text string                 `json:"text"`
+				Meta map[string]interface{} `json:"meta"`
+			} `json:"data"`
+		}
+		if err := json.Unmarshal(raw.Data, &data); err == nil {
+			return MessageAgentEvent{Type: data.Data.Type, Text: data.Data.Text, Meta: data.Data.Meta}
 		}
 	}
 
@@ -701,6 +731,14 @@ type ExecuteWithToolsOptions struct {
 	Tools Tools
 	// MaxIterations is the maximum number of execution iterations.
 	MaxIterations int
+	// Extensions provides inline datasets, skillsets, and features.
+	// The backstory within extensions is overridden by the system instruction;
+	// all other extension fields are passed through to each complete call.
+	Extensions *types.ConversationCompleteRequestExtensions
+	// Inbox is an optional channel of messages injected while the agent is
+	// running. Messages are drained between iterations and appended to the
+	// conversation history so the model sees them on the next API call.
+	Inbox <-chan string
 }
 
 // ExecuteWithTools runs an agent task in a loop until exit is called.
@@ -722,31 +760,33 @@ func ExecuteWithTools(ctx context.Context, client *sdk.Client, opts ExecuteWithT
 
 		maxIterations := opts.MaxIterations
 		if maxIterations == 0 {
-			maxIterations = 50
+			maxIterations = 100
 		}
-
-		messages := make([]Message, len(opts.Messages))
-		copy(messages, opts.Messages)
 
 		var exitResult *AgentExitEvent
 		var exitMu sync.Mutex
+
+		// abortCancel is wired to the context passed to CompleteWithTools so
+		// that a hard abort can immediately cancel the current API call and
+		// kill any running tool processes.
+		var abortCancel context.CancelFunc
 
 		// Create system tools
 		systemTools := Tools{
 			"plan": {
 				Description: "Create or update a plan for approaching the task. Break down the task into clear, actionable steps. Use this at the start and whenever you need to revise your approach.",
-				Parameters: &Parameters{
-					Properties: map[string]Property{
-						"steps": {
-							Type:        "array",
-							Description: "Array of step descriptions in order of execution",
+				Parameters: FunctionParameters{
+					"properties": map[string]any{
+						"steps": map[string]any{
+							"type":        "array",
+							"description": "Array of step descriptions in order of execution",
 						},
-						"rationale": {
-							Type:        "string",
-							Description: "Brief explanation of the plan approach",
+						"rationale": map[string]any{
+							"type":        "string",
+							"description": "Brief explanation of the plan approach",
 						},
 					},
-					Required: []string{"steps"},
+					"required": []string{"steps"},
 				},
 				Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {
 					steps, _ := args["steps"].([]interface{})
@@ -760,23 +800,23 @@ func ExecuteWithTools(ctx context.Context, client *sdk.Client, opts ExecuteWithT
 			},
 			"progress": {
 				Description: "Update progress on the current task. Use this to track completed steps, report current status, and identify blockers.",
-				Parameters: &Parameters{
-					Properties: map[string]Property{
-						"completed": {
-							Type:        "array",
-							Description: "Steps that have been completed",
+				Parameters: FunctionParameters{
+					"properties": map[string]any{
+						"completed": map[string]any{
+							"type":        "array",
+							"description": "Steps that have been completed",
 						},
-						"current": {
-							Type:        "string",
-							Description: "Current step being worked on",
+						"current": map[string]any{
+							"type":        "string",
+							"description": "Current step being worked on",
 						},
-						"blockers": {
-							Type:        "array",
-							Description: "Any issues preventing progress",
+						"blockers": map[string]any{
+							"type":        "array",
+							"description": "Any issues preventing progress",
 						},
-						"nextSteps": {
-							Type:        "array",
-							Description: "Next actions to take",
+						"nextSteps": map[string]any{
+							"type":        "array",
+							"description": "Next actions to take",
 						},
 					},
 				},
@@ -790,18 +830,18 @@ func ExecuteWithTools(ctx context.Context, client *sdk.Client, opts ExecuteWithT
 			},
 			"exit": {
 				Description: "Exit the task execution with a status code and optional message. Status code 0 indicates success, non-zero indicates failure. Use this when all the tasks are complete or cannot proceed.",
-				Parameters: &Parameters{
-					Properties: map[string]Property{
-						"code": {
-							Type:        "integer",
-							Description: "Exit status code (0 = success, non-zero = failure)",
+				Parameters: FunctionParameters{
+					"properties": map[string]any{
+						"code": map[string]any{
+							"type":        "integer",
+							"description": "Exit status code (0 = success, non-zero = failure)",
 						},
-						"message": {
-							Type:        "string",
-							Description: "Optional message explaining the exit reason",
+						"message": map[string]any{
+							"type":        "string",
+							"description": "Optional message explaining the exit reason",
 						},
 					},
-					Required: []string{"code"},
+					"required": []string{"code"},
 				},
 				Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {
 					code := 0
@@ -824,13 +864,46 @@ func ExecuteWithTools(ctx context.Context, client *sdk.Client, opts ExecuteWithT
 					return map[string]interface{}{"success": true, "message": msg}, nil
 				},
 			},
+			"abort": {
+				Description: "Immediately abort the current task. Use this when the user explicitly asks to stop, cancel, or abort the current operation. Set hard to true to kill running processes immediately.",
+				Parameters: FunctionParameters{
+					"properties": map[string]any{
+						"reason": map[string]any{
+							"type":        "string",
+							"description": "Brief explanation of why the task is being aborted",
+						},
+						"hard": map[string]any{
+							"type":        "boolean",
+							"description": "If true, immediately kill running processes. If false (default), finish the current operation gracefully.",
+						},
+					},
+				},
+				Handler: func(ctx context.Context, args map[string]interface{}) (interface{}, error) {
+					reason := "aborted by user request"
+					if r, ok := args["reason"].(string); ok && r != "" {
+						reason = r
+					}
+
+					exitMu.Lock()
+					exitResult = &AgentExitEvent{Code: 1, Message: reason}
+					exitMu.Unlock()
+
+					if hard, _ := args["hard"].(bool); hard {
+						if abortCancel != nil {
+							abortCancel()
+						}
+					}
+
+					return map[string]interface{}{"success": true, "message": "Task aborted: " + reason}, nil
+				},
+			},
 		}
 
 		// Merge user tools with system tools (system tools take precedence to prevent override)
 		allTools := make(Tools)
 		for name, tool := range opts.Tools {
 			// Skip user tools that would override system tools
-			if name == "plan" || name == "progress" || name == "exit" {
+			if name == "plan" || name == "progress" || name == "exit" || name == "abort" {
 				continue
 			}
 			allTools[name] = tool
@@ -839,8 +912,9 @@ func ExecuteWithTools(ctx context.Context, client *sdk.Client, opts ExecuteWithT
 			allTools[name] = tool
 		}
 
-		// Build system instruction
-		systemInstruction := opts.Backstory + `
+		// Build system instruction: backstory is passed as extensions.backstory so
+		// it layers on top of any configured bot backstory.
+		systemInstruction := strings.TrimSpace(opts.Backstory + `
 
 # Task Execution Guidelines
 
@@ -850,23 +924,51 @@ The goal is to complete the assigned task efficiently and effectively. Follow th
 2. **Track Progress**: Regularly use the 'progress' function to update status and identify issues
 3. **Use Tools**: Leverage available tools to accomplish each step of your plan
 4. **Exit When Done**: Call the 'exit' function with code 0 when successful, or non-zero code if unable to complete
-5. **Be Autonomous**: Work through the task systematically without waiting for additional input
-`
+5. **Abort**: If the user asks you to stop, cancel, or abort, call the 'abort' function immediately. Use hard=true if processes are running that need to be killed right away.
+6. **Be Autonomous**: Work through the task systematically without waiting for additional input
+7. **Be Responsive**: If the user sends a new message while you are working, acknowledge it briefly and adjust your approach if needed. Always prioritize user input over your current plan.
+`)
+
+		// Build extensions: spread the caller's extensions and override backstory
+		// with the system instruction.
+		completeExtensions := &types.ConversationCompleteRequestExtensions{
+			Backstory: &systemInstruction,
+		}
+		if opts.Extensions != nil {
+			completeExtensions.Datasets = opts.Extensions.Datasets
+			completeExtensions.Skillsets = opts.Extensions.Skillsets
+			completeExtensions.Features = opts.Extensions.Features
+		}
+
+		// @note the caller's slice is copied by value. Appended messages (from
+		// tool results and inbox drains) are local to this goroutine.
+		messages := opts.Messages
 
 		iteration := 0
 
-		for iteration < maxIterations {
-			exitMu.Lock()
-			hasExited := exitResult != nil
-			exitMu.Unlock()
-
-			if hasExited {
+		for iteration < maxIterations && exitResult == nil {
+			if ctx.Err() != nil {
+				exitMu.Lock()
+				exitResult = &AgentExitEvent{Code: 1, Message: "Task execution aborted"}
+				exitMu.Unlock()
 				break
+			}
+
+			// Drain any messages that arrived since the last iteration so the
+			// model sees them in the next API call.
+			if opts.Inbox != nil {
+				for draining := true; draining; {
+					select {
+					case msg := <-opts.Inbox:
+						messages = append(messages, Message{Type: "user", Text: msg})
+					default:
+						draining = false
+					}
+				}
 			}
 
 			iteration++
 
-			// Emit iteration event
 			select {
 			case events <- IterationEvent{Iteration: iteration}:
 			case <-ctx.Done():
@@ -874,27 +976,33 @@ The goal is to complete the assigned task efficiently and effectively. Follow th
 				return
 			}
 
-			// Run completion with tools
-			completeEvents, completeErrs := CompleteWithTools(ctx, client, CompleteWithToolsOptions{
+			// Create a child context for this iteration's CompleteWithTools
+			// call. Hard abort cancels this context to kill running processes
+			// without affecting the outer ExecuteWithTools loop.
+			var iterCtx context.Context
+			iterCtx, abortCancel = context.WithCancel(ctx)
+
+			completeEvents, completeErrs := CompleteWithTools(iterCtx, client, CompleteWithToolsOptions{
 				Model:      opts.Model,
 				Messages:   messages,
-				Backstory:  systemInstruction,
 				BotID:      opts.BotID,
 				DatasetID:  opts.DatasetID,
 				SkillsetID: opts.SkillsetID,
 				Tools:      allTools,
+				Extensions: completeExtensions,
 			})
 
-			// Forward events and capture bot response
-			var responseText strings.Builder
+			var lastEndReason string
+
 			for event := range completeEvents {
-				// Capture text from result events to track conversation history
-				if result, ok := event.(ResultAgentEvent); ok {
-					responseText.Reset()
-					responseText.WriteString(result.Text)
+				// Track conversation history via message events, mirroring
+				if msg, ok := event.(MessageAgentEvent); ok {
+					messages = append(messages, Message{Type: msg.Type, Text: msg.Text, Meta: msg.Meta})
 				}
-				if token, ok := event.(TokenAgentEvent); ok {
-					responseText.WriteString(token.Token)
+
+				// Capture the end reason from result events.
+				if r, ok := event.(ResultAgentEvent); ok && r.EndReason != "" {
+					lastEndReason = r.EndReason
 				}
 
 				select {
@@ -905,34 +1013,38 @@ The goal is to complete the assigned task efficiently and effectively. Follow th
 				}
 			}
 
-			// Check for errors
 			if err := <-completeErrs; err != nil {
-				errs <- err
-				return
+				// Context cancellation from hard abort is expected - don't
+				// propagate it as an error since exitResult is already set.
+				if ctx.Err() == nil && exitResult != nil {
+					// Hard abort cancelled iterCtx but outer ctx is fine.
+					abortCancel()
+				} else {
+					abortCancel()
+					errs <- err
+					return
+				}
+			} else {
+				abortCancel()
 			}
 
-			// Add bot response to conversation history
-			if responseText.Len() > 0 {
-				messages = append(messages, Message{
-					Type: "bot",
-					Text: responseText.String(),
-				})
-			}
-
-			// Check if exit was called
 			exitMu.Lock()
-			hasExited = exitResult != nil
+			hasExited := exitResult != nil
 			exitMu.Unlock()
 
 			if hasExited {
 				break
 			}
 
-			// Add continuation message
-			messages = append(messages, Message{
-				Type: "user",
-				Text: "Continue with the next step of your plan. If all steps are complete, call exit with the appropriate status code.",
-			})
+			// The API returns end.reason in the result event. When the reason
+			// is "stop" the model finished naturally without pending tool
+			// calls - continuing would produce empty iterations endlessly.
+			if lastEndReason == "stop" {
+				exitMu.Lock()
+				exitResult = &AgentExitEvent{Code: 0}
+				exitMu.Unlock()
+				break
+			}
 		}
 
 		// Emit final exit event
