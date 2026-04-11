@@ -57,12 +57,26 @@ type Client struct {
 	Channel *ChannelClient
 	// Blueprint provides access to blueprint resources.
 	Blueprint *BlueprintClient
+	// Graphql provides access to GraphQL operations.
+	Graphql *GraphqlClient
 	// Integration provides access to integration resources.
 	Integration *integration.Client
+	// Memory provides access to memory resources.
+	Memory *MemoryClient
+	// Partner provides access to partner resources.
+	Partner *PartnerClient
+	// Platform provides access to platform resources.
+	Platform *PlatformClient
+	// Policy provides access to policy resources.
+	Policy *PolicyClient
+	// Portal provides access to portal resources.
+	Portal *PortalClient
 	// Team provides access to team resources.
 	Team *TeamClient
 	// Task provides access to task resources.
 	Task *TaskClient
+	// Usage provides access to usage resources.
+	Usage *UsageClient
 	// Space provides access to space resources.
 	Space *SpaceClient
 	// Event provides access to event resources.
@@ -91,9 +105,16 @@ func New(opts Options) *Client {
 		Contact:      NewContactClient(httpClient),
 		Channel:      NewChannelClient(httpClient),
 		Blueprint:    NewBlueprintClient(httpClient),
+		Graphql:      NewGraphqlClient(httpClient),
 		Integration:  integration.NewClient(httpClient),
+		Memory:       NewMemoryClient(httpClient),
+		Partner:      NewPartnerClient(httpClient),
+		Platform:     NewPlatformClient(httpClient),
+		Policy:       NewPolicyClient(httpClient),
+		Portal:       NewPortalClient(httpClient),
 		Team:         NewTeamClient(httpClient),
 		Task:         NewTaskClient(httpClient),
+		Usage:        NewUsageClient(httpClient),
 		Space:        NewSpaceClient(httpClient),
 		Event:        NewEventClient(httpClient),
 		Magic:        NewMagicClient(httpClient),

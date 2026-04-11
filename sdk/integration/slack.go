@@ -77,3 +77,14 @@ func (c *SlackClient) Delete(ctx context.Context, slackID string) (*types.Integr
 	}
 	return &result, nil
 }
+
+// Setup sets up a Slack integration.
+func (c *SlackClient) Setup(ctx context.Context, slackID string) (*types.IntegrationSlackSetupResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/slack/%s/setup", slackID)
+
+	var result types.IntegrationSlackSetupResponse
+	if err := c.httpClient.Post(ctx, path, types.IntegrationSlackSetupRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

@@ -77,3 +77,14 @@ func (c *WidgetClient) Delete(ctx context.Context, widgetID string) (*types.Inte
 	}
 	return &result, nil
 }
+
+// Setup sets up a Widget integration.
+func (c *WidgetClient) Setup(ctx context.Context, widgetID string) (*types.IntegrationWidgetSetupResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/widget/%s/setup", widgetID)
+
+	var result types.IntegrationWidgetSetupResponse
+	if err := c.httpClient.Post(ctx, path, types.IntegrationWidgetSetupRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

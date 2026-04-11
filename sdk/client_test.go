@@ -42,8 +42,59 @@ func TestNewClient(t *testing.T) {
 	if client.Blueprint == nil {
 		t.Error("expected non-nil Blueprint client")
 	}
+	if client.Graphql == nil {
+		t.Error("expected non-nil Graphql client")
+	}
 	if client.Integration == nil {
 		t.Error("expected non-nil Integration client")
+	}
+	if client.Memory == nil {
+		t.Error("expected non-nil Memory client")
+	}
+	if client.Partner == nil {
+		t.Error("expected non-nil Partner client")
+	}
+	if client.Partner.User == nil {
+		t.Error("expected non-nil Partner.User client")
+	}
+	if client.Partner.User.Token == nil {
+		t.Error("expected non-nil Partner.User.Token client")
+	}
+	if client.Platform == nil {
+		t.Error("expected non-nil Platform client")
+	}
+	if client.Platform.Model == nil {
+		t.Error("expected non-nil Platform.Model client")
+	}
+	if client.Platform.Ability == nil {
+		t.Error("expected non-nil Platform.Ability client")
+	}
+	if client.Platform.Action == nil {
+		t.Error("expected non-nil Platform.Action client")
+	}
+	if client.Platform.Doc == nil {
+		t.Error("expected non-nil Platform.Doc client")
+	}
+	if client.Platform.Manual == nil {
+		t.Error("expected non-nil Platform.Manual client")
+	}
+	if client.Platform.Tutorial == nil {
+		t.Error("expected non-nil Platform.Tutorial client")
+	}
+	if client.Platform.Secret == nil {
+		t.Error("expected non-nil Platform.Secret client")
+	}
+	if client.Platform.Example == nil {
+		t.Error("expected non-nil Platform.Example client")
+	}
+	if client.Platform.Report == nil {
+		t.Error("expected non-nil Platform.Report client")
+	}
+	if client.Policy == nil {
+		t.Error("expected non-nil Policy client")
+	}
+	if client.Portal == nil {
+		t.Error("expected non-nil Portal client")
 	}
 	if client.Integration.Widget == nil {
 		t.Error("expected non-nil Integration.Widget client")
@@ -89,6 +140,12 @@ func TestNewClient(t *testing.T) {
 	}
 	if client.Task == nil {
 		t.Error("expected non-nil Task client")
+	}
+	if client.Usage == nil {
+		t.Error("expected non-nil Usage client")
+	}
+	if client.Usage.Series == nil {
+		t.Error("expected non-nil Usage.Series client")
 	}
 	if client.Space == nil {
 		t.Error("expected non-nil Space client")

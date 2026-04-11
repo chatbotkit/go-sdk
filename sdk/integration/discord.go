@@ -77,3 +77,14 @@ func (c *DiscordClient) Delete(ctx context.Context, discordID string) (*types.In
 	}
 	return &result, nil
 }
+
+// Setup sets up a Discord integration.
+func (c *DiscordClient) Setup(ctx context.Context, discordID string) (*types.IntegrationDiscordSetupResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/discord/%s/setup", discordID)
+
+	var result types.IntegrationDiscordSetupResponse
+	if err := c.httpClient.Post(ctx, path, types.IntegrationDiscordSetupRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

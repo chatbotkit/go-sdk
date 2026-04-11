@@ -88,3 +88,14 @@ func (c *BlueprintClient) Clone(ctx context.Context, blueprintID string, req typ
 	}
 	return &result, nil
 }
+
+// ListResources lists resources associated with a blueprint.
+func (c *BlueprintClient) ListResources(ctx context.Context, blueprintID string) (*types.BlueprintResourceListResponse, error) {
+	path := fmt.Sprintf("/api/v1/blueprint/%s/resource/list", blueprintID)
+
+	var result types.BlueprintResourceListResponse
+	if err := c.httpClient.Get(ctx, path, nil, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

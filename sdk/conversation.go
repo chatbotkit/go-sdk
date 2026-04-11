@@ -13,15 +13,21 @@ import (
 // ConversationClient provides access to conversation resources.
 type ConversationClient struct {
 	httpClient *httpclient.Client
+	// Attachment provides access to conversation attachment resources.
+	Attachment *ConversationAttachmentClient
 	// Message provides access to conversation message resources.
 	Message *ConversationMessageClient
+	// Session provides access to conversation session resources.
+	Session *ConversationSessionClient
 }
 
 // NewConversationClient creates a new ConversationClient.
 func NewConversationClient(httpClient *httpclient.Client) *ConversationClient {
 	return &ConversationClient{
 		httpClient: httpClient,
+		Attachment: NewConversationAttachmentClient(httpClient),
 		Message:    NewConversationMessageClient(httpClient),
+		Session:    NewConversationSessionClient(httpClient),
 	}
 }
 
@@ -161,6 +167,26 @@ func (c *ConversationClient) CompleteMessageStream(ctx context.Context, conversa
 	path := fmt.Sprintf("/api/v1/conversation/%s/complete", conversationID)
 	rawEvents, rawErrs := c.httpClient.PostStream(ctx, path, req)
 	return wrapStreamEvents(rawEvents, rawErrs)
+}
+
+// Dispatch runs a stateless conversation in the background.
+func (c *ConversationClient) Dispatch(ctx context.Context, req types.ConversationDispatchRequest) (*types.ConversationDispatchResponse, error) {
+	var result types.ConversationDispatchResponse
+	if err := c.httpClient.Post(ctx, "/api/v1/conversation/dispatch", req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// DispatchMessage runs a stateful conversation in the background.
+func (c *ConversationClient) DispatchMessage(ctx context.Context, conversationID string, req types.StatefulConversationDispatchRequest) (*types.StatefulConversationDispatchResponse, error) {
+	path := fmt.Sprintf("/api/v1/conversation/%s/dispatch", conversationID)
+
+	var result types.StatefulConversationDispatchResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
 }
 
 // Send sends a user message to the conversation.
@@ -315,6 +341,70 @@ func (c *ConversationMessageClient) Delete(ctx context.Context, conversationID, 
 
 	var result types.ConversationMessageDeleteResponse
 	if err := c.httpClient.Post(ctx, path, types.ConversationMessageDeleteRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Upvote upvotes a conversation message.
+func (c *ConversationMessageClient) Upvote(ctx context.Context, conversationID, messageID string, req types.ConversationMessageUpvoteRequest) (*types.ConversationMessageUpvoteResponse, error) {
+	path := fmt.Sprintf("/api/v1/conversation/%s/message/%s/upvote", conversationID, messageID)
+
+	var result types.ConversationMessageUpvoteResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Downvote downvotes a conversation message.
+func (c *ConversationMessageClient) Downvote(ctx context.Context, conversationID, messageID string, req types.ConversationMessageDownvoteRequest) (*types.ConversationMessageDownvoteResponse, error) {
+	path := fmt.Sprintf("/api/v1/conversation/%s/message/%s/downvote", conversationID, messageID)
+
+	var result types.ConversationMessageDownvoteResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// ConversationAttachmentClient provides access to conversation attachment resources.
+type ConversationAttachmentClient struct {
+	httpClient *httpclient.Client
+}
+
+// NewConversationAttachmentClient creates a new ConversationAttachmentClient.
+func NewConversationAttachmentClient(httpClient *httpclient.Client) *ConversationAttachmentClient {
+	return &ConversationAttachmentClient{httpClient: httpClient}
+}
+
+// Upload creates an attachment upload request.
+func (c *ConversationAttachmentClient) Upload(ctx context.Context, attachmentID string, req types.ConversationAttachmentUploadRequest) (*types.ConversationAttachmentUploadResponse, error) {
+	path := fmt.Sprintf("/api/v1/Attachment/%s/upload", attachmentID)
+
+	var result types.ConversationAttachmentUploadResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// ConversationSessionClient provides access to conversation session resources.
+type ConversationSessionClient struct {
+	httpClient *httpclient.Client
+}
+
+// NewConversationSessionClient creates a new ConversationSessionClient.
+func NewConversationSessionClient(httpClient *httpclient.Client) *ConversationSessionClient {
+	return &ConversationSessionClient{httpClient: httpClient}
+}
+
+// Create creates a conversation session.
+func (c *ConversationSessionClient) Create(ctx context.Context, conversationID string, req types.ConversationSessionCreateRequest) (*types.ConversationSessionCreateResponse, error) {
+	path := fmt.Sprintf("/api/v1/conversation/%s/session/create", conversationID)
+
+	var result types.ConversationSessionCreateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
 		return nil, err
 	}
 	return &result, nil

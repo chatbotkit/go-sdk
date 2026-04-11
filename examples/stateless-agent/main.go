@@ -1,7 +1,7 @@
-// Package main demonstrates how to manually drive the agentic loop using the
-// ChatBotKit Go SDK with MaxIterations set to 1.
+// Package main demonstrates how to manually drive the Go agent package with
+// CompleteWithTools, one server iteration at a time.
 //
-// Normally, when you use ExecuteWithTools, the SDK handles multiple agentic
+// Normally, when you use CompleteWithTools or ExecuteWithTools, the SDK/server handles multiple agentic
 // iterations automatically (tool calls, function executions, and continued
 // responses). This is convenient and efficient for most use cases.
 //
@@ -15,13 +15,13 @@
 //  5. State persistence - You need to persist state between iterations
 //  6. Long running tasks - You want to handle long tasks between steps
 //
-// By setting MaxIterations to 1, the agent will return after each agentic
-// iteration, allowing you to decide whether to continue the loop.
+// By using CompleteWithTools, each call is capped to one server iteration,
+// allowing you to inspect end.reason and decide whether to continue the loop.
 //
 // Usage:
 //
 //	export CHATBOTKIT_API_SECRET="your-api-key"
-//	go run main.go
+//	go run ./examples/stateless-agent
 package main
 
 import (
@@ -100,28 +100,23 @@ func main() {
 	maxIterations := 10 // Safety limit to prevent infinite loops
 	iterationCount := 0
 
-	fmt.Println("Starting manually-driven agentic loop...")
+	fmt.Println("Starting manually-driven agent loop...")
 	fmt.Println("User:", messages[0].Text)
 	fmt.Println("---")
 
-	// The manual agentic loop
+	// The manual agent loop
 	for iterationCount < maxIterations {
 		iterationCount++
 		fmt.Printf("\n[Iteration %d]\n", iterationCount)
 
-		// Run a single iteration with MaxIterations=1
-		// This ensures we get control back after each agentic step
-		events, errs := agent.ExecuteWithTools(context.Background(), client, agent.ExecuteWithToolsOptions{
-			Model:         "claude-4.5-sonnet",
-			Messages:      messages,
-			Tools:         tools,
-			MaxIterations: 1, // Return after each iteration
+		events, errs := agent.CompleteWithTools(context.Background(), client, agent.CompleteWithToolsOptions{
+			Model:    "claude-4.5-sonnet",
+			Messages: messages,
+			Tools:    tools,
 		})
 
-		var exitCode int
-		var exitMessage string
 		var responseText string
-		hasExited := false
+		var endReason string
 
 		// Process events from this iteration
 		for event := range events {
@@ -131,16 +126,15 @@ func main() {
 				responseText += e.Token
 			case agent.ResultAgentEvent:
 				responseText = e.Text
+				endReason = e.EndReason
+			case agent.MessageAgentEvent:
+				messages = append(messages, agent.Message{Type: e.Type, Text: e.Text, Meta: e.Meta})
 			case agent.ToolCallStartEvent:
 				fmt.Printf("\n🔧 Calling %s...\n", e.Name)
 			case agent.ToolCallEndEvent:
 				fmt.Printf("   ✓ %s returned\n", e.Name)
 			case agent.ToolCallErrorEvent:
 				fmt.Printf("   ✗ %s error: %s\n", e.Name, e.Error)
-			case agent.AgentExitEvent:
-				hasExited = true
-				exitCode = e.Code
-				exitMessage = e.Message
 			}
 		}
 
@@ -157,35 +151,20 @@ func main() {
 		// - Persist intermediate state
 		// - Transform or filter the response
 
-		// Check if the agent signaled completion via exit
-		if hasExited {
-			if exitCode == 0 {
-				fmt.Printf("\n→ Agent completed successfully")
-				if exitMessage != "" {
-					fmt.Printf(": %s", exitMessage)
-				}
-				fmt.Println()
-			} else {
-				fmt.Printf("\n→ Agent exited with code %d: %s\n", exitCode, exitMessage)
-			}
+		fmt.Printf("\nEnd reason: %s\n", endReason)
+		fmt.Printf("Response text: %s\n", displayResponseText(responseText))
+
+		if endReason == "iteration" {
+			fmt.Println("→ Model hit iteration limit, continuing manually...")
+			continue
+		}
+		if endReason == "stop" {
+			fmt.Println("→ Model completed naturally")
 			break
 		}
 
-		// Add bot response to messages for next iteration
-		if responseText != "" {
-			messages = append(messages, agent.Message{
-				Type: "bot",
-				Text: responseText,
-			})
-		}
-
-		// Add continuation prompt
-		messages = append(messages, agent.Message{
-			Type: "user",
-			Text: "Continue. If you are done, call the exit function.",
-		})
-
-		fmt.Println("\n→ Iteration limit hit, continuing manually...")
+		fmt.Printf("→ Stopping after end reason: %s\n", endReason)
+		break
 	}
 
 	if iterationCount >= maxIterations {
@@ -210,4 +189,12 @@ func main() {
 		}
 		fmt.Printf("%s: %s\n", prefix, text)
 	}
+}
+
+func displayResponseText(text string) string {
+	if text == "" {
+		return "(activity only)"
+	}
+
+	return text
 }

@@ -78,6 +78,28 @@ func (c *FileClient) Delete(ctx context.Context, fileID string) (*types.FileDele
 	return &result, nil
 }
 
+// Upload creates a file upload request.
+func (c *FileClient) Upload(ctx context.Context, fileID string, req types.FileUploadRequest) (*types.FileUploadResponse, error) {
+	path := fmt.Sprintf("/api/v1/file/%s/upload", fileID)
+
+	var result types.FileUploadResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Download creates a file download request.
+func (c *FileClient) Download(ctx context.Context, fileID string) (*types.FileDownloadResponse, error) {
+	path := fmt.Sprintf("/api/v1/file/%s/download", fileID)
+
+	var result types.FileDownloadResponse
+	if err := c.httpClient.Get(ctx, path, nil, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
 // Sync syncs a file.
 func (c *FileClient) Sync(ctx context.Context, fileID string) (*types.FileSyncResponse, error) {
 	path := fmt.Sprintf("/api/v1/file/%s/sync", fileID)

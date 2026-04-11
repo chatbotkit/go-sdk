@@ -151,3 +151,14 @@ func (c *SkillsetAbilityClient) Delete(ctx context.Context, skillsetID, abilityI
 	}
 	return &result, nil
 }
+
+// Execute executes an ability.
+func (c *SkillsetAbilityClient) Execute(ctx context.Context, skillsetID, abilityID string, req types.SkillsetAbilityExecuteRequest) (*types.SkillsetAbilityExecuteResponse, error) {
+	path := fmt.Sprintf("/api/v1/skillset/%s/ability/%s/execute", skillsetID, abilityID)
+
+	var result types.SkillsetAbilityExecuteResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

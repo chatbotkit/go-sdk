@@ -30,3 +30,12 @@ func (c *ChannelClient) Publish(ctx context.Context, channel string, req types.C
 	}
 	return &result, nil
 }
+
+// Subscribe subscribes to channel messages.
+func (c *ChannelClient) Subscribe(ctx context.Context, channel string, req *types.ChannelMessagesSubscribeRequest) (<-chan httpclient.StreamEvent, <-chan error) {
+	path := fmt.Sprintf("/api/v1/channel/%s/subscribe", channel)
+	if req == nil {
+		req = &types.ChannelMessagesSubscribeRequest{}
+	}
+	return c.httpClient.PostStream(ctx, path, req)
+}

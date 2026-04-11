@@ -171,19 +171,19 @@ tools := agent.Tools{
 }
 ```
 
-### Stateless Agentic Loop
+### Stateless Agent
 
-Demonstrates how to manually drive the agentic loop with `MaxIterations: 1`, giving you full control over each iteration:
+Demonstrates how to manually drive `agent.CompleteWithTools`, giving you full control over each iteration:
 
 - Uses simple mock tools (`get_weather`, `get_time`) to demonstrate the pattern
 - Returns control after each iteration for custom logic injection
 - Enables observability, rate limiting, and early termination
-- Mirrors the Node SDK's `stateless-agentic-loop.js` example
+- Explicitly uses the Go agent package rather than the lower-level conversation client
 
 **Run the example:**
 
 ```bash
-cd examples/stateless-agentic-loop
+cd examples/stateless-agent
 
 # Set your API key
 export CHATBOTKIT_API_SECRET="your-api-key"
@@ -195,7 +195,7 @@ go run main.go
 **Example session:**
 
 ```
-Starting manually-driven agentic loop...
+Starting manually-driven agent loop...
 User: What is the weather in San Francisco and what time is it in Los Angeles?
 ---
 
@@ -210,7 +210,11 @@ User: What is the weather in San Francisco and what time is it in Los Angeles?
 The weather in San Francisco is sunny with a temperature of 72°F and 45% humidity.
 The current time in Los Angeles is 2:30 PM on Monday, January 26, 2026.
 
-→ Agent completed successfully
+End reason: stop
+Response text: The weather in San Francisco is sunny with a temperature of 72°F and 45% humidity.
+The current time in Los Angeles is 2:30 PM on Monday, January 26, 2026.
+
+→ Model completed naturally
 ```
 
 **When to use this pattern:**
@@ -218,17 +222,44 @@ The current time in Los Angeles is 2:30 PM on Monday, January 26, 2026.
 - **Observability**: Log, monitor, or audit each step
 - **Custom logic**: Inject logic between iterations
 - **Rate limiting**: Add delays between API calls
+
+### Stateful Agent
+
+Demonstrates the same manually-driven `agent.CompleteWithTools` pattern against a persisted ChatBotKit conversation:
+
+- Creates the conversation up front with its model configuration
+- Sends the initial user prompt once and then omits `text` on later iterations
+- Lets the server maintain the full conversation history between iterations
+- Uses the Go agent package even though the similarly named Node example uses the lower-level conversation client
+
+**Run the example:**
+
+```bash
+cd examples/stateful-agent
+
+# Set your API key
+export CHATBOTKIT_API_SECRET="your-api-key"
+
+# Run the example
+go run main.go
+```
+
+**When to use this pattern:**
+
+- **Persisted history**: Keep the conversation state on the server
+- **Remote orchestration**: Continue a long-running conversation by ID
+- **Recovery**: Resume work without reconstructing a local message array
+- **Observability**: Inspect the final persisted messages after the loop finishes
 - **Early termination**: Custom conditions to stop the loop
 - **State persistence**: Save state between iterations
 
 ```go
-// Manual agentic loop with iteration control
+// Manual agent loop with iteration control
 for iterationCount < maxIterations {
-    events, errs := agent.ExecuteWithTools(ctx, client, agent.ExecuteWithToolsOptions{
+    events, errs := agent.CompleteWithTools(ctx, client, agent.CompleteWithToolsOptions{
         // ...
-        MaxIterations: 1, // Return after each iteration
     })
-    // Process events, add custom logic, decide whether to continue
+    // Inspect end.reason, add custom logic, decide whether to continue
 }
 ```
 
