@@ -13,12 +13,24 @@ import (
 // ContactClient provides access to contact resources.
 type ContactClient struct {
 	httpClient *httpclient.Client
+	// Conversation provides access to contact conversation resources.
+	Conversation *ContactConversationClient
+	// Secret provides access to contact secret resources.
+	Secret *ContactSecretClient
+	// Space provides access to contact space resources.
+	Space *ContactSpaceClient
+	// Task provides access to contact task resources.
+	Task *ContactTaskClient
 }
 
 // NewContactClient creates a new ContactClient.
 func NewContactClient(httpClient *httpclient.Client) *ContactClient {
 	return &ContactClient{
-		httpClient: httpClient,
+		httpClient:   httpClient,
+		Conversation: NewContactConversationClient(httpClient),
+		Secret:       NewContactSecretClient(httpClient),
+		Space:        NewContactSpaceClient(httpClient),
+		Task:         NewContactTaskClient(httpClient),
 	}
 }
 
@@ -73,6 +85,152 @@ func (c *ContactClient) Delete(ctx context.Context, contactID string) (*types.Co
 
 	var result types.ContactDeleteResponse
 	if err := c.httpClient.Post(ctx, path, types.ContactDeleteRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Ensure ensures a contact exists.
+func (c *ContactClient) Ensure(ctx context.Context, req types.ContactEnsureRequest) (*types.ContactEnsureResponse, error) {
+	var result types.ContactEnsureResponse
+	if err := c.httpClient.Post(ctx, "/api/v1/contact/ensure", req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// ContactConversationClient provides access to contact conversation resources.
+type ContactConversationClient struct {
+	httpClient *httpclient.Client
+}
+
+// NewContactConversationClient creates a new ContactConversationClient.
+func NewContactConversationClient(httpClient *httpclient.Client) *ContactConversationClient {
+	return &ContactConversationClient{httpClient: httpClient}
+}
+
+// List retrieves conversations for a contact.
+func (c *ContactConversationClient) List(ctx context.Context, contactID string, opts *types.ContactConversationListParams) (*types.ContactConversationListResponse, error) {
+	query := url.Values{}
+	if opts != nil {
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
+	}
+
+	path := fmt.Sprintf("/api/v1/contact/%s/conversation/list", contactID)
+
+	var result types.ContactConversationListResponse
+	if err := c.httpClient.Get(ctx, path, query, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// ContactSecretClient provides access to contact secret resources.
+type ContactSecretClient struct {
+	httpClient *httpclient.Client
+}
+
+// NewContactSecretClient creates a new ContactSecretClient.
+func NewContactSecretClient(httpClient *httpclient.Client) *ContactSecretClient {
+	return &ContactSecretClient{httpClient: httpClient}
+}
+
+// List retrieves secrets for a contact.
+func (c *ContactSecretClient) List(ctx context.Context, contactID string, opts *types.ContactSecretListParams) (*types.ContactSecretListResponse, error) {
+	query := url.Values{}
+	if opts != nil {
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
+	}
+
+	path := fmt.Sprintf("/api/v1/contact/%s/secret/list", contactID)
+
+	var result types.ContactSecretListResponse
+	if err := c.httpClient.Get(ctx, path, query, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Revoke revokes a contact secret.
+func (c *ContactSecretClient) Revoke(ctx context.Context, contactID, secretID string) (*types.ContactSecretRevokeResponse, error) {
+	path := fmt.Sprintf("/api/v1/contact/%s/secret/%s/revoke", contactID, secretID)
+
+	var result types.ContactSecretRevokeResponse
+	if err := c.httpClient.Post(ctx, path, map[string]interface{}{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Verify verifies a contact secret.
+func (c *ContactSecretClient) Verify(ctx context.Context, contactID, secretID string) (*types.ContactSecretVerifyResponse, error) {
+	path := fmt.Sprintf("/api/v1/contact/%s/secret/%s/verify", contactID, secretID)
+
+	var result types.ContactSecretVerifyResponse
+	if err := c.httpClient.Post(ctx, path, map[string]interface{}{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Authenticate authenticates a contact secret.
+func (c *ContactSecretClient) Authenticate(ctx context.Context, contactID, secretID string) (*types.ContactSecretAuthenticateResponse, error) {
+	path := fmt.Sprintf("/api/v1/contact/%s/secret/%s/authenticate", contactID, secretID)
+
+	var result types.ContactSecretAuthenticateResponse
+	if err := c.httpClient.Post(ctx, path, map[string]interface{}{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// ContactSpaceClient provides access to contact space resources.
+type ContactSpaceClient struct {
+	httpClient *httpclient.Client
+}
+
+// NewContactSpaceClient creates a new ContactSpaceClient.
+func NewContactSpaceClient(httpClient *httpclient.Client) *ContactSpaceClient {
+	return &ContactSpaceClient{httpClient: httpClient}
+}
+
+// List retrieves spaces for a contact.
+func (c *ContactSpaceClient) List(ctx context.Context, contactID string, opts *types.ContactSpaceListParams) (*types.ContactSpaceListResponse, error) {
+	query := url.Values{}
+	if opts != nil {
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
+	}
+
+	path := fmt.Sprintf("/api/v1/contact/%s/space/list", contactID)
+
+	var result types.ContactSpaceListResponse
+	if err := c.httpClient.Get(ctx, path, query, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// ContactTaskClient provides access to contact task resources.
+type ContactTaskClient struct {
+	httpClient *httpclient.Client
+}
+
+// NewContactTaskClient creates a new ContactTaskClient.
+func NewContactTaskClient(httpClient *httpclient.Client) *ContactTaskClient {
+	return &ContactTaskClient{httpClient: httpClient}
+}
+
+// List retrieves tasks for a contact.
+func (c *ContactTaskClient) List(ctx context.Context, contactID string, opts *types.ContactTaskListParams) (*types.ContactTaskListResponse, error) {
+	query := url.Values{}
+	if opts != nil {
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
+	}
+
+	path := fmt.Sprintf("/api/v1/contact/%s/task/list", contactID)
+
+	var result types.ContactTaskListResponse
+	if err := c.httpClient.Get(ctx, path, query, &result); err != nil {
 		return nil, err
 	}
 	return &result, nil

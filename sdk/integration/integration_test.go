@@ -29,6 +29,10 @@ func TestIntegrationClients(t *testing.T) {
 		{"Extract", client.Integration.Extract},
 		{"Trigger", client.Integration.Trigger},
 		{"Twilio", client.Integration.Twilio},
+		{"Email", client.Integration.Email},
+		{"McpServer", client.Integration.McpServer},
+		{"Teams", client.Integration.Teams},
+		{"GoogleChat", client.Integration.GoogleChat},
 	}
 
 	for _, tc := range integrations {

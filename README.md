@@ -309,6 +309,40 @@ The `ExecuteWithTools` function automatically includes three system tools:
 - **progress**: Track completed steps and current status
 - **exit**: Exit the execution with a status code
 
+For stateful execution, create a conversation first and then pass `ConversationID` plus an optional initial `Text`. Once the first iteration has sent the user prompt, omit `Text` on later iterations so the server continues from the existing conversation state.
+
+The Go examples named `stateless-agent` and `stateful-agent` are agent-package examples built on `agent.CompleteWithTools`. They are intentionally different from the higher-level `ExecuteWithTools` flow and from the Node SDK `*-agentic-loop` examples, which use the lower-level conversation client directly.
+
+```go
+model := "gpt-4o"
+conversation, err := client.Conversation.Create(ctx, types.ConversationCreateRequest{
+	Model: &model,
+})
+if err != nil {
+	log.Fatal(err)
+}
+
+prompt := "What is the weather in San Francisco and what time is it in Los Angeles?"
+
+events, errs := agent.CompleteWithTools(ctx, client, agent.CompleteWithToolsOptions{
+	ConversationID: conversation.ID,
+	Text:           &prompt,
+	Tools:          tools,
+})
+
+for event := range events {
+	_ = event
+}
+if err := <-errs; err != nil {
+	log.Fatal(err)
+}
+
+events, errs = agent.CompleteWithTools(ctx, client, agent.CompleteWithToolsOptions{
+	ConversationID: conversation.ID,
+	Tools:          tools,
+})
+```
+
 ### Skills Loading
 
 Load skills from local directories and pass them as a feature to the agent. Skills are defined using `SKILL.md` files with front matter containing name and description.

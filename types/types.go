@@ -1429,6 +1429,15 @@
 //    integrationWhatsAppListResponse, err := UnmarshalIntegrationWhatsAppListResponse(bytes)
 //    bytes, err = integrationWhatsAppListResponse.Marshal()
 //
+//    integrationWidgetCloneParams, err := UnmarshalIntegrationWidgetCloneParams(bytes)
+//    bytes, err = integrationWidgetCloneParams.Marshal()
+//
+//    integrationWidgetCloneRequest, err := UnmarshalIntegrationWidgetCloneRequest(bytes)
+//    bytes, err = integrationWidgetCloneRequest.Marshal()
+//
+//    integrationWidgetCloneResponse, err := UnmarshalIntegrationWidgetCloneResponse(bytes)
+//    bytes, err = integrationWidgetCloneResponse.Marshal()
+//
 //    integrationWidgetDeleteParams, err := UnmarshalIntegrationWidgetDeleteParams(bytes)
 //    bytes, err = integrationWidgetDeleteParams.Marshal()
 //
@@ -1957,11 +1966,68 @@
 //    skillsetListResponse, err := UnmarshalSkillsetListResponse(bytes)
 //    bytes, err = skillsetListResponse.Marshal()
 //
+//    spaceDeleteParams, err := UnmarshalSpaceDeleteParams(bytes)
+//    bytes, err = spaceDeleteParams.Marshal()
+//
+//    spaceDeleteRequest, err := UnmarshalSpaceDeleteRequest(bytes)
+//    bytes, err = spaceDeleteRequest.Marshal()
+//
+//    spaceDeleteResponse, err := UnmarshalSpaceDeleteResponse(bytes)
+//    bytes, err = spaceDeleteResponse.Marshal()
+//
 //    spaceFetchParams, err := UnmarshalSpaceFetchParams(bytes)
 //    bytes, err = spaceFetchParams.Marshal()
 //
 //    spaceFetchResponse, err := UnmarshalSpaceFetchResponse(bytes)
 //    bytes, err = spaceFetchResponse.Marshal()
+//
+//    spaceStoragePathCopyParams, err := UnmarshalSpaceStoragePathCopyParams(bytes)
+//    bytes, err = spaceStoragePathCopyParams.Marshal()
+//
+//    spaceStoragePathCopyRequest, err := UnmarshalSpaceStoragePathCopyRequest(bytes)
+//    bytes, err = spaceStoragePathCopyRequest.Marshal()
+//
+//    spaceStoragePathCopyResponse, err := UnmarshalSpaceStoragePathCopyResponse(bytes)
+//    bytes, err = spaceStoragePathCopyResponse.Marshal()
+//
+//    spaceStoragePathDeleteParams, err := UnmarshalSpaceStoragePathDeleteParams(bytes)
+//    bytes, err = spaceStoragePathDeleteParams.Marshal()
+//
+//    spaceStoragePathDeleteRequest, err := UnmarshalSpaceStoragePathDeleteRequest(bytes)
+//    bytes, err = spaceStoragePathDeleteRequest.Marshal()
+//
+//    spaceStoragePathDeleteResponse, err := UnmarshalSpaceStoragePathDeleteResponse(bytes)
+//    bytes, err = spaceStoragePathDeleteResponse.Marshal()
+//
+//    spaceStoragePathDownloadParams, err := UnmarshalSpaceStoragePathDownloadParams(bytes)
+//    bytes, err = spaceStoragePathDownloadParams.Marshal()
+//
+//    spaceStoragePathDownloadResponse, err := UnmarshalSpaceStoragePathDownloadResponse(bytes)
+//    bytes, err = spaceStoragePathDownloadResponse.Marshal()
+//
+//    spaceStoragePathListParams, err := UnmarshalSpaceStoragePathListParams(bytes)
+//    bytes, err = spaceStoragePathListParams.Marshal()
+//
+//    spaceStoragePathListResponse, err := UnmarshalSpaceStoragePathListResponse(bytes)
+//    bytes, err = spaceStoragePathListResponse.Marshal()
+//
+//    spaceStoragePathMoveParams, err := UnmarshalSpaceStoragePathMoveParams(bytes)
+//    bytes, err = spaceStoragePathMoveParams.Marshal()
+//
+//    spaceStoragePathMoveRequest, err := UnmarshalSpaceStoragePathMoveRequest(bytes)
+//    bytes, err = spaceStoragePathMoveRequest.Marshal()
+//
+//    spaceStoragePathMoveResponse, err := UnmarshalSpaceStoragePathMoveResponse(bytes)
+//    bytes, err = spaceStoragePathMoveResponse.Marshal()
+//
+//    spaceStoragePathUploadParams, err := UnmarshalSpaceStoragePathUploadParams(bytes)
+//    bytes, err = spaceStoragePathUploadParams.Marshal()
+//
+//    spaceStoragePathUploadRequest, err := UnmarshalSpaceStoragePathUploadRequest(bytes)
+//    bytes, err = spaceStoragePathUploadRequest.Marshal()
+//
+//    spaceStoragePathUploadResponse, err := UnmarshalSpaceStoragePathUploadResponse(bytes)
+//    bytes, err = spaceStoragePathUploadResponse.Marshal()
 //
 //    spaceUpdateParams, err := UnmarshalSpaceUpdateParams(bytes)
 //    bytes, err = spaceUpdateParams.Marshal()
@@ -2049,6 +2115,12 @@
 //
 //    usageFetchResponse, err := UnmarshalUsageFetchResponse(bytes)
 //    bytes, err = usageFetchResponse.Marshal()
+//
+//    usageRecordListParams, err := UnmarshalUsageRecordListParams(bytes)
+//    bytes, err = usageRecordListParams.Marshal()
+//
+//    usageRecordListResponse, err := UnmarshalUsageRecordListResponse(bytes)
+//    bytes, err = usageRecordListResponse.Marshal()
 //
 //    usageSeriesFetchResponse, err := UnmarshalUsageSeriesFetchResponse(bytes)
 //    bytes, err = usageSeriesFetchResponse.Marshal()
@@ -7033,6 +7105,38 @@ func (r *IntegrationWhatsAppListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalIntegrationWidgetCloneParams(data []byte) (IntegrationWidgetCloneParams, error) {
+	var r IntegrationWidgetCloneParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationWidgetCloneParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type IntegrationWidgetCloneRequest map[string]interface{}
+
+func UnmarshalIntegrationWidgetCloneRequest(data []byte) (IntegrationWidgetCloneRequest, error) {
+	var r IntegrationWidgetCloneRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationWidgetCloneRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalIntegrationWidgetCloneResponse(data []byte) (IntegrationWidgetCloneResponse, error) {
+	var r IntegrationWidgetCloneResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationWidgetCloneResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalIntegrationWidgetDeleteParams(data []byte) (IntegrationWidgetDeleteParams, error) {
 	var r IntegrationWidgetDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -8823,6 +8927,38 @@ func (r *SkillsetListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalSpaceDeleteParams(data []byte) (SpaceDeleteParams, error) {
+	var r SpaceDeleteParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceDeleteParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type SpaceDeleteRequest map[string]interface{}
+
+func UnmarshalSpaceDeleteRequest(data []byte) (SpaceDeleteRequest, error) {
+	var r SpaceDeleteRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceDeleteRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceDeleteResponse(data []byte) (SpaceDeleteResponse, error) {
+	var r SpaceDeleteResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceDeleteResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalSpaceFetchParams(data []byte) (SpaceFetchParams, error) {
 	var r SpaceFetchParams
 	err := json.Unmarshal(data, &r)
@@ -8840,6 +8976,166 @@ func UnmarshalSpaceFetchResponse(data []byte) (SpaceFetchResponse, error) {
 }
 
 func (r *SpaceFetchResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathCopyParams(data []byte) (SpaceStoragePathCopyParams, error) {
+	var r SpaceStoragePathCopyParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathCopyParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathCopyRequest(data []byte) (SpaceStoragePathCopyRequest, error) {
+	var r SpaceStoragePathCopyRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathCopyRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathCopyResponse(data []byte) (SpaceStoragePathCopyResponse, error) {
+	var r SpaceStoragePathCopyResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathCopyResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathDeleteParams(data []byte) (SpaceStoragePathDeleteParams, error) {
+	var r SpaceStoragePathDeleteParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathDeleteParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathDeleteRequest(data []byte) (SpaceStoragePathDeleteRequest, error) {
+	var r SpaceStoragePathDeleteRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathDeleteRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathDeleteResponse(data []byte) (SpaceStoragePathDeleteResponse, error) {
+	var r SpaceStoragePathDeleteResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathDeleteResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathDownloadParams(data []byte) (SpaceStoragePathDownloadParams, error) {
+	var r SpaceStoragePathDownloadParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathDownloadParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathDownloadResponse(data []byte) (SpaceStoragePathDownloadResponse, error) {
+	var r SpaceStoragePathDownloadResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathDownloadResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathListParams(data []byte) (SpaceStoragePathListParams, error) {
+	var r SpaceStoragePathListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathListResponse(data []byte) (SpaceStoragePathListResponse, error) {
+	var r SpaceStoragePathListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathMoveParams(data []byte) (SpaceStoragePathMoveParams, error) {
+	var r SpaceStoragePathMoveParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathMoveParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathMoveRequest(data []byte) (SpaceStoragePathMoveRequest, error) {
+	var r SpaceStoragePathMoveRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathMoveRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathMoveResponse(data []byte) (SpaceStoragePathMoveResponse, error) {
+	var r SpaceStoragePathMoveResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathMoveResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathUploadParams(data []byte) (SpaceStoragePathUploadParams, error) {
+	var r SpaceStoragePathUploadParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathUploadParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathUploadRequest(data []byte) (SpaceStoragePathUploadRequest, error) {
+	var r SpaceStoragePathUploadRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathUploadRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceStoragePathUploadResponse(data []byte) (SpaceStoragePathUploadResponse, error) {
+	var r SpaceStoragePathUploadResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceStoragePathUploadResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -9134,6 +9430,26 @@ func UnmarshalUsageFetchResponse(data []byte) (UsageFetchResponse, error) {
 }
 
 func (r *UsageFetchResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalUsageRecordListParams(data []byte) (UsageRecordListParams, error) {
+	var r UsageRecordListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *UsageRecordListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalUsageRecordListResponse(data []byte) (UsageRecordListResponse, error) {
+	var r UsageRecordListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *UsageRecordListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -10615,16 +10931,17 @@ type ConversationMessageCompleteParams struct {
 }
 
 type ConversationMessageCompleteRequest struct {
-	// Known entities                                                                                          
-	Entities                                                     []ConversationMessageCompleteRequestEntity    `json:"entities,omitempty"`
-	// Extensions to enhance the bot's capabilities                                                            
-	Extensions                                                   *ConversationMessageCompleteRequestExtensions `json:"extensions,omitempty"`
-	// An array of functions to be added to the conversation                                                   
-	Functions                                                    []ConversationMessageCompleteRequestFunction  `json:"functions,omitempty"`
-	// Execution limits to control conversation processing bounds                                              
-	Limits                                                       *ConversationMessageCompleteRequestLimits     `json:"limits,omitempty"`
-	// The text of the message to send                                                                         
-	Text                                                         string                                        `json:"text"`
+	// Known entities                                                                                                             
+	Entities                                                                        []ConversationMessageCompleteRequestEntity    `json:"entities,omitempty"`
+	// Extensions to enhance the bot's capabilities                                                                               
+	Extensions                                                                      *ConversationMessageCompleteRequestExtensions `json:"extensions,omitempty"`
+	// An array of functions to be added to the conversation                                                                      
+	Functions                                                                       []ConversationMessageCompleteRequestFunction  `json:"functions,omitempty"`
+	// Execution limits to control conversation processing bounds                                                                 
+	Limits                                                                          *ConversationMessageCompleteRequestLimits     `json:"limits,omitempty"`
+	// The text of the message to send. Omit to continue receiving from the existing                                              
+	// conversation state without sending a new user message.                                                                     
+	Text                                                                            *string                                       `json:"text,omitempty"`
 }
 
 // Extracted entity from the message
@@ -10820,18 +11137,19 @@ type ConversationDeleteResponse struct {
 }
 
 type StatefulConversationDispatchRequest struct {
-	// A unique ID to deduplicate dispatch requests                                                             
-	ChannelID                                                    *string                                        `json:"channelId,omitempty"`
-	// Known entities                                                                                           
-	Entities                                                     []StatefulConversationDispatchRequestEntity    `json:"entities,omitempty"`
-	// Extensions to enhance the bot's capabilities                                                             
-	Extensions                                                   *StatefulConversationDispatchRequestExtensions `json:"extensions,omitempty"`
-	// An array of functions to be added to the conversation                                                    
-	Functions                                                    []StatefulConversationDispatchRequestFunction  `json:"functions,omitempty"`
-	// Execution limits to control conversation processing bounds                                               
-	Limits                                                       *StatefulConversationDispatchRequestLimits     `json:"limits,omitempty"`
-	// The text of the message to send                                                                          
-	Text                                                         string                                         `json:"text"`
+	// A unique ID to deduplicate dispatch requests                                                                                
+	ChannelID                                                                       *string                                        `json:"channelId,omitempty"`
+	// Known entities                                                                                                              
+	Entities                                                                        []StatefulConversationDispatchRequestEntity    `json:"entities,omitempty"`
+	// Extensions to enhance the bot's capabilities                                                                                
+	Extensions                                                                      *StatefulConversationDispatchRequestExtensions `json:"extensions,omitempty"`
+	// An array of functions to be added to the conversation                                                                       
+	Functions                                                                       []StatefulConversationDispatchRequestFunction  `json:"functions,omitempty"`
+	// Execution limits to control conversation processing bounds                                                                  
+	Limits                                                                          *StatefulConversationDispatchRequestLimits     `json:"limits,omitempty"`
+	// The text of the message to send. Omit to continue receiving from the existing                                               
+	// conversation state without sending a new user message.                                                                      
+	Text                                                                            *string                                        `json:"text,omitempty"`
 }
 
 // Extracted entity from the message
@@ -13836,22 +14154,24 @@ type IntegrationMCPServerFetchParams struct {
 
 // Blueprint properties
 type IntegrationMCPServerFetchResponse struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The ID of the skillset                                                 
-	SkillsetID                                         *string                `json:"skillsetId,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The ID of the blueprint                                                           
+	BlueprintID                                                   *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                                  
+	CreatedAt                                                     float64                `json:"createdAt"`
+	// The associated description                                                        
+	Description                                                   *string                `json:"description,omitempty"`
+	// The instance ID                                                                   
+	ID                                                            string                 `json:"id"`
+	// Meta data information                                                             
+	Meta                                                          map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                               
+	Name                                                          *string                `json:"name,omitempty"`
+	// The ID of the OAuth connection for IdP-based authentication                       
+	OAuthConnectionID                                             *string                `json:"oAuthConnectionId,omitempty"`
+	// The ID of the skillset                                                            
+	SkillsetID                                                    *string                `json:"skillsetId,omitempty"`
+	// The timestamp (ms) when the instance was updated                                  
+	UpdatedAt                                                     float64                `json:"updatedAt"`
 }
 
 type IntegrationMCPServerUpdateParams struct {
@@ -13861,16 +14181,18 @@ type IntegrationMCPServerUpdateParams struct {
 
 // Blueprint properties
 type IntegrationMCPServerUpdateRequest struct {
-	// The ID of the blueprint                          
-	BlueprintID                  *string                `json:"blueprintId,omitempty"`
-	// The associated description                       
-	Description                  *string                `json:"description,omitempty"`
-	// Meta data information                            
-	Meta                         map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                              
-	Name                         *string                `json:"name,omitempty"`
-	// The ID of the skillset                           
-	SkillsetID                   *string                `json:"skillsetId,omitempty"`
+	// The ID of the blueprint                                                           
+	BlueprintID                                                   *string                `json:"blueprintId,omitempty"`
+	// The associated description                                                        
+	Description                                                   *string                `json:"description,omitempty"`
+	// Meta data information                                                             
+	Meta                                                          map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                               
+	Name                                                          *string                `json:"name,omitempty"`
+	// The ID of the OAuth connection for IdP-based authentication                       
+	OAuthConnectionID                                             *string                `json:"oAuthConnectionId,omitempty"`
+	// The ID of the skillset                                                            
+	SkillsetID                                                    *string                `json:"skillsetId,omitempty"`
 }
 
 type IntegrationMCPServerUpdateResponse struct {
@@ -13880,16 +14202,18 @@ type IntegrationMCPServerUpdateResponse struct {
 
 // Blueprint properties
 type IntegrationMCPServerCreateRequest struct {
-	// The ID of the blueprint                          
-	BlueprintID                  *string                `json:"blueprintId,omitempty"`
-	// The associated description                       
-	Description                  *string                `json:"description,omitempty"`
-	// Meta data information                            
-	Meta                         map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                              
-	Name                         *string                `json:"name,omitempty"`
-	// The ID of the skillset                           
-	SkillsetID                   *string                `json:"skillsetId,omitempty"`
+	// The ID of the blueprint                                                           
+	BlueprintID                                                   *string                `json:"blueprintId,omitempty"`
+	// The associated description                                                        
+	Description                                                   *string                `json:"description,omitempty"`
+	// Meta data information                                                             
+	Meta                                                          map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                               
+	Name                                                          *string                `json:"name,omitempty"`
+	// The ID of the OAuth connection for IdP-based authentication                       
+	OAuthConnectionID                                             *string                `json:"oAuthConnectionId,omitempty"`
+	// The ID of the skillset                                                            
+	SkillsetID                                                    *string                `json:"skillsetId,omitempty"`
 }
 
 type IntegrationMCPServerCreateResponse struct {
@@ -13916,22 +14240,24 @@ type IntegrationMCPServerListResponse struct {
 
 // Blueprint properties
 type IntegrationMCPServerListResponseItem struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The ID of the skillset                                                 
-	SkillsetID                                         *string                `json:"skillsetId,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The ID of the blueprint                                                           
+	BlueprintID                                                   *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                                  
+	CreatedAt                                                     float64                `json:"createdAt"`
+	// The associated description                                                        
+	Description                                                   *string                `json:"description,omitempty"`
+	// The instance ID                                                                   
+	ID                                                            string                 `json:"id"`
+	// Meta data information                                                             
+	Meta                                                          map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                               
+	Name                                                          *string                `json:"name,omitempty"`
+	// The ID of the OAuth connection for IdP-based authentication                       
+	OAuthConnectionID                                             *string                `json:"oAuthConnectionId,omitempty"`
+	// The ID of the skillset                                                            
+	SkillsetID                                                    *string                `json:"skillsetId,omitempty"`
+	// The timestamp (ms) when the instance was updated                                  
+	UpdatedAt                                                     float64                `json:"updatedAt"`
 }
 
 type IntegrationMessengerDeleteParams struct {
@@ -15620,6 +15946,16 @@ type IntegrationWhatsAppListResponseItem struct {
 	UpdatedAt                                                                               float64                `json:"updatedAt"`
 	// The WhatsApp integration verify token                                                                       
 	VerifyToken                                                                             string                 `json:"verifyToken"`
+}
+
+type IntegrationWidgetCloneParams struct {
+	// The ID of the Widget integration       
+	WidgetIntegrationID                string `json:"widgetIntegrationId"`
+}
+
+type IntegrationWidgetCloneResponse struct {
+	// The ID of the cloned Widget integration       
+	ID                                        string `json:"id"`
 }
 
 type IntegrationWidgetDeleteParams struct {
@@ -17360,7 +17696,7 @@ type PlatformTutorialsSearchResponseItem struct {
 
 type PolicyDeleteParams struct {
 	// The ID of the policy to delete       
-	ID                               string `json:"id"`
+	PolicyID                         string `json:"policyId"`
 }
 
 type PolicyDeleteResponse struct {
@@ -17369,8 +17705,8 @@ type PolicyDeleteResponse struct {
 }
 
 type PolicyFetchParams struct {
-	// The ID of the policy to fetch       
-	ID                              string `json:"id"`
+	// The ID of the policy to retrieve       
+	PolicyID                           string `json:"policyId"`
 }
 
 // Blueprint properties
@@ -17391,7 +17727,7 @@ type PolicyFetchResponse struct {
 
 type PolicyUpdateParams struct {
 	// The ID of the policy to update       
-	ID                               string `json:"id"`
+	PolicyID                         string `json:"policyId"`
 }
 
 // Blueprint properties
@@ -18150,6 +18486,16 @@ type SkillsetListResponseItem struct {
 	Visibility                                         *HilariousVisibility   `json:"visibility,omitempty"`
 }
 
+type SpaceDeleteParams struct {
+	// The ID of the space to delete       
+	SpaceID                         string `json:"spaceId"`
+}
+
+type SpaceDeleteResponse struct {
+	// The ID of the deleted space       
+	ID                            string `json:"id"`
+}
+
 type SpaceFetchParams struct {
 	// The ID of the space to retrieve       
 	SpaceID                           string `json:"spaceId"`
@@ -18173,6 +18519,141 @@ type SpaceFetchResponse struct {
 	Name                                               *string                `json:"name,omitempty"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type SpaceStoragePathCopyParams struct {
+	// The source file path       
+	Path                   string `json:"path"`
+	// The ID of the space        
+	SpaceID                string `json:"spaceId"`
+}
+
+type SpaceStoragePathCopyRequest struct {
+	// The destination file path       
+	DestinationPath             string `json:"destinationPath"`
+}
+
+type SpaceStoragePathCopyResponse struct {
+	// The destination file path       
+	Path                        string `json:"path"`
+}
+
+type SpaceStoragePathDeleteParams struct {
+	// The file or directory path       
+	Path                         string `json:"path"`
+	// The ID of the space              
+	SpaceID                      string `json:"spaceId"`
+}
+
+type SpaceStoragePathDeleteRequest struct {
+	// Whether to delete directory contents recursively      
+	Recursive                                          *bool `json:"recursive,omitempty"`
+}
+
+type SpaceStoragePathDeleteResponse struct {
+	// The deleted file or directory path       
+	Path                                 string `json:"path"`
+}
+
+type SpaceStoragePathDownloadParams struct {
+	// The file path             
+	Path                  string `json:"path"`
+	// The ID of the space       
+	SpaceID               string `json:"spaceId"`
+}
+
+type SpaceStoragePathDownloadResponse struct {
+	// The ID of the file                           
+	ID                                       string `json:"id"`
+	// The presigned URL to download the file       
+	URL                                      string `json:"url"`
+}
+
+type SpaceStoragePathListParams struct {
+	// The directory path (defaults to root)        
+	Path                                    *string `json:"path,omitempty"`
+	// Whether to list files recursively            
+	Recursive                               *bool   `json:"recursive,omitempty"`
+	// The ID of the space                          
+	SpaceID                                 string  `json:"spaceId"`
+}
+
+type SpaceStoragePathListResponse struct {
+	Items                                   []SpaceStoragePathListResponseItem `json:"items"`
+	// Token to use for next page of results                                   
+	NextToken                               *string                            `json:"nextToken,omitempty"`
+}
+
+type SpaceStoragePathListResponseItem struct {
+	// The ID of the file or directory                            
+	ID                                                   *string  `json:"id,omitempty"`
+	// Whether this is a directory                                
+	IsDirectory                                          *bool    `json:"isDirectory,omitempty"`
+	// The relative path of the file or directory                 
+	Path                                                 *string  `json:"path,omitempty"`
+	// The size of the file in bytes (0 for directories)          
+	Size                                                 *float64 `json:"size,omitempty"`
+	// The timestamp (ms) when the file was last modified         
+	UpdatedAt                                            *float64 `json:"updatedAt,omitempty"`
+}
+
+type SpaceStoragePathMoveParams struct {
+	// The source file path       
+	Path                   string `json:"path"`
+	// The ID of the space        
+	SpaceID                string `json:"spaceId"`
+}
+
+type SpaceStoragePathMoveRequest struct {
+	// The destination file path       
+	DestinationPath             string `json:"destinationPath"`
+}
+
+type SpaceStoragePathMoveResponse struct {
+	// The destination file path       
+	Path                        string `json:"path"`
+}
+
+type SpaceStoragePathUploadParams struct {
+	// The file path       
+	Path            string `json:"path"`
+	SpaceID         string `json:"spaceId"`
+}
+
+type SpaceStoragePathUploadRequest struct {
+	// The file to upload either as http: or data: URL                                   
+	//                                                                                   
+	// The file definition to upload                                                     
+	File                                              *SpaceStoragePathUploadRequestFile `json:"file"`
+}
+
+// The file definition to upload
+type TentacledFile struct {
+	// Optional metadata                       
+	Meta                map[string]interface{} `json:"meta,omitempty"`
+	// The file size                           
+	Size                float64                `json:"size"`
+	// The file type                           
+	Type                string                 `json:"type"`
+}
+
+type SpaceStoragePathUploadResponse struct {
+	// The ID of the uploaded file                                                         
+	ID                                        string                                       `json:"id"`
+	// The path where the file is stored                                                   
+	Path                                      string                                       `json:"path"`
+	// The request required to upload the file                                             
+	UploadRequest                             *SpaceStoragePathUploadResponseUploadRequest `json:"uploadRequest,omitempty"`
+}
+
+// The request required to upload the file
+type SpaceStoragePathUploadResponseUploadRequest struct {
+	// The HTTP headers to use                       
+	Headers                   map[string]interface{} `json:"headers"`
+	// The HTTP method to use                        
+	Method                    string                 `json:"method"`
+	// The HTTP url to use                           
+	URL                       string                 `json:"url"`
 }
 
 type SpaceUpdateParams struct {
@@ -18557,6 +19038,61 @@ type UsageFetchResponseDatabase struct {
 	Skillsets                                      float64 `json:"skillsets"`
 	// The number of users the user has created            
 	Users                                          float64 `json:"users"`
+}
+
+type UsageRecordListParams struct {
+	// The cursor to use for pagination                                               
+	Cursor                                                *string                     `json:"cursor,omitempty"`
+	// Key-value pairs to filter usage records by metadata                            
+	Meta                                                  map[string]string           `json:"meta,omitempty"`
+	// The order of the paginated items                                               
+	Order                                                 *UsageRecordListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                
+	Take                                                  *int64                      `json:"take,omitempty"`
+}
+
+type UsageRecordListResponse struct {
+	// Cursor for fetching the next page                              
+	Cursor                              string                        `json:"cursor"`
+	Items                               []UsageRecordListResponseItem `json:"items"`
+}
+
+// Instance list properties
+type UsageRecordListResponseItem struct {
+	// Related ability ID if applicable                                       
+	AbilityID                                          *string                `json:"abilityId,omitempty"`
+	// Related blueprint ID if applicable                                     
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// Related bot ID if applicable                                           
+	BotID                                              *string                `json:"botId,omitempty"`
+	// Related contact ID if applicable                                       
+	ContactID                                          *string                `json:"contactId,omitempty"`
+	// Related conversation ID if applicable                                  
+	ConversationID                                     *string                `json:"conversationId,omitempty"`
+	// The usage count                                                        
+	Count                                              int64                  `json:"count"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// Related dataset ID if applicable                                       
+	DatasetID                                          *string                `json:"datasetId,omitempty"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Related message ID if applicable                                       
+	MessageID                                          *string                `json:"messageId,omitempty"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// Related skillset ID if applicable                                      
+	SkillsetID                                         *string                `json:"skillsetId,omitempty"`
+	// Related task ID if applicable                                          
+	TaskID                                             *string                `json:"taskId,omitempty"`
+	// The usage type                                                         
+	Type                                               string                 `json:"type"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
 type UsageSeriesFetchResponse struct {
@@ -20331,6 +20867,15 @@ const (
 
 )
 
+// The order of the paginated items
+type UsageRecordListParamsOrder string
+
+const (
+	Asc50                              UsageRecordListParamsOrder = "asc"
+	Desc50                             UsageRecordListParamsOrder = "desc"
+
+)
+
 // The type of the message
 type MessageTypeEnum string
 
@@ -20722,6 +21267,28 @@ func (x *FileUploadRequestFile) UnmarshalJSON(data []byte) error {
 
 func (x *FileUploadRequestFile) MarshalJSON() ([]byte, error) {
 	return marshalUnion(nil, nil, nil, x.String, false, nil, x.FluffyFile != nil, x.FluffyFile, false, nil, false, nil, false)
+}
+
+type SpaceStoragePathUploadRequestFile struct {
+	String        *string
+	TentacledFile *TentacledFile
+}
+
+func (x *SpaceStoragePathUploadRequestFile) UnmarshalJSON(data []byte) error {
+	x.TentacledFile = nil
+	var c TentacledFile
+	object, err := unmarshalUnion(data, nil, nil, nil, &x.String, false, nil, true, &c, false, nil, false, nil, false)
+	if err != nil {
+		return err
+	}
+	if object {
+		x.TentacledFile = &c
+	}
+	return nil
+}
+
+func (x *SpaceStoragePathUploadRequestFile) MarshalJSON() ([]byte, error) {
+	return marshalUnion(nil, nil, nil, x.String, false, nil, x.TentacledFile != nil, x.TentacledFile, false, nil, false, nil, false)
 }
 
 type DatasetFilterValue struct {

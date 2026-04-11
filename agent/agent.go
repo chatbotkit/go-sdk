@@ -82,6 +82,12 @@ type Message struct {
 type CompleteOptions struct {
 	// Model is the AI model to use.
 	Model string
+	// ConversationID switches the request into stateful mode. When set, the
+	// server manages the conversation history and Messages must be empty.
+	ConversationID string
+	// Text is the optional user message to send in stateful mode. Omit it to
+	// continue from the existing server-side conversation state.
+	Text *string
 	// Messages are the conversation messages.
 	Messages []Message
 	// Backstory provides context about the AI's role and behavior.
@@ -109,6 +115,29 @@ type CompleteResult struct {
 // IDs, message metadata, or other details, use the SDK's Conversation.Complete
 // method directly.
 func Complete(ctx context.Context, client *sdk.Client, opts CompleteOptions) (*CompleteResult, error) {
+	if opts.ConversationID != "" {
+		if err := validateRemoteConversationOptions(opts.ConversationID, opts.Messages, opts.Model, opts.BotID, opts.DatasetID, opts.SkillsetID); err != nil {
+			return nil, err
+		}
+
+		req := types.ConversationMessageCompleteRequest{
+			Text: opts.Text,
+		}
+
+		if opts.Backstory != "" {
+			req.Extensions = &types.ConversationMessageCompleteRequestExtensions{
+				Backstory: &opts.Backstory,
+			}
+		}
+
+		result, err := client.Conversation.CompleteMessage(ctx, opts.ConversationID, req)
+		if err != nil {
+			return nil, err
+		}
+
+		return &CompleteResult{Text: result.Text}, nil
+	}
+
 	// Convert messages to API format
 	apiMessages := make([]types.ConversationCompleteRequestMessage, 0, len(opts.Messages))
 	for _, msg := range opts.Messages {
@@ -173,6 +202,30 @@ func Complete(ctx context.Context, client *sdk.Client, opts CompleteOptions) (*C
 //	    log.Fatal(err)
 //	}
 func CompleteStream(ctx context.Context, client *sdk.Client, opts CompleteOptions) (<-chan httpclient.StreamEvent, <-chan error) {
+	if opts.ConversationID != "" {
+		if err := validateRemoteConversationOptions(opts.ConversationID, opts.Messages, opts.Model, opts.BotID, opts.DatasetID, opts.SkillsetID); err != nil {
+			events := make(chan httpclient.StreamEvent)
+			errs := make(chan error, 1)
+			close(events)
+			errs <- err
+			close(errs)
+			return events, errs
+		}
+
+		req := types.ConversationMessageCompleteRequest{
+			Text: opts.Text,
+		}
+
+		if opts.Backstory != "" {
+			req.Extensions = &types.ConversationMessageCompleteRequestExtensions{
+				Backstory: &opts.Backstory,
+			}
+		}
+
+		path := fmt.Sprintf("/api/v1/conversation/%s/complete", opts.ConversationID)
+		return client.HTTPClient().PostStream(ctx, path, req)
+	}
+
 	// Convert messages to API format
 	apiMessages := make([]types.ConversationCompleteRequestMessage, 0, len(opts.Messages))
 	for _, msg := range opts.Messages {
@@ -211,6 +264,12 @@ func CompleteStream(ctx context.Context, client *sdk.Client, opts CompleteOption
 type ExecuteOptions struct {
 	// Model is the AI model to use.
 	Model string
+	// ConversationID switches the request into stateful mode. When set, the
+	// server manages the conversation history and Messages must be empty.
+	ConversationID string
+	// Text is the optional initial user message for stateful mode. Omit it on
+	// later iterations to continue from the existing conversation state.
+	Text *string
 	// Messages are the initial conversation messages.
 	Messages []Message
 	// Backstory provides context about the AI's role and behavior.
@@ -238,13 +297,21 @@ type ExecuteResult struct {
 // Execute runs an agent task in a loop until completion or max iterations.
 // This provides a simple way to run agentic workflows.
 func Execute(ctx context.Context, client *sdk.Client, opts ExecuteOptions) (*ExecuteResult, error) {
+	if err := validateRemoteConversationOptions(opts.ConversationID, opts.Messages, opts.Model, "", "", ""); err != nil {
+		return &ExecuteResult{
+			Exit: ExitResult{Code: 1, Message: err.Error()},
+		}, err
+	}
+
 	maxIterations := opts.MaxIterations
 	if maxIterations == 0 {
 		maxIterations = 50
 	}
 
+	remote := opts.ConversationID != ""
 	messages := make([]Message, len(opts.Messages))
 	copy(messages, opts.Messages)
+	nextText := opts.Text
 
 	// Build system instruction
 	systemInstruction := opts.Backstory + `
@@ -257,11 +324,15 @@ When you have completed the task, clearly indicate that you are done.
 	exitResult := ExitResult{Code: 0, Message: "Completed"}
 
 	for iteration := 0; iteration < maxIterations; iteration++ {
-		result, err := Complete(ctx, client, CompleteOptions{
-			Model:     opts.Model,
-			Messages:  messages,
-			Backstory: systemInstruction,
-		})
+		completeOpts := CompleteOptions{
+			Model:          opts.Model,
+			ConversationID: opts.ConversationID,
+			Text:           nextText,
+			Messages:       messages,
+			Backstory:      systemInstruction,
+		}
+
+		result, err := Complete(ctx, client, completeOpts)
 		if err != nil {
 			return &ExecuteResult{
 				Responses: responses,
@@ -274,6 +345,11 @@ When you have completed the task, clearly indicate that you are done.
 		// Check for completion indicators
 		if containsCompletionIndicator(result.Text) {
 			break
+		}
+
+		if remote {
+			nextText = nil
+			continue
 		}
 
 		// Add the response and continue
@@ -437,6 +513,12 @@ func generateRandomSuffix() string {
 type CompleteWithToolsOptions struct {
 	// Model is the AI model to use.
 	Model string
+	// ConversationID switches the request into stateful mode. When set, the
+	// server manages the conversation history and Messages must be empty.
+	ConversationID string
+	// Text is the optional user message to send in stateful mode. Omit it to
+	// continue from the existing server-side conversation state.
+	Text *string
 	// Messages are the conversation messages.
 	Messages []Message
 	// BotID is the optional bot ID to use.
@@ -466,11 +548,18 @@ func CompleteWithTools(ctx context.Context, client *sdk.Client, opts CompleteWit
 		defer close(events)
 		defer close(errs)
 
+		remote := opts.ConversationID != ""
+		if err := validateRemoteConversationOptions(opts.ConversationID, opts.Messages, opts.Model, opts.BotID, opts.DatasetID, opts.SkillsetID); err != nil {
+			errs <- err
+			return
+		}
+
 		// Build channel to tool mapping
 		channelToTool := make(map[string]toolInfo)
 
 		// Convert tools to API functions
 		var functions []types.ConversationCompleteRequestFunction
+		var messageFunctions []types.ConversationMessageCompleteRequestFunction
 		if opts.Tools != nil {
 			for name, tool := range opts.Tools {
 				randomSuffix := generateRandomSuffix()
@@ -482,87 +571,97 @@ func CompleteWithTools(ctx context.Context, client *sdk.Client, opts CompleteWit
 
 				channelToTool[channel] = toolInfo{name: name, tool: tool}
 
-				// Build parameters from the FunctionParameters map
-				params := types.IndigoParameters{
-					Type:       types.IndigoObject,
-					Properties: make(map[string]interface{}),
-				}
+				properties, required := buildToolParameters(tool.Parameters)
 
-				if tool.Parameters != nil {
-					if props, ok := tool.Parameters["properties"].(map[string]any); ok {
-						for propName, v := range props {
-							if prop, ok := v.(map[string]any); ok {
-								params.Properties[propName] = prop
-							}
-						}
-					}
-					if req, ok := tool.Parameters["required"].([]string); ok {
-						params.Required = req
-					} else if req, ok := tool.Parameters["required"].([]any); ok {
-						for _, r := range req {
-							if s, ok := r.(string); ok {
-								params.Required = append(params.Required, s)
-							}
-						}
-					}
+				if remote {
+					messageFunctions = append(messageFunctions, types.ConversationMessageCompleteRequestFunction{
+						Name:        name,
+						Description: tool.Description,
+						Parameters: types.PurpleParameters{
+							Type:       types.PurpleObject,
+							Properties: properties,
+							Required:   required,
+						},
+						Result: &types.PurpleResult{
+							Channel: &channel,
+						},
+					})
+				} else {
+					functions = append(functions, types.ConversationCompleteRequestFunction{
+						Name:        name,
+						Description: tool.Description,
+						Parameters: types.IndigoParameters{
+							Type:       types.IndigoObject,
+							Properties: properties,
+							Required:   required,
+						},
+						Result: &types.IndigoResult{
+							Channel: &channel,
+						},
+					})
 				}
-
-				functions = append(functions, types.ConversationCompleteRequestFunction{
-					Name:        name,
-					Description: tool.Description,
-					Parameters:  params,
-					Result: &types.IndigoResult{
-						Channel: &channel,
-					},
-				})
 			}
 		}
 
-		// Convert messages to API format
-		apiMessages := make([]types.ConversationCompleteRequestMessage, 0, len(opts.Messages))
-		for _, msg := range opts.Messages {
-			apiMessages = append(apiMessages, types.ConversationCompleteRequestMessage{
-				Type: types.MagentaType(msg.Type),
-				Text: msg.Text,
-				Meta: msg.Meta,
-			})
-		}
-
-		// Build request
-		req := types.ConversationCompleteRequest{
-			Messages:  apiMessages,
-			Functions: functions,
-		}
-
-		if opts.Model != "" {
-			req.Model = &opts.Model
-		}
-		if opts.BotID != "" {
-			req.BotID = &opts.BotID
-		}
-		if opts.DatasetID != "" {
-			req.DatasetID = &opts.DatasetID
-		}
-		if opts.SkillsetID != "" {
-			req.SkillsetID = &opts.SkillsetID
-		}
-
-		// Pass extensions (backstory, inline datasets/skillsets/features)
-		// through to the server.
-		if opts.Extensions != nil {
-			req.Extensions = opts.Extensions
-		}
-
-		// Always cap each individual server call at one iteration so the
-		// client-side loop in ExecuteWithTools retains full control over
-		// continuation, message injection, and exit handling.
 		one := int64(1)
-		req.Limits = &types.ConversationCompleteRequestLimits{
-			Iterations: &one,
-		}
 
-		// Start the stream
-		rawEvents, rawErrs := client.HTTPClient().PostStream(ctx, "/api/v1/conversation/complete", req)
+		var rawEvents <-chan httpclient.StreamEvent
+		var rawErrs <-chan error
+
+		if remote {
+			req := types.ConversationMessageCompleteRequest{
+				Text:      opts.Text,
+				Functions: messageFunctions,
+				Limits: &types.ConversationMessageCompleteRequestLimits{
+					Iterations: &one,
+				},
+			}
+
+			if opts.Extensions != nil {
+				req.Extensions = convertMessageExtensions(opts.Extensions)
+			}
+
+			path := fmt.Sprintf("/api/v1/conversation/%s/complete", opts.ConversationID)
+			rawEvents, rawErrs = client.HTTPClient().PostStream(ctx, path, req)
+		} else {
+			// Convert messages to API format
+			apiMessages := make([]types.ConversationCompleteRequestMessage, 0, len(opts.Messages))
+			for _, msg := range opts.Messages {
+				apiMessages = append(apiMessages, types.ConversationCompleteRequestMessage{
+					Type: types.MagentaType(msg.Type),
+					Text: msg.Text,
+					Meta: msg.Meta,
+				})
+			}
+
+			req := types.ConversationCompleteRequest{
+				Messages:  apiMessages,
+				Functions: functions,
+			}
+
+			if opts.Model != "" {
+				req.Model = &opts.Model
+			}
+			if opts.BotID != "" {
+				req.BotID = &opts.BotID
+			}
+			if opts.DatasetID != "" {
+				req.DatasetID = &opts.DatasetID
+			}
+			if opts.SkillsetID != "" {
+				req.SkillsetID = &opts.SkillsetID
+			}
+
+			if opts.Extensions != nil {
+				req.Extensions = opts.Extensions
+			}
+
+			req.Limits = &types.ConversationCompleteRequestLimits{
+				Iterations: &one,
+			}
+
+			rawEvents, rawErrs = client.HTTPClient().PostStream(ctx, "/api/v1/conversation/complete", req)
+		}
 
 		// Track running tools
 		var wg sync.WaitGroup
@@ -717,6 +816,12 @@ func convertStreamEvent(raw httpclient.StreamEvent) AgentEvent {
 type ExecuteWithToolsOptions struct {
 	// Model is the AI model to use.
 	Model string
+	// ConversationID switches the request into stateful mode. When set, the
+	// server manages the conversation history and Messages must be empty.
+	ConversationID string
+	// Text is the optional initial user message for stateful mode. Omit it on
+	// later iterations to continue from the existing conversation state.
+	Text *string
 	// Messages are the initial conversation messages.
 	Messages []Message
 	// Backstory provides context about the AI's role and behavior.
@@ -757,6 +862,16 @@ func ExecuteWithTools(ctx context.Context, client *sdk.Client, opts ExecuteWithT
 	go func() {
 		defer close(events)
 		defer close(errs)
+
+		remote := opts.ConversationID != ""
+		if err := validateRemoteConversationOptions(opts.ConversationID, opts.Messages, opts.Model, opts.BotID, opts.DatasetID, opts.SkillsetID); err != nil {
+			errs <- err
+			return
+		}
+		if remote && opts.Inbox != nil {
+			errs <- fmt.Errorf("stateful agent options do not support inbox with conversationID; send follow-up messages through the conversation instead")
+			return
+		}
 
 		maxIterations := opts.MaxIterations
 		if maxIterations == 0 {
@@ -943,6 +1058,7 @@ The goal is to complete the assigned task efficiently and effectively. Follow th
 		// @note the caller's slice is copied by value. Appended messages (from
 		// tool results and inbox drains) are local to this goroutine.
 		messages := opts.Messages
+		nextText := opts.Text
 
 		iteration := 0
 
@@ -956,7 +1072,7 @@ The goal is to complete the assigned task efficiently and effectively. Follow th
 
 			// Drain any messages that arrived since the last iteration so the
 			// model sees them in the next API call.
-			if opts.Inbox != nil {
+			if !remote && opts.Inbox != nil {
 				for draining := true; draining; {
 					select {
 					case msg := <-opts.Inbox:
@@ -983,20 +1099,22 @@ The goal is to complete the assigned task efficiently and effectively. Follow th
 			iterCtx, abortCancel = context.WithCancel(ctx)
 
 			completeEvents, completeErrs := CompleteWithTools(iterCtx, client, CompleteWithToolsOptions{
-				Model:      opts.Model,
-				Messages:   messages,
-				BotID:      opts.BotID,
-				DatasetID:  opts.DatasetID,
-				SkillsetID: opts.SkillsetID,
-				Tools:      allTools,
-				Extensions: completeExtensions,
+				Model:          opts.Model,
+				ConversationID: opts.ConversationID,
+				Text:           nextText,
+				Messages:       messages,
+				BotID:          opts.BotID,
+				DatasetID:      opts.DatasetID,
+				SkillsetID:     opts.SkillsetID,
+				Tools:          allTools,
+				Extensions:     completeExtensions,
 			})
 
 			var lastEndReason string
 
 			for event := range completeEvents {
 				// Track conversation history via message events, mirroring
-				if msg, ok := event.(MessageAgentEvent); ok {
+				if msg, ok := event.(MessageAgentEvent); ok && !remote {
 					messages = append(messages, Message{Type: msg.Type, Text: msg.Text, Meta: msg.Meta})
 				}
 
@@ -1008,6 +1126,7 @@ The goal is to complete the assigned task efficiently and effectively. Follow th
 				select {
 				case events <- event:
 				case <-ctx.Done():
+					abortCancel()
 					errs <- ctx.Err()
 					return
 				}
@@ -1034,6 +1153,10 @@ The goal is to complete the assigned task efficiently and effectively. Follow th
 
 			if hasExited {
 				break
+			}
+
+			if remote {
+				nextText = nil
 			}
 
 			// The API returns end.reason in the result event. When the reason
@@ -1065,4 +1188,132 @@ The goal is to complete the assigned task efficiently and effectively. Follow th
 	}()
 
 	return events, errs
+}
+
+func validateRemoteConversationOptions(conversationID string, messages []Message, model, botID, datasetID, skillsetID string) error {
+	if conversationID == "" {
+		return nil
+	}
+
+	var unsupported []string
+
+	if len(messages) > 0 {
+		unsupported = append(unsupported, "messages")
+	}
+	if model != "" {
+		unsupported = append(unsupported, "model")
+	}
+	if botID != "" {
+		unsupported = append(unsupported, "botID")
+	}
+	if datasetID != "" {
+		unsupported = append(unsupported, "datasetID")
+	}
+	if skillsetID != "" {
+		unsupported = append(unsupported, "skillsetID")
+	}
+
+	if len(unsupported) == 0 {
+		return nil
+	}
+
+	return fmt.Errorf("stateful agent options must rely on the existing conversation configuration; unsupported with conversationID: %s", strings.Join(unsupported, ", "))
+}
+
+func buildToolParameters(parameters FunctionParameters) (map[string]interface{}, []string) {
+	properties := make(map[string]interface{})
+	var required []string
+
+	if parameters == nil {
+		return properties, required
+	}
+
+	if props, ok := parameters["properties"].(map[string]any); ok {
+		for propName, value := range props {
+			if prop, ok := value.(map[string]any); ok {
+				properties[propName] = prop
+			}
+		}
+	}
+
+	if req, ok := parameters["required"].([]string); ok {
+		required = append(required, req...)
+	} else if req, ok := parameters["required"].([]any); ok {
+		for _, value := range req {
+			if name, ok := value.(string); ok {
+				required = append(required, name)
+			}
+		}
+	}
+
+	return properties, required
+}
+
+func convertMessageExtensions(extensions *types.ConversationCompleteRequestExtensions) *types.ConversationMessageCompleteRequestExtensions {
+	if extensions == nil {
+		return nil
+	}
+
+	result := &types.ConversationMessageCompleteRequestExtensions{
+		Backstory: extensions.Backstory,
+	}
+
+	if len(extensions.Datasets) > 0 {
+		result.Datasets = make([]types.PurpleDataset, 0, len(extensions.Datasets))
+		for _, dataset := range extensions.Datasets {
+			converted := types.PurpleDataset{
+				Description: dataset.Description,
+				Name:        dataset.Name,
+			}
+
+			if len(dataset.Records) > 0 {
+				converted.Records = make([]types.PurpleRecord, 0, len(dataset.Records))
+				for _, record := range dataset.Records {
+					converted.Records = append(converted.Records, types.PurpleRecord{
+						Meta: record.Meta,
+						Text: record.Text,
+					})
+				}
+			}
+
+			result.Datasets = append(result.Datasets, converted)
+		}
+	}
+
+	if len(extensions.Features) > 0 {
+		result.Features = make([]types.PurpleFeature, 0, len(extensions.Features))
+		for _, feature := range extensions.Features {
+			result.Features = append(result.Features, types.PurpleFeature{
+				Name:    feature.Name,
+				Options: feature.Options,
+			})
+		}
+	}
+
+	if len(extensions.Skillsets) > 0 {
+		result.Skillsets = make([]types.PurpleSkillset, 0, len(extensions.Skillsets))
+		for _, skillset := range extensions.Skillsets {
+			converted := types.PurpleSkillset{
+				Description: skillset.Description,
+				Name:        skillset.Name,
+			}
+
+			if len(skillset.Abilities) > 0 {
+				converted.Abilities = make([]types.PurpleAbility, 0, len(skillset.Abilities))
+				for _, ability := range skillset.Abilities {
+					converted.Abilities = append(converted.Abilities, types.PurpleAbility{
+						Description: ability.Description,
+						Instruction: ability.Instruction,
+						Meta:        ability.Meta,
+						Name:        ability.Name,
+						SecretID:    ability.SecretID,
+					})
+				}
+			}
+
+			result.Skillsets = append(result.Skillsets, converted)
+		}
+	}
+
+	return result
 }

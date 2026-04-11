@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"net/url"
+	"strings"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
 	"github.com/chatbotkit/go-sdk/internal/params"
@@ -13,12 +14,15 @@ import (
 // SpaceClient provides access to space resources.
 type SpaceClient struct {
 	httpClient *httpclient.Client
+	// Storage provides access to space storage resources.
+	Storage *SpaceStorageClient
 }
 
 // NewSpaceClient creates a new SpaceClient.
 func NewSpaceClient(httpClient *httpclient.Client) *SpaceClient {
 	return &SpaceClient{
 		httpClient: httpClient,
+		Storage:    NewSpaceStorageClient(httpClient),
 	}
 }
 
@@ -65,4 +69,111 @@ func (c *SpaceClient) Update(ctx context.Context, spaceID string, req types.Spac
 		return nil, err
 	}
 	return &result, nil
+}
+
+// Delete deletes a space.
+func (c *SpaceClient) Delete(ctx context.Context, spaceID string) (*types.SpaceDeleteResponse, error) {
+	path := fmt.Sprintf("/api/v1/space/%s/delete", spaceID)
+
+	var result types.SpaceDeleteResponse
+	if err := c.httpClient.Post(ctx, path, types.SpaceDeleteRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// SpaceStorageClient provides access to space storage resources.
+type SpaceStorageClient struct {
+	httpClient *httpclient.Client
+}
+
+// NewSpaceStorageClient creates a new SpaceStorageClient.
+func NewSpaceStorageClient(httpClient *httpclient.Client) *SpaceStorageClient {
+	return &SpaceStorageClient{httpClient: httpClient}
+}
+
+// List lists a space storage path.
+func (c *SpaceStorageClient) List(ctx context.Context, spaceID, path string, recursive *bool) (*types.SpaceStoragePathListResponse, error) {
+	query := url.Values{}
+	if recursive != nil {
+		query.Set("recursive", fmt.Sprintf("%t", *recursive))
+	}
+
+	apiPath := fmt.Sprintf("/api/v1/space/%s/storage/list", spaceID)
+	if path != "" {
+		apiPath += "/" + encodeStoragePath(path)
+	}
+
+	var result types.SpaceStoragePathListResponse
+	if err := c.httpClient.Get(ctx, apiPath, query, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Download creates a storage download request.
+func (c *SpaceStorageClient) Download(ctx context.Context, spaceID, path string) (*types.SpaceStoragePathDownloadResponse, error) {
+	apiPath := fmt.Sprintf("/api/v1/space/%s/storage/download/%s", spaceID, encodeStoragePath(path))
+
+	var result types.SpaceStoragePathDownloadResponse
+	if err := c.httpClient.Get(ctx, apiPath, nil, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Upload creates a storage upload request.
+func (c *SpaceStorageClient) Upload(ctx context.Context, spaceID, path string, req types.SpaceStoragePathUploadRequest) (*types.SpaceStoragePathUploadResponse, error) {
+	apiPath := fmt.Sprintf("/api/v1/space/%s/storage/upload/%s", spaceID, encodeStoragePath(path))
+
+	var result types.SpaceStoragePathUploadResponse
+	if err := c.httpClient.Post(ctx, apiPath, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Delete deletes a space storage path.
+func (c *SpaceStorageClient) Delete(ctx context.Context, spaceID, path string, req *types.SpaceStoragePathDeleteRequest) (*types.SpaceStoragePathDeleteResponse, error) {
+	apiPath := fmt.Sprintf("/api/v1/space/%s/storage/delete/%s", spaceID, encodeStoragePath(path))
+	var body interface{} = types.SpaceStoragePathDeleteRequest{}
+	if req != nil {
+		body = *req
+	}
+
+	var result types.SpaceStoragePathDeleteResponse
+	if err := c.httpClient.Post(ctx, apiPath, body, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Copy copies a space storage path.
+func (c *SpaceStorageClient) Copy(ctx context.Context, spaceID, path string, req types.SpaceStoragePathCopyRequest) (*types.SpaceStoragePathCopyResponse, error) {
+	apiPath := fmt.Sprintf("/api/v1/space/%s/storage/copy/%s", spaceID, encodeStoragePath(path))
+
+	var result types.SpaceStoragePathCopyResponse
+	if err := c.httpClient.Post(ctx, apiPath, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Move moves a space storage path.
+func (c *SpaceStorageClient) Move(ctx context.Context, spaceID, path string, req types.SpaceStoragePathMoveRequest) (*types.SpaceStoragePathMoveResponse, error) {
+	apiPath := fmt.Sprintf("/api/v1/space/%s/storage/move/%s", spaceID, encodeStoragePath(path))
+
+	var result types.SpaceStoragePathMoveResponse
+	if err := c.httpClient.Post(ctx, apiPath, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+func encodeStoragePath(path string) string {
+	segments := strings.Split(path, "/")
+	for index, segment := range segments {
+		segments[index] = url.PathEscape(segment)
+	}
+	return strings.Join(segments, "/")
 }

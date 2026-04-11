@@ -77,3 +77,28 @@ func (c *TaskClient) Delete(ctx context.Context, taskID string) (*types.TaskDele
 	}
 	return &result, nil
 }
+
+// Export exports tasks.
+func (c *TaskClient) Export(ctx context.Context, opts *types.TasksExportParams) (*types.TasksExportResponse, error) {
+	query := url.Values{}
+	if opts != nil {
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
+	}
+
+	var result types.TasksExportResponse
+	if err := c.httpClient.Get(ctx, "/api/v1/task/export", query, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Trigger triggers a task.
+func (c *TaskClient) Trigger(ctx context.Context, taskID string) (*types.TaskTriggerResponse, error) {
+	path := fmt.Sprintf("/api/v1/task/%s/trigger", taskID)
+
+	var result types.TaskTriggerResponse
+	if err := c.httpClient.Post(ctx, path, types.TaskTriggerRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

@@ -77,3 +77,14 @@ func (c *WhatsAppClient) Delete(ctx context.Context, whatsappID string) (*types.
 	}
 	return &result, nil
 }
+
+// Setup sets up a WhatsApp integration.
+func (c *WhatsAppClient) Setup(ctx context.Context, whatsappID string) (*types.IntegrationWhatsAppSetupResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/whatsapp/%s/setup", whatsappID)
+
+	var result types.IntegrationWhatsAppSetupResponse
+	if err := c.httpClient.Post(ctx, path, types.IntegrationWhatsAppSetupRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

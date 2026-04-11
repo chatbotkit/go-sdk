@@ -166,6 +166,21 @@ func (c *DatasetRecordClient) Delete(ctx context.Context, datasetID, recordID st
 	return &result, nil
 }
 
+// Export exports dataset records.
+func (c *DatasetRecordClient) Export(ctx context.Context, datasetID string, opts *types.DatasetRecordsExportParams) (*types.DatasetRecordsExportResponse, error) {
+	path := fmt.Sprintf("/api/v1/dataset/%s/record/export", datasetID)
+	query := url.Values{}
+	if opts != nil {
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
+	}
+
+	var result types.DatasetRecordsExportResponse
+	if err := c.httpClient.Get(ctx, path, query, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
 // DatasetFileClient provides access to dataset file resources.
 type DatasetFileClient struct {
 	httpClient *httpclient.Client

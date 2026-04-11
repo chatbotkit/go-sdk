@@ -77,3 +77,36 @@ func (c *SecretClient) Delete(ctx context.Context, secretID string) (*types.Secr
 	}
 	return &result, nil
 }
+
+// Revoke revokes a secret.
+func (c *SecretClient) Revoke(ctx context.Context, secretID string) (*types.SecretRevokeResponse, error) {
+	path := fmt.Sprintf("/api/v1/secret/%s/revoke", secretID)
+
+	var result types.SecretRevokeResponse
+	if err := c.httpClient.Post(ctx, path, types.SecretRevokeRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Verify verifies a secret.
+func (c *SecretClient) Verify(ctx context.Context, secretID string) (*types.SecretVerifyResponse, error) {
+	path := fmt.Sprintf("/api/v1/secret/%s/verify", secretID)
+
+	var result types.SecretVerifyResponse
+	if err := c.httpClient.Post(ctx, path, types.SecretVerifyRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Authenticate authenticates a secret.
+func (c *SecretClient) Authenticate(ctx context.Context, secretID string) (*types.SecretAuthenticateResponse, error) {
+	path := fmt.Sprintf("/api/v1/secret/%s/authenticate", secretID)
+
+	var result types.SecretAuthenticateResponse
+	if err := c.httpClient.Post(ctx, path, types.SecretAuthenticateRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

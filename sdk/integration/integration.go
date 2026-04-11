@@ -34,6 +34,14 @@ type Client struct {
 	Trigger *TriggerClient
 	// Twilio provides access to Twilio integration resources.
 	Twilio *TwilioClient
+	// Email provides access to Email integration resources.
+	Email *EmailClient
+	// McpServer provides access to MCP server integration resources.
+	McpServer *McpServerClient
+	// Teams provides access to Teams integration resources.
+	Teams *TeamsClient
+	// GoogleChat provides access to Google Chat integration resources.
+	GoogleChat *GoogleChatClient
 }
 
 // NewClient creates a new IntegrationClient.
@@ -53,5 +61,9 @@ func NewClient(httpClient *httpclient.Client) *Client {
 		Extract:    NewExtractClient(httpClient),
 		Trigger:    NewTriggerClient(httpClient),
 		Twilio:     NewTwilioClient(httpClient),
+		Email:      NewEmailClient(httpClient),
+		McpServer:  NewMcpServerClient(httpClient),
+		Teams:      NewTeamsClient(httpClient),
+		GoogleChat: NewGoogleChatClient(httpClient),
 	}
 }
