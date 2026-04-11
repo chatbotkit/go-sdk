@@ -62,7 +62,7 @@ func main() {
 ```
 go.mod                    # Single Go module
 ├── sdk/                  # Main SDK client
-│   └── integration/      # Integration clients (Widget, Slack, Discord, WhatsApp, Telegram, Messenger, Instagram, Notion, Sitemap, Support, Extract, Trigger, Twilio)
+│   └── integration/      # Integration clients (Widget, Slack, Discord, WhatsApp, Telegram, Messenger, Instagram, Notion, Sitemap, Support, Extract, Trigger, Twilio, Email, McpServer, Teams, GoogleChat)
 ├── agent/                # Agent execution functionality
 ├── types/                # Generated API types
 └── internal/httpclient/  # Internal HTTP client with streaming support
@@ -90,6 +90,7 @@ client.Contact                   // Contact management
 client.Secret                    // Secret management
 client.Channel                   // Channel operations
 client.Blueprint                 // Blueprint management
+client.Graphql                   // GraphQL operations
 client.Integration               // Integration management
 client.Integration.Widget        // Widget integrations
 client.Integration.Slack         // Slack integrations
@@ -104,8 +105,18 @@ client.Integration.Support       // Support integrations
 client.Integration.Extract       // Extract integrations
 client.Integration.Trigger       // Trigger integrations
 client.Integration.Twilio        // Twilio integrations
+client.Integration.Email         // Email integrations
+client.Integration.McpServer     // MCP server integrations
+client.Integration.Teams         // Teams integrations
+client.Integration.GoogleChat    // Google Chat integrations
+client.Memory                    // Memory management
+client.Partner                   // Partner operations
+client.Platform                  // Platform content and catalogue access
+client.Policy                    // Policy management
+client.Portal                    // Portal management
 client.Team                      // Team management
 client.Task                      // Task management
+client.Usage                     // Usage reporting
 client.Space                     // Space management
 client.Event                     // Event log access
 client.Event.Log                 // Event log operations
