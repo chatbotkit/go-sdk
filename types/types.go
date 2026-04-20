@@ -316,6 +316,12 @@
 //    conversationAttachmentUploadResponse, err := UnmarshalConversationAttachmentUploadResponse(bytes)
 //    bytes, err = conversationAttachmentUploadResponse.Marshal()
 //
+//    conversationCompactParams, err := UnmarshalConversationCompactParams(bytes)
+//    bytes, err = conversationCompactParams.Marshal()
+//
+//    conversationCompactResponse, err := UnmarshalConversationCompactResponse(bytes)
+//    bytes, err = conversationCompactResponse.Marshal()
+//
 //    conversationMessageCompleteParams, err := UnmarshalConversationMessageCompleteParams(bytes)
 //    bytes, err = conversationMessageCompleteParams.Marshal()
 //
@@ -3316,6 +3322,26 @@ func UnmarshalConversationAttachmentUploadResponse(data []byte) (ConversationAtt
 }
 
 func (r *ConversationAttachmentUploadResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalConversationCompactParams(data []byte) (ConversationCompactParams, error) {
+	var r ConversationCompactParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationCompactParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalConversationCompactResponse(data []byte) (ConversationCompactResponse, error) {
+	var r ConversationCompactResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationCompactResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -10925,6 +10951,17 @@ type ConversationAttachmentUploadResponseUploadRequest struct {
 	URL                       string                 `json:"url"`
 }
 
+type ConversationCompactParams struct {
+	// The ID of the conversation to compact       
+	ConversationID                          string `json:"conversationId"`
+}
+
+type ConversationCompactResponse struct {
+	// The ID of the created checkpoint message, or the conversation ID if there was nothing to       
+	// compact                                                                                        
+	ID                                                                                         string `json:"id"`
+}
+
 type ConversationMessageCompleteParams struct {
 	// The ID of the conversation to receive message from       
 	ConversationID                                       string `json:"conversationId"`
@@ -17711,18 +17748,24 @@ type PolicyFetchParams struct {
 
 // Blueprint properties
 type PolicyFetchResponse struct {
-	// The ID of the blueprint                                 
-	BlueprintID                        *string                 `json:"blueprintId,omitempty"`
-	// The policy configuration as JSON                        
-	Config                             map[string]interface{}  `json:"config,omitempty"`
-	// The associated description                              
-	Description                        *string                 `json:"description,omitempty"`
-	// Meta data information                                   
-	Meta                               map[string]interface{}  `json:"meta,omitempty"`
-	// The associated name                                     
-	Name                               *string                 `json:"name,omitempty"`
-	// The policy type                                         
-	Type                               PolicyFetchResponseType `json:"type"`
+	// The ID of the blueprint                                                 
+	BlueprintID                                        *string                 `json:"blueprintId,omitempty"`
+	// The policy configuration as JSON                                        
+	Config                                             map[string]interface{}  `json:"config,omitempty"`
+	// The timestamp (ms) when the instance was created                        
+	CreatedAt                                          float64                 `json:"createdAt"`
+	// The associated description                                              
+	Description                                        *string                 `json:"description,omitempty"`
+	// The instance ID                                                         
+	ID                                                 string                  `json:"id"`
+	// Meta data information                                                   
+	Meta                                               map[string]interface{}  `json:"meta,omitempty"`
+	// The associated name                                                     
+	Name                                               *string                 `json:"name,omitempty"`
+	// The policy type                                                         
+	Type                                               PolicyFetchResponseType `json:"type"`
+	// The timestamp (ms) when the instance was updated                        
+	UpdatedAt                                          float64                 `json:"updatedAt"`
 }
 
 type PolicyUpdateParams struct {
@@ -19526,6 +19569,7 @@ const (
 	PurpleActivity                                  PurpleType = "activity"
 	PurpleBackstory                                 PurpleType = "backstory"
 	PurpleBot                                       PurpleType = "bot"
+	PurpleCheckpoint                                PurpleType = "checkpoint"
 	PurpleContext                                   PurpleType = "context"
 	PurpleInstruction                               PurpleType = "instruction"
 	PurpleReasoning                                 PurpleType = "reasoning"
@@ -19540,6 +19584,7 @@ const (
 	FluffyActivity                                   FluffyType = "activity"
 	FluffyBackstory                                  FluffyType = "backstory"
 	FluffyBot                                        FluffyType = "bot"
+	FluffyCheckpoint                                 FluffyType = "checkpoint"
 	FluffyContext                                    FluffyType = "context"
 	FluffyInstruction                                FluffyType = "instruction"
 	FluffyReasoning                                  FluffyType = "reasoning"
@@ -19721,6 +19766,7 @@ const (
 	StickyActivity                               ConversationMessageFetchResponseType = "activity"
 	TentacledBackstory                           ConversationMessageFetchResponseType = "backstory"
 	TentacledBot                                 ConversationMessageFetchResponseType = "bot"
+	TentacledCheckpoint                          ConversationMessageFetchResponseType = "checkpoint"
 	TentacledContext                             ConversationMessageFetchResponseType = "context"
 	TentacledInstruction                         ConversationMessageFetchResponseType = "instruction"
 	TentacledReasoning                           ConversationMessageFetchResponseType = "reasoning"
@@ -19735,6 +19781,7 @@ const (
 
 	StickyBackstory                              ConversationMessageUpdateRequestType = "backstory"
 	StickyBot                                    ConversationMessageUpdateRequestType = "bot"
+	StickyCheckpoint                             ConversationMessageUpdateRequestType = "checkpoint"
 	StickyContext                                ConversationMessageUpdateRequestType = "context"
 	StickyInstruction                            ConversationMessageUpdateRequestType = "instruction"
 	StickyReasoning                              ConversationMessageUpdateRequestType = "reasoning"
@@ -19748,6 +19795,7 @@ const (
 	IndecentActivity                             ConversationMessageCreateRequestType = "activity"
 	IndigoBackstory                              ConversationMessageCreateRequestType = "backstory"
 	IndigoBot                                    ConversationMessageCreateRequestType = "bot"
+	IndigoCheckpoint                             ConversationMessageCreateRequestType = "checkpoint"
 	IndigoContext                                ConversationMessageCreateRequestType = "context"
 	IndigoInstruction                            ConversationMessageCreateRequestType = "instruction"
 	IndigoReasoning                              ConversationMessageCreateRequestType = "reasoning"
@@ -19771,6 +19819,7 @@ const (
 	HilariousActivity                                    IndecentType = "activity"
 	IndecentBackstory                                    IndecentType = "backstory"
 	IndecentBot                                          IndecentType = "bot"
+	IndecentCheckpoint                                   IndecentType = "checkpoint"
 	IndecentContext                                      IndecentType = "context"
 	IndecentInstruction                                  IndecentType = "instruction"
 	IndecentReasoning                                    IndecentType = "reasoning"
@@ -19809,6 +19858,7 @@ const (
 	AmbitiousActivity                                   MagentaType = "activity"
 	HilariousBackstory                                  MagentaType = "backstory"
 	HilariousBot                                        MagentaType = "bot"
+	HilariousCheckpoint                                 MagentaType = "checkpoint"
 	HilariousContext                                    MagentaType = "context"
 	HilariousInstruction                                MagentaType = "instruction"
 	HilariousReasoning                                  MagentaType = "reasoning"
@@ -19834,6 +19884,7 @@ type FriskyType string
 const (
 	AmbitiousBackstory                                FriskyType = "backstory"
 	AmbitiousBot                                      FriskyType = "bot"
+	AmbitiousCheckpoint                               FriskyType = "checkpoint"
 	AmbitiousContext                                  FriskyType = "context"
 	AmbitiousInstruction                              FriskyType = "instruction"
 	AmbitiousReasoning                                FriskyType = "reasoning"
@@ -19848,6 +19899,7 @@ type MischievousType string
 const (
 	CunningBackstory                                   MischievousType = "backstory"
 	CunningBot                                         MischievousType = "bot"
+	CunningCheckpoint                                  MischievousType = "checkpoint"
 	CunningContext                                     MischievousType = "context"
 	CunningInstruction                                 MischievousType = "instruction"
 	CunningReasoning                                   MischievousType = "reasoning"
@@ -19870,6 +19922,7 @@ type Type1 string
 const (
 	MagentaBackstory                                    Type1 = "backstory"
 	MagentaBot                                          Type1 = "bot"
+	MagentaCheckpoint                                   Type1 = "checkpoint"
 	MagentaContext                                      Type1 = "context"
 	MagentaInstruction                                  Type1 = "instruction"
 	MagentaReasoning                                    Type1 = "reasoning"
@@ -20701,6 +20754,7 @@ const (
 	BraggadociousActivity                                  Type11 = "activity"
 	FriskyBackstory                                        Type11 = "backstory"
 	FriskyBot                                              Type11 = "bot"
+	FriskyCheckpoint                                       Type11 = "checkpoint"
 	FriskyContext                                          Type11 = "context"
 	FriskyInstruction                                      Type11 = "instruction"
 	FriskyReasoning                                        Type11 = "reasoning"
@@ -20883,6 +20937,7 @@ const (
 	Activity1              MessageTypeEnum = "activity"
 	MischievousBackstory   MessageTypeEnum = "backstory"
 	MischievousBot         MessageTypeEnum = "bot"
+	MischievousCheckpoint  MessageTypeEnum = "checkpoint"
 	MischievousContext     MessageTypeEnum = "context"
 	MischievousInstruction MessageTypeEnum = "instruction"
 	MischievousReasoning   MessageTypeEnum = "reasoning"
@@ -20897,6 +20952,7 @@ const (
 	MessageTypeActivity            MessageType = "activity"
 	MessageTypeBackstory           MessageType = "backstory"
 	MessageTypeBot                 MessageType = "bot"
+	MessageTypeCheckpoint          MessageType = "checkpoint"
 	MessageTypeContext             MessageType = "context"
 	MessageTypeInstruction         MessageType = "instruction"
 
@@ -21104,6 +21160,7 @@ const (
 	Activity3                                           DataType = "activity"
 	BraggadociousBackstory                              DataType = "backstory"
 	BraggadociousBot                                    DataType = "bot"
+	BraggadociousCheckpoint                             DataType = "checkpoint"
 	BraggadociousContext                                DataType = "context"
 	BraggadociousInstruction                            DataType = "instruction"
 	BraggadociousReasoning                              DataType = "reasoning"
