@@ -13,12 +13,15 @@ import (
 // TaskClient provides access to task resources.
 type TaskClient struct {
 	httpClient *httpclient.Client
+	// Execution provides access to task execution resources.
+	Execution *TaskExecutionClient
 }
 
 // NewTaskClient creates a new TaskClient.
 func NewTaskClient(httpClient *httpclient.Client) *TaskClient {
 	return &TaskClient{
 		httpClient: httpClient,
+		Execution:  NewTaskExecutionClient(httpClient),
 	}
 }
 
@@ -98,6 +101,55 @@ func (c *TaskClient) Trigger(ctx context.Context, taskID string) (*types.TaskTri
 
 	var result types.TaskTriggerResponse
 	if err := c.httpClient.Post(ctx, path, types.TaskTriggerRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Cancel cancels a task.
+func (c *TaskClient) Cancel(ctx context.Context, taskID string) (*types.TaskCancelResponse, error) {
+	path := fmt.Sprintf("/api/v1/task/%s/cancel", taskID)
+
+	var result types.TaskCancelResponse
+	if err := c.httpClient.Post(ctx, path, types.TaskCancelRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// TaskExecutionClient provides access to task execution resources.
+type TaskExecutionClient struct {
+	httpClient *httpclient.Client
+}
+
+// NewTaskExecutionClient creates a new TaskExecutionClient.
+func NewTaskExecutionClient(httpClient *httpclient.Client) *TaskExecutionClient {
+	return &TaskExecutionClient{
+		httpClient: httpClient,
+	}
+}
+
+// List retrieves a list of executions for a task.
+func (c *TaskExecutionClient) List(ctx context.Context, taskID string, opts *types.TaskExecutionListParams) (*types.TaskExecutionListResponse, error) {
+	path := fmt.Sprintf("/api/v1/task/%s/execution/list", taskID)
+	query := url.Values{}
+	if opts != nil {
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
+	}
+
+	var result types.TaskExecutionListResponse
+	if err := c.httpClient.Get(ctx, path, query, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Cancel cancels a task execution.
+func (c *TaskExecutionClient) Cancel(ctx context.Context, taskID, executionID string) (*types.TaskExecutionCancelResponse, error) {
+	path := fmt.Sprintf("/api/v1/task/%s/execution/%s/cancel", taskID, executionID)
+
+	var result types.TaskExecutionCancelResponse
+	if err := c.httpClient.Post(ctx, path, types.TaskExecutionCancelRequest{}, &result); err != nil {
 		return nil, err
 	}
 	return &result, nil

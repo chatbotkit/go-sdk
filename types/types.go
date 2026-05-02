@@ -820,6 +820,18 @@
 //    integrationExtractFetchResponse, err := UnmarshalIntegrationExtractFetchResponse(bytes)
 //    bytes, err = integrationExtractFetchResponse.Marshal()
 //
+//    extractIntegrationItemsExportParams, err := UnmarshalExtractIntegrationItemsExportParams(bytes)
+//    bytes, err = extractIntegrationItemsExportParams.Marshal()
+//
+//    extractIntegrationItemsExportResponse, err := UnmarshalExtractIntegrationItemsExportResponse(bytes)
+//    bytes, err = extractIntegrationItemsExportResponse.Marshal()
+//
+//    extractIntegrationItemListParams, err := UnmarshalExtractIntegrationItemListParams(bytes)
+//    bytes, err = extractIntegrationItemListParams.Marshal()
+//
+//    extractIntegrationItemListResponse, err := UnmarshalExtractIntegrationItemListResponse(bytes)
+//    bytes, err = extractIntegrationItemListResponse.Marshal()
+//
 //    integrationExtractTriggerParams, err := UnmarshalIntegrationExtractTriggerParams(bytes)
 //    bytes, err = integrationExtractTriggerParams.Marshal()
 //
@@ -1291,6 +1303,15 @@
 //    integrationTelegramListResponse, err := UnmarshalIntegrationTelegramListResponse(bytes)
 //    bytes, err = integrationTelegramListResponse.Marshal()
 //
+//    triggerIntegrationCancelParams, err := UnmarshalTriggerIntegrationCancelParams(bytes)
+//    bytes, err = triggerIntegrationCancelParams.Marshal()
+//
+//    triggerIntegrationCancelRequest, err := UnmarshalTriggerIntegrationCancelRequest(bytes)
+//    bytes, err = triggerIntegrationCancelRequest.Marshal()
+//
+//    triggerIntegrationCancelResponse, err := UnmarshalTriggerIntegrationCancelResponse(bytes)
+//    bytes, err = triggerIntegrationCancelResponse.Marshal()
+//
 //    triggerIntegrationDeleteParams, err := UnmarshalTriggerIntegrationDeleteParams(bytes)
 //    bytes, err = triggerIntegrationDeleteParams.Marshal()
 //
@@ -1299,6 +1320,21 @@
 //
 //    triggerIntegrationDeleteResponse, err := UnmarshalTriggerIntegrationDeleteResponse(bytes)
 //    bytes, err = triggerIntegrationDeleteResponse.Marshal()
+//
+//    triggerIntegrationExecutionCancelParams, err := UnmarshalTriggerIntegrationExecutionCancelParams(bytes)
+//    bytes, err = triggerIntegrationExecutionCancelParams.Marshal()
+//
+//    triggerIntegrationExecutionCancelRequest, err := UnmarshalTriggerIntegrationExecutionCancelRequest(bytes)
+//    bytes, err = triggerIntegrationExecutionCancelRequest.Marshal()
+//
+//    triggerIntegrationExecutionCancelResponse, err := UnmarshalTriggerIntegrationExecutionCancelResponse(bytes)
+//    bytes, err = triggerIntegrationExecutionCancelResponse.Marshal()
+//
+//    triggerIntegrationExecutionListParams, err := UnmarshalTriggerIntegrationExecutionListParams(bytes)
+//    bytes, err = triggerIntegrationExecutionListParams.Marshal()
+//
+//    triggerIntegrationExecutionListResponse, err := UnmarshalTriggerIntegrationExecutionListResponse(bytes)
+//    bytes, err = triggerIntegrationExecutionListResponse.Marshal()
 //
 //    triggerIntegrationFetchParams, err := UnmarshalTriggerIntegrationFetchParams(bytes)
 //    bytes, err = triggerIntegrationFetchParams.Marshal()
@@ -1459,6 +1495,21 @@
 //    integrationWidgetFetchResponse, err := UnmarshalIntegrationWidgetFetchResponse(bytes)
 //    bytes, err = integrationWidgetFetchResponse.Marshal()
 //
+//    widgetIntegrationFileAttachParams, err := UnmarshalWidgetIntegrationFileAttachParams(bytes)
+//    bytes, err = widgetIntegrationFileAttachParams.Marshal()
+//
+//    widgetIntegrationFileAttachRequest, err := UnmarshalWidgetIntegrationFileAttachRequest(bytes)
+//    bytes, err = widgetIntegrationFileAttachRequest.Marshal()
+//
+//    widgetIntegrationFileAttachResponse, err := UnmarshalWidgetIntegrationFileAttachResponse(bytes)
+//    bytes, err = widgetIntegrationFileAttachResponse.Marshal()
+//
+//    widgetIntegrationFileDetachParams, err := UnmarshalWidgetIntegrationFileDetachParams(bytes)
+//    bytes, err = widgetIntegrationFileDetachParams.Marshal()
+//
+//    widgetIntegrationFileDetachResponse, err := UnmarshalWidgetIntegrationFileDetachResponse(bytes)
+//    bytes, err = widgetIntegrationFileDetachResponse.Marshal()
+//
 //    integrationWidgetSetupParams, err := UnmarshalIntegrationWidgetSetupParams(bytes)
 //    bytes, err = integrationWidgetSetupParams.Marshal()
 //
@@ -1552,6 +1603,45 @@
 //    memorySearchResponse, err := UnmarshalMemorySearchResponse(bytes)
 //    bytes, err = memorySearchResponse.Marshal()
 //
+//    partnerUserContextDeleteParams, err := UnmarshalPartnerUserContextDeleteParams(bytes)
+//    bytes, err = partnerUserContextDeleteParams.Marshal()
+//
+//    partnerUserContextDeleteRequest, err := UnmarshalPartnerUserContextDeleteRequest(bytes)
+//    bytes, err = partnerUserContextDeleteRequest.Marshal()
+//
+//    partnerUserContextDeleteResponse, err := UnmarshalPartnerUserContextDeleteResponse(bytes)
+//    bytes, err = partnerUserContextDeleteResponse.Marshal()
+//
+//    partnerUserContextFetchParams, err := UnmarshalPartnerUserContextFetchParams(bytes)
+//    bytes, err = partnerUserContextFetchParams.Marshal()
+//
+//    partnerUserContextFetchResponse, err := UnmarshalPartnerUserContextFetchResponse(bytes)
+//    bytes, err = partnerUserContextFetchResponse.Marshal()
+//
+//    partnerUserContextUpdateParams, err := UnmarshalPartnerUserContextUpdateParams(bytes)
+//    bytes, err = partnerUserContextUpdateParams.Marshal()
+//
+//    partnerUserContextUpdateRequest, err := UnmarshalPartnerUserContextUpdateRequest(bytes)
+//    bytes, err = partnerUserContextUpdateRequest.Marshal()
+//
+//    partnerUserContextUpdateResponse, err := UnmarshalPartnerUserContextUpdateResponse(bytes)
+//    bytes, err = partnerUserContextUpdateResponse.Marshal()
+//
+//    partnerUserContextCreateParams, err := UnmarshalPartnerUserContextCreateParams(bytes)
+//    bytes, err = partnerUserContextCreateParams.Marshal()
+//
+//    partnerUserContextCreateRequest, err := UnmarshalPartnerUserContextCreateRequest(bytes)
+//    bytes, err = partnerUserContextCreateRequest.Marshal()
+//
+//    partnerUserContextCreateResponse, err := UnmarshalPartnerUserContextCreateResponse(bytes)
+//    bytes, err = partnerUserContextCreateResponse.Marshal()
+//
+//    partnerUserContextListParams, err := UnmarshalPartnerUserContextListParams(bytes)
+//    bytes, err = partnerUserContextListParams.Marshal()
+//
+//    partnerUserContextListResponse, err := UnmarshalPartnerUserContextListResponse(bytes)
+//    bytes, err = partnerUserContextListResponse.Marshal()
+//
 //    partnerUserDeleteParams, err := UnmarshalPartnerUserDeleteParams(bytes)
 //    bytes, err = partnerUserDeleteParams.Marshal()
 //
@@ -1567,6 +1657,15 @@
 //    partnerUserFetchResponse, err := UnmarshalPartnerUserFetchResponse(bytes)
 //    bytes, err = partnerUserFetchResponse.Marshal()
 //
+//    partnerUserSessionCreateParams, err := UnmarshalPartnerUserSessionCreateParams(bytes)
+//    bytes, err = partnerUserSessionCreateParams.Marshal()
+//
+//    partnerUserSessionCreateRequest, err := UnmarshalPartnerUserSessionCreateRequest(bytes)
+//    bytes, err = partnerUserSessionCreateRequest.Marshal()
+//
+//    partnerUserSessionCreateResponse, err := UnmarshalPartnerUserSessionCreateResponse(bytes)
+//    bytes, err = partnerUserSessionCreateResponse.Marshal()
+//
 //    partnerUserTokenDeleteParams, err := UnmarshalPartnerUserTokenDeleteParams(bytes)
 //    bytes, err = partnerUserTokenDeleteParams.Marshal()
 //
@@ -1575,6 +1674,15 @@
 //
 //    partnerUserTokenDeleteResponse, err := UnmarshalPartnerUserTokenDeleteResponse(bytes)
 //    bytes, err = partnerUserTokenDeleteResponse.Marshal()
+//
+//    partnerUserTokenUpdateParams, err := UnmarshalPartnerUserTokenUpdateParams(bytes)
+//    bytes, err = partnerUserTokenUpdateParams.Marshal()
+//
+//    partnerUserTokenUpdateRequest, err := UnmarshalPartnerUserTokenUpdateRequest(bytes)
+//    bytes, err = partnerUserTokenUpdateRequest.Marshal()
+//
+//    partnerUserTokenUpdateResponse, err := UnmarshalPartnerUserTokenUpdateResponse(bytes)
+//    bytes, err = partnerUserTokenUpdateResponse.Marshal()
 //
 //    partnerUserTokenCreateParams, err := UnmarshalPartnerUserTokenCreateParams(bytes)
 //    bytes, err = partnerUserTokenCreateParams.Marshal()
@@ -2062,6 +2170,15 @@
 //    spaceListResponse, err := UnmarshalSpaceListResponse(bytes)
 //    bytes, err = spaceListResponse.Marshal()
 //
+//    taskCancelParams, err := UnmarshalTaskCancelParams(bytes)
+//    bytes, err = taskCancelParams.Marshal()
+//
+//    taskCancelRequest, err := UnmarshalTaskCancelRequest(bytes)
+//    bytes, err = taskCancelRequest.Marshal()
+//
+//    taskCancelResponse, err := UnmarshalTaskCancelResponse(bytes)
+//    bytes, err = taskCancelResponse.Marshal()
+//
 //    taskDeleteParams, err := UnmarshalTaskDeleteParams(bytes)
 //    bytes, err = taskDeleteParams.Marshal()
 //
@@ -2070,6 +2187,21 @@
 //
 //    taskDeleteResponse, err := UnmarshalTaskDeleteResponse(bytes)
 //    bytes, err = taskDeleteResponse.Marshal()
+//
+//    taskExecutionCancelParams, err := UnmarshalTaskExecutionCancelParams(bytes)
+//    bytes, err = taskExecutionCancelParams.Marshal()
+//
+//    taskExecutionCancelRequest, err := UnmarshalTaskExecutionCancelRequest(bytes)
+//    bytes, err = taskExecutionCancelRequest.Marshal()
+//
+//    taskExecutionCancelResponse, err := UnmarshalTaskExecutionCancelResponse(bytes)
+//    bytes, err = taskExecutionCancelResponse.Marshal()
+//
+//    taskExecutionListParams, err := UnmarshalTaskExecutionListParams(bytes)
+//    bytes, err = taskExecutionListParams.Marshal()
+//
+//    taskExecutionListResponse, err := UnmarshalTaskExecutionListResponse(bytes)
+//    bytes, err = taskExecutionListResponse.Marshal()
 //
 //    taskFetchParams, err := UnmarshalTaskFetchParams(bytes)
 //    bytes, err = taskFetchParams.Marshal()
@@ -5031,6 +5163,46 @@ func (r *IntegrationExtractFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalExtractIntegrationItemsExportParams(data []byte) (ExtractIntegrationItemsExportParams, error) {
+	var r ExtractIntegrationItemsExportParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ExtractIntegrationItemsExportParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalExtractIntegrationItemsExportResponse(data []byte) (ExtractIntegrationItemsExportResponse, error) {
+	var r ExtractIntegrationItemsExportResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ExtractIntegrationItemsExportResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalExtractIntegrationItemListParams(data []byte) (ExtractIntegrationItemListParams, error) {
+	var r ExtractIntegrationItemListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ExtractIntegrationItemListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalExtractIntegrationItemListResponse(data []byte) (ExtractIntegrationItemListResponse, error) {
+	var r ExtractIntegrationItemListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ExtractIntegrationItemListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalIntegrationExtractTriggerParams(data []byte) (IntegrationExtractTriggerParams, error) {
 	var r IntegrationExtractTriggerParams
 	err := json.Unmarshal(data, &r)
@@ -6637,6 +6809,38 @@ func (r *IntegrationTelegramListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalTriggerIntegrationCancelParams(data []byte) (TriggerIntegrationCancelParams, error) {
+	var r TriggerIntegrationCancelParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TriggerIntegrationCancelParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type TriggerIntegrationCancelRequest map[string]interface{}
+
+func UnmarshalTriggerIntegrationCancelRequest(data []byte) (TriggerIntegrationCancelRequest, error) {
+	var r TriggerIntegrationCancelRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TriggerIntegrationCancelRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTriggerIntegrationCancelResponse(data []byte) (TriggerIntegrationCancelResponse, error) {
+	var r TriggerIntegrationCancelResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TriggerIntegrationCancelResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalTriggerIntegrationDeleteParams(data []byte) (TriggerIntegrationDeleteParams, error) {
 	var r TriggerIntegrationDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -6666,6 +6870,58 @@ func UnmarshalTriggerIntegrationDeleteResponse(data []byte) (TriggerIntegrationD
 }
 
 func (r *TriggerIntegrationDeleteResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTriggerIntegrationExecutionCancelParams(data []byte) (TriggerIntegrationExecutionCancelParams, error) {
+	var r TriggerIntegrationExecutionCancelParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TriggerIntegrationExecutionCancelParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type TriggerIntegrationExecutionCancelRequest map[string]interface{}
+
+func UnmarshalTriggerIntegrationExecutionCancelRequest(data []byte) (TriggerIntegrationExecutionCancelRequest, error) {
+	var r TriggerIntegrationExecutionCancelRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TriggerIntegrationExecutionCancelRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTriggerIntegrationExecutionCancelResponse(data []byte) (TriggerIntegrationExecutionCancelResponse, error) {
+	var r TriggerIntegrationExecutionCancelResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TriggerIntegrationExecutionCancelResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTriggerIntegrationExecutionListParams(data []byte) (TriggerIntegrationExecutionListParams, error) {
+	var r TriggerIntegrationExecutionListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TriggerIntegrationExecutionListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTriggerIntegrationExecutionListResponse(data []byte) (TriggerIntegrationExecutionListResponse, error) {
+	var r TriggerIntegrationExecutionListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TriggerIntegrationExecutionListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7215,6 +7471,56 @@ func (r *IntegrationWidgetFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalWidgetIntegrationFileAttachParams(data []byte) (WidgetIntegrationFileAttachParams, error) {
+	var r WidgetIntegrationFileAttachParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *WidgetIntegrationFileAttachParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalWidgetIntegrationFileAttachRequest(data []byte) (WidgetIntegrationFileAttachRequest, error) {
+	var r WidgetIntegrationFileAttachRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *WidgetIntegrationFileAttachRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalWidgetIntegrationFileAttachResponse(data []byte) (WidgetIntegrationFileAttachResponse, error) {
+	var r WidgetIntegrationFileAttachResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *WidgetIntegrationFileAttachResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalWidgetIntegrationFileDetachParams(data []byte) (WidgetIntegrationFileDetachParams, error) {
+	var r WidgetIntegrationFileDetachParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *WidgetIntegrationFileDetachParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalWidgetIntegrationFileDetachResponse(data []byte) (WidgetIntegrationFileDetachResponse, error) {
+	var r WidgetIntegrationFileDetachResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *WidgetIntegrationFileDetachResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalIntegrationWidgetSetupParams(data []byte) (IntegrationWidgetSetupParams, error) {
 	var r IntegrationWidgetSetupParams
 	err := json.Unmarshal(data, &r)
@@ -7529,6 +7835,138 @@ func (r *MemorySearchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalPartnerUserContextDeleteParams(data []byte) (PartnerUserContextDeleteParams, error) {
+	var r PartnerUserContextDeleteParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextDeleteParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type PartnerUserContextDeleteRequest map[string]interface{}
+
+func UnmarshalPartnerUserContextDeleteRequest(data []byte) (PartnerUserContextDeleteRequest, error) {
+	var r PartnerUserContextDeleteRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextDeleteRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserContextDeleteResponse(data []byte) (PartnerUserContextDeleteResponse, error) {
+	var r PartnerUserContextDeleteResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextDeleteResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserContextFetchParams(data []byte) (PartnerUserContextFetchParams, error) {
+	var r PartnerUserContextFetchParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextFetchParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserContextFetchResponse(data []byte) (PartnerUserContextFetchResponse, error) {
+	var r PartnerUserContextFetchResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextFetchResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserContextUpdateParams(data []byte) (PartnerUserContextUpdateParams, error) {
+	var r PartnerUserContextUpdateParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextUpdateParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserContextUpdateRequest(data []byte) (PartnerUserContextUpdateRequest, error) {
+	var r PartnerUserContextUpdateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextUpdateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserContextUpdateResponse(data []byte) (PartnerUserContextUpdateResponse, error) {
+	var r PartnerUserContextUpdateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextUpdateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserContextCreateParams(data []byte) (PartnerUserContextCreateParams, error) {
+	var r PartnerUserContextCreateParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextCreateParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserContextCreateRequest(data []byte) (PartnerUserContextCreateRequest, error) {
+	var r PartnerUserContextCreateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextCreateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserContextCreateResponse(data []byte) (PartnerUserContextCreateResponse, error) {
+	var r PartnerUserContextCreateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextCreateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserContextListParams(data []byte) (PartnerUserContextListParams, error) {
+	var r PartnerUserContextListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserContextListResponse(data []byte) (PartnerUserContextListResponse, error) {
+	var r PartnerUserContextListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalPartnerUserDeleteParams(data []byte) (PartnerUserDeleteParams, error) {
 	var r PartnerUserDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -7581,6 +8019,36 @@ func (r *PartnerUserFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalPartnerUserSessionCreateParams(data []byte) (PartnerUserSessionCreateParams, error) {
+	var r PartnerUserSessionCreateParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserSessionCreateParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserSessionCreateRequest(data []byte) (PartnerUserSessionCreateRequest, error) {
+	var r PartnerUserSessionCreateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserSessionCreateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserSessionCreateResponse(data []byte) (PartnerUserSessionCreateResponse, error) {
+	var r PartnerUserSessionCreateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserSessionCreateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalPartnerUserTokenDeleteParams(data []byte) (PartnerUserTokenDeleteParams, error) {
 	var r PartnerUserTokenDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -7613,6 +8081,36 @@ func (r *PartnerUserTokenDeleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalPartnerUserTokenUpdateParams(data []byte) (PartnerUserTokenUpdateParams, error) {
+	var r PartnerUserTokenUpdateParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserTokenUpdateParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserTokenUpdateRequest(data []byte) (PartnerUserTokenUpdateRequest, error) {
+	var r PartnerUserTokenUpdateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserTokenUpdateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserTokenUpdateResponse(data []byte) (PartnerUserTokenUpdateResponse, error) {
+	var r PartnerUserTokenUpdateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserTokenUpdateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalPartnerUserTokenCreateParams(data []byte) (PartnerUserTokenCreateParams, error) {
 	var r PartnerUserTokenCreateParams
 	err := json.Unmarshal(data, &r)
@@ -7622,8 +8120,6 @@ func UnmarshalPartnerUserTokenCreateParams(data []byte) (PartnerUserTokenCreateP
 func (r *PartnerUserTokenCreateParams) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
-
-type PartnerUserTokenCreateRequest map[string]interface{}
 
 func UnmarshalPartnerUserTokenCreateRequest(data []byte) (PartnerUserTokenCreateRequest, error) {
 	var r PartnerUserTokenCreateRequest
@@ -9255,6 +9751,38 @@ func (r *SpaceListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalTaskCancelParams(data []byte) (TaskCancelParams, error) {
+	var r TaskCancelParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskCancelParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type TaskCancelRequest map[string]interface{}
+
+func UnmarshalTaskCancelRequest(data []byte) (TaskCancelRequest, error) {
+	var r TaskCancelRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskCancelRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTaskCancelResponse(data []byte) (TaskCancelResponse, error) {
+	var r TaskCancelResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskCancelResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalTaskDeleteParams(data []byte) (TaskDeleteParams, error) {
 	var r TaskDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -9284,6 +9812,58 @@ func UnmarshalTaskDeleteResponse(data []byte) (TaskDeleteResponse, error) {
 }
 
 func (r *TaskDeleteResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTaskExecutionCancelParams(data []byte) (TaskExecutionCancelParams, error) {
+	var r TaskExecutionCancelParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskExecutionCancelParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type TaskExecutionCancelRequest map[string]interface{}
+
+func UnmarshalTaskExecutionCancelRequest(data []byte) (TaskExecutionCancelRequest, error) {
+	var r TaskExecutionCancelRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskExecutionCancelRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTaskExecutionCancelResponse(data []byte) (TaskExecutionCancelResponse, error) {
+	var r TaskExecutionCancelResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskExecutionCancelResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTaskExecutionListParams(data []byte) (TaskExecutionListParams, error) {
+	var r TaskExecutionListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskExecutionListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTaskExecutionListResponse(data []byte) (TaskExecutionListResponse, error) {
+	var r TaskExecutionListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskExecutionListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -13720,6 +14300,70 @@ type IntegrationExtractFetchResponse struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
+type ExtractIntegrationItemsExportParams struct {
+	// The cursor to use for pagination                                           
+	Cursor                              *string                                   `json:"cursor,omitempty"`
+	// The ID of the extract integration                                          
+	ExtractIntegrationID                string                                    `json:"extractIntegrationId"`
+	// The order of the paginated items                                           
+	Order                               *ExtractIntegrationItemsExportParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                            
+	Take                                *int64                                    `json:"take,omitempty"`
+}
+
+type ExtractIntegrationItemsExportResponse struct {
+	// Cursor for fetching the next page                                            
+	Cursor                              *string                                     `json:"cursor,omitempty"`
+	Items                               []ExtractIntegrationItemsExportResponseItem `json:"items,omitempty"`
+}
+
+type ExtractIntegrationItemsExportResponseItem struct {
+	// The ID of the conversation from which data was extracted                       
+	ConversationID                                             *string                `json:"conversationId,omitempty"`
+	// The timestamp when the item was created                                        
+	CreatedAt                                                  *string                `json:"createdAt,omitempty"`
+	// The extracted data in YAML-serializable format                                 
+	Data                                                       map[string]interface{} `json:"data"`
+	// The ID of the extract integration                                              
+	ExtractIntegrationID                                       string                 `json:"extractIntegrationId"`
+	// The unique identifier of the item                                              
+	ID                                                         string                 `json:"id"`
+	// The timestamp when the item was last updated                                   
+	UpdatedAt                                                  *string                `json:"updatedAt,omitempty"`
+}
+
+type ExtractIntegrationItemListParams struct {
+	// The cursor to use for pagination                                        
+	Cursor                              *string                                `json:"cursor,omitempty"`
+	// The ID of the extract integration                                       
+	ExtractIntegrationID                string                                 `json:"extractIntegrationId"`
+	// The order of the paginated items                                        
+	Order                               *ExtractIntegrationItemListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                         
+	Take                                *int64                                 `json:"take,omitempty"`
+}
+
+type ExtractIntegrationItemListResponse struct {
+	// Cursor for fetching the next page                                         
+	Cursor                              *string                                  `json:"cursor,omitempty"`
+	Items                               []ExtractIntegrationItemListResponseItem `json:"items,omitempty"`
+}
+
+type ExtractIntegrationItemListResponseItem struct {
+	// The ID of the conversation from which data was extracted                       
+	ConversationID                                             *string                `json:"conversationId,omitempty"`
+	// The timestamp when the item was created                                        
+	CreatedAt                                                  *string                `json:"createdAt,omitempty"`
+	// The extracted data matching the integration schema                             
+	Data                                                       map[string]interface{} `json:"data"`
+	// The ID of the extract integration                                              
+	ExtractIntegrationID                                       string                 `json:"extractIntegrationId"`
+	// The unique identifier of the item                                              
+	ID                                                         string                 `json:"id"`
+	// The timestamp when the item was last updated                                   
+	UpdatedAt                                                  *string                `json:"updatedAt,omitempty"`
+}
+
 type IntegrationExtractTriggerParams struct {
 	// The ID of the Extract integration       
 	ExtractIntegrationID                string `json:"extractIntegrationId"`
@@ -15483,6 +16127,16 @@ type IntegrationTelegramListResponseItem struct {
 	UpdatedAt                                                                                    float64                `json:"updatedAt"`
 }
 
+type TriggerIntegrationCancelParams struct {
+	// The ID of the Trigger integration to cancel       
+	TriggerIntegrationID                          string `json:"triggerIntegrationId"`
+}
+
+type TriggerIntegrationCancelResponse struct {
+	// The ID of the canceled Trigger integration       
+	ID                                           string `json:"id"`
+}
+
 type TriggerIntegrationDeleteParams struct {
 	// The ID of the Trigger integration       
 	TriggerIntegrationID                string `json:"triggerIntegrationId"`
@@ -15491,6 +16145,69 @@ type TriggerIntegrationDeleteParams struct {
 type TriggerIntegrationDeleteResponse struct {
 	// The ID of the deleted Trigger integration       
 	ID                                          string `json:"id"`
+}
+
+type TriggerIntegrationExecutionCancelParams struct {
+	// The ID of the Trigger integration execution to cancel       
+	TriggerExecutionID                                      string `json:"triggerExecutionId"`
+	// The ID of the Trigger integration                           
+	TriggerIntegrationID                                    string `json:"triggerIntegrationId"`
+}
+
+type TriggerIntegrationExecutionCancelResponse struct {
+	// The ID of the canceled Trigger integration execution       
+	ID                                                     string `json:"id"`
+	// The ID of the parent Trigger integration                   
+	TriggerIntegrationID                                   string `json:"triggerIntegrationId"`
+}
+
+type TriggerIntegrationExecutionListParams struct {
+	// The cursor to use for pagination                                                  
+	Cursor                                  *string                                      `json:"cursor,omitempty"`
+	// Key-value pairs to filter by metadata                                             
+	Meta                                    map[string]string                            `json:"meta,omitempty"`
+	// The order of the paginated items                                                  
+	Order                                   *TriggerIntegrationExecutionListParamsOrder  `json:"order,omitempty"`
+	// Filter by execution status                                                        
+	Status                                  *TriggerIntegrationExecutionListParamsStatus `json:"status,omitempty"`
+	// The number of items to retrieve                                                   
+	Take                                    *int64                                       `json:"take,omitempty"`
+	// The ID of the Trigger integration                                                 
+	TriggerIntegrationID                    string                                       `json:"triggerIntegrationId"`
+}
+
+type TriggerIntegrationExecutionListResponse struct {
+	// Cursor for fetching the next page                                              
+	Cursor                              string                                        `json:"cursor"`
+	Items                               []TriggerIntegrationExecutionListResponseItem `json:"items"`
+}
+
+// Instance list properties
+type TriggerIntegrationExecutionListResponseItem struct {
+	// When the execution completed                                            
+	CompletedAt                                         *time.Time             `json:"completedAt,omitempty"`
+	// The conversation associated with this execution                         
+	ConversationID                                      *string                `json:"conversationId,omitempty"`
+	// The timestamp (ms) when the instance was created                        
+	CreatedAt                                           float64                `json:"createdAt"`
+	// The associated description                                              
+	Description                                         *string                `json:"description,omitempty"`
+	// The instance ID                                                         
+	ID                                                  string                 `json:"id"`
+	// Meta data information                                                   
+	Meta                                                map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                     
+	Name                                                *string                `json:"name,omitempty"`
+	// Final execution outcome                                                 
+	Outcome                                             *string                `json:"outcome,omitempty"`
+	// Current execution status                                                
+	Status                                              *string                `json:"status,omitempty"`
+	// A summary of the execution result                                       
+	Summary                                             *string                `json:"summary,omitempty"`
+	// The trigger integration this execution belongs to                       
+	TriggerIntegrationID                                *string                `json:"triggerIntegrationId,omitempty"`
+	// The timestamp (ms) when the instance was updated                        
+	UpdatedAt                                           float64                `json:"updatedAt"`
 }
 
 type TriggerIntegrationFetchParams struct {
@@ -16086,6 +16803,43 @@ type IntegrationWidgetFetchResponse struct {
 	VoiceOut                                                                *bool                  `json:"voiceOut,omitempty"`
 }
 
+type WidgetIntegrationFileAttachParams struct {
+	// The ID of the file to attach           
+	FileID                             string `json:"fileId"`
+	// The ID of the widget integration       
+	WidgetIntegrationID                string `json:"widgetIntegrationId"`
+}
+
+type WidgetIntegrationFileAttachRequest struct {
+	// The attachment slot type for the file                                       
+	Type                                    WidgetIntegrationFileAttachRequestType `json:"type"`
+}
+
+type WidgetIntegrationFileAttachResponse struct {
+	// The ID of the attached file            
+	ID                                 string `json:"id"`
+	// The attachment slot type               
+	Type                               string `json:"type"`
+	// The ID of the widget integration       
+	WidgetIntegrationID                string `json:"widgetIntegrationId"`
+}
+
+type WidgetIntegrationFileDetachParams struct {
+	// The ID of the file to detach           
+	FileID                             string `json:"fileId"`
+	// The ID of the widget integration       
+	WidgetIntegrationID                string `json:"widgetIntegrationId"`
+}
+
+type WidgetIntegrationFileDetachResponse struct {
+	// The ID of the detached file                     
+	ID                                          string `json:"id"`
+	// The attachment slot type that was cleared       
+	Type                                        string `json:"type"`
+	// The ID of the widget integration                
+	WidgetIntegrationID                         string `json:"widgetIntegrationId"`
+}
+
 type IntegrationWidgetSetupParams struct {
 	// The ID of the Widget integration       
 	WidgetIntegrationID                string `json:"widgetIntegrationId"`
@@ -16587,6 +17341,150 @@ type MemorySearchResponseItem struct {
 	Text string                 `json:"text"`
 }
 
+type PartnerUserContextDeleteParams struct {
+	// The ID of the context to delete       
+	ContextID                         string `json:"contextId"`
+	// The ID of the partner user            
+	UserID                            string `json:"userId"`
+}
+
+type PartnerUserContextDeleteResponse struct {
+	// The ID of the deleted context       
+	ID                              string `json:"id"`
+}
+
+type PartnerUserContextFetchParams struct {
+	// The ID of the context to retrieve       
+	ContextID                           string `json:"contextId"`
+	// The ID of the partner user              
+	UserID                              string `json:"userId"`
+}
+
+// Instance list properties
+type PartnerUserContextFetchResponse struct {
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	DatasetID                                          *string                `json:"datasetId,omitempty"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	Payload                                            map[string]interface{} `json:"payload,omitempty"`
+	SkillsetID                                         *string                `json:"skillsetId,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type PartnerUserContextUpdateParams struct {
+	// The ID of the context to update       
+	ContextID                         string `json:"contextId"`
+	// The ID of the partner user            
+	UserID                            string `json:"userId"`
+}
+
+// Instance crud properties
+type PartnerUserContextUpdateRequest struct {
+	// The associated description                       
+	Description                  *string                `json:"description,omitempty"`
+	// Meta data information                            
+	Meta                         map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                              
+	Name                         *string                `json:"name,omitempty"`
+	// Context payload                                  
+	Payload                      map[string]interface{} `json:"payload,omitempty"`
+}
+
+type PartnerUserContextUpdateResponse struct {
+	// The ID of the updated context       
+	ID                              string `json:"id"`
+}
+
+type PartnerUserContextCreateParams struct {
+	// The ID of the partner user       
+	UserID                       string `json:"userId"`
+}
+
+// Instance crud properties
+type PartnerUserContextCreateRequest struct {
+	// The associated description                       
+	Description                  *string                `json:"description,omitempty"`
+	// Meta data information                            
+	Meta                         map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                              
+	Name                         *string                `json:"name,omitempty"`
+	// Context payload                                  
+	Payload                      map[string]interface{} `json:"payload,omitempty"`
+}
+
+// Instance list properties
+type PartnerUserContextCreateResponse struct {
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	DatasetID                                          *string                `json:"datasetId,omitempty"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	Payload                                            map[string]interface{} `json:"payload,omitempty"`
+	SkillsetID                                         *string                `json:"skillsetId,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type PartnerUserContextListParams struct {
+	BlueprintID                        *string                            `json:"blueprintId,omitempty"`
+	BotID                              *string                            `json:"botId,omitempty"`
+	// The cursor to use for pagination                                   
+	Cursor                             *string                            `json:"cursor,omitempty"`
+	DatasetID                          *string                            `json:"datasetId,omitempty"`
+	// The order of the paginated items                                   
+	Order                              *PartnerUserContextListParamsOrder `json:"order,omitempty"`
+	SkillsetID                         *string                            `json:"skillsetId,omitempty"`
+	// The number of items to retrieve                                    
+	Take                               *int64                             `json:"take,omitempty"`
+	// The ID of the partner user                                         
+	UserID                             string                             `json:"userId"`
+}
+
+type PartnerUserContextListResponse struct {
+	// Cursor for fetching the next page                                     
+	Cursor                              string                               `json:"cursor"`
+	Items                               []PartnerUserContextListResponseItem `json:"items"`
+}
+
+// Instance list properties
+type PartnerUserContextListResponseItem struct {
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	DatasetID                                          *string                `json:"datasetId,omitempty"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	Payload                                            map[string]interface{} `json:"payload,omitempty"`
+	SkillsetID                                         *string                `json:"skillsetId,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
 type PartnerUserDeleteParams struct {
 	// The ID of the user to delete       
 	UserID                         string `json:"userId"`
@@ -16650,6 +17548,33 @@ type PurpleDatabase struct {
 	Skillsets             *float64 `json:"skillsets,omitempty"`
 }
 
+type PartnerUserSessionCreateParams struct {
+	// The ID of the user       
+	UserID               string `json:"userId"`
+}
+
+type PartnerUserSessionCreateRequest struct {
+	Config                                         *Config  `json:"config,omitempty"`
+	// The lifetime of the session token in seconds         
+	DurationInSeconds                              *float64 `json:"durationInSeconds,omitempty"`
+}
+
+type Config struct {
+	// Glob patterns restricting which API routes the token may access         
+	AllowedRoutes                                                     []string `json:"allowedRoutes,omitempty"`
+	// Optional contact ID to include in the session token                     
+	ContactID                                                         *string  `json:"contactId,omitempty"`
+}
+
+type PartnerUserSessionCreateResponse struct {
+	// The timestamp for when the session token expires (in milliseconds)        
+	ExpiresAt                                                            float64 `json:"expiresAt"`
+	// The ID of the created session                                             
+	ID                                                                   string  `json:"id"`
+	// The temporary session token                                               
+	Token                                                                string  `json:"token"`
+}
+
 type PartnerUserTokenDeleteParams struct {
 	// The ID of the user token to delete       
 	TokenID                              string `json:"tokenId"`
@@ -16662,9 +17587,43 @@ type PartnerUserTokenDeleteResponse struct {
 	ID                                 string `json:"id"`
 }
 
+type PartnerUserTokenUpdateParams struct {
+	// The ID of the user token to update       
+	TokenID                              string `json:"tokenId"`
+	// The ID of the user                       
+	UserID                               string `json:"userId"`
+}
+
+type PartnerUserTokenUpdateRequest struct {
+	// Token configuration                                 
+	Config                          map[string]interface{} `json:"config,omitempty"`
+	// The description of the token                        
+	Description                     *string                `json:"description,omitempty"`
+	// Custom metadata for the token                       
+	Meta                            map[string]interface{} `json:"meta,omitempty"`
+	// The name of the token                               
+	Name                            *string                `json:"name,omitempty"`
+}
+
+type PartnerUserTokenUpdateResponse struct {
+	// The ID of the updated user token       
+	ID                                 string `json:"id"`
+}
+
 type PartnerUserTokenCreateParams struct {
 	// The ID of the user       
 	UserID               string `json:"userId"`
+}
+
+type PartnerUserTokenCreateRequest struct {
+	// Token configuration                                 
+	Config                          map[string]interface{} `json:"config,omitempty"`
+	// The description of the token                        
+	Description                     *string                `json:"description,omitempty"`
+	// Custom metadata for the token                       
+	Meta                            map[string]interface{} `json:"meta,omitempty"`
+	// The name of the token                               
+	Name                            *string                `json:"name,omitempty"`
 }
 
 type PartnerUserTokenCreateResponse struct {
@@ -18819,6 +19778,16 @@ type SpaceListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
+type TaskCancelParams struct {
+	// The ID of the task to cancel       
+	TaskID                         string `json:"taskId"`
+}
+
+type TaskCancelResponse struct {
+	// The ID of the canceled task       
+	ID                            string `json:"id"`
+}
+
 type TaskDeleteParams struct {
 	// The ID of the task to delete       
 	TaskID                         string `json:"taskId"`
@@ -18827,6 +19796,69 @@ type TaskDeleteParams struct {
 type TaskDeleteResponse struct {
 	// The ID of the deleted task       
 	ID                           string `json:"id"`
+}
+
+type TaskExecutionCancelParams struct {
+	// The ID of the task execution to cancel       
+	TaskExecutionID                          string `json:"taskExecutionId"`
+	// The ID of the task                           
+	TaskID                                   string `json:"taskId"`
+}
+
+type TaskExecutionCancelResponse struct {
+	// The ID of the canceled task execution       
+	ID                                      string `json:"id"`
+	// The ID of the parent task                   
+	TaskID                                  string `json:"taskId"`
+}
+
+type TaskExecutionListParams struct {
+	// The cursor to use for pagination                                    
+	Cursor                                  *string                        `json:"cursor,omitempty"`
+	// Key-value pairs to filter by metadata                               
+	Meta                                    map[string]string              `json:"meta,omitempty"`
+	// The order of the paginated items                                    
+	Order                                   *TaskExecutionListParamsOrder  `json:"order,omitempty"`
+	// Filter by execution status                                          
+	Status                                  *TaskExecutionListParamsStatus `json:"status,omitempty"`
+	// The number of items to retrieve                                     
+	Take                                    *int64                         `json:"take,omitempty"`
+	// The ID of the task                                                  
+	TaskID                                  string                         `json:"taskId"`
+}
+
+type TaskExecutionListResponse struct {
+	// Cursor for fetching the next page                                
+	Cursor                              string                          `json:"cursor"`
+	Items                               []TaskExecutionListResponseItem `json:"items"`
+}
+
+// Instance list properties
+type TaskExecutionListResponseItem struct {
+	// When the execution completed                                           
+	CompletedAt                                        *time.Time             `json:"completedAt,omitempty"`
+	// The conversation associated with this execution                        
+	ConversationID                                     *string                `json:"conversationId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The task execution outcome                                             
+	Outcome                                            *FluffyOutcome         `json:"outcome,omitempty"`
+	// The task execution status                                              
+	Status                                             *FluffyStatus          `json:"status,omitempty"`
+	// A summary of the execution result                                      
+	Summary                                            *string                `json:"summary,omitempty"`
+	// The task this execution belongs to                                     
+	TaskID                                             *string                `json:"taskId,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
 type TaskFetchParams struct {
@@ -19014,11 +20046,11 @@ type TaskListResponseItem struct {
 	// The associated name                                                         
 	Name                                                    *string                `json:"name,omitempty"`
 	// The task execution outcome                                                  
-	Outcome                                                 *FluffyOutcome         `json:"outcome,omitempty"`
+	Outcome                                                 *TentacledOutcome      `json:"outcome,omitempty"`
 	// The schedule of the task                                                    
 	Schedule                                                *string                `json:"schedule,omitempty"`
 	// The task execution status                                                   
-	Status                                                  *FluffyStatus          `json:"status,omitempty"`
+	Status                                                  *TentacledStatus       `json:"status,omitempty"`
 	// The timestamp (ms) when the instance was updated                            
 	UpdatedAt                                               float64                `json:"updatedAt"`
 }
@@ -19707,6 +20739,7 @@ const (
 type PurpleStatus string
 
 const (
+	PurpleCanceled                                 PurpleStatus = "canceled"
 	PurpleIdle                                     PurpleStatus = "idle"
 	PurpleRunning                                  PurpleStatus = "running"
 
@@ -20129,11 +21162,29 @@ const (
 )
 
 // The order of the paginated items
+type ExtractIntegrationItemsExportParamsOrder string
+
+const (
+	Asc10                                            ExtractIntegrationItemsExportParamsOrder = "asc"
+	Desc10                                           ExtractIntegrationItemsExportParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type ExtractIntegrationItemListParamsOrder string
+
+const (
+	Asc11                                         ExtractIntegrationItemListParamsOrder = "asc"
+	Desc11                                        ExtractIntegrationItemListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
 type IntegrationExtractListParamsOrder string
 
 const (
-	Asc10                                     IntegrationExtractListParamsOrder = "asc"
-	Desc10                                    IntegrationExtractListParamsOrder = "desc"
+	Asc12                                     IntegrationExtractListParamsOrder = "asc"
+	Desc12                                    IntegrationExtractListParamsOrder = "desc"
 
 )
 
@@ -20141,8 +21192,8 @@ const (
 type GooglechatIntegrationListParamsOrder string
 
 const (
-	Asc11                                        GooglechatIntegrationListParamsOrder = "asc"
-	Desc11                                       GooglechatIntegrationListParamsOrder = "desc"
+	Asc13                                        GooglechatIntegrationListParamsOrder = "asc"
+	Desc13                                       GooglechatIntegrationListParamsOrder = "desc"
 
 )
 
@@ -20150,8 +21201,8 @@ const (
 type IntegrationInstagramListParamsOrder string
 
 const (
-	Asc12                                       IntegrationInstagramListParamsOrder = "asc"
-	Desc12                                      IntegrationInstagramListParamsOrder = "desc"
+	Asc14                                       IntegrationInstagramListParamsOrder = "asc"
+	Desc14                                      IntegrationInstagramListParamsOrder = "desc"
 
 )
 
@@ -20159,8 +21210,8 @@ const (
 type IntegrationMCPServerListParamsOrder string
 
 const (
-	Asc13                                       IntegrationMCPServerListParamsOrder = "asc"
-	Desc13                                      IntegrationMCPServerListParamsOrder = "desc"
+	Asc15                                       IntegrationMCPServerListParamsOrder = "asc"
+	Desc15                                      IntegrationMCPServerListParamsOrder = "desc"
 
 )
 
@@ -20168,8 +21219,8 @@ const (
 type IntegrationMessengerListParamsOrder string
 
 const (
-	Asc14                                       IntegrationMessengerListParamsOrder = "asc"
-	Desc14                                      IntegrationMessengerListParamsOrder = "desc"
+	Asc16                                       IntegrationMessengerListParamsOrder = "asc"
+	Desc16                                      IntegrationMessengerListParamsOrder = "desc"
 
 )
 
@@ -20187,8 +21238,8 @@ const (
 type IntegrationNotionListParamsOrder string
 
 const (
-	Asc15                                    IntegrationNotionListParamsOrder = "asc"
-	Desc15                                   IntegrationNotionListParamsOrder = "desc"
+	Asc17                                    IntegrationNotionListParamsOrder = "asc"
+	Desc17                                   IntegrationNotionListParamsOrder = "desc"
 
 )
 
@@ -20216,8 +21267,8 @@ const (
 type IntegrationSitemapListParamsOrder string
 
 const (
-	Asc16                                     IntegrationSitemapListParamsOrder = "asc"
-	Desc16                                    IntegrationSitemapListParamsOrder = "desc"
+	Asc18                                     IntegrationSitemapListParamsOrder = "asc"
+	Desc18                                    IntegrationSitemapListParamsOrder = "desc"
 
 )
 
@@ -20235,8 +21286,8 @@ const (
 type IntegrationSlackListParamsOrder string
 
 const (
-	Asc17                                   IntegrationSlackListParamsOrder = "asc"
-	Desc17                                  IntegrationSlackListParamsOrder = "desc"
+	Asc19                                   IntegrationSlackListParamsOrder = "asc"
+	Desc19                                  IntegrationSlackListParamsOrder = "desc"
 
 )
 
@@ -20244,8 +21295,8 @@ const (
 type IntegrationSupportListParamsOrder string
 
 const (
-	Asc18                                     IntegrationSupportListParamsOrder = "asc"
-	Desc18                                    IntegrationSupportListParamsOrder = "desc"
+	Asc20                                     IntegrationSupportListParamsOrder = "asc"
+	Desc20                                    IntegrationSupportListParamsOrder = "desc"
 
 )
 
@@ -20253,8 +21304,8 @@ const (
 type TeamsIntegrationListParamsOrder string
 
 const (
-	Asc19                                   TeamsIntegrationListParamsOrder = "asc"
-	Desc19                                  TeamsIntegrationListParamsOrder = "desc"
+	Asc21                                   TeamsIntegrationListParamsOrder = "asc"
+	Desc21                                  TeamsIntegrationListParamsOrder = "desc"
 
 )
 
@@ -20262,8 +21313,27 @@ const (
 type IntegrationTelegramListParamsOrder string
 
 const (
-	Asc20                                      IntegrationTelegramListParamsOrder = "asc"
-	Desc20                                     IntegrationTelegramListParamsOrder = "desc"
+	Asc22                                      IntegrationTelegramListParamsOrder = "asc"
+	Desc22                                     IntegrationTelegramListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type TriggerIntegrationExecutionListParamsOrder string
+
+const (
+	Asc23                                              TriggerIntegrationExecutionListParamsOrder = "asc"
+	Desc23                                             TriggerIntegrationExecutionListParamsOrder = "desc"
+
+)
+
+// Filter by execution status
+type TriggerIntegrationExecutionListParamsStatus string
+
+const (
+	FluffyCanceled                                      TriggerIntegrationExecutionListParamsStatus = "canceled"
+	FluffyIdle                                          TriggerIntegrationExecutionListParamsStatus = "idle"
+	FluffyRunning                                       TriggerIntegrationExecutionListParamsStatus = "running"
 
 )
 
@@ -20271,8 +21341,8 @@ const (
 type TriggerIntegrationListParamsOrder string
 
 const (
-	Asc21                                     TriggerIntegrationListParamsOrder = "asc"
-	Desc21                                    TriggerIntegrationListParamsOrder = "desc"
+	Asc24                                     TriggerIntegrationListParamsOrder = "asc"
+	Desc24                                    TriggerIntegrationListParamsOrder = "desc"
 
 )
 
@@ -20280,8 +21350,8 @@ const (
 type IntegrationTwilioListParamsOrder string
 
 const (
-	Asc22                                    IntegrationTwilioListParamsOrder = "asc"
-	Desc22                                   IntegrationTwilioListParamsOrder = "desc"
+	Asc25                                    IntegrationTwilioListParamsOrder = "asc"
+	Desc25                                   IntegrationTwilioListParamsOrder = "desc"
 
 )
 
@@ -20289,8 +21359,19 @@ const (
 type IntegrationWhatsAppListParamsOrder string
 
 const (
-	Asc23                                      IntegrationWhatsAppListParamsOrder = "asc"
-	Desc23                                     IntegrationWhatsAppListParamsOrder = "desc"
+	Asc26                                      IntegrationWhatsAppListParamsOrder = "asc"
+	Desc26                                     IntegrationWhatsAppListParamsOrder = "desc"
+
+)
+
+// The attachment slot type for the file
+type WidgetIntegrationFileAttachRequestType string
+
+const (
+	Bar                                            WidgetIntegrationFileAttachRequestType = "bar"
+	Button                                         WidgetIntegrationFileAttachRequestType = "button"
+	FriskyBot                                      WidgetIntegrationFileAttachRequestType = "bot"
+	FriskyUser                                     WidgetIntegrationFileAttachRequestType = "user"
 
 )
 
@@ -20298,8 +21379,8 @@ const (
 type IntegrationWidgetListParamsOrder string
 
 const (
-	Asc24                                    IntegrationWidgetListParamsOrder = "asc"
-	Desc24                                   IntegrationWidgetListParamsOrder = "desc"
+	Asc27                                    IntegrationWidgetListParamsOrder = "asc"
+	Desc27                                   IntegrationWidgetListParamsOrder = "desc"
 
 )
 
@@ -20307,8 +21388,8 @@ const (
 type MagicPromptListParamsOrder string
 
 const (
-	Asc25                              MagicPromptListParamsOrder = "asc"
-	Desc25                             MagicPromptListParamsOrder = "desc"
+	Asc28                              MagicPromptListParamsOrder = "asc"
+	Desc28                             MagicPromptListParamsOrder = "desc"
 
 )
 
@@ -20316,8 +21397,8 @@ const (
 type MemoriesExportParamsOrder string
 
 const (
-	Asc26                             MemoriesExportParamsOrder = "asc"
-	Desc26                            MemoriesExportParamsOrder = "desc"
+	Asc29                             MemoriesExportParamsOrder = "asc"
+	Desc29                            MemoriesExportParamsOrder = "desc"
 
 )
 
@@ -20325,8 +21406,17 @@ const (
 type MemoryListParamsOrder string
 
 const (
-	Asc27                         MemoryListParamsOrder = "asc"
-	Desc27                        MemoryListParamsOrder = "desc"
+	Asc30                         MemoryListParamsOrder = "asc"
+	Desc30                        MemoryListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type PartnerUserContextListParamsOrder string
+
+const (
+	Asc31                                     PartnerUserContextListParamsOrder = "asc"
+	Desc31                                    PartnerUserContextListParamsOrder = "desc"
 
 )
 
@@ -20334,8 +21424,8 @@ const (
 type PartnerUserTokenListParamsOrder string
 
 const (
-	Asc28                                   PartnerUserTokenListParamsOrder = "asc"
-	Desc28                                  PartnerUserTokenListParamsOrder = "desc"
+	Asc32                                   PartnerUserTokenListParamsOrder = "asc"
+	Desc32                                  PartnerUserTokenListParamsOrder = "desc"
 
 )
 
@@ -20343,8 +21433,8 @@ const (
 type PartnerUserListParamsOrder string
 
 const (
-	Asc29                              PartnerUserListParamsOrder = "asc"
-	Desc29                             PartnerUserListParamsOrder = "desc"
+	Asc33                              PartnerUserListParamsOrder = "asc"
+	Desc33                             PartnerUserListParamsOrder = "desc"
 
 )
 
@@ -20352,8 +21442,8 @@ const (
 type PlatformAbilityListParamsOrder string
 
 const (
-	Asc30                                  PlatformAbilityListParamsOrder = "asc"
-	Desc30                                 PlatformAbilityListParamsOrder = "desc"
+	Asc34                                  PlatformAbilityListParamsOrder = "asc"
+	Desc34                                 PlatformAbilityListParamsOrder = "desc"
 
 )
 
@@ -20377,8 +21467,8 @@ const (
 type PlatformActionListParamsOrder string
 
 const (
-	Asc31                                 PlatformActionListParamsOrder = "asc"
-	Desc31                                PlatformActionListParamsOrder = "desc"
+	Asc35                                 PlatformActionListParamsOrder = "asc"
+	Desc35                                PlatformActionListParamsOrder = "desc"
 
 )
 
@@ -20386,8 +21476,8 @@ const (
 type PlatformDocListParamsOrder string
 
 const (
-	Asc32                              PlatformDocListParamsOrder = "asc"
-	Desc32                             PlatformDocListParamsOrder = "desc"
+	Asc36                              PlatformDocListParamsOrder = "asc"
+	Desc36                             PlatformDocListParamsOrder = "desc"
 
 )
 
@@ -20413,8 +21503,8 @@ const (
 type PlatformExampleListParamsOrder string
 
 const (
-	Asc33                                  PlatformExampleListParamsOrder = "asc"
-	Desc33                                 PlatformExampleListParamsOrder = "desc"
+	Asc37                                  PlatformExampleListParamsOrder = "asc"
+	Desc37                                 PlatformExampleListParamsOrder = "desc"
 
 )
 
@@ -20458,8 +21548,8 @@ const (
 type PlatformGuideListParamsOrder string
 
 const (
-	Asc34                                PlatformGuideListParamsOrder = "asc"
-	Desc34                               PlatformGuideListParamsOrder = "desc"
+	Asc38                                PlatformGuideListParamsOrder = "asc"
+	Desc38                               PlatformGuideListParamsOrder = "desc"
 
 )
 
@@ -20467,8 +21557,8 @@ const (
 type PlatformManualListParamsOrder string
 
 const (
-	Asc35                                 PlatformManualListParamsOrder = "asc"
-	Desc35                                PlatformManualListParamsOrder = "desc"
+	Asc39                                 PlatformManualListParamsOrder = "asc"
+	Desc39                                PlatformManualListParamsOrder = "desc"
 
 )
 
@@ -20476,8 +21566,8 @@ const (
 type PlatformModelListParamsOrder string
 
 const (
-	Asc36                                PlatformModelListParamsOrder = "asc"
-	Desc36                               PlatformModelListParamsOrder = "desc"
+	Asc40                                PlatformModelListParamsOrder = "asc"
+	Desc40                               PlatformModelListParamsOrder = "desc"
 
 )
 
@@ -20485,8 +21575,8 @@ const (
 type PlatformSecretListParamsOrder string
 
 const (
-	Asc37                                 PlatformSecretListParamsOrder = "asc"
-	Desc37                                PlatformSecretListParamsOrder = "desc"
+	Asc41                                 PlatformSecretListParamsOrder = "asc"
+	Desc41                                PlatformSecretListParamsOrder = "desc"
 
 )
 
@@ -20505,6 +21595,7 @@ type Type6 string
 const (
 	PurpleBasic                                     Type6 = "basic"
 	PurpleBearer                                    Type6 = "bearer"
+	PurpleJwt                                       Type6 = "jwt"
 	PurpleOauth                                     Type6 = "oauth"
 	PurplePlain                                     Type6 = "plain"
 	PurpleReference                                 Type6 = "reference"
@@ -20527,6 +21618,7 @@ type Type7 string
 const (
 	FluffyBasic                                        Type7 = "basic"
 	FluffyBearer                                       Type7 = "bearer"
+	FluffyJwt                                          Type7 = "jwt"
 	FluffyOauth                                        Type7 = "oauth"
 	FluffyPlain                                        Type7 = "plain"
 	FluffyReference                                    Type7 = "reference"
@@ -20538,8 +21630,8 @@ const (
 type PlatformTutorialListParamsOrder string
 
 const (
-	Asc38                                   PlatformTutorialListParamsOrder = "asc"
-	Desc38                                  PlatformTutorialListParamsOrder = "desc"
+	Asc42                                   PlatformTutorialListParamsOrder = "asc"
+	Desc42                                  PlatformTutorialListParamsOrder = "desc"
 
 )
 
@@ -20571,8 +21663,8 @@ const (
 type PolicyListParamsOrder string
 
 const (
-	Asc39                         PolicyListParamsOrder = "asc"
-	Desc39                        PolicyListParamsOrder = "desc"
+	Asc43                         PolicyListParamsOrder = "asc"
+	Desc43                        PolicyListParamsOrder = "desc"
 
 )
 
@@ -20588,8 +21680,8 @@ const (
 type PortalListParamsOrder string
 
 const (
-	Asc40                         PortalListParamsOrder = "asc"
-	Desc40                        PortalListParamsOrder = "desc"
+	Asc44                         PortalListParamsOrder = "asc"
+	Desc44                        PortalListParamsOrder = "desc"
 
 )
 
@@ -20609,6 +21701,7 @@ const (
 
 	TentacledBasic                  SecretFetchResponseType = "basic"
 	TentacledBearer                 SecretFetchResponseType = "bearer"
+	TentacledJwt                    SecretFetchResponseType = "jwt"
 	TentacledOauth                  SecretFetchResponseType = "oauth"
 	TentacledPlain                  SecretFetchResponseType = "plain"
 	TentacledReference              SecretFetchResponseType = "reference"
@@ -20641,6 +21734,7 @@ const (
 
 	StickyBasic                     SecretUpdateRequestType = "basic"
 	StickyBearer                    SecretUpdateRequestType = "bearer"
+	StickyJwt                       SecretUpdateRequestType = "jwt"
 	StickyOauth                     SecretUpdateRequestType = "oauth"
 	StickyPlain                     SecretUpdateRequestType = "plain"
 	StickyReference                 SecretUpdateRequestType = "reference"
@@ -20689,6 +21783,7 @@ type SecretCreateRequestType string
 const (
 	IndigoBasic                     SecretCreateRequestType = "basic"
 	IndigoBearer                    SecretCreateRequestType = "bearer"
+	IndigoJwt                       SecretCreateRequestType = "jwt"
 	IndigoOauth                     SecretCreateRequestType = "oauth"
 	IndigoPlain                     SecretCreateRequestType = "plain"
 	IndigoReference                 SecretCreateRequestType = "reference"
@@ -20710,8 +21805,8 @@ const (
 type SecretListParamsOrder string
 
 const (
-	Asc41                         SecretListParamsOrder = "asc"
-	Desc41                        SecretListParamsOrder = "desc"
+	Asc45                         SecretListParamsOrder = "asc"
+	Desc45                        SecretListParamsOrder = "desc"
 
 )
 
@@ -20730,6 +21825,7 @@ type Type10 string
 const (
 	IndecentBasic                           Type10 = "basic"
 	IndecentBearer                          Type10 = "bearer"
+	IndecentJwt                             Type10 = "jwt"
 	IndecentOauth                           Type10 = "oauth"
 	IndecentPlain                           Type10 = "plain"
 	IndecentReference                       Type10 = "reference"
@@ -20753,12 +21849,12 @@ type Type11 string
 const (
 	BraggadociousActivity                                  Type11 = "activity"
 	FriskyBackstory                                        Type11 = "backstory"
-	FriskyBot                                              Type11 = "bot"
 	FriskyCheckpoint                                       Type11 = "checkpoint"
 	FriskyContext                                          Type11 = "context"
 	FriskyInstruction                                      Type11 = "instruction"
 	FriskyReasoning                                        Type11 = "reasoning"
-	FriskyUser                                             Type11 = "user"
+	MischievousBot                                         Type11 = "bot"
+	MischievousUser                                        Type11 = "user"
 
 )
 
@@ -20766,8 +21862,8 @@ const (
 type SkillsetAbilitiesExportParamsOrder string
 
 const (
-	Asc42                                      SkillsetAbilitiesExportParamsOrder = "asc"
-	Desc42                                     SkillsetAbilitiesExportParamsOrder = "desc"
+	Asc46                                      SkillsetAbilitiesExportParamsOrder = "asc"
+	Desc46                                     SkillsetAbilitiesExportParamsOrder = "desc"
 
 )
 
@@ -20775,8 +21871,8 @@ const (
 type SkillsetAbilityListParamsOrder string
 
 const (
-	Asc43                                  SkillsetAbilityListParamsOrder = "asc"
-	Desc43                                 SkillsetAbilityListParamsOrder = "desc"
+	Asc47                                  SkillsetAbilityListParamsOrder = "asc"
+	Desc47                                 SkillsetAbilityListParamsOrder = "desc"
 
 )
 
@@ -20814,8 +21910,8 @@ const (
 type SkillsetListParamsOrder string
 
 const (
-	Asc44                           SkillsetListParamsOrder = "asc"
-	Desc44                          SkillsetListParamsOrder = "desc"
+	Asc48                           SkillsetListParamsOrder = "asc"
+	Desc48                          SkillsetListParamsOrder = "desc"
 
 )
 
@@ -20833,8 +21929,8 @@ const (
 type SpacesExportParamsOrder string
 
 const (
-	Asc45                           SpacesExportParamsOrder = "asc"
-	Desc45                          SpacesExportParamsOrder = "desc"
+	Asc49                           SpacesExportParamsOrder = "asc"
+	Desc49                          SpacesExportParamsOrder = "desc"
 
 )
 
@@ -20842,65 +21938,38 @@ const (
 type SpaceListParamsOrder string
 
 const (
-	Asc46                        SpaceListParamsOrder = "asc"
-	Desc46                       SpaceListParamsOrder = "desc"
-
-)
-
-// The task execution outcome
-type TaskFetchResponseOutcome string
-
-const (
-	FluffyFailure                    TaskFetchResponseOutcome = "failure"
-	FluffySuccess                    TaskFetchResponseOutcome = "success"
-	IndecentPending                  TaskFetchResponseOutcome = "pending"
-
-)
-
-// The task execution status
-type TaskFetchResponseStatus string
-
-const (
-	FluffyIdle                      TaskFetchResponseStatus = "idle"
-	FluffyRunning                   TaskFetchResponseStatus = "running"
+	Asc50                        SpaceListParamsOrder = "asc"
+	Desc50                       SpaceListParamsOrder = "desc"
 
 )
 
 // The order of the paginated items
-type TasksExportParamsOrder string
+type TaskExecutionListParamsOrder string
 
 const (
-	Asc47                          TasksExportParamsOrder = "asc"
-	Desc47                         TasksExportParamsOrder = "desc"
+	Asc51                                TaskExecutionListParamsOrder = "asc"
+	Desc51                               TaskExecutionListParamsOrder = "desc"
 
 )
 
-// The order of the paginated items
-type TaskListParamsOrder string
-
-const (
-	Asc48                       TaskListParamsOrder = "asc"
-	Desc48                      TaskListParamsOrder = "desc"
-
-)
-
-// Filter by task status
-type TaskListParamsStatus string
+// Filter by execution status
+type TaskExecutionListParamsStatus string
 
 const (
 
-	TentacledIdle                TaskListParamsStatus = "idle"
-	TentacledRunning             TaskListParamsStatus = "running"
+	TentacledCanceled                     TaskExecutionListParamsStatus = "canceled"
+	TentacledIdle                         TaskExecutionListParamsStatus = "idle"
+	TentacledRunning                      TaskExecutionListParamsStatus = "running"
 )
 
 // The task execution outcome
 type FluffyOutcome string
 
 const (
-	HilariousPending                         FluffyOutcome = "pending"
+	FluffyFailure                                     FluffyOutcome = "failure"
+	FluffySuccess                                     FluffyOutcome = "success"
+	IndecentPending                                   FluffyOutcome = "pending"
 
-	TentacledFailure                         FluffyOutcome = "failure"
-	TentacledSuccess                         FluffyOutcome = "success"
 )
 
 // The task execution status
@@ -20908,16 +21977,85 @@ type FluffyStatus string
 
 const (
 
-	StickyIdle                              FluffyStatus = "idle"
-	StickyRunning                           FluffyStatus = "running"
+	StickyCanceled                                   FluffyStatus = "canceled"
+	StickyIdle                                       FluffyStatus = "idle"
+	StickyRunning                                    FluffyStatus = "running"
+)
+
+// The task execution outcome
+type TaskFetchResponseOutcome string
+
+const (
+	HilariousPending                 TaskFetchResponseOutcome = "pending"
+
+	TentacledFailure                 TaskFetchResponseOutcome = "failure"
+	TentacledSuccess                 TaskFetchResponseOutcome = "success"
+)
+
+// The task execution status
+type TaskFetchResponseStatus string
+
+const (
+	IndigoCanceled                  TaskFetchResponseStatus = "canceled"
+	IndigoIdle                      TaskFetchResponseStatus = "idle"
+	IndigoRunning                   TaskFetchResponseStatus = "running"
+
+)
+
+// The order of the paginated items
+type TasksExportParamsOrder string
+
+const (
+	Asc52                          TasksExportParamsOrder = "asc"
+	Desc52                         TasksExportParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
+type TaskListParamsOrder string
+
+const (
+	Asc53                       TaskListParamsOrder = "asc"
+	Desc53                      TaskListParamsOrder = "desc"
+
+)
+
+// Filter by task status
+type TaskListParamsStatus string
+
+const (
+	IndecentCanceled             TaskListParamsStatus = "canceled"
+	IndecentIdle                 TaskListParamsStatus = "idle"
+	IndecentRunning              TaskListParamsStatus = "running"
+
+)
+
+// The task execution outcome
+type TentacledOutcome string
+
+const (
+	AmbitiousPending                         TentacledOutcome = "pending"
+
+	StickyFailure                            TentacledOutcome = "failure"
+	StickySuccess                            TentacledOutcome = "success"
+)
+
+// The task execution status
+type TentacledStatus string
+
+const (
+	HilariousCanceled                       TentacledStatus = "canceled"
+	HilariousIdle                           TentacledStatus = "idle"
+	HilariousRunning                        TentacledStatus = "running"
+
 )
 
 // The order of the paginated items
 type TeamListParamsOrder string
 
 const (
-	Asc49                       TeamListParamsOrder = "asc"
-	Desc49                      TeamListParamsOrder = "desc"
+	Asc54                       TeamListParamsOrder = "asc"
+	Desc54                      TeamListParamsOrder = "desc"
 
 )
 
@@ -20925,8 +22063,8 @@ const (
 type UsageRecordListParamsOrder string
 
 const (
-	Asc50                              UsageRecordListParamsOrder = "asc"
-	Desc50                             UsageRecordListParamsOrder = "desc"
+	Asc55                              UsageRecordListParamsOrder = "asc"
+	Desc55                             UsageRecordListParamsOrder = "desc"
 
 )
 
@@ -20935,13 +22073,13 @@ type MessageTypeEnum string
 
 const (
 	Activity1              MessageTypeEnum = "activity"
+	BraggadociousBot       MessageTypeEnum = "bot"
+	BraggadociousUser      MessageTypeEnum = "user"
 	MischievousBackstory   MessageTypeEnum = "backstory"
-	MischievousBot         MessageTypeEnum = "bot"
 	MischievousCheckpoint  MessageTypeEnum = "checkpoint"
 	MischievousContext     MessageTypeEnum = "context"
 	MischievousInstruction MessageTypeEnum = "instruction"
 	MischievousReasoning   MessageTypeEnum = "reasoning"
-	MischievousUser        MessageTypeEnum = "user"
 
 )
 
@@ -21001,6 +22139,7 @@ type TaskStatus string
 
 const (
 
+	TaskStatusCanceled TaskStatus = "canceled"
 	TaskStatusIdle     TaskStatus = "idle"
 	TaskStatusRunning  TaskStatus = "running"
 )
@@ -21080,6 +22219,7 @@ const (
 
 	SecretTypeBasic     SecretType = "basic"
 	SecretTypeBearer    SecretType = "bearer"
+	SecretTypeJwt       SecretType = "jwt"
 	SecretTypeOauth     SecretType = "oauth"
 	SecretTypePlain     SecretType = "plain"
 	SecretTypeReference SecretType = "reference"
@@ -21158,14 +22298,14 @@ type DataType string
 
 const (
 	Activity3                                           DataType = "activity"
+	Bot1                                                DataType = "bot"
 	BraggadociousBackstory                              DataType = "backstory"
-	BraggadociousBot                                    DataType = "bot"
 	BraggadociousCheckpoint                             DataType = "checkpoint"
 	BraggadociousContext                                DataType = "context"
 	BraggadociousInstruction                            DataType = "instruction"
 	BraggadociousReasoning                              DataType = "reasoning"
-	BraggadociousUser                                   DataType = "user"
 
+	User1                                               DataType = "user"
 )
 
 // The type of event

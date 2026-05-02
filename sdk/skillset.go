@@ -162,3 +162,18 @@ func (c *SkillsetAbilityClient) Execute(ctx context.Context, skillsetID, ability
 	}
 	return &result, nil
 }
+
+// Export exports abilities in a skillset.
+func (c *SkillsetAbilityClient) Export(ctx context.Context, skillsetID string, opts *types.SkillsetAbilitiesExportParams) (*types.SkillsetAbilitiesExportResponse, error) {
+	path := fmt.Sprintf("/api/v1/skillset/%s/ability/export", skillsetID)
+	query := url.Values{}
+	if opts != nil {
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
+	}
+
+	var result types.SkillsetAbilitiesExportResponse
+	if err := c.httpClient.Get(ctx, path, query, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

@@ -171,6 +171,29 @@ tools := agent.Tools{
 }
 ```
 
+### Agent with Embedded Skills
+
+An autonomous agent that ships with skill definitions baked into the binary using Go's `embed` package:
+
+- Embeds a `skills/` directory at compile time with `//go:embed`
+- Loads skills from `embed.FS` via `agent.LoadSkillsFromFS` — no temp-directory extraction needed
+- Bundles skills as a feature passed to `agent.ExecuteWithTools`
+- Produces a single self-contained executable with no external skill files
+
+**Run the example:**
+
+```bash
+cd examples/agent-with-embedded-skills
+
+export CHATBOTKIT_API_SECRET="your-api-key"
+
+# Run with a custom task
+go run . "Review this Go function: func add(a, b int) int { return a - b }"
+
+# Or run with the default demo task
+go run .
+```
+
 ### Stateless Agent
 
 Demonstrates how to manually drive `agent.CompleteWithTools`, giving you full control over each iteration:
@@ -272,6 +295,9 @@ export CHATBOTKIT_API_SECRET="your-api-key"
 go run ./examples/chatbot
 go run ./examples/agent "Create a file called test.txt"
 go run ./examples/agent-with-tools
+go run ./examples/agent-with-embedded-skills
+go run ./examples/stateless-agent
+go run ./examples/stateful-agent
 ```
 
 ## Environment Variables
