@@ -103,7 +103,8 @@ client.Integration.Notion        // Notion integrations
 client.Integration.Sitemap       // Sitemap integrations
 client.Integration.Support       // Support integrations
 client.Integration.Extract       // Extract integrations
-client.Integration.Trigger       // Trigger integrations
+client.Integration.Trigger                    // Trigger integrations
+client.Integration.Trigger.Execution         // Trigger execution management
 client.Integration.Twilio        // Twilio integrations
 client.Integration.Email         // Email integrations
 client.Integration.McpServer     // MCP server integrations
@@ -116,6 +117,7 @@ client.Policy                    // Policy management
 client.Portal                    // Portal management
 client.Team                      // Team management
 client.Task                      // Task management
+client.Task.Execution            // Task execution management
 client.Usage                     // Usage reporting
 client.Space                     // Space management
 client.Event                     // Event log access
@@ -396,12 +398,33 @@ description: A brief description of what this skill does
 Additional documentation for the skill...
 ```
 
+#### Loading from the filesystem
+
+```go
+skillsResult, err := agent.LoadSkills([]string{"./skills"})
+```
+
+#### Loading from an embedded filesystem
+
+Skills can be baked into the binary at compile time using Go's `embed` package:
+
+```go
+//go:embed skills
+var skillsFS embed.FS
+
+subFS, _ := fs.Sub(skillsFS, "skills")
+skillsResult, err := agent.LoadSkillsFromFS(subFS)
+```
+
+`LoadSkillsFromFS` accepts any `fs.FS`, so it works with `embed.FS`, `os.DirFS`, or any custom implementation.
+
 #### Skills API
 
-- **`LoadSkills(directories)`** - Load skills from directories containing SKILL.md files
+- **`LoadSkills(directories)`** - Load skills from OS directories containing SKILL.md files
+- **`LoadSkillsFromFS(fsys)`** - Load skills from any `fs.FS`, including `embed.FS`
 - **`CreateSkillsFeature(skills)`** - Create a feature map for the API
 - **`GetSkills()`** - Get a thread-safe copy of loaded skills
-- **`Reload()`** - Rescan directories for skill changes
+- **`Reload()`** - Rescan the source for skill changes
 
 ### Default Tools
 
