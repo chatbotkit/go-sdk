@@ -1160,9 +1160,9 @@ The goal is to complete the assigned task efficiently and effectively. Follow th
 			}
 
 			// The API returns end.reason in the result event. When the reason
-			// is "stop" the model finished naturally without pending tool
+			// is "stop" or "abort" the model finished without pending tool
 			// calls - continuing would produce empty iterations endlessly.
-			if lastEndReason == "stop" {
+			if lastEndReason == "stop" || lastEndReason == "abort" {
 				exitMu.Lock()
 				exitResult = &AgentExitEvent{Code: 0}
 				exitMu.Unlock()
