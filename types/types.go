@@ -2329,6 +2329,9 @@
 //    completeReason, err := UnmarshalCompleteReason(bytes)
 //    bytes, err = completeReason.Marshal()
 //
+//    abort, err := UnmarshalAbort(bytes)
+//    bytes, err = abort.Marshal()
+//
 //    completeEnd, err := UnmarshalCompleteEnd(bytes)
 //    bytes, err = completeEnd.Marshal()
 //
@@ -10294,6 +10297,16 @@ func UnmarshalCompleteReason(data []byte) (CompleteReason, error) {
 }
 
 func (r *CompleteReason) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalAbort(data []byte) (Abort, error) {
+	var r Abort
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *Abort) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -20297,6 +20310,14 @@ type Usage struct {
 	Token                              float64 `json:"token"`
 }
 
+// Information about an abort event in a streamed response
+type Abort struct {
+	// The function or tool associated with the abort            
+	FunctionName                                     *string     `json:"functionName,omitempty"`
+	// The abort reason if available                             
+	Reason                                           interface{} `json:"reason"`
+}
+
 // Information about why the completion ended
 type CompleteEnd struct {
 	// The reason why the completion ended                  
@@ -20546,34 +20567,42 @@ type HilariousAbility struct {
 
 // An item in the streaming completion response
 type CompleteStreamingResponseItem struct {
-	// The data for the event                                         
-	//                                                                
-	// A message in the conversation                                  
-	Data                            Data                              `json:"data"`
-	// The type of event                                              
-	Type                            CompleteStreamingResponseItemType `json:"type"`
+	// The data for the event                                                                   
+	//                                                                                          
+	// A message in the conversation                                                            
+	//                                                                                          
+	// Information about an abort event in a streamed response                                  
+	Data                                                      Data                              `json:"data"`
+	// The type of event                                                                        
+	Type                                                      CompleteStreamingResponseItemType `json:"type"`
 }
 
 // The data for the event
 //
 // A message in the conversation
+//
+// Information about an abort event in a streamed response
 type Data struct {
-	// The error message                                      
-	Message                            *string                `json:"message,omitempty"`
-	// The token generated                                    
-	Token                              *string                `json:"token,omitempty"`
-	// Meta data information                                  
-	Meta                               map[string]interface{} `json:"meta,omitempty"`
-	// The text of the message                                
-	Text                               *string                `json:"text,omitempty"`
-	// The type of the message                                
-	Type                               *DataType              `json:"type,omitempty"`
-	// The number of input tokens used                        
-	InputTokensUsed                    *float64               `json:"inputTokensUsed,omitempty"`
-	// The model used                                         
-	Model                              *string                `json:"model,omitempty"`
-	// The number of output tokens used                       
-	OutputTokensUsed                   *float64               `json:"outputTokensUsed,omitempty"`
+	// The error message                                                    
+	Message                                          *string                `json:"message,omitempty"`
+	// The token generated                                                  
+	Token                                            *string                `json:"token,omitempty"`
+	// Meta data information                                                
+	Meta                                             map[string]interface{} `json:"meta,omitempty"`
+	// The text of the message                                              
+	Text                                             *string                `json:"text,omitempty"`
+	// The type of the message                                              
+	Type                                             *DataType              `json:"type,omitempty"`
+	// The function or tool associated with the abort                       
+	FunctionName                                     *string                `json:"functionName,omitempty"`
+	// The abort reason if available                                        
+	Reason                                           interface{}            `json:"reason"`
+	// The number of input tokens used                                      
+	InputTokensUsed                                  *float64               `json:"inputTokensUsed,omitempty"`
+	// The model used                                                       
+	Model                                            *string                `json:"model,omitempty"`
+	// The number of output tokens used                                     
+	OutputTokensUsed                                 *float64               `json:"outputTokensUsed,omitempty"`
 }
 
 // The order of the paginated items
@@ -20825,6 +20854,7 @@ const (
 type PurpleReason string
 
 const (
+	PurpleAbort                                          PurpleReason = "abort"
 	PurpleError                                          PurpleReason = "error"
 	PurpleIteration                                      PurpleReason = "iteration"
 	PurpleLength                                         PurpleReason = "length"
@@ -20954,6 +20984,7 @@ type FluffyReason string
 
 const (
 	CunningActivity                               FluffyReason = "activity"
+	FluffyAbort                                   FluffyReason = "abort"
 	FluffyError                                   FluffyReason = "error"
 	FluffyIteration                               FluffyReason = "iteration"
 	FluffyLength                                  FluffyReason = "length"
@@ -22359,6 +22390,7 @@ const (
 type CompleteReason string
 
 const (
+	CompleteReasonAbort     CompleteReason = "abort"
 	CompleteReasonActivity  CompleteReason = "activity"
 	CompleteReasonError     CompleteReason = "error"
 	CompleteReasonIteration CompleteReason = "iteration"
@@ -22374,6 +22406,7 @@ const (
 	Activity2                 CompleteEndReason = "activity"
 	HilariousError            CompleteEndReason = "error"
 
+	TentacledAbort            CompleteEndReason = "abort"
 	TentacledIteration        CompleteEndReason = "iteration"
 	TentacledLength           CompleteEndReason = "length"
 	TentacledStop             CompleteEndReason = "stop"
@@ -22432,8 +22465,10 @@ const (
 
 
 
+
 	ReasoningToken                                  CompleteStreamingResponseItemType = "reasoningToken"
 	Token                                           CompleteStreamingResponseItemType = "token"
+	TypeAbort                                       CompleteStreamingResponseItemType = "abort"
 	TypeCompleteEnd                                 CompleteStreamingResponseItemType = "completeEnd"
 	TypeError                                       CompleteStreamingResponseItemType = "error"
 	TypeMessage                                     CompleteStreamingResponseItemType = "message"
