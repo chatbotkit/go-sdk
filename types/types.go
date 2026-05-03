@@ -2287,6 +2287,12 @@
 //    taskOutcome, err := UnmarshalTaskOutcome(bytes)
 //    bytes, err = taskOutcome.Marshal()
 //
+//    triggerIntegrationStatus, err := UnmarshalTriggerIntegrationStatus(bytes)
+//    bytes, err = triggerIntegrationStatus.Marshal()
+//
+//    triggerIntegrationOutcome, err := UnmarshalTriggerIntegrationOutcome(bytes)
+//    bytes, err = triggerIntegrationOutcome.Marshal()
+//
 //    blueprintVisibility, err := UnmarshalBlueprintVisibility(bytes)
 //    bytes, err = blueprintVisibility.Marshal()
 //
@@ -10149,6 +10155,26 @@ func (r *TaskOutcome) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalTriggerIntegrationStatus(data []byte) (TriggerIntegrationStatus, error) {
+	var r TriggerIntegrationStatus
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TriggerIntegrationStatus) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTriggerIntegrationOutcome(data []byte) (TriggerIntegrationOutcome, error) {
+	var r TriggerIntegrationOutcome
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TriggerIntegrationOutcome) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalBlueprintVisibility(data []byte) (BlueprintVisibility, error) {
 	var r BlueprintVisibility
 	err := json.Unmarshal(data, &r)
@@ -16217,34 +16243,42 @@ type TriggerIntegrationFetchParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type TriggerIntegrationFetchResponse struct {
-	// When enabled the integration requires authentication                                                          
-	Authenticate                                                                              *bool                  `json:"authenticate,omitempty"`
-	// The ID of the blueprint                                                                                       
-	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot this configuration is using                                                                 
-	BotID                                                                                     *string                `json:"botId,omitempty"`
-	// The timestamp (ms) when the instance was created                                                              
-	CreatedAt                                                                                 float64                `json:"createdAt"`
-	// The associated description                                                                                    
-	Description                                                                               *string                `json:"description,omitempty"`
-	// The instance ID                                                                                               
-	ID                                                                                        string                 `json:"id"`
-	// The maximum number of iterations per trigger execution                                                        
-	MaxIterations                                                                             *float64               `json:"maxIterations,omitempty"`
-	// The maximum time per trigger execution (in milliseconds)                                                      
-	MaxTime                                                                                   *float64               `json:"maxTime,omitempty"`
-	// Meta data information                                                                                         
-	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                                                           
-	Name                                                                                      *string                `json:"name,omitempty"`
-	// The Trigger integration secret                                                                                
-	Secret                                                                                    string                 `json:"secret"`
-	// The session duration (in milliseconds)                                                                        
-	SessionDuration                                                                           *float64               `json:"sessionDuration,omitempty"`
-	// The schedule for the trigger integration (interval, cron expression, ISO date, or null)                       
-	TriggerSchedule                                                                           *string                `json:"triggerSchedule,omitempty"`
-	// The timestamp (ms) when the instance was updated                                                              
-	UpdatedAt                                                                                 float64                `json:"updatedAt"`
+	// When enabled the integration requires authentication                                                                           
+	Authenticate                                                                              *bool                                   `json:"authenticate,omitempty"`
+	// The ID of the blueprint                                                                                                        
+	BlueprintID                                                                               *string                                 `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                                                  
+	BotID                                                                                     *string                                 `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                                                                               
+	CreatedAt                                                                                 float64                                 `json:"createdAt"`
+	// The associated description                                                                                                     
+	Description                                                                               *string                                 `json:"description,omitempty"`
+	// The instance ID                                                                                                                
+	ID                                                                                        string                                  `json:"id"`
+	// The timestamp (ms) of the last trigger execution                                                                               
+	LastTriggerAt                                                                             *float64                                `json:"lastTriggerAt,omitempty"`
+	// The maximum number of iterations per trigger execution                                                                         
+	MaxIterations                                                                             *float64                                `json:"maxIterations,omitempty"`
+	// The maximum time per trigger execution (in milliseconds)                                                                       
+	MaxTime                                                                                   *float64                                `json:"maxTime,omitempty"`
+	// Meta data information                                                                                                          
+	Meta                                                                                      map[string]interface{}                  `json:"meta,omitempty"`
+	// The associated name                                                                                                            
+	Name                                                                                      *string                                 `json:"name,omitempty"`
+	// The timestamp (ms) of the next scheduled trigger execution                                                                     
+	NextTriggerAt                                                                             *float64                                `json:"nextTriggerAt,omitempty"`
+	// The trigger integration outcome                                                                                                
+	Outcome                                                                                   *TriggerIntegrationFetchResponseOutcome `json:"outcome,omitempty"`
+	// The Trigger integration secret                                                                                                 
+	Secret                                                                                    string                                  `json:"secret"`
+	// The session duration (in milliseconds)                                                                                         
+	SessionDuration                                                                           *float64                                `json:"sessionDuration,omitempty"`
+	// The trigger integration status                                                                                                 
+	Status                                                                                    *TriggerIntegrationFetchResponseStatus  `json:"status,omitempty"`
+	// The schedule for the trigger integration (interval, cron expression, ISO date, or null)                                        
+	TriggerSchedule                                                                           *string                                 `json:"triggerSchedule,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                                               
+	UpdatedAt                                                                                 float64                                 `json:"updatedAt"`
 }
 
 type TriggerIntegrationInvokeParams struct {
@@ -16361,6 +16395,8 @@ type TriggerIntegrationListResponseItem struct {
 	Description                                                                               *string                `json:"description,omitempty"`
 	// The instance ID                                                                                               
 	ID                                                                                        string                 `json:"id"`
+	// The timestamp (ms) of the last trigger execution                                                              
+	LastTriggerAt                                                                             *float64               `json:"lastTriggerAt,omitempty"`
 	// The maximum number of iterations per trigger execution                                                        
 	MaxIterations                                                                             *float64               `json:"maxIterations,omitempty"`
 	// The maximum time per trigger execution (in milliseconds)                                                      
@@ -16369,10 +16405,16 @@ type TriggerIntegrationListResponseItem struct {
 	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
 	// The associated name                                                                                           
 	Name                                                                                      *string                `json:"name,omitempty"`
+	// The timestamp (ms) of the next scheduled trigger execution                                                    
+	NextTriggerAt                                                                             *float64               `json:"nextTriggerAt,omitempty"`
+	// The trigger integration outcome                                                                               
+	Outcome                                                                                   *FluffyOutcome         `json:"outcome,omitempty"`
 	// The Trigger integration secret                                                                                
 	Secret                                                                                    string                 `json:"secret"`
 	// The session duration (in milliseconds)                                                                        
 	SessionDuration                                                                           *float64               `json:"sessionDuration,omitempty"`
+	// The trigger integration status                                                                                
+	Status                                                                                    *FluffyStatus          `json:"status,omitempty"`
 	// The schedule for the trigger integration (interval, cron expression, ISO date, or null)                       
 	TriggerSchedule                                                                           *string                `json:"triggerSchedule,omitempty"`
 	// The timestamp (ms) when the instance was updated                                                              
@@ -19850,9 +19892,9 @@ type TaskExecutionListResponseItem struct {
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
 	// The task execution outcome                                             
-	Outcome                                            *FluffyOutcome         `json:"outcome,omitempty"`
+	Outcome                                            *TentacledOutcome      `json:"outcome,omitempty"`
 	// The task execution status                                              
-	Status                                             *FluffyStatus          `json:"status,omitempty"`
+	Status                                             *TentacledStatus       `json:"status,omitempty"`
 	// A summary of the execution result                                      
 	Summary                                            *string                `json:"summary,omitempty"`
 	// The task this execution belongs to                                     
@@ -19868,32 +19910,36 @@ type TaskFetchParams struct {
 
 // Instance list properties
 type TaskFetchResponse struct {
-	// The bot associated with the task                                               
-	BotID                                                   *string                   `json:"botId,omitempty"`
-	// The contact associated with the task                                           
-	ContactID                                               *string                   `json:"contactId,omitempty"`
-	// The timestamp (ms) when the instance was created                               
-	CreatedAt                                               float64                   `json:"createdAt"`
-	// The associated description                                                     
-	Description                                             *string                   `json:"description,omitempty"`
-	// The instance ID                                                                
-	ID                                                      string                    `json:"id"`
-	// The maximum number of iterations per task execution                            
-	MaxIterations                                           *float64                  `json:"maxIterations,omitempty"`
-	// The maximum time per task execution (in milliseconds)                          
-	MaxTime                                                 *float64                  `json:"maxTime,omitempty"`
-	// Meta data information                                                          
-	Meta                                                    map[string]interface{}    `json:"meta,omitempty"`
-	// The associated name                                                            
-	Name                                                    *string                   `json:"name,omitempty"`
-	// The task execution outcome                                                     
-	Outcome                                                 *TaskFetchResponseOutcome `json:"outcome,omitempty"`
-	// The schedule of the task                                                       
-	Schedule                                                *string                   `json:"schedule,omitempty"`
-	// The task execution status                                                      
-	Status                                                  *TaskFetchResponseStatus  `json:"status,omitempty"`
-	// The timestamp (ms) when the instance was updated                               
-	UpdatedAt                                               float64                   `json:"updatedAt"`
+	// The bot associated with the task                                                 
+	BotID                                                     *string                   `json:"botId,omitempty"`
+	// The contact associated with the task                                             
+	ContactID                                                 *string                   `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                                 
+	CreatedAt                                                 float64                   `json:"createdAt"`
+	// The associated description                                                       
+	Description                                               *string                   `json:"description,omitempty"`
+	// The instance ID                                                                  
+	ID                                                        string                    `json:"id"`
+	// The timestamp (ms) of the last task execution                                    
+	LastRunAt                                                 *float64                  `json:"lastRunAt,omitempty"`
+	// The maximum number of iterations per task execution                              
+	MaxIterations                                             *float64                  `json:"maxIterations,omitempty"`
+	// The maximum time per task execution (in milliseconds)                            
+	MaxTime                                                   *float64                  `json:"maxTime,omitempty"`
+	// Meta data information                                                            
+	Meta                                                      map[string]interface{}    `json:"meta,omitempty"`
+	// The associated name                                                              
+	Name                                                      *string                   `json:"name,omitempty"`
+	// The timestamp (ms) of the next scheduled task execution                          
+	NextRunAt                                                 *float64                  `json:"nextRunAt,omitempty"`
+	// The task execution outcome                                                       
+	Outcome                                                   *TaskFetchResponseOutcome `json:"outcome,omitempty"`
+	// The schedule of the task                                                         
+	Schedule                                                  *string                   `json:"schedule,omitempty"`
+	// The task execution status                                                        
+	Status                                                    *TaskFetchResponseStatus  `json:"status,omitempty"`
+	// The timestamp (ms) when the instance was updated                                 
+	UpdatedAt                                                 float64                   `json:"updatedAt"`
 }
 
 type TaskTriggerParams struct {
@@ -20027,32 +20073,36 @@ type TaskListResponse struct {
 
 // Instance list properties
 type TaskListResponseItem struct {
-	// The bot associated with the task                                            
-	BotID                                                   *string                `json:"botId,omitempty"`
-	// The contact associated with the task                                        
-	ContactID                                               *string                `json:"contactId,omitempty"`
-	// The timestamp (ms) when the instance was created                            
-	CreatedAt                                               float64                `json:"createdAt"`
-	// The associated description                                                  
-	Description                                             *string                `json:"description,omitempty"`
-	// The instance ID                                                             
-	ID                                                      string                 `json:"id"`
-	// The maximum number of iterations per task execution                         
-	MaxIterations                                           *float64               `json:"maxIterations,omitempty"`
-	// The maximum time per task execution (in milliseconds)                       
-	MaxTime                                                 *float64               `json:"maxTime,omitempty"`
-	// Meta data information                                                       
-	Meta                                                    map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                         
-	Name                                                    *string                `json:"name,omitempty"`
-	// The task execution outcome                                                  
-	Outcome                                                 *TentacledOutcome      `json:"outcome,omitempty"`
-	// The schedule of the task                                                    
-	Schedule                                                *string                `json:"schedule,omitempty"`
-	// The task execution status                                                   
-	Status                                                  *TentacledStatus       `json:"status,omitempty"`
-	// The timestamp (ms) when the instance was updated                            
-	UpdatedAt                                               float64                `json:"updatedAt"`
+	// The bot associated with the task                                              
+	BotID                                                     *string                `json:"botId,omitempty"`
+	// The contact associated with the task                                          
+	ContactID                                                 *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                              
+	CreatedAt                                                 float64                `json:"createdAt"`
+	// The associated description                                                    
+	Description                                               *string                `json:"description,omitempty"`
+	// The instance ID                                                               
+	ID                                                        string                 `json:"id"`
+	// The timestamp (ms) of the last task execution                                 
+	LastRunAt                                                 *float64               `json:"lastRunAt,omitempty"`
+	// The maximum number of iterations per task execution                           
+	MaxIterations                                             *float64               `json:"maxIterations,omitempty"`
+	// The maximum time per task execution (in milliseconds)                         
+	MaxTime                                                   *float64               `json:"maxTime,omitempty"`
+	// Meta data information                                                         
+	Meta                                                      map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                           
+	Name                                                      *string                `json:"name,omitempty"`
+	// The timestamp (ms) of the next scheduled task execution                       
+	NextRunAt                                                 *float64               `json:"nextRunAt,omitempty"`
+	// The task execution outcome                                                    
+	Outcome                                                   *StickyOutcome         `json:"outcome,omitempty"`
+	// The schedule of the task                                                      
+	Schedule                                                  *string                `json:"schedule,omitempty"`
+	// The task execution status                                                     
+	Status                                                    *StickyStatus          `json:"status,omitempty"`
+	// The timestamp (ms) when the instance was updated                              
+	UpdatedAt                                                 float64                `json:"updatedAt"`
 }
 
 type TeamListParams struct {
@@ -21337,6 +21387,26 @@ const (
 
 )
 
+// The trigger integration outcome
+type TriggerIntegrationFetchResponseOutcome string
+
+const (
+	FluffyFailure                                  TriggerIntegrationFetchResponseOutcome = "failure"
+	FluffySuccess                                  TriggerIntegrationFetchResponseOutcome = "success"
+	IndecentPending                                TriggerIntegrationFetchResponseOutcome = "pending"
+
+)
+
+// The trigger integration status
+type TriggerIntegrationFetchResponseStatus string
+
+const (
+
+	TentacledCanceled                             TriggerIntegrationFetchResponseStatus = "canceled"
+	TentacledIdle                                 TriggerIntegrationFetchResponseStatus = "idle"
+	TentacledRunning                              TriggerIntegrationFetchResponseStatus = "running"
+)
+
 // The order of the paginated items
 type TriggerIntegrationListParamsOrder string
 
@@ -21344,6 +21414,26 @@ const (
 	Asc24                                     TriggerIntegrationListParamsOrder = "asc"
 	Desc24                                    TriggerIntegrationListParamsOrder = "desc"
 
+)
+
+// The trigger integration outcome
+type FluffyOutcome string
+
+const (
+	HilariousPending                                       FluffyOutcome = "pending"
+
+	TentacledFailure                                       FluffyOutcome = "failure"
+	TentacledSuccess                                       FluffyOutcome = "success"
+)
+
+// The trigger integration status
+type FluffyStatus string
+
+const (
+
+	StickyCanceled                                        FluffyStatus = "canceled"
+	StickyIdle                                            FluffyStatus = "idle"
+	StickyRunning                                         FluffyStatus = "running"
 )
 
 // The order of the paginated items
@@ -21956,49 +22046,49 @@ const (
 type TaskExecutionListParamsStatus string
 
 const (
+	IndigoCanceled                        TaskExecutionListParamsStatus = "canceled"
+	IndigoIdle                            TaskExecutionListParamsStatus = "idle"
+	IndigoRunning                         TaskExecutionListParamsStatus = "running"
 
-	TentacledCanceled                     TaskExecutionListParamsStatus = "canceled"
-	TentacledIdle                         TaskExecutionListParamsStatus = "idle"
-	TentacledRunning                      TaskExecutionListParamsStatus = "running"
 )
 
 // The task execution outcome
-type FluffyOutcome string
+type TentacledOutcome string
 
 const (
-	FluffyFailure                                     FluffyOutcome = "failure"
-	FluffySuccess                                     FluffyOutcome = "success"
-	IndecentPending                                   FluffyOutcome = "pending"
+	AmbitiousPending                                  TentacledOutcome = "pending"
 
+	StickyFailure                                     TentacledOutcome = "failure"
+	StickySuccess                                     TentacledOutcome = "success"
 )
 
 // The task execution status
-type FluffyStatus string
+type TentacledStatus string
 
 const (
+	IndecentCanceled                                 TentacledStatus = "canceled"
+	IndecentIdle                                     TentacledStatus = "idle"
+	IndecentRunning                                  TentacledStatus = "running"
 
-	StickyCanceled                                   FluffyStatus = "canceled"
-	StickyIdle                                       FluffyStatus = "idle"
-	StickyRunning                                    FluffyStatus = "running"
 )
 
 // The task execution outcome
 type TaskFetchResponseOutcome string
 
 const (
-	HilariousPending                 TaskFetchResponseOutcome = "pending"
+	CunningPending                   TaskFetchResponseOutcome = "pending"
+	IndigoFailure                    TaskFetchResponseOutcome = "failure"
+	IndigoSuccess                    TaskFetchResponseOutcome = "success"
 
-	TentacledFailure                 TaskFetchResponseOutcome = "failure"
-	TentacledSuccess                 TaskFetchResponseOutcome = "success"
 )
 
 // The task execution status
 type TaskFetchResponseStatus string
 
 const (
-	IndigoCanceled                  TaskFetchResponseStatus = "canceled"
-	IndigoIdle                      TaskFetchResponseStatus = "idle"
-	IndigoRunning                   TaskFetchResponseStatus = "running"
+	HilariousCanceled               TaskFetchResponseStatus = "canceled"
+	HilariousIdle                   TaskFetchResponseStatus = "idle"
+	HilariousRunning                TaskFetchResponseStatus = "running"
 
 )
 
@@ -22024,29 +22114,29 @@ const (
 type TaskListParamsStatus string
 
 const (
-	IndecentCanceled             TaskListParamsStatus = "canceled"
-	IndecentIdle                 TaskListParamsStatus = "idle"
-	IndecentRunning              TaskListParamsStatus = "running"
+	AmbitiousCanceled            TaskListParamsStatus = "canceled"
+	AmbitiousIdle                TaskListParamsStatus = "idle"
+	AmbitiousRunning             TaskListParamsStatus = "running"
 
 )
 
 // The task execution outcome
-type TentacledOutcome string
+type StickyOutcome string
 
 const (
-	AmbitiousPending                         TentacledOutcome = "pending"
+	IndecentFailure                          StickyOutcome = "failure"
+	IndecentSuccess                          StickyOutcome = "success"
+	MagentaPending                           StickyOutcome = "pending"
 
-	StickyFailure                            TentacledOutcome = "failure"
-	StickySuccess                            TentacledOutcome = "success"
 )
 
 // The task execution status
-type TentacledStatus string
+type StickyStatus string
 
 const (
-	HilariousCanceled                       TentacledStatus = "canceled"
-	HilariousIdle                           TentacledStatus = "idle"
-	HilariousRunning                        TentacledStatus = "running"
+	CunningCanceled                         StickyStatus = "canceled"
+	CunningIdle                             StickyStatus = "idle"
+	CunningRunning                          StickyStatus = "running"
 
 )
 
@@ -22152,6 +22242,26 @@ const (
 	TaskOutcomeFailure  TaskOutcome = "failure"
 	TaskOutcomePending  TaskOutcome = "pending"
 	TaskOutcomeSuccess  TaskOutcome = "success"
+)
+
+// The trigger integration status
+type TriggerIntegrationStatus string
+
+const (
+
+	TriggerIntegrationStatusCanceled TriggerIntegrationStatus = "canceled"
+	TriggerIntegrationStatusIdle     TriggerIntegrationStatus = "idle"
+	TriggerIntegrationStatusRunning  TriggerIntegrationStatus = "running"
+)
+
+// The trigger integration outcome
+type TriggerIntegrationOutcome string
+
+const (
+
+	TriggerIntegrationOutcomeFailure  TriggerIntegrationOutcome = "failure"
+	TriggerIntegrationOutcomePending  TriggerIntegrationOutcome = "pending"
+	TriggerIntegrationOutcomeSuccess  TriggerIntegrationOutcome = "success"
 )
 
 // The blueprint visibility
