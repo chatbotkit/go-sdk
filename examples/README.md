@@ -194,6 +194,31 @@ go run . "Review this Go function: func add(a, b int) int { return a - b }"
 go run .
 ```
 
+### Portable Embedded Agent
+
+An agent packaged as a single binary with embedded skills and obfuscated credentials:
+
+- Embeds the local `skills/` directory with `//go:embed`
+- Uses a scoped token that can only create bot sessions for one bot
+- Stores the bot ID and minting token as generated XOR-obfuscated byte arrays
+- Mints a short-lived session at runtime, then runs the stateful agent with the returned token
+
+**Run the example:**
+
+```bash
+cd examples/portable-embedded-agent
+
+export CHATBOTKIT_BOT_ID="your-bot-id"
+export CHATBOTKIT_SESSION_MINT_TOKEN="your-scoped-session-mint-token"
+
+go generate .
+go build -trimpath -ldflags="-s -w" -o portable-agent .
+
+./portable-agent "Summarize why portable agents are useful."
+```
+
+This example is portability-first. The embedded values are hidden from casual inspection, but they are not equivalent to a hardware-backed or backend-managed secret store.
+
 ### Stateless Agent
 
 Demonstrates how to manually drive `agent.CompleteWithTools`, giving you full control over each iteration:
