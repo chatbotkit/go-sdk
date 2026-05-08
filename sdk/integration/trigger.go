@@ -13,15 +13,12 @@ import (
 // TriggerClient provides access to Trigger integration resources.
 type TriggerClient struct {
 	httpClient *httpclient.Client
-	// Execution provides access to trigger execution resources.
-	Execution *TriggerExecutionClient
 }
 
 // NewTriggerClient creates a new TriggerClient.
 func NewTriggerClient(httpClient *httpclient.Client) *TriggerClient {
 	return &TriggerClient{
 		httpClient: httpClient,
-		Execution:  NewTriggerExecutionClient(httpClient),
 	}
 }
 
@@ -98,55 +95,6 @@ func (c *TriggerClient) Invoke(ctx context.Context, triggerID string, req types.
 
 	var result types.TriggerIntegrationInvokeResponse
 	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
-		return nil, err
-	}
-	return &result, nil
-}
-
-// Cancel cancels a Trigger integration.
-func (c *TriggerClient) Cancel(ctx context.Context, triggerID string) (*types.TriggerIntegrationCancelResponse, error) {
-	path := fmt.Sprintf("/api/v1/integration/trigger/%s/cancel", triggerID)
-
-	var result types.TriggerIntegrationCancelResponse
-	if err := c.httpClient.Post(ctx, path, types.TriggerIntegrationCancelRequest{}, &result); err != nil {
-		return nil, err
-	}
-	return &result, nil
-}
-
-// TriggerExecutionClient provides access to Trigger integration execution resources.
-type TriggerExecutionClient struct {
-	httpClient *httpclient.Client
-}
-
-// NewTriggerExecutionClient creates a new TriggerExecutionClient.
-func NewTriggerExecutionClient(httpClient *httpclient.Client) *TriggerExecutionClient {
-	return &TriggerExecutionClient{
-		httpClient: httpClient,
-	}
-}
-
-// List retrieves a list of executions for a Trigger integration.
-func (c *TriggerExecutionClient) List(ctx context.Context, triggerID string, opts *types.TriggerIntegrationExecutionListParams) (*types.TriggerIntegrationExecutionListResponse, error) {
-	path := fmt.Sprintf("/api/v1/integration/trigger/%s/execution/list", triggerID)
-	query := url.Values{}
-	if opts != nil {
-		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
-	}
-
-	var result types.TriggerIntegrationExecutionListResponse
-	if err := c.httpClient.Get(ctx, path, query, &result); err != nil {
-		return nil, err
-	}
-	return &result, nil
-}
-
-// Cancel cancels a Trigger integration execution.
-func (c *TriggerExecutionClient) Cancel(ctx context.Context, triggerID, executionID string) (*types.TriggerIntegrationExecutionCancelResponse, error) {
-	path := fmt.Sprintf("/api/v1/integration/trigger/%s/execution/%s/cancel", triggerID, executionID)
-
-	var result types.TriggerIntegrationExecutionCancelResponse
-	if err := c.httpClient.Post(ctx, path, types.TriggerIntegrationExecutionCancelRequest{}, &result); err != nil {
 		return nil, err
 	}
 	return &result, nil
