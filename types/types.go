@@ -28,6 +28,12 @@
 //    platformReportListResponse, err := UnmarshalPlatformReportListResponse(bytes)
 //    bytes, err = platformReportListResponse.Marshal()
 //
+//    taskWorkflowEventsSubscribeParams, err := UnmarshalTaskWorkflowEventsSubscribeParams(bytes)
+//    bytes, err = taskWorkflowEventsSubscribeParams.Marshal()
+//
+//    taskWorkflowEventsSubscribeRequest, err := UnmarshalTaskWorkflowEventsSubscribeRequest(bytes)
+//    bytes, err = taskWorkflowEventsSubscribeRequest.Marshal()
+//
 //    blueprintCloneParams, err := UnmarshalBlueprintCloneParams(bytes)
 //    bytes, err = blueprintCloneParams.Marshal()
 //
@@ -228,6 +234,12 @@
 //
 //    contactMemorySearchResponse, err := UnmarshalContactMemorySearchResponse(bytes)
 //    bytes, err = contactMemorySearchResponse.Marshal()
+//
+//    contactRatingListParams, err := UnmarshalContactRatingListParams(bytes)
+//    bytes, err = contactRatingListParams.Marshal()
+//
+//    contactRatingListResponse, err := UnmarshalContactRatingListResponse(bytes)
+//    bytes, err = contactRatingListResponse.Marshal()
 //
 //    contactSecretAuthenticateParams, err := UnmarshalContactSecretAuthenticateParams(bytes)
 //    bytes, err = contactSecretAuthenticateParams.Marshal()
@@ -1303,15 +1315,6 @@
 //    integrationTelegramListResponse, err := UnmarshalIntegrationTelegramListResponse(bytes)
 //    bytes, err = integrationTelegramListResponse.Marshal()
 //
-//    triggerIntegrationCancelParams, err := UnmarshalTriggerIntegrationCancelParams(bytes)
-//    bytes, err = triggerIntegrationCancelParams.Marshal()
-//
-//    triggerIntegrationCancelRequest, err := UnmarshalTriggerIntegrationCancelRequest(bytes)
-//    bytes, err = triggerIntegrationCancelRequest.Marshal()
-//
-//    triggerIntegrationCancelResponse, err := UnmarshalTriggerIntegrationCancelResponse(bytes)
-//    bytes, err = triggerIntegrationCancelResponse.Marshal()
-//
 //    triggerIntegrationDeleteParams, err := UnmarshalTriggerIntegrationDeleteParams(bytes)
 //    bytes, err = triggerIntegrationDeleteParams.Marshal()
 //
@@ -1320,21 +1323,6 @@
 //
 //    triggerIntegrationDeleteResponse, err := UnmarshalTriggerIntegrationDeleteResponse(bytes)
 //    bytes, err = triggerIntegrationDeleteResponse.Marshal()
-//
-//    triggerIntegrationExecutionCancelParams, err := UnmarshalTriggerIntegrationExecutionCancelParams(bytes)
-//    bytes, err = triggerIntegrationExecutionCancelParams.Marshal()
-//
-//    triggerIntegrationExecutionCancelRequest, err := UnmarshalTriggerIntegrationExecutionCancelRequest(bytes)
-//    bytes, err = triggerIntegrationExecutionCancelRequest.Marshal()
-//
-//    triggerIntegrationExecutionCancelResponse, err := UnmarshalTriggerIntegrationExecutionCancelResponse(bytes)
-//    bytes, err = triggerIntegrationExecutionCancelResponse.Marshal()
-//
-//    triggerIntegrationExecutionListParams, err := UnmarshalTriggerIntegrationExecutionListParams(bytes)
-//    bytes, err = triggerIntegrationExecutionListParams.Marshal()
-//
-//    triggerIntegrationExecutionListResponse, err := UnmarshalTriggerIntegrationExecutionListResponse(bytes)
-//    bytes, err = triggerIntegrationExecutionListResponse.Marshal()
 //
 //    triggerIntegrationFetchParams, err := UnmarshalTriggerIntegrationFetchParams(bytes)
 //    bytes, err = triggerIntegrationFetchParams.Marshal()
@@ -2287,12 +2275,6 @@
 //    taskOutcome, err := UnmarshalTaskOutcome(bytes)
 //    bytes, err = taskOutcome.Marshal()
 //
-//    triggerIntegrationStatus, err := UnmarshalTriggerIntegrationStatus(bytes)
-//    bytes, err = triggerIntegrationStatus.Marshal()
-//
-//    triggerIntegrationOutcome, err := UnmarshalTriggerIntegrationOutcome(bytes)
-//    bytes, err = triggerIntegrationOutcome.Marshal()
-//
 //    blueprintVisibility, err := UnmarshalBlueprintVisibility(bytes)
 //    bytes, err = blueprintVisibility.Marshal()
 //
@@ -2489,6 +2471,26 @@ func UnmarshalPlatformReportListResponse(data []byte) (PlatformReportListRespons
 }
 
 func (r *PlatformReportListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTaskWorkflowEventsSubscribeParams(data []byte) (TaskWorkflowEventsSubscribeParams, error) {
+	var r TaskWorkflowEventsSubscribeParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskWorkflowEventsSubscribeParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTaskWorkflowEventsSubscribeRequest(data []byte) (TaskWorkflowEventsSubscribeRequest, error) {
+	var r TaskWorkflowEventsSubscribeRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskWorkflowEventsSubscribeRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -3167,6 +3169,26 @@ func UnmarshalContactMemorySearchResponse(data []byte) (ContactMemorySearchRespo
 }
 
 func (r *ContactMemorySearchResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalContactRatingListParams(data []byte) (ContactRatingListParams, error) {
+	var r ContactRatingListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactRatingListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalContactRatingListResponse(data []byte) (ContactRatingListResponse, error) {
+	var r ContactRatingListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactRatingListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -6818,38 +6840,6 @@ func (r *IntegrationTelegramListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTriggerIntegrationCancelParams(data []byte) (TriggerIntegrationCancelParams, error) {
-	var r TriggerIntegrationCancelParams
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TriggerIntegrationCancelParams) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-type TriggerIntegrationCancelRequest map[string]interface{}
-
-func UnmarshalTriggerIntegrationCancelRequest(data []byte) (TriggerIntegrationCancelRequest, error) {
-	var r TriggerIntegrationCancelRequest
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TriggerIntegrationCancelRequest) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTriggerIntegrationCancelResponse(data []byte) (TriggerIntegrationCancelResponse, error) {
-	var r TriggerIntegrationCancelResponse
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TriggerIntegrationCancelResponse) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
 func UnmarshalTriggerIntegrationDeleteParams(data []byte) (TriggerIntegrationDeleteParams, error) {
 	var r TriggerIntegrationDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -6879,58 +6869,6 @@ func UnmarshalTriggerIntegrationDeleteResponse(data []byte) (TriggerIntegrationD
 }
 
 func (r *TriggerIntegrationDeleteResponse) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTriggerIntegrationExecutionCancelParams(data []byte) (TriggerIntegrationExecutionCancelParams, error) {
-	var r TriggerIntegrationExecutionCancelParams
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TriggerIntegrationExecutionCancelParams) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-type TriggerIntegrationExecutionCancelRequest map[string]interface{}
-
-func UnmarshalTriggerIntegrationExecutionCancelRequest(data []byte) (TriggerIntegrationExecutionCancelRequest, error) {
-	var r TriggerIntegrationExecutionCancelRequest
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TriggerIntegrationExecutionCancelRequest) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTriggerIntegrationExecutionCancelResponse(data []byte) (TriggerIntegrationExecutionCancelResponse, error) {
-	var r TriggerIntegrationExecutionCancelResponse
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TriggerIntegrationExecutionCancelResponse) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTriggerIntegrationExecutionListParams(data []byte) (TriggerIntegrationExecutionListParams, error) {
-	var r TriggerIntegrationExecutionListParams
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TriggerIntegrationExecutionListParams) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTriggerIntegrationExecutionListResponse(data []byte) (TriggerIntegrationExecutionListResponse, error) {
-	var r TriggerIntegrationExecutionListResponse
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TriggerIntegrationExecutionListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -10158,26 +10096,6 @@ func (r *TaskOutcome) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
-func UnmarshalTriggerIntegrationStatus(data []byte) (TriggerIntegrationStatus, error) {
-	var r TriggerIntegrationStatus
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TriggerIntegrationStatus) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTriggerIntegrationOutcome(data []byte) (TriggerIntegrationOutcome, error) {
-	var r TriggerIntegrationOutcome
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TriggerIntegrationOutcome) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
 func UnmarshalBlueprintVisibility(data []byte) (BlueprintVisibility, error) {
 	var r BlueprintVisibility
 	err := json.Unmarshal(data, &r)
@@ -10554,6 +10472,16 @@ type PlatformReportListResponseItem struct {
 	Name                                               *string                `json:"name,omitempty"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type TaskWorkflowEventsSubscribeParams struct {
+	// The ID of the task       
+	TaskID               string `json:"taskId"`
+}
+
+type TaskWorkflowEventsSubscribeRequest struct {
+	// Number of recent workflow events to replay before live events.       
+	HistoryLength                                                    *int64 `json:"historyLength,omitempty"`
 }
 
 type BlueprintCloneParams struct {
@@ -11193,6 +11121,51 @@ type ContactMemorySearchResponseItem struct {
 	Text string                 `json:"text"`
 }
 
+type ContactRatingListParams struct {
+	// The ID of the contact to list ratings for                              
+	ContactID                                   string                        `json:"contactId"`
+	// The cursor to use for pagination                                       
+	Cursor                                      *string                       `json:"cursor,omitempty"`
+	// The order of the paginated items                                       
+	Order                                       *ContactRatingListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                        
+	Take                                        *int64                        `json:"take,omitempty"`
+}
+
+type ContactRatingListResponse struct {
+	// Cursor for fetching the next page                                
+	Cursor                              string                          `json:"cursor"`
+	Items                               []ContactRatingListResponseItem `json:"items"`
+}
+
+// Instance list properties
+type ContactRatingListResponseItem struct {
+	// The bot id assigned to this rating                                     
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The contact id assigned to this rating                                 
+	ContactID                                          *string                `json:"contactId,omitempty"`
+	// The conversation id assigned to this rating                            
+	ConversationID                                     *string                `json:"conversationId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// The message id assigned to this rating                                 
+	MessageID                                          *string                `json:"messageId,omitempty"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The reason for the rating                                              
+	Reason                                             *string                `json:"reason,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The rating value                                                       
+	Value                                              *float64               `json:"value,omitempty"`
+}
+
 type ContactSecretAuthenticateParams struct {
 	// The ID of the contact the secret belongs to       
 	ContactID                                     string `json:"contactId"`
@@ -11331,28 +11304,40 @@ type ContactTaskListResponse struct {
 
 // Instance list properties
 type ContactTaskListResponseItem struct {
-	// The bot associated with the task                                       
-	BotID                                              *string                `json:"botId,omitempty"`
-	// The contact id assigned to this task                                   
-	ContactID                                          *string                `json:"contactId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The task execution outcome                                             
-	Outcome                                            *PurpleOutcome         `json:"outcome,omitempty"`
-	// The schedule of the task                                               
-	Schedule                                           *string                `json:"schedule,omitempty"`
-	// The task execution status                                              
-	Status                                             *PurpleStatus          `json:"status,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The bot associated with the task                                                       
+	BotID                                                              *string                `json:"botId,omitempty"`
+	// The contact id assigned to this task                                                   
+	ContactID                                                          *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                                       
+	CreatedAt                                                          float64                `json:"createdAt"`
+	// The associated description                                                             
+	Description                                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                                        
+	ID                                                                 string                 `json:"id"`
+	// The timestamp (ms) of the last task execution                                          
+	LastRunAt                                                          *float64               `json:"lastRunAt,omitempty"`
+	// The maximum number of iterations per task execution                                    
+	MaxIterations                                                      *float64               `json:"maxIterations,omitempty"`
+	// The maximum time per task execution (in milliseconds)                                  
+	MaxTime                                                            *float64               `json:"maxTime,omitempty"`
+	// Meta data information                                                                  
+	Meta                                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                    
+	Name                                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) of the next scheduled task execution                                
+	NextRunAt                                                          *float64               `json:"nextRunAt,omitempty"`
+	// The task execution outcome                                                             
+	Outcome                                                            *PurpleOutcome         `json:"outcome,omitempty"`
+	// The schedule of the task                                                               
+	Schedule                                                           *string                `json:"schedule,omitempty"`
+	// The session duration of the task execution (in milliseconds)                           
+	SessionDuration                                                    *float64               `json:"sessionDuration,omitempty"`
+	// The task execution status                                                              
+	Status                                                             *PurpleStatus          `json:"status,omitempty"`
+	// The IANA timezone identifier used to evaluate the task schedule.                       
+	Timezone                                                           *string                `json:"timezone,omitempty"`
+	// The timestamp (ms) when the instance was updated                                       
+	UpdatedAt                                                          float64                `json:"updatedAt"`
 }
 
 type ContactUpdateParams struct {
@@ -16166,16 +16151,6 @@ type IntegrationTelegramListResponseItem struct {
 	UpdatedAt                                                                                    float64                `json:"updatedAt"`
 }
 
-type TriggerIntegrationCancelParams struct {
-	// The ID of the Trigger integration to cancel       
-	TriggerIntegrationID                          string `json:"triggerIntegrationId"`
-}
-
-type TriggerIntegrationCancelResponse struct {
-	// The ID of the canceled Trigger integration       
-	ID                                           string `json:"id"`
-}
-
 type TriggerIntegrationDeleteParams struct {
 	// The ID of the Trigger integration       
 	TriggerIntegrationID                string `json:"triggerIntegrationId"`
@@ -16186,69 +16161,6 @@ type TriggerIntegrationDeleteResponse struct {
 	ID                                          string `json:"id"`
 }
 
-type TriggerIntegrationExecutionCancelParams struct {
-	// The ID of the Trigger integration execution to cancel       
-	TriggerExecutionID                                      string `json:"triggerExecutionId"`
-	// The ID of the Trigger integration                           
-	TriggerIntegrationID                                    string `json:"triggerIntegrationId"`
-}
-
-type TriggerIntegrationExecutionCancelResponse struct {
-	// The ID of the canceled Trigger integration execution       
-	ID                                                     string `json:"id"`
-	// The ID of the parent Trigger integration                   
-	TriggerIntegrationID                                   string `json:"triggerIntegrationId"`
-}
-
-type TriggerIntegrationExecutionListParams struct {
-	// The cursor to use for pagination                                                  
-	Cursor                                  *string                                      `json:"cursor,omitempty"`
-	// Key-value pairs to filter by metadata                                             
-	Meta                                    map[string]string                            `json:"meta,omitempty"`
-	// The order of the paginated items                                                  
-	Order                                   *TriggerIntegrationExecutionListParamsOrder  `json:"order,omitempty"`
-	// Filter by execution status                                                        
-	Status                                  *TriggerIntegrationExecutionListParamsStatus `json:"status,omitempty"`
-	// The number of items to retrieve                                                   
-	Take                                    *int64                                       `json:"take,omitempty"`
-	// The ID of the Trigger integration                                                 
-	TriggerIntegrationID                    string                                       `json:"triggerIntegrationId"`
-}
-
-type TriggerIntegrationExecutionListResponse struct {
-	// Cursor for fetching the next page                                              
-	Cursor                              string                                        `json:"cursor"`
-	Items                               []TriggerIntegrationExecutionListResponseItem `json:"items"`
-}
-
-// Instance list properties
-type TriggerIntegrationExecutionListResponseItem struct {
-	// When the execution completed                                            
-	CompletedAt                                         *time.Time             `json:"completedAt,omitempty"`
-	// The conversation associated with this execution                         
-	ConversationID                                      *string                `json:"conversationId,omitempty"`
-	// The timestamp (ms) when the instance was created                        
-	CreatedAt                                           float64                `json:"createdAt"`
-	// The associated description                                              
-	Description                                         *string                `json:"description,omitempty"`
-	// The instance ID                                                         
-	ID                                                  string                 `json:"id"`
-	// Meta data information                                                   
-	Meta                                                map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                     
-	Name                                                *string                `json:"name,omitempty"`
-	// Final execution outcome                                                 
-	Outcome                                             *string                `json:"outcome,omitempty"`
-	// Current execution status                                                
-	Status                                              *string                `json:"status,omitempty"`
-	// A summary of the execution result                                       
-	Summary                                             *string                `json:"summary,omitempty"`
-	// The trigger integration this execution belongs to                       
-	TriggerIntegrationID                                *string                `json:"triggerIntegrationId,omitempty"`
-	// The timestamp (ms) when the instance was updated                        
-	UpdatedAt                                           float64                `json:"updatedAt"`
-}
-
 type TriggerIntegrationFetchParams struct {
 	// The ID of the Trigger integration to retrieve       
 	TriggerIntegrationID                            string `json:"triggerIntegrationId"`
@@ -16256,42 +16168,36 @@ type TriggerIntegrationFetchParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type TriggerIntegrationFetchResponse struct {
-	// When enabled the integration requires authentication                                                                           
-	Authenticate                                                                              *bool                                   `json:"authenticate,omitempty"`
-	// The ID of the blueprint                                                                                                        
-	BlueprintID                                                                               *string                                 `json:"blueprintId,omitempty"`
-	// The ID of the bot this configuration is using                                                                                  
-	BotID                                                                                     *string                                 `json:"botId,omitempty"`
-	// The timestamp (ms) when the instance was created                                                                               
-	CreatedAt                                                                                 float64                                 `json:"createdAt"`
-	// The associated description                                                                                                     
-	Description                                                                               *string                                 `json:"description,omitempty"`
-	// The instance ID                                                                                                                
-	ID                                                                                        string                                  `json:"id"`
-	// The timestamp (ms) of the last trigger execution                                                                               
-	LastTriggerAt                                                                             *float64                                `json:"lastTriggerAt,omitempty"`
-	// The maximum number of iterations per trigger execution                                                                         
-	MaxIterations                                                                             *float64                                `json:"maxIterations,omitempty"`
-	// The maximum time per trigger execution (in milliseconds)                                                                       
-	MaxTime                                                                                   *float64                                `json:"maxTime,omitempty"`
-	// Meta data information                                                                                                          
-	Meta                                                                                      map[string]interface{}                  `json:"meta,omitempty"`
-	// The associated name                                                                                                            
-	Name                                                                                      *string                                 `json:"name,omitempty"`
-	// The timestamp (ms) of the next scheduled trigger execution                                                                     
-	NextTriggerAt                                                                             *float64                                `json:"nextTriggerAt,omitempty"`
-	// The trigger integration outcome                                                                                                
-	Outcome                                                                                   *TriggerIntegrationFetchResponseOutcome `json:"outcome,omitempty"`
-	// The Trigger integration secret                                                                                                 
-	Secret                                                                                    string                                  `json:"secret"`
-	// The session duration (in milliseconds)                                                                                         
-	SessionDuration                                                                           *float64                                `json:"sessionDuration,omitempty"`
-	// The trigger integration status                                                                                                 
-	Status                                                                                    *TriggerIntegrationFetchResponseStatus  `json:"status,omitempty"`
-	// The schedule for the trigger integration (interval, cron expression, ISO date, or null)                                        
-	TriggerSchedule                                                                           *string                                 `json:"triggerSchedule,omitempty"`
-	// The timestamp (ms) when the instance was updated                                                                               
-	UpdatedAt                                                                                 float64                                 `json:"updatedAt"`
+	// When enabled the integration requires authentication                                                          
+	Authenticate                                                                              *bool                  `json:"authenticate,omitempty"`
+	// The ID of the blueprint                                                                                       
+	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                                 
+	BotID                                                                                     *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                                                              
+	CreatedAt                                                                                 float64                `json:"createdAt"`
+	// The associated description                                                                                    
+	Description                                                                               *string                `json:"description,omitempty"`
+	// The instance ID                                                                                               
+	ID                                                                                        string                 `json:"id"`
+	// The timestamp (ms) of the last trigger execution                                                              
+	LastTriggerAt                                                                             *float64               `json:"lastTriggerAt,omitempty"`
+	// Meta data information                                                                                         
+	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                           
+	Name                                                                                      *string                `json:"name,omitempty"`
+	// The timestamp (ms) of the next scheduled trigger execution                                                    
+	NextTriggerAt                                                                             *float64               `json:"nextTriggerAt,omitempty"`
+	// The schedule for the trigger integration (interval, cron expression, ISO date, or null)                       
+	Schedule                                                                                  *string                `json:"schedule,omitempty"`
+	// The Trigger integration secret                                                                                
+	Secret                                                                                    string                 `json:"secret"`
+	// The session duration (in milliseconds)                                                                        
+	SessionDuration                                                                           *float64               `json:"sessionDuration,omitempty"`
+	// The IANA timezone identifier used to evaluate the trigger schedule.                                           
+	Timezone                                                                                  *string                `json:"timezone,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                              
+	UpdatedAt                                                                                 float64                `json:"updatedAt"`
 }
 
 type TriggerIntegrationInvokeParams struct {
@@ -16329,18 +16235,16 @@ type TriggerIntegrationUpdateRequest struct {
 	BotID                                                                               *string                `json:"botId,omitempty"`
 	// The associated description                                                                              
 	Description                                                                         *string                `json:"description,omitempty"`
-	// The maximum number of iterations per trigger execution                                                  
-	MaxIterations                                                                       *float64               `json:"maxIterations,omitempty"`
-	// The maximum time per trigger execution in milliseconds                                                  
-	MaxTime                                                                             *float64               `json:"maxTime,omitempty"`
 	// Meta data information                                                                                   
 	Meta                                                                                map[string]interface{} `json:"meta,omitempty"`
 	// The associated name                                                                                     
 	Name                                                                                *string                `json:"name,omitempty"`
+	// The schedule for the trigger integration (interval, cron expression, or ISO date)                       
+	Schedule                                                                            *string                `json:"schedule,omitempty"`
 	// The session duration (in milliseconds)                                                                  
 	SessionDuration                                                                     *float64               `json:"sessionDuration,omitempty"`
-	// The schedule for the trigger integration (interval, cron expression, or ISO date)                       
-	TriggerSchedule                                                                     *string                `json:"triggerSchedule,omitempty"`
+	// An optional IANA timezone identifier used when evaluating the trigger schedule.                         
+	Timezone                                                                            *string                `json:"timezone,omitempty"`
 }
 
 type TriggerIntegrationUpdateResponse struct {
@@ -16358,18 +16262,16 @@ type TriggerIntegrationCreateRequest struct {
 	BotID                                                                               *string                `json:"botId,omitempty"`
 	// The associated description                                                                              
 	Description                                                                         *string                `json:"description,omitempty"`
-	// The maximum number of iterations per trigger execution                                                  
-	MaxIterations                                                                       *float64               `json:"maxIterations,omitempty"`
-	// The maximum time per trigger execution in milliseconds                                                  
-	MaxTime                                                                             *float64               `json:"maxTime,omitempty"`
 	// Meta data information                                                                                   
 	Meta                                                                                map[string]interface{} `json:"meta,omitempty"`
 	// The associated name                                                                                     
 	Name                                                                                *string                `json:"name,omitempty"`
+	// The schedule for the trigger integration (interval, cron expression, or ISO date)                       
+	Schedule                                                                            *string                `json:"schedule,omitempty"`
 	// The session duration (in milliseconds)                                                                  
 	SessionDuration                                                                     *float64               `json:"sessionDuration,omitempty"`
-	// The schedule for the trigger integration (interval, cron expression, or ISO date)                       
-	TriggerSchedule                                                                     *string                `json:"triggerSchedule,omitempty"`
+	// An optional IANA timezone identifier used when evaluating the trigger schedule.                         
+	Timezone                                                                            *string                `json:"timezone,omitempty"`
 }
 
 type TriggerIntegrationCreateResponse struct {
@@ -16410,26 +16312,20 @@ type TriggerIntegrationListResponseItem struct {
 	ID                                                                                        string                 `json:"id"`
 	// The timestamp (ms) of the last trigger execution                                                              
 	LastTriggerAt                                                                             *float64               `json:"lastTriggerAt,omitempty"`
-	// The maximum number of iterations per trigger execution                                                        
-	MaxIterations                                                                             *float64               `json:"maxIterations,omitempty"`
-	// The maximum time per trigger execution (in milliseconds)                                                      
-	MaxTime                                                                                   *float64               `json:"maxTime,omitempty"`
 	// Meta data information                                                                                         
 	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
 	// The associated name                                                                                           
 	Name                                                                                      *string                `json:"name,omitempty"`
 	// The timestamp (ms) of the next scheduled trigger execution                                                    
 	NextTriggerAt                                                                             *float64               `json:"nextTriggerAt,omitempty"`
-	// The trigger integration outcome                                                                               
-	Outcome                                                                                   *FluffyOutcome         `json:"outcome,omitempty"`
+	// The schedule for the trigger integration (interval, cron expression, ISO date, or null)                       
+	Schedule                                                                                  *string                `json:"schedule,omitempty"`
 	// The Trigger integration secret                                                                                
 	Secret                                                                                    string                 `json:"secret"`
 	// The session duration (in milliseconds)                                                                        
 	SessionDuration                                                                           *float64               `json:"sessionDuration,omitempty"`
-	// The trigger integration status                                                                                
-	Status                                                                                    *FluffyStatus          `json:"status,omitempty"`
-	// The schedule for the trigger integration (interval, cron expression, ISO date, or null)                       
-	TriggerSchedule                                                                           *string                `json:"triggerSchedule,omitempty"`
+	// The IANA timezone identifier used to evaluate the trigger schedule.                                           
+	Timezone                                                                                  *string                `json:"timezone,omitempty"`
 	// The timestamp (ms) when the instance was updated                                                              
 	UpdatedAt                                                                                 float64                `json:"updatedAt"`
 }
@@ -19905,9 +19801,9 @@ type TaskExecutionListResponseItem struct {
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
 	// The task execution outcome                                             
-	Outcome                                            *TentacledOutcome      `json:"outcome,omitempty"`
+	Outcome                                            *FluffyOutcome         `json:"outcome,omitempty"`
 	// The task execution status                                              
-	Status                                             *TentacledStatus       `json:"status,omitempty"`
+	Status                                             *FluffyStatus          `json:"status,omitempty"`
 	// A summary of the execution result                                      
 	Summary                                            *string                `json:"summary,omitempty"`
 	// The task this execution belongs to                                     
@@ -19923,36 +19819,40 @@ type TaskFetchParams struct {
 
 // Instance list properties
 type TaskFetchResponse struct {
-	// The bot associated with the task                                                 
-	BotID                                                     *string                   `json:"botId,omitempty"`
-	// The contact associated with the task                                             
-	ContactID                                                 *string                   `json:"contactId,omitempty"`
-	// The timestamp (ms) when the instance was created                                 
-	CreatedAt                                                 float64                   `json:"createdAt"`
-	// The associated description                                                       
-	Description                                               *string                   `json:"description,omitempty"`
-	// The instance ID                                                                  
-	ID                                                        string                    `json:"id"`
-	// The timestamp (ms) of the last task execution                                    
-	LastRunAt                                                 *float64                  `json:"lastRunAt,omitempty"`
-	// The maximum number of iterations per task execution                              
-	MaxIterations                                             *float64                  `json:"maxIterations,omitempty"`
-	// The maximum time per task execution (in milliseconds)                            
-	MaxTime                                                   *float64                  `json:"maxTime,omitempty"`
-	// Meta data information                                                            
-	Meta                                                      map[string]interface{}    `json:"meta,omitempty"`
-	// The associated name                                                              
-	Name                                                      *string                   `json:"name,omitempty"`
-	// The timestamp (ms) of the next scheduled task execution                          
-	NextRunAt                                                 *float64                  `json:"nextRunAt,omitempty"`
-	// The task execution outcome                                                       
-	Outcome                                                   *TaskFetchResponseOutcome `json:"outcome,omitempty"`
-	// The schedule of the task                                                         
-	Schedule                                                  *string                   `json:"schedule,omitempty"`
-	// The task execution status                                                        
-	Status                                                    *TaskFetchResponseStatus  `json:"status,omitempty"`
-	// The timestamp (ms) when the instance was updated                                 
-	UpdatedAt                                                 float64                   `json:"updatedAt"`
+	// The bot associated with the task                                                          
+	BotID                                                              *string                   `json:"botId,omitempty"`
+	// The contact associated with the task                                                      
+	ContactID                                                          *string                   `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                                          
+	CreatedAt                                                          float64                   `json:"createdAt"`
+	// The associated description                                                                
+	Description                                                        *string                   `json:"description,omitempty"`
+	// The instance ID                                                                           
+	ID                                                                 string                    `json:"id"`
+	// The timestamp (ms) of the last task execution                                             
+	LastRunAt                                                          *float64                  `json:"lastRunAt,omitempty"`
+	// The maximum number of iterations per task execution                                       
+	MaxIterations                                                      *float64                  `json:"maxIterations,omitempty"`
+	// The maximum time per task execution (in milliseconds)                                     
+	MaxTime                                                            *float64                  `json:"maxTime,omitempty"`
+	// Meta data information                                                                     
+	Meta                                                               map[string]interface{}    `json:"meta,omitempty"`
+	// The associated name                                                                       
+	Name                                                               *string                   `json:"name,omitempty"`
+	// The timestamp (ms) of the next scheduled task execution                                   
+	NextRunAt                                                          *float64                  `json:"nextRunAt,omitempty"`
+	// The task execution outcome                                                                
+	Outcome                                                            *TaskFetchResponseOutcome `json:"outcome,omitempty"`
+	// The schedule of the task                                                                  
+	Schedule                                                           *string                   `json:"schedule,omitempty"`
+	// The session duration of the task execution (in milliseconds)                              
+	SessionDuration                                                    *float64                  `json:"sessionDuration,omitempty"`
+	// The task execution status                                                                 
+	Status                                                             *TaskFetchResponseStatus  `json:"status,omitempty"`
+	// The IANA timezone identifier used to evaluate the task schedule.                          
+	Timezone                                                           *string                   `json:"timezone,omitempty"`
+	// The timestamp (ms) when the instance was updated                                          
+	UpdatedAt                                                          float64                   `json:"updatedAt"`
 }
 
 type TaskTriggerParams struct {
@@ -19970,24 +19870,27 @@ type TaskUpdateParams struct {
 
 // Instance crud properties
 type TaskUpdateRequest struct {
-	// The bot associated with the task                                          
-	BotID                                                 *string                `json:"botId,omitempty"`
-	// The contact associated with the task                                      
-	ContactID                                             *string                `json:"contactId,omitempty"`
-	// The associated description                                                
-	Description                                           *string                `json:"description,omitempty"`
-	// The maximum number of iterations per task execution                       
-	MaxIterations                                         *float64               `json:"maxIterations,omitempty"`
-	// The maximum time per task execution in milliseconds                       
-	MaxTime                                               *float64               `json:"maxTime,omitempty"`
-	// Meta data information                                                     
-	Meta                                                  map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                       
-	Name                                                  *string                `json:"name,omitempty"`
-	// The schedule of the task                                                  
-	Schedule                                              *string                `json:"schedule,omitempty"`
-	// The session duration of the Widget integration                            
-	SessionDuration                                       *float64               `json:"sessionDuration,omitempty"`
+	// The bot associated with the task                                                                               
+	BotID                                                                                      *string                `json:"botId,omitempty"`
+	// The contact associated with the task                                                                           
+	ContactID                                                                                  *string                `json:"contactId,omitempty"`
+	// The associated description                                                                                     
+	Description                                                                                *string                `json:"description,omitempty"`
+	// The maximum number of iterations per task execution                                                            
+	MaxIterations                                                                              *float64               `json:"maxIterations,omitempty"`
+	// The maximum time per task execution in milliseconds                                                            
+	MaxTime                                                                                    *float64               `json:"maxTime,omitempty"`
+	// Meta data information                                                                                          
+	Meta                                                                                       map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                            
+	Name                                                                                       *string                `json:"name,omitempty"`
+	// The schedule of the task. Cron expressions and date-based schedules are evaluated in the                       
+	// provided timezone when set.                                                                                    
+	Schedule                                                                                   *string                `json:"schedule,omitempty"`
+	// The session duration of the Widget integration                                                                 
+	SessionDuration                                                                            *float64               `json:"sessionDuration,omitempty"`
+	// An optional IANA timezone identifier used when evaluating the task schedule.                                   
+	Timezone                                                                                   *string                `json:"timezone,omitempty"`
 }
 
 type TaskUpdateResponse struct {
@@ -19997,24 +19900,27 @@ type TaskUpdateResponse struct {
 
 // Instance crud properties
 type TaskCreateRequest struct {
-	// The bot associated with the task                                          
-	BotID                                                 *string                `json:"botId,omitempty"`
-	// The contact associated with the task                                      
-	ContactID                                             *string                `json:"contactId,omitempty"`
-	// The associated description                                                
-	Description                                           *string                `json:"description,omitempty"`
-	// The maximum number of iterations per task execution                       
-	MaxIterations                                         *float64               `json:"maxIterations,omitempty"`
-	// The maximum time per task execution in milliseconds                       
-	MaxTime                                               *float64               `json:"maxTime,omitempty"`
-	// Meta data information                                                     
-	Meta                                                  map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                       
-	Name                                                  *string                `json:"name,omitempty"`
-	// The schedule of the task                                                  
-	Schedule                                              *string                `json:"schedule,omitempty"`
-	// The session duration of the Widget integration                            
-	SessionDuration                                       *float64               `json:"sessionDuration,omitempty"`
+	// The bot associated with the task                                                                               
+	BotID                                                                                      *string                `json:"botId,omitempty"`
+	// The contact associated with the task                                                                           
+	ContactID                                                                                  *string                `json:"contactId,omitempty"`
+	// The associated description                                                                                     
+	Description                                                                                *string                `json:"description,omitempty"`
+	// The maximum number of iterations per task execution                                                            
+	MaxIterations                                                                              *float64               `json:"maxIterations,omitempty"`
+	// The maximum time per task execution in milliseconds                                                            
+	MaxTime                                                                                    *float64               `json:"maxTime,omitempty"`
+	// Meta data information                                                                                          
+	Meta                                                                                       map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                            
+	Name                                                                                       *string                `json:"name,omitempty"`
+	// The schedule of the task. Cron expressions and date-based schedules are evaluated in the                       
+	// provided timezone when set.                                                                                    
+	Schedule                                                                                   *string                `json:"schedule,omitempty"`
+	// The session duration of the Widget integration                                                                 
+	SessionDuration                                                                            *float64               `json:"sessionDuration,omitempty"`
+	// An optional IANA timezone identifier used when evaluating the task schedule.                                   
+	Timezone                                                                                   *string                `json:"timezone,omitempty"`
 }
 
 type TaskCreateResponse struct {
@@ -20041,24 +19947,32 @@ type TasksExportResponse struct {
 
 // Instance list properties
 type TasksExportResponseItem struct {
-	// The bot associated with the task                                       
-	BotID                                              *string                `json:"botId,omitempty"`
-	// The contact associated with the task                                   
-	ContactID                                          *string                `json:"contactId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The schedule of the task                                               
-	Schedule                                           *string                `json:"schedule,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The bot associated with the task                                                       
+	BotID                                                              *string                `json:"botId,omitempty"`
+	// The contact associated with the task                                                   
+	ContactID                                                          *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                                       
+	CreatedAt                                                          float64                `json:"createdAt"`
+	// The associated description                                                             
+	Description                                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                                        
+	ID                                                                 string                 `json:"id"`
+	// The maximum number of iterations per task execution                                    
+	MaxIterations                                                      *float64               `json:"maxIterations,omitempty"`
+	// The maximum time per task execution (in milliseconds)                                  
+	MaxTime                                                            *float64               `json:"maxTime,omitempty"`
+	// Meta data information                                                                  
+	Meta                                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                    
+	Name                                                               *string                `json:"name,omitempty"`
+	// The schedule of the task                                                               
+	Schedule                                                           *string                `json:"schedule,omitempty"`
+	// The session duration of the task execution (in milliseconds)                           
+	SessionDuration                                                    *float64               `json:"sessionDuration,omitempty"`
+	// The IANA timezone identifier used to evaluate the task schedule.                       
+	Timezone                                                           *string                `json:"timezone,omitempty"`
+	// The timestamp (ms) when the instance was updated                                       
+	UpdatedAt                                                          float64                `json:"updatedAt"`
 }
 
 type TaskListParams struct {
@@ -20086,36 +20000,40 @@ type TaskListResponse struct {
 
 // Instance list properties
 type TaskListResponseItem struct {
-	// The bot associated with the task                                              
-	BotID                                                     *string                `json:"botId,omitempty"`
-	// The contact associated with the task                                          
-	ContactID                                                 *string                `json:"contactId,omitempty"`
-	// The timestamp (ms) when the instance was created                              
-	CreatedAt                                                 float64                `json:"createdAt"`
-	// The associated description                                                    
-	Description                                               *string                `json:"description,omitempty"`
-	// The instance ID                                                               
-	ID                                                        string                 `json:"id"`
-	// The timestamp (ms) of the last task execution                                 
-	LastRunAt                                                 *float64               `json:"lastRunAt,omitempty"`
-	// The maximum number of iterations per task execution                           
-	MaxIterations                                             *float64               `json:"maxIterations,omitempty"`
-	// The maximum time per task execution (in milliseconds)                         
-	MaxTime                                                   *float64               `json:"maxTime,omitempty"`
-	// Meta data information                                                         
-	Meta                                                      map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                           
-	Name                                                      *string                `json:"name,omitempty"`
-	// The timestamp (ms) of the next scheduled task execution                       
-	NextRunAt                                                 *float64               `json:"nextRunAt,omitempty"`
-	// The task execution outcome                                                    
-	Outcome                                                   *StickyOutcome         `json:"outcome,omitempty"`
-	// The schedule of the task                                                      
-	Schedule                                                  *string                `json:"schedule,omitempty"`
-	// The task execution status                                                     
-	Status                                                    *StickyStatus          `json:"status,omitempty"`
-	// The timestamp (ms) when the instance was updated                              
-	UpdatedAt                                                 float64                `json:"updatedAt"`
+	// The bot associated with the task                                                       
+	BotID                                                              *string                `json:"botId,omitempty"`
+	// The contact associated with the task                                                   
+	ContactID                                                          *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                                       
+	CreatedAt                                                          float64                `json:"createdAt"`
+	// The associated description                                                             
+	Description                                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                                        
+	ID                                                                 string                 `json:"id"`
+	// The timestamp (ms) of the last task execution                                          
+	LastRunAt                                                          *float64               `json:"lastRunAt,omitempty"`
+	// The maximum number of iterations per task execution                                    
+	MaxIterations                                                      *float64               `json:"maxIterations,omitempty"`
+	// The maximum time per task execution (in milliseconds)                                  
+	MaxTime                                                            *float64               `json:"maxTime,omitempty"`
+	// Meta data information                                                                  
+	Meta                                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                    
+	Name                                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) of the next scheduled task execution                                
+	NextRunAt                                                          *float64               `json:"nextRunAt,omitempty"`
+	// The task execution outcome                                                             
+	Outcome                                                            *TentacledOutcome      `json:"outcome,omitempty"`
+	// The schedule of the task                                                               
+	Schedule                                                           *string                `json:"schedule,omitempty"`
+	// The session duration of the task execution (in milliseconds)                           
+	SessionDuration                                                    *float64               `json:"sessionDuration,omitempty"`
+	// The task execution status                                                              
+	Status                                                             *TentacledStatus       `json:"status,omitempty"`
+	// The IANA timezone identifier used to evaluate the task schedule.                       
+	Timezone                                                           *string                `json:"timezone,omitempty"`
+	// The timestamp (ms) when the instance was updated                                       
+	UpdatedAt                                                          float64                `json:"updatedAt"`
 }
 
 type TeamListParams struct {
@@ -20760,6 +20678,15 @@ const (
 
 )
 
+// The order of the paginated items
+type ContactRatingListParamsOrder string
+
+const (
+	IndecentAsc                          ContactRatingListParamsOrder = "asc"
+	IndecentDesc                         ContactRatingListParamsOrder = "desc"
+
+)
+
 // The type of action to take
 type TentacledType string
 
@@ -20781,8 +20708,8 @@ const (
 type ContactSecretListParamsOrder string
 
 const (
-	IndecentAsc                          ContactSecretListParamsOrder = "asc"
-	IndecentDesc                         ContactSecretListParamsOrder = "desc"
+	HilariousAsc                         ContactSecretListParamsOrder = "asc"
+	HilariousDesc                        ContactSecretListParamsOrder = "desc"
 
 )
 
@@ -20790,8 +20717,8 @@ const (
 type ContactSpaceListParamsOrder string
 
 const (
-	HilariousAsc                        ContactSpaceListParamsOrder = "asc"
-	HilariousDesc                       ContactSpaceListParamsOrder = "desc"
+	AmbitiousAsc                        ContactSpaceListParamsOrder = "asc"
+	AmbitiousDesc                       ContactSpaceListParamsOrder = "desc"
 
 )
 
@@ -20799,8 +20726,8 @@ const (
 type ContactTaskListParamsOrder string
 
 const (
-	AmbitiousAsc                       ContactTaskListParamsOrder = "asc"
-	AmbitiousDesc                      ContactTaskListParamsOrder = "desc"
+	CunningAsc                         ContactTaskListParamsOrder = "asc"
+	CunningDesc                        ContactTaskListParamsOrder = "desc"
 
 )
 
@@ -20828,8 +20755,8 @@ const (
 type ContactsExportParamsOrder string
 
 const (
-	CunningAsc                        ContactsExportParamsOrder = "asc"
-	CunningDesc                       ContactsExportParamsOrder = "desc"
+	MagentaAsc                        ContactsExportParamsOrder = "asc"
+	MagentaDesc                       ContactsExportParamsOrder = "desc"
 
 )
 
@@ -20837,8 +20764,8 @@ const (
 type ContactListParamsOrder string
 
 const (
-	MagentaAsc                     ContactListParamsOrder = "asc"
-	MagentaDesc                    ContactListParamsOrder = "desc"
+	FriskyAsc                      ContactListParamsOrder = "asc"
+	FriskyDesc                     ContactListParamsOrder = "desc"
 
 )
 
@@ -20920,8 +20847,8 @@ const (
 type ConversationMessageListParamsOrder string
 
 const (
-	FriskyAsc                                  ConversationMessageListParamsOrder = "asc"
-	FriskyDesc                                 ConversationMessageListParamsOrder = "desc"
+	MischievousAsc                             ConversationMessageListParamsOrder = "asc"
+	MischievousDesc                            ConversationMessageListParamsOrder = "desc"
 
 )
 
@@ -21049,8 +20976,8 @@ const (
 type ConversationsExportParamsOrder string
 
 const (
-	MischievousAsc                         ConversationsExportParamsOrder = "asc"
-	MischievousDesc                        ConversationsExportParamsOrder = "desc"
+	BraggadociousAsc                       ConversationsExportParamsOrder = "asc"
+	BraggadociousDesc                      ConversationsExportParamsOrder = "desc"
 
 )
 
@@ -21058,8 +20985,8 @@ const (
 type ConversationListParamsOrder string
 
 const (
-	BraggadociousAsc                    ConversationListParamsOrder = "asc"
-	BraggadociousDesc                   ConversationListParamsOrder = "desc"
+	Asc1                                ConversationListParamsOrder = "asc"
+	Desc1                               ConversationListParamsOrder = "desc"
 
 )
 
@@ -21085,8 +21012,8 @@ const (
 type DatasetFileListParamsOrder string
 
 const (
-	Asc1                               DatasetFileListParamsOrder = "asc"
-	Desc1                              DatasetFileListParamsOrder = "desc"
+	Asc2                               DatasetFileListParamsOrder = "asc"
+	Desc2                              DatasetFileListParamsOrder = "desc"
 
 )
 
@@ -21104,8 +21031,8 @@ const (
 type DatasetRecordsExportParamsOrder string
 
 const (
-	Asc2                                    DatasetRecordsExportParamsOrder = "asc"
-	Desc2                                   DatasetRecordsExportParamsOrder = "desc"
+	Asc3                                    DatasetRecordsExportParamsOrder = "asc"
+	Desc3                                   DatasetRecordsExportParamsOrder = "desc"
 
 )
 
@@ -21113,8 +21040,8 @@ const (
 type DatasetRecordListParamsOrder string
 
 const (
-	Asc3                                 DatasetRecordListParamsOrder = "asc"
-	Desc3                                DatasetRecordListParamsOrder = "desc"
+	Asc4                                 DatasetRecordListParamsOrder = "asc"
+	Desc4                                DatasetRecordListParamsOrder = "desc"
 
 )
 
@@ -21142,8 +21069,8 @@ const (
 type DatasetListParamsOrder string
 
 const (
-	Asc4                           DatasetListParamsOrder = "asc"
-	Desc4                          DatasetListParamsOrder = "desc"
+	Asc5                           DatasetListParamsOrder = "asc"
+	Desc5                          DatasetListParamsOrder = "desc"
 
 )
 
@@ -21161,8 +21088,8 @@ const (
 type EventLogsExportParamsOrder string
 
 const (
-	Asc5                               EventLogsExportParamsOrder = "asc"
-	Desc5                              EventLogsExportParamsOrder = "desc"
+	Asc6                               EventLogsExportParamsOrder = "asc"
+	Desc6                              EventLogsExportParamsOrder = "desc"
 
 )
 
@@ -21170,8 +21097,8 @@ const (
 type EventLogListParamsOrder string
 
 const (
-	Asc6                            EventLogListParamsOrder = "asc"
-	Desc6                           EventLogListParamsOrder = "desc"
+	Asc7                            EventLogListParamsOrder = "asc"
+	Desc7                           EventLogListParamsOrder = "desc"
 
 )
 
@@ -21209,8 +21136,8 @@ const (
 type FileListParamsOrder string
 
 const (
-	Asc7                        FileListParamsOrder = "asc"
-	Desc7                       FileListParamsOrder = "desc"
+	Asc8                        FileListParamsOrder = "asc"
+	Desc8                       FileListParamsOrder = "desc"
 
 )
 
@@ -21228,8 +21155,8 @@ const (
 type IntegrationDiscordListParamsOrder string
 
 const (
-	Asc8                                      IntegrationDiscordListParamsOrder = "asc"
-	Desc8                                     IntegrationDiscordListParamsOrder = "desc"
+	Asc9                                      IntegrationDiscordListParamsOrder = "asc"
+	Desc9                                     IntegrationDiscordListParamsOrder = "desc"
 
 )
 
@@ -21237,8 +21164,8 @@ const (
 type EmailIntegrationListParamsOrder string
 
 const (
-	Asc9                                    EmailIntegrationListParamsOrder = "asc"
-	Desc9                                   EmailIntegrationListParamsOrder = "desc"
+	Asc10                                   EmailIntegrationListParamsOrder = "asc"
+	Desc10                                  EmailIntegrationListParamsOrder = "desc"
 
 )
 
@@ -21246,8 +21173,8 @@ const (
 type ExtractIntegrationItemsExportParamsOrder string
 
 const (
-	Asc10                                            ExtractIntegrationItemsExportParamsOrder = "asc"
-	Desc10                                           ExtractIntegrationItemsExportParamsOrder = "desc"
+	Asc11                                            ExtractIntegrationItemsExportParamsOrder = "asc"
+	Desc11                                           ExtractIntegrationItemsExportParamsOrder = "desc"
 
 )
 
@@ -21255,8 +21182,8 @@ const (
 type ExtractIntegrationItemListParamsOrder string
 
 const (
-	Asc11                                         ExtractIntegrationItemListParamsOrder = "asc"
-	Desc11                                        ExtractIntegrationItemListParamsOrder = "desc"
+	Asc12                                         ExtractIntegrationItemListParamsOrder = "asc"
+	Desc12                                        ExtractIntegrationItemListParamsOrder = "desc"
 
 )
 
@@ -21264,8 +21191,8 @@ const (
 type IntegrationExtractListParamsOrder string
 
 const (
-	Asc12                                     IntegrationExtractListParamsOrder = "asc"
-	Desc12                                    IntegrationExtractListParamsOrder = "desc"
+	Asc13                                     IntegrationExtractListParamsOrder = "asc"
+	Desc13                                    IntegrationExtractListParamsOrder = "desc"
 
 )
 
@@ -21273,8 +21200,8 @@ const (
 type GooglechatIntegrationListParamsOrder string
 
 const (
-	Asc13                                        GooglechatIntegrationListParamsOrder = "asc"
-	Desc13                                       GooglechatIntegrationListParamsOrder = "desc"
+	Asc14                                        GooglechatIntegrationListParamsOrder = "asc"
+	Desc14                                       GooglechatIntegrationListParamsOrder = "desc"
 
 )
 
@@ -21282,8 +21209,8 @@ const (
 type IntegrationInstagramListParamsOrder string
 
 const (
-	Asc14                                       IntegrationInstagramListParamsOrder = "asc"
-	Desc14                                      IntegrationInstagramListParamsOrder = "desc"
+	Asc15                                       IntegrationInstagramListParamsOrder = "asc"
+	Desc15                                      IntegrationInstagramListParamsOrder = "desc"
 
 )
 
@@ -21291,8 +21218,8 @@ const (
 type IntegrationMCPServerListParamsOrder string
 
 const (
-	Asc15                                       IntegrationMCPServerListParamsOrder = "asc"
-	Desc15                                      IntegrationMCPServerListParamsOrder = "desc"
+	Asc16                                       IntegrationMCPServerListParamsOrder = "asc"
+	Desc16                                      IntegrationMCPServerListParamsOrder = "desc"
 
 )
 
@@ -21300,8 +21227,8 @@ const (
 type IntegrationMessengerListParamsOrder string
 
 const (
-	Asc16                                       IntegrationMessengerListParamsOrder = "asc"
-	Desc16                                      IntegrationMessengerListParamsOrder = "desc"
+	Asc17                                       IntegrationMessengerListParamsOrder = "asc"
+	Desc17                                      IntegrationMessengerListParamsOrder = "desc"
 
 )
 
@@ -21319,8 +21246,8 @@ const (
 type IntegrationNotionListParamsOrder string
 
 const (
-	Asc17                                    IntegrationNotionListParamsOrder = "asc"
-	Desc17                                   IntegrationNotionListParamsOrder = "desc"
+	Asc18                                    IntegrationNotionListParamsOrder = "asc"
+	Desc18                                   IntegrationNotionListParamsOrder = "desc"
 
 )
 
@@ -21348,8 +21275,8 @@ const (
 type IntegrationSitemapListParamsOrder string
 
 const (
-	Asc18                                     IntegrationSitemapListParamsOrder = "asc"
-	Desc18                                    IntegrationSitemapListParamsOrder = "desc"
+	Asc19                                     IntegrationSitemapListParamsOrder = "asc"
+	Desc19                                    IntegrationSitemapListParamsOrder = "desc"
 
 )
 
@@ -21367,8 +21294,8 @@ const (
 type IntegrationSlackListParamsOrder string
 
 const (
-	Asc19                                   IntegrationSlackListParamsOrder = "asc"
-	Desc19                                  IntegrationSlackListParamsOrder = "desc"
+	Asc20                                   IntegrationSlackListParamsOrder = "asc"
+	Desc20                                  IntegrationSlackListParamsOrder = "desc"
 
 )
 
@@ -21376,8 +21303,8 @@ const (
 type IntegrationSupportListParamsOrder string
 
 const (
-	Asc20                                     IntegrationSupportListParamsOrder = "asc"
-	Desc20                                    IntegrationSupportListParamsOrder = "desc"
+	Asc21                                     IntegrationSupportListParamsOrder = "asc"
+	Desc21                                    IntegrationSupportListParamsOrder = "desc"
 
 )
 
@@ -21385,8 +21312,8 @@ const (
 type TeamsIntegrationListParamsOrder string
 
 const (
-	Asc21                                   TeamsIntegrationListParamsOrder = "asc"
-	Desc21                                  TeamsIntegrationListParamsOrder = "desc"
+	Asc22                                   TeamsIntegrationListParamsOrder = "asc"
+	Desc22                                  TeamsIntegrationListParamsOrder = "desc"
 
 )
 
@@ -21394,48 +21321,9 @@ const (
 type IntegrationTelegramListParamsOrder string
 
 const (
-	Asc22                                      IntegrationTelegramListParamsOrder = "asc"
-	Desc22                                     IntegrationTelegramListParamsOrder = "desc"
+	Asc23                                      IntegrationTelegramListParamsOrder = "asc"
+	Desc23                                     IntegrationTelegramListParamsOrder = "desc"
 
-)
-
-// The order of the paginated items
-type TriggerIntegrationExecutionListParamsOrder string
-
-const (
-	Asc23                                              TriggerIntegrationExecutionListParamsOrder = "asc"
-	Desc23                                             TriggerIntegrationExecutionListParamsOrder = "desc"
-
-)
-
-// Filter by execution status
-type TriggerIntegrationExecutionListParamsStatus string
-
-const (
-	FluffyCanceled                                      TriggerIntegrationExecutionListParamsStatus = "canceled"
-	FluffyIdle                                          TriggerIntegrationExecutionListParamsStatus = "idle"
-	FluffyRunning                                       TriggerIntegrationExecutionListParamsStatus = "running"
-
-)
-
-// The trigger integration outcome
-type TriggerIntegrationFetchResponseOutcome string
-
-const (
-	FluffyFailure                                  TriggerIntegrationFetchResponseOutcome = "failure"
-	FluffySuccess                                  TriggerIntegrationFetchResponseOutcome = "success"
-	IndecentPending                                TriggerIntegrationFetchResponseOutcome = "pending"
-
-)
-
-// The trigger integration status
-type TriggerIntegrationFetchResponseStatus string
-
-const (
-
-	TentacledCanceled                             TriggerIntegrationFetchResponseStatus = "canceled"
-	TentacledIdle                                 TriggerIntegrationFetchResponseStatus = "idle"
-	TentacledRunning                              TriggerIntegrationFetchResponseStatus = "running"
 )
 
 // The order of the paginated items
@@ -21445,26 +21333,6 @@ const (
 	Asc24                                     TriggerIntegrationListParamsOrder = "asc"
 	Desc24                                    TriggerIntegrationListParamsOrder = "desc"
 
-)
-
-// The trigger integration outcome
-type FluffyOutcome string
-
-const (
-	HilariousPending                                       FluffyOutcome = "pending"
-
-	TentacledFailure                                       FluffyOutcome = "failure"
-	TentacledSuccess                                       FluffyOutcome = "success"
-)
-
-// The trigger integration status
-type FluffyStatus string
-
-const (
-
-	StickyCanceled                                        FluffyStatus = "canceled"
-	StickyIdle                                            FluffyStatus = "idle"
-	StickyRunning                                         FluffyStatus = "running"
 )
 
 // The order of the paginated items
@@ -22077,50 +21945,50 @@ const (
 type TaskExecutionListParamsStatus string
 
 const (
-	IndigoCanceled                        TaskExecutionListParamsStatus = "canceled"
-	IndigoIdle                            TaskExecutionListParamsStatus = "idle"
-	IndigoRunning                         TaskExecutionListParamsStatus = "running"
+	FluffyCanceled                        TaskExecutionListParamsStatus = "canceled"
+	FluffyIdle                            TaskExecutionListParamsStatus = "idle"
+	FluffyRunning                         TaskExecutionListParamsStatus = "running"
 
 )
 
 // The task execution outcome
-type TentacledOutcome string
+type FluffyOutcome string
 
 const (
-	AmbitiousPending                                  TentacledOutcome = "pending"
+	FluffyFailure                                     FluffyOutcome = "failure"
+	FluffySuccess                                     FluffyOutcome = "success"
+	IndecentPending                                   FluffyOutcome = "pending"
 
-	StickyFailure                                     TentacledOutcome = "failure"
-	StickySuccess                                     TentacledOutcome = "success"
 )
 
 // The task execution status
-type TentacledStatus string
+type FluffyStatus string
 
 const (
-	IndecentCanceled                                 TentacledStatus = "canceled"
-	IndecentIdle                                     TentacledStatus = "idle"
-	IndecentRunning                                  TentacledStatus = "running"
 
+	TentacledCanceled                                FluffyStatus = "canceled"
+	TentacledIdle                                    FluffyStatus = "idle"
+	TentacledRunning                                 FluffyStatus = "running"
 )
 
 // The task execution outcome
 type TaskFetchResponseOutcome string
 
 const (
-	CunningPending                   TaskFetchResponseOutcome = "pending"
-	IndigoFailure                    TaskFetchResponseOutcome = "failure"
-	IndigoSuccess                    TaskFetchResponseOutcome = "success"
+	HilariousPending                 TaskFetchResponseOutcome = "pending"
 
+	TentacledFailure                 TaskFetchResponseOutcome = "failure"
+	TentacledSuccess                 TaskFetchResponseOutcome = "success"
 )
 
 // The task execution status
 type TaskFetchResponseStatus string
 
 const (
-	HilariousCanceled               TaskFetchResponseStatus = "canceled"
-	HilariousIdle                   TaskFetchResponseStatus = "idle"
-	HilariousRunning                TaskFetchResponseStatus = "running"
 
+	StickyCanceled                  TaskFetchResponseStatus = "canceled"
+	StickyIdle                      TaskFetchResponseStatus = "idle"
+	StickyRunning                   TaskFetchResponseStatus = "running"
 )
 
 // The order of the paginated items
@@ -22145,29 +22013,29 @@ const (
 type TaskListParamsStatus string
 
 const (
-	AmbitiousCanceled            TaskListParamsStatus = "canceled"
-	AmbitiousIdle                TaskListParamsStatus = "idle"
-	AmbitiousRunning             TaskListParamsStatus = "running"
+	IndigoCanceled               TaskListParamsStatus = "canceled"
+	IndigoIdle                   TaskListParamsStatus = "idle"
+	IndigoRunning                TaskListParamsStatus = "running"
 
 )
 
 // The task execution outcome
-type StickyOutcome string
+type TentacledOutcome string
 
 const (
-	IndecentFailure                          StickyOutcome = "failure"
-	IndecentSuccess                          StickyOutcome = "success"
-	MagentaPending                           StickyOutcome = "pending"
+	AmbitiousPending                         TentacledOutcome = "pending"
 
+	StickyFailure                            TentacledOutcome = "failure"
+	StickySuccess                            TentacledOutcome = "success"
 )
 
 // The task execution status
-type StickyStatus string
+type TentacledStatus string
 
 const (
-	CunningCanceled                         StickyStatus = "canceled"
-	CunningIdle                             StickyStatus = "idle"
-	CunningRunning                          StickyStatus = "running"
+	IndecentCanceled                        TentacledStatus = "canceled"
+	IndecentIdle                            TentacledStatus = "idle"
+	IndecentRunning                         TentacledStatus = "running"
 
 )
 
@@ -22273,26 +22141,6 @@ const (
 	TaskOutcomeFailure  TaskOutcome = "failure"
 	TaskOutcomePending  TaskOutcome = "pending"
 	TaskOutcomeSuccess  TaskOutcome = "success"
-)
-
-// The trigger integration status
-type TriggerIntegrationStatus string
-
-const (
-
-	TriggerIntegrationStatusCanceled TriggerIntegrationStatus = "canceled"
-	TriggerIntegrationStatusIdle     TriggerIntegrationStatus = "idle"
-	TriggerIntegrationStatusRunning  TriggerIntegrationStatus = "running"
-)
-
-// The trigger integration outcome
-type TriggerIntegrationOutcome string
-
-const (
-
-	TriggerIntegrationOutcomeFailure  TriggerIntegrationOutcome = "failure"
-	TriggerIntegrationOutcomePending  TriggerIntegrationOutcome = "pending"
-	TriggerIntegrationOutcomeSuccess  TriggerIntegrationOutcome = "success"
 )
 
 // The blueprint visibility
