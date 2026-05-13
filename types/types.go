@@ -7,6 +7,24 @@
 //    graphqlResponse, err := UnmarshalGraphqlResponse(bytes)
 //    bytes, err = graphqlResponse.Marshal()
 //
+//    emailInitiateRequest, err := UnmarshalEmailInitiateRequest(bytes)
+//    bytes, err = emailInitiateRequest.Marshal()
+//
+//    emailInitiateResponse, err := UnmarshalEmailInitiateResponse(bytes)
+//    bytes, err = emailInitiateResponse.Marshal()
+//
+//    slackInitiateRequest, err := UnmarshalSlackInitiateRequest(bytes)
+//    bytes, err = slackInitiateRequest.Marshal()
+//
+//    slackInitiateResponse, err := UnmarshalSlackInitiateResponse(bytes)
+//    bytes, err = slackInitiateResponse.Marshal()
+//
+//    twilioInitiateRequest, err := UnmarshalTwilioInitiateRequest(bytes)
+//    bytes, err = twilioInitiateRequest.Marshal()
+//
+//    twilioInitiateResponse, err := UnmarshalTwilioInitiateResponse(bytes)
+//    bytes, err = twilioInitiateResponse.Marshal()
+//
 //    platformReportGenerateParams, err := UnmarshalPlatformReportGenerateParams(bytes)
 //    bytes, err = platformReportGenerateParams.Marshal()
 //
@@ -2367,6 +2385,9 @@
 //
 //    completeStreamingResponseItem, err := UnmarshalCompleteStreamingResponseItem(bytes)
 //    bytes, err = completeStreamingResponseItem.Marshal()
+//
+//    taskWorkflowStreamingResponseItem, err := UnmarshalTaskWorkflowStreamingResponseItem(bytes)
+//    bytes, err = taskWorkflowStreamingResponseItem.Marshal()
 
 package types
 
@@ -2393,6 +2414,66 @@ func UnmarshalGraphqlResponse(data []byte) (GraphqlResponse, error) {
 }
 
 func (r *GraphqlResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalEmailInitiateRequest(data []byte) (EmailInitiateRequest, error) {
+	var r EmailInitiateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *EmailInitiateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalEmailInitiateResponse(data []byte) (EmailInitiateResponse, error) {
+	var r EmailInitiateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *EmailInitiateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSlackInitiateRequest(data []byte) (SlackInitiateRequest, error) {
+	var r SlackInitiateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SlackInitiateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSlackInitiateResponse(data []byte) (SlackInitiateResponse, error) {
+	var r SlackInitiateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SlackInitiateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTwilioInitiateRequest(data []byte) (TwilioInitiateRequest, error) {
+	var r TwilioInitiateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TwilioInitiateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTwilioInitiateResponse(data []byte) (TwilioInitiateResponse, error) {
+	var r TwilioInitiateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TwilioInitiateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -10414,6 +10495,16 @@ func (r *CompleteStreamingResponseItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalTaskWorkflowStreamingResponseItem(data []byte) (TaskWorkflowStreamingResponseItem, error) {
+	var r TaskWorkflowStreamingResponseItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskWorkflowStreamingResponseItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 type GraphqlRequest struct {
 	// The name of the operation to execute                          
 	OperationName                             *string                `json:"operationName,omitempty"`
@@ -10432,6 +10523,48 @@ type GraphqlResponse struct {
 
 type Error struct {
 	Message *string `json:"message,omitempty"`
+}
+
+type EmailInitiateRequest struct {
+	// The email address to use for the conversation                  
+	Email                                                      string `json:"email"`
+	// The subject of the email                                       
+	Subject                                                    string `json:"subject"`
+	// The text instruction to use to initiate the conversation       
+	Text                                                       string `json:"text"`
+}
+
+type EmailInitiateResponse struct {
+	// The ID of the initiated integration       
+	ID                                    string `json:"id"`
+}
+
+type SlackInitiateRequest struct {
+	// The Slack channel or user to send to                           
+	Channel                                                    string `json:"channel"`
+	// The text instruction to use to initiate the conversation       
+	Text                                                       string `json:"text"`
+}
+
+type SlackInitiateResponse struct {
+	// The ID of the initiated integration       
+	ID                                    string `json:"id"`
+}
+
+type TwilioInitiateRequest struct {
+	// The Twilio channel to use for the conversation                   
+	Channel                                                    *Channel `json:"channel,omitempty"`
+	// The Twilio sender phone number                                   
+	From                                                       string   `json:"from"`
+	// The text instruction to use to initiate the conversation         
+	Text                                                       string   `json:"text"`
+	// The recipient phone number                                       
+	To                                                         string   `json:"to"`
+}
+
+type TwilioInitiateResponse struct {
+	// The ID of the initiated integration       
+	ID                                    string `json:"id"`
 }
 
 type PlatformReportGenerateParams struct {
@@ -16347,26 +16480,32 @@ type IntegrationTwilioFetchParams struct {
 
 // Blueprint properties
 type IntegrationTwilioFetchResponse struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot this configuration is using                          
-	BotID                                              *string                `json:"botId,omitempty"`
-	// Weather to collect contacts                                            
-	ContactCollection                                  *bool                  `json:"contactCollection,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The session duration (in milliseconds)                                 
-	SessionDuration                                    *float64               `json:"sessionDuration,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The Twilio account SID                                                   
+	AccountSid                                           *string                `json:"accountSid,omitempty"`
+	// Newline-or-comma-separated list of allowed senders                       
+	AllowFrom                                            *string                `json:"allowFrom,omitempty"`
+	// The ID of the blueprint                                                  
+	BlueprintID                                          *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                            
+	BotID                                                *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                              
+	ContactCollection                                    *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                         
+	CreatedAt                                            float64                `json:"createdAt"`
+	// The associated description                                               
+	Description                                          *string                `json:"description,omitempty"`
+	// The instance ID                                                          
+	ID                                                   string                 `json:"id"`
+	// Meta data information                                                    
+	Meta                                                 map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                      
+	Name                                                 *string                `json:"name,omitempty"`
+	// The session duration (in milliseconds)                                   
+	SessionDuration                                      *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                         
+	UpdatedAt                                            float64                `json:"updatedAt"`
+	// The voice configuration structured string                                
+	Voice                                                *string                `json:"voice,omitempty"`
 }
 
 type IntegrationTwilioSetupParams struct {
@@ -16386,20 +16525,29 @@ type IntegrationTwilioUpdateParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationTwilioUpdateRequest struct {
-	// The ID of the blueprint                                             
-	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot this configuration is using                       
-	BotID                                           *string                `json:"botId,omitempty"`
-	// Weather to collect contacts                                         
-	ContactCollection                               *bool                  `json:"contactCollection,omitempty"`
-	// The associated description                                          
-	Description                                     *string                `json:"description,omitempty"`
-	// Meta data information                                               
-	Meta                                            map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                 
-	Name                                            *string                `json:"name,omitempty"`
-	// The session duration (in milliseconds)                              
-	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
+	// The Twilio account SID                                                                                    
+	AccountSid                                                                            *string                `json:"accountSid,omitempty"`
+	// Newline-or-comma-separated list of allowed senders. Use E.164 phone numbers with or                       
+	// without the leading `+`. Set to `*` to allow all. Leave empty to deny all.                                
+	AllowFrom                                                                             *string                `json:"allowFrom,omitempty"`
+	// The Twilio auth token                                                                                     
+	AuthToken                                                                             *string                `json:"authToken,omitempty"`
+	// The ID of the blueprint                                                                                   
+	BlueprintID                                                                           *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                             
+	BotID                                                                                 *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                                                               
+	ContactCollection                                                                     *bool                  `json:"contactCollection,omitempty"`
+	// The associated description                                                                                
+	Description                                                                           *string                `json:"description,omitempty"`
+	// Meta data information                                                                                     
+	Meta                                                                                  map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                       
+	Name                                                                                  *string                `json:"name,omitempty"`
+	// The session duration (in milliseconds)                                                                    
+	SessionDuration                                                                       *float64               `json:"sessionDuration,omitempty"`
+	// The voice configuration structured string                                                                 
+	Voice                                                                                 *string                `json:"voice,omitempty"`
 }
 
 type IntegrationTwilioUpdateResponse struct {
@@ -16409,20 +16557,29 @@ type IntegrationTwilioUpdateResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationTwilioCreateRequest struct {
-	// The ID of the blueprint                                             
-	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot this configuration is using                       
-	BotID                                           *string                `json:"botId,omitempty"`
-	// Weather to collect contacts                                         
-	ContactCollection                               *bool                  `json:"contactCollection,omitempty"`
-	// The associated description                                          
-	Description                                     *string                `json:"description,omitempty"`
-	// Meta data information                                               
-	Meta                                            map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                 
-	Name                                            *string                `json:"name,omitempty"`
-	// The session duration (in milliseconds)                              
-	SessionDuration                                 *float64               `json:"sessionDuration,omitempty"`
+	// The Twilio account SID                                                                                    
+	AccountSid                                                                            *string                `json:"accountSid,omitempty"`
+	// Newline-or-comma-separated list of allowed senders. Use E.164 phone numbers with or                       
+	// without the leading `+`. Set to `*` to allow all. Leave empty to deny all.                                
+	AllowFrom                                                                             *string                `json:"allowFrom,omitempty"`
+	// The Twilio auth token                                                                                     
+	AuthToken                                                                             *string                `json:"authToken,omitempty"`
+	// The ID of the blueprint                                                                                   
+	BlueprintID                                                                           *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                             
+	BotID                                                                                 *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                                                               
+	ContactCollection                                                                     *bool                  `json:"contactCollection,omitempty"`
+	// The associated description                                                                                
+	Description                                                                           *string                `json:"description,omitempty"`
+	// Meta data information                                                                                     
+	Meta                                                                                  map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                       
+	Name                                                                                  *string                `json:"name,omitempty"`
+	// The session duration (in milliseconds)                                                                    
+	SessionDuration                                                                       *float64               `json:"sessionDuration,omitempty"`
+	// The voice configuration structured string                                                                 
+	Voice                                                                                 *string                `json:"voice,omitempty"`
 }
 
 type IntegrationTwilioCreateResponse struct {
@@ -16449,26 +16606,32 @@ type IntegrationTwilioListResponse struct {
 
 // Blueprint properties
 type IntegrationTwilioListResponseItem struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot this configuration is using                          
-	BotID                                              *string                `json:"botId,omitempty"`
-	// Weather to collect contacts                                            
-	ContactCollection                                  *bool                  `json:"contactCollection,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The session duration (in milliseconds)                                 
-	SessionDuration                                    *float64               `json:"sessionDuration,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The Twilio account SID                                                   
+	AccountSid                                           *string                `json:"accountSid,omitempty"`
+	// Newline-or-comma-separated list of allowed senders                       
+	AllowFrom                                            *string                `json:"allowFrom,omitempty"`
+	// The ID of the blueprint                                                  
+	BlueprintID                                          *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                            
+	BotID                                                *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                              
+	ContactCollection                                    *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                         
+	CreatedAt                                            float64                `json:"createdAt"`
+	// The associated description                                               
+	Description                                          *string                `json:"description,omitempty"`
+	// The instance ID                                                          
+	ID                                                   string                 `json:"id"`
+	// Meta data information                                                    
+	Meta                                                 map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                      
+	Name                                                 *string                `json:"name,omitempty"`
+	// The session duration (in milliseconds)                                   
+	SessionDuration                                      *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                         
+	UpdatedAt                                            float64                `json:"updatedAt"`
+	// The voice configuration structured string                                
+	Voice                                                *string                `json:"voice,omitempty"`
 }
 
 type IntegrationWhatsAppDeleteParams struct {
@@ -20490,7 +20653,7 @@ type CompleteStreamingResponseItem struct {
 	// A message in the conversation                                                            
 	//                                                                                          
 	// Information about an abort event in a streamed response                                  
-	Data                                                      Data                              `json:"data"`
+	Data                                                      CompleteStreamingResponseItemData `json:"data"`
 	// The type of event                                                                        
 	Type                                                      CompleteStreamingResponseItemType `json:"type"`
 }
@@ -20500,7 +20663,7 @@ type CompleteStreamingResponseItem struct {
 // A message in the conversation
 //
 // Information about an abort event in a streamed response
-type Data struct {
+type CompleteStreamingResponseItemData struct {
 	// The error message                                                    
 	Message                                          *string                `json:"message,omitempty"`
 	// The token generated                                                  
@@ -20522,6 +20685,61 @@ type Data struct {
 	// The number of output tokens used                                     
 	OutputTokensUsed                                 *float64               `json:"outputTokensUsed,omitempty"`
 }
+
+// An item in the task workflow subscription response
+type TaskWorkflowStreamingResponseItem struct {
+	// The event creation timestamp in milliseconds since the Unix epoch                                      
+	CreatedAt                                                           float64                               `json:"createdAt"`
+	// The data for the operation begin event                                                                 
+	//                                                                                                        
+	// The data for the operation end event                                                                   
+	//                                                                                                        
+	// The data for the error event                                                                           
+	Data                                                                TaskWorkflowStreamingResponseItemData `json:"data"`
+	// The type of event                                                                                      
+	Type                                                                TaskWorkflowStreamingResponseItemType `json:"type"`
+}
+
+// The data for the operation begin event
+//
+// The data for the operation end event
+//
+// The data for the error event
+type TaskWorkflowStreamingResponseItemData struct {
+	// The action associated with the operation            
+	Action                                     *DataAction `json:"action,omitempty"`
+	// The operation ID                                    
+	ID                                         *string     `json:"id,omitempty"`
+	// The error code                                      
+	Code                                       *string     `json:"code,omitempty"`
+	// The error message                                   
+	Message                                    *string     `json:"message,omitempty"`
+}
+
+// The action associated with the operation
+type DataAction struct {
+	// The action icon                     
+	Icon                       *string     `json:"icon,omitempty"`
+	// The action ID                       
+	ID                         string      `json:"id"`
+	// The action input                    
+	Input                      interface{} `json:"input"`
+	// The action justification            
+	Justification              *string     `json:"justification,omitempty"`
+	// The action kind                     
+	Kind                       *ActionKind `json:"kind,omitempty"`
+	// The action name                     
+	Name                       *string     `json:"name,omitempty"`
+}
+
+// The Twilio channel to use for the conversation
+type Channel string
+
+const (
+	Call                                 Channel = "call"
+
+	SMS                                  Channel = "sms"
+)
 
 // The order of the paginated items
 type PlatformReportListParamsOrder string
@@ -22303,6 +22521,7 @@ const (
 type CompleteStreamingResponseItemType string
 
 const (
+	AmbitiousError                                  CompleteStreamingResponseItemType = "error"
 	CompleteBegin                                   CompleteStreamingResponseItemType = "completeBegin"
 
 
@@ -22318,11 +22537,33 @@ const (
 	Token                                           CompleteStreamingResponseItemType = "token"
 	TypeAbort                                       CompleteStreamingResponseItemType = "abort"
 	TypeCompleteEnd                                 CompleteStreamingResponseItemType = "completeEnd"
-	TypeError                                       CompleteStreamingResponseItemType = "error"
 	TypeMessage                                     CompleteStreamingResponseItemType = "message"
 	TypeUsage                                       CompleteStreamingResponseItemType = "usage"
 	WaitForChannelMessageBegin                      CompleteStreamingResponseItemType = "waitForChannelMessageBegin"
 	WaitForChannelMessageEnd                        CompleteStreamingResponseItemType = "waitForChannelMessageEnd"
+)
+
+// The action kind
+type ActionKind string
+
+const (
+	Dataset                                                       ActionKind = "dataset"
+	Function                                                      ActionKind = "function"
+
+
+	Skillset                                                      ActionKind = "skillset"
+)
+
+// The type of event
+type TaskWorkflowStreamingResponseItemType string
+
+const (
+	CunningError                                        TaskWorkflowStreamingResponseItemType = "error"
+	OperationBegin                                      TaskWorkflowStreamingResponseItemType = "operationBegin"
+	OperationEnd                                        TaskWorkflowStreamingResponseItemType = "operationEnd"
+
+
+
 )
 
 type ConversationAttachmentUploadRequestFile struct {

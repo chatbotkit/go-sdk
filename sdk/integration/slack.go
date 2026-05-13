@@ -88,3 +88,14 @@ func (c *SlackClient) Setup(ctx context.Context, slackID string) (*types.Integra
 	}
 	return &result, nil
 }
+
+// Initiate initiates a Slack integration conversation.
+func (c *SlackClient) Initiate(ctx context.Context, slackID string, req types.SlackInitiateRequest) (*types.SlackInitiateResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/slack/%s/initiate", slackID)
+
+	var result types.SlackInitiateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
