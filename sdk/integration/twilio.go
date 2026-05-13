@@ -88,3 +88,14 @@ func (c *TwilioClient) Setup(ctx context.Context, twilioID string) (*types.Integ
 	}
 	return &result, nil
 }
+
+// Initiate initiates a Twilio integration conversation.
+func (c *TwilioClient) Initiate(ctx context.Context, twilioID string, req types.TwilioInitiateRequest) (*types.TwilioInitiateResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/twilio/%s/initiate", twilioID)
+
+	var result types.TwilioInitiateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

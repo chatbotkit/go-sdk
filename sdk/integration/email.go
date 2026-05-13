@@ -86,3 +86,14 @@ func (c *EmailClient) Setup(ctx context.Context, emailID string) (*types.EmailIn
 	}
 	return &result, nil
 }
+
+// Initiate initiates an Email integration conversation.
+func (c *EmailClient) Initiate(ctx context.Context, emailID string, req types.EmailInitiateRequest) (*types.EmailInitiateResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/email/%s/initiate", emailID)
+
+	var result types.EmailInitiateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
