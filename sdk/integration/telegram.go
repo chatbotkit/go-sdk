@@ -88,3 +88,14 @@ func (c *TelegramClient) Setup(ctx context.Context, telegramID string) (*types.I
 	}
 	return &result, nil
 }
+
+// Initiate initiates a Telegram integration conversation.
+func (c *TelegramClient) Initiate(ctx context.Context, telegramID string, req types.TelegramInitiateRequest) (*types.TelegramInitiateResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/telegram/%s/initiate", telegramID)
+
+	var result types.TelegramInitiateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

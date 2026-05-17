@@ -108,7 +108,7 @@ client.Integration.Trigger.Execution         // Trigger execution management
 client.Integration.Twilio        // Twilio integrations
 client.Integration.Email         // Email integrations
 client.Integration.McpServer     // MCP server integrations
-client.Integration.Teams         // Teams integrations
+client.Integration.Microsoftteams        // Microsoft Teams integrations
 client.Integration.GoogleChat    // Google Chat integrations
 client.Memory                    // Memory management
 client.Partner                   // Partner operations

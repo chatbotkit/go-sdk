@@ -88,3 +88,14 @@ func (c *DiscordClient) Setup(ctx context.Context, discordID string) (*types.Int
 	}
 	return &result, nil
 }
+
+// Initiate initiates a Discord integration conversation.
+func (c *DiscordClient) Initiate(ctx context.Context, discordID string, req types.DiscordInitiateRequest) (*types.DiscordInitiateResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/discord/%s/initiate", discordID)
+
+	var result types.DiscordInitiateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
