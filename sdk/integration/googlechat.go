@@ -86,3 +86,14 @@ func (c *GoogleChatClient) Setup(ctx context.Context, googleChatID string) (*typ
 	}
 	return &result, nil
 }
+
+// Initiate initiates a Google Chat integration conversation.
+func (c *GoogleChatClient) Initiate(ctx context.Context, googleChatID string, req types.GooglechatInitiateRequest) (*types.GooglechatInitiateResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/googlechat/%s/initiate", googleChatID)
+
+	var result types.GooglechatInitiateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

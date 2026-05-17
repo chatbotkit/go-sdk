@@ -88,3 +88,14 @@ func (c *InstagramClient) Setup(ctx context.Context, instagramID string) (*types
 	}
 	return &result, nil
 }
+
+// Initiate initiates an Instagram integration conversation.
+func (c *InstagramClient) Initiate(ctx context.Context, instagramID string, req types.InstagramInitiateRequest) (*types.InstagramInitiateResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/instagram/%s/initiate", instagramID)
+
+	var result types.InstagramInitiateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

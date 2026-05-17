@@ -38,8 +38,8 @@ type Client struct {
 	Email *EmailClient
 	// McpServer provides access to MCP server integration resources.
 	McpServer *McpServerClient
-	// Teams provides access to Teams integration resources.
-	Teams *TeamsClient
+	// Microsoftteams provides access to Microsoft Teams integration resources.
+	Microsoftteams *MicrosoftteamsClient
 	// GoogleChat provides access to Google Chat integration resources.
 	GoogleChat *GoogleChatClient
 }
@@ -47,23 +47,23 @@ type Client struct {
 // NewClient creates a new IntegrationClient.
 func NewClient(httpClient *httpclient.Client) *Client {
 	return &Client{
-		httpClient: httpClient,
-		Widget:     NewWidgetClient(httpClient),
-		Slack:      NewSlackClient(httpClient),
-		Discord:    NewDiscordClient(httpClient),
-		WhatsApp:   NewWhatsAppClient(httpClient),
-		Telegram:   NewTelegramClient(httpClient),
-		Messenger:  NewMessengerClient(httpClient),
-		Instagram:  NewInstagramClient(httpClient),
-		Notion:     NewNotionClient(httpClient),
-		Sitemap:    NewSitemapClient(httpClient),
-		Support:    NewSupportClient(httpClient),
-		Extract:    NewExtractClient(httpClient),
-		Trigger:    NewTriggerClient(httpClient),
-		Twilio:     NewTwilioClient(httpClient),
-		Email:      NewEmailClient(httpClient),
-		McpServer:  NewMcpServerClient(httpClient),
-		Teams:      NewTeamsClient(httpClient),
-		GoogleChat: NewGoogleChatClient(httpClient),
+		httpClient:     httpClient,
+		Widget:         NewWidgetClient(httpClient),
+		Slack:          NewSlackClient(httpClient),
+		Discord:        NewDiscordClient(httpClient),
+		WhatsApp:       NewWhatsAppClient(httpClient),
+		Telegram:       NewTelegramClient(httpClient),
+		Messenger:      NewMessengerClient(httpClient),
+		Instagram:      NewInstagramClient(httpClient),
+		Notion:         NewNotionClient(httpClient),
+		Sitemap:        NewSitemapClient(httpClient),
+		Support:        NewSupportClient(httpClient),
+		Extract:        NewExtractClient(httpClient),
+		Trigger:        NewTriggerClient(httpClient),
+		Twilio:         NewTwilioClient(httpClient),
+		Email:          NewEmailClient(httpClient),
+		McpServer:      NewMcpServerClient(httpClient),
+		Microsoftteams: NewMicrosoftteamsClient(httpClient),
+		GoogleChat:     NewGoogleChatClient(httpClient),
 	}
 }

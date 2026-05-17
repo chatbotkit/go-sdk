@@ -7,11 +7,41 @@
 //    graphqlResponse, err := UnmarshalGraphqlResponse(bytes)
 //    bytes, err = graphqlResponse.Marshal()
 //
+//    discordInitiateRequest, err := UnmarshalDiscordInitiateRequest(bytes)
+//    bytes, err = discordInitiateRequest.Marshal()
+//
+//    discordInitiateResponse, err := UnmarshalDiscordInitiateResponse(bytes)
+//    bytes, err = discordInitiateResponse.Marshal()
+//
 //    emailInitiateRequest, err := UnmarshalEmailInitiateRequest(bytes)
 //    bytes, err = emailInitiateRequest.Marshal()
 //
 //    emailInitiateResponse, err := UnmarshalEmailInitiateResponse(bytes)
 //    bytes, err = emailInitiateResponse.Marshal()
+//
+//    googlechatInitiateRequest, err := UnmarshalGooglechatInitiateRequest(bytes)
+//    bytes, err = googlechatInitiateRequest.Marshal()
+//
+//    googlechatInitiateResponse, err := UnmarshalGooglechatInitiateResponse(bytes)
+//    bytes, err = googlechatInitiateResponse.Marshal()
+//
+//    instagramInitiateRequest, err := UnmarshalInstagramInitiateRequest(bytes)
+//    bytes, err = instagramInitiateRequest.Marshal()
+//
+//    instagramInitiateResponse, err := UnmarshalInstagramInitiateResponse(bytes)
+//    bytes, err = instagramInitiateResponse.Marshal()
+//
+//    messengerInitiateRequest, err := UnmarshalMessengerInitiateRequest(bytes)
+//    bytes, err = messengerInitiateRequest.Marshal()
+//
+//    messengerInitiateResponse, err := UnmarshalMessengerInitiateResponse(bytes)
+//    bytes, err = messengerInitiateResponse.Marshal()
+//
+//    teamsInitiateRequest, err := UnmarshalTeamsInitiateRequest(bytes)
+//    bytes, err = teamsInitiateRequest.Marshal()
+//
+//    teamsInitiateResponse, err := UnmarshalTeamsInitiateResponse(bytes)
+//    bytes, err = teamsInitiateResponse.Marshal()
 //
 //    slackInitiateRequest, err := UnmarshalSlackInitiateRequest(bytes)
 //    bytes, err = slackInitiateRequest.Marshal()
@@ -19,11 +49,23 @@
 //    slackInitiateResponse, err := UnmarshalSlackInitiateResponse(bytes)
 //    bytes, err = slackInitiateResponse.Marshal()
 //
+//    telegramInitiateRequest, err := UnmarshalTelegramInitiateRequest(bytes)
+//    bytes, err = telegramInitiateRequest.Marshal()
+//
+//    telegramInitiateResponse, err := UnmarshalTelegramInitiateResponse(bytes)
+//    bytes, err = telegramInitiateResponse.Marshal()
+//
 //    twilioInitiateRequest, err := UnmarshalTwilioInitiateRequest(bytes)
 //    bytes, err = twilioInitiateRequest.Marshal()
 //
 //    twilioInitiateResponse, err := UnmarshalTwilioInitiateResponse(bytes)
 //    bytes, err = twilioInitiateResponse.Marshal()
+//
+//    whatsappInitiateRequest, err := UnmarshalWhatsappInitiateRequest(bytes)
+//    bytes, err = whatsappInitiateRequest.Marshal()
+//
+//    whatsappInitiateResponse, err := UnmarshalWhatsappInitiateResponse(bytes)
+//    bytes, err = whatsappInitiateResponse.Marshal()
 //
 //    platformReportGenerateParams, err := UnmarshalPlatformReportGenerateParams(bytes)
 //    bytes, err = platformReportGenerateParams.Marshal()
@@ -336,6 +378,12 @@
 //
 //    contactListResponse, err := UnmarshalContactListResponse(bytes)
 //    bytes, err = contactListResponse.Marshal()
+//
+//    conversationAttachmentListParams, err := UnmarshalConversationAttachmentListParams(bytes)
+//    bytes, err = conversationAttachmentListParams.Marshal()
+//
+//    conversationAttachmentListResponse, err := UnmarshalConversationAttachmentListResponse(bytes)
+//    bytes, err = conversationAttachmentListResponse.Marshal()
 //
 //    conversationAttachmentUploadParams, err := UnmarshalConversationAttachmentUploadParams(bytes)
 //    bytes, err = conversationAttachmentUploadParams.Marshal()
@@ -1063,6 +1111,51 @@
 //    integrationMessengerListResponse, err := UnmarshalIntegrationMessengerListResponse(bytes)
 //    bytes, err = integrationMessengerListResponse.Marshal()
 //
+//    microsoftteamsIntegrationDeleteParams, err := UnmarshalMicrosoftteamsIntegrationDeleteParams(bytes)
+//    bytes, err = microsoftteamsIntegrationDeleteParams.Marshal()
+//
+//    microsoftteamsIntegrationDeleteRequest, err := UnmarshalMicrosoftteamsIntegrationDeleteRequest(bytes)
+//    bytes, err = microsoftteamsIntegrationDeleteRequest.Marshal()
+//
+//    microsoftteamsIntegrationDeleteResponse, err := UnmarshalMicrosoftteamsIntegrationDeleteResponse(bytes)
+//    bytes, err = microsoftteamsIntegrationDeleteResponse.Marshal()
+//
+//    microsoftteamsIntegrationFetchParams, err := UnmarshalMicrosoftteamsIntegrationFetchParams(bytes)
+//    bytes, err = microsoftteamsIntegrationFetchParams.Marshal()
+//
+//    microsoftteamsIntegrationFetchResponse, err := UnmarshalMicrosoftteamsIntegrationFetchResponse(bytes)
+//    bytes, err = microsoftteamsIntegrationFetchResponse.Marshal()
+//
+//    microsoftteamsIntegrationSetupParams, err := UnmarshalMicrosoftteamsIntegrationSetupParams(bytes)
+//    bytes, err = microsoftteamsIntegrationSetupParams.Marshal()
+//
+//    microsoftteamsIntegrationSetupRequest, err := UnmarshalMicrosoftteamsIntegrationSetupRequest(bytes)
+//    bytes, err = microsoftteamsIntegrationSetupRequest.Marshal()
+//
+//    microsoftteamsIntegrationSetupResponse, err := UnmarshalMicrosoftteamsIntegrationSetupResponse(bytes)
+//    bytes, err = microsoftteamsIntegrationSetupResponse.Marshal()
+//
+//    microsoftteamsIntegrationUpdateParams, err := UnmarshalMicrosoftteamsIntegrationUpdateParams(bytes)
+//    bytes, err = microsoftteamsIntegrationUpdateParams.Marshal()
+//
+//    microsoftteamsIntegrationUpdateRequest, err := UnmarshalMicrosoftteamsIntegrationUpdateRequest(bytes)
+//    bytes, err = microsoftteamsIntegrationUpdateRequest.Marshal()
+//
+//    microsoftteamsIntegrationUpdateResponse, err := UnmarshalMicrosoftteamsIntegrationUpdateResponse(bytes)
+//    bytes, err = microsoftteamsIntegrationUpdateResponse.Marshal()
+//
+//    microsoftteamsIntegrationCreateRequest, err := UnmarshalMicrosoftteamsIntegrationCreateRequest(bytes)
+//    bytes, err = microsoftteamsIntegrationCreateRequest.Marshal()
+//
+//    microsoftteamsIntegrationCreateResponse, err := UnmarshalMicrosoftteamsIntegrationCreateResponse(bytes)
+//    bytes, err = microsoftteamsIntegrationCreateResponse.Marshal()
+//
+//    microsoftteamsIntegrationListParams, err := UnmarshalMicrosoftteamsIntegrationListParams(bytes)
+//    bytes, err = microsoftteamsIntegrationListParams.Marshal()
+//
+//    microsoftteamsIntegrationListResponse, err := UnmarshalMicrosoftteamsIntegrationListResponse(bytes)
+//    bytes, err = microsoftteamsIntegrationListResponse.Marshal()
+//
 //    integrationNotionDeleteParams, err := UnmarshalIntegrationNotionDeleteParams(bytes)
 //    bytes, err = integrationNotionDeleteParams.Marshal()
 //
@@ -1242,51 +1335,6 @@
 //
 //    integrationSupportListResponse, err := UnmarshalIntegrationSupportListResponse(bytes)
 //    bytes, err = integrationSupportListResponse.Marshal()
-//
-//    teamsIntegrationDeleteParams, err := UnmarshalTeamsIntegrationDeleteParams(bytes)
-//    bytes, err = teamsIntegrationDeleteParams.Marshal()
-//
-//    teamsIntegrationDeleteRequest, err := UnmarshalTeamsIntegrationDeleteRequest(bytes)
-//    bytes, err = teamsIntegrationDeleteRequest.Marshal()
-//
-//    teamsIntegrationDeleteResponse, err := UnmarshalTeamsIntegrationDeleteResponse(bytes)
-//    bytes, err = teamsIntegrationDeleteResponse.Marshal()
-//
-//    teamsIntegrationFetchParams, err := UnmarshalTeamsIntegrationFetchParams(bytes)
-//    bytes, err = teamsIntegrationFetchParams.Marshal()
-//
-//    teamsIntegrationFetchResponse, err := UnmarshalTeamsIntegrationFetchResponse(bytes)
-//    bytes, err = teamsIntegrationFetchResponse.Marshal()
-//
-//    teamsIntegrationSetupParams, err := UnmarshalTeamsIntegrationSetupParams(bytes)
-//    bytes, err = teamsIntegrationSetupParams.Marshal()
-//
-//    teamsIntegrationSetupRequest, err := UnmarshalTeamsIntegrationSetupRequest(bytes)
-//    bytes, err = teamsIntegrationSetupRequest.Marshal()
-//
-//    teamsIntegrationSetupResponse, err := UnmarshalTeamsIntegrationSetupResponse(bytes)
-//    bytes, err = teamsIntegrationSetupResponse.Marshal()
-//
-//    teamsIntegrationUpdateParams, err := UnmarshalTeamsIntegrationUpdateParams(bytes)
-//    bytes, err = teamsIntegrationUpdateParams.Marshal()
-//
-//    teamsIntegrationUpdateRequest, err := UnmarshalTeamsIntegrationUpdateRequest(bytes)
-//    bytes, err = teamsIntegrationUpdateRequest.Marshal()
-//
-//    teamsIntegrationUpdateResponse, err := UnmarshalTeamsIntegrationUpdateResponse(bytes)
-//    bytes, err = teamsIntegrationUpdateResponse.Marshal()
-//
-//    teamsIntegrationCreateRequest, err := UnmarshalTeamsIntegrationCreateRequest(bytes)
-//    bytes, err = teamsIntegrationCreateRequest.Marshal()
-//
-//    teamsIntegrationCreateResponse, err := UnmarshalTeamsIntegrationCreateResponse(bytes)
-//    bytes, err = teamsIntegrationCreateResponse.Marshal()
-//
-//    teamsIntegrationListParams, err := UnmarshalTeamsIntegrationListParams(bytes)
-//    bytes, err = teamsIntegrationListParams.Marshal()
-//
-//    teamsIntegrationListResponse, err := UnmarshalTeamsIntegrationListResponse(bytes)
-//    bytes, err = teamsIntegrationListResponse.Marshal()
 //
 //    integrationTelegramDeleteParams, err := UnmarshalIntegrationTelegramDeleteParams(bytes)
 //    bytes, err = integrationTelegramDeleteParams.Marshal()
@@ -2417,6 +2465,26 @@ func (r *GraphqlResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalDiscordInitiateRequest(data []byte) (DiscordInitiateRequest, error) {
+	var r DiscordInitiateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *DiscordInitiateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalDiscordInitiateResponse(data []byte) (DiscordInitiateResponse, error) {
+	var r DiscordInitiateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *DiscordInitiateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalEmailInitiateRequest(data []byte) (EmailInitiateRequest, error) {
 	var r EmailInitiateRequest
 	err := json.Unmarshal(data, &r)
@@ -2434,6 +2502,86 @@ func UnmarshalEmailInitiateResponse(data []byte) (EmailInitiateResponse, error) 
 }
 
 func (r *EmailInitiateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGooglechatInitiateRequest(data []byte) (GooglechatInitiateRequest, error) {
+	var r GooglechatInitiateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GooglechatInitiateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGooglechatInitiateResponse(data []byte) (GooglechatInitiateResponse, error) {
+	var r GooglechatInitiateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GooglechatInitiateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalInstagramInitiateRequest(data []byte) (InstagramInitiateRequest, error) {
+	var r InstagramInitiateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *InstagramInitiateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalInstagramInitiateResponse(data []byte) (InstagramInitiateResponse, error) {
+	var r InstagramInitiateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *InstagramInitiateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMessengerInitiateRequest(data []byte) (MessengerInitiateRequest, error) {
+	var r MessengerInitiateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MessengerInitiateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMessengerInitiateResponse(data []byte) (MessengerInitiateResponse, error) {
+	var r MessengerInitiateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MessengerInitiateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTeamsInitiateRequest(data []byte) (TeamsInitiateRequest, error) {
+	var r TeamsInitiateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TeamsInitiateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTeamsInitiateResponse(data []byte) (TeamsInitiateResponse, error) {
+	var r TeamsInitiateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TeamsInitiateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -2457,6 +2605,26 @@ func (r *SlackInitiateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalTelegramInitiateRequest(data []byte) (TelegramInitiateRequest, error) {
+	var r TelegramInitiateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TelegramInitiateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTelegramInitiateResponse(data []byte) (TelegramInitiateResponse, error) {
+	var r TelegramInitiateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TelegramInitiateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalTwilioInitiateRequest(data []byte) (TwilioInitiateRequest, error) {
 	var r TwilioInitiateRequest
 	err := json.Unmarshal(data, &r)
@@ -2474,6 +2642,26 @@ func UnmarshalTwilioInitiateResponse(data []byte) (TwilioInitiateResponse, error
 }
 
 func (r *TwilioInitiateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalWhatsappInitiateRequest(data []byte) (WhatsappInitiateRequest, error) {
+	var r WhatsappInitiateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *WhatsappInitiateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalWhatsappInitiateResponse(data []byte) (WhatsappInitiateResponse, error) {
+	var r WhatsappInitiateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *WhatsappInitiateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -3536,6 +3724,26 @@ func UnmarshalContactListResponse(data []byte) (ContactListResponse, error) {
 }
 
 func (r *ContactListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalConversationAttachmentListParams(data []byte) (ConversationAttachmentListParams, error) {
+	var r ConversationAttachmentListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationAttachmentListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalConversationAttachmentListResponse(data []byte) (ConversationAttachmentListResponse, error) {
+	var r ConversationAttachmentListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationAttachmentListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -5999,6 +6207,160 @@ func (r *IntegrationMessengerListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalMicrosoftteamsIntegrationDeleteParams(data []byte) (MicrosoftteamsIntegrationDeleteParams, error) {
+	var r MicrosoftteamsIntegrationDeleteParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationDeleteParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type MicrosoftteamsIntegrationDeleteRequest map[string]interface{}
+
+func UnmarshalMicrosoftteamsIntegrationDeleteRequest(data []byte) (MicrosoftteamsIntegrationDeleteRequest, error) {
+	var r MicrosoftteamsIntegrationDeleteRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationDeleteRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationDeleteResponse(data []byte) (MicrosoftteamsIntegrationDeleteResponse, error) {
+	var r MicrosoftteamsIntegrationDeleteResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationDeleteResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationFetchParams(data []byte) (MicrosoftteamsIntegrationFetchParams, error) {
+	var r MicrosoftteamsIntegrationFetchParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationFetchParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationFetchResponse(data []byte) (MicrosoftteamsIntegrationFetchResponse, error) {
+	var r MicrosoftteamsIntegrationFetchResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationFetchResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationSetupParams(data []byte) (MicrosoftteamsIntegrationSetupParams, error) {
+	var r MicrosoftteamsIntegrationSetupParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationSetupParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type MicrosoftteamsIntegrationSetupRequest map[string]interface{}
+
+func UnmarshalMicrosoftteamsIntegrationSetupRequest(data []byte) (MicrosoftteamsIntegrationSetupRequest, error) {
+	var r MicrosoftteamsIntegrationSetupRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationSetupRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationSetupResponse(data []byte) (MicrosoftteamsIntegrationSetupResponse, error) {
+	var r MicrosoftteamsIntegrationSetupResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationSetupResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationUpdateParams(data []byte) (MicrosoftteamsIntegrationUpdateParams, error) {
+	var r MicrosoftteamsIntegrationUpdateParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationUpdateParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationUpdateRequest(data []byte) (MicrosoftteamsIntegrationUpdateRequest, error) {
+	var r MicrosoftteamsIntegrationUpdateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationUpdateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationUpdateResponse(data []byte) (MicrosoftteamsIntegrationUpdateResponse, error) {
+	var r MicrosoftteamsIntegrationUpdateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationUpdateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationCreateRequest(data []byte) (MicrosoftteamsIntegrationCreateRequest, error) {
+	var r MicrosoftteamsIntegrationCreateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationCreateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationCreateResponse(data []byte) (MicrosoftteamsIntegrationCreateResponse, error) {
+	var r MicrosoftteamsIntegrationCreateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationCreateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationListParams(data []byte) (MicrosoftteamsIntegrationListParams, error) {
+	var r MicrosoftteamsIntegrationListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationListResponse(data []byte) (MicrosoftteamsIntegrationListResponse, error) {
+	var r MicrosoftteamsIntegrationListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalIntegrationNotionDeleteParams(data []byte) (IntegrationNotionDeleteParams, error) {
 	var r IntegrationNotionDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -6610,160 +6972,6 @@ func UnmarshalIntegrationSupportListResponse(data []byte) (IntegrationSupportLis
 }
 
 func (r *IntegrationSupportListResponse) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationDeleteParams(data []byte) (TeamsIntegrationDeleteParams, error) {
-	var r TeamsIntegrationDeleteParams
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationDeleteParams) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-type TeamsIntegrationDeleteRequest map[string]interface{}
-
-func UnmarshalTeamsIntegrationDeleteRequest(data []byte) (TeamsIntegrationDeleteRequest, error) {
-	var r TeamsIntegrationDeleteRequest
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationDeleteRequest) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationDeleteResponse(data []byte) (TeamsIntegrationDeleteResponse, error) {
-	var r TeamsIntegrationDeleteResponse
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationDeleteResponse) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationFetchParams(data []byte) (TeamsIntegrationFetchParams, error) {
-	var r TeamsIntegrationFetchParams
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationFetchParams) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationFetchResponse(data []byte) (TeamsIntegrationFetchResponse, error) {
-	var r TeamsIntegrationFetchResponse
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationFetchResponse) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationSetupParams(data []byte) (TeamsIntegrationSetupParams, error) {
-	var r TeamsIntegrationSetupParams
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationSetupParams) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-type TeamsIntegrationSetupRequest map[string]interface{}
-
-func UnmarshalTeamsIntegrationSetupRequest(data []byte) (TeamsIntegrationSetupRequest, error) {
-	var r TeamsIntegrationSetupRequest
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationSetupRequest) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationSetupResponse(data []byte) (TeamsIntegrationSetupResponse, error) {
-	var r TeamsIntegrationSetupResponse
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationSetupResponse) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationUpdateParams(data []byte) (TeamsIntegrationUpdateParams, error) {
-	var r TeamsIntegrationUpdateParams
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationUpdateParams) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationUpdateRequest(data []byte) (TeamsIntegrationUpdateRequest, error) {
-	var r TeamsIntegrationUpdateRequest
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationUpdateRequest) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationUpdateResponse(data []byte) (TeamsIntegrationUpdateResponse, error) {
-	var r TeamsIntegrationUpdateResponse
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationUpdateResponse) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationCreateRequest(data []byte) (TeamsIntegrationCreateRequest, error) {
-	var r TeamsIntegrationCreateRequest
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationCreateRequest) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationCreateResponse(data []byte) (TeamsIntegrationCreateResponse, error) {
-	var r TeamsIntegrationCreateResponse
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationCreateResponse) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationListParams(data []byte) (TeamsIntegrationListParams, error) {
-	var r TeamsIntegrationListParams
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationListParams) Marshal() ([]byte, error) {
-	return json.Marshal(r)
-}
-
-func UnmarshalTeamsIntegrationListResponse(data []byte) (TeamsIntegrationListResponse, error) {
-	var r TeamsIntegrationListResponse
-	err := json.Unmarshal(data, &r)
-	return r, err
-}
-
-func (r *TeamsIntegrationListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -10525,6 +10733,18 @@ type Error struct {
 	Message *string `json:"message,omitempty"`
 }
 
+type DiscordInitiateRequest struct {
+	// The Discord channel ID to send to                     
+	ChannelID                                         string `json:"channelId"`
+	// The text message to send to the Discord channel       
+	Text                                              string `json:"text"`
+}
+
+type DiscordInitiateResponse struct {
+	// The ID of the initiated integration       
+	ID                                    string `json:"id"`
+}
+
 type EmailInitiateRequest struct {
 	// The email address to use for the conversation                  
 	Email                                                      string `json:"email"`
@@ -10535,6 +10755,59 @@ type EmailInitiateRequest struct {
 }
 
 type EmailInitiateResponse struct {
+	// The ID of the initiated integration       
+	ID                                    string `json:"id"`
+}
+
+type GooglechatInitiateRequest struct {
+	// The Google Chat space resource name to send to, such as spaces/AAAA..., or a Google Chat        
+	// user identifier for a direct message                                                            
+	Space                                                                                      *string `json:"space,omitempty"`
+	// The text message to send to the Google Chat space                                               
+	Text                                                                                       string  `json:"text"`
+}
+
+type GooglechatInitiateResponse struct {
+	// The ID of the initiated integration       
+	ID                                    string `json:"id"`
+}
+
+type InstagramInitiateRequest struct {
+	// The Instagram professional account ID sending the message                           
+	InstagramUserID                                                                 string `json:"instagramUserId"`
+	// The Instagram recipient ID from a prior interaction                                 
+	RecipientID                                                                     string `json:"recipientId"`
+	// The free-form text message to send while Meta allows messaging this recipient       
+	Text                                                                            string `json:"text"`
+}
+
+type InstagramInitiateResponse struct {
+	// The ID of the initiated integration       
+	ID                                    string `json:"id"`
+}
+
+type MessengerInitiateRequest struct {
+	// The Facebook Page ID sending the message                                            
+	PageID                                                                          string `json:"pageId"`
+	// The Messenger recipient PSID from a prior interaction                               
+	RecipientID                                                                     string `json:"recipientId"`
+	// The free-form text message to send while Meta allows messaging this recipient       
+	Text                                                                            string `json:"text"`
+}
+
+type MessengerInitiateResponse struct {
+	// The ID of the initiated integration       
+	ID                                    string `json:"id"`
+}
+
+type TeamsInitiateRequest struct {
+	// The Microsoft Teams Bot Framework conversation ID to send to       
+	ConversationID                                                 string `json:"conversationId"`
+	// The text message to send to the Teams conversation                 
+	Text                                                           string `json:"text"`
+}
+
+type TeamsInitiateResponse struct {
 	// The ID of the initiated integration       
 	ID                                    string `json:"id"`
 }
@@ -10551,6 +10824,18 @@ type SlackInitiateResponse struct {
 	ID                                    string `json:"id"`
 }
 
+type TelegramInitiateRequest struct {
+	// The Telegram chat ID, user ID, group chat ID, or channel username to send to        
+	ChatID                                                                         *ChatID `json:"chatId"`
+	// The text instruction to use to initiate the conversation                            
+	Text                                                                           string  `json:"text"`
+}
+
+type TelegramInitiateResponse struct {
+	// The ID of the initiated integration       
+	ID                                    string `json:"id"`
+}
+
 type TwilioInitiateRequest struct {
 	// The Twilio channel to use for the conversation                   
 	Channel                                                    *Channel `json:"channel,omitempty"`
@@ -10563,6 +10848,18 @@ type TwilioInitiateRequest struct {
 }
 
 type TwilioInitiateResponse struct {
+	// The ID of the initiated integration       
+	ID                                    string `json:"id"`
+}
+
+type WhatsappInitiateRequest struct {
+	// The free-form text message to send within an active WhatsApp customer service window       
+	Text                                                                                   string `json:"text"`
+	// The recipient phone number in E.164 format, without the leading plus sign                  
+	To                                                                                     string `json:"to"`
+}
+
+type WhatsappInitiateResponse struct {
 	// The ID of the initiated integration       
 	ID                                    string `json:"id"`
 }
@@ -11646,6 +11943,41 @@ type ContactListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 	// The timestamp (ms) when the contact was verified                       
 	VerifiedAt                                         *float64               `json:"verifiedAt,omitempty"`
+}
+
+type ConversationAttachmentListParams struct {
+	// The ID of the conversation to list attachments for        
+	ConversationID                                       string  `json:"conversationId"`
+	// The cursor to use for pagination                          
+	Cursor                                               *string `json:"cursor,omitempty"`
+	// The number of items to retrieve                           
+	Take                                                 *int64  `json:"take,omitempty"`
+}
+
+type ConversationAttachmentListResponse struct {
+	// Cursor for fetching the next page                                         
+	Cursor                              string                                   `json:"cursor"`
+	Items                               []ConversationAttachmentListResponseItem `json:"items"`
+}
+
+// Instance list properties
+type ConversationAttachmentListResponseItem struct {
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The stored attachment file name                                        
+	Name                                               *string                `json:"name,omitempty"`
+	// The attachment size in bytes                                           
+	Size                                               *float64               `json:"size,omitempty"`
+	// The inferred attachment MIME type                                      
+	Type                                               *string                `json:"type,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
 type ConversationAttachmentUploadParams struct {
@@ -14655,6 +14987,8 @@ type GooglechatIntegrationFetchParams struct {
 type GooglechatIntegrationFetchResponse struct {
 	// The allowed senders for this integration                                                             
 	AllowFrom                                                                        *string                `json:"allowFrom,omitempty"`
+	// Whether file attachment processing is enabled                                                        
+	Attachments                                                                      *bool                  `json:"attachments,omitempty"`
 	// The auto-respond configuration                                                                       
 	AutoRespond                                                                      *string                `json:"autoRespond,omitempty"`
 	// The ID of the blueprint                                                                              
@@ -14702,6 +15036,8 @@ type GooglechatIntegrationUpdateParams struct {
 type GooglechatIntegrationUpdateRequest struct {
 	// The allowed senders for this integration                                       
 	AllowFrom                                                  *string                `json:"allowFrom,omitempty"`
+	// Whether file attachment processing is enabled                                  
+	Attachments                                                *bool                  `json:"attachments,omitempty"`
 	// The auto-respond configuration                                                 
 	AutoRespond                                                *string                `json:"autoRespond,omitempty"`
 	// The ID of the blueprint                                                        
@@ -14734,6 +15070,8 @@ type GooglechatIntegrationCreateRequest struct {
 	// Restrict which Google Chat users can interact with this integration. Accepts user                             
 	// resource names (users/USER_ID) or * to allow all. One per line.                                               
 	AllowFrom                                                                                 *string                `json:"allowFrom,omitempty"`
+	// Whether file attachment processing is enabled                                                                 
+	Attachments                                                                               *bool                  `json:"attachments,omitempty"`
 	// Configure automatic response behavior. Use '@all' to respond to all messages, '@agent                         
 	// <instructions>' for agent-powered decisions, or custom instructions for lightweight LLM                       
 	// filtering. Null/empty defaults to DMs and direct messages only.                                               
@@ -14784,6 +15122,8 @@ type GooglechatIntegrationListResponse struct {
 type GooglechatIntegrationListResponseItem struct {
 	// The allowed senders for this integration                                                             
 	AllowFrom                                                                        *string                `json:"allowFrom,omitempty"`
+	// Whether file attachment processing is enabled                                                        
+	Attachments                                                                      *bool                  `json:"attachments,omitempty"`
 	// The auto-respond configuration                                                                       
 	AutoRespond                                                                      *string                `json:"autoRespond,omitempty"`
 	// The ID of the blueprint                                                                              
@@ -15259,6 +15599,171 @@ type IntegrationMessengerListResponseItem struct {
 	UpdatedAt                                                                            float64                `json:"updatedAt"`
 	// The Messenger integration verify token                                                                   
 	VerifyToken                                                                          string                 `json:"verifyToken"`
+}
+
+type MicrosoftteamsIntegrationDeleteParams struct {
+	// The ID of the Teams integration       
+	MicrosoftteamsIntegrationID       string `json:"microsoftteamsIntegrationId"`
+}
+
+type MicrosoftteamsIntegrationDeleteResponse struct {
+	// The ID of the deleted Teams integration       
+	ID                                        string `json:"id"`
+}
+
+type MicrosoftteamsIntegrationFetchParams struct {
+	// The ID of the Teams integration to retrieve       
+	MicrosoftteamsIntegrationID                   string `json:"microsoftteamsIntegrationId"`
+}
+
+// Blueprint properties
+type MicrosoftteamsIntegrationFetchResponse struct {
+	// The allowed senders for this integration                               
+	AllowFrom                                          *string                `json:"allowFrom,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The Microsoft Bot Framework Application ID                             
+	BotFrameworkAppID                                  *string                `json:"botFrameworkAppId,omitempty"`
+	// The ID of the bot this configuration is using                          
+	BotID                                              *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                            
+	ContactCollection                                  *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The chat session duration                                              
+	SessionDuration                                    *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type MicrosoftteamsIntegrationSetupParams struct {
+	// The ID of the Teams integration       
+	MicrosoftteamsIntegrationID       string `json:"microsoftteamsIntegrationId"`
+}
+
+type MicrosoftteamsIntegrationSetupResponse struct {
+	// The ID of the setup Teams integration       
+	ID                                      string `json:"id"`
+}
+
+type MicrosoftteamsIntegrationUpdateParams struct {
+	// The ID of the Teams integration       
+	MicrosoftteamsIntegrationID       string `json:"microsoftteamsIntegrationId"`
+}
+
+// A bot configuration that can be applied without a dedicated bot instance.
+type MicrosoftteamsIntegrationUpdateRequest struct {
+	// The allowed senders for this integration                             
+	AllowFrom                                        *string                `json:"allowFrom,omitempty"`
+	// The ID of the blueprint                                              
+	BlueprintID                                      *string                `json:"blueprintId,omitempty"`
+	// The Microsoft Bot Framework Application ID                           
+	BotFrameworkAppID                                *string                `json:"botFrameworkAppId,omitempty"`
+	// The Microsoft Bot Framework Application Secret                       
+	BotFrameworkAppSecret                            *string                `json:"botFrameworkAppSecret,omitempty"`
+	// The ID of the bot this configuration is using                        
+	BotID                                            *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                          
+	ContactCollection                                *bool                  `json:"contactCollection,omitempty"`
+	// The associated description                                           
+	Description                                      *string                `json:"description,omitempty"`
+	// Meta data information                                                
+	Meta                                             map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                  
+	Name                                             *string                `json:"name,omitempty"`
+	// The chat session duration                                            
+	SessionDuration                                  *float64               `json:"sessionDuration,omitempty"`
+	// The Microsoft Entra tenant ID                                        
+	TenantID                                         *string                `json:"tenantId,omitempty"`
+}
+
+type MicrosoftteamsIntegrationUpdateResponse struct {
+	// The ID of the Teams Integration       
+	ID                                string `json:"id"`
+}
+
+// A bot configuration that can be applied without a dedicated bot instance.
+type MicrosoftteamsIntegrationCreateRequest struct {
+	// The allowed senders for this integration                             
+	AllowFrom                                        *string                `json:"allowFrom,omitempty"`
+	// The ID of the blueprint                                              
+	BlueprintID                                      *string                `json:"blueprintId,omitempty"`
+	// The Microsoft Bot Framework Application ID                           
+	BotFrameworkAppID                                *string                `json:"botFrameworkAppId,omitempty"`
+	// The Microsoft Bot Framework Application Secret                       
+	BotFrameworkAppSecret                            *string                `json:"botFrameworkAppSecret,omitempty"`
+	// The ID of the bot this configuration is using                        
+	BotID                                            *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                          
+	ContactCollection                                *bool                  `json:"contactCollection,omitempty"`
+	// The associated description                                           
+	Description                                      *string                `json:"description,omitempty"`
+	// Meta data information                                                
+	Meta                                             map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                  
+	Name                                             *string                `json:"name,omitempty"`
+	// The chat session duration                                            
+	SessionDuration                                  *float64               `json:"sessionDuration,omitempty"`
+	// The Microsoft Entra tenant ID                                        
+	TenantID                                         *string                `json:"tenantId,omitempty"`
+}
+
+type MicrosoftteamsIntegrationCreateResponse struct {
+	// The ID of the Teams Integration       
+	ID                                string `json:"id"`
+}
+
+type MicrosoftteamsIntegrationListParams struct {
+	// The cursor to use for pagination                                                                 
+	Cursor                                                    *string                                   `json:"cursor,omitempty"`
+	// Key-value pairs to filter the partner users by metadata                                          
+	Meta                                                      map[string]string                         `json:"meta,omitempty"`
+	// The order of the paginated items                                                                 
+	Order                                                     *MicrosoftteamsIntegrationListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                                                  
+	Take                                                      *int64                                    `json:"take,omitempty"`
+}
+
+type MicrosoftteamsIntegrationListResponse struct {
+	// Cursor for fetching the next page                                            
+	Cursor                              string                                      `json:"cursor"`
+	Items                               []MicrosoftteamsIntegrationListResponseItem `json:"items"`
+}
+
+// Blueprint properties
+type MicrosoftteamsIntegrationListResponseItem struct {
+	// The allowed senders for this integration                               
+	AllowFrom                                          *string                `json:"allowFrom,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The Microsoft Bot Framework Application ID                             
+	BotFrameworkAppID                                  *string                `json:"botFrameworkAppId,omitempty"`
+	// The ID of the bot this configuration is using                          
+	BotID                                              *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                            
+	ContactCollection                                  *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The chat session duration                                              
+	SessionDuration                                    *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
 type IntegrationNotionDeleteParams struct {
@@ -15954,171 +16459,6 @@ type IntegrationSupportListResponseItem struct {
 	Meta                                               map[string]interface{} `json:"meta,omitempty"`
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
-}
-
-type TeamsIntegrationDeleteParams struct {
-	// The ID of the Teams integration       
-	TeamsIntegrationID                string `json:"teamsIntegrationId"`
-}
-
-type TeamsIntegrationDeleteResponse struct {
-	// The ID of the deleted Teams integration       
-	ID                                        string `json:"id"`
-}
-
-type TeamsIntegrationFetchParams struct {
-	// The ID of the Teams integration to retrieve       
-	TeamsIntegrationID                            string `json:"teamsIntegrationId"`
-}
-
-// Blueprint properties
-type TeamsIntegrationFetchResponse struct {
-	// The allowed senders for this integration                               
-	AllowFrom                                          *string                `json:"allowFrom,omitempty"`
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The Microsoft Bot Framework Application ID                             
-	BotFrameworkAppID                                  *string                `json:"botFrameworkAppId,omitempty"`
-	// The ID of the bot this configuration is using                          
-	BotID                                              *string                `json:"botId,omitempty"`
-	// Weather to collect contacts                                            
-	ContactCollection                                  *bool                  `json:"contactCollection,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The chat session duration                                              
-	SessionDuration                                    *float64               `json:"sessionDuration,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
-}
-
-type TeamsIntegrationSetupParams struct {
-	// The ID of the Teams integration       
-	TeamsIntegrationID                string `json:"teamsIntegrationId"`
-}
-
-type TeamsIntegrationSetupResponse struct {
-	// The ID of the setup Teams integration       
-	ID                                      string `json:"id"`
-}
-
-type TeamsIntegrationUpdateParams struct {
-	// The ID of the Teams integration       
-	TeamsIntegrationID                string `json:"teamsIntegrationId"`
-}
-
-// A bot configuration that can be applied without a dedicated bot instance.
-type TeamsIntegrationUpdateRequest struct {
-	// The allowed senders for this integration                             
-	AllowFrom                                        *string                `json:"allowFrom,omitempty"`
-	// The ID of the blueprint                                              
-	BlueprintID                                      *string                `json:"blueprintId,omitempty"`
-	// The Microsoft Bot Framework Application ID                           
-	BotFrameworkAppID                                *string                `json:"botFrameworkAppId,omitempty"`
-	// The Microsoft Bot Framework Application Secret                       
-	BotFrameworkAppSecret                            *string                `json:"botFrameworkAppSecret,omitempty"`
-	// The ID of the bot this configuration is using                        
-	BotID                                            *string                `json:"botId,omitempty"`
-	// Weather to collect contacts                                          
-	ContactCollection                                *bool                  `json:"contactCollection,omitempty"`
-	// The associated description                                           
-	Description                                      *string                `json:"description,omitempty"`
-	// Meta data information                                                
-	Meta                                             map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                  
-	Name                                             *string                `json:"name,omitempty"`
-	// The chat session duration                                            
-	SessionDuration                                  *float64               `json:"sessionDuration,omitempty"`
-	// The Microsoft Entra tenant ID                                        
-	TenantID                                         *string                `json:"tenantId,omitempty"`
-}
-
-type TeamsIntegrationUpdateResponse struct {
-	// The ID of the Teams Integration       
-	ID                                string `json:"id"`
-}
-
-// A bot configuration that can be applied without a dedicated bot instance.
-type TeamsIntegrationCreateRequest struct {
-	// The allowed senders for this integration                             
-	AllowFrom                                        *string                `json:"allowFrom,omitempty"`
-	// The ID of the blueprint                                              
-	BlueprintID                                      *string                `json:"blueprintId,omitempty"`
-	// The Microsoft Bot Framework Application ID                           
-	BotFrameworkAppID                                *string                `json:"botFrameworkAppId,omitempty"`
-	// The Microsoft Bot Framework Application Secret                       
-	BotFrameworkAppSecret                            *string                `json:"botFrameworkAppSecret,omitempty"`
-	// The ID of the bot this configuration is using                        
-	BotID                                            *string                `json:"botId,omitempty"`
-	// Weather to collect contacts                                          
-	ContactCollection                                *bool                  `json:"contactCollection,omitempty"`
-	// The associated description                                           
-	Description                                      *string                `json:"description,omitempty"`
-	// Meta data information                                                
-	Meta                                             map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                  
-	Name                                             *string                `json:"name,omitempty"`
-	// The chat session duration                                            
-	SessionDuration                                  *float64               `json:"sessionDuration,omitempty"`
-	// The Microsoft Entra tenant ID                                        
-	TenantID                                         *string                `json:"tenantId,omitempty"`
-}
-
-type TeamsIntegrationCreateResponse struct {
-	// The ID of the Teams Integration       
-	ID                                string `json:"id"`
-}
-
-type TeamsIntegrationListParams struct {
-	// The cursor to use for pagination                                                        
-	Cursor                                                    *string                          `json:"cursor,omitempty"`
-	// Key-value pairs to filter the partner users by metadata                                 
-	Meta                                                      map[string]string                `json:"meta,omitempty"`
-	// The order of the paginated items                                                        
-	Order                                                     *TeamsIntegrationListParamsOrder `json:"order,omitempty"`
-	// The number of items to retrieve                                                         
-	Take                                                      *int64                           `json:"take,omitempty"`
-}
-
-type TeamsIntegrationListResponse struct {
-	// Cursor for fetching the next page                                   
-	Cursor                              string                             `json:"cursor"`
-	Items                               []TeamsIntegrationListResponseItem `json:"items"`
-}
-
-// Blueprint properties
-type TeamsIntegrationListResponseItem struct {
-	// The allowed senders for this integration                               
-	AllowFrom                                          *string                `json:"allowFrom,omitempty"`
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The Microsoft Bot Framework Application ID                             
-	BotFrameworkAppID                                  *string                `json:"botFrameworkAppId,omitempty"`
-	// The ID of the bot this configuration is using                          
-	BotID                                              *string                `json:"botId,omitempty"`
-	// Weather to collect contacts                                            
-	ContactCollection                                  *bool                  `json:"contactCollection,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The chat session duration                                              
-	SessionDuration                                    *float64               `json:"sessionDuration,omitempty"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -21450,6 +21790,15 @@ const (
 
 )
 
+// The order of the paginated items
+type MicrosoftteamsIntegrationListParamsOrder string
+
+const (
+	Asc18                                            MicrosoftteamsIntegrationListParamsOrder = "asc"
+	Desc18                                           MicrosoftteamsIntegrationListParamsOrder = "desc"
+
+)
+
 // The sync status of an integration
 type IntegrationNotionFetchResponseSyncStatus string
 
@@ -21464,8 +21813,8 @@ const (
 type IntegrationNotionListParamsOrder string
 
 const (
-	Asc18                                    IntegrationNotionListParamsOrder = "asc"
-	Desc18                                   IntegrationNotionListParamsOrder = "desc"
+	Asc19                                    IntegrationNotionListParamsOrder = "asc"
+	Desc19                                   IntegrationNotionListParamsOrder = "desc"
 
 )
 
@@ -21493,8 +21842,8 @@ const (
 type IntegrationSitemapListParamsOrder string
 
 const (
-	Asc19                                     IntegrationSitemapListParamsOrder = "asc"
-	Desc19                                    IntegrationSitemapListParamsOrder = "desc"
+	Asc20                                     IntegrationSitemapListParamsOrder = "asc"
+	Desc20                                    IntegrationSitemapListParamsOrder = "desc"
 
 )
 
@@ -21512,8 +21861,8 @@ const (
 type IntegrationSlackListParamsOrder string
 
 const (
-	Asc20                                   IntegrationSlackListParamsOrder = "asc"
-	Desc20                                  IntegrationSlackListParamsOrder = "desc"
+	Asc21                                   IntegrationSlackListParamsOrder = "asc"
+	Desc21                                  IntegrationSlackListParamsOrder = "desc"
 
 )
 
@@ -21521,17 +21870,8 @@ const (
 type IntegrationSupportListParamsOrder string
 
 const (
-	Asc21                                     IntegrationSupportListParamsOrder = "asc"
-	Desc21                                    IntegrationSupportListParamsOrder = "desc"
-
-)
-
-// The order of the paginated items
-type TeamsIntegrationListParamsOrder string
-
-const (
-	Asc22                                   TeamsIntegrationListParamsOrder = "asc"
-	Desc22                                  TeamsIntegrationListParamsOrder = "desc"
+	Asc22                                     IntegrationSupportListParamsOrder = "asc"
+	Desc22                                    IntegrationSupportListParamsOrder = "desc"
 
 )
 
@@ -22565,6 +22905,26 @@ const (
 
 
 )
+
+// The Telegram chat ID, user ID, group chat ID, or channel username to send to
+type ChatID struct {
+	Double *float64
+	String *string
+}
+
+func (x *ChatID) UnmarshalJSON(data []byte) error {
+	object, err := unmarshalUnion(data, nil, &x.Double, nil, &x.String, false, nil, false, nil, false, nil, false, nil, false)
+	if err != nil {
+		return err
+	}
+	if object {
+	}
+	return nil
+}
+
+func (x *ChatID) MarshalJSON() ([]byte, error) {
+	return marshalUnion(nil, x.Double, nil, x.String, false, nil, false, nil, false, nil, false, nil, false)
+}
 
 type ConversationAttachmentUploadRequestFile struct {
 	PurpleFile *PurpleFile

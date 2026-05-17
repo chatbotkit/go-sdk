@@ -31,7 +31,7 @@ func TestIntegrationClients(t *testing.T) {
 		{"Twilio", client.Integration.Twilio},
 		{"Email", client.Integration.Email},
 		{"McpServer", client.Integration.McpServer},
-		{"Teams", client.Integration.Teams},
+		{"Microsoftteams", client.Integration.Microsoftteams},
 		{"GoogleChat", client.Integration.GoogleChat},
 	}
 

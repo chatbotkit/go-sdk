@@ -88,3 +88,14 @@ func (c *WhatsAppClient) Setup(ctx context.Context, whatsappID string) (*types.I
 	}
 	return &result, nil
 }
+
+// Initiate initiates a WhatsApp integration conversation.
+func (c *WhatsAppClient) Initiate(ctx context.Context, whatsappID string, req types.WhatsappInitiateRequest) (*types.WhatsappInitiateResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/whatsapp/%s/initiate", whatsappID)
+
+	var result types.WhatsappInitiateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

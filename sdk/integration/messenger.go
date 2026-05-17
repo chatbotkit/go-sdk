@@ -88,3 +88,14 @@ func (c *MessengerClient) Setup(ctx context.Context, messengerID string) (*types
 	}
 	return &result, nil
 }
+
+// Initiate initiates a Messenger integration conversation.
+func (c *MessengerClient) Initiate(ctx context.Context, messengerID string, req types.MessengerInitiateRequest) (*types.MessengerInitiateResponse, error) {
+	path := fmt.Sprintf("/api/v1/integration/messenger/%s/initiate", messengerID)
+
+	var result types.MessengerInitiateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
