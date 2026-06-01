@@ -4,6 +4,10 @@
 # every OS/arch consumers ship on. The cross-compile job exists specifically to
 # catch platform-portability regressions (e.g. Unix-only syscalls) at the
 # source, before they reach downstream binaries.
+#
+# Scope matches the Makefile's PACKAGES (library packages only). The examples/
+# tree is excluded because some examples depend on generated, gitignored files
+# (e.g. portable-embedded-agent/secrets_gen.go).
 name: CI
 
 on:
@@ -27,6 +31,9 @@ on:
 permissions:
   contents: read
 
+env:
+  PACKAGES: ./sdk/... ./agent/... ./types/... ./internal/...
+
 jobs:
   check:
     name: Build, Vet & Test
@@ -42,20 +49,16 @@ jobs:
           cache: true
 
       - name: Vet
-        run: go vet ./...
+        run: make vet
 
       - name: Format check
-        run: |
-          unformatted=$(gofmt -l $(find . -name '*.go' -not -path './types/types.go'))
-          if [ -n "$unformatted" ]; then
-            echo "Files not formatted:"; echo "$unformatted"; exit 1
-          fi
+        run: make fmt-check
 
       - name: Test
-        run: go test -race -count=1 ./...
+        run: make test
 
       - name: Build
-        run: go build ./...
+        run: go build ${{ env.PACKAGES }}
 
   cross-compile:
     name: Cross-compile (${{ matrix.goos }}/${{ matrix.goarch }})
@@ -91,4 +94,4 @@ jobs:
           GOOS: ${{ matrix.goos }}
           GOARCH: ${{ matrix.goarch }}
           CGO_ENABLED: '0'
-        run: go build ./...
+        run: go build ${{ env.PACKAGES }}
