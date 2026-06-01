@@ -1,0 +1,94 @@
+# Continuous Integration for the go-sdk.
+#
+# Runs build, vet, format check and tests, plus a cross-compile matrix across
+# every OS/arch consumers ship on. The cross-compile job exists specifically to
+# catch platform-portability regressions (e.g. Unix-only syscalls) at the
+# source, before they reach downstream binaries.
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - next
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'LICENSE'
+  pull_request:
+    branches:
+      - main
+      - next
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'LICENSE'
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Build, Vet & Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: 'go.mod'
+          cache: true
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Format check
+        run: |
+          unformatted=$(gofmt -l $(find . -name '*.go' -not -path './types/types.go'))
+          if [ -n "$unformatted" ]; then
+            echo "Files not formatted:"; echo "$unformatted"; exit 1
+          fi
+
+      - name: Test
+        run: go test -race -count=1 ./...
+
+      - name: Build
+        run: go build ./...
+
+  cross-compile:
+    name: Cross-compile (${{ matrix.goos }}/${{ matrix.goarch }})
+    runs-on: ubuntu-latest
+    needs: check
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - goos: linux
+            goarch: amd64
+          - goos: linux
+            goarch: arm64
+          - goos: darwin
+            goarch: amd64
+          - goos: darwin
+            goarch: arm64
+          - goos: windows
+            goarch: amd64
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: 'go.mod'
+          cache: true
+
+      - name: Cross-compile
+        env:
+          GOOS: ${{ matrix.goos }}
+          GOARCH: ${{ matrix.goarch }}
+          CGO_ENABLED: '0'
+        run: go build ./...

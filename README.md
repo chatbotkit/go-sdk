@@ -573,6 +573,25 @@ if err != nil {
 
 - Go 1.21 or later
 
+## Releasing
+
+Versions are published as Git tags — for a Go module, the tag _is_ the release.
+The version is driven by the [`VERSION`](VERSION) file:
+
+1. Bump `VERSION` (semver, no `v` prefix — e.g. `0.2.0`) in a pull request.
+2. Merge to `main`. The `Tag Release` workflow reads `VERSION` and, if the
+   matching `vX.Y.Z` tag does not yet exist, creates and pushes it, then
+   triggers the `Release` workflow to publish GitHub release notes.
+
+Consumers then pin the new version:
+
+```bash
+go get github.com/chatbotkit/go-sdk@v0.2.0
+```
+
+While the API is still evolving the module stays on `v0.x` (minor versions may
+introduce breaking changes); it will move to `v1.0.0` once the API is stable.
+
 ## License
 
 See [LICENSE](LICENSE) for details.
