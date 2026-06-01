@@ -12,7 +12,6 @@ import (
 	"os"
 	"os/exec"
 	"strings"
-	"syscall"
 	"time"
 )
 
@@ -357,14 +356,11 @@ func execCommandHandler(ctx context.Context, args map[string]interface{}) (inter
 
 	cmd := exec.CommandContext(ctx, "sh", "-c", command)
 
-	// Start the command in its own process group so that cancellation kills
-	// all child processes (e.g. sleep, long-running builds) - not just the
-	// top-level shell.
-	cmd.SysProcAttr = &syscall.SysProcAttr{Setpgid: true}
-	cmd.Cancel = func() error {
-		// Send SIGKILL to the entire process group (negative PID).
-		return syscall.Kill(-cmd.Process.Pid, syscall.SIGKILL)
-	}
+	// Ensure cancellation kills all child processes (e.g. sleep, long-running
+	// builds), not just the top-level shell. The mechanism is platform
+	// specific (process groups + SIGKILL on Unix), so it lives in
+	// tools_unix.go / tools_windows.go.
+	configureCancellation(cmd)
 
 	var stdout, stderr bytes.Buffer
 	cmd.Stdout = &stdout
