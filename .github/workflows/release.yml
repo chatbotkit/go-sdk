@@ -1,0 +1,33 @@
+# Release workflow for the go-sdk.
+#
+# go-sdk is a library, not a binary — for a Go module the git tag *is* the
+# release (consumers fetch source via `go get`). This workflow therefore does
+# not build or publish artifacts; it only creates a GitHub Release with
+# auto-generated notes for the tag created by tag-release.yml.
+#
+# Triggered by tag-release.yml (workflow_dispatch at the new tag) or by a
+# manually pushed `v*` tag.
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
