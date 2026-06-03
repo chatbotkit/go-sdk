@@ -43,6 +43,15 @@
 //    teamsInitiateResponse, err := UnmarshalTeamsInitiateResponse(bytes)
 //    bytes, err = teamsInitiateResponse.Marshal()
 //
+//    recallInitiateParams, err := UnmarshalRecallInitiateParams(bytes)
+//    bytes, err = recallInitiateParams.Marshal()
+//
+//    recallInitiateRequest, err := UnmarshalRecallInitiateRequest(bytes)
+//    bytes, err = recallInitiateRequest.Marshal()
+//
+//    recallInitiateResponse, err := UnmarshalRecallInitiateResponse(bytes)
+//    bytes, err = recallInitiateResponse.Marshal()
+//
 //    slackInitiateRequest, err := UnmarshalSlackInitiateRequest(bytes)
 //    bytes, err = slackInitiateRequest.Marshal()
 //
@@ -66,6 +75,9 @@
 //
 //    whatsappInitiateResponse, err := UnmarshalWhatsappInitiateResponse(bytes)
 //    bytes, err = whatsappInitiateResponse.Marshal()
+//
+//    chatCompletionCreateRequest, err := UnmarshalChatCompletionCreateRequest(bytes)
+//    bytes, err = chatCompletionCreateRequest.Marshal()
 //
 //    platformReportGenerateParams, err := UnmarshalPlatformReportGenerateParams(bytes)
 //    bytes, err = platformReportGenerateParams.Marshal()
@@ -93,6 +105,21 @@
 //
 //    taskWorkflowEventsSubscribeRequest, err := UnmarshalTaskWorkflowEventsSubscribeRequest(bytes)
 //    bytes, err = taskWorkflowEventsSubscribeRequest.Marshal()
+//
+//    blueprintBulletinCreateParams, err := UnmarshalBlueprintBulletinCreateParams(bytes)
+//    bytes, err = blueprintBulletinCreateParams.Marshal()
+//
+//    blueprintBulletinCreateRequest, err := UnmarshalBlueprintBulletinCreateRequest(bytes)
+//    bytes, err = blueprintBulletinCreateRequest.Marshal()
+//
+//    blueprintBulletinCreateResponse, err := UnmarshalBlueprintBulletinCreateResponse(bytes)
+//    bytes, err = blueprintBulletinCreateResponse.Marshal()
+//
+//    blueprintBulletinListParams, err := UnmarshalBlueprintBulletinListParams(bytes)
+//    bytes, err = blueprintBulletinListParams.Marshal()
+//
+//    blueprintBulletinListResponse, err := UnmarshalBlueprintBulletinListResponse(bytes)
+//    bytes, err = blueprintBulletinListResponse.Marshal()
 //
 //    blueprintCloneParams, err := UnmarshalBlueprintCloneParams(bytes)
 //    bytes, err = blueprintCloneParams.Marshal()
@@ -564,6 +591,12 @@
 //
 //    conversationUsageFetchResponse, err := UnmarshalConversationUsageFetchResponse(bytes)
 //    bytes, err = conversationUsageFetchResponse.Marshal()
+//
+//    conversationStatelessCompactRequest, err := UnmarshalConversationStatelessCompactRequest(bytes)
+//    bytes, err = conversationStatelessCompactRequest.Marshal()
+//
+//    conversationStatelessCompactResponse, err := UnmarshalConversationStatelessCompactResponse(bytes)
+//    bytes, err = conversationStatelessCompactResponse.Marshal()
 //
 //    conversationCompleteRequest, err := UnmarshalConversationCompleteRequest(bytes)
 //    bytes, err = conversationCompleteRequest.Marshal()
@@ -2585,6 +2618,36 @@ func (r *TeamsInitiateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalRecallInitiateParams(data []byte) (RecallInitiateParams, error) {
+	var r RecallInitiateParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *RecallInitiateParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalRecallInitiateRequest(data []byte) (RecallInitiateRequest, error) {
+	var r RecallInitiateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *RecallInitiateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalRecallInitiateResponse(data []byte) (RecallInitiateResponse, error) {
+	var r RecallInitiateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *RecallInitiateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalSlackInitiateRequest(data []byte) (SlackInitiateRequest, error) {
 	var r SlackInitiateRequest
 	err := json.Unmarshal(data, &r)
@@ -2662,6 +2725,18 @@ func UnmarshalWhatsappInitiateResponse(data []byte) (WhatsappInitiateResponse, e
 }
 
 func (r *WhatsappInitiateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type ChatCompletionCreateRequest map[string]interface{}
+
+func UnmarshalChatCompletionCreateRequest(data []byte) (ChatCompletionCreateRequest, error) {
+	var r ChatCompletionCreateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ChatCompletionCreateRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -2760,6 +2835,56 @@ func UnmarshalTaskWorkflowEventsSubscribeRequest(data []byte) (TaskWorkflowEvent
 }
 
 func (r *TaskWorkflowEventsSubscribeRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalBlueprintBulletinCreateParams(data []byte) (BlueprintBulletinCreateParams, error) {
+	var r BlueprintBulletinCreateParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *BlueprintBulletinCreateParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalBlueprintBulletinCreateRequest(data []byte) (BlueprintBulletinCreateRequest, error) {
+	var r BlueprintBulletinCreateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *BlueprintBulletinCreateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalBlueprintBulletinCreateResponse(data []byte) (BlueprintBulletinCreateResponse, error) {
+	var r BlueprintBulletinCreateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *BlueprintBulletinCreateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalBlueprintBulletinListParams(data []byte) (BlueprintBulletinListParams, error) {
+	var r BlueprintBulletinListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *BlueprintBulletinListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalBlueprintBulletinListResponse(data []byte) (BlueprintBulletinListResponse, error) {
+	var r BlueprintBulletinListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *BlueprintBulletinListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -4350,6 +4475,26 @@ func UnmarshalConversationUsageFetchResponse(data []byte) (ConversationUsageFetc
 }
 
 func (r *ConversationUsageFetchResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalConversationStatelessCompactRequest(data []byte) (ConversationStatelessCompactRequest, error) {
+	var r ConversationStatelessCompactRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationStatelessCompactRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalConversationStatelessCompactResponse(data []byte) (ConversationStatelessCompactResponse, error) {
+	var r ConversationStatelessCompactResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationStatelessCompactResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -10812,6 +10957,27 @@ type TeamsInitiateResponse struct {
 	ID                                    string `json:"id"`
 }
 
+type RecallInitiateParams struct {
+	// The ID of the recall integration to use       
+	RecallIntegrationID                       string `json:"recallIntegrationId"`
+}
+
+type RecallInitiateRequest struct {
+	// The display name for the bot in the meeting                        
+	BotName                                                       *string `json:"botName,omitempty"`
+	// The URL of the meeting to join                                     
+	MeetingURL                                                    string  `json:"meetingUrl"`
+	// The instruction text to use to initiate the meeting session        
+	Text                                                          string  `json:"text"`
+}
+
+type RecallInitiateResponse struct {
+	// The meeting bot data from Recall.ai                       
+	Bot                                   map[string]interface{} `json:"bot"`
+	// The ID of the recall integration                          
+	ID                                    string                 `json:"id"`
+}
+
 type SlackInitiateRequest struct {
 	// The Slack channel or user to send to                           
 	Channel                                                    string `json:"channel"`
@@ -10912,6 +11078,62 @@ type TaskWorkflowEventsSubscribeParams struct {
 type TaskWorkflowEventsSubscribeRequest struct {
 	// Number of recent workflow events to replay before live events.       
 	HistoryLength                                                    *int64 `json:"historyLength,omitempty"`
+}
+
+type BlueprintBulletinCreateParams struct {
+	// The ID of the blueprint to post to       
+	BlueprintID                          string `json:"blueprintId"`
+}
+
+type BlueprintBulletinCreateRequest struct {
+	// The message to post to the shared board                              
+	Text                                                           string   `json:"text"`
+	// Optional time-to-live in seconds before the bulletin expires         
+	TTL                                                            *float64 `json:"ttl,omitempty"`
+}
+
+type BlueprintBulletinCreateResponse struct {
+	Bulletin                  Bulletin `json:"bulletin"`
+	// The ID of the blueprint         
+	ID                        string   `json:"id"`
+}
+
+type Bulletin struct {
+	Author    *string `json:"author,omitempty"`
+	CreatedAt float64 `json:"createdAt"`
+	ExpiresAt float64 `json:"expiresAt"`
+	ID        string  `json:"id"`
+	Text      string  `json:"text"`
+}
+
+type BlueprintBulletinListParams struct {
+	// The ID of the blueprint to query                                  
+	BlueprintID                        string                            `json:"blueprintId"`
+	// The cursor to use for pagination                                  
+	Cursor                             *string                           `json:"cursor,omitempty"`
+	// The order of the paginated items                                  
+	Order                              *BlueprintBulletinListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                   
+	Take                               *int64                            `json:"take,omitempty"`
+}
+
+type BlueprintBulletinListResponse struct {
+	// Cursor for fetching the next page                                    
+	Cursor                              string                              `json:"cursor"`
+	Items                               []BlueprintBulletinListResponseItem `json:"items"`
+}
+
+type BlueprintBulletinListResponseItem struct {
+	// The ID of the bot that posted the bulletin                           
+	Author                                                          *string `json:"author,omitempty"`
+	// The epoch millisecond timestamp when the bulletin was created        
+	CreatedAt                                                       float64 `json:"createdAt"`
+	// The epoch millisecond timestamp when the bulletin expires            
+	ExpiresAt                                                       float64 `json:"expiresAt"`
+	// The unique identifier of the bulletin                                
+	ID                                                              string  `json:"id"`
+	// The message body                                                     
+	Text                                                            string  `json:"text"`
 }
 
 type BlueprintCloneParams struct {
@@ -12026,9 +12248,19 @@ type ConversationCompactParams struct {
 }
 
 type ConversationCompactResponse struct {
-	// The ID of the created checkpoint message, or the conversation ID if there was nothing to       
-	// compact                                                                                        
-	ID                                                                                         string `json:"id"`
+	// The ID of the created checkpoint message, or the conversation ID if there was nothing to                                 
+	// compact                                                                                                                  
+	ID                                                                                         string                           `json:"id"`
+	// The compacted text of the messages, or an empty string if there was nothing to compact                                   
+	Text                                                                                       string                           `json:"text"`
+	// Usage information                                                                                                        
+	Usage                                                                                      ConversationCompactResponseUsage `json:"usage"`
+}
+
+// Usage information
+type ConversationCompactResponseUsage struct {
+	// The tokens used in this exchange        
+	Token                              float64 `json:"token"`
 }
 
 type ConversationMessageCompleteParams struct {
@@ -13082,60 +13314,29 @@ type ConversationUsageFetchResponse struct {
 // A bot configuration or reference
 //
 // A bot configuration that can be applied without a dedicated bot instance.
-type ConversationCompleteRequest struct {
-	// An array of attachments to be added to the conversation                                           
-	Attachments                                                  []ConversationCompleteRequestAttachment `json:"attachments,omitempty"`
-	// The contact ID to associate with this conversation                                                
-	ContactID                                                    *ConversationCompleteRequestContactID   `json:"contactId"`
-	// Extensions to enhance the bot's capabilities                                                      
-	Extensions                                                   *ConversationCompleteRequestExtensions  `json:"extensions,omitempty"`
-	// An array of functions to be added to the conversation                                             
-	Functions                                                    []ConversationCompleteRequestFunction   `json:"functions,omitempty"`
-	// Execution limits to control conversation processing bounds                                        
-	Limits                                                       *ConversationCompleteRequestLimits      `json:"limits,omitempty"`
-	// An array of messages to be added to the conversation                                              
-	Messages                                                     []ConversationCompleteRequestMessage    `json:"messages"`
-	// The ID of the bot this configuration is using                                                     
-	BotID                                                        *string                                 `json:"botId,omitempty"`
-	// The backstory this configuration is using                                                         
-	Backstory                                                    *string                                 `json:"backstory,omitempty"`
-	// The id of the dataset this configuration is using                                                 
-	DatasetID                                                    *string                                 `json:"datasetId,omitempty"`
-	// A model definition                                                                                
-	Model                                                        *string                                 `json:"model,omitempty"`
-	// The moderation flag for this configuration                                                        
-	Moderation                                                   *bool                                   `json:"moderation,omitempty"`
-	// The privacy flag for this configuration                                                           
-	Privacy                                                      *bool                                   `json:"privacy,omitempty"`
-	// The id of the skillset this configuration is using                                                
-	SkillsetID                                                   *string                                 `json:"skillsetId,omitempty"`
-}
-
-type ConversationCompleteRequestAttachment struct {
-	// The URL of the attachment        
-	URL                         *string `json:"url,omitempty"`
-}
-
-// A contact object to create or retrieve a trusted contact
-type PurpleContactID struct {
-	// A description of the contact                                       
-	Description                                    *string                `json:"description,omitempty"`
-	// The email address of the contact                                   
-	Email                                          *string                `json:"email,omitempty"`
-	// A unique fingerprint to identify the contact                       
-	Fingerprint                                    string                 `json:"fingerprint"`
-	// Additional metadata for the contact                                
-	Meta                                           map[string]interface{} `json:"meta,omitempty"`
-	// The name of the contact                                            
-	Name                                           *string                `json:"name,omitempty"`
-	// A nickname for the contact                                         
-	Nick                                           *string                `json:"nick,omitempty"`
-	// The phone number of the contact                                    
-	Phone                                          *string                `json:"phone,omitempty"`
+type ConversationStatelessCompactRequest struct {
+	// Extensions to enhance the bot's capabilities                                                     
+	Extensions                                           *ConversationStatelessCompactRequestExtensions `json:"extensions,omitempty"`
+	// An array of messages to be compacted                                                             
+	Messages                                             []ConversationStatelessCompactRequestMessage   `json:"messages"`
+	// The ID of the bot this configuration is using                                                    
+	BotID                                                *string                                        `json:"botId,omitempty"`
+	// The backstory this configuration is using                                                        
+	Backstory                                            *string                                        `json:"backstory,omitempty"`
+	// The id of the dataset this configuration is using                                                
+	DatasetID                                            *string                                        `json:"datasetId,omitempty"`
+	// A model definition                                                                               
+	Model                                                *string                                        `json:"model,omitempty"`
+	// The moderation flag for this configuration                                                       
+	Moderation                                           *bool                                          `json:"moderation,omitempty"`
+	// The privacy flag for this configuration                                                          
+	Privacy                                              *bool                                          `json:"privacy,omitempty"`
+	// The id of the skillset this configuration is using                                               
+	SkillsetID                                           *string                                        `json:"skillsetId,omitempty"`
 }
 
 // Extensions to enhance the bot's capabilities
-type ConversationCompleteRequestExtensions struct {
+type ConversationStatelessCompactRequestExtensions struct {
 	// Additional backstory for the bot                                  
 	Backstory                                           *string          `json:"backstory,omitempty"`
 	// Inline datasets to provide additional context                     
@@ -13191,6 +13392,141 @@ type IndigoAbility struct {
 	SecretID                              *string                `json:"secretId,omitempty"`
 }
 
+// A message in the conversation
+type ConversationStatelessCompactRequestMessage struct {
+	// Meta data information                         
+	Meta                      map[string]interface{} `json:"meta,omitempty"`
+	// The text of the message                       
+	Text                      string                 `json:"text"`
+	// The type of the message                       
+	Type                      CunningType            `json:"type"`
+}
+
+type ConversationStatelessCompactResponse struct {
+	// The compacted text of the messages, or an empty string if there was nothing to compact                                          
+	Text                                                                                     string                                    `json:"text"`
+	// Usage information                                                                                                               
+	Usage                                                                                    ConversationStatelessCompactResponseUsage `json:"usage"`
+}
+
+// Usage information
+type ConversationStatelessCompactResponseUsage struct {
+	// The tokens used in this exchange        
+	Token                              float64 `json:"token"`
+}
+
+// A bot configuration or reference
+//
+// A bot configuration that can be applied without a dedicated bot instance.
+type ConversationCompleteRequest struct {
+	// An array of attachments to be added to the conversation                                           
+	Attachments                                                  []ConversationCompleteRequestAttachment `json:"attachments,omitempty"`
+	// The contact ID to associate with this conversation                                                
+	ContactID                                                    *ConversationCompleteRequestContactID   `json:"contactId"`
+	// Extensions to enhance the bot's capabilities                                                      
+	Extensions                                                   *ConversationCompleteRequestExtensions  `json:"extensions,omitempty"`
+	// An array of functions to be added to the conversation                                             
+	Functions                                                    []ConversationCompleteRequestFunction   `json:"functions,omitempty"`
+	// Execution limits to control conversation processing bounds                                        
+	Limits                                                       *ConversationCompleteRequestLimits      `json:"limits,omitempty"`
+	// An array of messages to be added to the conversation                                              
+	Messages                                                     []ConversationCompleteRequestMessage    `json:"messages"`
+	// The ID of the bot this configuration is using                                                     
+	BotID                                                        *string                                 `json:"botId,omitempty"`
+	// The backstory this configuration is using                                                         
+	Backstory                                                    *string                                 `json:"backstory,omitempty"`
+	// The id of the dataset this configuration is using                                                 
+	DatasetID                                                    *string                                 `json:"datasetId,omitempty"`
+	// A model definition                                                                                
+	Model                                                        *string                                 `json:"model,omitempty"`
+	// The moderation flag for this configuration                                                        
+	Moderation                                                   *bool                                   `json:"moderation,omitempty"`
+	// The privacy flag for this configuration                                                           
+	Privacy                                                      *bool                                   `json:"privacy,omitempty"`
+	// The id of the skillset this configuration is using                                                
+	SkillsetID                                                   *string                                 `json:"skillsetId,omitempty"`
+}
+
+type ConversationCompleteRequestAttachment struct {
+	// The URL of the attachment        
+	URL                         *string `json:"url,omitempty"`
+}
+
+// A contact object to create or retrieve a trusted contact
+type PurpleContactID struct {
+	// A description of the contact                                       
+	Description                                    *string                `json:"description,omitempty"`
+	// The email address of the contact                                   
+	Email                                          *string                `json:"email,omitempty"`
+	// A unique fingerprint to identify the contact                       
+	Fingerprint                                    string                 `json:"fingerprint"`
+	// Additional metadata for the contact                                
+	Meta                                           map[string]interface{} `json:"meta,omitempty"`
+	// The name of the contact                                            
+	Name                                           *string                `json:"name,omitempty"`
+	// A nickname for the contact                                         
+	Nick                                           *string                `json:"nick,omitempty"`
+	// The phone number of the contact                                    
+	Phone                                          *string                `json:"phone,omitempty"`
+}
+
+// Extensions to enhance the bot's capabilities
+type ConversationCompleteRequestExtensions struct {
+	// Additional backstory for the bot                                    
+	Backstory                                           *string            `json:"backstory,omitempty"`
+	// Inline datasets to provide additional context                       
+	Datasets                                            []IndecentDataset  `json:"datasets,omitempty"`
+	// Feature flags to enable specific bot capabilities                   
+	Features                                            []IndecentFeature  `json:"features,omitempty"`
+	// Inline skillsets to provide additional abilities                    
+	Skillsets                                           []IndecentSkillset `json:"skillsets,omitempty"`
+}
+
+type IndecentDataset struct {
+	// The description of the dataset                 
+	Description                      *string          `json:"description,omitempty"`
+	// The name of the dataset                        
+	Name                             *string          `json:"name,omitempty"`
+	// The records in the dataset                     
+	Records                          []IndecentRecord `json:"records"`
+}
+
+type IndecentRecord struct {
+	// Additional metadata for the record                       
+	Meta                                 map[string]interface{} `json:"meta,omitempty"`
+	// The text content of the record                           
+	Text                                 string                 `json:"text"`
+}
+
+type IndecentFeature struct {
+	// The name of the feature to enable                                    
+	Name                                             string                 `json:"name"`
+	// Optional configuration options for the feature                       
+	Options                                          map[string]interface{} `json:"options,omitempty"`
+}
+
+type IndecentSkillset struct {
+	// The abilities in the skillset                    
+	Abilities                         []IndecentAbility `json:"abilities"`
+	// The description of the skillset                  
+	Description                       *string           `json:"description,omitempty"`
+	// The name of the skillset                         
+	Name                              *string           `json:"name,omitempty"`
+}
+
+type IndecentAbility struct {
+	// The description of the ability                            
+	Description                           string                 `json:"description"`
+	// The instruction for the ability                           
+	Instruction                           string                 `json:"instruction"`
+	// Additional metadata for the ability                       
+	Meta                                  map[string]interface{} `json:"meta,omitempty"`
+	// The name of the ability                                   
+	Name                                  string                 `json:"name"`
+	// Optional secret ID for the ability                        
+	SecretID                              *string                `json:"secretId,omitempty"`
+}
+
 type ConversationCompleteRequestFunction struct {
 	// Configuration for when this function should be automatically called                    
 	Call                                                                     *IndigoCall      `json:"call,omitempty"`
@@ -13219,7 +13555,7 @@ type IndigoParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                CunningType            `json:"type"`
+	Type                                MagentaType            `json:"type"`
 }
 
 // The result of the function execution
@@ -13250,7 +13586,7 @@ type ConversationCompleteRequestMessage struct {
 	// The text of the message                       
 	Text                      string                 `json:"text"`
 	// The type of the message                       
-	Type                      MagentaType            `json:"type"`
+	Type                      FriskyType             `json:"type"`
 }
 
 type ConversationCompleteResponse struct {
@@ -13309,10 +13645,10 @@ type ConversationCreateRequest struct {
 }
 
 type ConversationCreateRequestMessage struct {
-	// The text of the message           
-	Text                      string     `json:"text"`
-	// The type of the message           
-	Type                      FriskyType `json:"type"`
+	// The text of the message                
+	Text                      string          `json:"text"`
+	// The type of the message                
+	Type                      MischievousType `json:"type"`
 }
 
 type ConversationCreateResponse struct {
@@ -13323,10 +13659,10 @@ type ConversationCreateResponse struct {
 }
 
 type ConversationCreateResponseMessage struct {
-	// The text of the message                
-	Text                      string          `json:"text"`
-	// The type of the message                
-	Type                      MischievousType `json:"type"`
+	// The text of the message                  
+	Text                      string            `json:"text"`
+	// The type of the message                  
+	Type                      BraggadociousType `json:"type"`
 }
 
 // A bot configuration or reference
@@ -13388,49 +13724,49 @@ type FluffyContactID struct {
 
 // Extensions to enhance the bot's capabilities
 type ConversationDispatchRequestExtensions struct {
-	// Additional backstory for the bot                                    
-	Backstory                                           *string            `json:"backstory,omitempty"`
-	// Inline datasets to provide additional context                       
-	Datasets                                            []IndecentDataset  `json:"datasets,omitempty"`
-	// Feature flags to enable specific bot capabilities                   
-	Features                                            []IndecentFeature  `json:"features,omitempty"`
-	// Inline skillsets to provide additional abilities                    
-	Skillsets                                           []IndecentSkillset `json:"skillsets,omitempty"`
+	// Additional backstory for the bot                                     
+	Backstory                                           *string             `json:"backstory,omitempty"`
+	// Inline datasets to provide additional context                        
+	Datasets                                            []HilariousDataset  `json:"datasets,omitempty"`
+	// Feature flags to enable specific bot capabilities                    
+	Features                                            []HilariousFeature  `json:"features,omitempty"`
+	// Inline skillsets to provide additional abilities                     
+	Skillsets                                           []HilariousSkillset `json:"skillsets,omitempty"`
 }
 
-type IndecentDataset struct {
-	// The description of the dataset                 
-	Description                      *string          `json:"description,omitempty"`
-	// The name of the dataset                        
-	Name                             *string          `json:"name,omitempty"`
-	// The records in the dataset                     
-	Records                          []IndecentRecord `json:"records"`
+type HilariousDataset struct {
+	// The description of the dataset                  
+	Description                      *string           `json:"description,omitempty"`
+	// The name of the dataset                         
+	Name                             *string           `json:"name,omitempty"`
+	// The records in the dataset                      
+	Records                          []HilariousRecord `json:"records"`
 }
 
-type IndecentRecord struct {
+type HilariousRecord struct {
 	// Additional metadata for the record                       
 	Meta                                 map[string]interface{} `json:"meta,omitempty"`
 	// The text content of the record                           
 	Text                                 string                 `json:"text"`
 }
 
-type IndecentFeature struct {
+type HilariousFeature struct {
 	// The name of the feature to enable                                    
 	Name                                             string                 `json:"name"`
 	// Optional configuration options for the feature                       
 	Options                                          map[string]interface{} `json:"options,omitempty"`
 }
 
-type IndecentSkillset struct {
-	// The abilities in the skillset                    
-	Abilities                         []IndecentAbility `json:"abilities"`
-	// The description of the skillset                  
-	Description                       *string           `json:"description,omitempty"`
-	// The name of the skillset                         
-	Name                              *string           `json:"name,omitempty"`
+type HilariousSkillset struct {
+	// The abilities in the skillset                     
+	Abilities                         []HilariousAbility `json:"abilities"`
+	// The description of the skillset                   
+	Description                       *string            `json:"description,omitempty"`
+	// The name of the skillset                          
+	Name                              *string            `json:"name,omitempty"`
 }
 
-type IndecentAbility struct {
+type HilariousAbility struct {
 	// The description of the ability                            
 	Description                           string                 `json:"description"`
 	// The instruction for the ability                           
@@ -13471,7 +13807,7 @@ type IndecentParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                BraggadociousType      `json:"type"`
+	Type                                Type1                  `json:"type"`
 }
 
 // The result of the function execution
@@ -13502,7 +13838,7 @@ type ConversationDispatchRequestMessage struct {
 	// The text of the message                       
 	Text                      string                 `json:"text"`
 	// The type of the message                       
-	Type                      Type1                  `json:"type"`
+	Type                      Type2                  `json:"type"`
 }
 
 type ConversationDispatchResponse struct {
@@ -14071,72 +14407,78 @@ type EventLogsExportResponse struct {
 
 // Instance list properties
 type EventLogsExportResponseItem struct {
-	// Related ability ID if applicable                                       
-	AbilityID                                          *string                `json:"abilityId,omitempty"`
-	// Related blueprint ID if applicable                                     
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// Related bot ID if applicable                                           
-	BotID                                              *string                `json:"botId,omitempty"`
-	// Related contact ID if applicable                                       
-	ContactID                                          *string                `json:"contactId,omitempty"`
-	// Related conversation ID if applicable                                  
-	ConversationID                                     *string                `json:"conversationId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// Related dataset ID if applicable                                       
-	DatasetID                                          *string                `json:"datasetId,omitempty"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// Related Discord integration ID if applicable                           
-	DiscordIntegrationID                               *string                `json:"discordIntegrationId,omitempty"`
-	// Related email integration ID if applicable                             
-	EmailIntegrationID                                 *string                `json:"emailIntegrationId,omitempty"`
-	// Related extract integration ID if applicable                           
-	ExtractIntegrationID                               *string                `json:"extractIntegrationId,omitempty"`
-	// Related file ID if applicable                                          
-	FileID                                             *string                `json:"fileId,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Related MCP server integration ID if applicable                        
-	McpserverIntegrationID                             *string                `json:"mcpserverIntegrationId,omitempty"`
-	// Related Messenger integration ID if applicable                         
-	MessengerIntegrationID                             *string                `json:"messengerIntegrationId,omitempty"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// Related Notion integration ID if applicable                            
-	NotionIntegrationID                                *string                `json:"notionIntegrationId,omitempty"`
-	// Related portal ID if applicable                                        
-	PortalID                                           *string                `json:"portalId,omitempty"`
-	// Related record ID if applicable                                        
-	RecordID                                           *string                `json:"recordId,omitempty"`
-	// Related secret ID if applicable                                        
-	SecretID                                           *string                `json:"secretId,omitempty"`
-	// Related sitemap integration ID if applicable                           
-	SitemapIntegrationID                               *string                `json:"sitemapIntegrationId,omitempty"`
-	// Related skillset ID if applicable                                      
-	SkillsetID                                         *string                `json:"skillsetId,omitempty"`
-	// Related Slack integration ID if applicable                             
-	SlackIntegrationID                                 *string                `json:"slackIntegrationId,omitempty"`
-	// Related support integration ID if applicable                           
-	SupportIntegrationID                               *string                `json:"supportIntegrationId,omitempty"`
-	// Related task ID if applicable                                          
-	TaskID                                             *string                `json:"taskId,omitempty"`
-	// Related Telegram integration ID if applicable                          
-	TelegramIntegrationID                              *string                `json:"telegramIntegrationId,omitempty"`
-	// Related trigger integration ID if applicable                           
-	TriggerIntegrationID                               *string                `json:"triggerIntegrationId,omitempty"`
-	// Related Twilio integration ID if applicable                            
-	TwilioIntegrationID                                *string                `json:"twilioIntegrationId,omitempty"`
-	// The type of event (e.g., 'conversation.create')                        
-	Type                                               string                 `json:"type"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
-	// Related WhatsApp integration ID if applicable                          
-	WhatsappIntegrationID                              *string                `json:"whatsappIntegrationId,omitempty"`
-	// Related widget integration ID if applicable                            
-	WidgetIntegrationID                                *string                `json:"widgetIntegrationId,omitempty"`
+	// Related ability ID if applicable                                           
+	AbilityID                                              *string                `json:"abilityId,omitempty"`
+	// Related blueprint ID if applicable                                         
+	BlueprintID                                            *string                `json:"blueprintId,omitempty"`
+	// Related bot ID if applicable                                               
+	BotID                                                  *string                `json:"botId,omitempty"`
+	// Related contact ID if applicable                                           
+	ContactID                                              *string                `json:"contactId,omitempty"`
+	// Related conversation ID if applicable                                      
+	ConversationID                                         *string                `json:"conversationId,omitempty"`
+	// The timestamp (ms) when the instance was created                           
+	CreatedAt                                              float64                `json:"createdAt"`
+	// Related dataset ID if applicable                                           
+	DatasetID                                              *string                `json:"datasetId,omitempty"`
+	// The associated description                                                 
+	Description                                            *string                `json:"description,omitempty"`
+	// Related Discord integration ID if applicable                               
+	DiscordIntegrationID                                   *string                `json:"discordIntegrationId,omitempty"`
+	// Related email integration ID if applicable                                 
+	EmailIntegrationID                                     *string                `json:"emailIntegrationId,omitempty"`
+	// Related extract integration ID if applicable                               
+	ExtractIntegrationID                                   *string                `json:"extractIntegrationId,omitempty"`
+	// Related file ID if applicable                                              
+	FileID                                                 *string                `json:"fileId,omitempty"`
+	// Related Google Chat integration ID if applicable                           
+	GooglechatIntegrationID                                *string                `json:"googlechatIntegrationId,omitempty"`
+	// The instance ID                                                            
+	ID                                                     string                 `json:"id"`
+	// Related MCP server integration ID if applicable                            
+	McpserverIntegrationID                                 *string                `json:"mcpserverIntegrationId,omitempty"`
+	// Related Messenger integration ID if applicable                             
+	MessengerIntegrationID                                 *string                `json:"messengerIntegrationId,omitempty"`
+	// Meta data information                                                      
+	Meta                                                   map[string]interface{} `json:"meta,omitempty"`
+	// Related Microsoft Teams integration ID if applicable                       
+	MicrosoftteamsIntegrationID                            *string                `json:"microsoftteamsIntegrationId,omitempty"`
+	// The associated name                                                        
+	Name                                                   *string                `json:"name,omitempty"`
+	// Related Notion integration ID if applicable                                
+	NotionIntegrationID                                    *string                `json:"notionIntegrationId,omitempty"`
+	// Related portal ID if applicable                                            
+	PortalID                                               *string                `json:"portalId,omitempty"`
+	// Related record ID if applicable                                            
+	RecordID                                               *string                `json:"recordId,omitempty"`
+	// Related secret ID if applicable                                            
+	SecretID                                               *string                `json:"secretId,omitempty"`
+	// Related sitemap integration ID if applicable                               
+	SitemapIntegrationID                                   *string                `json:"sitemapIntegrationId,omitempty"`
+	// Related skillset ID if applicable                                          
+	SkillsetID                                             *string                `json:"skillsetId,omitempty"`
+	// Related Slack integration ID if applicable                                 
+	SlackIntegrationID                                     *string                `json:"slackIntegrationId,omitempty"`
+	// Related support integration ID if applicable                               
+	SupportIntegrationID                                   *string                `json:"supportIntegrationId,omitempty"`
+	// Related task ID if applicable                                              
+	TaskID                                                 *string                `json:"taskId,omitempty"`
+	// Related Telegram integration ID if applicable                              
+	TelegramIntegrationID                                  *string                `json:"telegramIntegrationId,omitempty"`
+	// Related trigger integration ID if applicable                               
+	TriggerIntegrationID                                   *string                `json:"triggerIntegrationId,omitempty"`
+	// Related Twilio integration ID if applicable                                
+	TwilioIntegrationID                                    *string                `json:"twilioIntegrationId,omitempty"`
+	// The type of event (e.g., 'conversation.create')                            
+	Type                                                   string                 `json:"type"`
+	// The timestamp (ms) when the instance was updated                           
+	UpdatedAt                                              float64                `json:"updatedAt"`
+	// Related webhook ID if applicable                                           
+	WebhookID                                              *string                `json:"webhookId,omitempty"`
+	// Related WhatsApp integration ID if applicable                              
+	WhatsappIntegrationID                                  *string                `json:"whatsappIntegrationId,omitempty"`
+	// Related widget integration ID if applicable                                
+	WidgetIntegrationID                                    *string                `json:"widgetIntegrationId,omitempty"`
 }
 
 type EventLogListParams struct {
@@ -14158,72 +14500,78 @@ type EventLogListResponse struct {
 
 // Instance list properties
 type EventLogListResponseItem struct {
-	// Related ability ID if applicable                                       
-	AbilityID                                          *string                `json:"abilityId,omitempty"`
-	// Related blueprint ID if applicable                                     
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// Related bot ID if applicable                                           
-	BotID                                              *string                `json:"botId,omitempty"`
-	// Related contact ID if applicable                                       
-	ContactID                                          *string                `json:"contactId,omitempty"`
-	// Related conversation ID if applicable                                  
-	ConversationID                                     *string                `json:"conversationId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// Related dataset ID if applicable                                       
-	DatasetID                                          *string                `json:"datasetId,omitempty"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// Related Discord integration ID if applicable                           
-	DiscordIntegrationID                               *string                `json:"discordIntegrationId,omitempty"`
-	// Related email integration ID if applicable                             
-	EmailIntegrationID                                 *string                `json:"emailIntegrationId,omitempty"`
-	// Related extract integration ID if applicable                           
-	ExtractIntegrationID                               *string                `json:"extractIntegrationId,omitempty"`
-	// Related file ID if applicable                                          
-	FileID                                             *string                `json:"fileId,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Related MCP server integration ID if applicable                        
-	McpserverIntegrationID                             *string                `json:"mcpserverIntegrationId,omitempty"`
-	// Related Messenger integration ID if applicable                         
-	MessengerIntegrationID                             *string                `json:"messengerIntegrationId,omitempty"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// Related Notion integration ID if applicable                            
-	NotionIntegrationID                                *string                `json:"notionIntegrationId,omitempty"`
-	// Related portal ID if applicable                                        
-	PortalID                                           *string                `json:"portalId,omitempty"`
-	// Related record ID if applicable                                        
-	RecordID                                           *string                `json:"recordId,omitempty"`
-	// Related secret ID if applicable                                        
-	SecretID                                           *string                `json:"secretId,omitempty"`
-	// Related sitemap integration ID if applicable                           
-	SitemapIntegrationID                               *string                `json:"sitemapIntegrationId,omitempty"`
-	// Related skillset ID if applicable                                      
-	SkillsetID                                         *string                `json:"skillsetId,omitempty"`
-	// Related Slack integration ID if applicable                             
-	SlackIntegrationID                                 *string                `json:"slackIntegrationId,omitempty"`
-	// Related support integration ID if applicable                           
-	SupportIntegrationID                               *string                `json:"supportIntegrationId,omitempty"`
-	// Related task ID if applicable                                          
-	TaskID                                             *string                `json:"taskId,omitempty"`
-	// Related Telegram integration ID if applicable                          
-	TelegramIntegrationID                              *string                `json:"telegramIntegrationId,omitempty"`
-	// Related trigger integration ID if applicable                           
-	TriggerIntegrationID                               *string                `json:"triggerIntegrationId,omitempty"`
-	// Related Twilio integration ID if applicable                            
-	TwilioIntegrationID                                *string                `json:"twilioIntegrationId,omitempty"`
-	// The type of event (e.g., 'conversation.create')                        
-	Type                                               string                 `json:"type"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
-	// Related WhatsApp integration ID if applicable                          
-	WhatsappIntegrationID                              *string                `json:"whatsappIntegrationId,omitempty"`
-	// Related widget integration ID if applicable                            
-	WidgetIntegrationID                                *string                `json:"widgetIntegrationId,omitempty"`
+	// Related ability ID if applicable                                           
+	AbilityID                                              *string                `json:"abilityId,omitempty"`
+	// Related blueprint ID if applicable                                         
+	BlueprintID                                            *string                `json:"blueprintId,omitempty"`
+	// Related bot ID if applicable                                               
+	BotID                                                  *string                `json:"botId,omitempty"`
+	// Related contact ID if applicable                                           
+	ContactID                                              *string                `json:"contactId,omitempty"`
+	// Related conversation ID if applicable                                      
+	ConversationID                                         *string                `json:"conversationId,omitempty"`
+	// The timestamp (ms) when the instance was created                           
+	CreatedAt                                              float64                `json:"createdAt"`
+	// Related dataset ID if applicable                                           
+	DatasetID                                              *string                `json:"datasetId,omitempty"`
+	// The associated description                                                 
+	Description                                            *string                `json:"description,omitempty"`
+	// Related Discord integration ID if applicable                               
+	DiscordIntegrationID                                   *string                `json:"discordIntegrationId,omitempty"`
+	// Related email integration ID if applicable                                 
+	EmailIntegrationID                                     *string                `json:"emailIntegrationId,omitempty"`
+	// Related extract integration ID if applicable                               
+	ExtractIntegrationID                                   *string                `json:"extractIntegrationId,omitempty"`
+	// Related file ID if applicable                                              
+	FileID                                                 *string                `json:"fileId,omitempty"`
+	// Related Google Chat integration ID if applicable                           
+	GooglechatIntegrationID                                *string                `json:"googlechatIntegrationId,omitempty"`
+	// The instance ID                                                            
+	ID                                                     string                 `json:"id"`
+	// Related MCP server integration ID if applicable                            
+	McpserverIntegrationID                                 *string                `json:"mcpserverIntegrationId,omitempty"`
+	// Related Messenger integration ID if applicable                             
+	MessengerIntegrationID                                 *string                `json:"messengerIntegrationId,omitempty"`
+	// Meta data information                                                      
+	Meta                                                   map[string]interface{} `json:"meta,omitempty"`
+	// Related Microsoft Teams integration ID if applicable                       
+	MicrosoftteamsIntegrationID                            *string                `json:"microsoftteamsIntegrationId,omitempty"`
+	// The associated name                                                        
+	Name                                                   *string                `json:"name,omitempty"`
+	// Related Notion integration ID if applicable                                
+	NotionIntegrationID                                    *string                `json:"notionIntegrationId,omitempty"`
+	// Related portal ID if applicable                                            
+	PortalID                                               *string                `json:"portalId,omitempty"`
+	// Related record ID if applicable                                            
+	RecordID                                               *string                `json:"recordId,omitempty"`
+	// Related secret ID if applicable                                            
+	SecretID                                               *string                `json:"secretId,omitempty"`
+	// Related sitemap integration ID if applicable                               
+	SitemapIntegrationID                                   *string                `json:"sitemapIntegrationId,omitempty"`
+	// Related skillset ID if applicable                                          
+	SkillsetID                                             *string                `json:"skillsetId,omitempty"`
+	// Related Slack integration ID if applicable                                 
+	SlackIntegrationID                                     *string                `json:"slackIntegrationId,omitempty"`
+	// Related support integration ID if applicable                               
+	SupportIntegrationID                                   *string                `json:"supportIntegrationId,omitempty"`
+	// Related task ID if applicable                                              
+	TaskID                                                 *string                `json:"taskId,omitempty"`
+	// Related Telegram integration ID if applicable                              
+	TelegramIntegrationID                                  *string                `json:"telegramIntegrationId,omitempty"`
+	// Related trigger integration ID if applicable                               
+	TriggerIntegrationID                                   *string                `json:"triggerIntegrationId,omitempty"`
+	// Related Twilio integration ID if applicable                                
+	TwilioIntegrationID                                    *string                `json:"twilioIntegrationId,omitempty"`
+	// The type of event (e.g., 'conversation.create')                            
+	Type                                                   string                 `json:"type"`
+	// The timestamp (ms) when the instance was updated                           
+	UpdatedAt                                              float64                `json:"updatedAt"`
+	// Related webhook ID if applicable                                           
+	WebhookID                                              *string                `json:"webhookId,omitempty"`
+	// Related WhatsApp integration ID if applicable                              
+	WhatsappIntegrationID                                  *string                `json:"whatsappIntegrationId,omitempty"`
+	// Related widget integration ID if applicable                                
+	WidgetIntegrationID                                    *string                `json:"widgetIntegrationId,omitempty"`
 }
 
 type EventLogsSubscribeRequest struct {
@@ -15458,7 +15806,7 @@ type IntegrationMessengerFetchResponse struct {
 	// The Messenger integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
-	// Weather the bot supports attachments                                                                     
+	// Whether the bot supports attachments                                                                     
 	Attachments                                                                          *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                                                                  
 	BlueprintID                                                                          *string                `json:"blueprintId,omitempty"`
@@ -15503,7 +15851,7 @@ type IntegrationMessengerUpdateParams struct {
 type IntegrationMessengerUpdateRequest struct {
 	// The Messenger integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
-	// Weather the bot supports attachments                                
+	// Whether the bot supports attachments                                
 	Attachments                                     *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
@@ -15530,7 +15878,7 @@ type IntegrationMessengerUpdateResponse struct {
 type IntegrationMessengerCreateRequest struct {
 	// The Messenger integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
-	// Weather the bot supports attachments                                
+	// Whether the bot supports attachments                                
 	Attachments                                     *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
@@ -15575,7 +15923,7 @@ type IntegrationMessengerListResponseItem struct {
 	// The Messenger integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
-	// Weather the bot supports attachments                                                                     
+	// Whether the bot supports attachments                                                                     
 	Attachments                                                                          *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                                                                  
 	BlueprintID                                                                          *string                `json:"blueprintId,omitempty"`
@@ -15602,18 +15950,18 @@ type IntegrationMessengerListResponseItem struct {
 }
 
 type MicrosoftteamsIntegrationDeleteParams struct {
-	// The ID of the Teams integration       
-	MicrosoftteamsIntegrationID       string `json:"microsoftteamsIntegrationId"`
+	// The ID of the Microsoft Teams integration       
+	MicrosoftteamsIntegrationID                 string `json:"microsoftteamsIntegrationId"`
 }
 
 type MicrosoftteamsIntegrationDeleteResponse struct {
-	// The ID of the deleted Teams integration       
-	ID                                        string `json:"id"`
+	// The ID of the deleted Microsoft Teams integration       
+	ID                                                  string `json:"id"`
 }
 
 type MicrosoftteamsIntegrationFetchParams struct {
-	// The ID of the Teams integration to retrieve       
-	MicrosoftteamsIntegrationID                   string `json:"microsoftteamsIntegrationId"`
+	// The ID of the Microsoft Teams integration to retrieve       
+	MicrosoftteamsIntegrationID                             string `json:"microsoftteamsIntegrationId"`
 }
 
 // Blueprint properties
@@ -15645,18 +15993,18 @@ type MicrosoftteamsIntegrationFetchResponse struct {
 }
 
 type MicrosoftteamsIntegrationSetupParams struct {
-	// The ID of the Teams integration       
-	MicrosoftteamsIntegrationID       string `json:"microsoftteamsIntegrationId"`
+	// The ID of the Microsoft Teams integration       
+	MicrosoftteamsIntegrationID                 string `json:"microsoftteamsIntegrationId"`
 }
 
 type MicrosoftteamsIntegrationSetupResponse struct {
-	// The ID of the setup Teams integration       
-	ID                                      string `json:"id"`
+	// The ID of the Microsoft Teams integration that was set up       
+	ID                                                          string `json:"id"`
 }
 
 type MicrosoftteamsIntegrationUpdateParams struct {
-	// The ID of the Teams integration       
-	MicrosoftteamsIntegrationID       string `json:"microsoftteamsIntegrationId"`
+	// The ID of the Microsoft Teams integration       
+	MicrosoftteamsIntegrationID                 string `json:"microsoftteamsIntegrationId"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
@@ -15686,8 +16034,8 @@ type MicrosoftteamsIntegrationUpdateRequest struct {
 }
 
 type MicrosoftteamsIntegrationUpdateResponse struct {
-	// The ID of the Teams Integration       
-	ID                                string `json:"id"`
+	// The ID of the Microsoft Teams integration       
+	ID                                          string `json:"id"`
 }
 
 // A bot configuration that can be applied without a dedicated bot instance.
@@ -15717,8 +16065,8 @@ type MicrosoftteamsIntegrationCreateRequest struct {
 }
 
 type MicrosoftteamsIntegrationCreateResponse struct {
-	// The ID of the Teams Integration       
-	ID                                string `json:"id"`
+	// The ID of the Microsoft Teams integration       
+	ID                                          string `json:"id"`
 }
 
 type MicrosoftteamsIntegrationListParams struct {
@@ -18351,7 +18699,7 @@ type PurpleSchema struct {
 	// The schema title                                        
 	Title                               *string                `json:"title,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                Type2                  `json:"type"`
+	Type                                Type3                  `json:"type"`
 }
 
 type PlatformAbilitiesSearchRequest struct {
@@ -18414,7 +18762,7 @@ type FluffySchema struct {
 	// The schema title                                        
 	Title                               *string                `json:"title,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                Type3                  `json:"type"`
+	Type                                Type4                  `json:"type"`
 }
 
 type PlatformActionListParams struct {
@@ -18642,7 +18990,7 @@ type PlatformExampleListResponseItem struct {
 	// Tags associated with the example                                       
 	Tags                                               []string               `json:"tags,omitempty"`
 	// The type of the example                                                
-	Type                                               Type4                  `json:"type"`
+	Type                                               Type5                  `json:"type"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -18675,7 +19023,7 @@ type PlatformExamplesSearchResponseItem struct {
 	// Tags associated with the example                                       
 	Tags                                               []string               `json:"tags,omitempty"`
 	// The type of the example                                                
-	Type                                               Type5                  `json:"type"`
+	Type                                               Type6                  `json:"type"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -18984,7 +19332,7 @@ type PlatformSecretListResponseItem struct {
 	// The original template identifier for the secret                        
 	Template                                           *string                `json:"template,omitempty"`
 	// The type of the secret                                                 
-	Type                                               Type6                  `json:"type"`
+	Type                                               Type7                  `json:"type"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -19028,7 +19376,7 @@ type PlatformSecretsSearchResponseItem struct {
 	// The original template identifier for the secret                            
 	Template                                               *string                `json:"template,omitempty"`
 	// The type of the secret                                                     
-	Type                                                   Type7                  `json:"type"`
+	Type                                                   Type8                  `json:"type"`
 	// The timestamp (ms) when the instance was updated                           
 	UpdatedAt                                              float64                `json:"updatedAt"`
 }
@@ -19262,7 +19610,7 @@ type PolicyListResponseItem struct {
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
 	// The policy type                                                        
-	Type                                               Type8                  `json:"type"`
+	Type                                               Type9                  `json:"type"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -19504,7 +19852,7 @@ type SecretVerifyResponse struct {
 // The action to take next
 type SecretVerifyResponseAction struct {
 	// The type of action to take               
-	Type                                 Type9  `json:"type"`
+	Type                                 Type10 `json:"type"`
 	// The URL to authenticate the secret       
 	URL                                  string `json:"url"`
 }
@@ -19574,7 +19922,7 @@ type SecretListResponseItem struct {
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
 	// The type of the secret                                                 
-	Type                                               *Type10                `json:"type,omitempty"`
+	Type                                               *Type11                `json:"type,omitempty"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 	// The visibility of the secret                                           
@@ -19629,7 +19977,7 @@ type SkillsetAbilityExecuteResponseMessage struct {
 	// The text of the message                       
 	Text                      string                 `json:"text"`
 	// The type of the message                       
-	Type                      Type11                 `json:"type"`
+	Type                      Type12                 `json:"type"`
 }
 
 // Usage information
@@ -20918,7 +21266,7 @@ type FunctionsDefinitionParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                Type12                 `json:"type"`
+	Type                                Type13                 `json:"type"`
 }
 
 // The result of the function execution
@@ -20947,10 +21295,10 @@ type ExtensionsDefinitionDataset struct {
 	// The name of the dataset                         
 	Name                             *string           `json:"name,omitempty"`
 	// The records in the dataset                      
-	Records                          []HilariousRecord `json:"records"`
+	Records                          []AmbitiousRecord `json:"records"`
 }
 
-type HilariousRecord struct {
+type AmbitiousRecord struct {
 	// Additional metadata for the record                       
 	Meta                                 map[string]interface{} `json:"meta,omitempty"`
 	// The text content of the record                           
@@ -20966,14 +21314,14 @@ type ExtensionsDefinitionFeature struct {
 
 type ExtensionsDefinitionSkillset struct {
 	// The abilities in the skillset                     
-	Abilities                         []HilariousAbility `json:"abilities"`
+	Abilities                         []AmbitiousAbility `json:"abilities"`
 	// The description of the skillset                   
 	Description                       *string            `json:"description,omitempty"`
 	// The name of the skillset                          
 	Name                              *string            `json:"name,omitempty"`
 }
 
-type HilariousAbility struct {
+type AmbitiousAbility struct {
 	// The description of the ability                            
 	Description                           string                 `json:"description"`
 	// The instruction for the ability                           
@@ -21090,6 +21438,15 @@ const (
 
 )
 
+// The order of the paginated items
+type BlueprintBulletinListParamsOrder string
+
+const (
+	FluffyAsc                                BlueprintBulletinListParamsOrder = "asc"
+	FluffyDesc                               BlueprintBulletinListParamsOrder = "desc"
+
+)
+
 // The blueprint visibility
 type BlueprintFetchResponseVisibility string
 
@@ -21124,9 +21481,9 @@ const (
 type BlueprintListParamsOrder string
 
 const (
-	FluffyAsc                        BlueprintListParamsOrder = "asc"
-	FluffyDesc                       BlueprintListParamsOrder = "desc"
 
+	TentacledAsc                     BlueprintListParamsOrder = "asc"
+	TentacledDesc                    BlueprintListParamsOrder = "desc"
 )
 
 // The blueprint visibility
@@ -21204,8 +21561,8 @@ type BotListParamsOrder string
 
 const (
 
-	TentacledAsc               BotListParamsOrder = "asc"
-	TentacledDesc              BotListParamsOrder = "desc"
+	StickyAsc                  BotListParamsOrder = "asc"
+	StickyDesc                 BotListParamsOrder = "desc"
 )
 
 // The bot visibility
@@ -21222,17 +21579,17 @@ const (
 type ContactConversationListParamsOrder string
 
 const (
+	IndigoAsc                                  ContactConversationListParamsOrder = "asc"
+	IndigoDesc                                 ContactConversationListParamsOrder = "desc"
 
-	StickyAsc                                  ContactConversationListParamsOrder = "asc"
-	StickyDesc                                 ContactConversationListParamsOrder = "desc"
 )
 
 // The order of the paginated items
 type ContactMemoryListParamsOrder string
 
 const (
-	IndigoAsc                            ContactMemoryListParamsOrder = "asc"
-	IndigoDesc                           ContactMemoryListParamsOrder = "desc"
+	IndecentAsc                          ContactMemoryListParamsOrder = "asc"
+	IndecentDesc                         ContactMemoryListParamsOrder = "desc"
 
 )
 
@@ -21240,8 +21597,8 @@ const (
 type ContactRatingListParamsOrder string
 
 const (
-	IndecentAsc                          ContactRatingListParamsOrder = "asc"
-	IndecentDesc                         ContactRatingListParamsOrder = "desc"
+	HilariousAsc                         ContactRatingListParamsOrder = "asc"
+	HilariousDesc                        ContactRatingListParamsOrder = "desc"
 
 )
 
@@ -21266,8 +21623,8 @@ const (
 type ContactSecretListParamsOrder string
 
 const (
-	HilariousAsc                         ContactSecretListParamsOrder = "asc"
-	HilariousDesc                        ContactSecretListParamsOrder = "desc"
+	AmbitiousAsc                         ContactSecretListParamsOrder = "asc"
+	AmbitiousDesc                        ContactSecretListParamsOrder = "desc"
 
 )
 
@@ -21275,8 +21632,8 @@ const (
 type ContactSpaceListParamsOrder string
 
 const (
-	AmbitiousAsc                        ContactSpaceListParamsOrder = "asc"
-	AmbitiousDesc                       ContactSpaceListParamsOrder = "desc"
+	CunningAsc                          ContactSpaceListParamsOrder = "asc"
+	CunningDesc                         ContactSpaceListParamsOrder = "desc"
 
 )
 
@@ -21284,8 +21641,8 @@ const (
 type ContactTaskListParamsOrder string
 
 const (
-	CunningAsc                         ContactTaskListParamsOrder = "asc"
-	CunningDesc                        ContactTaskListParamsOrder = "desc"
+	MagentaAsc                         ContactTaskListParamsOrder = "asc"
+	MagentaDesc                        ContactTaskListParamsOrder = "desc"
 
 )
 
@@ -21313,8 +21670,8 @@ const (
 type ContactsExportParamsOrder string
 
 const (
-	MagentaAsc                        ContactsExportParamsOrder = "asc"
-	MagentaDesc                       ContactsExportParamsOrder = "desc"
+	FriskyAsc                         ContactsExportParamsOrder = "asc"
+	FriskyDesc                        ContactsExportParamsOrder = "desc"
 
 )
 
@@ -21322,8 +21679,8 @@ const (
 type ContactListParamsOrder string
 
 const (
-	FriskyAsc                      ContactListParamsOrder = "asc"
-	FriskyDesc                     ContactListParamsOrder = "desc"
+	MischievousAsc                 ContactListParamsOrder = "asc"
+	MischievousDesc                ContactListParamsOrder = "desc"
 
 )
 
@@ -21405,8 +21762,8 @@ const (
 type ConversationMessageListParamsOrder string
 
 const (
-	MischievousAsc                             ConversationMessageListParamsOrder = "asc"
-	MischievousDesc                            ConversationMessageListParamsOrder = "desc"
+	BraggadociousAsc                           ConversationMessageListParamsOrder = "asc"
+	BraggadociousDesc                          ConversationMessageListParamsOrder = "desc"
 
 )
 
@@ -21441,39 +21798,26 @@ const (
 	StickyObject                                                      AmbitiousType = "object"
 )
 
-// The schema type, must be "object"
+// The type of the message
 type CunningType string
 
 const (
-	IndigoObject                                                   CunningType = "object"
+	AmbitiousActivity                                           CunningType = "activity"
+	HilariousBackstory                                          CunningType = "backstory"
+	HilariousBot                                                CunningType = "bot"
+	HilariousCheckpoint                                         CunningType = "checkpoint"
+	HilariousContext                                            CunningType = "context"
+	HilariousInstruction                                        CunningType = "instruction"
+	HilariousReasoning                                          CunningType = "reasoning"
+	HilariousUser                                               CunningType = "user"
 
 )
 
-// The type of the message
+// The schema type, must be "object"
 type MagentaType string
 
 const (
-	AmbitiousActivity                                   MagentaType = "activity"
-	HilariousBackstory                                  MagentaType = "backstory"
-	HilariousBot                                        MagentaType = "bot"
-	HilariousCheckpoint                                 MagentaType = "checkpoint"
-	HilariousContext                                    MagentaType = "context"
-	HilariousInstruction                                MagentaType = "instruction"
-	HilariousReasoning                                  MagentaType = "reasoning"
-	HilariousUser                                       MagentaType = "user"
-
-)
-
-// The reason why the completion ended
-type FluffyReason string
-
-const (
-	CunningActivity                               FluffyReason = "activity"
-	FluffyAbort                                   FluffyReason = "abort"
-	FluffyError                                   FluffyReason = "error"
-	FluffyIteration                               FluffyReason = "iteration"
-	FluffyLength                                  FluffyReason = "length"
-	FluffyStop                                    FluffyReason = "stop"
+	IndigoObject                                                   MagentaType = "object"
 
 )
 
@@ -21481,14 +21825,27 @@ const (
 type FriskyType string
 
 const (
-	AmbitiousBackstory                                FriskyType = "backstory"
-	AmbitiousBot                                      FriskyType = "bot"
-	AmbitiousCheckpoint                               FriskyType = "checkpoint"
-	AmbitiousContext                                  FriskyType = "context"
-	AmbitiousInstruction                              FriskyType = "instruction"
-	AmbitiousReasoning                                FriskyType = "reasoning"
-	AmbitiousUser                                     FriskyType = "user"
-	MagentaActivity                                   FriskyType = "activity"
+	AmbitiousBackstory                                  FriskyType = "backstory"
+	AmbitiousBot                                        FriskyType = "bot"
+	AmbitiousCheckpoint                                 FriskyType = "checkpoint"
+	AmbitiousContext                                    FriskyType = "context"
+	AmbitiousInstruction                                FriskyType = "instruction"
+	AmbitiousReasoning                                  FriskyType = "reasoning"
+	AmbitiousUser                                       FriskyType = "user"
+	CunningActivity                                     FriskyType = "activity"
+
+)
+
+// The reason why the completion ended
+type FluffyReason string
+
+const (
+	FluffyAbort                                   FluffyReason = "abort"
+	FluffyError                                   FluffyReason = "error"
+	FluffyIteration                               FluffyReason = "iteration"
+	FluffyLength                                  FluffyReason = "length"
+	FluffyStop                                    FluffyReason = "stop"
+	MagentaActivity                               FluffyReason = "activity"
 
 )
 
@@ -21496,37 +21853,52 @@ const (
 type MischievousType string
 
 const (
-	CunningBackstory                                   MischievousType = "backstory"
-	CunningBot                                         MischievousType = "bot"
-	CunningCheckpoint                                  MischievousType = "checkpoint"
-	CunningContext                                     MischievousType = "context"
-	CunningInstruction                                 MischievousType = "instruction"
-	CunningReasoning                                   MischievousType = "reasoning"
-	CunningUser                                        MischievousType = "user"
-	FriskyActivity                                     MischievousType = "activity"
-
-)
-
-// The schema type, must be "object"
-type BraggadociousType string
-
-const (
-	IndecentObject                                                 BraggadociousType = "object"
+	CunningBackstory                                  MischievousType = "backstory"
+	CunningBot                                        MischievousType = "bot"
+	CunningCheckpoint                                 MischievousType = "checkpoint"
+	CunningContext                                    MischievousType = "context"
+	CunningInstruction                                MischievousType = "instruction"
+	CunningReasoning                                  MischievousType = "reasoning"
+	CunningUser                                       MischievousType = "user"
+	FriskyActivity                                    MischievousType = "activity"
 
 )
 
 // The type of the message
+type BraggadociousType string
+
+const (
+	MagentaBackstory                                   BraggadociousType = "backstory"
+	MagentaBot                                         BraggadociousType = "bot"
+	MagentaCheckpoint                                  BraggadociousType = "checkpoint"
+	MagentaContext                                     BraggadociousType = "context"
+	MagentaInstruction                                 BraggadociousType = "instruction"
+	MagentaReasoning                                   BraggadociousType = "reasoning"
+	MagentaUser                                        BraggadociousType = "user"
+	MischievousActivity                                BraggadociousType = "activity"
+
+)
+
+// The schema type, must be "object"
 type Type1 string
 
 const (
-	MagentaBackstory                                    Type1 = "backstory"
-	MagentaBot                                          Type1 = "bot"
-	MagentaCheckpoint                                   Type1 = "checkpoint"
-	MagentaContext                                      Type1 = "context"
-	MagentaInstruction                                  Type1 = "instruction"
-	MagentaReasoning                                    Type1 = "reasoning"
-	MagentaUser                                         Type1 = "user"
-	MischievousActivity                                 Type1 = "activity"
+	IndecentObject                                                 Type1 = "object"
+
+)
+
+// The type of the message
+type Type2 string
+
+const (
+	BraggadociousActivity                               Type2 = "activity"
+	FriskyBackstory                                     Type2 = "backstory"
+	FriskyBot                                           Type2 = "bot"
+	FriskyCheckpoint                                    Type2 = "checkpoint"
+	FriskyContext                                       Type2 = "context"
+	FriskyInstruction                                   Type2 = "instruction"
+	FriskyReasoning                                     Type2 = "reasoning"
+	FriskyUser                                          Type2 = "user"
 
 )
 
@@ -21534,8 +21906,8 @@ const (
 type ConversationsExportParamsOrder string
 
 const (
-	BraggadociousAsc                       ConversationsExportParamsOrder = "asc"
-	BraggadociousDesc                      ConversationsExportParamsOrder = "desc"
+	Asc1                                   ConversationsExportParamsOrder = "asc"
+	Desc1                                  ConversationsExportParamsOrder = "desc"
 
 )
 
@@ -21543,8 +21915,8 @@ const (
 type ConversationListParamsOrder string
 
 const (
-	Asc1                                ConversationListParamsOrder = "asc"
-	Desc1                               ConversationListParamsOrder = "desc"
+	Asc2                                ConversationListParamsOrder = "asc"
+	Desc2                               ConversationListParamsOrder = "desc"
 
 )
 
@@ -21570,8 +21942,8 @@ const (
 type DatasetFileListParamsOrder string
 
 const (
-	Asc2                               DatasetFileListParamsOrder = "asc"
-	Desc2                              DatasetFileListParamsOrder = "desc"
+	Asc3                               DatasetFileListParamsOrder = "asc"
+	Desc3                              DatasetFileListParamsOrder = "desc"
 
 )
 
@@ -21589,8 +21961,8 @@ const (
 type DatasetRecordsExportParamsOrder string
 
 const (
-	Asc3                                    DatasetRecordsExportParamsOrder = "asc"
-	Desc3                                   DatasetRecordsExportParamsOrder = "desc"
+	Asc4                                    DatasetRecordsExportParamsOrder = "asc"
+	Desc4                                   DatasetRecordsExportParamsOrder = "desc"
 
 )
 
@@ -21598,8 +21970,8 @@ const (
 type DatasetRecordListParamsOrder string
 
 const (
-	Asc4                                 DatasetRecordListParamsOrder = "asc"
-	Desc4                                DatasetRecordListParamsOrder = "desc"
+	Asc5                                 DatasetRecordListParamsOrder = "asc"
+	Desc5                                DatasetRecordListParamsOrder = "desc"
 
 )
 
@@ -21627,8 +21999,8 @@ const (
 type DatasetListParamsOrder string
 
 const (
-	Asc5                           DatasetListParamsOrder = "asc"
-	Desc5                          DatasetListParamsOrder = "desc"
+	Asc6                           DatasetListParamsOrder = "asc"
+	Desc6                          DatasetListParamsOrder = "desc"
 
 )
 
@@ -21646,8 +22018,8 @@ const (
 type EventLogsExportParamsOrder string
 
 const (
-	Asc6                               EventLogsExportParamsOrder = "asc"
-	Desc6                              EventLogsExportParamsOrder = "desc"
+	Asc7                               EventLogsExportParamsOrder = "asc"
+	Desc7                              EventLogsExportParamsOrder = "desc"
 
 )
 
@@ -21655,8 +22027,8 @@ const (
 type EventLogListParamsOrder string
 
 const (
-	Asc7                            EventLogListParamsOrder = "asc"
-	Desc7                           EventLogListParamsOrder = "desc"
+	Asc8                            EventLogListParamsOrder = "asc"
+	Desc8                           EventLogListParamsOrder = "desc"
 
 )
 
@@ -21694,8 +22066,8 @@ const (
 type FileListParamsOrder string
 
 const (
-	Asc8                        FileListParamsOrder = "asc"
-	Desc8                       FileListParamsOrder = "desc"
+	Asc9                        FileListParamsOrder = "asc"
+	Desc9                       FileListParamsOrder = "desc"
 
 )
 
@@ -21713,8 +22085,8 @@ const (
 type IntegrationDiscordListParamsOrder string
 
 const (
-	Asc9                                      IntegrationDiscordListParamsOrder = "asc"
-	Desc9                                     IntegrationDiscordListParamsOrder = "desc"
+	Asc10                                     IntegrationDiscordListParamsOrder = "asc"
+	Desc10                                    IntegrationDiscordListParamsOrder = "desc"
 
 )
 
@@ -21722,8 +22094,8 @@ const (
 type EmailIntegrationListParamsOrder string
 
 const (
-	Asc10                                   EmailIntegrationListParamsOrder = "asc"
-	Desc10                                  EmailIntegrationListParamsOrder = "desc"
+	Asc11                                   EmailIntegrationListParamsOrder = "asc"
+	Desc11                                  EmailIntegrationListParamsOrder = "desc"
 
 )
 
@@ -21731,8 +22103,8 @@ const (
 type ExtractIntegrationItemsExportParamsOrder string
 
 const (
-	Asc11                                            ExtractIntegrationItemsExportParamsOrder = "asc"
-	Desc11                                           ExtractIntegrationItemsExportParamsOrder = "desc"
+	Asc12                                            ExtractIntegrationItemsExportParamsOrder = "asc"
+	Desc12                                           ExtractIntegrationItemsExportParamsOrder = "desc"
 
 )
 
@@ -21740,8 +22112,8 @@ const (
 type ExtractIntegrationItemListParamsOrder string
 
 const (
-	Asc12                                         ExtractIntegrationItemListParamsOrder = "asc"
-	Desc12                                        ExtractIntegrationItemListParamsOrder = "desc"
+	Asc13                                         ExtractIntegrationItemListParamsOrder = "asc"
+	Desc13                                        ExtractIntegrationItemListParamsOrder = "desc"
 
 )
 
@@ -21749,8 +22121,8 @@ const (
 type IntegrationExtractListParamsOrder string
 
 const (
-	Asc13                                     IntegrationExtractListParamsOrder = "asc"
-	Desc13                                    IntegrationExtractListParamsOrder = "desc"
+	Asc14                                     IntegrationExtractListParamsOrder = "asc"
+	Desc14                                    IntegrationExtractListParamsOrder = "desc"
 
 )
 
@@ -21758,8 +22130,8 @@ const (
 type GooglechatIntegrationListParamsOrder string
 
 const (
-	Asc14                                        GooglechatIntegrationListParamsOrder = "asc"
-	Desc14                                       GooglechatIntegrationListParamsOrder = "desc"
+	Asc15                                        GooglechatIntegrationListParamsOrder = "asc"
+	Desc15                                       GooglechatIntegrationListParamsOrder = "desc"
 
 )
 
@@ -21767,8 +22139,8 @@ const (
 type IntegrationInstagramListParamsOrder string
 
 const (
-	Asc15                                       IntegrationInstagramListParamsOrder = "asc"
-	Desc15                                      IntegrationInstagramListParamsOrder = "desc"
+	Asc16                                       IntegrationInstagramListParamsOrder = "asc"
+	Desc16                                      IntegrationInstagramListParamsOrder = "desc"
 
 )
 
@@ -21776,8 +22148,8 @@ const (
 type IntegrationMCPServerListParamsOrder string
 
 const (
-	Asc16                                       IntegrationMCPServerListParamsOrder = "asc"
-	Desc16                                      IntegrationMCPServerListParamsOrder = "desc"
+	Asc17                                       IntegrationMCPServerListParamsOrder = "asc"
+	Desc17                                      IntegrationMCPServerListParamsOrder = "desc"
 
 )
 
@@ -21785,8 +22157,8 @@ const (
 type IntegrationMessengerListParamsOrder string
 
 const (
-	Asc17                                       IntegrationMessengerListParamsOrder = "asc"
-	Desc17                                      IntegrationMessengerListParamsOrder = "desc"
+	Asc18                                       IntegrationMessengerListParamsOrder = "asc"
+	Desc18                                      IntegrationMessengerListParamsOrder = "desc"
 
 )
 
@@ -21794,8 +22166,8 @@ const (
 type MicrosoftteamsIntegrationListParamsOrder string
 
 const (
-	Asc18                                            MicrosoftteamsIntegrationListParamsOrder = "asc"
-	Desc18                                           MicrosoftteamsIntegrationListParamsOrder = "desc"
+	Asc19                                            MicrosoftteamsIntegrationListParamsOrder = "asc"
+	Desc19                                           MicrosoftteamsIntegrationListParamsOrder = "desc"
 
 )
 
@@ -21813,8 +22185,8 @@ const (
 type IntegrationNotionListParamsOrder string
 
 const (
-	Asc19                                    IntegrationNotionListParamsOrder = "asc"
-	Desc19                                   IntegrationNotionListParamsOrder = "desc"
+	Asc20                                    IntegrationNotionListParamsOrder = "asc"
+	Desc20                                   IntegrationNotionListParamsOrder = "desc"
 
 )
 
@@ -21842,8 +22214,8 @@ const (
 type IntegrationSitemapListParamsOrder string
 
 const (
-	Asc20                                     IntegrationSitemapListParamsOrder = "asc"
-	Desc20                                    IntegrationSitemapListParamsOrder = "desc"
+	Asc21                                     IntegrationSitemapListParamsOrder = "asc"
+	Desc21                                    IntegrationSitemapListParamsOrder = "desc"
 
 )
 
@@ -21861,8 +22233,8 @@ const (
 type IntegrationSlackListParamsOrder string
 
 const (
-	Asc21                                   IntegrationSlackListParamsOrder = "asc"
-	Desc21                                  IntegrationSlackListParamsOrder = "desc"
+	Asc22                                   IntegrationSlackListParamsOrder = "asc"
+	Desc22                                  IntegrationSlackListParamsOrder = "desc"
 
 )
 
@@ -21870,8 +22242,8 @@ const (
 type IntegrationSupportListParamsOrder string
 
 const (
-	Asc22                                     IntegrationSupportListParamsOrder = "asc"
-	Desc22                                    IntegrationSupportListParamsOrder = "desc"
+	Asc23                                     IntegrationSupportListParamsOrder = "asc"
+	Desc23                                    IntegrationSupportListParamsOrder = "desc"
 
 )
 
@@ -21879,8 +22251,8 @@ const (
 type IntegrationTelegramListParamsOrder string
 
 const (
-	Asc23                                      IntegrationTelegramListParamsOrder = "asc"
-	Desc23                                     IntegrationTelegramListParamsOrder = "desc"
+	Asc24                                      IntegrationTelegramListParamsOrder = "asc"
+	Desc24                                     IntegrationTelegramListParamsOrder = "desc"
 
 )
 
@@ -21888,8 +22260,8 @@ const (
 type TriggerIntegrationListParamsOrder string
 
 const (
-	Asc24                                     TriggerIntegrationListParamsOrder = "asc"
-	Desc24                                    TriggerIntegrationListParamsOrder = "desc"
+	Asc25                                     TriggerIntegrationListParamsOrder = "asc"
+	Desc25                                    TriggerIntegrationListParamsOrder = "desc"
 
 )
 
@@ -21897,8 +22269,8 @@ const (
 type IntegrationTwilioListParamsOrder string
 
 const (
-	Asc25                                    IntegrationTwilioListParamsOrder = "asc"
-	Desc25                                   IntegrationTwilioListParamsOrder = "desc"
+	Asc26                                    IntegrationTwilioListParamsOrder = "asc"
+	Desc26                                   IntegrationTwilioListParamsOrder = "desc"
 
 )
 
@@ -21906,8 +22278,8 @@ const (
 type IntegrationWhatsAppListParamsOrder string
 
 const (
-	Asc26                                      IntegrationWhatsAppListParamsOrder = "asc"
-	Desc26                                     IntegrationWhatsAppListParamsOrder = "desc"
+	Asc27                                      IntegrationWhatsAppListParamsOrder = "asc"
+	Desc27                                     IntegrationWhatsAppListParamsOrder = "desc"
 
 )
 
@@ -21917,8 +22289,8 @@ type WidgetIntegrationFileAttachRequestType string
 const (
 	Bar                                            WidgetIntegrationFileAttachRequestType = "bar"
 	Button                                         WidgetIntegrationFileAttachRequestType = "button"
-	FriskyBot                                      WidgetIntegrationFileAttachRequestType = "bot"
-	FriskyUser                                     WidgetIntegrationFileAttachRequestType = "user"
+	MischievousBot                                 WidgetIntegrationFileAttachRequestType = "bot"
+	MischievousUser                                WidgetIntegrationFileAttachRequestType = "user"
 
 )
 
@@ -21926,8 +22298,8 @@ const (
 type IntegrationWidgetListParamsOrder string
 
 const (
-	Asc27                                    IntegrationWidgetListParamsOrder = "asc"
-	Desc27                                   IntegrationWidgetListParamsOrder = "desc"
+	Asc28                                    IntegrationWidgetListParamsOrder = "asc"
+	Desc28                                   IntegrationWidgetListParamsOrder = "desc"
 
 )
 
@@ -21935,8 +22307,8 @@ const (
 type MagicPromptListParamsOrder string
 
 const (
-	Asc28                              MagicPromptListParamsOrder = "asc"
-	Desc28                             MagicPromptListParamsOrder = "desc"
+	Asc29                              MagicPromptListParamsOrder = "asc"
+	Desc29                             MagicPromptListParamsOrder = "desc"
 
 )
 
@@ -21944,8 +22316,8 @@ const (
 type MemoriesExportParamsOrder string
 
 const (
-	Asc29                             MemoriesExportParamsOrder = "asc"
-	Desc29                            MemoriesExportParamsOrder = "desc"
+	Asc30                             MemoriesExportParamsOrder = "asc"
+	Desc30                            MemoriesExportParamsOrder = "desc"
 
 )
 
@@ -21953,8 +22325,8 @@ const (
 type MemoryListParamsOrder string
 
 const (
-	Asc30                         MemoryListParamsOrder = "asc"
-	Desc30                        MemoryListParamsOrder = "desc"
+	Asc31                         MemoryListParamsOrder = "asc"
+	Desc31                        MemoryListParamsOrder = "desc"
 
 )
 
@@ -21962,8 +22334,8 @@ const (
 type PartnerUserContextListParamsOrder string
 
 const (
-	Asc31                                     PartnerUserContextListParamsOrder = "asc"
-	Desc31                                    PartnerUserContextListParamsOrder = "desc"
+	Asc32                                     PartnerUserContextListParamsOrder = "asc"
+	Desc32                                    PartnerUserContextListParamsOrder = "desc"
 
 )
 
@@ -21971,8 +22343,8 @@ const (
 type PartnerUserTokenListParamsOrder string
 
 const (
-	Asc32                                   PartnerUserTokenListParamsOrder = "asc"
-	Desc32                                  PartnerUserTokenListParamsOrder = "desc"
+	Asc33                                   PartnerUserTokenListParamsOrder = "asc"
+	Desc33                                  PartnerUserTokenListParamsOrder = "desc"
 
 )
 
@@ -21980,8 +22352,8 @@ const (
 type PartnerUserListParamsOrder string
 
 const (
-	Asc33                              PartnerUserListParamsOrder = "asc"
-	Desc33                             PartnerUserListParamsOrder = "desc"
+	Asc34                              PartnerUserListParamsOrder = "asc"
+	Desc34                             PartnerUserListParamsOrder = "desc"
 
 )
 
@@ -21989,16 +22361,8 @@ const (
 type PlatformAbilityListParamsOrder string
 
 const (
-	Asc34                                  PlatformAbilityListParamsOrder = "asc"
-	Desc34                                 PlatformAbilityListParamsOrder = "desc"
-
-)
-
-// The schema type, must be "object"
-type Type2 string
-
-const (
-	HilariousObject                                        Type2 = "object"
+	Asc35                                  PlatformAbilityListParamsOrder = "asc"
+	Desc35                                 PlatformAbilityListParamsOrder = "desc"
 
 )
 
@@ -22006,7 +22370,15 @@ const (
 type Type3 string
 
 const (
-	AmbitiousObject                                            Type3 = "object"
+	HilariousObject                                        Type3 = "object"
+
+)
+
+// The schema type, must be "object"
+type Type4 string
+
+const (
+	AmbitiousObject                                            Type4 = "object"
 
 )
 
@@ -22014,8 +22386,8 @@ const (
 type PlatformActionListParamsOrder string
 
 const (
-	Asc35                                 PlatformActionListParamsOrder = "asc"
-	Desc35                                PlatformActionListParamsOrder = "desc"
+	Asc36                                 PlatformActionListParamsOrder = "asc"
+	Desc36                                PlatformActionListParamsOrder = "desc"
 
 )
 
@@ -22023,8 +22395,8 @@ const (
 type PlatformDocListParamsOrder string
 
 const (
-	Asc36                              PlatformDocListParamsOrder = "asc"
-	Desc36                             PlatformDocListParamsOrder = "desc"
+	Asc37                              PlatformDocListParamsOrder = "asc"
+	Desc37                             PlatformDocListParamsOrder = "desc"
 
 )
 
@@ -22050,26 +22422,8 @@ const (
 type PlatformExampleListParamsOrder string
 
 const (
-	Asc37                                  PlatformExampleListParamsOrder = "asc"
-	Desc37                                 PlatformExampleListParamsOrder = "desc"
-
-)
-
-// The type of the example
-type Type4 string
-
-const (
-	FluffyBlueprint                                  Type4 = "blueprint"
-	FluffyDiscord                                    Type4 = "discord"
-	FluffyEmail                                      Type4 = "email"
-	FluffyMessenger                                  Type4 = "messenger"
-	FluffyProject                                    Type4 = "project"
-	FluffySlack                                      Type4 = "slack"
-	FluffyTelegram                                   Type4 = "telegram"
-	FluffyTrigger                                    Type4 = "trigger"
-	FluffyTwilio                                     Type4 = "twilio"
-	FluffyWhatsapp                                   Type4 = "whatsapp"
-	FluffyWidget                                     Type4 = "widget"
+	Asc38                                  PlatformExampleListParamsOrder = "asc"
+	Desc38                                 PlatformExampleListParamsOrder = "desc"
 
 )
 
@@ -22077,26 +22431,44 @@ const (
 type Type5 string
 
 const (
+	FluffyBlueprint                                  Type5 = "blueprint"
+	FluffyDiscord                                    Type5 = "discord"
+	FluffyEmail                                      Type5 = "email"
+	FluffyMessenger                                  Type5 = "messenger"
+	FluffyProject                                    Type5 = "project"
+	FluffySlack                                      Type5 = "slack"
+	FluffyTelegram                                   Type5 = "telegram"
+	FluffyTrigger                                    Type5 = "trigger"
+	FluffyTwilio                                     Type5 = "twilio"
+	FluffyWhatsapp                                   Type5 = "whatsapp"
+	FluffyWidget                                     Type5 = "widget"
 
-	TentacledBlueprint                                  Type5 = "blueprint"
-	TentacledDiscord                                    Type5 = "discord"
-	TentacledEmail                                      Type5 = "email"
-	TentacledMessenger                                  Type5 = "messenger"
-	TentacledProject                                    Type5 = "project"
-	TentacledSlack                                      Type5 = "slack"
-	TentacledTelegram                                   Type5 = "telegram"
-	TentacledTrigger                                    Type5 = "trigger"
-	TentacledTwilio                                     Type5 = "twilio"
-	TentacledWhatsapp                                   Type5 = "whatsapp"
-	TentacledWidget                                     Type5 = "widget"
+)
+
+// The type of the example
+type Type6 string
+
+const (
+
+	TentacledBlueprint                                  Type6 = "blueprint"
+	TentacledDiscord                                    Type6 = "discord"
+	TentacledEmail                                      Type6 = "email"
+	TentacledMessenger                                  Type6 = "messenger"
+	TentacledProject                                    Type6 = "project"
+	TentacledSlack                                      Type6 = "slack"
+	TentacledTelegram                                   Type6 = "telegram"
+	TentacledTrigger                                    Type6 = "trigger"
+	TentacledTwilio                                     Type6 = "twilio"
+	TentacledWhatsapp                                   Type6 = "whatsapp"
+	TentacledWidget                                     Type6 = "widget"
 )
 
 // The order of the paginated items
 type PlatformGuideListParamsOrder string
 
 const (
-	Asc38                                PlatformGuideListParamsOrder = "asc"
-	Desc38                               PlatformGuideListParamsOrder = "desc"
+	Asc39                                PlatformGuideListParamsOrder = "asc"
+	Desc39                               PlatformGuideListParamsOrder = "desc"
 
 )
 
@@ -22104,8 +22476,8 @@ const (
 type PlatformManualListParamsOrder string
 
 const (
-	Asc39                                 PlatformManualListParamsOrder = "asc"
-	Desc39                                PlatformManualListParamsOrder = "desc"
+	Asc40                                 PlatformManualListParamsOrder = "asc"
+	Desc40                                PlatformManualListParamsOrder = "desc"
 
 )
 
@@ -22113,8 +22485,8 @@ const (
 type PlatformModelListParamsOrder string
 
 const (
-	Asc40                                PlatformModelListParamsOrder = "asc"
-	Desc40                               PlatformModelListParamsOrder = "desc"
+	Asc41                                PlatformModelListParamsOrder = "asc"
+	Desc41                               PlatformModelListParamsOrder = "desc"
 
 )
 
@@ -22122,8 +22494,8 @@ const (
 type PlatformSecretListParamsOrder string
 
 const (
-	Asc41                                 PlatformSecretListParamsOrder = "asc"
-	Desc41                                PlatformSecretListParamsOrder = "desc"
+	Asc42                                 PlatformSecretListParamsOrder = "asc"
+	Desc42                                PlatformSecretListParamsOrder = "desc"
 
 )
 
@@ -22137,16 +22509,16 @@ const (
 )
 
 // The type of the secret
-type Type6 string
+type Type7 string
 
 const (
-	PurpleBasic                                     Type6 = "basic"
-	PurpleBearer                                    Type6 = "bearer"
-	PurpleJwt                                       Type6 = "jwt"
-	PurpleOauth                                     Type6 = "oauth"
-	PurplePlain                                     Type6 = "plain"
-	PurpleReference                                 Type6 = "reference"
-	PurpleTemplate                                  Type6 = "template"
+	PurpleBasic                                     Type7 = "basic"
+	PurpleBearer                                    Type7 = "bearer"
+	PurpleJwt                                       Type7 = "jwt"
+	PurpleOauth                                     Type7 = "oauth"
+	PurplePlain                                     Type7 = "plain"
+	PurpleReference                                 Type7 = "reference"
+	PurpleTemplate                                  Type7 = "template"
 
 )
 
@@ -22160,16 +22532,16 @@ const (
 )
 
 // The type of the secret
-type Type7 string
+type Type8 string
 
 const (
-	FluffyBasic                                        Type7 = "basic"
-	FluffyBearer                                       Type7 = "bearer"
-	FluffyJwt                                          Type7 = "jwt"
-	FluffyOauth                                        Type7 = "oauth"
-	FluffyPlain                                        Type7 = "plain"
-	FluffyReference                                    Type7 = "reference"
-	FluffyTemplate                                     Type7 = "template"
+	FluffyBasic                                        Type8 = "basic"
+	FluffyBearer                                       Type8 = "bearer"
+	FluffyJwt                                          Type8 = "jwt"
+	FluffyOauth                                        Type8 = "oauth"
+	FluffyPlain                                        Type8 = "plain"
+	FluffyReference                                    Type8 = "reference"
+	FluffyTemplate                                     Type8 = "template"
 
 )
 
@@ -22177,8 +22549,8 @@ const (
 type PlatformTutorialListParamsOrder string
 
 const (
-	Asc42                                   PlatformTutorialListParamsOrder = "asc"
-	Desc42                                  PlatformTutorialListParamsOrder = "desc"
+	Asc43                                   PlatformTutorialListParamsOrder = "asc"
+	Desc43                                  PlatformTutorialListParamsOrder = "desc"
 
 )
 
@@ -22210,25 +22582,25 @@ const (
 type PolicyListParamsOrder string
 
 const (
-	Asc43                         PolicyListParamsOrder = "asc"
-	Desc43                        PolicyListParamsOrder = "desc"
+	Asc44                         PolicyListParamsOrder = "asc"
+	Desc44                        PolicyListParamsOrder = "desc"
 
 )
 
 // The policy type
-type Type8 string
+type Type9 string
 
 const (
 
-	StickyRetention                         Type8 = "retention"
+	StickyRetention                         Type9 = "retention"
 )
 
 // The order of the paginated items
 type PortalListParamsOrder string
 
 const (
-	Asc44                         PortalListParamsOrder = "asc"
-	Desc44                        PortalListParamsOrder = "desc"
+	Asc45                         PortalListParamsOrder = "asc"
+	Desc45                        PortalListParamsOrder = "desc"
 
 )
 
@@ -22299,10 +22671,10 @@ const (
 )
 
 // The type of action to take
-type Type9 string
+type Type10 string
 
 const (
-	FluffyAuthenticate                           Type9 = "authenticate"
+	FluffyAuthenticate                           Type10 = "authenticate"
 
 )
 
@@ -22352,8 +22724,8 @@ const (
 type SecretListParamsOrder string
 
 const (
-	Asc45                         SecretListParamsOrder = "asc"
-	Desc45                        SecretListParamsOrder = "desc"
+	Asc46                         SecretListParamsOrder = "asc"
+	Desc46                        SecretListParamsOrder = "desc"
 
 )
 
@@ -22367,16 +22739,16 @@ const (
 )
 
 // The type of the secret
-type Type10 string
+type Type11 string
 
 const (
-	IndecentBasic                           Type10 = "basic"
-	IndecentBearer                          Type10 = "bearer"
-	IndecentJwt                             Type10 = "jwt"
-	IndecentOauth                           Type10 = "oauth"
-	IndecentPlain                           Type10 = "plain"
-	IndecentReference                       Type10 = "reference"
-	IndecentTemplate                        Type10 = "template"
+	IndecentBasic                           Type11 = "basic"
+	IndecentBearer                          Type11 = "bearer"
+	IndecentJwt                             Type11 = "jwt"
+	IndecentOauth                           Type11 = "oauth"
+	IndecentPlain                           Type11 = "plain"
+	IndecentReference                       Type11 = "reference"
+	IndecentTemplate                        Type11 = "template"
 
 )
 
@@ -22391,17 +22763,17 @@ const (
 )
 
 // The type of the message
-type Type11 string
+type Type12 string
 
 const (
-	BraggadociousActivity                                  Type11 = "activity"
-	FriskyBackstory                                        Type11 = "backstory"
-	FriskyCheckpoint                                       Type11 = "checkpoint"
-	FriskyContext                                          Type11 = "context"
-	FriskyInstruction                                      Type11 = "instruction"
-	FriskyReasoning                                        Type11 = "reasoning"
-	MischievousBot                                         Type11 = "bot"
-	MischievousUser                                        Type11 = "user"
+	Activity1                                              Type12 = "activity"
+	BraggadociousBot                                       Type12 = "bot"
+	BraggadociousUser                                      Type12 = "user"
+	MischievousBackstory                                   Type12 = "backstory"
+	MischievousCheckpoint                                  Type12 = "checkpoint"
+	MischievousContext                                     Type12 = "context"
+	MischievousInstruction                                 Type12 = "instruction"
+	MischievousReasoning                                   Type12 = "reasoning"
 
 )
 
@@ -22409,8 +22781,8 @@ const (
 type SkillsetAbilitiesExportParamsOrder string
 
 const (
-	Asc46                                      SkillsetAbilitiesExportParamsOrder = "asc"
-	Desc46                                     SkillsetAbilitiesExportParamsOrder = "desc"
+	Asc47                                      SkillsetAbilitiesExportParamsOrder = "asc"
+	Desc47                                     SkillsetAbilitiesExportParamsOrder = "desc"
 
 )
 
@@ -22418,8 +22790,8 @@ const (
 type SkillsetAbilityListParamsOrder string
 
 const (
-	Asc47                                  SkillsetAbilityListParamsOrder = "asc"
-	Desc47                                 SkillsetAbilityListParamsOrder = "desc"
+	Asc48                                  SkillsetAbilityListParamsOrder = "asc"
+	Desc48                                 SkillsetAbilityListParamsOrder = "desc"
 
 )
 
@@ -22457,8 +22829,8 @@ const (
 type SkillsetListParamsOrder string
 
 const (
-	Asc48                           SkillsetListParamsOrder = "asc"
-	Desc48                          SkillsetListParamsOrder = "desc"
+	Asc49                           SkillsetListParamsOrder = "asc"
+	Desc49                          SkillsetListParamsOrder = "desc"
 
 )
 
@@ -22476,8 +22848,8 @@ const (
 type SpacesExportParamsOrder string
 
 const (
-	Asc49                           SpacesExportParamsOrder = "asc"
-	Desc49                          SpacesExportParamsOrder = "desc"
+	Asc50                           SpacesExportParamsOrder = "asc"
+	Desc50                          SpacesExportParamsOrder = "desc"
 
 )
 
@@ -22485,8 +22857,8 @@ const (
 type SpaceListParamsOrder string
 
 const (
-	Asc50                        SpaceListParamsOrder = "asc"
-	Desc50                       SpaceListParamsOrder = "desc"
+	Asc51                        SpaceListParamsOrder = "asc"
+	Desc51                       SpaceListParamsOrder = "desc"
 
 )
 
@@ -22494,8 +22866,8 @@ const (
 type TaskExecutionListParamsOrder string
 
 const (
-	Asc51                                TaskExecutionListParamsOrder = "asc"
-	Desc51                               TaskExecutionListParamsOrder = "desc"
+	Asc52                                TaskExecutionListParamsOrder = "asc"
+	Desc52                               TaskExecutionListParamsOrder = "desc"
 
 )
 
@@ -22553,8 +22925,8 @@ const (
 type TasksExportParamsOrder string
 
 const (
-	Asc52                          TasksExportParamsOrder = "asc"
-	Desc52                         TasksExportParamsOrder = "desc"
+	Asc53                          TasksExportParamsOrder = "asc"
+	Desc53                         TasksExportParamsOrder = "desc"
 
 )
 
@@ -22562,8 +22934,8 @@ const (
 type TaskListParamsOrder string
 
 const (
-	Asc53                       TaskListParamsOrder = "asc"
-	Desc53                      TaskListParamsOrder = "desc"
+	Asc54                       TaskListParamsOrder = "asc"
+	Desc54                      TaskListParamsOrder = "desc"
 
 )
 
@@ -22601,8 +22973,8 @@ const (
 type TeamListParamsOrder string
 
 const (
-	Asc54                       TeamListParamsOrder = "asc"
-	Desc54                      TeamListParamsOrder = "desc"
+	Asc55                       TeamListParamsOrder = "asc"
+	Desc55                      TeamListParamsOrder = "desc"
 
 )
 
@@ -22610,8 +22982,8 @@ const (
 type UsageRecordListParamsOrder string
 
 const (
-	Asc55                              UsageRecordListParamsOrder = "asc"
-	Desc55                             UsageRecordListParamsOrder = "desc"
+	Asc56                              UsageRecordListParamsOrder = "asc"
+	Desc56                             UsageRecordListParamsOrder = "desc"
 
 )
 
@@ -22619,15 +22991,15 @@ const (
 type MessageTypeEnum string
 
 const (
-	Activity1              MessageTypeEnum = "activity"
-	BraggadociousBot       MessageTypeEnum = "bot"
-	BraggadociousUser      MessageTypeEnum = "user"
-	MischievousBackstory   MessageTypeEnum = "backstory"
-	MischievousCheckpoint  MessageTypeEnum = "checkpoint"
-	MischievousContext     MessageTypeEnum = "context"
-	MischievousInstruction MessageTypeEnum = "instruction"
-	MischievousReasoning   MessageTypeEnum = "reasoning"
+	Activity2                MessageTypeEnum = "activity"
+	Bot1                     MessageTypeEnum = "bot"
+	BraggadociousBackstory   MessageTypeEnum = "backstory"
+	BraggadociousCheckpoint  MessageTypeEnum = "checkpoint"
+	BraggadociousContext     MessageTypeEnum = "context"
+	BraggadociousInstruction MessageTypeEnum = "instruction"
+	BraggadociousReasoning   MessageTypeEnum = "reasoning"
 
+	User1                    MessageTypeEnum = "user"
 )
 
 // The type of the message
@@ -22809,7 +23181,7 @@ const (
 type CompleteEndReason string
 
 const (
-	Activity2                 CompleteEndReason = "activity"
+	Activity3                 CompleteEndReason = "activity"
 	HilariousError            CompleteEndReason = "error"
 
 	TentacledAbort            CompleteEndReason = "abort"
@@ -22835,10 +23207,10 @@ const (
 )
 
 // The schema type, must be "object"
-type Type12 string
+type Type13 string
 
 const (
-	MagentaObject                                 Type12 = "object"
+	MagentaObject                                 Type13 = "object"
 
 )
 
@@ -22846,15 +23218,15 @@ const (
 type DataType string
 
 const (
-	Activity3                                           DataType = "activity"
-	Bot1                                                DataType = "bot"
-	BraggadociousBackstory                              DataType = "backstory"
-	BraggadociousCheckpoint                             DataType = "checkpoint"
-	BraggadociousContext                                DataType = "context"
-	BraggadociousInstruction                            DataType = "instruction"
-	BraggadociousReasoning                              DataType = "reasoning"
+	Activity4                                           DataType = "activity"
+	Backstory1                                          DataType = "backstory"
+	Bot2                                                DataType = "bot"
+	Checkpoint1                                         DataType = "checkpoint"
+	Context1                                            DataType = "context"
+	Instruction1                                        DataType = "instruction"
 
-	User1                                               DataType = "user"
+	Reasoning1                                          DataType = "reasoning"
+	User2                                               DataType = "user"
 )
 
 // The type of event

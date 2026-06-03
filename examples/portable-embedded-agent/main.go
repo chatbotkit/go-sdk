@@ -129,7 +129,7 @@ func runPortableAgent(
 	client *sdk.Client,
 	conversationID string,
 	task string,
-	skillsFeature types.IndigoFeature,
+	skillsFeature types.CompleteFeature,
 ) error {
 	backstory := strings.TrimSpace(`
 You are a portable ChatBotKit agent running from a self-contained Go executable.
@@ -149,7 +149,7 @@ When the task is complete, call the exit tool with code 0.
 		Tools:          tools,
 		MaxIterations:  20,
 		Extensions: &types.ConversationCompleteRequestExtensions{
-			Features: []types.IndigoFeature{skillsFeature},
+			Features: []types.CompleteFeature{skillsFeature},
 		},
 	})
 
@@ -199,20 +199,20 @@ func loadEmbeddedSkills() ([]agent.SkillDefinition, error) {
 	return result.GetSkills(), nil
 }
 
-func createSkillsFeature(skills []agent.SkillDefinition) (types.IndigoFeature, error) {
+func createSkillsFeature(skills []agent.SkillDefinition) (types.CompleteFeature, error) {
 	featureMap := agent.CreateSkillsFeature(skills)
 
 	name, ok := featureMap["name"].(string)
 	if !ok || name == "" {
-		return types.IndigoFeature{}, errors.New("skills feature is missing name")
+		return types.CompleteFeature{}, errors.New("skills feature is missing name")
 	}
 
 	options, ok := featureMap["options"].(map[string]interface{})
 	if !ok {
-		return types.IndigoFeature{}, errors.New("skills feature is missing options")
+		return types.CompleteFeature{}, errors.New("skills feature is missing options")
 	}
 
-	return types.IndigoFeature{
+	return types.CompleteFeature{
 		Name:    name,
 		Options: options,
 	}, nil

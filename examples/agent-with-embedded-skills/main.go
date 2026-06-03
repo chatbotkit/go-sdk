@@ -106,7 +106,7 @@ Call the exit function when done.`
 		Tools:         tools,
 		MaxIterations: 20,
 		Extensions: &types.ConversationCompleteRequestExtensions{
-			Features: []types.IndigoFeature{
+			Features: []types.CompleteFeature{
 				{
 					Name:    skillsFeature["name"].(string),
 					Options: skillsFeature["options"].(map[string]interface{}),

@@ -53,20 +53,20 @@ func TestConvertMessageExtensions(t *testing.T) {
 
 	extensions := &types.ConversationCompleteRequestExtensions{
 		Backstory: &backstory,
-		Datasets: []types.IndigoDataset{{
+		Datasets: []types.CompleteDataset{{
 			Name: &datasetName,
-			Records: []types.IndigoRecord{{
+			Records: []types.CompleteRecord{{
 				Text: "A record",
 				Meta: map[string]interface{}{"source": "test"},
 			}},
 		}},
-		Features: []types.IndigoFeature{{
+		Features: []types.CompleteFeature{{
 			Name:    "skills",
 			Options: map[string]interface{}{"enabled": true},
 		}},
-		Skillsets: []types.IndigoSkillset{{
+		Skillsets: []types.CompleteSkillset{{
 			Name: &skillsetName,
-			Abilities: []types.IndigoAbility{{
+			Abilities: []types.CompleteAbility{{
 				Name:        "lookup",
 				Description: "Look something up",
 				Instruction: "Search the knowledge base",

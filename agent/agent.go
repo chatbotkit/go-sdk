@@ -142,7 +142,7 @@ func Complete(ctx context.Context, client *sdk.Client, opts CompleteOptions) (*C
 	apiMessages := make([]types.ConversationCompleteRequestMessage, 0, len(opts.Messages))
 	for _, msg := range opts.Messages {
 		apiMessages = append(apiMessages, types.ConversationCompleteRequestMessage{
-			Type: types.MagentaType(msg.Type),
+			Type: types.CompleteMessageType(msg.Type),
 			Text: msg.Text,
 			Meta: msg.Meta,
 		})
@@ -230,7 +230,7 @@ func CompleteStream(ctx context.Context, client *sdk.Client, opts CompleteOption
 	apiMessages := make([]types.ConversationCompleteRequestMessage, 0, len(opts.Messages))
 	for _, msg := range opts.Messages {
 		apiMessages = append(apiMessages, types.ConversationCompleteRequestMessage{
-			Type: types.MagentaType(msg.Type),
+			Type: types.CompleteMessageType(msg.Type),
 			Text: msg.Text,
 			Meta: msg.Meta,
 		})
@@ -577,12 +577,12 @@ func CompleteWithTools(ctx context.Context, client *sdk.Client, opts CompleteWit
 					messageFunctions = append(messageFunctions, types.ConversationMessageCompleteRequestFunction{
 						Name:        name,
 						Description: tool.Description,
-						Parameters: types.PurpleParameters{
-							Type:       types.PurpleObject,
+						Parameters: types.MessageCompleteFunctionParameters{
+							Type:       types.MessageCompleteFunctionParametersTypeObject,
 							Properties: properties,
 							Required:   required,
 						},
-						Result: &types.PurpleResult{
+						Result: &types.MessageCompleteFunctionResult{
 							Channel: &channel,
 						},
 					})
@@ -590,12 +590,12 @@ func CompleteWithTools(ctx context.Context, client *sdk.Client, opts CompleteWit
 					functions = append(functions, types.ConversationCompleteRequestFunction{
 						Name:        name,
 						Description: tool.Description,
-						Parameters: types.IndigoParameters{
-							Type:       types.IndigoObject,
+						Parameters: types.CompleteFunctionParameters{
+							Type:       types.CompleteFunctionParametersTypeObject,
 							Properties: properties,
 							Required:   required,
 						},
-						Result: &types.IndigoResult{
+						Result: &types.CompleteFunctionResult{
 							Channel: &channel,
 						},
 					})
@@ -628,7 +628,7 @@ func CompleteWithTools(ctx context.Context, client *sdk.Client, opts CompleteWit
 			apiMessages := make([]types.ConversationCompleteRequestMessage, 0, len(opts.Messages))
 			for _, msg := range opts.Messages {
 				apiMessages = append(apiMessages, types.ConversationCompleteRequestMessage{
-					Type: types.MagentaType(msg.Type),
+					Type: types.CompleteMessageType(msg.Type),
 					Text: msg.Text,
 					Meta: msg.Meta,
 				})
@@ -1259,17 +1259,17 @@ func convertMessageExtensions(extensions *types.ConversationCompleteRequestExten
 	}
 
 	if len(extensions.Datasets) > 0 {
-		result.Datasets = make([]types.PurpleDataset, 0, len(extensions.Datasets))
+		result.Datasets = make([]types.MessageCompleteDataset, 0, len(extensions.Datasets))
 		for _, dataset := range extensions.Datasets {
-			converted := types.PurpleDataset{
+			converted := types.MessageCompleteDataset{
 				Description: dataset.Description,
 				Name:        dataset.Name,
 			}
 
 			if len(dataset.Records) > 0 {
-				converted.Records = make([]types.PurpleRecord, 0, len(dataset.Records))
+				converted.Records = make([]types.MessageCompleteRecord, 0, len(dataset.Records))
 				for _, record := range dataset.Records {
-					converted.Records = append(converted.Records, types.PurpleRecord{
+					converted.Records = append(converted.Records, types.MessageCompleteRecord{
 						Meta: record.Meta,
 						Text: record.Text,
 					})
@@ -1281,9 +1281,9 @@ func convertMessageExtensions(extensions *types.ConversationCompleteRequestExten
 	}
 
 	if len(extensions.Features) > 0 {
-		result.Features = make([]types.PurpleFeature, 0, len(extensions.Features))
+		result.Features = make([]types.MessageCompleteFeature, 0, len(extensions.Features))
 		for _, feature := range extensions.Features {
-			result.Features = append(result.Features, types.PurpleFeature{
+			result.Features = append(result.Features, types.MessageCompleteFeature{
 				Name:    feature.Name,
 				Options: feature.Options,
 			})
@@ -1291,17 +1291,17 @@ func convertMessageExtensions(extensions *types.ConversationCompleteRequestExten
 	}
 
 	if len(extensions.Skillsets) > 0 {
-		result.Skillsets = make([]types.PurpleSkillset, 0, len(extensions.Skillsets))
+		result.Skillsets = make([]types.MessageCompleteSkillset, 0, len(extensions.Skillsets))
 		for _, skillset := range extensions.Skillsets {
-			converted := types.PurpleSkillset{
+			converted := types.MessageCompleteSkillset{
 				Description: skillset.Description,
 				Name:        skillset.Name,
 			}
 
 			if len(skillset.Abilities) > 0 {
-				converted.Abilities = make([]types.PurpleAbility, 0, len(skillset.Abilities))
+				converted.Abilities = make([]types.MessageCompleteAbility, 0, len(skillset.Abilities))
 				for _, ability := range skillset.Abilities {
-					converted.Abilities = append(converted.Abilities, types.PurpleAbility{
+					converted.Abilities = append(converted.Abilities, types.MessageCompleteAbility{
 						Description: ability.Description,
 						Instruction: ability.Instruction,
 						Meta:        ability.Meta,
