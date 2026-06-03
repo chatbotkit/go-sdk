@@ -173,12 +173,12 @@ func main() {
 	fmt.Println("\n---")
 	fmt.Println("Final persisted conversation:")
 	for _, message := range messages.Items {
-		if message.Type != types.IndecentUser && message.Type != types.IndecentBot {
+		if message.Type != types.MessageItemRoleUser && message.Type != types.MessageItemRoleBot {
 			continue
 		}
 
 		prefix := "User"
-		if message.Type == types.IndecentBot {
+		if message.Type == types.MessageItemRoleBot {
 			prefix = "Bot"
 		}
 

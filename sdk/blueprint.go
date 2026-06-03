@@ -99,3 +99,30 @@ func (c *BlueprintClient) ListResources(ctx context.Context, blueprintID string)
 	}
 	return &result, nil
 }
+
+// ListBulletins lists the bulletins on a blueprint's shared board.
+func (c *BlueprintClient) ListBulletins(ctx context.Context, blueprintID string, opts *types.BlueprintBulletinListParams) (*types.BlueprintBulletinListResponse, error) {
+	path := fmt.Sprintf("/api/v1/blueprint/%s/bulletin/list", blueprintID)
+
+	query := url.Values{}
+	if opts != nil {
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, nil)
+	}
+
+	var result types.BlueprintBulletinListResponse
+	if err := c.httpClient.Get(ctx, path, query, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// CreateBulletin posts a bulletin to a blueprint's shared board.
+func (c *BlueprintClient) CreateBulletin(ctx context.Context, blueprintID string, req types.BlueprintBulletinCreateRequest) (*types.BlueprintBulletinCreateResponse, error) {
+	path := fmt.Sprintf("/api/v1/blueprint/%s/bulletin/create", blueprintID)
+
+	var result types.BlueprintBulletinCreateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}

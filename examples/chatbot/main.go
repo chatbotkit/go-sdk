@@ -79,7 +79,7 @@ func main() {
 
 		// Add user message to history
 		messages = append(messages, types.ConversationCompleteRequestMessage{
-			Type: types.HilariousUser,
+			Type: types.CompleteMessageRoleUser,
 			Text: userInput,
 		})
 
@@ -114,7 +114,7 @@ func main() {
 
 		// Add bot response to history
 		messages = append(messages, types.ConversationCompleteRequestMessage{
-			Type: types.HilariousBot,
+			Type: types.CompleteMessageRoleBot,
 			Text: responseText.String(),
 		})
 
