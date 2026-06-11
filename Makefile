@@ -24,7 +24,7 @@ lint: vet fmt-check
 	@if command -v golangci-lint > /dev/null 2>&1; then \
 		golangci-lint run $(PACKAGES); \
 	else \
-		echo "golangci-lint not installed — skipping (run: go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest)"; \
+		echo "golangci-lint not installed - skipping (run: go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest)"; \
 	fi
 
 tidy:

@@ -11,12 +11,12 @@ Demonstrates bundling skill definitions directly into the executable using Go's 
 
 ## Skills bundled in this example
 
-| Skill | Description |
-| --- | --- |
+| Skill         | Description                                                        |
+| ------------- | ------------------------------------------------------------------ |
 | `Code Review` | Reviews code snippets for correctness, style, and potential issues |
-| `Summarize` | Condenses long text into a concise summary |
+| `Summarize`   | Condenses long text into a concise summary                         |
 
-Add more skills by creating a new subdirectory under `skills/` with a `SKILL.md` file — they are picked up automatically at compile time.
+Add more skills by creating a new subdirectory under `skills/` with a `SKILL.md` file - they are picked up automatically at compile time.
 
 ## Usage
 
@@ -34,8 +34,8 @@ go run .
 
 ```
 Loaded 2 embedded skill(s):
-  • Code Review — Reviews code snippets for correctness, style, and potential issues...
-  • Summarize — Condenses long text into a concise summary, preserving key points...
+  • Code Review - Reviews code snippets for correctness, style, and potential issues...
+  • Summarize - Condenses long text into a concise summary, preserving key points...
 
 Task: Summarize the following text in bullet style: ...
 
@@ -86,4 +86,4 @@ Extended documentation...
 
 ## Difference from `agent.LoadSkills`
 
-`LoadSkills` reads from OS directories at runtime and sets `SkillDefinition.Path` to an absolute filesystem path. `LoadSkillsFromFS` accepts any `fs.FS` — including `embed.FS` — and sets `Path` to the FS-relative directory name (e.g. `"code-review"`). The rest of the API is identical.
+`LoadSkills` reads from OS directories at runtime and sets `SkillDefinition.Path` to an absolute filesystem path. `LoadSkillsFromFS` accepts any `fs.FS` - including `embed.FS` - and sets `Path` to the FS-relative directory name (e.g. `"code-review"`). The rest of the API is identical.

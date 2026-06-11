@@ -1,16 +1,37 @@
+[![ChatBotKit](https://img.shields.io/badge/credits-ChatBotKit-blue.svg)](https://chatbotkit.com)
+[![CBK.AI](https://img.shields.io/badge/credits-CBK.AI-blue.svg)](https://cbk.ai)
+[![Email](https://img.shields.io/badge/Email-Support-blue?logo=mail.ru)](mailto:support@chatbotkit.com)
+[![Discord](https://img.shields.io/badge/Discord-Support-blue?logo=discord)](https://go.cbk.ai/discord)
+[![Go Reference](https://pkg.go.dev/badge/github.com/chatbotkit/go-sdk.svg)](https://pkg.go.dev/github.com/chatbotkit/go-sdk)
+[![Follow on Twitter](https://img.shields.io/twitter/follow/chatbotkit.svg?logo=twitter)](https://twitter.com/chatbotkit)
+
+```text
+ .d8888b.  888888b.   888    d8P
+d88P  Y88b 888  "88b  888   d8P
+888    888 888  .88P  888  d8P
+888        8888888K.  888d88K
+888        888  "Y88b 8888888b
+888    888 888    888 888  Y88b
+Y88b  d88P 888   d88P 888   Y88b
+ "Y8888P"  8888888P"  888    Y88b .ai
+```
+
 # ChatBotKit Go SDK
 
-The official Go SDK for [ChatBotKit](https://chatbotkit.com) - a platform for building and deploying conversational AI applications.
+The official Go SDK for [ChatBotKit](https://chatbotkit.com) - a platform for
+building and deploying conversational AI applications. With ChatBotKit you can
+create bots and agents with custom data, skillsets, and integrations while
+keeping AI orchestration on the ChatBotKit platform.
 
 ## Why ChatBotKit?
 
-**Build lighter, future-proof AI agents.** When you build with ChatBotKit, the heavy lifting happens on our servers-not in your application. This architectural advantage delivers:
+**Build lighter, future-proof AI agents.** When you build with ChatBotKit, the heavy lifting happens on our servers, not in your application. This architectural advantage delivers:
 
 - 🪶 **Lightweight Agents**: Your agents stay lean because complex AI processing, model orchestration, and tool execution happen server-side. Less code in your app means faster load times and simpler maintenance.
 
 - 🛡️ **Robust & Streamlined**: Server-side processing provides a more reliable experience with built-in error handling, automatic retries, and consistent behavior across all platforms.
 
-- 🔄 **Backward & Forward Compatible**: As AI technology evolves-new models, new capabilities, new paradigms-your agents automatically benefit. No code changes required on your end.
+- 🔄 **Backward & Forward Compatible**: As AI technology evolves with new models, new capabilities, and new paradigms, your agents automatically benefit. No code changes required on your end.
 
 - 🔮 **Future-Proof**: Agents you build today will remain capable tomorrow. When we add support for new AI models or capabilities, your existing agents gain those powers without any updates to your codebase.
 
@@ -575,10 +596,10 @@ if err != nil {
 
 ## Releasing
 
-Versions are published as Git tags — for a Go module, the tag _is_ the release.
+Versions are published as Git tags - for a Go module, the tag _is_ the release.
 The version is driven by the [`VERSION`](VERSION) file:
 
-1. Bump `VERSION` (semver, no `v` prefix — e.g. `0.2.0`) in a pull request.
+1. Bump `VERSION` (semver, no `v` prefix - e.g. `0.2.0`) in a pull request.
 2. Merge to `main`. The `Tag Release` workflow reads `VERSION` and, if the
    matching `vX.Y.Z` tag does not yet exist, creates and pushes it, then
    triggers the `Release` workflow to publish GitHub release notes.
