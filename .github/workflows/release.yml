@@ -1,6 +1,6 @@
 # Release workflow for the go-sdk.
 #
-# go-sdk is a library, not a binary — for a Go module the git tag *is* the
+# go-sdk is a library, not a binary - for a Go module the git tag *is* the
 # release (consumers fetch source via `go get`). This workflow therefore does
 # not build or publish artifacts; it only creates a GitHub Release with
 # auto-generated notes for the tag created by tag-release.yml.

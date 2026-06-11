@@ -30,7 +30,7 @@ ChatBot ready! Type your message and press Enter. Type 'exit' to quit.
 
 user: Hello! What can you do?
 bot: Hello! I'm an AI assistant powered by ChatBotKit. I can help you with a
-variety of tasks — answering questions, explaining concepts, writing, brainstorming,
+variety of tasks - answering questions, explaining concepts, writing, brainstorming,
 and much more. What would you like to discuss?
 
 user: Tell me a short joke

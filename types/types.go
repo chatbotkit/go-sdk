@@ -11099,11 +11099,14 @@ type BlueprintBulletinCreateResponse struct {
 }
 
 type Bulletin struct {
-	Author    *string `json:"author,omitempty"`
-	CreatedAt float64 `json:"createdAt"`
-	ExpiresAt float64 `json:"expiresAt"`
-	ID        string  `json:"id"`
-	Text      string  `json:"text"`
+	// The display name of the author who posted the bulletin (a bot or a user)        
+	Author                                                                     *string `json:"author,omitempty"`
+	// The ID of the bot the bulletin is associated with, when posted by a bot         
+	BotID                                                                      *string `json:"botId,omitempty"`
+	CreatedAt                                                                  float64 `json:"createdAt"`
+	ExpiresAt                                                                  float64 `json:"expiresAt"`
+	ID                                                                         string  `json:"id"`
+	Text                                                                       string  `json:"text"`
 }
 
 type BlueprintBulletinListParams struct {
@@ -11124,16 +11127,18 @@ type BlueprintBulletinListResponse struct {
 }
 
 type BlueprintBulletinListResponseItem struct {
-	// The ID of the bot that posted the bulletin                           
-	Author                                                          *string `json:"author,omitempty"`
-	// The epoch millisecond timestamp when the bulletin was created        
-	CreatedAt                                                       float64 `json:"createdAt"`
-	// The epoch millisecond timestamp when the bulletin expires            
-	ExpiresAt                                                       float64 `json:"expiresAt"`
-	// The unique identifier of the bulletin                                
-	ID                                                              string  `json:"id"`
-	// The message body                                                     
-	Text                                                            string  `json:"text"`
+	// The display name of the author who posted the bulletin (a bot or a user)        
+	Author                                                                     *string `json:"author,omitempty"`
+	// The ID of the bot the bulletin is associated with, when posted by a bot         
+	BotID                                                                      *string `json:"botId,omitempty"`
+	// The epoch millisecond timestamp when the bulletin was created                   
+	CreatedAt                                                                  float64 `json:"createdAt"`
+	// The epoch millisecond timestamp when the bulletin expires                       
+	ExpiresAt                                                                  float64 `json:"expiresAt"`
+	// The unique identifier of the bulletin                                           
+	ID                                                                         string  `json:"id"`
+	// The message body                                                                
+	Text                                                                       string  `json:"text"`
 }
 
 type BlueprintCloneParams struct {
@@ -11193,12 +11198,8 @@ type BlueprintResourcesExportParams struct {
 }
 
 type BlueprintResourcesExportResponse struct {
-	// The description of the blueprint                         
-	Description                          *string                `json:"description,omitempty"`
 	// The ID of the blueprint                                  
 	ID                                   string                 `json:"id"`
-	// The name of the blueprint                                
-	Name                                 *string                `json:"name,omitempty"`
 	// A map of the resources by category                       
 	Resources                            map[string]interface{} `json:"resources"`
 }
@@ -11208,7 +11209,7 @@ type BlueprintResourcesImportParams struct {
 }
 
 type BlueprintResourcesImportRequest struct {
-	Resource map[string]interface{} `json:"resource"`
+	Resources map[string]interface{} `json:"resources"`
 }
 
 type BlueprintResourceListParams struct {

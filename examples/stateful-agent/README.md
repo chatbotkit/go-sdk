@@ -11,12 +11,12 @@ Demonstrates the same manually-driven `agent.CompleteWithTools` loop as the stat
 
 ## When to use this pattern
 
-| Use case | Why |
-| --- | --- |
-| Persisted history | The server stores every message; no local slice to maintain |
-| Remote orchestration | Resume a long-running conversation by ID from any process |
-| Recovery | Restart without reconstructing a local message array |
-| Inspection | Query the final conversation state via the API after the loop |
+| Use case             | Why                                                           |
+| -------------------- | ------------------------------------------------------------- |
+| Persisted history    | The server stores every message; no local slice to maintain   |
+| Remote orchestration | Resume a long-running conversation by ID from any process     |
+| Recovery             | Restart without reconstructing a local message array          |
+| Inspection           | Query the final conversation state via the API after the loop |
 
 ## Usage
 
@@ -51,7 +51,7 @@ Bot: The weather in San Francisco is sunny at 72°F...
 
 ## Key difference from the stateless example
 
-The stateless example appends `MessageAgentEvent` entries to a local `[]agent.Message` slice. Here, that slice is replaced by a server-side conversation — the only state the loop tracks locally is the conversation ID and whether to send `Text` on the next call:
+The stateless example appends `MessageAgentEvent` entries to a local `[]agent.Message` slice. Here, that slice is replaced by a server-side conversation - the only state the loop tracks locally is the conversation ID and whether to send `Text` on the next call:
 
 ```go
 nextText := &userPrompt // send prompt on first iteration

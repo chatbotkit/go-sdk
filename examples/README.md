@@ -176,7 +176,7 @@ tools := agent.Tools{
 An autonomous agent that ships with skill definitions baked into the binary using Go's `embed` package:
 
 - Embeds a `skills/` directory at compile time with `//go:embed`
-- Loads skills from `embed.FS` via `agent.LoadSkillsFromFS` — no temp-directory extraction needed
+- Loads skills from `embed.FS` via `agent.LoadSkillsFromFS` - no temp-directory extraction needed
 - Bundles skills as a feature passed to `agent.ExecuteWithTools`
 - Produces a single self-contained executable with no external skill files
 

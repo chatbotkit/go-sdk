@@ -6,7 +6,7 @@
 // ships as a single self-contained executable with no external skill files.
 //
 // The skills/ directory is embedded at compile time. At startup the embedded
-// FS is passed directly to agent.LoadSkillsFromFS — no temp-directory
+// FS is passed directly to agent.LoadSkillsFromFS - no temp-directory
 // extraction required.
 //
 // Usage:
@@ -78,7 +78,7 @@ fast compilation.`
 	skills := skillsResult.GetSkills()
 	fmt.Printf("Loaded %d embedded skill(s):\n", len(skills))
 	for _, s := range skills {
-		fmt.Printf("  • %s — %s\n", s.Name, s.Description)
+		fmt.Printf("  • %s - %s\n", s.Name, s.Description)
 	}
 	fmt.Println()
 
