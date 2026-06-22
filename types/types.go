@@ -100,11 +100,17 @@
 //    platformReportListResponse, err := UnmarshalPlatformReportListResponse(bytes)
 //    bytes, err = platformReportListResponse.Marshal()
 //
+//    platformReportListStreamItem, err := UnmarshalPlatformReportListStreamItem(bytes)
+//    bytes, err = platformReportListStreamItem.Marshal()
+//
 //    taskWorkflowEventsSubscribeParams, err := UnmarshalTaskWorkflowEventsSubscribeParams(bytes)
 //    bytes, err = taskWorkflowEventsSubscribeParams.Marshal()
 //
 //    taskWorkflowEventsSubscribeRequest, err := UnmarshalTaskWorkflowEventsSubscribeRequest(bytes)
 //    bytes, err = taskWorkflowEventsSubscribeRequest.Marshal()
+//
+//    taskWorkflowEventsSubscribeStreamItem, err := UnmarshalTaskWorkflowEventsSubscribeStreamItem(bytes)
+//    bytes, err = taskWorkflowEventsSubscribeStreamItem.Marshal()
 //
 //    blueprintBulletinCreateParams, err := UnmarshalBlueprintBulletinCreateParams(bytes)
 //    bytes, err = blueprintBulletinCreateParams.Marshal()
@@ -120,6 +126,9 @@
 //
 //    blueprintBulletinListResponse, err := UnmarshalBlueprintBulletinListResponse(bytes)
 //    bytes, err = blueprintBulletinListResponse.Marshal()
+//
+//    blueprintBulletinListStreamItem, err := UnmarshalBlueprintBulletinListStreamItem(bytes)
+//    bytes, err = blueprintBulletinListStreamItem.Marshal()
 //
 //    blueprintCloneParams, err := UnmarshalBlueprintCloneParams(bytes)
 //    bytes, err = blueprintCloneParams.Marshal()
@@ -183,6 +192,9 @@
 //
 //    blueprintListResponse, err := UnmarshalBlueprintListResponse(bytes)
 //    bytes, err = blueprintListResponse.Marshal()
+//
+//    blueprintListStreamItem, err := UnmarshalBlueprintListStreamItem(bytes)
+//    bytes, err = blueprintListStreamItem.Marshal()
 //
 //    botCloneParams, err := UnmarshalBotCloneParams(bytes)
 //    bytes, err = botCloneParams.Marshal()
@@ -271,6 +283,9 @@
 //    botListResponse, err := UnmarshalBotListResponse(bytes)
 //    bytes, err = botListResponse.Marshal()
 //
+//    botListStreamItem, err := UnmarshalBotListStreamItem(bytes)
+//    bytes, err = botListStreamItem.Marshal()
+//
 //    channelMessagePublishParams, err := UnmarshalChannelMessagePublishParams(bytes)
 //    bytes, err = channelMessagePublishParams.Marshal()
 //
@@ -286,11 +301,17 @@
 //    channelMessagesSubscribeRequest, err := UnmarshalChannelMessagesSubscribeRequest(bytes)
 //    bytes, err = channelMessagesSubscribeRequest.Marshal()
 //
+//    channelMessagesSubscribeStreamItem, err := UnmarshalChannelMessagesSubscribeStreamItem(bytes)
+//    bytes, err = channelMessagesSubscribeStreamItem.Marshal()
+//
 //    contactConversationListParams, err := UnmarshalContactConversationListParams(bytes)
 //    bytes, err = contactConversationListParams.Marshal()
 //
 //    contactConversationListResponse, err := UnmarshalContactConversationListResponse(bytes)
 //    bytes, err = contactConversationListResponse.Marshal()
+//
+//    contactConversationListStreamItem, err := UnmarshalContactConversationListStreamItem(bytes)
+//    bytes, err = contactConversationListStreamItem.Marshal()
 //
 //    contactDeleteParams, err := UnmarshalContactDeleteParams(bytes)
 //    bytes, err = contactDeleteParams.Marshal()
@@ -313,6 +334,9 @@
 //    contactMemoryListResponse, err := UnmarshalContactMemoryListResponse(bytes)
 //    bytes, err = contactMemoryListResponse.Marshal()
 //
+//    contactMemoryListStreamItem, err := UnmarshalContactMemoryListStreamItem(bytes)
+//    bytes, err = contactMemoryListStreamItem.Marshal()
+//
 //    contactMemorySearchParams, err := UnmarshalContactMemorySearchParams(bytes)
 //    bytes, err = contactMemorySearchParams.Marshal()
 //
@@ -327,6 +351,9 @@
 //
 //    contactRatingListResponse, err := UnmarshalContactRatingListResponse(bytes)
 //    bytes, err = contactRatingListResponse.Marshal()
+//
+//    contactRatingListStreamItem, err := UnmarshalContactRatingListStreamItem(bytes)
+//    bytes, err = contactRatingListStreamItem.Marshal()
 //
 //    contactSecretAuthenticateParams, err := UnmarshalContactSecretAuthenticateParams(bytes)
 //    bytes, err = contactSecretAuthenticateParams.Marshal()
@@ -361,17 +388,26 @@
 //    contactSecretListResponse, err := UnmarshalContactSecretListResponse(bytes)
 //    bytes, err = contactSecretListResponse.Marshal()
 //
+//    contactSecretListStreamItem, err := UnmarshalContactSecretListStreamItem(bytes)
+//    bytes, err = contactSecretListStreamItem.Marshal()
+//
 //    contactSpaceListParams, err := UnmarshalContactSpaceListParams(bytes)
 //    bytes, err = contactSpaceListParams.Marshal()
 //
 //    contactSpaceListResponse, err := UnmarshalContactSpaceListResponse(bytes)
 //    bytes, err = contactSpaceListResponse.Marshal()
 //
+//    contactSpaceListStreamItem, err := UnmarshalContactSpaceListStreamItem(bytes)
+//    bytes, err = contactSpaceListStreamItem.Marshal()
+//
 //    contactTaskListParams, err := UnmarshalContactTaskListParams(bytes)
 //    bytes, err = contactTaskListParams.Marshal()
 //
 //    contactTaskListResponse, err := UnmarshalContactTaskListResponse(bytes)
 //    bytes, err = contactTaskListResponse.Marshal()
+//
+//    contactTaskListStreamItem, err := UnmarshalContactTaskListStreamItem(bytes)
+//    bytes, err = contactTaskListStreamItem.Marshal()
 //
 //    contactUpdateParams, err := UnmarshalContactUpdateParams(bytes)
 //    bytes, err = contactUpdateParams.Marshal()
@@ -400,11 +436,17 @@
 //    contactsExportResponse, err := UnmarshalContactsExportResponse(bytes)
 //    bytes, err = contactsExportResponse.Marshal()
 //
+//    contactsExportStreamItem, err := UnmarshalContactsExportStreamItem(bytes)
+//    bytes, err = contactsExportStreamItem.Marshal()
+//
 //    contactListParams, err := UnmarshalContactListParams(bytes)
 //    bytes, err = contactListParams.Marshal()
 //
 //    contactListResponse, err := UnmarshalContactListResponse(bytes)
 //    bytes, err = contactListResponse.Marshal()
+//
+//    contactListStreamItem, err := UnmarshalContactListStreamItem(bytes)
+//    bytes, err = contactListStreamItem.Marshal()
 //
 //    conversationAttachmentListParams, err := UnmarshalConversationAttachmentListParams(bytes)
 //    bytes, err = conversationAttachmentListParams.Marshal()
@@ -435,6 +477,9 @@
 //
 //    conversationMessageCompleteResponse, err := UnmarshalConversationMessageCompleteResponse(bytes)
 //    bytes, err = conversationMessageCompleteResponse.Marshal()
+//
+//    conversationMessageCompleteStreamItem, err := UnmarshalConversationMessageCompleteStreamItem(bytes)
+//    bytes, err = conversationMessageCompleteStreamItem.Marshal()
 //
 //    conversationContactUpsertParams, err := UnmarshalConversationContactUpsertParams(bytes)
 //    bytes, err = conversationContactUpsertParams.Marshal()
@@ -541,6 +586,9 @@
 //    conversationMessageListResponse, err := UnmarshalConversationMessageListResponse(bytes)
 //    bytes, err = conversationMessageListResponse.Marshal()
 //
+//    conversationMessageListStreamItem, err := UnmarshalConversationMessageListStreamItem(bytes)
+//    bytes, err = conversationMessageListStreamItem.Marshal()
+//
 //    conversationMessageReceiveParams, err := UnmarshalConversationMessageReceiveParams(bytes)
 //    bytes, err = conversationMessageReceiveParams.Marshal()
 //
@@ -550,6 +598,9 @@
 //    conversationMessageReceiveResponse, err := UnmarshalConversationMessageReceiveResponse(bytes)
 //    bytes, err = conversationMessageReceiveResponse.Marshal()
 //
+//    conversationMessageReceiveStreamItem, err := UnmarshalConversationMessageReceiveStreamItem(bytes)
+//    bytes, err = conversationMessageReceiveStreamItem.Marshal()
+//
 //    conversationMessageSendParams, err := UnmarshalConversationMessageSendParams(bytes)
 //    bytes, err = conversationMessageSendParams.Marshal()
 //
@@ -558,6 +609,9 @@
 //
 //    conversationMessageSendResponse, err := UnmarshalConversationMessageSendResponse(bytes)
 //    bytes, err = conversationMessageSendResponse.Marshal()
+//
+//    conversationMessageSendStreamItem, err := UnmarshalConversationMessageSendStreamItem(bytes)
+//    bytes, err = conversationMessageSendStreamItem.Marshal()
 //
 //    conversationSessionCreateParams, err := UnmarshalConversationSessionCreateParams(bytes)
 //    bytes, err = conversationSessionCreateParams.Marshal()
@@ -604,6 +658,9 @@
 //    conversationCompleteResponse, err := UnmarshalConversationCompleteResponse(bytes)
 //    bytes, err = conversationCompleteResponse.Marshal()
 //
+//    conversationCompleteStreamItem, err := UnmarshalConversationCompleteStreamItem(bytes)
+//    bytes, err = conversationCompleteStreamItem.Marshal()
+//
 //    conversationCreateRequest, err := UnmarshalConversationCreateRequest(bytes)
 //    bytes, err = conversationCreateRequest.Marshal()
 //
@@ -622,11 +679,17 @@
 //    conversationsExportResponse, err := UnmarshalConversationsExportResponse(bytes)
 //    bytes, err = conversationsExportResponse.Marshal()
 //
+//    conversationsExportStreamItem, err := UnmarshalConversationsExportStreamItem(bytes)
+//    bytes, err = conversationsExportStreamItem.Marshal()
+//
 //    conversationListParams, err := UnmarshalConversationListParams(bytes)
 //    bytes, err = conversationListParams.Marshal()
 //
 //    conversationListResponse, err := UnmarshalConversationListResponse(bytes)
 //    bytes, err = conversationListResponse.Marshal()
+//
+//    conversationListStreamItem, err := UnmarshalConversationListStreamItem(bytes)
+//    bytes, err = conversationListStreamItem.Marshal()
 //
 //    datasetDeleteParams, err := UnmarshalDatasetDeleteParams(bytes)
 //    bytes, err = datasetDeleteParams.Marshal()
@@ -676,6 +739,9 @@
 //    datasetFileListResponse, err := UnmarshalDatasetFileListResponse(bytes)
 //    bytes, err = datasetFileListResponse.Marshal()
 //
+//    datasetFileListStreamItem, err := UnmarshalDatasetFileListStreamItem(bytes)
+//    bytes, err = datasetFileListStreamItem.Marshal()
+//
 //    datasetRecordDeleteParams, err := UnmarshalDatasetRecordDeleteParams(bytes)
 //    bytes, err = datasetRecordDeleteParams.Marshal()
 //
@@ -715,11 +781,17 @@
 //    datasetRecordsExportResponse, err := UnmarshalDatasetRecordsExportResponse(bytes)
 //    bytes, err = datasetRecordsExportResponse.Marshal()
 //
+//    datasetRecordsExportStreamItem, err := UnmarshalDatasetRecordsExportStreamItem(bytes)
+//    bytes, err = datasetRecordsExportStreamItem.Marshal()
+//
 //    datasetRecordListParams, err := UnmarshalDatasetRecordListParams(bytes)
 //    bytes, err = datasetRecordListParams.Marshal()
 //
 //    datasetRecordListResponse, err := UnmarshalDatasetRecordListResponse(bytes)
 //    bytes, err = datasetRecordListResponse.Marshal()
+//
+//    datasetRecordListStreamItem, err := UnmarshalDatasetRecordListStreamItem(bytes)
+//    bytes, err = datasetRecordListStreamItem.Marshal()
 //
 //    datasetSearchParams, err := UnmarshalDatasetSearchParams(bytes)
 //    bytes, err = datasetSearchParams.Marshal()
@@ -751,11 +823,17 @@
 //    datasetListResponse, err := UnmarshalDatasetListResponse(bytes)
 //    bytes, err = datasetListResponse.Marshal()
 //
+//    datasetListStreamItem, err := UnmarshalDatasetListStreamItem(bytes)
+//    bytes, err = datasetListStreamItem.Marshal()
+//
 //    eventLogsExportParams, err := UnmarshalEventLogsExportParams(bytes)
 //    bytes, err = eventLogsExportParams.Marshal()
 //
 //    eventLogsExportResponse, err := UnmarshalEventLogsExportResponse(bytes)
 //    bytes, err = eventLogsExportResponse.Marshal()
+//
+//    eventLogsExportStreamItem, err := UnmarshalEventLogsExportStreamItem(bytes)
+//    bytes, err = eventLogsExportStreamItem.Marshal()
 //
 //    eventLogListParams, err := UnmarshalEventLogListParams(bytes)
 //    bytes, err = eventLogListParams.Marshal()
@@ -763,8 +841,14 @@
 //    eventLogListResponse, err := UnmarshalEventLogListResponse(bytes)
 //    bytes, err = eventLogListResponse.Marshal()
 //
+//    eventLogListStreamItem, err := UnmarshalEventLogListStreamItem(bytes)
+//    bytes, err = eventLogListStreamItem.Marshal()
+//
 //    eventLogsSubscribeRequest, err := UnmarshalEventLogsSubscribeRequest(bytes)
 //    bytes, err = eventLogsSubscribeRequest.Marshal()
+//
+//    eventLogsSubscribeStreamItem, err := UnmarshalEventLogsSubscribeStreamItem(bytes)
+//    bytes, err = eventLogsSubscribeStreamItem.Marshal()
 //
 //    fileDeleteParams, err := UnmarshalFileDeleteParams(bytes)
 //    bytes, err = fileDeleteParams.Marshal()
@@ -826,6 +910,9 @@
 //    fileListResponse, err := UnmarshalFileListResponse(bytes)
 //    bytes, err = fileListResponse.Marshal()
 //
+//    fileListStreamItem, err := UnmarshalFileListStreamItem(bytes)
+//    bytes, err = fileListStreamItem.Marshal()
+//
 //    integrationDiscordDeleteParams, err := UnmarshalIntegrationDiscordDeleteParams(bytes)
 //    bytes, err = integrationDiscordDeleteParams.Marshal()
 //
@@ -871,6 +958,9 @@
 //    integrationDiscordListResponse, err := UnmarshalIntegrationDiscordListResponse(bytes)
 //    bytes, err = integrationDiscordListResponse.Marshal()
 //
+//    integrationDiscordListStreamItem, err := UnmarshalIntegrationDiscordListStreamItem(bytes)
+//    bytes, err = integrationDiscordListStreamItem.Marshal()
+//
 //    emailIntegrationDeleteParams, err := UnmarshalEmailIntegrationDeleteParams(bytes)
 //    bytes, err = emailIntegrationDeleteParams.Marshal()
 //
@@ -915,6 +1005,9 @@
 //
 //    emailIntegrationListResponse, err := UnmarshalEmailIntegrationListResponse(bytes)
 //    bytes, err = emailIntegrationListResponse.Marshal()
+//
+//    emailIntegrationListStreamItem, err := UnmarshalEmailIntegrationListStreamItem(bytes)
+//    bytes, err = emailIntegrationListStreamItem.Marshal()
 //
 //    integrationExtractDeleteParams, err := UnmarshalIntegrationExtractDeleteParams(bytes)
 //    bytes, err = integrationExtractDeleteParams.Marshal()
@@ -973,6 +1066,9 @@
 //    integrationExtractListResponse, err := UnmarshalIntegrationExtractListResponse(bytes)
 //    bytes, err = integrationExtractListResponse.Marshal()
 //
+//    integrationExtractListStreamItem, err := UnmarshalIntegrationExtractListStreamItem(bytes)
+//    bytes, err = integrationExtractListStreamItem.Marshal()
+//
 //    googlechatIntegrationDeleteParams, err := UnmarshalGooglechatIntegrationDeleteParams(bytes)
 //    bytes, err = googlechatIntegrationDeleteParams.Marshal()
 //
@@ -1017,6 +1113,9 @@
 //
 //    googlechatIntegrationListResponse, err := UnmarshalGooglechatIntegrationListResponse(bytes)
 //    bytes, err = googlechatIntegrationListResponse.Marshal()
+//
+//    googlechatIntegrationListStreamItem, err := UnmarshalGooglechatIntegrationListStreamItem(bytes)
+//    bytes, err = googlechatIntegrationListStreamItem.Marshal()
 //
 //    integrationInstagramDeleteParams, err := UnmarshalIntegrationInstagramDeleteParams(bytes)
 //    bytes, err = integrationInstagramDeleteParams.Marshal()
@@ -1063,6 +1162,9 @@
 //    integrationInstagramListResponse, err := UnmarshalIntegrationInstagramListResponse(bytes)
 //    bytes, err = integrationInstagramListResponse.Marshal()
 //
+//    integrationInstagramListStreamItem, err := UnmarshalIntegrationInstagramListStreamItem(bytes)
+//    bytes, err = integrationInstagramListStreamItem.Marshal()
+//
 //    integrationMCPServerDeleteParams, err := UnmarshalIntegrationMCPServerDeleteParams(bytes)
 //    bytes, err = integrationMCPServerDeleteParams.Marshal()
 //
@@ -1098,6 +1200,9 @@
 //
 //    integrationMCPServerListResponse, err := UnmarshalIntegrationMCPServerListResponse(bytes)
 //    bytes, err = integrationMCPServerListResponse.Marshal()
+//
+//    integrationMCPServerListStreamItem, err := UnmarshalIntegrationMCPServerListStreamItem(bytes)
+//    bytes, err = integrationMCPServerListStreamItem.Marshal()
 //
 //    integrationMessengerDeleteParams, err := UnmarshalIntegrationMessengerDeleteParams(bytes)
 //    bytes, err = integrationMessengerDeleteParams.Marshal()
@@ -1144,6 +1249,9 @@
 //    integrationMessengerListResponse, err := UnmarshalIntegrationMessengerListResponse(bytes)
 //    bytes, err = integrationMessengerListResponse.Marshal()
 //
+//    integrationMessengerListStreamItem, err := UnmarshalIntegrationMessengerListStreamItem(bytes)
+//    bytes, err = integrationMessengerListStreamItem.Marshal()
+//
 //    microsoftteamsIntegrationDeleteParams, err := UnmarshalMicrosoftteamsIntegrationDeleteParams(bytes)
 //    bytes, err = microsoftteamsIntegrationDeleteParams.Marshal()
 //
@@ -1188,6 +1296,9 @@
 //
 //    microsoftteamsIntegrationListResponse, err := UnmarshalMicrosoftteamsIntegrationListResponse(bytes)
 //    bytes, err = microsoftteamsIntegrationListResponse.Marshal()
+//
+//    microsoftteamsIntegrationListStreamItem, err := UnmarshalMicrosoftteamsIntegrationListStreamItem(bytes)
+//    bytes, err = microsoftteamsIntegrationListStreamItem.Marshal()
 //
 //    integrationNotionDeleteParams, err := UnmarshalIntegrationNotionDeleteParams(bytes)
 //    bytes, err = integrationNotionDeleteParams.Marshal()
@@ -1234,6 +1345,9 @@
 //    integrationNotionListResponse, err := UnmarshalIntegrationNotionListResponse(bytes)
 //    bytes, err = integrationNotionListResponse.Marshal()
 //
+//    integrationNotionListStreamItem, err := UnmarshalIntegrationNotionListStreamItem(bytes)
+//    bytes, err = integrationNotionListStreamItem.Marshal()
+//
 //    integrationSitemapDeleteParams, err := UnmarshalIntegrationSitemapDeleteParams(bytes)
 //    bytes, err = integrationSitemapDeleteParams.Marshal()
 //
@@ -1278,6 +1392,60 @@
 //
 //    integrationSitemapListResponse, err := UnmarshalIntegrationSitemapListResponse(bytes)
 //    bytes, err = integrationSitemapListResponse.Marshal()
+//
+//    integrationSitemapListStreamItem, err := UnmarshalIntegrationSitemapListStreamItem(bytes)
+//    bytes, err = integrationSitemapListStreamItem.Marshal()
+//
+//    skillServerIntegrationDeleteParams, err := UnmarshalSkillServerIntegrationDeleteParams(bytes)
+//    bytes, err = skillServerIntegrationDeleteParams.Marshal()
+//
+//    skillServerIntegrationDeleteRequest, err := UnmarshalSkillServerIntegrationDeleteRequest(bytes)
+//    bytes, err = skillServerIntegrationDeleteRequest.Marshal()
+//
+//    skillServerIntegrationDeleteResponse, err := UnmarshalSkillServerIntegrationDeleteResponse(bytes)
+//    bytes, err = skillServerIntegrationDeleteResponse.Marshal()
+//
+//    skillServerIntegrationFetchParams, err := UnmarshalSkillServerIntegrationFetchParams(bytes)
+//    bytes, err = skillServerIntegrationFetchParams.Marshal()
+//
+//    skillServerIntegrationFetchResponse, err := UnmarshalSkillServerIntegrationFetchResponse(bytes)
+//    bytes, err = skillServerIntegrationFetchResponse.Marshal()
+//
+//    skillServerManualFetchParams, err := UnmarshalSkillServerManualFetchParams(bytes)
+//    bytes, err = skillServerManualFetchParams.Marshal()
+//
+//    skillServerAbilityInvokeParams, err := UnmarshalSkillServerAbilityInvokeParams(bytes)
+//    bytes, err = skillServerAbilityInvokeParams.Marshal()
+//
+//    skillServerAbilityInvokeRequest, err := UnmarshalSkillServerAbilityInvokeRequest(bytes)
+//    bytes, err = skillServerAbilityInvokeRequest.Marshal()
+//
+//    skillServerAbilityInvokeResponse, err := UnmarshalSkillServerAbilityInvokeResponse(bytes)
+//    bytes, err = skillServerAbilityInvokeResponse.Marshal()
+//
+//    skillServerIntegrationUpdateParams, err := UnmarshalSkillServerIntegrationUpdateParams(bytes)
+//    bytes, err = skillServerIntegrationUpdateParams.Marshal()
+//
+//    skillServerIntegrationUpdateRequest, err := UnmarshalSkillServerIntegrationUpdateRequest(bytes)
+//    bytes, err = skillServerIntegrationUpdateRequest.Marshal()
+//
+//    skillServerIntegrationUpdateResponse, err := UnmarshalSkillServerIntegrationUpdateResponse(bytes)
+//    bytes, err = skillServerIntegrationUpdateResponse.Marshal()
+//
+//    skillServerIntegrationCreateRequest, err := UnmarshalSkillServerIntegrationCreateRequest(bytes)
+//    bytes, err = skillServerIntegrationCreateRequest.Marshal()
+//
+//    skillServerIntegrationCreateResponse, err := UnmarshalSkillServerIntegrationCreateResponse(bytes)
+//    bytes, err = skillServerIntegrationCreateResponse.Marshal()
+//
+//    skillServerIntegrationListParams, err := UnmarshalSkillServerIntegrationListParams(bytes)
+//    bytes, err = skillServerIntegrationListParams.Marshal()
+//
+//    skillServerIntegrationListResponse, err := UnmarshalSkillServerIntegrationListResponse(bytes)
+//    bytes, err = skillServerIntegrationListResponse.Marshal()
+//
+//    skillServerIntegrationListStreamItem, err := UnmarshalSkillServerIntegrationListStreamItem(bytes)
+//    bytes, err = skillServerIntegrationListStreamItem.Marshal()
 //
 //    integrationSlackDeleteParams, err := UnmarshalIntegrationSlackDeleteParams(bytes)
 //    bytes, err = integrationSlackDeleteParams.Marshal()
@@ -1324,6 +1492,9 @@
 //    integrationSlackListResponse, err := UnmarshalIntegrationSlackListResponse(bytes)
 //    bytes, err = integrationSlackListResponse.Marshal()
 //
+//    integrationSlackListStreamItem, err := UnmarshalIntegrationSlackListStreamItem(bytes)
+//    bytes, err = integrationSlackListStreamItem.Marshal()
+//
 //    integrationSupportDeleteParams, err := UnmarshalIntegrationSupportDeleteParams(bytes)
 //    bytes, err = integrationSupportDeleteParams.Marshal()
 //
@@ -1369,6 +1540,9 @@
 //    integrationSupportListResponse, err := UnmarshalIntegrationSupportListResponse(bytes)
 //    bytes, err = integrationSupportListResponse.Marshal()
 //
+//    integrationSupportListStreamItem, err := UnmarshalIntegrationSupportListStreamItem(bytes)
+//    bytes, err = integrationSupportListStreamItem.Marshal()
+//
 //    integrationTelegramDeleteParams, err := UnmarshalIntegrationTelegramDeleteParams(bytes)
 //    bytes, err = integrationTelegramDeleteParams.Marshal()
 //
@@ -1413,6 +1587,9 @@
 //
 //    integrationTelegramListResponse, err := UnmarshalIntegrationTelegramListResponse(bytes)
 //    bytes, err = integrationTelegramListResponse.Marshal()
+//
+//    integrationTelegramListStreamItem, err := UnmarshalIntegrationTelegramListStreamItem(bytes)
+//    bytes, err = integrationTelegramListStreamItem.Marshal()
 //
 //    triggerIntegrationDeleteParams, err := UnmarshalTriggerIntegrationDeleteParams(bytes)
 //    bytes, err = triggerIntegrationDeleteParams.Marshal()
@@ -1468,6 +1645,9 @@
 //    triggerIntegrationListResponse, err := UnmarshalTriggerIntegrationListResponse(bytes)
 //    bytes, err = triggerIntegrationListResponse.Marshal()
 //
+//    triggerIntegrationListStreamItem, err := UnmarshalTriggerIntegrationListStreamItem(bytes)
+//    bytes, err = triggerIntegrationListStreamItem.Marshal()
+//
 //    integrationTwilioDeleteParams, err := UnmarshalIntegrationTwilioDeleteParams(bytes)
 //    bytes, err = integrationTwilioDeleteParams.Marshal()
 //
@@ -1513,6 +1693,9 @@
 //    integrationTwilioListResponse, err := UnmarshalIntegrationTwilioListResponse(bytes)
 //    bytes, err = integrationTwilioListResponse.Marshal()
 //
+//    integrationTwilioListStreamItem, err := UnmarshalIntegrationTwilioListStreamItem(bytes)
+//    bytes, err = integrationTwilioListStreamItem.Marshal()
+//
 //    integrationWhatsAppDeleteParams, err := UnmarshalIntegrationWhatsAppDeleteParams(bytes)
 //    bytes, err = integrationWhatsAppDeleteParams.Marshal()
 //
@@ -1557,6 +1740,9 @@
 //
 //    integrationWhatsAppListResponse, err := UnmarshalIntegrationWhatsAppListResponse(bytes)
 //    bytes, err = integrationWhatsAppListResponse.Marshal()
+//
+//    integrationWhatsAppListStreamItem, err := UnmarshalIntegrationWhatsAppListStreamItem(bytes)
+//    bytes, err = integrationWhatsAppListStreamItem.Marshal()
 //
 //    integrationWidgetCloneParams, err := UnmarshalIntegrationWidgetCloneParams(bytes)
 //    bytes, err = integrationWidgetCloneParams.Marshal()
@@ -1627,6 +1813,9 @@
 //    integrationWidgetListResponse, err := UnmarshalIntegrationWidgetListResponse(bytes)
 //    bytes, err = integrationWidgetListResponse.Marshal()
 //
+//    integrationWidgetListStreamItem, err := UnmarshalIntegrationWidgetListStreamItem(bytes)
+//    bytes, err = integrationWidgetListStreamItem.Marshal()
+//
 //    magicFromPromptGenerateParams, err := UnmarshalMagicFromPromptGenerateParams(bytes)
 //    bytes, err = magicFromPromptGenerateParams.Marshal()
 //
@@ -1636,11 +1825,17 @@
 //    magicFromPromptGenerateResponse, err := UnmarshalMagicFromPromptGenerateResponse(bytes)
 //    bytes, err = magicFromPromptGenerateResponse.Marshal()
 //
+//    magicFromPromptGenerateStreamItem, err := UnmarshalMagicFromPromptGenerateStreamItem(bytes)
+//    bytes, err = magicFromPromptGenerateStreamItem.Marshal()
+//
 //    magicPromptListParams, err := UnmarshalMagicPromptListParams(bytes)
 //    bytes, err = magicPromptListParams.Marshal()
 //
 //    magicPromptListResponse, err := UnmarshalMagicPromptListResponse(bytes)
 //    bytes, err = magicPromptListResponse.Marshal()
+//
+//    magicPromptListStreamItem, err := UnmarshalMagicPromptListStreamItem(bytes)
+//    bytes, err = magicPromptListStreamItem.Marshal()
 //
 //    memoryDeleteParams, err := UnmarshalMemoryDeleteParams(bytes)
 //    bytes, err = memoryDeleteParams.Marshal()
@@ -1678,11 +1873,17 @@
 //    memoriesExportResponse, err := UnmarshalMemoriesExportResponse(bytes)
 //    bytes, err = memoriesExportResponse.Marshal()
 //
+//    memoriesExportStreamItem, err := UnmarshalMemoriesExportStreamItem(bytes)
+//    bytes, err = memoriesExportStreamItem.Marshal()
+//
 //    memoryListParams, err := UnmarshalMemoryListParams(bytes)
 //    bytes, err = memoryListParams.Marshal()
 //
 //    memoryListResponse, err := UnmarshalMemoryListResponse(bytes)
 //    bytes, err = memoryListResponse.Marshal()
+//
+//    memoryListStreamItem, err := UnmarshalMemoryListStreamItem(bytes)
+//    bytes, err = memoryListStreamItem.Marshal()
 //
 //    memorySearchRequest, err := UnmarshalMemorySearchRequest(bytes)
 //    bytes, err = memorySearchRequest.Marshal()
@@ -1728,6 +1929,9 @@
 //
 //    partnerUserContextListResponse, err := UnmarshalPartnerUserContextListResponse(bytes)
 //    bytes, err = partnerUserContextListResponse.Marshal()
+//
+//    partnerUserContextListStreamItem, err := UnmarshalPartnerUserContextListStreamItem(bytes)
+//    bytes, err = partnerUserContextListStreamItem.Marshal()
 //
 //    partnerUserDeleteParams, err := UnmarshalPartnerUserDeleteParams(bytes)
 //    bytes, err = partnerUserDeleteParams.Marshal()
@@ -1786,6 +1990,9 @@
 //    partnerUserTokenListResponse, err := UnmarshalPartnerUserTokenListResponse(bytes)
 //    bytes, err = partnerUserTokenListResponse.Marshal()
 //
+//    partnerUserTokenListStreamItem, err := UnmarshalPartnerUserTokenListStreamItem(bytes)
+//    bytes, err = partnerUserTokenListStreamItem.Marshal()
+//
 //    partnerUserUpdateParams, err := UnmarshalPartnerUserUpdateParams(bytes)
 //    bytes, err = partnerUserUpdateParams.Marshal()
 //
@@ -1807,11 +2014,17 @@
 //    partnerUserListResponse, err := UnmarshalPartnerUserListResponse(bytes)
 //    bytes, err = partnerUserListResponse.Marshal()
 //
+//    partnerUserListStreamItem, err := UnmarshalPartnerUserListStreamItem(bytes)
+//    bytes, err = partnerUserListStreamItem.Marshal()
+//
 //    platformAbilityListParams, err := UnmarshalPlatformAbilityListParams(bytes)
 //    bytes, err = platformAbilityListParams.Marshal()
 //
 //    platformAbilityListResponse, err := UnmarshalPlatformAbilityListResponse(bytes)
 //    bytes, err = platformAbilityListResponse.Marshal()
+//
+//    platformAbilityListStreamItem, err := UnmarshalPlatformAbilityListStreamItem(bytes)
+//    bytes, err = platformAbilityListStreamItem.Marshal()
 //
 //    platformAbilitiesSearchRequest, err := UnmarshalPlatformAbilitiesSearchRequest(bytes)
 //    bytes, err = platformAbilitiesSearchRequest.Marshal()
@@ -1825,6 +2038,9 @@
 //    platformActionListResponse, err := UnmarshalPlatformActionListResponse(bytes)
 //    bytes, err = platformActionListResponse.Marshal()
 //
+//    platformActionListStreamItem, err := UnmarshalPlatformActionListStreamItem(bytes)
+//    bytes, err = platformActionListStreamItem.Marshal()
+//
 //    platformDocFetchParams, err := UnmarshalPlatformDocFetchParams(bytes)
 //    bytes, err = platformDocFetchParams.Marshal()
 //
@@ -1836,6 +2052,9 @@
 //
 //    platformDocListResponse, err := UnmarshalPlatformDocListResponse(bytes)
 //    bytes, err = platformDocListResponse.Marshal()
+//
+//    platformDocListStreamItem, err := UnmarshalPlatformDocListStreamItem(bytes)
+//    bytes, err = platformDocListStreamItem.Marshal()
 //
 //    platformDocsSearchRequest, err := UnmarshalPlatformDocsSearchRequest(bytes)
 //    bytes, err = platformDocsSearchRequest.Marshal()
@@ -1864,6 +2083,9 @@
 //    platformExampleListResponse, err := UnmarshalPlatformExampleListResponse(bytes)
 //    bytes, err = platformExampleListResponse.Marshal()
 //
+//    platformExampleListStreamItem, err := UnmarshalPlatformExampleListStreamItem(bytes)
+//    bytes, err = platformExampleListStreamItem.Marshal()
+//
 //    platformExamplesSearchRequest, err := UnmarshalPlatformExamplesSearchRequest(bytes)
 //    bytes, err = platformExamplesSearchRequest.Marshal()
 //
@@ -1881,6 +2103,9 @@
 //
 //    platformGuideListResponse, err := UnmarshalPlatformGuideListResponse(bytes)
 //    bytes, err = platformGuideListResponse.Marshal()
+//
+//    platformGuideListStreamItem, err := UnmarshalPlatformGuideListStreamItem(bytes)
+//    bytes, err = platformGuideListStreamItem.Marshal()
 //
 //    platformGuidesSearchRequest, err := UnmarshalPlatformGuidesSearchRequest(bytes)
 //    bytes, err = platformGuidesSearchRequest.Marshal()
@@ -1900,6 +2125,9 @@
 //    platformManualListResponse, err := UnmarshalPlatformManualListResponse(bytes)
 //    bytes, err = platformManualListResponse.Marshal()
 //
+//    platformManualListStreamItem, err := UnmarshalPlatformManualListStreamItem(bytes)
+//    bytes, err = platformManualListStreamItem.Marshal()
+//
 //    platformManualsSearchRequest, err := UnmarshalPlatformManualsSearchRequest(bytes)
 //    bytes, err = platformManualsSearchRequest.Marshal()
 //
@@ -1912,11 +2140,17 @@
 //    platformModelListResponse, err := UnmarshalPlatformModelListResponse(bytes)
 //    bytes, err = platformModelListResponse.Marshal()
 //
+//    platformModelListStreamItem, err := UnmarshalPlatformModelListStreamItem(bytes)
+//    bytes, err = platformModelListStreamItem.Marshal()
+//
 //    platformSecretListParams, err := UnmarshalPlatformSecretListParams(bytes)
 //    bytes, err = platformSecretListParams.Marshal()
 //
 //    platformSecretListResponse, err := UnmarshalPlatformSecretListResponse(bytes)
 //    bytes, err = platformSecretListResponse.Marshal()
+//
+//    platformSecretListStreamItem, err := UnmarshalPlatformSecretListStreamItem(bytes)
+//    bytes, err = platformSecretListStreamItem.Marshal()
 //
 //    platformSecretsSearchRequest, err := UnmarshalPlatformSecretsSearchRequest(bytes)
 //    bytes, err = platformSecretsSearchRequest.Marshal()
@@ -1935,6 +2169,9 @@
 //
 //    platformTutorialListResponse, err := UnmarshalPlatformTutorialListResponse(bytes)
 //    bytes, err = platformTutorialListResponse.Marshal()
+//
+//    platformTutorialListStreamItem, err := UnmarshalPlatformTutorialListStreamItem(bytes)
+//    bytes, err = platformTutorialListStreamItem.Marshal()
 //
 //    platformTutorialsSearchRequest, err := UnmarshalPlatformTutorialsSearchRequest(bytes)
 //    bytes, err = platformTutorialsSearchRequest.Marshal()
@@ -1978,6 +2215,9 @@
 //    policyListResponse, err := UnmarshalPolicyListResponse(bytes)
 //    bytes, err = policyListResponse.Marshal()
 //
+//    policyListStreamItem, err := UnmarshalPolicyListStreamItem(bytes)
+//    bytes, err = policyListStreamItem.Marshal()
+//
 //    portalDeleteParams, err := UnmarshalPortalDeleteParams(bytes)
 //    bytes, err = portalDeleteParams.Marshal()
 //
@@ -2013,6 +2253,9 @@
 //
 //    portalListResponse, err := UnmarshalPortalListResponse(bytes)
 //    bytes, err = portalListResponse.Marshal()
+//
+//    portalListStreamItem, err := UnmarshalPortalListStreamItem(bytes)
+//    bytes, err = portalListStreamItem.Marshal()
 //
 //    secretAuthenticateParams, err := UnmarshalSecretAuthenticateParams(bytes)
 //    bytes, err = secretAuthenticateParams.Marshal()
@@ -2077,6 +2320,9 @@
 //    secretListResponse, err := UnmarshalSecretListResponse(bytes)
 //    bytes, err = secretListResponse.Marshal()
 //
+//    secretListStreamItem, err := UnmarshalSecretListStreamItem(bytes)
+//    bytes, err = secretListStreamItem.Marshal()
+//
 //    skillsetAbilityDeleteParams, err := UnmarshalSkillsetAbilityDeleteParams(bytes)
 //    bytes, err = skillsetAbilityDeleteParams.Marshal()
 //
@@ -2094,6 +2340,9 @@
 //
 //    skillsetAbilityExecuteResponse, err := UnmarshalSkillsetAbilityExecuteResponse(bytes)
 //    bytes, err = skillsetAbilityExecuteResponse.Marshal()
+//
+//    skillsetAbilityExecuteStreamItem, err := UnmarshalSkillsetAbilityExecuteStreamItem(bytes)
+//    bytes, err = skillsetAbilityExecuteStreamItem.Marshal()
 //
 //    skillsetAbilityFetchParams, err := UnmarshalSkillsetAbilityFetchParams(bytes)
 //    bytes, err = skillsetAbilityFetchParams.Marshal()
@@ -2125,11 +2374,17 @@
 //    skillsetAbilitiesExportResponse, err := UnmarshalSkillsetAbilitiesExportResponse(bytes)
 //    bytes, err = skillsetAbilitiesExportResponse.Marshal()
 //
+//    skillsetAbilitiesExportStreamItem, err := UnmarshalSkillsetAbilitiesExportStreamItem(bytes)
+//    bytes, err = skillsetAbilitiesExportStreamItem.Marshal()
+//
 //    skillsetAbilityListParams, err := UnmarshalSkillsetAbilityListParams(bytes)
 //    bytes, err = skillsetAbilityListParams.Marshal()
 //
 //    skillsetAbilityListResponse, err := UnmarshalSkillsetAbilityListResponse(bytes)
 //    bytes, err = skillsetAbilityListResponse.Marshal()
+//
+//    skillsetAbilityListStreamItem, err := UnmarshalSkillsetAbilityListStreamItem(bytes)
+//    bytes, err = skillsetAbilityListStreamItem.Marshal()
 //
 //    skillsetDeleteParams, err := UnmarshalSkillsetDeleteParams(bytes)
 //    bytes, err = skillsetDeleteParams.Marshal()
@@ -2167,6 +2422,9 @@
 //    skillsetListResponse, err := UnmarshalSkillsetListResponse(bytes)
 //    bytes, err = skillsetListResponse.Marshal()
 //
+//    skillsetListStreamItem, err := UnmarshalSkillsetListStreamItem(bytes)
+//    bytes, err = skillsetListStreamItem.Marshal()
+//
 //    spaceDeleteParams, err := UnmarshalSpaceDeleteParams(bytes)
 //    bytes, err = spaceDeleteParams.Marshal()
 //
@@ -2181,6 +2439,48 @@
 //
 //    spaceFetchResponse, err := UnmarshalSpaceFetchResponse(bytes)
 //    bytes, err = spaceFetchResponse.Marshal()
+//
+//    spaceSiteDeleteParams, err := UnmarshalSpaceSiteDeleteParams(bytes)
+//    bytes, err = spaceSiteDeleteParams.Marshal()
+//
+//    spaceSiteDeleteRequest, err := UnmarshalSpaceSiteDeleteRequest(bytes)
+//    bytes, err = spaceSiteDeleteRequest.Marshal()
+//
+//    spaceSiteDeleteResponse, err := UnmarshalSpaceSiteDeleteResponse(bytes)
+//    bytes, err = spaceSiteDeleteResponse.Marshal()
+//
+//    spaceSiteFetchParams, err := UnmarshalSpaceSiteFetchParams(bytes)
+//    bytes, err = spaceSiteFetchParams.Marshal()
+//
+//    spaceSiteFetchResponse, err := UnmarshalSpaceSiteFetchResponse(bytes)
+//    bytes, err = spaceSiteFetchResponse.Marshal()
+//
+//    spaceSiteUpdateParams, err := UnmarshalSpaceSiteUpdateParams(bytes)
+//    bytes, err = spaceSiteUpdateParams.Marshal()
+//
+//    spaceSiteUpdateRequest, err := UnmarshalSpaceSiteUpdateRequest(bytes)
+//    bytes, err = spaceSiteUpdateRequest.Marshal()
+//
+//    spaceSiteUpdateResponse, err := UnmarshalSpaceSiteUpdateResponse(bytes)
+//    bytes, err = spaceSiteUpdateResponse.Marshal()
+//
+//    spaceSiteCreateParams, err := UnmarshalSpaceSiteCreateParams(bytes)
+//    bytes, err = spaceSiteCreateParams.Marshal()
+//
+//    spaceSiteCreateRequest, err := UnmarshalSpaceSiteCreateRequest(bytes)
+//    bytes, err = spaceSiteCreateRequest.Marshal()
+//
+//    spaceSiteCreateResponse, err := UnmarshalSpaceSiteCreateResponse(bytes)
+//    bytes, err = spaceSiteCreateResponse.Marshal()
+//
+//    spaceSiteListParams, err := UnmarshalSpaceSiteListParams(bytes)
+//    bytes, err = spaceSiteListParams.Marshal()
+//
+//    spaceSiteListResponse, err := UnmarshalSpaceSiteListResponse(bytes)
+//    bytes, err = spaceSiteListResponse.Marshal()
+//
+//    spaceSiteListStreamItem, err := UnmarshalSpaceSiteListStreamItem(bytes)
+//    bytes, err = spaceSiteListStreamItem.Marshal()
 //
 //    spaceStoragePathCopyParams, err := UnmarshalSpaceStoragePathCopyParams(bytes)
 //    bytes, err = spaceStoragePathCopyParams.Marshal()
@@ -2251,11 +2551,17 @@
 //    spacesExportResponse, err := UnmarshalSpacesExportResponse(bytes)
 //    bytes, err = spacesExportResponse.Marshal()
 //
+//    spacesExportStreamItem, err := UnmarshalSpacesExportStreamItem(bytes)
+//    bytes, err = spacesExportStreamItem.Marshal()
+//
 //    spaceListParams, err := UnmarshalSpaceListParams(bytes)
 //    bytes, err = spaceListParams.Marshal()
 //
 //    spaceListResponse, err := UnmarshalSpaceListResponse(bytes)
 //    bytes, err = spaceListResponse.Marshal()
+//
+//    spaceListStreamItem, err := UnmarshalSpaceListStreamItem(bytes)
+//    bytes, err = spaceListStreamItem.Marshal()
 //
 //    taskCancelParams, err := UnmarshalTaskCancelParams(bytes)
 //    bytes, err = taskCancelParams.Marshal()
@@ -2289,6 +2595,9 @@
 //
 //    taskExecutionListResponse, err := UnmarshalTaskExecutionListResponse(bytes)
 //    bytes, err = taskExecutionListResponse.Marshal()
+//
+//    taskExecutionListStreamItem, err := UnmarshalTaskExecutionListStreamItem(bytes)
+//    bytes, err = taskExecutionListStreamItem.Marshal()
 //
 //    taskFetchParams, err := UnmarshalTaskFetchParams(bytes)
 //    bytes, err = taskFetchParams.Marshal()
@@ -2326,17 +2635,26 @@
 //    tasksExportResponse, err := UnmarshalTasksExportResponse(bytes)
 //    bytes, err = tasksExportResponse.Marshal()
 //
+//    tasksExportStreamItem, err := UnmarshalTasksExportStreamItem(bytes)
+//    bytes, err = tasksExportStreamItem.Marshal()
+//
 //    taskListParams, err := UnmarshalTaskListParams(bytes)
 //    bytes, err = taskListParams.Marshal()
 //
 //    taskListResponse, err := UnmarshalTaskListResponse(bytes)
 //    bytes, err = taskListResponse.Marshal()
 //
+//    taskListStreamItem, err := UnmarshalTaskListStreamItem(bytes)
+//    bytes, err = taskListStreamItem.Marshal()
+//
 //    teamListParams, err := UnmarshalTeamListParams(bytes)
 //    bytes, err = teamListParams.Marshal()
 //
 //    teamListResponse, err := UnmarshalTeamListResponse(bytes)
 //    bytes, err = teamListResponse.Marshal()
+//
+//    teamListStreamItem, err := UnmarshalTeamListStreamItem(bytes)
+//    bytes, err = teamListStreamItem.Marshal()
 //
 //    usageFetchResponse, err := UnmarshalUsageFetchResponse(bytes)
 //    bytes, err = usageFetchResponse.Marshal()
@@ -2818,6 +3136,16 @@ func (r *PlatformReportListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalPlatformReportListStreamItem(data []byte) (PlatformReportListStreamItem, error) {
+	var r PlatformReportListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PlatformReportListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalTaskWorkflowEventsSubscribeParams(data []byte) (TaskWorkflowEventsSubscribeParams, error) {
 	var r TaskWorkflowEventsSubscribeParams
 	err := json.Unmarshal(data, &r)
@@ -2835,6 +3163,16 @@ func UnmarshalTaskWorkflowEventsSubscribeRequest(data []byte) (TaskWorkflowEvent
 }
 
 func (r *TaskWorkflowEventsSubscribeRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTaskWorkflowEventsSubscribeStreamItem(data []byte) (TaskWorkflowEventsSubscribeStreamItem, error) {
+	var r TaskWorkflowEventsSubscribeStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskWorkflowEventsSubscribeStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -2885,6 +3223,16 @@ func UnmarshalBlueprintBulletinListResponse(data []byte) (BlueprintBulletinListR
 }
 
 func (r *BlueprintBulletinListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalBlueprintBulletinListStreamItem(data []byte) (BlueprintBulletinListStreamItem, error) {
+	var r BlueprintBulletinListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *BlueprintBulletinListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -3097,6 +3445,16 @@ func UnmarshalBlueprintListResponse(data []byte) (BlueprintListResponse, error) 
 }
 
 func (r *BlueprintListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalBlueprintListStreamItem(data []byte) (BlueprintListStreamItem, error) {
+	var r BlueprintListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *BlueprintListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -3394,6 +3752,16 @@ func (r *BotListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalBotListStreamItem(data []byte) (BotListStreamItem, error) {
+	var r BotListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *BotListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalChannelMessagePublishParams(data []byte) (ChannelMessagePublishParams, error) {
 	var r ChannelMessagePublishParams
 	err := json.Unmarshal(data, &r)
@@ -3444,6 +3812,16 @@ func (r *ChannelMessagesSubscribeRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalChannelMessagesSubscribeStreamItem(data []byte) (ChannelMessagesSubscribeStreamItem, error) {
+	var r ChannelMessagesSubscribeStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ChannelMessagesSubscribeStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalContactConversationListParams(data []byte) (ContactConversationListParams, error) {
 	var r ContactConversationListParams
 	err := json.Unmarshal(data, &r)
@@ -3461,6 +3839,16 @@ func UnmarshalContactConversationListResponse(data []byte) (ContactConversationL
 }
 
 func (r *ContactConversationListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalContactConversationListStreamItem(data []byte) (ContactConversationListStreamItem, error) {
+	var r ContactConversationListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactConversationListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -3536,6 +3924,16 @@ func (r *ContactMemoryListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalContactMemoryListStreamItem(data []byte) (ContactMemoryListStreamItem, error) {
+	var r ContactMemoryListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactMemoryListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalContactMemorySearchParams(data []byte) (ContactMemorySearchParams, error) {
 	var r ContactMemorySearchParams
 	err := json.Unmarshal(data, &r)
@@ -3583,6 +3981,16 @@ func UnmarshalContactRatingListResponse(data []byte) (ContactRatingListResponse,
 }
 
 func (r *ContactRatingListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalContactRatingListStreamItem(data []byte) (ContactRatingListStreamItem, error) {
+	var r ContactRatingListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactRatingListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -3702,6 +4110,16 @@ func (r *ContactSecretListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalContactSecretListStreamItem(data []byte) (ContactSecretListStreamItem, error) {
+	var r ContactSecretListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactSecretListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalContactSpaceListParams(data []byte) (ContactSpaceListParams, error) {
 	var r ContactSpaceListParams
 	err := json.Unmarshal(data, &r)
@@ -3722,6 +4140,16 @@ func (r *ContactSpaceListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalContactSpaceListStreamItem(data []byte) (ContactSpaceListStreamItem, error) {
+	var r ContactSpaceListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactSpaceListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalContactTaskListParams(data []byte) (ContactTaskListParams, error) {
 	var r ContactTaskListParams
 	err := json.Unmarshal(data, &r)
@@ -3739,6 +4167,16 @@ func UnmarshalContactTaskListResponse(data []byte) (ContactTaskListResponse, err
 }
 
 func (r *ContactTaskListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalContactTaskListStreamItem(data []byte) (ContactTaskListStreamItem, error) {
+	var r ContactTaskListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactTaskListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -3832,6 +4270,16 @@ func (r *ContactsExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalContactsExportStreamItem(data []byte) (ContactsExportStreamItem, error) {
+	var r ContactsExportStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactsExportStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalContactListParams(data []byte) (ContactListParams, error) {
 	var r ContactListParams
 	err := json.Unmarshal(data, &r)
@@ -3849,6 +4297,16 @@ func UnmarshalContactListResponse(data []byte) (ContactListResponse, error) {
 }
 
 func (r *ContactListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalContactListStreamItem(data []byte) (ContactListStreamItem, error) {
+	var r ContactListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -3949,6 +4407,16 @@ func UnmarshalConversationMessageCompleteResponse(data []byte) (ConversationMess
 }
 
 func (r *ConversationMessageCompleteResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalConversationMessageCompleteStreamItem(data []byte) (ConversationMessageCompleteStreamItem, error) {
+	var r ConversationMessageCompleteStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationMessageCompleteStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -4308,6 +4776,16 @@ func (r *ConversationMessageListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalConversationMessageListStreamItem(data []byte) (ConversationMessageListStreamItem, error) {
+	var r ConversationMessageListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationMessageListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalConversationMessageReceiveParams(data []byte) (ConversationMessageReceiveParams, error) {
 	var r ConversationMessageReceiveParams
 	err := json.Unmarshal(data, &r)
@@ -4338,6 +4816,16 @@ func (r *ConversationMessageReceiveResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalConversationMessageReceiveStreamItem(data []byte) (ConversationMessageReceiveStreamItem, error) {
+	var r ConversationMessageReceiveStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationMessageReceiveStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalConversationMessageSendParams(data []byte) (ConversationMessageSendParams, error) {
 	var r ConversationMessageSendParams
 	err := json.Unmarshal(data, &r)
@@ -4365,6 +4853,16 @@ func UnmarshalConversationMessageSendResponse(data []byte) (ConversationMessageS
 }
 
 func (r *ConversationMessageSendResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalConversationMessageSendStreamItem(data []byte) (ConversationMessageSendStreamItem, error) {
+	var r ConversationMessageSendStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationMessageSendStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -4518,6 +5016,16 @@ func (r *ConversationCompleteResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalConversationCompleteStreamItem(data []byte) (ConversationCompleteStreamItem, error) {
+	var r ConversationCompleteStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationCompleteStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalConversationCreateRequest(data []byte) (ConversationCreateRequest, error) {
 	var r ConversationCreateRequest
 	err := json.Unmarshal(data, &r)
@@ -4578,6 +5086,16 @@ func (r *ConversationsExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalConversationsExportStreamItem(data []byte) (ConversationsExportStreamItem, error) {
+	var r ConversationsExportStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationsExportStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalConversationListParams(data []byte) (ConversationListParams, error) {
 	var r ConversationListParams
 	err := json.Unmarshal(data, &r)
@@ -4595,6 +5113,16 @@ func UnmarshalConversationListResponse(data []byte) (ConversationListResponse, e
 }
 
 func (r *ConversationListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalConversationListStreamItem(data []byte) (ConversationListStreamItem, error) {
+	var r ConversationListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -4762,6 +5290,16 @@ func (r *DatasetFileListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalDatasetFileListStreamItem(data []byte) (DatasetFileListStreamItem, error) {
+	var r DatasetFileListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *DatasetFileListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalDatasetRecordDeleteParams(data []byte) (DatasetRecordDeleteParams, error) {
 	var r DatasetRecordDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -4894,6 +5432,16 @@ func (r *DatasetRecordsExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalDatasetRecordsExportStreamItem(data []byte) (DatasetRecordsExportStreamItem, error) {
+	var r DatasetRecordsExportStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *DatasetRecordsExportStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalDatasetRecordListParams(data []byte) (DatasetRecordListParams, error) {
 	var r DatasetRecordListParams
 	err := json.Unmarshal(data, &r)
@@ -4911,6 +5459,16 @@ func UnmarshalDatasetRecordListResponse(data []byte) (DatasetRecordListResponse,
 }
 
 func (r *DatasetRecordListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalDatasetRecordListStreamItem(data []byte) (DatasetRecordListStreamItem, error) {
+	var r DatasetRecordListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *DatasetRecordListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -5014,6 +5572,16 @@ func (r *DatasetListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalDatasetListStreamItem(data []byte) (DatasetListStreamItem, error) {
+	var r DatasetListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *DatasetListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalEventLogsExportParams(data []byte) (EventLogsExportParams, error) {
 	var r EventLogsExportParams
 	err := json.Unmarshal(data, &r)
@@ -5031,6 +5599,16 @@ func UnmarshalEventLogsExportResponse(data []byte) (EventLogsExportResponse, err
 }
 
 func (r *EventLogsExportResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalEventLogsExportStreamItem(data []byte) (EventLogsExportStreamItem, error) {
+	var r EventLogsExportStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *EventLogsExportStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -5054,6 +5632,16 @@ func (r *EventLogListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalEventLogListStreamItem(data []byte) (EventLogListStreamItem, error) {
+	var r EventLogListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *EventLogListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalEventLogsSubscribeRequest(data []byte) (EventLogsSubscribeRequest, error) {
 	var r EventLogsSubscribeRequest
 	err := json.Unmarshal(data, &r)
@@ -5061,6 +5649,16 @@ func UnmarshalEventLogsSubscribeRequest(data []byte) (EventLogsSubscribeRequest,
 }
 
 func (r *EventLogsSubscribeRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalEventLogsSubscribeStreamItem(data []byte) (EventLogsSubscribeStreamItem, error) {
+	var r EventLogsSubscribeStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *EventLogsSubscribeStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -5268,6 +5866,16 @@ func (r *FileListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalFileListStreamItem(data []byte) (FileListStreamItem, error) {
+	var r FileListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *FileListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalIntegrationDiscordDeleteParams(data []byte) (IntegrationDiscordDeleteParams, error) {
 	var r IntegrationDiscordDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -5422,6 +6030,16 @@ func (r *IntegrationDiscordListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalIntegrationDiscordListStreamItem(data []byte) (IntegrationDiscordListStreamItem, error) {
+	var r IntegrationDiscordListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationDiscordListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalEmailIntegrationDeleteParams(data []byte) (EmailIntegrationDeleteParams, error) {
 	var r EmailIntegrationDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -5573,6 +6191,16 @@ func UnmarshalEmailIntegrationListResponse(data []byte) (EmailIntegrationListRes
 }
 
 func (r *EmailIntegrationListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalEmailIntegrationListStreamItem(data []byte) (EmailIntegrationListStreamItem, error) {
+	var r EmailIntegrationListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *EmailIntegrationListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -5768,6 +6396,16 @@ func (r *IntegrationExtractListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalIntegrationExtractListStreamItem(data []byte) (IntegrationExtractListStreamItem, error) {
+	var r IntegrationExtractListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationExtractListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalGooglechatIntegrationDeleteParams(data []byte) (GooglechatIntegrationDeleteParams, error) {
 	var r GooglechatIntegrationDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -5919,6 +6557,16 @@ func UnmarshalGooglechatIntegrationListResponse(data []byte) (GooglechatIntegrat
 }
 
 func (r *GooglechatIntegrationListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGooglechatIntegrationListStreamItem(data []byte) (GooglechatIntegrationListStreamItem, error) {
+	var r GooglechatIntegrationListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GooglechatIntegrationListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -6076,6 +6724,16 @@ func (r *IntegrationInstagramListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalIntegrationInstagramListStreamItem(data []byte) (IntegrationInstagramListStreamItem, error) {
+	var r IntegrationInstagramListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationInstagramListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalIntegrationMCPServerDeleteParams(data []byte) (IntegrationMCPServerDeleteParams, error) {
 	var r IntegrationMCPServerDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -6195,6 +6853,16 @@ func UnmarshalIntegrationMCPServerListResponse(data []byte) (IntegrationMCPServe
 }
 
 func (r *IntegrationMCPServerListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalIntegrationMCPServerListStreamItem(data []byte) (IntegrationMCPServerListStreamItem, error) {
+	var r IntegrationMCPServerListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationMCPServerListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -6352,6 +7020,16 @@ func (r *IntegrationMessengerListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalIntegrationMessengerListStreamItem(data []byte) (IntegrationMessengerListStreamItem, error) {
+	var r IntegrationMessengerListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationMessengerListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalMicrosoftteamsIntegrationDeleteParams(data []byte) (MicrosoftteamsIntegrationDeleteParams, error) {
 	var r MicrosoftteamsIntegrationDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -6503,6 +7181,16 @@ func UnmarshalMicrosoftteamsIntegrationListResponse(data []byte) (Microsoftteams
 }
 
 func (r *MicrosoftteamsIntegrationListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMicrosoftteamsIntegrationListStreamItem(data []byte) (MicrosoftteamsIntegrationListStreamItem, error) {
+	var r MicrosoftteamsIntegrationListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MicrosoftteamsIntegrationListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -6660,6 +7348,16 @@ func (r *IntegrationNotionListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalIntegrationNotionListStreamItem(data []byte) (IntegrationNotionListStreamItem, error) {
+	var r IntegrationNotionListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationNotionListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalIntegrationSitemapDeleteParams(data []byte) (IntegrationSitemapDeleteParams, error) {
 	var r IntegrationSitemapDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -6811,6 +7509,188 @@ func UnmarshalIntegrationSitemapListResponse(data []byte) (IntegrationSitemapLis
 }
 
 func (r *IntegrationSitemapListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalIntegrationSitemapListStreamItem(data []byte) (IntegrationSitemapListStreamItem, error) {
+	var r IntegrationSitemapListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationSitemapListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerIntegrationDeleteParams(data []byte) (SkillServerIntegrationDeleteParams, error) {
+	var r SkillServerIntegrationDeleteParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationDeleteParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type SkillServerIntegrationDeleteRequest map[string]interface{}
+
+func UnmarshalSkillServerIntegrationDeleteRequest(data []byte) (SkillServerIntegrationDeleteRequest, error) {
+	var r SkillServerIntegrationDeleteRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationDeleteRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerIntegrationDeleteResponse(data []byte) (SkillServerIntegrationDeleteResponse, error) {
+	var r SkillServerIntegrationDeleteResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationDeleteResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerIntegrationFetchParams(data []byte) (SkillServerIntegrationFetchParams, error) {
+	var r SkillServerIntegrationFetchParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationFetchParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerIntegrationFetchResponse(data []byte) (SkillServerIntegrationFetchResponse, error) {
+	var r SkillServerIntegrationFetchResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationFetchResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerManualFetchParams(data []byte) (SkillServerManualFetchParams, error) {
+	var r SkillServerManualFetchParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerManualFetchParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerAbilityInvokeParams(data []byte) (SkillServerAbilityInvokeParams, error) {
+	var r SkillServerAbilityInvokeParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerAbilityInvokeParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerAbilityInvokeRequest(data []byte) (SkillServerAbilityInvokeRequest, error) {
+	var r SkillServerAbilityInvokeRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerAbilityInvokeRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerAbilityInvokeResponse(data []byte) (SkillServerAbilityInvokeResponse, error) {
+	var r SkillServerAbilityInvokeResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerAbilityInvokeResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerIntegrationUpdateParams(data []byte) (SkillServerIntegrationUpdateParams, error) {
+	var r SkillServerIntegrationUpdateParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationUpdateParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerIntegrationUpdateRequest(data []byte) (SkillServerIntegrationUpdateRequest, error) {
+	var r SkillServerIntegrationUpdateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationUpdateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerIntegrationUpdateResponse(data []byte) (SkillServerIntegrationUpdateResponse, error) {
+	var r SkillServerIntegrationUpdateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationUpdateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerIntegrationCreateRequest(data []byte) (SkillServerIntegrationCreateRequest, error) {
+	var r SkillServerIntegrationCreateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationCreateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerIntegrationCreateResponse(data []byte) (SkillServerIntegrationCreateResponse, error) {
+	var r SkillServerIntegrationCreateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationCreateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerIntegrationListParams(data []byte) (SkillServerIntegrationListParams, error) {
+	var r SkillServerIntegrationListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerIntegrationListResponse(data []byte) (SkillServerIntegrationListResponse, error) {
+	var r SkillServerIntegrationListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillServerIntegrationListStreamItem(data []byte) (SkillServerIntegrationListStreamItem, error) {
+	var r SkillServerIntegrationListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillServerIntegrationListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -6968,6 +7848,16 @@ func (r *IntegrationSlackListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalIntegrationSlackListStreamItem(data []byte) (IntegrationSlackListStreamItem, error) {
+	var r IntegrationSlackListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationSlackListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalIntegrationSupportDeleteParams(data []byte) (IntegrationSupportDeleteParams, error) {
 	var r IntegrationSupportDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -7117,6 +8007,16 @@ func UnmarshalIntegrationSupportListResponse(data []byte) (IntegrationSupportLis
 }
 
 func (r *IntegrationSupportListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalIntegrationSupportListStreamItem(data []byte) (IntegrationSupportListStreamItem, error) {
+	var r IntegrationSupportListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationSupportListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7271,6 +8171,16 @@ func UnmarshalIntegrationTelegramListResponse(data []byte) (IntegrationTelegramL
 }
 
 func (r *IntegrationTelegramListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalIntegrationTelegramListStreamItem(data []byte) (IntegrationTelegramListStreamItem, error) {
+	var r IntegrationTelegramListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationTelegramListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -7460,6 +8370,16 @@ func (r *TriggerIntegrationListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalTriggerIntegrationListStreamItem(data []byte) (TriggerIntegrationListStreamItem, error) {
+	var r TriggerIntegrationListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TriggerIntegrationListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalIntegrationTwilioDeleteParams(data []byte) (IntegrationTwilioDeleteParams, error) {
 	var r IntegrationTwilioDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -7614,6 +8534,16 @@ func (r *IntegrationTwilioListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalIntegrationTwilioListStreamItem(data []byte) (IntegrationTwilioListStreamItem, error) {
+	var r IntegrationTwilioListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationTwilioListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalIntegrationWhatsAppDeleteParams(data []byte) (IntegrationWhatsAppDeleteParams, error) {
 	var r IntegrationWhatsAppDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -7765,6 +8695,16 @@ func UnmarshalIntegrationWhatsAppListResponse(data []byte) (IntegrationWhatsAppL
 }
 
 func (r *IntegrationWhatsAppListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalIntegrationWhatsAppListStreamItem(data []byte) (IntegrationWhatsAppListStreamItem, error) {
+	var r IntegrationWhatsAppListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationWhatsAppListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8004,6 +8944,16 @@ func (r *IntegrationWidgetListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalIntegrationWidgetListStreamItem(data []byte) (IntegrationWidgetListStreamItem, error) {
+	var r IntegrationWidgetListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *IntegrationWidgetListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalMagicFromPromptGenerateParams(data []byte) (MagicFromPromptGenerateParams, error) {
 	var r MagicFromPromptGenerateParams
 	err := json.Unmarshal(data, &r)
@@ -8034,6 +8984,16 @@ func (r *MagicFromPromptGenerateResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalMagicFromPromptGenerateStreamItem(data []byte) (MagicFromPromptGenerateStreamItem, error) {
+	var r MagicFromPromptGenerateStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MagicFromPromptGenerateStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalMagicPromptListParams(data []byte) (MagicPromptListParams, error) {
 	var r MagicPromptListParams
 	err := json.Unmarshal(data, &r)
@@ -8051,6 +9011,16 @@ func UnmarshalMagicPromptListResponse(data []byte) (MagicPromptListResponse, err
 }
 
 func (r *MagicPromptListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMagicPromptListStreamItem(data []byte) (MagicPromptListStreamItem, error) {
+	var r MagicPromptListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MagicPromptListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8176,6 +9146,16 @@ func (r *MemoriesExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalMemoriesExportStreamItem(data []byte) (MemoriesExportStreamItem, error) {
+	var r MemoriesExportStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MemoriesExportStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalMemoryListParams(data []byte) (MemoryListParams, error) {
 	var r MemoryListParams
 	err := json.Unmarshal(data, &r)
@@ -8193,6 +9173,16 @@ func UnmarshalMemoryListResponse(data []byte) (MemoryListResponse, error) {
 }
 
 func (r *MemoryListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalMemoryListStreamItem(data []byte) (MemoryListStreamItem, error) {
+	var r MemoryListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *MemoryListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8345,6 +9335,16 @@ func UnmarshalPartnerUserContextListResponse(data []byte) (PartnerUserContextLis
 }
 
 func (r *PartnerUserContextListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPartnerUserContextListStreamItem(data []byte) (PartnerUserContextListStreamItem, error) {
+	var r PartnerUserContextListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserContextListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8542,6 +9542,16 @@ func (r *PartnerUserTokenListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalPartnerUserTokenListStreamItem(data []byte) (PartnerUserTokenListStreamItem, error) {
+	var r PartnerUserTokenListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserTokenListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalPartnerUserUpdateParams(data []byte) (PartnerUserUpdateParams, error) {
 	var r PartnerUserUpdateParams
 	err := json.Unmarshal(data, &r)
@@ -8612,6 +9622,16 @@ func (r *PartnerUserListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalPartnerUserListStreamItem(data []byte) (PartnerUserListStreamItem, error) {
+	var r PartnerUserListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PartnerUserListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalPlatformAbilityListParams(data []byte) (PlatformAbilityListParams, error) {
 	var r PlatformAbilityListParams
 	err := json.Unmarshal(data, &r)
@@ -8629,6 +9649,16 @@ func UnmarshalPlatformAbilityListResponse(data []byte) (PlatformAbilityListRespo
 }
 
 func (r *PlatformAbilityListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPlatformAbilityListStreamItem(data []byte) (PlatformAbilityListStreamItem, error) {
+	var r PlatformAbilityListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PlatformAbilityListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8672,6 +9702,16 @@ func (r *PlatformActionListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalPlatformActionListStreamItem(data []byte) (PlatformActionListStreamItem, error) {
+	var r PlatformActionListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PlatformActionListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalPlatformDocFetchParams(data []byte) (PlatformDocFetchParams, error) {
 	var r PlatformDocFetchParams
 	err := json.Unmarshal(data, &r)
@@ -8709,6 +9749,16 @@ func UnmarshalPlatformDocListResponse(data []byte) (PlatformDocListResponse, err
 }
 
 func (r *PlatformDocListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPlatformDocListStreamItem(data []byte) (PlatformDocListStreamItem, error) {
+	var r PlatformDocListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PlatformDocListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8804,6 +9854,16 @@ func (r *PlatformExampleListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalPlatformExampleListStreamItem(data []byte) (PlatformExampleListStreamItem, error) {
+	var r PlatformExampleListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PlatformExampleListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalPlatformExamplesSearchRequest(data []byte) (PlatformExamplesSearchRequest, error) {
 	var r PlatformExamplesSearchRequest
 	err := json.Unmarshal(data, &r)
@@ -8861,6 +9921,16 @@ func UnmarshalPlatformGuideListResponse(data []byte) (PlatformGuideListResponse,
 }
 
 func (r *PlatformGuideListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPlatformGuideListStreamItem(data []byte) (PlatformGuideListStreamItem, error) {
+	var r PlatformGuideListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PlatformGuideListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -8924,6 +9994,16 @@ func (r *PlatformManualListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalPlatformManualListStreamItem(data []byte) (PlatformManualListStreamItem, error) {
+	var r PlatformManualListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PlatformManualListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalPlatformManualsSearchRequest(data []byte) (PlatformManualsSearchRequest, error) {
 	var r PlatformManualsSearchRequest
 	err := json.Unmarshal(data, &r)
@@ -8964,6 +10044,16 @@ func (r *PlatformModelListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalPlatformModelListStreamItem(data []byte) (PlatformModelListStreamItem, error) {
+	var r PlatformModelListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PlatformModelListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalPlatformSecretListParams(data []byte) (PlatformSecretListParams, error) {
 	var r PlatformSecretListParams
 	err := json.Unmarshal(data, &r)
@@ -8981,6 +10071,16 @@ func UnmarshalPlatformSecretListResponse(data []byte) (PlatformSecretListRespons
 }
 
 func (r *PlatformSecretListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPlatformSecretListStreamItem(data []byte) (PlatformSecretListStreamItem, error) {
+	var r PlatformSecretListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PlatformSecretListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -9041,6 +10141,16 @@ func UnmarshalPlatformTutorialListResponse(data []byte) (PlatformTutorialListRes
 }
 
 func (r *PlatformTutorialListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPlatformTutorialListStreamItem(data []byte) (PlatformTutorialListStreamItem, error) {
+	var r PlatformTutorialListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PlatformTutorialListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -9186,6 +10296,16 @@ func (r *PolicyListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalPolicyListStreamItem(data []byte) (PolicyListStreamItem, error) {
+	var r PolicyListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PolicyListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalPortalDeleteParams(data []byte) (PortalDeleteParams, error) {
 	var r PortalDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -9305,6 +10425,16 @@ func UnmarshalPortalListResponse(data []byte) (PortalListResponse, error) {
 }
 
 func (r *PortalListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalPortalListStreamItem(data []byte) (PortalListStreamItem, error) {
+	var r PortalListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *PortalListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -9526,6 +10656,16 @@ func (r *SecretListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalSecretListStreamItem(data []byte) (SecretListStreamItem, error) {
+	var r SecretListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SecretListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalSkillsetAbilityDeleteParams(data []byte) (SkillsetAbilityDeleteParams, error) {
 	var r SkillsetAbilityDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -9585,6 +10725,16 @@ func UnmarshalSkillsetAbilityExecuteResponse(data []byte) (SkillsetAbilityExecut
 }
 
 func (r *SkillsetAbilityExecuteResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillsetAbilityExecuteStreamItem(data []byte) (SkillsetAbilityExecuteStreamItem, error) {
+	var r SkillsetAbilityExecuteStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillsetAbilityExecuteStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -9688,6 +10838,16 @@ func (r *SkillsetAbilitiesExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalSkillsetAbilitiesExportStreamItem(data []byte) (SkillsetAbilitiesExportStreamItem, error) {
+	var r SkillsetAbilitiesExportStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillsetAbilitiesExportStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalSkillsetAbilityListParams(data []byte) (SkillsetAbilityListParams, error) {
 	var r SkillsetAbilityListParams
 	err := json.Unmarshal(data, &r)
@@ -9705,6 +10865,16 @@ func UnmarshalSkillsetAbilityListResponse(data []byte) (SkillsetAbilityListRespo
 }
 
 func (r *SkillsetAbilityListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSkillsetAbilityListStreamItem(data []byte) (SkillsetAbilityListStreamItem, error) {
+	var r SkillsetAbilityListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillsetAbilityListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -9830,6 +11000,16 @@ func (r *SkillsetListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalSkillsetListStreamItem(data []byte) (SkillsetListStreamItem, error) {
+	var r SkillsetListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SkillsetListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalSpaceDeleteParams(data []byte) (SpaceDeleteParams, error) {
 	var r SpaceDeleteParams
 	err := json.Unmarshal(data, &r)
@@ -9879,6 +11059,148 @@ func UnmarshalSpaceFetchResponse(data []byte) (SpaceFetchResponse, error) {
 }
 
 func (r *SpaceFetchResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteDeleteParams(data []byte) (SpaceSiteDeleteParams, error) {
+	var r SpaceSiteDeleteParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteDeleteParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type SpaceSiteDeleteRequest map[string]interface{}
+
+func UnmarshalSpaceSiteDeleteRequest(data []byte) (SpaceSiteDeleteRequest, error) {
+	var r SpaceSiteDeleteRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteDeleteRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteDeleteResponse(data []byte) (SpaceSiteDeleteResponse, error) {
+	var r SpaceSiteDeleteResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteDeleteResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteFetchParams(data []byte) (SpaceSiteFetchParams, error) {
+	var r SpaceSiteFetchParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteFetchParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteFetchResponse(data []byte) (SpaceSiteFetchResponse, error) {
+	var r SpaceSiteFetchResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteFetchResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteUpdateParams(data []byte) (SpaceSiteUpdateParams, error) {
+	var r SpaceSiteUpdateParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteUpdateParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteUpdateRequest(data []byte) (SpaceSiteUpdateRequest, error) {
+	var r SpaceSiteUpdateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteUpdateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteUpdateResponse(data []byte) (SpaceSiteUpdateResponse, error) {
+	var r SpaceSiteUpdateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteUpdateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteCreateParams(data []byte) (SpaceSiteCreateParams, error) {
+	var r SpaceSiteCreateParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteCreateParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteCreateRequest(data []byte) (SpaceSiteCreateRequest, error) {
+	var r SpaceSiteCreateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteCreateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteCreateResponse(data []byte) (SpaceSiteCreateResponse, error) {
+	var r SpaceSiteCreateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteCreateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteListParams(data []byte) (SpaceSiteListParams, error) {
+	var r SpaceSiteListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteListResponse(data []byte) (SpaceSiteListResponse, error) {
+	var r SpaceSiteListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceSiteListStreamItem(data []byte) (SpaceSiteListStreamItem, error) {
+	var r SpaceSiteListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceSiteListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -10112,6 +11434,16 @@ func (r *SpacesExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalSpacesExportStreamItem(data []byte) (SpacesExportStreamItem, error) {
+	var r SpacesExportStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpacesExportStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalSpaceListParams(data []byte) (SpaceListParams, error) {
 	var r SpaceListParams
 	err := json.Unmarshal(data, &r)
@@ -10129,6 +11461,16 @@ func UnmarshalSpaceListResponse(data []byte) (SpaceListResponse, error) {
 }
 
 func (r *SpaceListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSpaceListStreamItem(data []byte) (SpaceListStreamItem, error) {
+	var r SpaceListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SpaceListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -10245,6 +11587,16 @@ func UnmarshalTaskExecutionListResponse(data []byte) (TaskExecutionListResponse,
 }
 
 func (r *TaskExecutionListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTaskExecutionListStreamItem(data []byte) (TaskExecutionListStreamItem, error) {
+	var r TaskExecutionListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskExecutionListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -10370,6 +11722,16 @@ func (r *TasksExportResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalTasksExportStreamItem(data []byte) (TasksExportStreamItem, error) {
+	var r TasksExportStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TasksExportStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalTaskListParams(data []byte) (TaskListParams, error) {
 	var r TaskListParams
 	err := json.Unmarshal(data, &r)
@@ -10390,6 +11752,16 @@ func (r *TaskListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalTaskListStreamItem(data []byte) (TaskListStreamItem, error) {
+	var r TaskListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TaskListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalTeamListParams(data []byte) (TeamListParams, error) {
 	var r TeamListParams
 	err := json.Unmarshal(data, &r)
@@ -10407,6 +11779,16 @@ func UnmarshalTeamListResponse(data []byte) (TeamListResponse, error) {
 }
 
 func (r *TeamListResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalTeamListStreamItem(data []byte) (TeamListStreamItem, error) {
+	var r TeamListStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *TeamListStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -11070,6 +12452,29 @@ type PlatformReportListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
+type PlatformReportListStreamItem struct {
+	// Instance list properties                                 
+	Data                       PlatformReportListStreamItemData `json:"data"`
+	// The type of event                                        
+	Type                       PlatformReportListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PlatformReportListStreamItemData struct {
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
 type TaskWorkflowEventsSubscribeParams struct {
 	// The ID of the task       
 	TaskID               string `json:"taskId"`
@@ -11078,6 +12483,52 @@ type TaskWorkflowEventsSubscribeParams struct {
 type TaskWorkflowEventsSubscribeRequest struct {
 	// Number of recent workflow events to replay before live events.       
 	HistoryLength                                                    *int64 `json:"historyLength,omitempty"`
+}
+
+// An item in the task workflow subscription response
+type TaskWorkflowEventsSubscribeStreamItem struct {
+	// The event creation timestamp in milliseconds since the Unix epoch                                          
+	CreatedAt                                                           float64                                   `json:"createdAt"`
+	// The data for the operation begin event                                                                     
+	//                                                                                                            
+	// The data for the operation end event                                                                       
+	//                                                                                                            
+	// The data for the error event                                                                               
+	Data                                                                TaskWorkflowEventsSubscribeStreamItemData `json:"data"`
+	// The type of event                                                                                          
+	Type                                                                TaskWorkflowEventsSubscribeStreamItemType `json:"type"`
+}
+
+// The data for the operation begin event
+//
+// The data for the operation end event
+//
+// The data for the error event
+type TaskWorkflowEventsSubscribeStreamItemData struct {
+	// The action associated with the operation              
+	Action                                     *PurpleAction `json:"action,omitempty"`
+	// The operation ID                                      
+	ID                                         *string       `json:"id,omitempty"`
+	// The error code                                        
+	Code                                       *string       `json:"code,omitempty"`
+	// The error message                                     
+	Message                                    *string       `json:"message,omitempty"`
+}
+
+// The action associated with the operation
+type PurpleAction struct {
+	// The action icon                     
+	Icon                       *string     `json:"icon,omitempty"`
+	// The action ID                       
+	ID                         string      `json:"id"`
+	// The action input                    
+	Input                      interface{} `json:"input"`
+	// The action justification            
+	Justification              *string     `json:"justification,omitempty"`
+	// The action kind                     
+	Kind                       *PurpleKind `json:"kind,omitempty"`
+	// The action name                     
+	Name                       *string     `json:"name,omitempty"`
 }
 
 type BlueprintBulletinCreateParams struct {
@@ -11141,6 +12592,27 @@ type BlueprintBulletinListResponseItem struct {
 	Text                                                                       string  `json:"text"`
 }
 
+type BlueprintBulletinListStreamItem struct {
+	Data                BlueprintBulletinListStreamItemData `json:"data"`
+	// The type of event                                    
+	Type                BlueprintBulletinListStreamItemType `json:"type"`
+}
+
+type BlueprintBulletinListStreamItemData struct {
+	// The display name of the author who posted the bulletin (a bot or a user)        
+	Author                                                                     *string `json:"author,omitempty"`
+	// The ID of the bot the bulletin is associated with, when posted by a bot         
+	BotID                                                                      *string `json:"botId,omitempty"`
+	// The epoch millisecond timestamp when the bulletin was created                   
+	CreatedAt                                                                  float64 `json:"createdAt"`
+	// The epoch millisecond timestamp when the bulletin expires                       
+	ExpiresAt                                                                  float64 `json:"expiresAt"`
+	// The unique identifier of the bulletin                                           
+	ID                                                                         string  `json:"id"`
+	// The message body                                                                
+	Text                                                                       string  `json:"text"`
+}
+
 type BlueprintCloneParams struct {
 	// The ID of the blueprint to clone       
 	BlueprintID                        string `json:"blueprintId"`
@@ -11176,6 +12648,8 @@ type BlueprintFetchParams struct {
 
 // Instance list properties
 type BlueprintFetchResponse struct {
+	// The unique alias for the instance                                                 
+	Alias                                              *string                           `json:"alias,omitempty"`
 	// The timestamp (ms) when the instance was created                                  
 	CreatedAt                                          float64                           `json:"createdAt"`
 	// The associated description                                                        
@@ -11209,7 +12683,10 @@ type BlueprintResourcesImportParams struct {
 }
 
 type BlueprintResourcesImportRequest struct {
-	Resources map[string]interface{} `json:"resources"`
+	// When true and the blueprint is addressed by the caller's own @alias, it is created if it                         
+	// does not exist yet (idempotent provision). Ignored for a raw id, which still 404s on miss.                       
+	Ensure                                                                                       *bool                  `json:"ensure,omitempty"`
+	Resources                                                                                    map[string]interface{} `json:"resources"`
 }
 
 type BlueprintResourceListParams struct {
@@ -11285,6 +12762,8 @@ type BlueprintListResponse struct {
 
 // Instance list properties
 type BlueprintListResponseItem struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -11299,6 +12778,33 @@ type BlueprintListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 	// The blueprint visibility                                               
 	Visibility                                         *PurpleVisibility      `json:"visibility,omitempty"`
+}
+
+type BlueprintListStreamItem struct {
+	// Instance list properties                            
+	Data                       BlueprintListStreamItemData `json:"data"`
+	// The type of event                                   
+	Type                       BlueprintListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type BlueprintListStreamItemData struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The blueprint visibility                                               
+	Visibility                                         *FluffyVisibility      `json:"visibility,omitempty"`
 }
 
 type BotCloneParams struct {
@@ -11344,6 +12850,8 @@ type BotFetchParams struct {
 
 // Blueprint properties
 type BotFetchResponse struct {
+	// The unique alias for the instance                                             
+	Alias                                                *string                     `json:"alias,omitempty"`
 	// The backstory this configuration is using                                     
 	Backstory                                            *string                     `json:"backstory,omitempty"`
 	// The ID of the blueprint                                                       
@@ -11560,6 +13068,8 @@ type BotListResponse struct {
 
 // Blueprint properties
 type BotListResponseItem struct {
+	// The unique alias for the instance                                        
+	Alias                                                *string                `json:"alias,omitempty"`
 	// The backstory this configuration is using                                
 	Backstory                                            *string                `json:"backstory,omitempty"`
 	// The ID of the blueprint                                                  
@@ -11587,7 +13097,48 @@ type BotListResponseItem struct {
 	// The timestamp (ms) when the instance was updated                         
 	UpdatedAt                                            float64                `json:"updatedAt"`
 	// The bot visibility                                                       
-	Visibility                                           *FluffyVisibility      `json:"visibility,omitempty"`
+	Visibility                                           *TentacledVisibility   `json:"visibility,omitempty"`
+}
+
+type BotListStreamItem struct {
+	// Blueprint properties                      
+	Data                   BotListStreamItemData `json:"data"`
+	// The type of event                         
+	Type                   BotListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type BotListStreamItemData struct {
+	// The unique alias for the instance                                        
+	Alias                                                *string                `json:"alias,omitempty"`
+	// The backstory this configuration is using                                
+	Backstory                                            *string                `json:"backstory,omitempty"`
+	// The ID of the blueprint                                                  
+	BlueprintID                                          *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                         
+	CreatedAt                                            float64                `json:"createdAt"`
+	// The id of the dataset this configuration is using                        
+	DatasetID                                            *string                `json:"datasetId,omitempty"`
+	// The associated description                                               
+	Description                                          *string                `json:"description,omitempty"`
+	// The instance ID                                                          
+	ID                                                   string                 `json:"id"`
+	// Meta data information                                                    
+	Meta                                                 map[string]interface{} `json:"meta,omitempty"`
+	// A model definition                                                       
+	Model                                                *string                `json:"model,omitempty"`
+	// The moderation flag for this configuration                               
+	Moderation                                           *bool                  `json:"moderation,omitempty"`
+	// The associated name                                                      
+	Name                                                 *string                `json:"name,omitempty"`
+	// The privacy flag for this configuration                                  
+	Privacy                                              *bool                  `json:"privacy,omitempty"`
+	// The id of the skillset this configuration is using                       
+	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
+	// The timestamp (ms) when the instance was updated                         
+	UpdatedAt                                            float64                `json:"updatedAt"`
+	// The bot visibility                                                       
+	Visibility                                           *StickyVisibility      `json:"visibility,omitempty"`
 }
 
 type ChannelMessagePublishParams struct {
@@ -11620,6 +13171,13 @@ type ChannelMessagesSubscribeRequest struct {
 	HistoryLength                                              *int64 `json:"historyLength,omitempty"`
 }
 
+type ChannelMessagesSubscribeStreamItem struct {
+	// The message data published to the channel                                       
+	Data                                        map[string]interface{}                 `json:"data"`
+	// The type of event                                                               
+	Type                                        ChannelMessagesSubscribeStreamItemType `json:"type"`
+}
+
 type ContactConversationListParams struct {
 	// The ID of the contact to list conversations for                                    
 	ContactID                                         string                              `json:"contactId"`
@@ -11641,6 +13199,49 @@ type ContactConversationListResponse struct {
 //
 // A bot configuration that can be applied without a dedicated bot instance.
 type ContactConversationListResponseItem struct {
+	// The contact id assigned to this conversation                             
+	ContactID                                            *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                         
+	CreatedAt                                            float64                `json:"createdAt"`
+	// The associated description                                               
+	Description                                          *string                `json:"description,omitempty"`
+	// The instance ID                                                          
+	ID                                                   string                 `json:"id"`
+	// Meta data information                                                    
+	Meta                                                 map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                      
+	Name                                                 *string                `json:"name,omitempty"`
+	// The task id assigned to this conversation                                
+	TaskID                                               *string                `json:"taskId,omitempty"`
+	// The timestamp (ms) when the instance was updated                         
+	UpdatedAt                                            float64                `json:"updatedAt"`
+	// The ID of the bot this configuration is using                            
+	BotID                                                *string                `json:"botId,omitempty"`
+	// The backstory this configuration is using                                
+	Backstory                                            *string                `json:"backstory,omitempty"`
+	// The id of the dataset this configuration is using                        
+	DatasetID                                            *string                `json:"datasetId,omitempty"`
+	// A model definition                                                       
+	Model                                                *string                `json:"model,omitempty"`
+	// The moderation flag for this configuration                               
+	Moderation                                           *bool                  `json:"moderation,omitempty"`
+	// The privacy flag for this configuration                                  
+	Privacy                                              *bool                  `json:"privacy,omitempty"`
+	// The id of the skillset this configuration is using                       
+	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
+}
+
+type ContactConversationListStreamItem struct {
+	// A bot configuration or reference                                      
+	Data                               ContactConversationListStreamItemData `json:"data"`
+	// The type of event                                                     
+	Type                               ContactConversationListStreamItemType `json:"type"`
+}
+
+// A bot configuration or reference
+//
+// A bot configuration that can be applied without a dedicated bot instance.
+type ContactConversationListStreamItemData struct {
 	// The contact id assigned to this conversation                             
 	ContactID                                            *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                         
@@ -11753,6 +13354,33 @@ type ContactMemoryListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
+type ContactMemoryListStreamItem struct {
+	// Instance list properties                                
+	Data                       ContactMemoryListStreamItemData `json:"data"`
+	// The type of event                                       
+	Type                       ContactMemoryListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type ContactMemoryListStreamItemData struct {
+	// The ID of the bot the memory belongs to                                
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The text of the memory                                                 
+	Text                                               string                 `json:"text"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
 type ContactMemorySearchParams struct {
 	// The ID of the contact to search memories for       
 	ContactID                                      string `json:"contactId"`
@@ -11793,6 +13421,41 @@ type ContactRatingListResponse struct {
 
 // Instance list properties
 type ContactRatingListResponseItem struct {
+	// The bot id assigned to this rating                                     
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The contact id assigned to this rating                                 
+	ContactID                                          *string                `json:"contactId,omitempty"`
+	// The conversation id assigned to this rating                            
+	ConversationID                                     *string                `json:"conversationId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// The message id assigned to this rating                                 
+	MessageID                                          *string                `json:"messageId,omitempty"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The reason for the rating                                              
+	Reason                                             *string                `json:"reason,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The rating value                                                       
+	Value                                              *float64               `json:"value,omitempty"`
+}
+
+type ContactRatingListStreamItem struct {
+	// Instance list properties                                
+	Data                       ContactRatingListStreamItemData `json:"data"`
+	// The type of event                                       
+	Type                       ContactRatingListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type ContactRatingListStreamItemData struct {
 	// The bot id assigned to this rating                                     
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The contact id assigned to this rating                                 
@@ -11903,6 +13566,31 @@ type ContactSecretListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
+type ContactSecretListStreamItem struct {
+	// Instance list properties                                
+	Data                       ContactSecretListStreamItemData `json:"data"`
+	// The type of event                                       
+	Type                       ContactSecretListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type ContactSecretListStreamItemData struct {
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The type of the secret                                                 
+	Type                                               string                 `json:"type"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
 type ContactSpaceListParams struct {
 	// The ID of the contact to list spaces for                             
 	ContactID                                  string                       `json:"contactId"`
@@ -11922,6 +13610,31 @@ type ContactSpaceListResponse struct {
 
 // Instance list properties
 type ContactSpaceListResponseItem struct {
+	// The contact id assigned to this space                                  
+	ContactID                                          *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type ContactSpaceListStreamItem struct {
+	// Instance list properties                               
+	Data                       ContactSpaceListStreamItemData `json:"data"`
+	// The type of event                                      
+	Type                       ContactSpaceListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type ContactSpaceListStreamItemData struct {
 	// The contact id assigned to this space                                  
 	ContactID                                          *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -11987,6 +13700,51 @@ type ContactTaskListResponseItem struct {
 	SessionDuration                                                    *float64               `json:"sessionDuration,omitempty"`
 	// The task execution status                                                              
 	Status                                                             *PurpleStatus          `json:"status,omitempty"`
+	// The IANA timezone identifier used to evaluate the task schedule.                       
+	Timezone                                                           *string                `json:"timezone,omitempty"`
+	// The timestamp (ms) when the instance was updated                                       
+	UpdatedAt                                                          float64                `json:"updatedAt"`
+}
+
+type ContactTaskListStreamItem struct {
+	// Instance list properties                              
+	Data                       ContactTaskListStreamItemData `json:"data"`
+	// The type of event                                     
+	Type                       ContactTaskListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type ContactTaskListStreamItemData struct {
+	// The bot associated with the task                                                       
+	BotID                                                              *string                `json:"botId,omitempty"`
+	// The contact id assigned to this task                                                   
+	ContactID                                                          *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                                       
+	CreatedAt                                                          float64                `json:"createdAt"`
+	// The associated description                                                             
+	Description                                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                                        
+	ID                                                                 string                 `json:"id"`
+	// The timestamp (ms) of the last task execution                                          
+	LastRunAt                                                          *float64               `json:"lastRunAt,omitempty"`
+	// The maximum number of iterations per task execution                                    
+	MaxIterations                                                      *float64               `json:"maxIterations,omitempty"`
+	// The maximum time per task execution (in milliseconds)                                  
+	MaxTime                                                            *float64               `json:"maxTime,omitempty"`
+	// Meta data information                                                                  
+	Meta                                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                    
+	Name                                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) of the next scheduled task execution                                
+	NextRunAt                                                          *float64               `json:"nextRunAt,omitempty"`
+	// The task execution outcome                                                             
+	Outcome                                                            *FluffyOutcome         `json:"outcome,omitempty"`
+	// The schedule of the task                                                               
+	Schedule                                                           *string                `json:"schedule,omitempty"`
+	// The session duration of the task execution (in milliseconds)                           
+	SessionDuration                                                    *float64               `json:"sessionDuration,omitempty"`
+	// The task execution status                                                              
+	Status                                                             *FluffyStatus          `json:"status,omitempty"`
 	// The IANA timezone identifier used to evaluate the task schedule.                       
 	Timezone                                                           *string                `json:"timezone,omitempty"`
 	// The timestamp (ms) when the instance was updated                                       
@@ -12123,6 +13881,41 @@ type ContactsExportResponseItem struct {
 	VerifiedAt                                         *float64               `json:"verifiedAt,omitempty"`
 }
 
+type ContactsExportStreamItem struct {
+	// Instance list properties                             
+	Data                       ContactsExportStreamItemData `json:"data"`
+	// The type of event                                    
+	Type                       ContactsExportStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type ContactsExportStreamItemData struct {
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The email address of the contact                                       
+	Email                                              *string                `json:"email,omitempty"`
+	// The fingerprint of the contact                                         
+	Fingerprint                                        string                 `json:"fingerprint"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The nickname of the contact                                            
+	Nick                                               *string                `json:"nick,omitempty"`
+	// The phone number of the contact                                        
+	Phone                                              *string                `json:"phone,omitempty"`
+	// The preferences of the contact                                         
+	Preferences                                        *string                `json:"preferences,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The timestamp (ms) when the contact was verified                       
+	VerifiedAt                                         *float64               `json:"verifiedAt,omitempty"`
+}
+
 type ContactListParams struct {
 	// The cursor to use for pagination                                               
 	Cursor                                                    *string                 `json:"cursor,omitempty"`
@@ -12142,6 +13935,41 @@ type ContactListResponse struct {
 
 // Instance list properties
 type ContactListResponseItem struct {
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The email address of the contact                                       
+	Email                                              *string                `json:"email,omitempty"`
+	// The fingerprint of the contact                                         
+	Fingerprint                                        string                 `json:"fingerprint"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The nickname of the contact                                            
+	Nick                                               *string                `json:"nick,omitempty"`
+	// The phone number of the contact                                        
+	Phone                                              *string                `json:"phone,omitempty"`
+	// The preferences of the contact                                         
+	Preferences                                        *string                `json:"preferences,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The timestamp (ms) when the contact was verified                       
+	VerifiedAt                                         *float64               `json:"verifiedAt,omitempty"`
+}
+
+type ContactListStreamItem struct {
+	// Instance list properties                          
+	Data                       ContactListStreamItemData `json:"data"`
+	// The type of event                                 
+	Type                       ContactListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type ContactListStreamItemData struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -12307,17 +14135,17 @@ type PurpleReplacement struct {
 
 // Extensions to enhance the bot's capabilities
 type ConversationMessageCompleteRequestExtensions struct {
-	// Additional backstory for the bot                                  
-	Backstory                                           *string          `json:"backstory,omitempty"`
-	// Inline datasets to provide additional context                     
-	Datasets                                            []PurpleDataset  `json:"datasets,omitempty"`
-	// Feature flags to enable specific bot capabilities                 
-	Features                                            []PurpleFeature  `json:"features,omitempty"`
-	// Inline skillsets to provide additional abilities                  
-	Skillsets                                           []PurpleSkillset `json:"skillsets,omitempty"`
+	// Additional backstory for the bot                                     
+	Backstory                                           *string             `json:"backstory,omitempty"`
+	// Inline datasets to provide additional context                        
+	Datasets                                            []TentacledDataset  `json:"datasets,omitempty"`
+	// Feature flags to enable specific bot capabilities                    
+	Features                                            []PurpleFeature     `json:"features,omitempty"`
+	// Inline skillsets to provide additional abilities                     
+	Skillsets                                           []TentacledSkillset `json:"skillsets,omitempty"`
 }
 
-type PurpleDataset struct {
+type TentacledDataset struct {
 	// The description of the dataset               
 	Description                      *string        `json:"description,omitempty"`
 	// The name of the dataset                      
@@ -12340,7 +14168,7 @@ type PurpleFeature struct {
 	Options                                          map[string]interface{} `json:"options,omitempty"`
 }
 
-type PurpleSkillset struct {
+type TentacledSkillset struct {
 	// The abilities in the skillset                  
 	Abilities                         []PurpleAbility `json:"abilities"`
 	// The description of the skillset                
@@ -12372,7 +14200,7 @@ type ConversationMessageCompleteRequestFunction struct {
 	// JSON Schema definition for the function parameters                                     
 	Parameters                                                               PurpleParameters `json:"parameters"`
 	// The result of the function execution                                                   
-	Result                                                                   *PurpleResult    `json:"result,omitempty"`
+	Result                                                                   *HilariousResult `json:"result,omitempty"`
 }
 
 // Configuration for when this function should be automatically called
@@ -12394,7 +14222,7 @@ type PurpleParameters struct {
 }
 
 // The result of the function execution
-type PurpleResult struct {
+type HilariousResult struct {
 	// The data returned by the function (can be any type)            
 	Data                                                  interface{} `json:"data"`
 	// The channel for streaming function results                     
@@ -12433,6 +14261,65 @@ type ConversationMessageCompleteResponseEnd struct {
 
 // Usage information
 type ConversationMessageCompleteResponseUsage struct {
+	// The tokens used in this exchange        
+	Token                              float64 `json:"token"`
+}
+
+type ConversationMessageCompleteStreamItem struct {
+	// The data for the event                                                                           
+	//                                                                                                  
+	// A message in the conversation                                                                    
+	//                                                                                                  
+	// Information about an abort event in a streamed response                                          
+	Data                                                      ConversationMessageCompleteStreamItemData `json:"data"`
+	// The type of event                                                                                
+	Type                                                      ConversationMessageCompleteStreamItemType `json:"type"`
+}
+
+// The data for the event
+//
+// A message in the conversation
+//
+// Information about an abort event in a streamed response
+type ConversationMessageCompleteStreamItemData struct {
+	// Information about why the completion ended                           
+	End                                              *PurpleEnd             `json:"end,omitempty"`
+	// The ID of the created message                                        
+	ID                                               *string                `json:"id,omitempty"`
+	// The text of the message received                                     
+	//                                                                      
+	// The text of the message                                              
+	Text                                             *string                `json:"text,omitempty"`
+	// Usage information                                                    
+	Usage                                            *MischievousUsage      `json:"usage,omitempty"`
+	// The error message                                                    
+	Message                                          *string                `json:"message,omitempty"`
+	// The token generated                                                  
+	Token                                            *string                `json:"token,omitempty"`
+	// Meta data information                                                
+	Meta                                             map[string]interface{} `json:"meta,omitempty"`
+	// The type of the message                                              
+	Type                                             *IndigoType            `json:"type,omitempty"`
+	// The function or tool associated with the abort                       
+	FunctionName                                     *string                `json:"functionName,omitempty"`
+	// The abort reason if available                                        
+	Reason                                           interface{}            `json:"reason"`
+	// The number of input tokens used                                      
+	InputTokensUsed                                  *float64               `json:"inputTokensUsed,omitempty"`
+	// The model used                                                       
+	Model                                            *string                `json:"model,omitempty"`
+	// The number of output tokens used                                     
+	OutputTokensUsed                                 *float64               `json:"outputTokensUsed,omitempty"`
+}
+
+// Information about why the completion ended
+type PurpleEnd struct {
+	// The reason why the completion ended             
+	Reason                                FluffyReason `json:"reason"`
+}
+
+// Usage information
+type MischievousUsage struct {
 	// The tokens used in this exchange        
 	Token                              float64 `json:"token"`
 }
@@ -12518,14 +14405,14 @@ type StatefulConversationDispatchRequestExtensions struct {
 	// Additional backstory for the bot                                  
 	Backstory                                           *string          `json:"backstory,omitempty"`
 	// Inline datasets to provide additional context                     
-	Datasets                                            []FluffyDataset  `json:"datasets,omitempty"`
+	Datasets                                            []StickyDataset  `json:"datasets,omitempty"`
 	// Feature flags to enable specific bot capabilities                 
 	Features                                            []FluffyFeature  `json:"features,omitempty"`
 	// Inline skillsets to provide additional abilities                  
-	Skillsets                                           []FluffySkillset `json:"skillsets,omitempty"`
+	Skillsets                                           []StickySkillset `json:"skillsets,omitempty"`
 }
 
-type FluffyDataset struct {
+type StickyDataset struct {
 	// The description of the dataset               
 	Description                      *string        `json:"description,omitempty"`
 	// The name of the dataset                      
@@ -12548,7 +14435,7 @@ type FluffyFeature struct {
 	Options                                          map[string]interface{} `json:"options,omitempty"`
 }
 
-type FluffySkillset struct {
+type StickySkillset struct {
 	// The abilities in the skillset                  
 	Abilities                         []FluffyAbility `json:"abilities"`
 	// The description of the skillset                
@@ -12580,7 +14467,7 @@ type StatefulConversationDispatchRequestFunction struct {
 	// JSON Schema definition for the function parameters                                     
 	Parameters                                                               FluffyParameters `json:"parameters"`
 	// The result of the function execution                                                   
-	Result                                                                   *FluffyResult    `json:"result,omitempty"`
+	Result                                                                   *AmbitiousResult `json:"result,omitempty"`
 }
 
 // Configuration for when this function should be automatically called
@@ -12598,11 +14485,11 @@ type FluffyParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                IndigoType             `json:"type"`
+	Type                                IndecentType           `json:"type"`
 }
 
 // The result of the function execution
-type FluffyResult struct {
+type AmbitiousResult struct {
 	// The data returned by the function (can be any type)            
 	Data                                                  interface{} `json:"data"`
 	// The channel for streaming function results                     
@@ -12928,7 +14815,34 @@ type ConversationMessageListResponseItem struct {
 	// The text of the message                                                
 	Text                                               string                 `json:"text"`
 	// The type of the message                                                
-	Type                                               IndecentType           `json:"type"`
+	Type                                               HilariousType          `json:"type"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type ConversationMessageListStreamItem struct {
+	// Instance list properties                                      
+	Data                       ConversationMessageListStreamItemData `json:"data"`
+	// The type of event                                             
+	Type                       ConversationMessageListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type ConversationMessageListStreamItemData struct {
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The text of the message                                                
+	Text                                               string                 `json:"text"`
+	// The type of the message                                                
+	Type                                               AmbitiousType          `json:"type"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -12947,17 +14861,17 @@ type ConversationMessageReceiveRequest struct {
 
 // Extensions to enhance the bot's capabilities
 type ConversationMessageReceiveRequestExtensions struct {
-	// Additional backstory for the bot                                     
-	Backstory                                           *string             `json:"backstory,omitempty"`
-	// Inline datasets to provide additional context                        
-	Datasets                                            []TentacledDataset  `json:"datasets,omitempty"`
-	// Feature flags to enable specific bot capabilities                    
-	Features                                            []TentacledFeature  `json:"features,omitempty"`
-	// Inline skillsets to provide additional abilities                     
-	Skillsets                                           []TentacledSkillset `json:"skillsets,omitempty"`
+	// Additional backstory for the bot                                    
+	Backstory                                           *string            `json:"backstory,omitempty"`
+	// Inline datasets to provide additional context                       
+	Datasets                                            []IndigoDataset    `json:"datasets,omitempty"`
+	// Feature flags to enable specific bot capabilities                   
+	Features                                            []TentacledFeature `json:"features,omitempty"`
+	// Inline skillsets to provide additional abilities                    
+	Skillsets                                           []IndigoSkillset   `json:"skillsets,omitempty"`
 }
 
-type TentacledDataset struct {
+type IndigoDataset struct {
 	// The description of the dataset                  
 	Description                      *string           `json:"description,omitempty"`
 	// The name of the dataset                         
@@ -12980,7 +14894,7 @@ type TentacledFeature struct {
 	Options                                          map[string]interface{} `json:"options,omitempty"`
 }
 
-type TentacledSkillset struct {
+type IndigoSkillset struct {
 	// The abilities in the skillset                     
 	Abilities                         []TentacledAbility `json:"abilities"`
 	// The description of the skillset                   
@@ -13012,7 +14926,7 @@ type ConversationMessageReceiveRequestFunction struct {
 	// JSON Schema definition for the function parameters                                        
 	Parameters                                                               TentacledParameters `json:"parameters"`
 	// The result of the function execution                                                      
-	Result                                                                   *TentacledResult    `json:"result,omitempty"`
+	Result                                                                   *CunningResult      `json:"result,omitempty"`
 }
 
 // Configuration for when this function should be automatically called
@@ -13030,11 +14944,11 @@ type TentacledParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                HilariousType          `json:"type"`
+	Type                                CunningType            `json:"type"`
 }
 
 // The result of the function execution
-type TentacledResult struct {
+type CunningResult struct {
 	// The data returned by the function (can be any type)            
 	Data                                                  interface{} `json:"data"`
 	// The channel for streaming function results                     
@@ -13052,6 +14966,57 @@ type ConversationMessageReceiveResponse struct {
 
 // Usage information
 type ConversationMessageReceiveResponseUsage struct {
+	// The tokens used in this exchange        
+	Token                              float64 `json:"token"`
+}
+
+type ConversationMessageReceiveStreamItem struct {
+	// The data for the event                                                                           
+	//                                                                                                  
+	// A message in the conversation                                                                    
+	//                                                                                                  
+	// Information about an abort event in a streamed response                                          
+	Data                                                      *ConversationMessageReceiveStreamItemData `json:"data,omitempty"`
+	// The type of event                                                                                
+	Type                                                      *ConversationMessageReceiveStreamItemType `json:"type,omitempty"`
+}
+
+// The data for the event
+//
+// A message in the conversation
+//
+// Information about an abort event in a streamed response
+type ConversationMessageReceiveStreamItemData struct {
+	// The ID of the created message                                        
+	ID                                               *string                `json:"id,omitempty"`
+	// The text of the message received                                     
+	//                                                                      
+	// The text of the message                                              
+	Text                                             *string                `json:"text,omitempty"`
+	// Usage information                                                    
+	Usage                                            *BraggadociousUsage    `json:"usage,omitempty"`
+	// The error message                                                    
+	Message                                          *string                `json:"message,omitempty"`
+	// The token generated                                                  
+	Token                                            *string                `json:"token,omitempty"`
+	// Meta data information                                                
+	Meta                                             map[string]interface{} `json:"meta,omitempty"`
+	// The type of the message                                              
+	Type                                             *MagentaType           `json:"type,omitempty"`
+	// The function or tool associated with the abort                       
+	FunctionName                                     *string                `json:"functionName,omitempty"`
+	// The abort reason if available                                        
+	Reason                                           interface{}            `json:"reason"`
+	// The number of input tokens used                                      
+	InputTokensUsed                                  *float64               `json:"inputTokensUsed,omitempty"`
+	// The model used                                                       
+	Model                                            *string                `json:"model,omitempty"`
+	// The number of output tokens used                                     
+	OutputTokensUsed                                 *float64               `json:"outputTokensUsed,omitempty"`
+}
+
+// Usage information
+type BraggadociousUsage struct {
 	// The tokens used in this exchange        
 	Token                              float64 `json:"token"`
 }
@@ -13096,17 +15061,17 @@ type IndecentReplacement struct {
 
 // Extensions to enhance the bot's capabilities
 type ConversationMessageSendRequestExtensions struct {
-	// Additional backstory for the bot                                  
-	Backstory                                           *string          `json:"backstory,omitempty"`
-	// Inline datasets to provide additional context                     
-	Datasets                                            []StickyDataset  `json:"datasets,omitempty"`
-	// Feature flags to enable specific bot capabilities                 
-	Features                                            []StickyFeature  `json:"features,omitempty"`
-	// Inline skillsets to provide additional abilities                  
-	Skillsets                                           []StickySkillset `json:"skillsets,omitempty"`
+	// Additional backstory for the bot                                    
+	Backstory                                           *string            `json:"backstory,omitempty"`
+	// Inline datasets to provide additional context                       
+	Datasets                                            []IndecentDataset  `json:"datasets,omitempty"`
+	// Feature flags to enable specific bot capabilities                   
+	Features                                            []StickyFeature    `json:"features,omitempty"`
+	// Inline skillsets to provide additional abilities                    
+	Skillsets                                           []IndecentSkillset `json:"skillsets,omitempty"`
 }
 
-type StickyDataset struct {
+type IndecentDataset struct {
 	// The description of the dataset               
 	Description                      *string        `json:"description,omitempty"`
 	// The name of the dataset                      
@@ -13129,7 +15094,7 @@ type StickyFeature struct {
 	Options                                          map[string]interface{} `json:"options,omitempty"`
 }
 
-type StickySkillset struct {
+type IndecentSkillset struct {
 	// The abilities in the skillset                  
 	Abilities                         []StickyAbility `json:"abilities"`
 	// The description of the skillset                
@@ -13161,7 +15126,7 @@ type ConversationMessageSendRequestFunction struct {
 	// JSON Schema definition for the function parameters                                     
 	Parameters                                                               StickyParameters `json:"parameters"`
 	// The result of the function execution                                                   
-	Result                                                                   *StickyResult    `json:"result,omitempty"`
+	Result                                                                   *MagentaResult   `json:"result,omitempty"`
 }
 
 // Configuration for when this function should be automatically called
@@ -13179,11 +15144,11 @@ type StickyParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                AmbitiousType          `json:"type"`
+	Type                                FriskyType             `json:"type"`
 }
 
 // The result of the function execution
-type StickyResult struct {
+type MagentaResult struct {
 	// The data returned by the function (can be any type)            
 	Data                                                  interface{} `json:"data"`
 	// The channel for streaming function results                     
@@ -13211,6 +15176,71 @@ type ConversationMessageSendResponseEntity struct {
 }
 
 type HilariousReplacement struct {
+	// Start offset                             
+	Begin                               float64 `json:"begin"`
+	// End offset                               
+	End                                 float64 `json:"end"`
+	// The text value of the replacement        
+	Text                                string  `json:"text"`
+}
+
+type ConversationMessageSendStreamItem struct {
+	// The data for the event                                                                       
+	//                                                                                              
+	// A message in the conversation                                                                
+	//                                                                                              
+	// Information about an abort event in a streamed response                                      
+	Data                                                      ConversationMessageSendStreamItemData `json:"data"`
+	// The type of event                                                                            
+	Type                                                      ConversationMessageSendStreamItemType `json:"type"`
+}
+
+// The data for the event
+//
+// A message in the conversation
+//
+// Information about an abort event in a streamed response
+type ConversationMessageSendStreamItemData struct {
+	// Extracted entities from the message                                  
+	Entities                                         []DataEntity           `json:"entities,omitempty"`
+	// The ID of the sent message                                           
+	ID                                               *string                `json:"id,omitempty"`
+	// The error message                                                    
+	Message                                          *string                `json:"message,omitempty"`
+	// The token generated                                                  
+	Token                                            *string                `json:"token,omitempty"`
+	// Meta data information                                                
+	Meta                                             map[string]interface{} `json:"meta,omitempty"`
+	// The text of the message                                              
+	Text                                             *string                `json:"text,omitempty"`
+	// The type of the message                                              
+	Type                                             *MischievousType       `json:"type,omitempty"`
+	// The function or tool associated with the abort                       
+	FunctionName                                     *string                `json:"functionName,omitempty"`
+	// The abort reason if available                                        
+	Reason                                           interface{}            `json:"reason"`
+	// The number of input tokens used                                      
+	InputTokensUsed                                  *float64               `json:"inputTokensUsed,omitempty"`
+	// The model used                                                       
+	Model                                            *string                `json:"model,omitempty"`
+	// The number of output tokens used                                     
+	OutputTokensUsed                                 *float64               `json:"outputTokensUsed,omitempty"`
+}
+
+// Extracted entity from the message
+type DataEntity struct {
+	// Start offset                                      
+	Begin                          float64               `json:"begin"`
+	// End offset                                        
+	End                            float64               `json:"end"`
+	Replacement                    *AmbitiousReplacement `json:"replacement,omitempty"`
+	// The text value of the entity                      
+	Text                           string                `json:"text"`
+	// The entity type                                   
+	Type                           string                `json:"type"`
+}
+
+type AmbitiousReplacement struct {
 	// Start offset                             
 	Begin                               float64 `json:"begin"`
 	// End offset                               
@@ -13338,17 +15368,17 @@ type ConversationStatelessCompactRequest struct {
 
 // Extensions to enhance the bot's capabilities
 type ConversationStatelessCompactRequestExtensions struct {
-	// Additional backstory for the bot                                  
-	Backstory                                           *string          `json:"backstory,omitempty"`
-	// Inline datasets to provide additional context                     
-	Datasets                                            []IndigoDataset  `json:"datasets,omitempty"`
-	// Feature flags to enable specific bot capabilities                 
-	Features                                            []IndigoFeature  `json:"features,omitempty"`
-	// Inline skillsets to provide additional abilities                  
-	Skillsets                                           []IndigoSkillset `json:"skillsets,omitempty"`
+	// Additional backstory for the bot                                     
+	Backstory                                           *string             `json:"backstory,omitempty"`
+	// Inline datasets to provide additional context                        
+	Datasets                                            []HilariousDataset  `json:"datasets,omitempty"`
+	// Feature flags to enable specific bot capabilities                    
+	Features                                            []IndigoFeature     `json:"features,omitempty"`
+	// Inline skillsets to provide additional abilities                     
+	Skillsets                                           []HilariousSkillset `json:"skillsets,omitempty"`
 }
 
-type IndigoDataset struct {
+type HilariousDataset struct {
 	// The description of the dataset               
 	Description                      *string        `json:"description,omitempty"`
 	// The name of the dataset                      
@@ -13371,7 +15401,7 @@ type IndigoFeature struct {
 	Options                                          map[string]interface{} `json:"options,omitempty"`
 }
 
-type IndigoSkillset struct {
+type HilariousSkillset struct {
 	// The abilities in the skillset                  
 	Abilities                         []IndigoAbility `json:"abilities"`
 	// The description of the skillset                
@@ -13400,7 +15430,7 @@ type ConversationStatelessCompactRequestMessage struct {
 	// The text of the message                       
 	Text                      string                 `json:"text"`
 	// The type of the message                       
-	Type                      CunningType            `json:"type"`
+	Type                      BraggadociousType      `json:"type"`
 }
 
 type ConversationStatelessCompactResponse struct {
@@ -13473,17 +15503,17 @@ type PurpleContactID struct {
 
 // Extensions to enhance the bot's capabilities
 type ConversationCompleteRequestExtensions struct {
-	// Additional backstory for the bot                                    
-	Backstory                                           *string            `json:"backstory,omitempty"`
-	// Inline datasets to provide additional context                       
-	Datasets                                            []IndecentDataset  `json:"datasets,omitempty"`
-	// Feature flags to enable specific bot capabilities                   
-	Features                                            []IndecentFeature  `json:"features,omitempty"`
-	// Inline skillsets to provide additional abilities                    
-	Skillsets                                           []IndecentSkillset `json:"skillsets,omitempty"`
+	// Additional backstory for the bot                                     
+	Backstory                                           *string             `json:"backstory,omitempty"`
+	// Inline datasets to provide additional context                        
+	Datasets                                            []AmbitiousDataset  `json:"datasets,omitempty"`
+	// Feature flags to enable specific bot capabilities                    
+	Features                                            []IndecentFeature   `json:"features,omitempty"`
+	// Inline skillsets to provide additional abilities                     
+	Skillsets                                           []AmbitiousSkillset `json:"skillsets,omitempty"`
 }
 
-type IndecentDataset struct {
+type AmbitiousDataset struct {
 	// The description of the dataset                 
 	Description                      *string          `json:"description,omitempty"`
 	// The name of the dataset                        
@@ -13506,7 +15536,7 @@ type IndecentFeature struct {
 	Options                                          map[string]interface{} `json:"options,omitempty"`
 }
 
-type IndecentSkillset struct {
+type AmbitiousSkillset struct {
 	// The abilities in the skillset                    
 	Abilities                         []IndecentAbility `json:"abilities"`
 	// The description of the skillset                  
@@ -13538,7 +15568,7 @@ type ConversationCompleteRequestFunction struct {
 	// JSON Schema definition for the function parameters                                     
 	Parameters                                                               IndigoParameters `json:"parameters"`
 	// The result of the function execution                                                   
-	Result                                                                   *IndigoResult    `json:"result,omitempty"`
+	Result                                                                   *FriskyResult    `json:"result,omitempty"`
 }
 
 // Configuration for when this function should be automatically called
@@ -13556,11 +15586,11 @@ type IndigoParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                MagentaType            `json:"type"`
+	Type                                Type1                  `json:"type"`
 }
 
 // The result of the function execution
-type IndigoResult struct {
+type FriskyResult struct {
 	// The data returned by the function (can be any type)            
 	Data                                                  interface{} `json:"data"`
 	// The channel for streaming function results                     
@@ -13587,7 +15617,7 @@ type ConversationCompleteRequestMessage struct {
 	// The text of the message                       
 	Text                      string                 `json:"text"`
 	// The type of the message                       
-	Type                      FriskyType             `json:"type"`
+	Type                      Type2                  `json:"type"`
 }
 
 type ConversationCompleteResponse struct {
@@ -13601,12 +15631,69 @@ type ConversationCompleteResponse struct {
 
 // Information about why the completion ended
 type ConversationCompleteResponseEnd struct {
-	// The reason why the completion ended             
-	Reason                                FluffyReason `json:"reason"`
+	// The reason why the completion ended                
+	Reason                                TentacledReason `json:"reason"`
 }
 
 // Usage information
 type ConversationCompleteResponseUsage struct {
+	// The tokens used in this exchange        
+	Token                              float64 `json:"token"`
+}
+
+type ConversationCompleteStreamItem struct {
+	// The data for the event                                                                    
+	//                                                                                           
+	// A message in the conversation                                                             
+	//                                                                                           
+	// Information about an abort event in a streamed response                                   
+	Data                                                      ConversationCompleteStreamItemData `json:"data"`
+	// The type of event                                                                         
+	Type                                                      ConversationCompleteStreamItemType `json:"type"`
+}
+
+// The data for the event
+//
+// A message in the conversation
+//
+// Information about an abort event in a streamed response
+type ConversationCompleteStreamItemData struct {
+	// Information about why the completion ended                           
+	End                                              *FluffyEnd             `json:"end,omitempty"`
+	// The text of the message received                                     
+	//                                                                      
+	// The text of the message                                              
+	Text                                             *string                `json:"text,omitempty"`
+	// Usage information                                                    
+	Usage                                            *Usage1                `json:"usage,omitempty"`
+	// The error message                                                    
+	Message                                          *string                `json:"message,omitempty"`
+	// The token generated                                                  
+	Token                                            *string                `json:"token,omitempty"`
+	// Meta data information                                                
+	Meta                                             map[string]interface{} `json:"meta,omitempty"`
+	// The type of the message                                              
+	Type                                             *Type3                 `json:"type,omitempty"`
+	// The function or tool associated with the abort                       
+	FunctionName                                     *string                `json:"functionName,omitempty"`
+	// The abort reason if available                                        
+	Reason                                           interface{}            `json:"reason"`
+	// The number of input tokens used                                      
+	InputTokensUsed                                  *float64               `json:"inputTokensUsed,omitempty"`
+	// The model used                                                       
+	Model                                            *string                `json:"model,omitempty"`
+	// The number of output tokens used                                     
+	OutputTokensUsed                                 *float64               `json:"outputTokensUsed,omitempty"`
+}
+
+// Information about why the completion ended
+type FluffyEnd struct {
+	// The reason why the completion ended             
+	Reason                                StickyReason `json:"reason"`
+}
+
+// Usage information
+type Usage1 struct {
 	// The tokens used in this exchange        
 	Token                              float64 `json:"token"`
 }
@@ -13646,10 +15733,10 @@ type ConversationCreateRequest struct {
 }
 
 type ConversationCreateRequestMessage struct {
-	// The text of the message                
-	Text                      string          `json:"text"`
-	// The type of the message                
-	Type                      MischievousType `json:"type"`
+	// The text of the message       
+	Text                      string `json:"text"`
+	// The type of the message       
+	Type                      Type4  `json:"type"`
 }
 
 type ConversationCreateResponse struct {
@@ -13660,10 +15747,10 @@ type ConversationCreateResponse struct {
 }
 
 type ConversationCreateResponseMessage struct {
-	// The text of the message                  
-	Text                      string            `json:"text"`
-	// The type of the message                  
-	Type                      BraggadociousType `json:"type"`
+	// The text of the message       
+	Text                      string `json:"text"`
+	// The type of the message       
+	Type                      Type5  `json:"type"`
 }
 
 // A bot configuration or reference
@@ -13725,17 +15812,17 @@ type FluffyContactID struct {
 
 // Extensions to enhance the bot's capabilities
 type ConversationDispatchRequestExtensions struct {
-	// Additional backstory for the bot                                     
-	Backstory                                           *string             `json:"backstory,omitempty"`
-	// Inline datasets to provide additional context                        
-	Datasets                                            []HilariousDataset  `json:"datasets,omitempty"`
-	// Feature flags to enable specific bot capabilities                    
-	Features                                            []HilariousFeature  `json:"features,omitempty"`
-	// Inline skillsets to provide additional abilities                     
-	Skillsets                                           []HilariousSkillset `json:"skillsets,omitempty"`
+	// Additional backstory for the bot                                    
+	Backstory                                           *string            `json:"backstory,omitempty"`
+	// Inline datasets to provide additional context                       
+	Datasets                                            []CunningDataset   `json:"datasets,omitempty"`
+	// Feature flags to enable specific bot capabilities                   
+	Features                                            []HilariousFeature `json:"features,omitempty"`
+	// Inline skillsets to provide additional abilities                    
+	Skillsets                                           []CunningSkillset  `json:"skillsets,omitempty"`
 }
 
-type HilariousDataset struct {
+type CunningDataset struct {
 	// The description of the dataset                  
 	Description                      *string           `json:"description,omitempty"`
 	// The name of the dataset                         
@@ -13758,7 +15845,7 @@ type HilariousFeature struct {
 	Options                                          map[string]interface{} `json:"options,omitempty"`
 }
 
-type HilariousSkillset struct {
+type CunningSkillset struct {
 	// The abilities in the skillset                     
 	Abilities                         []HilariousAbility `json:"abilities"`
 	// The description of the skillset                   
@@ -13790,7 +15877,7 @@ type ConversationDispatchRequestFunction struct {
 	// JSON Schema definition for the function parameters                                       
 	Parameters                                                               IndecentParameters `json:"parameters"`
 	// The result of the function execution                                                     
-	Result                                                                   *IndecentResult    `json:"result,omitempty"`
+	Result                                                                   *MischievousResult `json:"result,omitempty"`
 }
 
 // Configuration for when this function should be automatically called
@@ -13808,11 +15895,11 @@ type IndecentParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                Type1                  `json:"type"`
+	Type                                Type6                  `json:"type"`
 }
 
 // The result of the function execution
-type IndecentResult struct {
+type MischievousResult struct {
 	// The data returned by the function (can be any type)            
 	Data                                                  interface{} `json:"data"`
 	// The channel for streaming function results                     
@@ -13839,7 +15926,7 @@ type ConversationDispatchRequestMessage struct {
 	// The text of the message                       
 	Text                      string                 `json:"text"`
 	// The type of the message                       
-	Type                      Type2                  `json:"type"`
+	Type                      Type7                  `json:"type"`
 }
 
 type ConversationDispatchResponse struct {
@@ -13868,6 +15955,51 @@ type ConversationsExportResponse struct {
 //
 // A bot configuration that can be applied without a dedicated bot instance.
 type ConversationsExportResponseItem struct {
+	// The contact id assigned to this conversation                             
+	ContactID                                            *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                         
+	CreatedAt                                            float64                `json:"createdAt"`
+	// The associated description                                               
+	Description                                          *string                `json:"description,omitempty"`
+	// The instance ID                                                          
+	ID                                                   string                 `json:"id"`
+	// Meta data information                                                    
+	Meta                                                 map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                      
+	Name                                                 *string                `json:"name,omitempty"`
+	// The space id assigned to this conversation                               
+	SpaceID                                              *string                `json:"spaceId,omitempty"`
+	// The task id assigned to this conversation                                
+	TaskID                                               *string                `json:"taskId,omitempty"`
+	// The timestamp (ms) when the instance was updated                         
+	UpdatedAt                                            float64                `json:"updatedAt"`
+	// The ID of the bot this configuration is using                            
+	BotID                                                *string                `json:"botId,omitempty"`
+	// The backstory this configuration is using                                
+	Backstory                                            *string                `json:"backstory,omitempty"`
+	// The id of the dataset this configuration is using                        
+	DatasetID                                            *string                `json:"datasetId,omitempty"`
+	// A model definition                                                       
+	Model                                                *string                `json:"model,omitempty"`
+	// The moderation flag for this configuration                               
+	Moderation                                           *bool                  `json:"moderation,omitempty"`
+	// The privacy flag for this configuration                                  
+	Privacy                                              *bool                  `json:"privacy,omitempty"`
+	// The id of the skillset this configuration is using                       
+	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
+}
+
+type ConversationsExportStreamItem struct {
+	// A bot configuration or reference                                  
+	Data                               ConversationsExportStreamItemData `json:"data"`
+	// The type of event                                                 
+	Type                               ConversationsExportStreamItemType `json:"type"`
+}
+
+// A bot configuration or reference
+//
+// A bot configuration that can be applied without a dedicated bot instance.
+type ConversationsExportStreamItemData struct {
 	// The contact id assigned to this conversation                             
 	ContactID                                            *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                         
@@ -13957,6 +16089,51 @@ type ConversationListResponseItem struct {
 	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
 }
 
+type ConversationListStreamItem struct {
+	// A bot configuration or reference                               
+	Data                               ConversationListStreamItemData `json:"data"`
+	// The type of event                                              
+	Type                               ConversationListStreamItemType `json:"type"`
+}
+
+// A bot configuration or reference
+//
+// A bot configuration that can be applied without a dedicated bot instance.
+type ConversationListStreamItemData struct {
+	// The contact id assigned to this conversation                             
+	ContactID                                            *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                         
+	CreatedAt                                            float64                `json:"createdAt"`
+	// The associated description                                               
+	Description                                          *string                `json:"description,omitempty"`
+	// The instance ID                                                          
+	ID                                                   string                 `json:"id"`
+	// Meta data information                                                    
+	Meta                                                 map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                      
+	Name                                                 *string                `json:"name,omitempty"`
+	// The space id assigned to this conversation                               
+	SpaceID                                              *string                `json:"spaceId,omitempty"`
+	// The task id assigned to this conversation                                
+	TaskID                                               *string                `json:"taskId,omitempty"`
+	// The timestamp (ms) when the instance was updated                         
+	UpdatedAt                                            float64                `json:"updatedAt"`
+	// The ID of the bot this configuration is using                            
+	BotID                                                *string                `json:"botId,omitempty"`
+	// The backstory this configuration is using                                
+	Backstory                                            *string                `json:"backstory,omitempty"`
+	// The id of the dataset this configuration is using                        
+	DatasetID                                            *string                `json:"datasetId,omitempty"`
+	// A model definition                                                       
+	Model                                                *string                `json:"model,omitempty"`
+	// The moderation flag for this configuration                               
+	Moderation                                           *bool                  `json:"moderation,omitempty"`
+	// The privacy flag for this configuration                                  
+	Privacy                                              *bool                  `json:"privacy,omitempty"`
+	// The id of the skillset this configuration is using                       
+	SkillsetID                                           *string                `json:"skillsetId,omitempty"`
+}
+
 type DatasetDeleteParams struct {
 	// The ID of the dataset to delete       
 	DatasetID                         string `json:"datasetId"`
@@ -13974,6 +16151,8 @@ type DatasetFetchParams struct {
 
 // Blueprint properties
 type DatasetFetchResponse struct {
+	// The unique alias for the instance                                                  
+	Alias                                                 *string                         `json:"alias,omitempty"`
 	// The ID of the blueprint                                                            
 	BlueprintID                                           *string                         `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                   
@@ -14088,7 +16267,36 @@ type DatasetFileListResponseItem struct {
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 	// The file visibility                                                    
-	Visibility                                         *TentacledVisibility   `json:"visibility,omitempty"`
+	Visibility                                         *IndigoVisibility      `json:"visibility,omitempty"`
+}
+
+type DatasetFileListStreamItem struct {
+	// Blueprint properties                              
+	Data                   DatasetFileListStreamItemData `json:"data"`
+	// The type of event                                 
+	Type                   DatasetFileListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type DatasetFileListStreamItemData struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The file visibility                                                    
+	Visibility                                         *IndecentVisibility    `json:"visibility,omitempty"`
 }
 
 type DatasetRecordDeleteParams struct {
@@ -14190,6 +16398,25 @@ type DatasetRecordsExportResponseItem struct {
 	UpdatedAt                                          float64 `json:"updatedAt"`
 }
 
+type DatasetRecordsExportStreamItem struct {
+	// Instance list properties                                   
+	Data                       DatasetRecordsExportStreamItemData `json:"data"`
+	// The type of event                                          
+	Type                       DatasetRecordsExportStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type DatasetRecordsExportStreamItemData struct {
+	// The timestamp (ms) when the instance was created        
+	CreatedAt                                          float64 `json:"createdAt"`
+	// The instance ID                                         
+	ID                                                 string  `json:"id"`
+	Source                                             *string `json:"source,omitempty"`
+	Text                                               string  `json:"text"`
+	// The timestamp (ms) when the instance was updated        
+	UpdatedAt                                          float64 `json:"updatedAt"`
+}
+
 type DatasetRecordListParams struct {
 	// The cursor to use for pagination                              
 	Cursor                             *string                       `json:"cursor,omitempty"`
@@ -14209,6 +16436,25 @@ type DatasetRecordListResponse struct {
 
 // Instance list properties
 type DatasetRecordListResponseItem struct {
+	// The timestamp (ms) when the instance was created        
+	CreatedAt                                          float64 `json:"createdAt"`
+	// The instance ID                                         
+	ID                                                 string  `json:"id"`
+	Source                                             *string `json:"source,omitempty"`
+	Text                                               string  `json:"text"`
+	// The timestamp (ms) when the instance was updated        
+	UpdatedAt                                          float64 `json:"updatedAt"`
+}
+
+type DatasetRecordListStreamItem struct {
+	// Instance list properties                                
+	Data                       DatasetRecordListStreamItemData `json:"data"`
+	// The type of event                                       
+	Type                       DatasetRecordListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type DatasetRecordListStreamItemData struct {
 	// The timestamp (ms) when the instance was created        
 	CreatedAt                                          float64 `json:"createdAt"`
 	// The instance ID                                         
@@ -14353,6 +16599,8 @@ type DatasetListResponse struct {
 
 // Blueprint properties
 type DatasetListResponseItem struct {
+	// The unique alias for the instance                                         
+	Alias                                                 *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                   
 	BlueprintID                                           *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                          
@@ -14386,7 +16634,54 @@ type DatasetListResponseItem struct {
 	// The timestamp (ms) when the instance was updated                          
 	UpdatedAt                                             float64                `json:"updatedAt"`
 	// The dataset visibility                                                    
-	Visibility                                            *StickyVisibility      `json:"visibility,omitempty"`
+	Visibility                                            *HilariousVisibility   `json:"visibility,omitempty"`
+}
+
+type DatasetListStreamItem struct {
+	// Blueprint properties                          
+	Data                   DatasetListStreamItemData `json:"data"`
+	// The type of event                             
+	Type                   DatasetListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type DatasetListStreamItemData struct {
+	// The unique alias for the instance                                         
+	Alias                                                 *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                   
+	BlueprintID                                           *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                          
+	CreatedAt                                             float64                `json:"createdAt"`
+	// The associated description                                                
+	Description                                           *string                `json:"description,omitempty"`
+	// The instance ID                                                           
+	ID                                                    string                 `json:"id"`
+	// An instruction to include before found records                            
+	MatchInstruction                                      *string                `json:"matchInstruction,omitempty"`
+	// Meta data information                                                     
+	Meta                                                  map[string]interface{} `json:"meta,omitempty"`
+	// An instruction to include if no records where found                       
+	MismatchInstruction                                   *string                `json:"mismatchInstruction,omitempty"`
+	// The associated name                                                       
+	Name                                                  *string                `json:"name,omitempty"`
+	// The total number of tokens for each record                                
+	RecordMaxTokens                                       *float64               `json:"recordMaxTokens,omitempty"`
+	// The reranker class for the dataset                                        
+	Reranker                                              *string                `json:"reranker,omitempty"`
+	// The total number of records to return during search                       
+	SearchMaxRecords                                      *float64               `json:"searchMaxRecords,omitempty"`
+	// The total number of tokens to use during search                           
+	SearchMaxTokens                                       *float64               `json:"searchMaxTokens,omitempty"`
+	// The minimum score to filter search results by                             
+	SearchMinScore                                        *float64               `json:"searchMinScore,omitempty"`
+	// A list of separators to use when tokenizing text                          
+	Separators                                            *string                `json:"separators,omitempty"`
+	// The storage class for the dataset                                         
+	Store                                                 string                 `json:"store"`
+	// The timestamp (ms) when the instance was updated                          
+	UpdatedAt                                             float64                `json:"updatedAt"`
+	// The dataset visibility                                                    
+	Visibility                                            *AmbitiousVisibility   `json:"visibility,omitempty"`
 }
 
 type EventLogsExportParams struct {
@@ -14408,6 +16703,89 @@ type EventLogsExportResponse struct {
 
 // Instance list properties
 type EventLogsExportResponseItem struct {
+	// Related ability ID if applicable                                           
+	AbilityID                                              *string                `json:"abilityId,omitempty"`
+	// Related blueprint ID if applicable                                         
+	BlueprintID                                            *string                `json:"blueprintId,omitempty"`
+	// Related bot ID if applicable                                               
+	BotID                                                  *string                `json:"botId,omitempty"`
+	// Related contact ID if applicable                                           
+	ContactID                                              *string                `json:"contactId,omitempty"`
+	// Related conversation ID if applicable                                      
+	ConversationID                                         *string                `json:"conversationId,omitempty"`
+	// The timestamp (ms) when the instance was created                           
+	CreatedAt                                              float64                `json:"createdAt"`
+	// Related dataset ID if applicable                                           
+	DatasetID                                              *string                `json:"datasetId,omitempty"`
+	// The associated description                                                 
+	Description                                            *string                `json:"description,omitempty"`
+	// Related Discord integration ID if applicable                               
+	DiscordIntegrationID                                   *string                `json:"discordIntegrationId,omitempty"`
+	// Related email integration ID if applicable                                 
+	EmailIntegrationID                                     *string                `json:"emailIntegrationId,omitempty"`
+	// Related extract integration ID if applicable                               
+	ExtractIntegrationID                                   *string                `json:"extractIntegrationId,omitempty"`
+	// Related file ID if applicable                                              
+	FileID                                                 *string                `json:"fileId,omitempty"`
+	// Related Google Chat integration ID if applicable                           
+	GooglechatIntegrationID                                *string                `json:"googlechatIntegrationId,omitempty"`
+	// The instance ID                                                            
+	ID                                                     string                 `json:"id"`
+	// Related MCP server integration ID if applicable                            
+	McpserverIntegrationID                                 *string                `json:"mcpserverIntegrationId,omitempty"`
+	// Related Messenger integration ID if applicable                             
+	MessengerIntegrationID                                 *string                `json:"messengerIntegrationId,omitempty"`
+	// Meta data information                                                      
+	Meta                                                   map[string]interface{} `json:"meta,omitempty"`
+	// Related Microsoft Teams integration ID if applicable                       
+	MicrosoftteamsIntegrationID                            *string                `json:"microsoftteamsIntegrationId,omitempty"`
+	// The associated name                                                        
+	Name                                                   *string                `json:"name,omitempty"`
+	// Related Notion integration ID if applicable                                
+	NotionIntegrationID                                    *string                `json:"notionIntegrationId,omitempty"`
+	// Related portal ID if applicable                                            
+	PortalID                                               *string                `json:"portalId,omitempty"`
+	// Related record ID if applicable                                            
+	RecordID                                               *string                `json:"recordId,omitempty"`
+	// Related secret ID if applicable                                            
+	SecretID                                               *string                `json:"secretId,omitempty"`
+	// Related sitemap integration ID if applicable                               
+	SitemapIntegrationID                                   *string                `json:"sitemapIntegrationId,omitempty"`
+	// Related skillset ID if applicable                                          
+	SkillsetID                                             *string                `json:"skillsetId,omitempty"`
+	// Related Slack integration ID if applicable                                 
+	SlackIntegrationID                                     *string                `json:"slackIntegrationId,omitempty"`
+	// Related support integration ID if applicable                               
+	SupportIntegrationID                                   *string                `json:"supportIntegrationId,omitempty"`
+	// Related task ID if applicable                                              
+	TaskID                                                 *string                `json:"taskId,omitempty"`
+	// Related Telegram integration ID if applicable                              
+	TelegramIntegrationID                                  *string                `json:"telegramIntegrationId,omitempty"`
+	// Related trigger integration ID if applicable                               
+	TriggerIntegrationID                                   *string                `json:"triggerIntegrationId,omitempty"`
+	// Related Twilio integration ID if applicable                                
+	TwilioIntegrationID                                    *string                `json:"twilioIntegrationId,omitempty"`
+	// The type of event (e.g., 'conversation.create')                            
+	Type                                                   string                 `json:"type"`
+	// The timestamp (ms) when the instance was updated                           
+	UpdatedAt                                              float64                `json:"updatedAt"`
+	// Related webhook ID if applicable                                           
+	WebhookID                                              *string                `json:"webhookId,omitempty"`
+	// Related WhatsApp integration ID if applicable                              
+	WhatsappIntegrationID                                  *string                `json:"whatsappIntegrationId,omitempty"`
+	// Related widget integration ID if applicable                                
+	WidgetIntegrationID                                    *string                `json:"widgetIntegrationId,omitempty"`
+}
+
+type EventLogsExportStreamItem struct {
+	// Instance list properties                              
+	Data                       EventLogsExportStreamItemData `json:"data"`
+	// The type of event                                     
+	Type                       EventLogsExportStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type EventLogsExportStreamItemData struct {
 	// Related ability ID if applicable                                           
 	AbilityID                                              *string                `json:"abilityId,omitempty"`
 	// Related blueprint ID if applicable                                         
@@ -14575,6 +16953,89 @@ type EventLogListResponseItem struct {
 	WidgetIntegrationID                                    *string                `json:"widgetIntegrationId,omitempty"`
 }
 
+type EventLogListStreamItem struct {
+	// Instance list properties                           
+	Data                       EventLogListStreamItemData `json:"data"`
+	// The type of event                                  
+	Type                       EventLogListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type EventLogListStreamItemData struct {
+	// Related ability ID if applicable                                           
+	AbilityID                                              *string                `json:"abilityId,omitempty"`
+	// Related blueprint ID if applicable                                         
+	BlueprintID                                            *string                `json:"blueprintId,omitempty"`
+	// Related bot ID if applicable                                               
+	BotID                                                  *string                `json:"botId,omitempty"`
+	// Related contact ID if applicable                                           
+	ContactID                                              *string                `json:"contactId,omitempty"`
+	// Related conversation ID if applicable                                      
+	ConversationID                                         *string                `json:"conversationId,omitempty"`
+	// The timestamp (ms) when the instance was created                           
+	CreatedAt                                              float64                `json:"createdAt"`
+	// Related dataset ID if applicable                                           
+	DatasetID                                              *string                `json:"datasetId,omitempty"`
+	// The associated description                                                 
+	Description                                            *string                `json:"description,omitempty"`
+	// Related Discord integration ID if applicable                               
+	DiscordIntegrationID                                   *string                `json:"discordIntegrationId,omitempty"`
+	// Related email integration ID if applicable                                 
+	EmailIntegrationID                                     *string                `json:"emailIntegrationId,omitempty"`
+	// Related extract integration ID if applicable                               
+	ExtractIntegrationID                                   *string                `json:"extractIntegrationId,omitempty"`
+	// Related file ID if applicable                                              
+	FileID                                                 *string                `json:"fileId,omitempty"`
+	// Related Google Chat integration ID if applicable                           
+	GooglechatIntegrationID                                *string                `json:"googlechatIntegrationId,omitempty"`
+	// The instance ID                                                            
+	ID                                                     string                 `json:"id"`
+	// Related MCP server integration ID if applicable                            
+	McpserverIntegrationID                                 *string                `json:"mcpserverIntegrationId,omitempty"`
+	// Related Messenger integration ID if applicable                             
+	MessengerIntegrationID                                 *string                `json:"messengerIntegrationId,omitempty"`
+	// Meta data information                                                      
+	Meta                                                   map[string]interface{} `json:"meta,omitempty"`
+	// Related Microsoft Teams integration ID if applicable                       
+	MicrosoftteamsIntegrationID                            *string                `json:"microsoftteamsIntegrationId,omitempty"`
+	// The associated name                                                        
+	Name                                                   *string                `json:"name,omitempty"`
+	// Related Notion integration ID if applicable                                
+	NotionIntegrationID                                    *string                `json:"notionIntegrationId,omitempty"`
+	// Related portal ID if applicable                                            
+	PortalID                                               *string                `json:"portalId,omitempty"`
+	// Related record ID if applicable                                            
+	RecordID                                               *string                `json:"recordId,omitempty"`
+	// Related secret ID if applicable                                            
+	SecretID                                               *string                `json:"secretId,omitempty"`
+	// Related sitemap integration ID if applicable                               
+	SitemapIntegrationID                                   *string                `json:"sitemapIntegrationId,omitempty"`
+	// Related skillset ID if applicable                                          
+	SkillsetID                                             *string                `json:"skillsetId,omitempty"`
+	// Related Slack integration ID if applicable                                 
+	SlackIntegrationID                                     *string                `json:"slackIntegrationId,omitempty"`
+	// Related support integration ID if applicable                               
+	SupportIntegrationID                                   *string                `json:"supportIntegrationId,omitempty"`
+	// Related task ID if applicable                                              
+	TaskID                                                 *string                `json:"taskId,omitempty"`
+	// Related Telegram integration ID if applicable                              
+	TelegramIntegrationID                                  *string                `json:"telegramIntegrationId,omitempty"`
+	// Related trigger integration ID if applicable                               
+	TriggerIntegrationID                                   *string                `json:"triggerIntegrationId,omitempty"`
+	// Related Twilio integration ID if applicable                                
+	TwilioIntegrationID                                    *string                `json:"twilioIntegrationId,omitempty"`
+	// The type of event (e.g., 'conversation.create')                            
+	Type                                                   string                 `json:"type"`
+	// The timestamp (ms) when the instance was updated                           
+	UpdatedAt                                              float64                `json:"updatedAt"`
+	// Related webhook ID if applicable                                           
+	WebhookID                                              *string                `json:"webhookId,omitempty"`
+	// Related WhatsApp integration ID if applicable                              
+	WhatsappIntegrationID                                  *string                `json:"whatsappIntegrationId,omitempty"`
+	// Related widget integration ID if applicable                                
+	WidgetIntegrationID                                    *string                `json:"widgetIntegrationId,omitempty"`
+}
+
 type EventLogsSubscribeRequest struct {
 	// Number of recent historical events to replay before              
 	// subscribing to live updates. When provided, the subscriber       
@@ -14583,6 +17044,89 @@ type EventLogsSubscribeRequest struct {
 	// catching up on events that may have occurred during              
 	// connection setup.                                                
 	HistoryLength                                                *int64 `json:"historyLength,omitempty"`
+}
+
+type EventLogsSubscribeStreamItem struct {
+	// Instance list properties                                 
+	Data                       EventLogsSubscribeStreamItemData `json:"data"`
+	// The type of event                                        
+	Type                       EventLogsSubscribeStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type EventLogsSubscribeStreamItemData struct {
+	// Related ability ID if applicable                                           
+	AbilityID                                              *string                `json:"abilityId,omitempty"`
+	// Related blueprint ID if applicable                                         
+	BlueprintID                                            *string                `json:"blueprintId,omitempty"`
+	// Related bot ID if applicable                                               
+	BotID                                                  *string                `json:"botId,omitempty"`
+	// Related contact ID if applicable                                           
+	ContactID                                              *string                `json:"contactId,omitempty"`
+	// Related conversation ID if applicable                                      
+	ConversationID                                         *string                `json:"conversationId,omitempty"`
+	// The timestamp (ms) when the instance was created                           
+	CreatedAt                                              float64                `json:"createdAt"`
+	// Related dataset ID if applicable                                           
+	DatasetID                                              *string                `json:"datasetId,omitempty"`
+	// The associated description                                                 
+	Description                                            *string                `json:"description,omitempty"`
+	// Related Discord integration ID if applicable                               
+	DiscordIntegrationID                                   *string                `json:"discordIntegrationId,omitempty"`
+	// Related email integration ID if applicable                                 
+	EmailIntegrationID                                     *string                `json:"emailIntegrationId,omitempty"`
+	// Related extract integration ID if applicable                               
+	ExtractIntegrationID                                   *string                `json:"extractIntegrationId,omitempty"`
+	// Related file ID if applicable                                              
+	FileID                                                 *string                `json:"fileId,omitempty"`
+	// Related Google Chat integration ID if applicable                           
+	GooglechatIntegrationID                                *string                `json:"googlechatIntegrationId,omitempty"`
+	// The instance ID                                                            
+	ID                                                     string                 `json:"id"`
+	// Related MCP server integration ID if applicable                            
+	McpserverIntegrationID                                 *string                `json:"mcpserverIntegrationId,omitempty"`
+	// Related Messenger integration ID if applicable                             
+	MessengerIntegrationID                                 *string                `json:"messengerIntegrationId,omitempty"`
+	// Meta data information                                                      
+	Meta                                                   map[string]interface{} `json:"meta,omitempty"`
+	// Related Microsoft Teams integration ID if applicable                       
+	MicrosoftteamsIntegrationID                            *string                `json:"microsoftteamsIntegrationId,omitempty"`
+	// The associated name                                                        
+	Name                                                   *string                `json:"name,omitempty"`
+	// Related Notion integration ID if applicable                                
+	NotionIntegrationID                                    *string                `json:"notionIntegrationId,omitempty"`
+	// Related portal ID if applicable                                            
+	PortalID                                               *string                `json:"portalId,omitempty"`
+	// Related record ID if applicable                                            
+	RecordID                                               *string                `json:"recordId,omitempty"`
+	// Related secret ID if applicable                                            
+	SecretID                                               *string                `json:"secretId,omitempty"`
+	// Related sitemap integration ID if applicable                               
+	SitemapIntegrationID                                   *string                `json:"sitemapIntegrationId,omitempty"`
+	// Related skillset ID if applicable                                          
+	SkillsetID                                             *string                `json:"skillsetId,omitempty"`
+	// Related Slack integration ID if applicable                                 
+	SlackIntegrationID                                     *string                `json:"slackIntegrationId,omitempty"`
+	// Related support integration ID if applicable                               
+	SupportIntegrationID                                   *string                `json:"supportIntegrationId,omitempty"`
+	// Related task ID if applicable                                              
+	TaskID                                                 *string                `json:"taskId,omitempty"`
+	// Related Telegram integration ID if applicable                              
+	TelegramIntegrationID                                  *string                `json:"telegramIntegrationId,omitempty"`
+	// Related trigger integration ID if applicable                               
+	TriggerIntegrationID                                   *string                `json:"triggerIntegrationId,omitempty"`
+	// Related Twilio integration ID if applicable                                
+	TwilioIntegrationID                                    *string                `json:"twilioIntegrationId,omitempty"`
+	// The type of event (e.g., 'conversation.create')                            
+	Type                                                   string                 `json:"type"`
+	// The timestamp (ms) when the instance was updated                           
+	UpdatedAt                                              float64                `json:"updatedAt"`
+	// Related webhook ID if applicable                                           
+	WebhookID                                              *string                `json:"webhookId,omitempty"`
+	// Related WhatsApp integration ID if applicable                              
+	WhatsappIntegrationID                                  *string                `json:"whatsappIntegrationId,omitempty"`
+	// Related widget integration ID if applicable                                
+	WidgetIntegrationID                                    *string                `json:"widgetIntegrationId,omitempty"`
 }
 
 type FileDeleteParams struct {
@@ -14612,6 +17156,8 @@ type FileFetchParams struct {
 
 // Blueprint properties
 type FileFetchResponse struct {
+	// The unique alias for the instance                                            
+	Alias                                              *string                      `json:"alias,omitempty"`
 	// The ID of the blueprint                                                      
 	BlueprintID                                        *string                      `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                             
@@ -14743,6 +17289,8 @@ type FileListResponse struct {
 
 // Blueprint properties
 type FileListResponseItem struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -14758,7 +17306,36 @@ type FileListResponseItem struct {
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 	// The file visibility                                                    
-	Visibility                                         *IndigoVisibility      `json:"visibility,omitempty"`
+	Visibility                                         *CunningVisibility     `json:"visibility,omitempty"`
+}
+
+type FileListStreamItem struct {
+	// Blueprint properties                       
+	Data                   FileListStreamItemData `json:"data"`
+	// The type of event                          
+	Type                   FileListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type FileListStreamItemData struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The file visibility                                                    
+	Visibility                                         *MagentaVisibility     `json:"visibility,omitempty"`
 }
 
 type IntegrationDiscordDeleteParams struct {
@@ -14778,6 +17355,8 @@ type IntegrationDiscordFetchParams struct {
 
 // Blueprint properties
 type IntegrationDiscordFetchResponse struct {
+	// The unique alias for the instance                                                                               
+	Alias                                                                                       *string                `json:"alias,omitempty"`
 	// Restrict which Discord users can interact with this integration. Accepts Discord user IDs                       
 	// (17-18 digit snowflakes) or @username, one per line. Use * to allow all senders. Leave                          
 	// empty to deny all.                                                                                              
@@ -14825,6 +17404,8 @@ type IntegrationDiscordUpdateParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationDiscordUpdateRequest struct {
+	// The unique alias for the instance                                                                               
+	Alias                                                                                       *string                `json:"alias,omitempty"`
 	// Restrict which Discord users can interact with this integration. Accepts Discord user IDs                       
 	// (17-18 digit snowflakes) or @username, one per line. Use * to allow all senders. Leave                          
 	// empty to deny all.                                                                                              
@@ -14860,6 +17441,8 @@ type IntegrationDiscordUpdateResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationDiscordCreateRequest struct {
+	// The unique alias for the instance                                                                               
+	Alias                                                                                       *string                `json:"alias,omitempty"`
 	// Restrict which Discord users can interact with this integration. Accepts Discord user IDs                       
 	// (17-18 digit snowflakes) or @username, one per line. Use * to allow all senders. Leave                          
 	// empty to deny all.                                                                                              
@@ -14912,6 +17495,49 @@ type IntegrationDiscordListResponse struct {
 
 // Blueprint properties
 type IntegrationDiscordListResponseItem struct {
+	// The unique alias for the instance                                                                               
+	Alias                                                                                       *string                `json:"alias,omitempty"`
+	// Restrict which Discord users can interact with this integration. Accepts Discord user IDs                       
+	// (17-18 digit snowflakes) or @username, one per line. Use * to allow all senders. Leave                          
+	// empty to deny all.                                                                                              
+	AllowFrom                                                                                   *string                `json:"allowFrom,omitempty"`
+	// The Discord application ID                                                                                      
+	AppID                                                                                       *string                `json:"appId,omitempty"`
+	// The ID of the blueprint                                                                                         
+	BlueprintID                                                                                 *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                                   
+	BotID                                                                                       *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                                                                     
+	ContactCollection                                                                           *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                                                                
+	CreatedAt                                                                                   float64                `json:"createdAt"`
+	// The associated description                                                                                      
+	Description                                                                                 *string                `json:"description,omitempty"`
+	// The Discord command handle                                                                                      
+	Handle                                                                                      *string                `json:"handle,omitempty"`
+	// The instance ID                                                                                                 
+	ID                                                                                          string                 `json:"id"`
+	// Meta data information                                                                                           
+	Meta                                                                                        map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                             
+	Name                                                                                        *string                `json:"name,omitempty"`
+	// The chat session duration                                                                                       
+	SessionDuration                                                                             *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                                
+	UpdatedAt                                                                                   float64                `json:"updatedAt"`
+}
+
+type IntegrationDiscordListStreamItem struct {
+	// Blueprint properties                                     
+	Data                   IntegrationDiscordListStreamItemData `json:"data"`
+	// The type of event                                        
+	Type                   IntegrationDiscordListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type IntegrationDiscordListStreamItemData struct {
+	// The unique alias for the instance                                                                               
+	Alias                                                                                       *string                `json:"alias,omitempty"`
 	// Restrict which Discord users can interact with this integration. Accepts Discord user IDs                       
 	// (17-18 digit snowflakes) or @username, one per line. Use * to allow all senders. Leave                          
 	// empty to deny all.                                                                                              
@@ -14959,6 +17585,8 @@ type EmailIntegrationFetchParams struct {
 
 // Blueprint properties
 type EmailIntegrationFetchResponse struct {
+	// The unique alias for the instance                                                                           
+	Alias                                                                                   *string                `json:"alias,omitempty"`
 	// Newline-separated list of email patterns allowed to send messages to this integration                       
 	AllowFrom                                                                               *string                `json:"allowFrom,omitempty"`
 	// Weather the bot supports attachments                                                                        
@@ -15002,6 +17630,8 @@ type EmailIntegrationUpdateParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type EmailIntegrationUpdateRequest struct {
+	// The unique alias for the instance                                                                           
+	Alias                                                                                   *string                `json:"alias,omitempty"`
 	// Newline-separated list of email patterns allowed to send messages to this integration                       
 	AllowFrom                                                                               *string                `json:"allowFrom,omitempty"`
 	// Weather the bot supports attachments                                                                        
@@ -15029,6 +17659,8 @@ type EmailIntegrationUpdateResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type EmailIntegrationCreateRequest struct {
+	// The unique alias for the instance                                                                           
+	Alias                                                                                   *string                `json:"alias,omitempty"`
 	// Newline-separated list of email patterns allowed to send messages to this integration                       
 	AllowFrom                                                                               *string                `json:"allowFrom,omitempty"`
 	// Weather the bot supports attachments                                                                        
@@ -15073,6 +17705,45 @@ type EmailIntegrationListResponse struct {
 
 // Blueprint properties
 type EmailIntegrationListResponseItem struct {
+	// The unique alias for the instance                                                                           
+	Alias                                                                                   *string                `json:"alias,omitempty"`
+	// Newline-separated list of email patterns allowed to send messages to this integration                       
+	AllowFrom                                                                               *string                `json:"allowFrom,omitempty"`
+	// Weather the bot supports attachments                                                                        
+	Attachments                                                                             *bool                  `json:"attachments,omitempty"`
+	// The ID of the blueprint                                                                                     
+	BlueprintID                                                                             *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                               
+	BotID                                                                                   *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                                                                 
+	ContactCollection                                                                       *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                                                            
+	CreatedAt                                                                               float64                `json:"createdAt"`
+	// The associated description                                                                                  
+	Description                                                                             *string                `json:"description,omitempty"`
+	// The instance ID                                                                                             
+	ID                                                                                      string                 `json:"id"`
+	// Meta data information                                                                                       
+	Meta                                                                                    map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                         
+	Name                                                                                    *string                `json:"name,omitempty"`
+	// The session duration (in milliseconds)                                                                      
+	SessionDuration                                                                         *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                            
+	UpdatedAt                                                                               float64                `json:"updatedAt"`
+}
+
+type EmailIntegrationListStreamItem struct {
+	// Blueprint properties                                   
+	Data                   EmailIntegrationListStreamItemData `json:"data"`
+	// The type of event                                      
+	Type                   EmailIntegrationListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type EmailIntegrationListStreamItemData struct {
+	// The unique alias for the instance                                                                           
+	Alias                                                                                   *string                `json:"alias,omitempty"`
 	// Newline-separated list of email patterns allowed to send messages to this integration                       
 	AllowFrom                                                                               *string                `json:"allowFrom,omitempty"`
 	// Weather the bot supports attachments                                                                        
@@ -15116,6 +17787,8 @@ type IntegrationExtractFetchParams struct {
 
 // Blueprint properties
 type IntegrationExtractFetchResponse struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the Bot to use                                               
@@ -15128,6 +17801,8 @@ type IntegrationExtractFetchResponse struct {
 	ID                                                 string                 `json:"id"`
 	// Meta data information                                                  
 	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The language model to use for data extraction                          
+	Model                                              *string                `json:"model,omitempty"`
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
 	// Optional webhook to receive the extracted data                         
@@ -15228,6 +17903,8 @@ type IntegrationExtractUpdateParams struct {
 
 // Blueprint properties
 type IntegrationExtractUpdateRequest struct {
+	// The unique alias for the instance                                    
+	Alias                                            *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                              
 	BlueprintID                                      *string                `json:"blueprintId,omitempty"`
 	// The ID of the Bot to use                                             
@@ -15253,6 +17930,8 @@ type IntegrationExtractUpdateResponse struct {
 
 // Blueprint properties
 type IntegrationExtractCreateRequest struct {
+	// The unique alias for the instance                                    
+	Alias                                            *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                              
 	BlueprintID                                      *string                `json:"blueprintId,omitempty"`
 	// The ID of the Bot to use                                             
@@ -15295,6 +17974,8 @@ type IntegrationExtractListResponse struct {
 
 // Blueprint properties
 type IntegrationExtractListResponseItem struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the Bot to use                                               
@@ -15307,6 +17988,43 @@ type IntegrationExtractListResponseItem struct {
 	ID                                                 string                 `json:"id"`
 	// Meta data information                                                  
 	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The language model to use for data extraction                          
+	Model                                              *string                `json:"model,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// Optional webhook to receive the extracted data                         
+	Request                                            *string                `json:"request,omitempty"`
+	// The configured extraction schema                                       
+	Schema                                             map[string]interface{} `json:"schema,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type IntegrationExtractListStreamItem struct {
+	// Blueprint properties                                     
+	Data                   IntegrationExtractListStreamItemData `json:"data"`
+	// The type of event                                        
+	Type                   IntegrationExtractListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type IntegrationExtractListStreamItemData struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The ID of the Bot to use                                               
+	BotID                                              string                 `json:"botId"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The language model to use for data extraction                          
+	Model                                              *string                `json:"model,omitempty"`
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
 	// Optional webhook to receive the extracted data                         
@@ -15334,6 +18052,8 @@ type GooglechatIntegrationFetchParams struct {
 
 // Blueprint properties
 type GooglechatIntegrationFetchResponse struct {
+	// The unique alias for the instance                                                                    
+	Alias                                                                            *string                `json:"alias,omitempty"`
 	// The allowed senders for this integration                                                             
 	AllowFrom                                                                        *string                `json:"allowFrom,omitempty"`
 	// Whether file attachment processing is enabled                                                        
@@ -15383,6 +18103,8 @@ type GooglechatIntegrationUpdateParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type GooglechatIntegrationUpdateRequest struct {
+	// The unique alias for the instance                                              
+	Alias                                                      *string                `json:"alias,omitempty"`
 	// The allowed senders for this integration                                       
 	AllowFrom                                                  *string                `json:"allowFrom,omitempty"`
 	// Whether file attachment processing is enabled                                  
@@ -15416,6 +18138,8 @@ type GooglechatIntegrationUpdateResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type GooglechatIntegrationCreateRequest struct {
+	// The unique alias for the instance                                                                             
+	Alias                                                                                     *string                `json:"alias,omitempty"`
 	// Restrict which Google Chat users can interact with this integration. Accepts user                             
 	// resource names (users/USER_ID) or * to allow all. One per line.                                               
 	AllowFrom                                                                                 *string                `json:"allowFrom,omitempty"`
@@ -15469,6 +18193,51 @@ type GooglechatIntegrationListResponse struct {
 
 // Blueprint properties
 type GooglechatIntegrationListResponseItem struct {
+	// The unique alias for the instance                                                                    
+	Alias                                                                            *string                `json:"alias,omitempty"`
+	// The allowed senders for this integration                                                             
+	AllowFrom                                                                        *string                `json:"allowFrom,omitempty"`
+	// Whether file attachment processing is enabled                                                        
+	Attachments                                                                      *bool                  `json:"attachments,omitempty"`
+	// The auto-respond configuration                                                                       
+	AutoRespond                                                                      *string                `json:"autoRespond,omitempty"`
+	// The ID of the blueprint                                                                              
+	BlueprintID                                                                      *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                        
+	BotID                                                                            *string                `json:"botId,omitempty"`
+	// Whether to collect contacts                                                                          
+	ContactCollection                                                                *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                                                     
+	CreatedAt                                                                        float64                `json:"createdAt"`
+	// The associated description                                                                           
+	Description                                                                      *string                `json:"description,omitempty"`
+	// The instance ID                                                                                      
+	ID                                                                               string                 `json:"id"`
+	// Meta data information                                                                                
+	Meta                                                                             map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                  
+	Name                                                                             *string                `json:"name,omitempty"`
+	// The Google Cloud project number for JWT verification                                                 
+	ProjectNumber                                                                    *string                `json:"projectNumber,omitempty"`
+	// The service account key (returned as '********' if configured, null otherwise)                       
+	ServiceAccountKey                                                                *string                `json:"serviceAccountKey,omitempty"`
+	// The session duration for the integration                                                             
+	SessionDuration                                                                  *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                     
+	UpdatedAt                                                                        float64                `json:"updatedAt"`
+}
+
+type GooglechatIntegrationListStreamItem struct {
+	// Blueprint properties                                        
+	Data                   GooglechatIntegrationListStreamItemData `json:"data"`
+	// The type of event                                           
+	Type                   GooglechatIntegrationListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type GooglechatIntegrationListStreamItemData struct {
+	// The unique alias for the instance                                                                    
+	Alias                                                                            *string                `json:"alias,omitempty"`
 	// The allowed senders for this integration                                                             
 	AllowFrom                                                                        *string                `json:"allowFrom,omitempty"`
 	// Whether file attachment processing is enabled                                                        
@@ -15521,6 +18290,8 @@ type IntegrationInstagramFetchResponse struct {
 	// The Instagram integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                                                        
+	Alias                                                                                *string                `json:"alias,omitempty"`
 	// Whether the bot supports attachments                                                                     
 	Attachments                                                                          *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                                                                  
@@ -15566,6 +18337,8 @@ type IntegrationInstagramUpdateParams struct {
 type IntegrationInstagramUpdateRequest struct {
 	// The Instagram integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                   
+	Alias                                           *string                `json:"alias,omitempty"`
 	// Whether the bot supports attachments                                
 	Attachments                                     *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                             
@@ -15593,6 +18366,8 @@ type IntegrationInstagramUpdateResponse struct {
 type IntegrationInstagramCreateRequest struct {
 	// The Instagram integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                   
+	Alias                                           *string                `json:"alias,omitempty"`
 	// Whether the bot supports attachments                                
 	Attachments                                     *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                             
@@ -15638,6 +18413,48 @@ type IntegrationInstagramListResponseItem struct {
 	// The Instagram integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                                                        
+	Alias                                                                                *string                `json:"alias,omitempty"`
+	// Whether the bot supports attachments                                                                     
+	Attachments                                                                          *bool                  `json:"attachments,omitempty"`
+	// The ID of the blueprint                                                                                  
+	BlueprintID                                                                          *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                            
+	BotID                                                                                *string                `json:"botId,omitempty"`
+	// Whether to collect contacts                                                                              
+	ContactCollection                                                                    *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                                                         
+	CreatedAt                                                                            float64                `json:"createdAt"`
+	// The associated description                                                                               
+	Description                                                                          *string                `json:"description,omitempty"`
+	// The instance ID                                                                                          
+	ID                                                                                   string                 `json:"id"`
+	// Meta data information                                                                                    
+	Meta                                                                                 map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                      
+	Name                                                                                 *string                `json:"name,omitempty"`
+	// The session duration (in milliseconds)                                                                   
+	SessionDuration                                                                      *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                         
+	UpdatedAt                                                                            float64                `json:"updatedAt"`
+	// The Instagram integration verify token                                                                   
+	VerifyToken                                                                          string                 `json:"verifyToken"`
+}
+
+type IntegrationInstagramListStreamItem struct {
+	// Blueprint properties                                       
+	Data                   IntegrationInstagramListStreamItemData `json:"data"`
+	// The type of event                                          
+	Type                   IntegrationInstagramListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type IntegrationInstagramListStreamItemData struct {
+	// The Instagram integration access token (returned as '********' if configured, null                       
+	// otherwise)                                                                                               
+	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                                                        
+	Alias                                                                                *string                `json:"alias,omitempty"`
 	// Whether the bot supports attachments                                                                     
 	Attachments                                                                          *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                                                                  
@@ -15681,6 +18498,8 @@ type IntegrationMCPServerFetchParams struct {
 
 // Blueprint properties
 type IntegrationMCPServerFetchResponse struct {
+	// The unique alias for the instance                                                 
+	Alias                                                         *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                           
 	BlueprintID                                                   *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                  
@@ -15708,6 +18527,8 @@ type IntegrationMCPServerUpdateParams struct {
 
 // Blueprint properties
 type IntegrationMCPServerUpdateRequest struct {
+	// The unique alias for the instance                                                 
+	Alias                                                         *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                           
 	BlueprintID                                                   *string                `json:"blueprintId,omitempty"`
 	// The associated description                                                        
@@ -15729,6 +18550,8 @@ type IntegrationMCPServerUpdateResponse struct {
 
 // Blueprint properties
 type IntegrationMCPServerCreateRequest struct {
+	// The unique alias for the instance                                                 
+	Alias                                                         *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                           
 	BlueprintID                                                   *string                `json:"blueprintId,omitempty"`
 	// The associated description                                                        
@@ -15767,6 +18590,39 @@ type IntegrationMCPServerListResponse struct {
 
 // Blueprint properties
 type IntegrationMCPServerListResponseItem struct {
+	// The unique alias for the instance                                                 
+	Alias                                                         *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                           
+	BlueprintID                                                   *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                                  
+	CreatedAt                                                     float64                `json:"createdAt"`
+	// The associated description                                                        
+	Description                                                   *string                `json:"description,omitempty"`
+	// The instance ID                                                                   
+	ID                                                            string                 `json:"id"`
+	// Meta data information                                                             
+	Meta                                                          map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                               
+	Name                                                          *string                `json:"name,omitempty"`
+	// The ID of the OAuth connection for IdP-based authentication                       
+	OAuthConnectionID                                             *string                `json:"oAuthConnectionId,omitempty"`
+	// The ID of the skillset                                                            
+	SkillsetID                                                    *string                `json:"skillsetId,omitempty"`
+	// The timestamp (ms) when the instance was updated                                  
+	UpdatedAt                                                     float64                `json:"updatedAt"`
+}
+
+type IntegrationMCPServerListStreamItem struct {
+	// Blueprint properties                                       
+	Data                   IntegrationMCPServerListStreamItemData `json:"data"`
+	// The type of event                                          
+	Type                   IntegrationMCPServerListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type IntegrationMCPServerListStreamItemData struct {
+	// The unique alias for the instance                                                 
+	Alias                                                         *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                           
 	BlueprintID                                                   *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                  
@@ -15807,6 +18663,8 @@ type IntegrationMessengerFetchResponse struct {
 	// The Messenger integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                                                        
+	Alias                                                                                *string                `json:"alias,omitempty"`
 	// Whether the bot supports attachments                                                                     
 	Attachments                                                                          *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                                                                  
@@ -15852,6 +18710,8 @@ type IntegrationMessengerUpdateParams struct {
 type IntegrationMessengerUpdateRequest struct {
 	// The Messenger integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                   
+	Alias                                           *string                `json:"alias,omitempty"`
 	// Whether the bot supports attachments                                
 	Attachments                                     *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                             
@@ -15879,6 +18739,8 @@ type IntegrationMessengerUpdateResponse struct {
 type IntegrationMessengerCreateRequest struct {
 	// The Messenger integration access token                              
 	AccessToken                                     *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                   
+	Alias                                           *string                `json:"alias,omitempty"`
 	// Whether the bot supports attachments                                
 	Attachments                                     *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                             
@@ -15924,6 +18786,48 @@ type IntegrationMessengerListResponseItem struct {
 	// The Messenger integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                               
 	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                                                        
+	Alias                                                                                *string                `json:"alias,omitempty"`
+	// Whether the bot supports attachments                                                                     
+	Attachments                                                                          *bool                  `json:"attachments,omitempty"`
+	// The ID of the blueprint                                                                                  
+	BlueprintID                                                                          *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                            
+	BotID                                                                                *string                `json:"botId,omitempty"`
+	// Whether to collect contacts                                                                              
+	ContactCollection                                                                    *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                                                         
+	CreatedAt                                                                            float64                `json:"createdAt"`
+	// The associated description                                                                               
+	Description                                                                          *string                `json:"description,omitempty"`
+	// The instance ID                                                                                          
+	ID                                                                                   string                 `json:"id"`
+	// Meta data information                                                                                    
+	Meta                                                                                 map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                      
+	Name                                                                                 *string                `json:"name,omitempty"`
+	// The session duration (in milliseconds)                                                                   
+	SessionDuration                                                                      *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                         
+	UpdatedAt                                                                            float64                `json:"updatedAt"`
+	// The Messenger integration verify token                                                                   
+	VerifyToken                                                                          string                 `json:"verifyToken"`
+}
+
+type IntegrationMessengerListStreamItem struct {
+	// Blueprint properties                                       
+	Data                   IntegrationMessengerListStreamItemData `json:"data"`
+	// The type of event                                          
+	Type                   IntegrationMessengerListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type IntegrationMessengerListStreamItemData struct {
+	// The Messenger integration access token (returned as '********' if configured, null                       
+	// otherwise)                                                                                               
+	AccessToken                                                                          *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                                                        
+	Alias                                                                                *string                `json:"alias,omitempty"`
 	// Whether the bot supports attachments                                                                     
 	Attachments                                                                          *bool                  `json:"attachments,omitempty"`
 	// The ID of the blueprint                                                                                  
@@ -15967,6 +18871,8 @@ type MicrosoftteamsIntegrationFetchParams struct {
 
 // Blueprint properties
 type MicrosoftteamsIntegrationFetchResponse struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The allowed senders for this integration                               
 	AllowFrom                                          *string                `json:"allowFrom,omitempty"`
 	// The ID of the blueprint                                                
@@ -16010,6 +18916,8 @@ type MicrosoftteamsIntegrationUpdateParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type MicrosoftteamsIntegrationUpdateRequest struct {
+	// The unique alias for the instance                                    
+	Alias                                            *string                `json:"alias,omitempty"`
 	// The allowed senders for this integration                             
 	AllowFrom                                        *string                `json:"allowFrom,omitempty"`
 	// The ID of the blueprint                                              
@@ -16041,6 +18949,8 @@ type MicrosoftteamsIntegrationUpdateResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type MicrosoftteamsIntegrationCreateRequest struct {
+	// The unique alias for the instance                                    
+	Alias                                            *string                `json:"alias,omitempty"`
 	// The allowed senders for this integration                             
 	AllowFrom                                        *string                `json:"allowFrom,omitempty"`
 	// The ID of the blueprint                                              
@@ -16089,6 +18999,45 @@ type MicrosoftteamsIntegrationListResponse struct {
 
 // Blueprint properties
 type MicrosoftteamsIntegrationListResponseItem struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The allowed senders for this integration                               
+	AllowFrom                                          *string                `json:"allowFrom,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The Microsoft Bot Framework Application ID                             
+	BotFrameworkAppID                                  *string                `json:"botFrameworkAppId,omitempty"`
+	// The ID of the bot this configuration is using                          
+	BotID                                              *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                            
+	ContactCollection                                  *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The chat session duration                                              
+	SessionDuration                                    *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type MicrosoftteamsIntegrationListStreamItem struct {
+	// Blueprint properties                                            
+	Data                   MicrosoftteamsIntegrationListStreamItemData `json:"data"`
+	// The type of event                                               
+	Type                   MicrosoftteamsIntegrationListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type MicrosoftteamsIntegrationListStreamItemData struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The allowed senders for this integration                               
 	AllowFrom                                          *string                `json:"allowFrom,omitempty"`
 	// The ID of the blueprint                                                
@@ -16132,6 +19081,8 @@ type IntegrationNotionFetchParams struct {
 
 // Blueprint properties
 type IntegrationNotionFetchResponse struct {
+	// The unique alias for the instance                                                                                    
+	Alias                                                                         *string                                   `json:"alias,omitempty"`
 	// The ID of the blueprint                                                                                              
 	BlueprintID                                                                   *string                                   `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                                                     
@@ -16177,6 +19128,8 @@ type IntegrationNotionUpdateParams struct {
 
 // Blueprint properties
 type IntegrationNotionUpdateRequest struct {
+	// The unique alias for the instance                                   
+	Alias                                           *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the dataset to sync into                                  
@@ -16202,6 +19155,8 @@ type IntegrationNotionUpdateResponse struct {
 
 // Blueprint properties
 type IntegrationNotionCreateRequest struct {
+	// The unique alias for the instance                                   
+	Alias                                           *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the dataset to sync into                                  
@@ -16244,6 +19199,8 @@ type IntegrationNotionListResponse struct {
 
 // Blueprint properties
 type IntegrationNotionListResponseItem struct {
+	// The unique alias for the instance                                                                 
+	Alias                                                                         *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                                           
 	BlueprintID                                                                   *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                                  
@@ -16272,6 +19229,45 @@ type IntegrationNotionListResponseItem struct {
 	UpdatedAt                                                                     float64                `json:"updatedAt"`
 }
 
+type IntegrationNotionListStreamItem struct {
+	// Blueprint properties                                    
+	Data                   IntegrationNotionListStreamItemData `json:"data"`
+	// The type of event                                       
+	Type                   IntegrationNotionListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type IntegrationNotionListStreamItemData struct {
+	// The unique alias for the instance                                                                 
+	Alias                                                                         *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                                           
+	BlueprintID                                                                   *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                                                  
+	CreatedAt                                                                     float64                `json:"createdAt"`
+	// The ID of the dataset to sync into                                                                
+	DatasetID                                                                     string                 `json:"datasetId"`
+	// The associated description                                                                        
+	Description                                                                   *string                `json:"description,omitempty"`
+	// The time in milliseconds until records expire                                                     
+	ExpiresIn                                                                     *float64               `json:"expiresIn,omitempty"`
+	// The instance ID                                                                                   
+	ID                                                                            string                 `json:"id"`
+	// The timestamp of the last successful sync                                                         
+	LastSyncedAt                                                                  *time.Time             `json:"lastSyncedAt,omitempty"`
+	// Meta data information                                                                             
+	Meta                                                                          map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                               
+	Name                                                                          *string                `json:"name,omitempty"`
+	// The sync schedule                                                                                 
+	SyncSchedule                                                                  *string                `json:"syncSchedule,omitempty"`
+	// The sync status of an integration                                                                 
+	SyncStatus                                                                    *FluffySyncStatus      `json:"syncStatus,omitempty"`
+	// The Notion API token (returned as '********' if configured, null otherwise)                       
+	Token                                                                         *string                `json:"token,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                  
+	UpdatedAt                                                                     float64                `json:"updatedAt"`
+}
+
 type IntegrationSitemapDeleteParams struct {
 	// The ID of the Sitemap integration       
 	SitemapIntegrationID                string `json:"sitemapIntegrationId"`
@@ -16289,6 +19285,8 @@ type IntegrationSitemapFetchParams struct {
 
 // Blueprint properties
 type IntegrationSitemapFetchResponse struct {
+	// The unique alias for the instance                                                                                                 
+	Alias                                                                                     *string                                    `json:"alias,omitempty"`
 	// The ID of the blueprint                                                                                                           
 	BlueprintID                                                                               *string                                    `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                                                                  
@@ -16340,6 +19338,8 @@ type IntegrationSitemapUpdateParams struct {
 
 // Blueprint properties
 type IntegrationSitemapUpdateRequest struct {
+	// The unique alias for the instance                                                                             
+	Alias                                                                                     *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                                                       
 	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
 	// The ID of the dataset to use for this Sitemap integration                                                     
@@ -16371,6 +19371,8 @@ type IntegrationSitemapUpdateResponse struct {
 
 // Blueprint properties
 type IntegrationSitemapCreateRequest struct {
+	// The unique alias for the instance                                                                             
+	Alias                                                                                     *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                                                       
 	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
 	// The ID of the dataset to use for this Sitemap integration                                                     
@@ -16419,6 +19421,8 @@ type IntegrationSitemapListResponse struct {
 
 // Blueprint properties
 type IntegrationSitemapListResponseItem struct {
+	// The unique alias for the instance                                                                             
+	Alias                                                                                     *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                                                       
 	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                                              
@@ -16446,11 +19450,234 @@ type IntegrationSitemapListResponseItem struct {
 	// The sync schedule to use for this Sitemap integration                                                         
 	SyncSchedule                                                                              *string                `json:"syncSchedule,omitempty"`
 	// The sync status of an integration                                                                             
-	SyncStatus                                                                                *FluffySyncStatus      `json:"syncStatus,omitempty"`
+	SyncStatus                                                                                *TentacledSyncStatus   `json:"syncStatus,omitempty"`
 	// The timestamp (ms) when the instance was updated                                                              
 	UpdatedAt                                                                                 float64                `json:"updatedAt"`
 	// The URL to use for this Sitemap integration                                                                   
 	URL                                                                                       *string                `json:"url,omitempty"`
+}
+
+type IntegrationSitemapListStreamItem struct {
+	// Blueprint properties                                     
+	Data                   IntegrationSitemapListStreamItemData `json:"data"`
+	// The type of event                                        
+	Type                   IntegrationSitemapListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type IntegrationSitemapListStreamItemData struct {
+	// The unique alias for the instance                                                                             
+	Alias                                                                                     *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                                                       
+	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                                                              
+	CreatedAt                                                                                 float64                `json:"createdAt"`
+	// The ID of the dataset used in the Sitemap integration                                                         
+	DatasetID                                                                                 string                 `json:"datasetId"`
+	// The associated description                                                                                    
+	Description                                                                               *string                `json:"description,omitempty"`
+	// Record expiry in milliseconds                                                                                 
+	ExpiresIn                                                                                 *float64               `json:"expiresIn,omitempty"`
+	// The glob rules to use for this Sitemap integration                                                            
+	Glob                                                                                      *string                `json:"glob,omitempty"`
+	// The instance ID                                                                                               
+	ID                                                                                        string                 `json:"id"`
+	// Indicates if the Sitemap integration should use JavaScript during the spidering process                       
+	Javascript                                                                                *bool                  `json:"javascript,omitempty"`
+	// The timestamp of the last successful sync                                                                     
+	LastSyncedAt                                                                              *time.Time             `json:"lastSyncedAt,omitempty"`
+	// Meta data information                                                                                         
+	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                           
+	Name                                                                                      *string                `json:"name,omitempty"`
+	// The selector rules to use for this Sitemap integration                                                        
+	Selectors                                                                                 *string                `json:"selectors,omitempty"`
+	// The sync schedule to use for this Sitemap integration                                                         
+	SyncSchedule                                                                              *string                `json:"syncSchedule,omitempty"`
+	// The sync status of an integration                                                                             
+	SyncStatus                                                                                *StickySyncStatus      `json:"syncStatus,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                              
+	UpdatedAt                                                                                 float64                `json:"updatedAt"`
+	// The URL to use for this Sitemap integration                                                                   
+	URL                                                                                       *string                `json:"url,omitempty"`
+}
+
+type SkillServerIntegrationDeleteParams struct {
+	// The ID of the SkillServer integration       
+	SkillserverIntegrationID                string `json:"skillserverIntegrationId"`
+}
+
+type SkillServerIntegrationDeleteResponse struct {
+	// The ID of the deleted SkillServer integration       
+	ID                                              string `json:"id"`
+}
+
+type SkillServerIntegrationFetchParams struct {
+	// The ID of the SkillServer integration to retrieve       
+	SkillserverIntegrationID                            string `json:"skillserverIntegrationId"`
+}
+
+// Blueprint properties
+type SkillServerIntegrationFetchResponse struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The ID of the skillset                                                 
+	SkillsetID                                         *string                `json:"skillsetId,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type SkillServerManualFetchParams struct {
+	// The ID of the SkillServer integration       
+	SkillserverIntegrationID                string `json:"skillserverIntegrationId"`
+}
+
+type SkillServerAbilityInvokeParams struct {
+	// Set to "json" to receive a JSON response                    
+	Format                                                 *Format `json:"format,omitempty"`
+	// Optional session id to group tool state across calls        
+	Session                                                *string `json:"session,omitempty"`
+	// The ID of the SkillServer integration                       
+	SkillserverIntegrationID                               string  `json:"skillserverIntegrationId"`
+}
+
+type SkillServerAbilityInvokeRequest struct {
+	// The name of the ability to invoke (as listed in the manual)                       
+	Ability                                                       string                 `json:"ability"`
+	// The ability input                                                                 
+	Input                                                         map[string]interface{} `json:"input,omitempty"`
+}
+
+type SkillServerAbilityInvokeResponse struct {
+	Error  *string     `json:"error,omitempty"`
+	Result interface{} `json:"result"`
+}
+
+type SkillServerIntegrationUpdateParams struct {
+	// The ID of the SkillServer integration       
+	SkillserverIntegrationID                string `json:"skillserverIntegrationId"`
+}
+
+// Blueprint properties
+type SkillServerIntegrationUpdateRequest struct {
+	// The unique alias for the instance                       
+	Alias                               *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                 
+	BlueprintID                         *string                `json:"blueprintId,omitempty"`
+	// The associated description                              
+	Description                         *string                `json:"description,omitempty"`
+	// Meta data information                                   
+	Meta                                map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                     
+	Name                                *string                `json:"name,omitempty"`
+	// The ID of the skillset                                  
+	SkillsetID                          *string                `json:"skillsetId,omitempty"`
+}
+
+type SkillServerIntegrationUpdateResponse struct {
+	// The ID of the SkillServer Integration       
+	ID                                      string `json:"id"`
+}
+
+// Blueprint properties
+type SkillServerIntegrationCreateRequest struct {
+	// The unique alias for the instance                       
+	Alias                               *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                 
+	BlueprintID                         *string                `json:"blueprintId,omitempty"`
+	// The associated description                              
+	Description                         *string                `json:"description,omitempty"`
+	// Meta data information                                   
+	Meta                                map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                     
+	Name                                *string                `json:"name,omitempty"`
+	// The ID of the skillset                                  
+	SkillsetID                          *string                `json:"skillsetId,omitempty"`
+}
+
+type SkillServerIntegrationCreateResponse struct {
+	// The ID of the SkillServer Integration       
+	ID                                      string `json:"id"`
+}
+
+type SkillServerIntegrationListParams struct {
+	// The cursor to use for pagination                                            
+	Cursor                                  *string                                `json:"cursor,omitempty"`
+	// Key-value pairs to filter by metadata                                       
+	Meta                                    map[string]string                      `json:"meta,omitempty"`
+	// The order of the paginated items                                            
+	Order                                   *SkillServerIntegrationListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                             
+	Take                                    *int64                                 `json:"take,omitempty"`
+}
+
+type SkillServerIntegrationListResponse struct {
+	// Cursor for fetching the next page                                         
+	Cursor                              string                                   `json:"cursor"`
+	Items                               []SkillServerIntegrationListResponseItem `json:"items"`
+}
+
+// Blueprint properties
+type SkillServerIntegrationListResponseItem struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The ID of the skillset                                                 
+	SkillsetID                                         *string                `json:"skillsetId,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type SkillServerIntegrationListStreamItem struct {
+	// Blueprint properties                                         
+	Data                   SkillServerIntegrationListStreamItemData `json:"data"`
+	// The type of event                                            
+	Type                   SkillServerIntegrationListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type SkillServerIntegrationListStreamItemData struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The ID of the skillset                                                 
+	SkillsetID                                         *string                `json:"skillsetId,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
 type IntegrationSlackDeleteParams struct {
@@ -16470,6 +19697,8 @@ type IntegrationSlackFetchParams struct {
 
 // Blueprint properties
 type IntegrationSlackFetchResponse struct {
+	// The unique alias for the instance                                                                              
+	Alias                                                                                      *string                `json:"alias,omitempty"`
 	// Restrict which Slack users or channels can interact with this integration. Accepts Slack                       
 	// user IDs (U…/W…), channel IDs (C…/G…/D…), @username, or                                                        
 	AllowFrom                                                                                  *string                `json:"allowFrom,omitempty"`
@@ -16528,6 +19757,8 @@ type IntegrationSlackUpdateParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationSlackUpdateRequest struct {
+	// The unique alias for the instance                                                                              
+	Alias                                                                                      *string                `json:"alias,omitempty"`
 	// Restrict which Slack users or channels can interact with this integration. Accepts Slack                       
 	// user IDs (U…/W…), channel IDs (C…/G…/D…), @username, or                                                        
 	AllowFrom                                                                                  *string                `json:"allowFrom,omitempty"`
@@ -16570,6 +19801,8 @@ type IntegrationSlackUpdateResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationSlackCreateRequest struct {
+	// The unique alias for the instance                                                                              
+	Alias                                                                                      *string                `json:"alias,omitempty"`
 	// Restrict which Slack users or channels can interact with this integration. Accepts Slack                       
 	// user IDs (U…/W…), channel IDs (C…/G…/D…), @username, or                                                        
 	AllowFrom                                                                                  *string                `json:"allowFrom,omitempty"`
@@ -16629,6 +19862,60 @@ type IntegrationSlackListResponse struct {
 
 // Blueprint properties
 type IntegrationSlackListResponseItem struct {
+	// The unique alias for the instance                                                                              
+	Alias                                                                                      *string                `json:"alias,omitempty"`
+	// Restrict which Slack users or channels can interact with this integration. Accepts Slack                       
+	// user IDs (U…/W…), channel IDs (C…/G…/D…), @username, or                                                        
+	AllowFrom                                                                                  *string                `json:"allowFrom,omitempty"`
+	// Configure automatic response behavior. Use '@all' to respond to all messages, '@agent                          
+	// <instructions>' for agent-powered decisions, or custom instructions for lightweight LLM                        
+	// filtering. Null/empty defaults to current behavior (DMs, mentions, threads only).                              
+	AutoRespond                                                                                *string                `json:"autoRespond,omitempty"`
+	// The ID of the blueprint                                                                                        
+	BlueprintID                                                                                *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                                  
+	BotID                                                                                      *string                `json:"botId,omitempty"`
+	// The bot token (returned as '********' if configured, null otherwise)                                           
+	BotToken                                                                                   *string                `json:"botToken,omitempty"`
+	// Weather to collect contacts                                                                                    
+	ContactCollection                                                                          *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                                                               
+	CreatedAt                                                                                  float64                `json:"createdAt"`
+	// The associated description                                                                                     
+	Description                                                                                *string                `json:"description,omitempty"`
+	// The instance ID                                                                                                
+	ID                                                                                         string                 `json:"id"`
+	// Meta data information                                                                                          
+	Meta                                                                                       map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                            
+	Name                                                                                       *string                `json:"name,omitempty"`
+	// Whether to enable ratings buttons feature                                                                      
+	Ratings                                                                                    *bool                  `json:"ratings,omitempty"`
+	// Whether to enable references feature                                                                           
+	References                                                                                 *bool                  `json:"references,omitempty"`
+	// The session duration for the Slack integration                                                                 
+	SessionDuration                                                                            *float64               `json:"sessionDuration,omitempty"`
+	// The signing secret (returned as '********' if configured, null otherwise)                                      
+	SigningSecret                                                                              *string                `json:"signingSecret,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                               
+	UpdatedAt                                                                                  float64                `json:"updatedAt"`
+	// The user token (returned as '********' if configured, null otherwise)                                          
+	UserToken                                                                                  *string                `json:"userToken,omitempty"`
+	// The number of visible messages outside of the new thread                                                       
+	VisibleMessages                                                                            *float64               `json:"visibleMessages,omitempty"`
+}
+
+type IntegrationSlackListStreamItem struct {
+	// Blueprint properties                                   
+	Data                   IntegrationSlackListStreamItemData `json:"data"`
+	// The type of event                                      
+	Type                   IntegrationSlackListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type IntegrationSlackListStreamItemData struct {
+	// The unique alias for the instance                                                                              
+	Alias                                                                                      *string                `json:"alias,omitempty"`
 	// Restrict which Slack users or channels can interact with this integration. Accepts Slack                       
 	// user IDs (U…/W…), channel IDs (C…/G…/D…), @username, or                                                        
 	AllowFrom                                                                                  *string                `json:"allowFrom,omitempty"`
@@ -16687,6 +19974,8 @@ type IntegrationSupportFetchParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationSupportFetchResponse struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                          
@@ -16733,6 +20022,8 @@ type IntegrationSupportUpdateParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationSupportUpdateRequest struct {
+	// The unique alias for the instance                                   
+	Alias                                           *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                       
@@ -16754,6 +20045,8 @@ type IntegrationSupportUpdateResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationSupportCreateRequest struct {
+	// The unique alias for the instance                                   
+	Alias                                           *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                             
 	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                       
@@ -16792,6 +20085,39 @@ type IntegrationSupportListResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationSupportListResponseItem struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                          
+	BotID                                              string                 `json:"botId"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The email to use                                                       
+	Email                                              *string                `json:"email,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type IntegrationSupportListStreamItem struct {
+	// A bot configuration that can be applied without a dedicated bot instance.                                     
+	Data                                                                        IntegrationSupportListStreamItemData `json:"data"`
+	// The type of event                                                                                             
+	Type                                                                        IntegrationSupportListStreamItemType `json:"type"`
+}
+
+// A bot configuration that can be applied without a dedicated bot instance.
+type IntegrationSupportListStreamItemData struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The ID of the bot this configuration is using                          
@@ -16829,6 +20155,8 @@ type IntegrationTelegramFetchParams struct {
 
 // Blueprint properties
 type IntegrationTelegramFetchResponse struct {
+	// The unique alias for the instance                                        
+	Alias                                                *string                `json:"alias,omitempty"`
 	// Newline-or-comma-separated list of allowed senders                       
 	AllowFrom                                            *string                `json:"allowFrom,omitempty"`
 	// Weather the bot supports attachments                                     
@@ -16872,6 +20200,8 @@ type IntegrationTelegramUpdateParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationTelegramUpdateRequest struct {
+	// The unique alias for the instance                                                                                
+	Alias                                                                                        *string                `json:"alias,omitempty"`
 	// Newline-or-comma-separated list of allowed senders. Use @username or @numericId for users,                       
 	AllowFrom                                                                                    *string                `json:"allowFrom,omitempty"`
 	// Weather the bot supports attachments                                                                             
@@ -16901,6 +20231,8 @@ type IntegrationTelegramUpdateResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationTelegramCreateRequest struct {
+	// The unique alias for the instance                                                                                
+	Alias                                                                                        *string                `json:"alias,omitempty"`
 	// Newline-or-comma-separated list of allowed senders. Use @username or @numericId for users,                       
 	AllowFrom                                                                                    *string                `json:"allowFrom,omitempty"`
 	// Weather the bot supports attachments                                                                             
@@ -16947,6 +20279,45 @@ type IntegrationTelegramListResponse struct {
 
 // Blueprint properties
 type IntegrationTelegramListResponseItem struct {
+	// The unique alias for the instance                                                                                
+	Alias                                                                                        *string                `json:"alias,omitempty"`
+	// Newline-or-comma-separated list of allowed senders. Use @username or @numericId for users,                       
+	AllowFrom                                                                                    *string                `json:"allowFrom,omitempty"`
+	// Weather the bot supports attachments                                                                             
+	Attachments                                                                                  *bool                  `json:"attachments,omitempty"`
+	// The ID of the blueprint                                                                                          
+	BlueprintID                                                                                  *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                                    
+	BotID                                                                                        *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                                                                      
+	ContactCollection                                                                            *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                                                                 
+	CreatedAt                                                                                    float64                `json:"createdAt"`
+	// The associated description                                                                                       
+	Description                                                                                  *string                `json:"description,omitempty"`
+	// The instance ID                                                                                                  
+	ID                                                                                           string                 `json:"id"`
+	// Meta data information                                                                                            
+	Meta                                                                                         map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                              
+	Name                                                                                         *string                `json:"name,omitempty"`
+	// The session duration (in milliseconds)                                                                           
+	SessionDuration                                                                              *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                                 
+	UpdatedAt                                                                                    float64                `json:"updatedAt"`
+}
+
+type IntegrationTelegramListStreamItem struct {
+	// Blueprint properties                                      
+	Data                   IntegrationTelegramListStreamItemData `json:"data"`
+	// The type of event                                         
+	Type                   IntegrationTelegramListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type IntegrationTelegramListStreamItemData struct {
+	// The unique alias for the instance                                                                                
+	Alias                                                                                        *string                `json:"alias,omitempty"`
 	// Newline-or-comma-separated list of allowed senders. Use @username or @numericId for users,                       
 	AllowFrom                                                                                    *string                `json:"allowFrom,omitempty"`
 	// Weather the bot supports attachments                                                                             
@@ -16990,6 +20361,8 @@ type TriggerIntegrationFetchParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type TriggerIntegrationFetchResponse struct {
+	// The unique alias for the instance                                                                             
+	Alias                                                                                     *string                `json:"alias,omitempty"`
 	// When enabled the integration requires authentication                                                          
 	Authenticate                                                                              *bool                  `json:"authenticate,omitempty"`
 	// The ID of the blueprint                                                                                       
@@ -17049,6 +20422,8 @@ type TriggerIntegrationUpdateParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type TriggerIntegrationUpdateRequest struct {
+	// The unique alias for the instance                                                                       
+	Alias                                                                               *string                `json:"alias,omitempty"`
 	// When enabled the integration requires authentication                                                    
 	Authenticate                                                                        *bool                  `json:"authenticate,omitempty"`
 	// The ID of the blueprint                                                                                 
@@ -17076,6 +20451,8 @@ type TriggerIntegrationUpdateResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type TriggerIntegrationCreateRequest struct {
+	// The unique alias for the instance                                                                       
+	Alias                                                                               *string                `json:"alias,omitempty"`
 	// When enabled the integration requires authentication                                                    
 	Authenticate                                                                        *bool                  `json:"authenticate,omitempty"`
 	// The ID of the blueprint                                                                                 
@@ -17120,6 +20497,51 @@ type TriggerIntegrationListResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type TriggerIntegrationListResponseItem struct {
+	// The unique alias for the instance                                                                             
+	Alias                                                                                     *string                `json:"alias,omitempty"`
+	// When enabled the integration requires authentication                                                          
+	Authenticate                                                                              *bool                  `json:"authenticate,omitempty"`
+	// The ID of the blueprint                                                                                       
+	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                                 
+	BotID                                                                                     *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                                                              
+	CreatedAt                                                                                 float64                `json:"createdAt"`
+	// The associated description                                                                                    
+	Description                                                                               *string                `json:"description,omitempty"`
+	// The instance ID                                                                                               
+	ID                                                                                        string                 `json:"id"`
+	// The timestamp (ms) of the last trigger execution                                                              
+	LastTriggerAt                                                                             *float64               `json:"lastTriggerAt,omitempty"`
+	// Meta data information                                                                                         
+	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                           
+	Name                                                                                      *string                `json:"name,omitempty"`
+	// The timestamp (ms) of the next scheduled trigger execution                                                    
+	NextTriggerAt                                                                             *float64               `json:"nextTriggerAt,omitempty"`
+	// The schedule for the trigger integration (interval, cron expression, ISO date, or null)                       
+	Schedule                                                                                  *string                `json:"schedule,omitempty"`
+	// The Trigger integration secret                                                                                
+	Secret                                                                                    string                 `json:"secret"`
+	// The session duration (in milliseconds)                                                                        
+	SessionDuration                                                                           *float64               `json:"sessionDuration,omitempty"`
+	// The IANA timezone identifier used to evaluate the trigger schedule.                                           
+	Timezone                                                                                  *string                `json:"timezone,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                              
+	UpdatedAt                                                                                 float64                `json:"updatedAt"`
+}
+
+type TriggerIntegrationListStreamItem struct {
+	// A bot configuration that can be applied without a dedicated bot instance.                                     
+	Data                                                                        TriggerIntegrationListStreamItemData `json:"data"`
+	// The type of event                                                                                             
+	Type                                                                        TriggerIntegrationListStreamItemType `json:"type"`
+}
+
+// A bot configuration that can be applied without a dedicated bot instance.
+type TriggerIntegrationListStreamItemData struct {
+	// The unique alias for the instance                                                                             
+	Alias                                                                                     *string                `json:"alias,omitempty"`
 	// When enabled the integration requires authentication                                                          
 	Authenticate                                                                              *bool                  `json:"authenticate,omitempty"`
 	// The ID of the blueprint                                                                                       
@@ -17171,6 +20593,8 @@ type IntegrationTwilioFetchParams struct {
 type IntegrationTwilioFetchResponse struct {
 	// The Twilio account SID                                                   
 	AccountSid                                           *string                `json:"accountSid,omitempty"`
+	// The unique alias for the instance                                        
+	Alias                                                *string                `json:"alias,omitempty"`
 	// Newline-or-comma-separated list of allowed senders                       
 	AllowFrom                                            *string                `json:"allowFrom,omitempty"`
 	// The ID of the blueprint                                                  
@@ -17216,6 +20640,8 @@ type IntegrationTwilioUpdateParams struct {
 type IntegrationTwilioUpdateRequest struct {
 	// The Twilio account SID                                                                                    
 	AccountSid                                                                            *string                `json:"accountSid,omitempty"`
+	// The unique alias for the instance                                                                         
+	Alias                                                                                 *string                `json:"alias,omitempty"`
 	// Newline-or-comma-separated list of allowed senders. Use E.164 phone numbers with or                       
 	// without the leading `+`. Set to `*` to allow all. Leave empty to deny all.                                
 	AllowFrom                                                                             *string                `json:"allowFrom,omitempty"`
@@ -17248,6 +20674,8 @@ type IntegrationTwilioUpdateResponse struct {
 type IntegrationTwilioCreateRequest struct {
 	// The Twilio account SID                                                                                    
 	AccountSid                                                                            *string                `json:"accountSid,omitempty"`
+	// The unique alias for the instance                                                                         
+	Alias                                                                                 *string                `json:"alias,omitempty"`
 	// Newline-or-comma-separated list of allowed senders. Use E.164 phone numbers with or                       
 	// without the leading `+`. Set to `*` to allow all. Leave empty to deny all.                                
 	AllowFrom                                                                             *string                `json:"allowFrom,omitempty"`
@@ -17297,6 +20725,47 @@ type IntegrationTwilioListResponse struct {
 type IntegrationTwilioListResponseItem struct {
 	// The Twilio account SID                                                   
 	AccountSid                                           *string                `json:"accountSid,omitempty"`
+	// The unique alias for the instance                                        
+	Alias                                                *string                `json:"alias,omitempty"`
+	// Newline-or-comma-separated list of allowed senders                       
+	AllowFrom                                            *string                `json:"allowFrom,omitempty"`
+	// The ID of the blueprint                                                  
+	BlueprintID                                          *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                            
+	BotID                                                *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                              
+	ContactCollection                                    *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                         
+	CreatedAt                                            float64                `json:"createdAt"`
+	// The associated description                                               
+	Description                                          *string                `json:"description,omitempty"`
+	// The instance ID                                                          
+	ID                                                   string                 `json:"id"`
+	// Meta data information                                                    
+	Meta                                                 map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                      
+	Name                                                 *string                `json:"name,omitempty"`
+	// The session duration (in milliseconds)                                   
+	SessionDuration                                      *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                         
+	UpdatedAt                                            float64                `json:"updatedAt"`
+	// The voice configuration structured string                                
+	Voice                                                *string                `json:"voice,omitempty"`
+}
+
+type IntegrationTwilioListStreamItem struct {
+	// Blueprint properties                                    
+	Data                   IntegrationTwilioListStreamItemData `json:"data"`
+	// The type of event                                       
+	Type                   IntegrationTwilioListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type IntegrationTwilioListStreamItemData struct {
+	// The Twilio account SID                                                   
+	AccountSid                                           *string                `json:"accountSid,omitempty"`
+	// The unique alias for the instance                                        
+	Alias                                                *string                `json:"alias,omitempty"`
 	// Newline-or-comma-separated list of allowed senders                       
 	AllowFrom                                            *string                `json:"allowFrom,omitempty"`
 	// The ID of the blueprint                                                  
@@ -17343,6 +20812,8 @@ type IntegrationWhatsAppFetchResponse struct {
 	// The WhatsApp integration access token (returned as '********' if configured, null                       
 	// otherwise)                                                                                              
 	AccessToken                                                                         *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                                                       
+	Alias                                                                               *string                `json:"alias,omitempty"`
 	// Newline-or-comma-separated list of allowed senders                                                      
 	AllowFrom                                                                           *string                `json:"allowFrom,omitempty"`
 	// Weather the bot supports attachments                                                                    
@@ -17392,6 +20863,8 @@ type IntegrationWhatsAppUpdateParams struct {
 type IntegrationWhatsAppUpdateRequest struct {
 	// The WhatsApp integration access token                                                                     
 	AccessToken                                                                           *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                                                         
+	Alias                                                                                 *string                `json:"alias,omitempty"`
 	// Newline-or-comma-separated list of allowed senders. Use E.164 phone numbers with or                       
 	// without the leading `+`. Set to `*` to allow all. Leave empty to deny all.                                
 	AllowFrom                                                                             *string                `json:"allowFrom,omitempty"`
@@ -17424,6 +20897,8 @@ type IntegrationWhatsAppUpdateResponse struct {
 type IntegrationWhatsAppCreateRequest struct {
 	// The WhatsApp integration access token                                                                     
 	AccessToken                                                                           *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                                                         
+	Alias                                                                                 *string                `json:"alias,omitempty"`
 	// Newline-or-comma-separated list of allowed senders. Use E.164 phone numbers with or                       
 	// without the leading `+`. Set to `*` to allow all. Leave empty to deny all.                                
 	AllowFrom                                                                             *string                `json:"allowFrom,omitempty"`
@@ -17474,6 +20949,53 @@ type IntegrationWhatsAppListResponseItem struct {
 	// The WhatsApp integration access token (returned as '********' if configured, null                           
 	// otherwise)                                                                                                  
 	AccessToken                                                                             *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                                                           
+	Alias                                                                                   *string                `json:"alias,omitempty"`
+	// Newline-or-comma-separated list of allowed senders. Use phone numbers in E.164 format                       
+	// (digits only). Leave empty to block all. Use * to allow everyone.                                           
+	AllowFrom                                                                               *string                `json:"allowFrom,omitempty"`
+	// Weather the bot supports attachments                                                                        
+	Attachments                                                                             *bool                  `json:"attachments,omitempty"`
+	// The ID of the blueprint                                                                                     
+	BlueprintID                                                                             *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                                               
+	BotID                                                                                   *string                `json:"botId,omitempty"`
+	// Weather to collect contacts                                                                                 
+	ContactCollection                                                                       *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                                                            
+	CreatedAt                                                                               float64                `json:"createdAt"`
+	// The associated description                                                                                  
+	Description                                                                             *string                `json:"description,omitempty"`
+	// The instance ID                                                                                             
+	ID                                                                                      string                 `json:"id"`
+	// Meta data information                                                                                       
+	Meta                                                                                    map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                         
+	Name                                                                                    *string                `json:"name,omitempty"`
+	// The WhatsApp integration phone number ID                                                                    
+	PhoneNumberID                                                                           *string                `json:"phoneNumberId,omitempty"`
+	// The session duration (in milliseconds)                                                                      
+	SessionDuration                                                                         *float64               `json:"sessionDuration,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                            
+	UpdatedAt                                                                               float64                `json:"updatedAt"`
+	// The WhatsApp integration verify token                                                                       
+	VerifyToken                                                                             string                 `json:"verifyToken"`
+}
+
+type IntegrationWhatsAppListStreamItem struct {
+	// Blueprint properties                                      
+	Data                   IntegrationWhatsAppListStreamItemData `json:"data"`
+	// The type of event                                         
+	Type                   IntegrationWhatsAppListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type IntegrationWhatsAppListStreamItemData struct {
+	// The WhatsApp integration access token (returned as '********' if configured, null                           
+	// otherwise)                                                                                                  
+	AccessToken                                                                             *string                `json:"accessToken,omitempty"`
+	// The unique alias for the instance                                                                           
+	Alias                                                                                   *string                `json:"alias,omitempty"`
 	// Newline-or-comma-separated list of allowed senders. Use phone numbers in E.164 format                       
 	// (digits only). Leave empty to block all. Use * to allow everyone.                                           
 	AllowFrom                                                                               *string                `json:"allowFrom,omitempty"`
@@ -17532,6 +21054,8 @@ type IntegrationWidgetFetchParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationWidgetFetchResponse struct {
+	// The unique alias for the instance                                                           
+	Alias                                                                   *string                `json:"alias,omitempty"`
 	// Whether the Widget integration supports attachments                                         
 	Attachments                                                             *bool                  `json:"attachments,omitempty"`
 	// Whether the Widget integration auto scrolls                                                 
@@ -17660,6 +21184,8 @@ type IntegrationWidgetUpdateParams struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationWidgetUpdateRequest struct {
+	// The unique alias for the instance                                                           
+	Alias                                                                   *string                `json:"alias,omitempty"`
 	// Whether the Widget integration supports attachments                                         
 	Attachments                                                             *bool                  `json:"attachments,omitempty"`
 	// Whether the Widget integration auto scrolls                                                 
@@ -17735,6 +21261,8 @@ type IntegrationWidgetUpdateResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationWidgetCreateRequest struct {
+	// The unique alias for the instance                                                           
+	Alias                                                                   *string                `json:"alias,omitempty"`
 	// Weather the Widget integration supports attachments                                         
 	Attachments                                                             *bool                  `json:"attachments,omitempty"`
 	// Whether the Widget integration auto scrolls                                                 
@@ -17827,6 +21355,93 @@ type IntegrationWidgetListResponse struct {
 
 // A bot configuration that can be applied without a dedicated bot instance.
 type IntegrationWidgetListResponseItem struct {
+	// The unique alias for the instance                                                           
+	Alias                                                                   *string                `json:"alias,omitempty"`
+	// Weather the Widget integration supports attachments                                         
+	Attachments                                                             *bool                  `json:"attachments,omitempty"`
+	// Whether the Widget integration auto scrolls                                                 
+	AutoScroll                                                              *bool                  `json:"autoScroll,omitempty"`
+	// The ID of the blueprint                                                                     
+	BlueprintID                                                             *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                               
+	BotID                                                                   *string                `json:"botId,omitempty"`
+	// Weather the Widget integration supports carousels                                           
+	Carousel                                                                *bool                  `json:"carousel,omitempty"`
+	// Whether the Widget integration collects contacts                                            
+	ContactCollection                                                       *bool                  `json:"contactCollection,omitempty"`
+	// The timestamp (ms) when the instance was created                                            
+	CreatedAt                                                               float64                `json:"createdAt"`
+	// The associated description                                                                  
+	Description                                                             *string                `json:"description,omitempty"`
+	// Controls whether the Widget allows exporting the current conversation                       
+	ExportConversation                                                      *bool                  `json:"exportConversation,omitempty"`
+	// Weather the Widget integration supports forms                                               
+	Form                                                                    *bool                  `json:"form,omitempty"`
+	// The instance ID                                                                             
+	ID                                                                      string                 `json:"id"`
+	// The initial message of the Widget integration                                               
+	Initial                                                                 *string                `json:"initial,omitempty"`
+	// The intro of the Widget integration                                                         
+	Intro                                                                   *string                `json:"intro,omitempty"`
+	// The language of the Widget integration                                                      
+	Language                                                                *string                `json:"language,omitempty"`
+	// The default layout of the Widget integration                                                
+	Layout                                                                  *string                `json:"layout,omitempty"`
+	// Weather the Widget integration supports math                                                
+	Math                                                                    *bool                  `json:"math,omitempty"`
+	// Controls whether the Widget allows maximizing the conversation                              
+	Maximize                                                                *bool                  `json:"maximize,omitempty"`
+	// Controls whether the Widget allows peeking at the initial messages                          
+	MessagePeek                                                             *bool                  `json:"messagePeek,omitempty"`
+	// Meta data information                                                                       
+	Meta                                                                    map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                         
+	Name                                                                    *string                `json:"name,omitempty"`
+	// The origin URLs of the Widget integration                                                   
+	Origin                                                                  *string                `json:"origin,omitempty"`
+	// The input placeholder of the Widget integration                                             
+	Placeholder                                                             *string                `json:"placeholder,omitempty"`
+	// The plugins of the Widget integration                                                       
+	Plugins                                                                 *string                `json:"plugins,omitempty"`
+	// Whether the Widget integration displays powered by                                          
+	PoweredBy                                                               *bool                  `json:"poweredBy,omitempty"`
+	// Controls whether the Widget allows restarting the conversation                              
+	RestartConversation                                                     *bool                  `json:"restartConversation,omitempty"`
+	// The session duration of the Widget integration                                              
+	SessionDuration                                                         *float64               `json:"sessionDuration,omitempty"`
+	// Whether the Widget integration starts first                                                 
+	StartFirst                                                              *bool                  `json:"startFirst,omitempty"`
+	// Whether the Widget integration is streaming                                                 
+	Stream                                                                  *bool                  `json:"stream,omitempty"`
+	// The theme of the Widget integration                                                         
+	Theme                                                                   *string                `json:"theme,omitempty"`
+	// The title of the Widget integration                                                         
+	Title                                                                   *string                `json:"title,omitempty"`
+	// Whether the Widget integration has tools                                                    
+	Tools                                                                   *bool                  `json:"tools,omitempty"`
+	// Whether the Widget integration unfurls links                                                
+	Unfurl                                                                  *bool                  `json:"unfurl,omitempty"`
+	// The timestamp (ms) when the instance was updated                                            
+	UpdatedAt                                                               float64                `json:"updatedAt"`
+	// Whether the Widget integration is verbose                                                   
+	Verbose                                                                 *bool                  `json:"verbose,omitempty"`
+	// Whether the Widget integration supports voice input                                         
+	VoiceIn                                                                 *bool                  `json:"voiceIn,omitempty"`
+	// Whether the Widget integration supports voice output                                        
+	VoiceOut                                                                *bool                  `json:"voiceOut,omitempty"`
+}
+
+type IntegrationWidgetListStreamItem struct {
+	// A bot configuration that can be applied without a dedicated bot instance.                                    
+	Data                                                                        IntegrationWidgetListStreamItemData `json:"data"`
+	// The type of event                                                                                            
+	Type                                                                        IntegrationWidgetListStreamItemType `json:"type"`
+}
+
+// A bot configuration that can be applied without a dedicated bot instance.
+type IntegrationWidgetListStreamItemData struct {
+	// The unique alias for the instance                                                           
+	Alias                                                                   *string                `json:"alias,omitempty"`
 	// Weather the Widget integration supports attachments                                         
 	Attachments                                                             *bool                  `json:"attachments,omitempty"`
 	// Whether the Widget integration auto scrolls                                                 
@@ -17928,6 +21543,25 @@ type MagicFromPromptGenerateResponseUsage struct {
 	Token                              float64 `json:"token"`
 }
 
+type MagicFromPromptGenerateStreamItem struct {
+	Data                 MagicFromPromptGenerateStreamItemData `json:"data"`
+	// The generated text                                      
+	Type                 MagicFromPromptGenerateStreamItemType `json:"type"`
+}
+
+type MagicFromPromptGenerateStreamItemData struct {
+	// The input text          
+	Text                string `json:"text"`
+	// Usage information       
+	Usage               Usage2 `json:"usage"`
+}
+
+// Usage information
+type Usage2 struct {
+	// The tokens used in this exchange        
+	Token                              float64 `json:"token"`
+}
+
 type MagicPromptListParams struct {
 	// The cursor to use for pagination                                                   
 	Cursor                                                    *string                     `json:"cursor,omitempty"`
@@ -17947,6 +21581,31 @@ type MagicPromptListResponse struct {
 
 // Instance list properties
 type MagicPromptListResponseItem struct {
+	// The alias of the item                                                  
+	Alias                                              string                 `json:"alias"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type MagicPromptListStreamItem struct {
+	// Instance list properties                              
+	Data                       MagicPromptListStreamItemData `json:"data"`
+	// The type of event                                     
+	Type                       MagicPromptListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type MagicPromptListStreamItemData struct {
 	// The alias of the item                                                  
 	Alias                                              string                 `json:"alias"`
 	// The timestamp (ms) when the instance was created                       
@@ -18085,6 +21744,35 @@ type MemoriesExportResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
+type MemoriesExportStreamItem struct {
+	// Instance list properties                             
+	Data                       MemoriesExportStreamItemData `json:"data"`
+	// The type of event                                    
+	Type                       MemoriesExportStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type MemoriesExportStreamItemData struct {
+	// The bot associated with the memory                                     
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The contact associated with the memory                                 
+	ContactID                                          *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The text of the memory                                                 
+	Text                                               *string                `json:"text,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
 type MemoryListParams struct {
 	// The cursor to use for pagination                                              
 	Cursor                                                    *string                `json:"cursor,omitempty"`
@@ -18104,6 +21792,35 @@ type MemoryListResponse struct {
 
 // Instance list properties
 type MemoryListResponseItem struct {
+	// The bot associated with the memory                                     
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The contact associated with the memory                                 
+	ContactID                                          *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The text of the memory                                                 
+	Text                                               *string                `json:"text,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type MemoryListStreamItem struct {
+	// Instance list properties                         
+	Data                       MemoryListStreamItemData `json:"data"`
+	// The type of event                                
+	Type                       MemoryListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type MemoryListStreamItemData struct {
 	// The bot associated with the memory                                     
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The contact associated with the memory                                 
@@ -18269,6 +21986,34 @@ type PartnerUserContextListResponse struct {
 
 // Instance list properties
 type PartnerUserContextListResponseItem struct {
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	DatasetID                                          *string                `json:"datasetId,omitempty"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	Payload                                            map[string]interface{} `json:"payload,omitempty"`
+	SkillsetID                                         *string                `json:"skillsetId,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type PartnerUserContextListStreamItem struct {
+	// Instance list properties                                     
+	Data                       PartnerUserContextListStreamItemData `json:"data"`
+	// The type of event                                            
+	Type                       PartnerUserContextListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PartnerUserContextListStreamItemData struct {
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	BotID                                              *string                `json:"botId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -18471,6 +22216,29 @@ type PartnerUserTokenListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
+type PartnerUserTokenListStreamItem struct {
+	// Instance list properties                                   
+	Data                       PartnerUserTokenListStreamItemData `json:"data"`
+	// The type of event                                          
+	Type                       PartnerUserTokenListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PartnerUserTokenListStreamItemData struct {
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
 type PartnerUserUpdateParams struct {
 	// The ID of the partner user       
 	UserID                       string `json:"userId"`
@@ -18478,18 +22246,20 @@ type PartnerUserUpdateParams struct {
 
 // Instance crud properties
 type PartnerUserUpdateRequest struct {
-	// The associated description                                   
-	Description                     *string                         `json:"description,omitempty"`
-	// The email of the partner user                                
-	Email                           *string                         `json:"email,omitempty"`
-	// The image of the partner user                                
-	Image                           *string                         `json:"image,omitempty"`
-	// Limits information                                           
-	Limits                          *PartnerUserUpdateRequestLimits `json:"limits,omitempty"`
-	// Meta data information                                        
-	Meta                            map[string]interface{}          `json:"meta,omitempty"`
-	// The associated name                                          
-	Name                            *string                         `json:"name,omitempty"`
+	// The unique alias for the instance                                
+	Alias                               *string                         `json:"alias,omitempty"`
+	// The associated description                                       
+	Description                         *string                         `json:"description,omitempty"`
+	// The email of the partner user                                    
+	Email                               *string                         `json:"email,omitempty"`
+	// The image of the partner user                                    
+	Image                               *string                         `json:"image,omitempty"`
+	// Limits information                                               
+	Limits                              *PartnerUserUpdateRequestLimits `json:"limits,omitempty"`
+	// Meta data information                                            
+	Meta                                map[string]interface{}          `json:"meta,omitempty"`
+	// The associated name                                              
+	Name                                *string                         `json:"name,omitempty"`
 }
 
 // Limits information
@@ -18525,18 +22295,20 @@ type PartnerUserUpdateResponse struct {
 
 // Instance crud properties
 type PartnerUserCreateRequest struct {
-	// The associated description                                   
-	Description                     *string                         `json:"description,omitempty"`
-	// The email of the partner user                                
-	Email                           *string                         `json:"email,omitempty"`
-	// The image of the partner user                                
-	Image                           *string                         `json:"image,omitempty"`
-	// Limits information                                           
-	Limits                          *PartnerUserCreateRequestLimits `json:"limits,omitempty"`
-	// Meta data information                                        
-	Meta                            map[string]interface{}          `json:"meta,omitempty"`
-	// The associated name                                          
-	Name                            *string                         `json:"name,omitempty"`
+	// The unique alias for the instance                                
+	Alias                               *string                         `json:"alias,omitempty"`
+	// The associated description                                       
+	Description                         *string                         `json:"description,omitempty"`
+	// The email of the partner user                                    
+	Email                               *string                         `json:"email,omitempty"`
+	// The image of the partner user                                    
+	Image                               *string                         `json:"image,omitempty"`
+	// Limits information                                               
+	Limits                              *PartnerUserCreateRequestLimits `json:"limits,omitempty"`
+	// Meta data information                                            
+	Meta                                map[string]interface{}          `json:"meta,omitempty"`
+	// The associated name                                              
+	Name                                *string                         `json:"name,omitempty"`
 }
 
 // Limits information
@@ -18635,6 +22407,61 @@ type StickyDatabase struct {
 	Skillsets             *float64 `json:"skillsets,omitempty"`
 }
 
+type PartnerUserListStreamItem struct {
+	// Instance list properties                              
+	Data                       PartnerUserListStreamItemData `json:"data"`
+	// The type of event                                     
+	Type                       PartnerUserListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PartnerUserListStreamItemData struct {
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The email of the partner user                                          
+	Email                                              *string                `json:"email,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// The image of the partner user                                          
+	Image                                              *string                `json:"image,omitempty"`
+	// Limits information                                                     
+	Limits                                             *DataLimits            `json:"limits,omitempty"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+// Limits information
+type DataLimits struct {
+	// The conversations limit                
+	Conversations             *float64        `json:"conversations,omitempty"`
+	// The database limits                    
+	Database                  *IndigoDatabase `json:"database,omitempty"`
+	// The messages limit                     
+	Messages                  *float64        `json:"messages,omitempty"`
+	// The tokens limit                       
+	Tokens                    *float64        `json:"tokens,omitempty"`
+}
+
+// The database limits
+type IndigoDatabase struct {
+	// The abilities limit         
+	Abilities             *float64 `json:"abilities,omitempty"`
+	// The datasets limit          
+	Datasets              *float64 `json:"datasets,omitempty"`
+	// The files limit             
+	Files                 *float64 `json:"files,omitempty"`
+	// The records limit           
+	Records               *float64 `json:"records,omitempty"`
+	// The skillsets limit         
+	Skillsets             *float64 `json:"skillsets,omitempty"`
+}
+
 type PlatformAbilityListParams struct {
 	// The cursor to use for pagination                                                       
 	Cursor                                                    *string                         `json:"cursor,omitempty"`
@@ -18700,7 +22527,65 @@ type PurpleSchema struct {
 	// The schema title                                        
 	Title                               *string                `json:"title,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                Type3                  `json:"type"`
+	Type                                Type8                  `json:"type"`
+}
+
+type PlatformAbilityListStreamItem struct {
+	// Instance list properties                                  
+	Data                       PlatformAbilityListStreamItemData `json:"data"`
+	// The type of event                                         
+	Type                       PlatformAbilityListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PlatformAbilityListStreamItemData struct {
+	// The ID of the bot associated with the ability                                                               
+	Bot                                                                                     *string                `json:"bot,omitempty"`
+	Commentary                                                                              *string                `json:"commentary,omitempty"`
+	// The timestamp (ms) when the instance was created                                                            
+	CreatedAt                                                                               float64                `json:"createdAt"`
+	// The associated description                                                                                  
+	Description                                                                             *string                `json:"description,omitempty"`
+	// The ID of the file associated with the ability                                                              
+	File                                                                                    *string                `json:"file,omitempty"`
+	Icon                                                                                    string                 `json:"icon"`
+	// The instance ID                                                                                             
+	ID                                                                                      string                 `json:"id"`
+	Instruction                                                                             string                 `json:"instruction"`
+	// Meta data information                                                                                       
+	Meta                                                                                    map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                         
+	Name                                                                                    *string                `json:"name,omitempty"`
+	// The provider of the ability                                                                                 
+	Provider                                                                                *string                `json:"provider,omitempty"`
+	// A JSON Schema object type definition (https://json-schema.org/). Represents an object                       
+	// schema with properties and validation rules.                                                                
+	Schema                                                                                  DataSchema             `json:"schema"`
+	// The ID of the secret associated with the ability                                                            
+	Secret                                                                                  *string                `json:"secret,omitempty"`
+	Setup                                                                                   *string                `json:"setup,omitempty"`
+	// The ID of the space associated with the ability                                                             
+	Space                                                                                   *string                `json:"space,omitempty"`
+	Tags                                                                                    []string               `json:"tags,omitempty"`
+	// The original template identifier for the ability                                                            
+	Template                                                                                *string                `json:"template,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                            
+	UpdatedAt                                                                               float64                `json:"updatedAt"`
+}
+
+// A JSON Schema object type definition (https://json-schema.org/). Represents an object
+// schema with properties and validation rules.
+type DataSchema struct {
+	// The schema description                                  
+	Description                         *string                `json:"description,omitempty"`
+	// Object property definitions                             
+	Properties                          map[string]interface{} `json:"properties"`
+	// Required property names                                 
+	Required                            []string               `json:"required,omitempty"`
+	// The schema title                                        
+	Title                               *string                `json:"title,omitempty"`
+	// The schema type, must be "object"                       
+	Type                                Type9                  `json:"type"`
 }
 
 type PlatformAbilitiesSearchRequest struct {
@@ -18763,7 +22648,7 @@ type FluffySchema struct {
 	// The schema title                                        
 	Title                               *string                `json:"title,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                Type4                  `json:"type"`
+	Type                                Type10                 `json:"type"`
 }
 
 type PlatformActionListParams struct {
@@ -18785,6 +22670,31 @@ type PlatformActionListResponse struct {
 
 // Instance list properties
 type PlatformActionListResponseItem struct {
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The description of the action                                          
+	Description                                        string                 `json:"description"`
+	// Example demonstrating the action usage                                 
+	Examples                                           []string               `json:"examples"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type PlatformActionListStreamItem struct {
+	// Instance list properties                                 
+	Data                       PlatformActionListStreamItemData `json:"data"`
+	// The type of event                                        
+	Type                       PlatformActionListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PlatformActionListStreamItemData struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The description of the action                                          
@@ -18851,6 +22761,37 @@ type PlatformDocListResponse struct {
 
 // Instance list properties
 type PlatformDocListResponseItem struct {
+	// The category of the doc                                                
+	Category                                           *string                `json:"category,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        string                 `json:"description"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// The display order index                                                
+	Index                                              float64                `json:"index"`
+	// The URL to the official documentation page                             
+	Link                                               string                 `json:"link"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               string                 `json:"name"`
+	// Tags associated with the doc                                           
+	Tags                                               []string               `json:"tags"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type PlatformDocListStreamItem struct {
+	// Instance list properties                              
+	Data                       PlatformDocListStreamItemData `json:"data"`
+	// The type of event                                     
+	Type                       PlatformDocListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PlatformDocListStreamItemData struct {
 	// The category of the doc                                                
 	Category                                           *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -18991,7 +22932,36 @@ type PlatformExampleListResponseItem struct {
 	// Tags associated with the example                                       
 	Tags                                               []string               `json:"tags,omitempty"`
 	// The type of the example                                                
-	Type                                               Type5                  `json:"type"`
+	Type                                               Type11                 `json:"type"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type PlatformExampleListStreamItem struct {
+	// Instance list properties                                  
+	Data                       PlatformExampleListStreamItemData `json:"data"`
+	// The type of event                                         
+	Type                       PlatformExampleListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PlatformExampleListStreamItemData struct {
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        string                 `json:"description"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// The URL to the official example page                                   
+	Link                                               string                 `json:"link"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               string                 `json:"name"`
+	// Tags associated with the example                                       
+	Tags                                               []string               `json:"tags,omitempty"`
+	// The type of the example                                                
+	Type                                               Type12                 `json:"type"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -19024,7 +22994,7 @@ type PlatformExamplesSearchResponseItem struct {
 	// Tags associated with the example                                       
 	Tags                                               []string               `json:"tags,omitempty"`
 	// The type of the example                                                
-	Type                                               Type6                  `json:"type"`
+	Type                                               Type13                 `json:"type"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -19079,6 +23049,37 @@ type PlatformGuideListResponse struct {
 
 // Instance list properties
 type PlatformGuideListResponseItem struct {
+	// The category of the guide                                              
+	Category                                           *string                `json:"category,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        string                 `json:"description"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// The display order index                                                
+	Index                                              float64                `json:"index"`
+	// The URL to the official guide page                                     
+	Link                                               string                 `json:"link"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               string                 `json:"name"`
+	// Tags associated with the guide                                         
+	Tags                                               []string               `json:"tags"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type PlatformGuideListStreamItem struct {
+	// Instance list properties                                
+	Data                       PlatformGuideListStreamItemData `json:"data"`
+	// The type of event                                       
+	Type                       PlatformGuideListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PlatformGuideListStreamItemData struct {
 	// The category of the guide                                              
 	Category                                           *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -19212,6 +23213,37 @@ type PlatformManualListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
+type PlatformManualListStreamItem struct {
+	// Instance list properties                                 
+	Data                       PlatformManualListStreamItemData `json:"data"`
+	// The type of event                                        
+	Type                       PlatformManualListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PlatformManualListStreamItemData struct {
+	// The category of the manual                                             
+	Category                                           *string                `json:"category,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        string                 `json:"description"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// The display order index                                                
+	Index                                              float64                `json:"index"`
+	// The URL to the official documentation page                             
+	Link                                               string                 `json:"link"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               string                 `json:"name"`
+	// Tags associated with the manual                                        
+	Tags                                               []string               `json:"tags"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
 type PlatformManualsSearchRequest struct {
 	// The search query to find relevant manuals                         
 	Search                                                        string `json:"search"`
@@ -19294,6 +23326,39 @@ type PlatformModelListResponseItem struct {
 	UpdatedAt                                             float64                `json:"updatedAt"`
 }
 
+type PlatformModelListStreamItem struct {
+	// Instance list properties                                
+	Data                       PlatformModelListStreamItemData `json:"data"`
+	// The type of event                                       
+	Type                       PlatformModelListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PlatformModelListStreamItemData struct {
+	// The timestamp (ms) when the instance was created                          
+	CreatedAt                                             float64                `json:"createdAt"`
+	// The associated description                                                
+	Description                                           *string                `json:"description,omitempty"`
+	// The model of the model                                                    
+	Family                                                string                 `json:"family"`
+	// The instance ID                                                           
+	ID                                                    string                 `json:"id"`
+	// The maximum number of tokens the model can accept                         
+	MaxInputTokens                                        float64                `json:"maxInputTokens"`
+	// The maximum number of tokens the model can generate                       
+	MaxOutputTokens                                       float64                `json:"maxOutputTokens"`
+	// The maximum number of tokens the model can use                            
+	MaxTokens                                             float64                `json:"maxTokens"`
+	// Meta data information                                                     
+	Meta                                                  map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                       
+	Name                                                  *string                `json:"name,omitempty"`
+	// The backstory of the model                                                
+	Provider                                              string                 `json:"provider"`
+	// The timestamp (ms) when the instance was updated                          
+	UpdatedAt                                             float64                `json:"updatedAt"`
+}
+
 type PlatformSecretListParams struct {
 	// The cursor to use for pagination                                                      
 	Cursor                                                    *string                        `json:"cursor,omitempty"`
@@ -19323,7 +23388,7 @@ type PlatformSecretListResponseItem struct {
 	// The instance ID                                                        
 	ID                                                 string                 `json:"id"`
 	// The kind of the secret                                                 
-	Kind                                               *PurpleKind            `json:"kind,omitempty"`
+	Kind                                               *FluffyKind            `json:"kind,omitempty"`
 	// Meta data information                                                  
 	Meta                                               map[string]interface{} `json:"meta,omitempty"`
 	// The associated name                                                    
@@ -19333,7 +23398,41 @@ type PlatformSecretListResponseItem struct {
 	// The original template identifier for the secret                        
 	Template                                           *string                `json:"template,omitempty"`
 	// The type of the secret                                                 
-	Type                                               Type7                  `json:"type"`
+	Type                                               Type14                 `json:"type"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type PlatformSecretListStreamItem struct {
+	// Instance list properties                                 
+	Data                       PlatformSecretListStreamItemData `json:"data"`
+	// The type of event                                        
+	Type                       PlatformSecretListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PlatformSecretListStreamItemData struct {
+	Commentary                                         *string                `json:"commentary,omitempty"`
+	Config                                             map[string]interface{} `json:"config,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	Icon                                               *string                `json:"icon,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// The kind of the secret                                                 
+	Kind                                               *TentacledKind         `json:"kind,omitempty"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	Setup                                              *string                `json:"setup,omitempty"`
+	Tags                                               []string               `json:"tags,omitempty"`
+	// The original template identifier for the secret                        
+	Template                                           *string                `json:"template,omitempty"`
+	// The type of the secret                                                 
+	Type                                               Type15                 `json:"type"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -19363,7 +23462,7 @@ type PlatformSecretsSearchResponseItem struct {
 	// The instance ID                                                            
 	ID                                                     string                 `json:"id"`
 	// The kind of the secret                                                     
-	Kind                                                   *FluffyKind            `json:"kind,omitempty"`
+	Kind                                                   *StickyKind            `json:"kind,omitempty"`
 	// The URL to the official secret page                                        
 	Link                                                   *string                `json:"link,omitempty"`
 	// Meta data information                                                      
@@ -19377,7 +23476,7 @@ type PlatformSecretsSearchResponseItem struct {
 	// The original template identifier for the secret                            
 	Template                                               *string                `json:"template,omitempty"`
 	// The type of the secret                                                     
-	Type                                                   Type8                  `json:"type"`
+	Type                                                   Type16                 `json:"type"`
 	// The timestamp (ms) when the instance was updated                           
 	UpdatedAt                                              float64                `json:"updatedAt"`
 }
@@ -19432,6 +23531,37 @@ type PlatformTutorialListResponse struct {
 
 // Instance list properties
 type PlatformTutorialListResponseItem struct {
+	// The category of the tutorial                                           
+	Category                                           *string                `json:"category,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        string                 `json:"description"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// The display order index                                                
+	Index                                              float64                `json:"index"`
+	// The URL to the official tutorial page                                  
+	Link                                               string                 `json:"link"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               string                 `json:"name"`
+	// Tags associated with the tutorial                                      
+	Tags                                               []string               `json:"tags"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type PlatformTutorialListStreamItem struct {
+	// Instance list properties                                   
+	Data                       PlatformTutorialListStreamItemData `json:"data"`
+	// The type of event                                          
+	Type                       PlatformTutorialListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type PlatformTutorialListStreamItemData struct {
 	// The category of the tutorial                                           
 	Category                                           *string                `json:"category,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -19510,24 +23640,29 @@ type PolicyFetchParams struct {
 
 // Blueprint properties
 type PolicyFetchResponse struct {
-	// The ID of the blueprint                                                 
-	BlueprintID                                        *string                 `json:"blueprintId,omitempty"`
-	// The policy configuration as JSON                                        
-	Config                                             map[string]interface{}  `json:"config,omitempty"`
-	// The timestamp (ms) when the instance was created                        
-	CreatedAt                                          float64                 `json:"createdAt"`
-	// The associated description                                              
-	Description                                        *string                 `json:"description,omitempty"`
-	// The instance ID                                                         
-	ID                                                 string                  `json:"id"`
-	// Meta data information                                                   
-	Meta                                               map[string]interface{}  `json:"meta,omitempty"`
-	// The associated name                                                     
-	Name                                               *string                 `json:"name,omitempty"`
-	// The policy type                                                         
-	Type                                               PolicyFetchResponseType `json:"type"`
-	// The timestamp (ms) when the instance was updated                        
-	UpdatedAt                                          float64                 `json:"updatedAt"`
+	// The unique alias for the instance                                                                              
+	Alias                                                                                     *string                 `json:"alias,omitempty"`
+	// The ID of the blueprint                                                                                        
+	BlueprintID                                                                               *string                 `json:"blueprintId,omitempty"`
+	// The ID of the bot this policy applies to. When omitted the policy is global and applies                        
+	// to every bot.                                                                                                  
+	BotID                                                                                     *string                 `json:"botId,omitempty"`
+	// The policy configuration as JSON                                                                               
+	Config                                                                                    map[string]interface{}  `json:"config,omitempty"`
+	// The timestamp (ms) when the instance was created                                                               
+	CreatedAt                                                                                 float64                 `json:"createdAt"`
+	// The associated description                                                                                     
+	Description                                                                               *string                 `json:"description,omitempty"`
+	// The instance ID                                                                                                
+	ID                                                                                        string                  `json:"id"`
+	// Meta data information                                                                                          
+	Meta                                                                                      map[string]interface{}  `json:"meta,omitempty"`
+	// The associated name                                                                                            
+	Name                                                                                      *string                 `json:"name,omitempty"`
+	// The policy type                                                                                                
+	Type                                                                                      PolicyFetchResponseType `json:"type"`
+	// The timestamp (ms) when the instance was updated                                                               
+	UpdatedAt                                                                                 float64                 `json:"updatedAt"`
 }
 
 type PolicyUpdateParams struct {
@@ -19537,18 +23672,23 @@ type PolicyUpdateParams struct {
 
 // Blueprint properties
 type PolicyUpdateRequest struct {
-	// The ID of the blueprint                                  
-	BlueprintID                        *string                  `json:"blueprintId,omitempty"`
-	// The policy configuration as JSON                         
-	Config                             map[string]interface{}   `json:"config,omitempty"`
-	// The associated description                               
-	Description                        *string                  `json:"description,omitempty"`
-	// Meta data information                                    
-	Meta                               map[string]interface{}   `json:"meta,omitempty"`
-	// The associated name                                      
-	Name                               *string                  `json:"name,omitempty"`
-	// The policy type                                          
-	Type                               *PolicyUpdateRequestType `json:"type,omitempty"`
+	// The unique alias for the instance                                                                               
+	Alias                                                                                     *string                  `json:"alias,omitempty"`
+	// The ID of the blueprint                                                                                         
+	BlueprintID                                                                               *string                  `json:"blueprintId,omitempty"`
+	// The ID of the bot this policy applies to. When omitted the policy is global and applies                         
+	// to every bot.                                                                                                   
+	BotID                                                                                     *string                  `json:"botId,omitempty"`
+	// The policy configuration as JSON                                                                                
+	Config                                                                                    map[string]interface{}   `json:"config,omitempty"`
+	// The associated description                                                                                      
+	Description                                                                               *string                  `json:"description,omitempty"`
+	// Meta data information                                                                                           
+	Meta                                                                                      map[string]interface{}   `json:"meta,omitempty"`
+	// The associated name                                                                                             
+	Name                                                                                      *string                  `json:"name,omitempty"`
+	// The policy type                                                                                                 
+	Type                                                                                      *PolicyUpdateRequestType `json:"type,omitempty"`
 }
 
 type PolicyUpdateResponse struct {
@@ -19558,18 +23698,23 @@ type PolicyUpdateResponse struct {
 
 // Blueprint properties
 type PolicyCreateRequest struct {
-	// The ID of the blueprint                                 
-	BlueprintID                        *string                 `json:"blueprintId,omitempty"`
-	// The policy configuration as JSON                        
-	Config                             map[string]interface{}  `json:"config,omitempty"`
-	// The associated description                              
-	Description                        *string                 `json:"description,omitempty"`
-	// Meta data information                                   
-	Meta                               map[string]interface{}  `json:"meta,omitempty"`
-	// The associated name                                     
-	Name                               *string                 `json:"name,omitempty"`
-	// The policy type                                         
-	Type                               PolicyCreateRequestType `json:"type"`
+	// The unique alias for the instance                                                                              
+	Alias                                                                                     *string                 `json:"alias,omitempty"`
+	// The ID of the blueprint                                                                                        
+	BlueprintID                                                                               *string                 `json:"blueprintId,omitempty"`
+	// The ID of the bot this policy applies to. When omitted the policy is global and applies                        
+	// to every bot.                                                                                                  
+	BotID                                                                                     *string                 `json:"botId,omitempty"`
+	// The policy configuration as JSON                                                                               
+	Config                                                                                    map[string]interface{}  `json:"config,omitempty"`
+	// The associated description                                                                                     
+	Description                                                                               *string                 `json:"description,omitempty"`
+	// Meta data information                                                                                          
+	Meta                                                                                      map[string]interface{}  `json:"meta,omitempty"`
+	// The associated name                                                                                            
+	Name                                                                                      *string                 `json:"name,omitempty"`
+	// The policy type                                                                                                
+	Type                                                                                      PolicyCreateRequestType `json:"type"`
 }
 
 type PolicyCreateResponse struct {
@@ -19578,6 +23723,8 @@ type PolicyCreateResponse struct {
 }
 
 type PolicyListParams struct {
+	// Filter policies that apply to a specific bot                                  
+	BotID                                                     *string                `json:"botId,omitempty"`
 	// The cursor to use for pagination                                              
 	Cursor                                                    *string                `json:"cursor,omitempty"`
 	// Key-value pairs to filter the partner users by metadata                       
@@ -19596,24 +23743,63 @@ type PolicyListResponse struct {
 
 // Blueprint properties
 type PolicyListResponseItem struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The policy configuration as JSON                                       
-	Config                                             map[string]interface{} `json:"config,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The policy type                                                        
-	Type                                               Type9                  `json:"type"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The unique alias for the instance                                                                             
+	Alias                                                                                     *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                                                       
+	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this policy applies to. When omitted the policy is global and applies                       
+	// to every bot.                                                                                                 
+	BotID                                                                                     *string                `json:"botId,omitempty"`
+	// The policy configuration as JSON                                                                              
+	Config                                                                                    map[string]interface{} `json:"config,omitempty"`
+	// The timestamp (ms) when the instance was created                                                              
+	CreatedAt                                                                                 float64                `json:"createdAt"`
+	// The associated description                                                                                    
+	Description                                                                               *string                `json:"description,omitempty"`
+	// The instance ID                                                                                               
+	ID                                                                                        string                 `json:"id"`
+	// Meta data information                                                                                         
+	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                           
+	Name                                                                                      *string                `json:"name,omitempty"`
+	// The policy type                                                                                               
+	Type                                                                                      Type17                 `json:"type"`
+	// The timestamp (ms) when the instance was updated                                                              
+	UpdatedAt                                                                                 float64                `json:"updatedAt"`
+}
+
+type PolicyListStreamItem struct {
+	// Blueprint properties                         
+	Data                   PolicyListStreamItemData `json:"data"`
+	// The type of event                            
+	Type                   PolicyListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type PolicyListStreamItemData struct {
+	// The unique alias for the instance                                                                             
+	Alias                                                                                     *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                                                       
+	BlueprintID                                                                               *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this policy applies to. When omitted the policy is global and applies                       
+	// to every bot.                                                                                                 
+	BotID                                                                                     *string                `json:"botId,omitempty"`
+	// The policy configuration as JSON                                                                              
+	Config                                                                                    map[string]interface{} `json:"config,omitempty"`
+	// The timestamp (ms) when the instance was created                                                              
+	CreatedAt                                                                                 float64                `json:"createdAt"`
+	// The associated description                                                                                    
+	Description                                                                               *string                `json:"description,omitempty"`
+	// The instance ID                                                                                               
+	ID                                                                                        string                 `json:"id"`
+	// Meta data information                                                                                         
+	Meta                                                                                      map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                                           
+	Name                                                                                      *string                `json:"name,omitempty"`
+	// The policy type                                                                                               
+	Type                                                                                      Type18                 `json:"type"`
+	// The timestamp (ms) when the instance was updated                                                              
+	UpdatedAt                                                                                 float64                `json:"updatedAt"`
 }
 
 type PortalDeleteParams struct {
@@ -19633,6 +23819,8 @@ type PortalFetchParams struct {
 
 // Blueprint properties
 type PortalFetchResponse struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The config of the portal                                               
@@ -19722,6 +23910,39 @@ type PortalListResponse struct {
 
 // Blueprint properties
 type PortalListResponseItem struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The config of the portal                                               
+	Config                                             map[string]interface{} `json:"config,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The slug of the portal                                                 
+	Slug                                               *string                `json:"slug,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type PortalListStreamItem struct {
+	// Blueprint properties                         
+	Data                   PortalListStreamItemData `json:"data"`
+	// The type of event                            
+	Type                   PortalListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type PortalListStreamItemData struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The config of the portal                                               
@@ -19771,6 +23992,8 @@ type SecretFetchParams struct {
 
 // Blueprint properties
 type SecretFetchResponse struct {
+	// The unique alias for the instance                                              
+	Alias                                              *string                        `json:"alias,omitempty"`
 	// The ID of the blueprint                                                        
 	BlueprintID                                        *string                        `json:"blueprintId,omitempty"`
 	// The config of the secret                                                       
@@ -19853,7 +24076,7 @@ type SecretVerifyResponse struct {
 // The action to take next
 type SecretVerifyResponseAction struct {
 	// The type of action to take               
-	Type                                 Type10 `json:"type"`
+	Type                                 Type19 `json:"type"`
 	// The URL to authenticate the secret       
 	URL                                  string `json:"url"`
 }
@@ -19906,6 +24129,8 @@ type SecretListResponse struct {
 
 // Blueprint properties
 type SecretListResponseItem struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The config of the secret                                               
@@ -19917,17 +24142,52 @@ type SecretListResponseItem struct {
 	// The instance ID                                                        
 	ID                                                 string                 `json:"id"`
 	// The kind of the secret                                                 
-	Kind                                               *TentacledKind         `json:"kind,omitempty"`
+	Kind                                               *IndigoKind            `json:"kind,omitempty"`
 	// Meta data information                                                  
 	Meta                                               map[string]interface{} `json:"meta,omitempty"`
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
 	// The type of the secret                                                 
-	Type                                               *Type11                `json:"type,omitempty"`
+	Type                                               *Type20                `json:"type,omitempty"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 	// The visibility of the secret                                           
-	Visibility                                         *IndecentVisibility    `json:"visibility,omitempty"`
+	Visibility                                         *FriskyVisibility      `json:"visibility,omitempty"`
+}
+
+type SecretListStreamItem struct {
+	// Blueprint properties                         
+	Data                   SecretListStreamItemData `json:"data"`
+	// The type of event                            
+	Type                   SecretListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type SecretListStreamItemData struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The config of the secret                                               
+	Config                                             map[string]interface{} `json:"config,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// The kind of the secret                                                 
+	Kind                                               *IndecentKind          `json:"kind,omitempty"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The type of the secret                                                 
+	Type                                               *Type21                `json:"type,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The visibility of the secret                                           
+	Visibility                                         *MischievousVisibility `json:"visibility,omitempty"`
 }
 
 type SkillsetAbilityDeleteParams struct {
@@ -19978,11 +24238,74 @@ type SkillsetAbilityExecuteResponseMessage struct {
 	// The text of the message                       
 	Text                      string                 `json:"text"`
 	// The type of the message                       
-	Type                      Type12                 `json:"type"`
+	Type                      Type22                 `json:"type"`
 }
 
 // Usage information
 type SkillsetAbilityExecuteResponseUsage struct {
+	// The tokens used in this exchange        
+	Token                              float64 `json:"token"`
+}
+
+type SkillsetAbilityExecuteStreamItem struct {
+	// The data for the event                                                                      
+	//                                                                                             
+	// A message in the conversation                                                               
+	//                                                                                             
+	// Information about an abort event in a streamed response                                     
+	Data                                                      SkillsetAbilityExecuteStreamItemData `json:"data"`
+	// The type of event                                                                           
+	Type                                                      SkillsetAbilityExecuteStreamItemType `json:"type"`
+}
+
+// The data for the event
+//
+// A message in the conversation
+//
+// Information about an abort event in a streamed response
+type SkillsetAbilityExecuteStreamItemData struct {
+	// Error message if execution failed                                    
+	Error                                            *string                `json:"error,omitempty"`
+	// Messages generated during execution                                  
+	Messages                                         []DataMessage          `json:"messages,omitempty"`
+	// The result of the ability execution                                  
+	Result                                           interface{}            `json:"result"`
+	// Usage information                                                    
+	Usage                                            *Usage3                `json:"usage,omitempty"`
+	// The error message                                                    
+	Message                                          *string                `json:"message,omitempty"`
+	// The token generated                                                  
+	Token                                            *string                `json:"token,omitempty"`
+	// Meta data information                                                
+	Meta                                             map[string]interface{} `json:"meta,omitempty"`
+	// The text of the message                                              
+	Text                                             *string                `json:"text,omitempty"`
+	// The type of the message                                              
+	Type                                             *Type24                `json:"type,omitempty"`
+	// The function or tool associated with the abort                       
+	FunctionName                                     *string                `json:"functionName,omitempty"`
+	// The abort reason if available                                        
+	Reason                                           interface{}            `json:"reason"`
+	// The number of input tokens used                                      
+	InputTokensUsed                                  *float64               `json:"inputTokensUsed,omitempty"`
+	// The model used                                                       
+	Model                                            *string                `json:"model,omitempty"`
+	// The number of output tokens used                                     
+	OutputTokensUsed                                 *float64               `json:"outputTokensUsed,omitempty"`
+}
+
+// A message in the conversation
+type DataMessage struct {
+	// Meta data information                         
+	Meta                      map[string]interface{} `json:"meta,omitempty"`
+	// The text of the message                       
+	Text                      string                 `json:"text"`
+	// The type of the message                       
+	Type                      Type23                 `json:"type"`
+}
+
+// Usage information
+type Usage3 struct {
 	// The tokens used in this exchange        
 	Token                              float64 `json:"token"`
 }
@@ -20129,6 +24452,40 @@ type SkillsetAbilitiesExportResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
+type SkillsetAbilitiesExportStreamItem struct {
+	// Blueprint properties                                      
+	Data                   SkillsetAbilitiesExportStreamItemData `json:"data"`
+	// The type of event                                         
+	Type                   SkillsetAbilitiesExportStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type SkillsetAbilitiesExportStreamItemData struct {
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot associated with the ability                          
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        string                 `json:"description"`
+	// The ID of the file associated with the ability                         
+	FileID                                             *string                `json:"fileId,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	Instruction                                        string                 `json:"instruction"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               string                 `json:"name"`
+	// The ID of the secret associated with the ability                       
+	SecretID                                           *string                `json:"secretId,omitempty"`
+	// The ID of the space associated with the ability                        
+	SpaceID                                            *string                `json:"spaceId,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
 type SkillsetAbilityListParams struct {
 	// The cursor to use for pagination                                
 	Cursor                             *string                         `json:"cursor,omitempty"`
@@ -20173,6 +24530,40 @@ type SkillsetAbilityListResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
+type SkillsetAbilityListStreamItem struct {
+	// Blueprint properties                                  
+	Data                   SkillsetAbilityListStreamItemData `json:"data"`
+	// The type of event                                     
+	Type                   SkillsetAbilityListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type SkillsetAbilityListStreamItemData struct {
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot associated with the ability                          
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        string                 `json:"description"`
+	// The ID of the file associated with the ability                         
+	FileID                                             *string                `json:"fileId,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	Instruction                                        string                 `json:"instruction"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               string                 `json:"name"`
+	// The ID of the secret associated with the ability                       
+	SecretID                                           *string                `json:"secretId,omitempty"`
+	// The ID of the space associated with the ability                        
+	SpaceID                                            *string                `json:"spaceId,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
 type SkillsetDeleteParams struct {
 	// The ID of the skillset to delete       
 	SkillsetID                         string `json:"skillsetId"`
@@ -20190,6 +24581,8 @@ type SkillsetFetchParams struct {
 
 // Blueprint properties
 type SkillsetFetchResponse struct {
+	// The unique alias for the instance                                                
+	Alias                                              *string                          `json:"alias,omitempty"`
 	// The ID of the blueprint                                                          
 	BlueprintID                                        *string                          `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                                 
@@ -20273,6 +24666,37 @@ type SkillsetListResponse struct {
 
 // Blueprint properties
 type SkillsetListResponseItem struct {
+	// The unique alias for the instance                                        
+	Alias                                              *string                  `json:"alias,omitempty"`
+	// The ID of the blueprint                                                  
+	BlueprintID                                        *string                  `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                         
+	CreatedAt                                          float64                  `json:"createdAt"`
+	// The associated description                                               
+	Description                                        *string                  `json:"description,omitempty"`
+	// The instance ID                                                          
+	ID                                                 string                   `json:"id"`
+	// Meta data information                                                    
+	Meta                                               map[string]interface{}   `json:"meta,omitempty"`
+	// The associated name                                                      
+	Name                                               *string                  `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                         
+	UpdatedAt                                          float64                  `json:"updatedAt"`
+	// The skillset visibility                                                  
+	Visibility                                         *BraggadociousVisibility `json:"visibility,omitempty"`
+}
+
+type SkillsetListStreamItem struct {
+	// Blueprint properties                           
+	Data                   SkillsetListStreamItemData `json:"data"`
+	// The type of event                              
+	Type                   SkillsetListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type SkillsetListStreamItemData struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
@@ -20288,7 +24712,7 @@ type SkillsetListResponseItem struct {
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 	// The skillset visibility                                                
-	Visibility                                         *HilariousVisibility   `json:"visibility,omitempty"`
+	Visibility                                         *Visibility1           `json:"visibility,omitempty"`
 }
 
 type SpaceDeleteParams struct {
@@ -20308,6 +24732,8 @@ type SpaceFetchParams struct {
 
 // Blueprint properties
 type SpaceFetchResponse struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The contact associated with the space                                  
@@ -20322,6 +24748,187 @@ type SpaceFetchResponse struct {
 	Meta                                               map[string]interface{} `json:"meta,omitempty"`
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type SpaceSiteDeleteParams struct {
+	// The ID of the site to delete       
+	SiteID                         string `json:"siteId"`
+	SpaceID                        string `json:"spaceId"`
+}
+
+type SpaceSiteDeleteResponse struct {
+	// The ID of the deleted site       
+	ID                           string `json:"id"`
+}
+
+type SpaceSiteFetchParams struct {
+	// The ID of the site to retrieve       
+	SiteID                           string `json:"siteId"`
+	SpaceID                          string `json:"spaceId"`
+}
+
+// Instance list properties
+type SpaceSiteFetchResponse struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The host the site is served at                                         
+	Domain                                             *string                `json:"domain,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Directory index filename                                               
+	Index                                              *string                `json:"index,omitempty"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// Not found filename                                                     
+	NotFound                                           *string                `json:"notFound,omitempty"`
+	// The folder prefix inside the space                                     
+	Prefix                                             *string                `json:"prefix,omitempty"`
+	// The space the site belongs to                                          
+	SpaceID                                            *string                `json:"spaceId,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type SpaceSiteUpdateParams struct {
+	SiteID  string `json:"siteId"`
+	SpaceID string `json:"spaceId"`
+}
+
+// Instance crud properties
+type SpaceSiteUpdateRequest struct {
+	// The unique alias for the instance                                                           
+	Alias                                                                   *string                `json:"alias,omitempty"`
+	// The associated description                                                                  
+	Description                                                             *string                `json:"description,omitempty"`
+	// The host the site is served at (a <label>.chatbotkit.space subdomain)                       
+	Domain                                                                  *string                `json:"domain,omitempty"`
+	// Directory index filename                                                                    
+	Index                                                                   *string                `json:"index,omitempty"`
+	// Meta data information                                                                       
+	Meta                                                                    map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                         
+	Name                                                                    *string                `json:"name,omitempty"`
+	// Not found filename                                                                          
+	NotFound                                                                *string                `json:"notFound,omitempty"`
+	// Optional folder prefix inside the space to serve from                                       
+	Prefix                                                                  *string                `json:"prefix,omitempty"`
+}
+
+type SpaceSiteUpdateResponse struct {
+	// The ID of the updated site       
+	ID                           string `json:"id"`
+}
+
+type SpaceSiteCreateParams struct {
+	SpaceID string `json:"spaceId"`
+}
+
+// Instance crud properties
+type SpaceSiteCreateRequest struct {
+	// The unique alias for the instance                                                           
+	Alias                                                                   *string                `json:"alias,omitempty"`
+	// The associated description                                                                  
+	Description                                                             *string                `json:"description,omitempty"`
+	// The host the site is served at (a <label>.chatbotkit.space subdomain)                       
+	Domain                                                                  string                 `json:"domain"`
+	// Directory index filename                                                                    
+	Index                                                                   *string                `json:"index,omitempty"`
+	// Meta data information                                                                       
+	Meta                                                                    map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                         
+	Name                                                                    *string                `json:"name,omitempty"`
+	// Not found filename                                                                          
+	NotFound                                                                *string                `json:"notFound,omitempty"`
+	// Optional folder prefix inside the space to serve from                                       
+	Prefix                                                                  *string                `json:"prefix,omitempty"`
+}
+
+type SpaceSiteCreateResponse struct {
+	// The ID of the created site       
+	ID                           string `json:"id"`
+}
+
+type SpaceSiteListParams struct {
+	// The cursor to use for pagination                                         
+	Cursor                                            *string                   `json:"cursor,omitempty"`
+	// Key-value pairs to filter the sites by metadata                          
+	Meta                                              map[string]string         `json:"meta,omitempty"`
+	// The order of the paginated items                                         
+	Order                                             *SpaceSiteListParamsOrder `json:"order,omitempty"`
+	SpaceID                                           string                    `json:"spaceId"`
+	// The number of items to retrieve                                          
+	Take                                              *int64                    `json:"take,omitempty"`
+}
+
+type SpaceSiteListResponse struct {
+	// Cursor for fetching the next page                            
+	Cursor                              string                      `json:"cursor"`
+	Items                               []SpaceSiteListResponseItem `json:"items"`
+}
+
+// Instance list properties
+type SpaceSiteListResponseItem struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The host the site is served at                                         
+	Domain                                             *string                `json:"domain,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Directory index filename                                               
+	Index                                              *string                `json:"index,omitempty"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// Not found filename                                                     
+	NotFound                                           *string                `json:"notFound,omitempty"`
+	// The folder prefix inside the space                                     
+	Prefix                                             *string                `json:"prefix,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type SpaceSiteListStreamItem struct {
+	// Instance list properties                            
+	Data                       SpaceSiteListStreamItemData `json:"data"`
+	// The type of event                                   
+	Type                       SpaceSiteListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type SpaceSiteListStreamItemData struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The host the site is served at                                         
+	Domain                                             *string                `json:"domain,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Directory index filename                                               
+	Index                                              *string                `json:"index,omitempty"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// Not found filename                                                     
+	NotFound                                           *string                `json:"notFound,omitempty"`
+	// The folder prefix inside the space                                     
+	Prefix                                             *string                `json:"prefix,omitempty"`
 	// The timestamp (ms) when the instance was updated                       
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
@@ -20544,6 +25151,33 @@ type SpacesExportResponseItem struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
+type SpacesExportStreamItem struct {
+	// Blueprint properties                           
+	Data                   SpacesExportStreamItemData `json:"data"`
+	// The type of event                              
+	Type                   SpacesExportStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type SpacesExportStreamItemData struct {
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The contact associated with the space                                  
+	ContactID                                          *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
 type SpaceListParams struct {
 	// The cursor to use for pagination                                             
 	Cursor                                                    *string               `json:"cursor,omitempty"`
@@ -20563,6 +25197,37 @@ type SpaceListResponse struct {
 
 // Blueprint properties
 type SpaceListResponseItem struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The contact associated with the space                                  
+	ContactID                                          *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type SpaceListStreamItem struct {
+	// Blueprint properties                        
+	Data                   SpaceListStreamItemData `json:"data"`
+	// The type of event                           
+	Type                   SpaceListStreamItemType `json:"type"`
+}
+
+// Blueprint properties
+type SpaceListStreamItemData struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
 	// The ID of the blueprint                                                
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	// The contact associated with the space                                  
@@ -20653,9 +25318,44 @@ type TaskExecutionListResponseItem struct {
 	// The associated name                                                    
 	Name                                               *string                `json:"name,omitempty"`
 	// The task execution outcome                                             
-	Outcome                                            *FluffyOutcome         `json:"outcome,omitempty"`
+	Outcome                                            *TentacledOutcome      `json:"outcome,omitempty"`
 	// The task execution status                                              
-	Status                                             *FluffyStatus          `json:"status,omitempty"`
+	Status                                             *TentacledStatus       `json:"status,omitempty"`
+	// A summary of the execution result                                      
+	Summary                                            *string                `json:"summary,omitempty"`
+	// The task this execution belongs to                                     
+	TaskID                                             *string                `json:"taskId,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type TaskExecutionListStreamItem struct {
+	// Instance list properties                                
+	Data                       TaskExecutionListStreamItemData `json:"data"`
+	// The type of event                                       
+	Type                       TaskExecutionListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type TaskExecutionListStreamItemData struct {
+	// When the execution completed                                           
+	CompletedAt                                        *time.Time             `json:"completedAt,omitempty"`
+	// The conversation associated with this execution                        
+	ConversationID                                     *string                `json:"conversationId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The task execution outcome                                             
+	Outcome                                            *StickyOutcome         `json:"outcome,omitempty"`
+	// The task execution status                                              
+	Status                                             *StickyStatus          `json:"status,omitempty"`
 	// A summary of the execution result                                      
 	Summary                                            *string                `json:"summary,omitempty"`
 	// The task this execution belongs to                                     
@@ -20827,6 +25527,43 @@ type TasksExportResponseItem struct {
 	UpdatedAt                                                          float64                `json:"updatedAt"`
 }
 
+type TasksExportStreamItem struct {
+	// Instance list properties                          
+	Data                       TasksExportStreamItemData `json:"data"`
+	// The type of event                                 
+	Type                       TasksExportStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type TasksExportStreamItemData struct {
+	// The bot associated with the task                                                       
+	BotID                                                              *string                `json:"botId,omitempty"`
+	// The contact associated with the task                                                   
+	ContactID                                                          *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                                       
+	CreatedAt                                                          float64                `json:"createdAt"`
+	// The associated description                                                             
+	Description                                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                                        
+	ID                                                                 string                 `json:"id"`
+	// The maximum number of iterations per task execution                                    
+	MaxIterations                                                      *float64               `json:"maxIterations,omitempty"`
+	// The maximum time per task execution (in milliseconds)                                  
+	MaxTime                                                            *float64               `json:"maxTime,omitempty"`
+	// Meta data information                                                                  
+	Meta                                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                    
+	Name                                                               *string                `json:"name,omitempty"`
+	// The schedule of the task                                                               
+	Schedule                                                           *string                `json:"schedule,omitempty"`
+	// The session duration of the task execution (in milliseconds)                           
+	SessionDuration                                                    *float64               `json:"sessionDuration,omitempty"`
+	// The IANA timezone identifier used to evaluate the task schedule.                       
+	Timezone                                                           *string                `json:"timezone,omitempty"`
+	// The timestamp (ms) when the instance was updated                                       
+	UpdatedAt                                                          float64                `json:"updatedAt"`
+}
+
 type TaskListParams struct {
 	// Filter by associated bot                                                     
 	BotID                                                     *string               `json:"botId,omitempty"`
@@ -20875,13 +25612,58 @@ type TaskListResponseItem struct {
 	// The timestamp (ms) of the next scheduled task execution                                
 	NextRunAt                                                          *float64               `json:"nextRunAt,omitempty"`
 	// The task execution outcome                                                             
-	Outcome                                                            *TentacledOutcome      `json:"outcome,omitempty"`
+	Outcome                                                            *IndigoOutcome         `json:"outcome,omitempty"`
 	// The schedule of the task                                                               
 	Schedule                                                           *string                `json:"schedule,omitempty"`
 	// The session duration of the task execution (in milliseconds)                           
 	SessionDuration                                                    *float64               `json:"sessionDuration,omitempty"`
 	// The task execution status                                                              
-	Status                                                             *TentacledStatus       `json:"status,omitempty"`
+	Status                                                             *IndigoStatus          `json:"status,omitempty"`
+	// The IANA timezone identifier used to evaluate the task schedule.                       
+	Timezone                                                           *string                `json:"timezone,omitempty"`
+	// The timestamp (ms) when the instance was updated                                       
+	UpdatedAt                                                          float64                `json:"updatedAt"`
+}
+
+type TaskListStreamItem struct {
+	// Instance list properties                       
+	Data                       TaskListStreamItemData `json:"data"`
+	// The type of event                              
+	Type                       TaskListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type TaskListStreamItemData struct {
+	// The bot associated with the task                                                       
+	BotID                                                              *string                `json:"botId,omitempty"`
+	// The contact associated with the task                                                   
+	ContactID                                                          *string                `json:"contactId,omitempty"`
+	// The timestamp (ms) when the instance was created                                       
+	CreatedAt                                                          float64                `json:"createdAt"`
+	// The associated description                                                             
+	Description                                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                                        
+	ID                                                                 string                 `json:"id"`
+	// The timestamp (ms) of the last task execution                                          
+	LastRunAt                                                          *float64               `json:"lastRunAt,omitempty"`
+	// The maximum number of iterations per task execution                                    
+	MaxIterations                                                      *float64               `json:"maxIterations,omitempty"`
+	// The maximum time per task execution (in milliseconds)                                  
+	MaxTime                                                            *float64               `json:"maxTime,omitempty"`
+	// Meta data information                                                                  
+	Meta                                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                    
+	Name                                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) of the next scheduled task execution                                
+	NextRunAt                                                          *float64               `json:"nextRunAt,omitempty"`
+	// The task execution outcome                                                             
+	Outcome                                                            *IndecentOutcome       `json:"outcome,omitempty"`
+	// The schedule of the task                                                               
+	Schedule                                                           *string                `json:"schedule,omitempty"`
+	// The session duration of the task execution (in milliseconds)                           
+	SessionDuration                                                    *float64               `json:"sessionDuration,omitempty"`
+	// The task execution status                                                              
+	Status                                                             *IndecentStatus        `json:"status,omitempty"`
 	// The IANA timezone identifier used to evaluate the task schedule.                       
 	Timezone                                                           *string                `json:"timezone,omitempty"`
 	// The timestamp (ms) when the instance was updated                                       
@@ -20907,6 +25689,29 @@ type TeamListResponse struct {
 
 // Instance list properties
 type TeamListResponseItem struct {
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type TeamListStreamItem struct {
+	// Instance list properties                       
+	Data                       TeamListStreamItemData `json:"data"`
+	// The type of event                              
+	Type                       TeamListStreamItemType `json:"type"`
+}
+
+// Instance list properties
+type TeamListStreamItemData struct {
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	// The associated description                                             
@@ -21009,7 +25814,7 @@ type UsageSeriesFetchResponse struct {
 	// The number of messages the user has created                                       
 	Messages                                           []UsageSeriesFetchResponseMessage `json:"messages"`
 	// The number of tokens the user has used                                            
-	Tokens                                             []TokenElement                    `json:"tokens"`
+	Tokens                                             []Token                           `json:"tokens"`
 }
 
 type Conversation struct {
@@ -21026,7 +25831,7 @@ type UsageSeriesFetchResponseMessage struct {
 	Total                                            float64 `json:"total"`
 }
 
-type TokenElement struct {
+type Token struct {
 	// The date of the data point                          
 	Date                                           float64 `json:"date"`
 	// The total number of tokens the user has used        
@@ -21267,7 +26072,7 @@ type FunctionsDefinitionParameters struct {
 	// Required property names                                 
 	Required                            []string               `json:"required,omitempty"`
 	// The schema type, must be "object"                       
-	Type                                Type13                 `json:"type"`
+	Type                                Type25                 `json:"type"`
 }
 
 // The result of the function execution
@@ -21362,7 +26167,7 @@ type CompleteStreamingResponseItemData struct {
 	// The text of the message                                              
 	Text                                             *string                `json:"text,omitempty"`
 	// The type of the message                                              
-	Type                                             *DataType              `json:"type,omitempty"`
+	Type                                             *Type26                `json:"type,omitempty"`
 	// The function or tool associated with the abort                       
 	FunctionName                                     *string                `json:"functionName,omitempty"`
 	// The abort reason if available                                        
@@ -21395,30 +26200,30 @@ type TaskWorkflowStreamingResponseItem struct {
 //
 // The data for the error event
 type TaskWorkflowStreamingResponseItemData struct {
-	// The action associated with the operation            
-	Action                                     *DataAction `json:"action,omitempty"`
-	// The operation ID                                    
-	ID                                         *string     `json:"id,omitempty"`
-	// The error code                                      
-	Code                                       *string     `json:"code,omitempty"`
-	// The error message                                   
-	Message                                    *string     `json:"message,omitempty"`
+	// The action associated with the operation              
+	Action                                     *FluffyAction `json:"action,omitempty"`
+	// The operation ID                                      
+	ID                                         *string       `json:"id,omitempty"`
+	// The error code                                        
+	Code                                       *string       `json:"code,omitempty"`
+	// The error message                                     
+	Message                                    *string       `json:"message,omitempty"`
 }
 
 // The action associated with the operation
-type DataAction struct {
-	// The action icon                     
-	Icon                       *string     `json:"icon,omitempty"`
-	// The action ID                       
-	ID                         string      `json:"id"`
-	// The action input                    
-	Input                      interface{} `json:"input"`
-	// The action justification            
-	Justification              *string     `json:"justification,omitempty"`
-	// The action kind                     
-	Kind                       *ActionKind `json:"kind,omitempty"`
-	// The action name                     
-	Name                       *string     `json:"name,omitempty"`
+type FluffyAction struct {
+	// The action icon                        
+	Icon                       *string        `json:"icon,omitempty"`
+	// The action ID                          
+	ID                         string         `json:"id"`
+	// The action input                       
+	Input                      interface{}    `json:"input"`
+	// The action justification               
+	Justification              *string        `json:"justification,omitempty"`
+	// The action kind                        
+	Kind                       *HilariousKind `json:"kind,omitempty"`
+	// The action name                        
+	Name                       *string        `json:"name,omitempty"`
 }
 
 // The Twilio channel to use for the conversation
@@ -21439,12 +26244,51 @@ const (
 
 )
 
+// The type of event
+type PlatformReportListStreamItemType string
+
+const (
+	PurpleItem                                     PlatformReportListStreamItemType = "item"
+
+)
+
+// The action kind
+type PurpleKind string
+
+const (
+	PurpleDataset                                                     PurpleKind = "dataset"
+	PurpleFunction                                                    PurpleKind = "function"
+	PurpleSkillset                                                    PurpleKind = "skillset"
+
+
+)
+
+// The type of event
+type TaskWorkflowEventsSubscribeStreamItemType string
+
+const (
+	PurpleError                                             TaskWorkflowEventsSubscribeStreamItemType = "error"
+	PurpleOperationBegin                                    TaskWorkflowEventsSubscribeStreamItemType = "operationBegin"
+	PurpleOperationEnd                                      TaskWorkflowEventsSubscribeStreamItemType = "operationEnd"
+
+
+
+)
+
 // The order of the paginated items
 type BlueprintBulletinListParamsOrder string
 
 const (
 	FluffyAsc                                BlueprintBulletinListParamsOrder = "asc"
 	FluffyDesc                               BlueprintBulletinListParamsOrder = "desc"
+
+)
+
+// The type of event
+type BlueprintBulletinListStreamItemType string
+
+const (
+	FluffyItem                                        BlueprintBulletinListStreamItemType = "item"
 
 )
 
@@ -21497,13 +26341,31 @@ const (
 	StickyPublic                                     PurpleVisibility = "public"
 )
 
+// The blueprint visibility
+type FluffyVisibility string
+
+const (
+	IndigoPrivate                                       FluffyVisibility = "private"
+	IndigoProtected                                     FluffyVisibility = "protected"
+	IndigoPublic                                        FluffyVisibility = "public"
+
+)
+
+// The type of event
+type BlueprintListStreamItemType string
+
+const (
+
+	TentacledItem                             BlueprintListStreamItemType = "item"
+)
+
 // The bot visibility
 type BotFetchResponseVisibility string
 
 const (
-	IndigoPrivate                      BotFetchResponseVisibility = "private"
-	IndigoProtected                    BotFetchResponseVisibility = "protected"
-	IndigoPublic                       BotFetchResponseVisibility = "public"
+	IndecentPrivate                    BotFetchResponseVisibility = "private"
+	IndecentProtected                  BotFetchResponseVisibility = "protected"
+	IndecentPublic                     BotFetchResponseVisibility = "public"
 
 )
 
@@ -21541,9 +26403,9 @@ const (
 type BotUpdateRequestVisibility string
 
 const (
-	IndecentPrivate                    BotUpdateRequestVisibility = "private"
-	IndecentProtected                  BotUpdateRequestVisibility = "protected"
-	IndecentPublic                     BotUpdateRequestVisibility = "public"
+	HilariousPrivate                   BotUpdateRequestVisibility = "private"
+	HilariousProtected                 BotUpdateRequestVisibility = "protected"
+	HilariousPublic                    BotUpdateRequestVisibility = "public"
 
 )
 
@@ -21551,9 +26413,9 @@ const (
 type BotCreateRequestVisibility string
 
 const (
-	HilariousPrivate                   BotCreateRequestVisibility = "private"
-	HilariousProtected                 BotCreateRequestVisibility = "protected"
-	HilariousPublic                    BotCreateRequestVisibility = "public"
+	AmbitiousPrivate                   BotCreateRequestVisibility = "private"
+	AmbitiousProtected                 BotCreateRequestVisibility = "protected"
+	AmbitiousPublic                    BotCreateRequestVisibility = "public"
 
 )
 
@@ -21567,12 +26429,38 @@ const (
 )
 
 // The bot visibility
-type FluffyVisibility string
+type TentacledVisibility string
 
 const (
-	AmbitiousPrivate                           FluffyVisibility = "private"
-	AmbitiousProtected                         FluffyVisibility = "protected"
-	AmbitiousPublic                            FluffyVisibility = "public"
+	CunningPrivate                             TentacledVisibility = "private"
+	CunningProtected                           TentacledVisibility = "protected"
+	CunningPublic                              TentacledVisibility = "public"
+
+)
+
+// The bot visibility
+type StickyVisibility string
+
+const (
+	MagentaPrivate                                StickyVisibility = "private"
+	MagentaProtected                              StickyVisibility = "protected"
+	MagentaPublic                                 StickyVisibility = "public"
+
+)
+
+// The type of event
+type BotListStreamItemType string
+
+const (
+
+	StickyItem                          BotListStreamItemType = "item"
+)
+
+// The type of event
+type ChannelMessagesSubscribeStreamItemType string
+
+const (
+	PurpleMessage                                  ChannelMessagesSubscribeStreamItemType = "message"
 
 )
 
@@ -21585,6 +26473,14 @@ const (
 
 )
 
+// The type of event
+type ContactConversationListStreamItemType string
+
+const (
+	IndigoItem                                          ContactConversationListStreamItemType = "item"
+
+)
+
 // The order of the paginated items
 type ContactMemoryListParamsOrder string
 
@@ -21594,12 +26490,28 @@ const (
 
 )
 
+// The type of event
+type ContactMemoryListStreamItemType string
+
+const (
+	IndecentItem                                  ContactMemoryListStreamItemType = "item"
+
+)
+
 // The order of the paginated items
 type ContactRatingListParamsOrder string
 
 const (
 	HilariousAsc                         ContactRatingListParamsOrder = "asc"
 	HilariousDesc                        ContactRatingListParamsOrder = "desc"
+
+)
+
+// The type of event
+type ContactRatingListStreamItemType string
+
+const (
+	HilariousItem                                 ContactRatingListStreamItemType = "item"
 
 )
 
@@ -21629,12 +26541,28 @@ const (
 
 )
 
+// The type of event
+type ContactSecretListStreamItemType string
+
+const (
+	AmbitiousItem                                 ContactSecretListStreamItemType = "item"
+
+)
+
 // The order of the paginated items
 type ContactSpaceListParamsOrder string
 
 const (
 	CunningAsc                          ContactSpaceListParamsOrder = "asc"
 	CunningDesc                         ContactSpaceListParamsOrder = "desc"
+
+)
+
+// The type of event
+type ContactSpaceListStreamItemType string
+
+const (
+	CunningItem                                  ContactSpaceListStreamItemType = "item"
 
 )
 
@@ -21667,6 +26595,34 @@ const (
 
 )
 
+// The task execution outcome
+type FluffyOutcome string
+
+const (
+	FluffyFailure                                      FluffyOutcome = "failure"
+	FluffyPending                                      FluffyOutcome = "pending"
+	FluffySuccess                                      FluffyOutcome = "success"
+
+)
+
+// The task execution status
+type FluffyStatus string
+
+const (
+	FluffyCanceled                                    FluffyStatus = "canceled"
+	FluffyIdle                                        FluffyStatus = "idle"
+	FluffyRunning                                     FluffyStatus = "running"
+
+)
+
+// The type of event
+type ContactTaskListStreamItemType string
+
+const (
+	MagentaItem                                 ContactTaskListStreamItemType = "item"
+
+)
+
 // The order of the paginated items
 type ContactsExportParamsOrder string
 
@@ -21676,12 +26632,28 @@ const (
 
 )
 
+// The type of event
+type ContactsExportStreamItemType string
+
+const (
+	FriskyItem                                 ContactsExportStreamItemType = "item"
+
+)
+
 // The order of the paginated items
 type ContactListParamsOrder string
 
 const (
 	MischievousAsc                 ContactListParamsOrder = "asc"
 	MischievousDesc                ContactListParamsOrder = "desc"
+
+)
+
+// The type of event
+type ContactListStreamItemType string
+
+const (
+	MischievousItem                         ContactListStreamItemType = "item"
 
 )
 
@@ -21697,8 +26669,8 @@ const (
 type PurpleReason string
 
 const (
+	FluffyError                                          PurpleReason = "error"
 	PurpleAbort                                          PurpleReason = "abort"
-	PurpleError                                          PurpleReason = "error"
 	PurpleIteration                                      PurpleReason = "iteration"
 	PurpleLength                                         PurpleReason = "length"
 	PurpleStop                                           PurpleReason = "stop"
@@ -21706,11 +26678,67 @@ const (
 	TentacledActivity                                    PurpleReason = "activity"
 )
 
-// The schema type, must be "object"
+// The reason why the completion ended
+type FluffyReason string
+
+const (
+	FluffyAbort                                                      FluffyReason = "abort"
+	FluffyIteration                                                  FluffyReason = "iteration"
+	FluffyLength                                                     FluffyReason = "length"
+	FluffyStop                                                       FluffyReason = "stop"
+
+	StickyActivity                                                   FluffyReason = "activity"
+	TentacledError                                                   FluffyReason = "error"
+)
+
+// The type of the message
 type IndigoType string
 
 const (
-	FluffyObject                                                           IndigoType = "object"
+	IndigoActivity                                                    IndigoType = "activity"
+
+	TentacledBackstory                                                IndigoType = "backstory"
+	TentacledBot                                                      IndigoType = "bot"
+	TentacledCheckpoint                                               IndigoType = "checkpoint"
+	TentacledContext                                                  IndigoType = "context"
+	TentacledInstruction                                              IndigoType = "instruction"
+	TentacledReasoning                                                IndigoType = "reasoning"
+	TentacledUser                                                     IndigoType = "user"
+)
+
+// The type of event
+type ConversationMessageCompleteStreamItemType string
+
+const (
+	FluffyMessage                                                 ConversationMessageCompleteStreamItemType = "message"
+	PurpleCompleteBegin                                           ConversationMessageCompleteStreamItemType = "completeBegin"
+	PurpleCompleteEnd                                             ConversationMessageCompleteStreamItemType = "completeEnd"
+	PurpleReasoningToken                                          ConversationMessageCompleteStreamItemType = "reasoningToken"
+	PurpleResult                                                  ConversationMessageCompleteStreamItemType = "result"
+	PurpleToken                                                   ConversationMessageCompleteStreamItemType = "token"
+	PurpleUsage                                                   ConversationMessageCompleteStreamItemType = "usage"
+	PurpleWaitForChannelMessageBegin                              ConversationMessageCompleteStreamItemType = "waitForChannelMessageBegin"
+	PurpleWaitForChannelMessageEnd                                ConversationMessageCompleteStreamItemType = "waitForChannelMessageEnd"
+
+
+
+
+
+
+
+
+
+
+
+	StickyError                                                   ConversationMessageCompleteStreamItemType = "error"
+	TentacledAbort                                                ConversationMessageCompleteStreamItemType = "abort"
+)
+
+// The schema type, must be "object"
+type IndecentType string
+
+const (
+	FluffyObject                                                           IndecentType = "object"
 
 )
 
@@ -21718,44 +26746,44 @@ const (
 type ConversationMessageFetchResponseType string
 
 const (
+	IndecentActivity                             ConversationMessageFetchResponseType = "activity"
 
-	StickyActivity                               ConversationMessageFetchResponseType = "activity"
-	TentacledBackstory                           ConversationMessageFetchResponseType = "backstory"
-	TentacledBot                                 ConversationMessageFetchResponseType = "bot"
-	TentacledCheckpoint                          ConversationMessageFetchResponseType = "checkpoint"
-	TentacledContext                             ConversationMessageFetchResponseType = "context"
-	TentacledInstruction                         ConversationMessageFetchResponseType = "instruction"
-	TentacledReasoning                           ConversationMessageFetchResponseType = "reasoning"
-	TentacledUser                                ConversationMessageFetchResponseType = "user"
+	StickyBackstory                              ConversationMessageFetchResponseType = "backstory"
+	StickyBot                                    ConversationMessageFetchResponseType = "bot"
+	StickyCheckpoint                             ConversationMessageFetchResponseType = "checkpoint"
+	StickyContext                                ConversationMessageFetchResponseType = "context"
+	StickyInstruction                            ConversationMessageFetchResponseType = "instruction"
+	StickyReasoning                              ConversationMessageFetchResponseType = "reasoning"
+	StickyUser                                   ConversationMessageFetchResponseType = "user"
 )
 
 // The type of the message
 type ConversationMessageUpdateRequestType string
 
 const (
-	IndigoActivity                               ConversationMessageUpdateRequestType = "activity"
+	HilariousActivity                            ConversationMessageUpdateRequestType = "activity"
+	IndigoBackstory                              ConversationMessageUpdateRequestType = "backstory"
+	IndigoBot                                    ConversationMessageUpdateRequestType = "bot"
+	IndigoCheckpoint                             ConversationMessageUpdateRequestType = "checkpoint"
+	IndigoContext                                ConversationMessageUpdateRequestType = "context"
+	IndigoInstruction                            ConversationMessageUpdateRequestType = "instruction"
+	IndigoReasoning                              ConversationMessageUpdateRequestType = "reasoning"
+	IndigoUser                                   ConversationMessageUpdateRequestType = "user"
 
-	StickyBackstory                              ConversationMessageUpdateRequestType = "backstory"
-	StickyBot                                    ConversationMessageUpdateRequestType = "bot"
-	StickyCheckpoint                             ConversationMessageUpdateRequestType = "checkpoint"
-	StickyContext                                ConversationMessageUpdateRequestType = "context"
-	StickyInstruction                            ConversationMessageUpdateRequestType = "instruction"
-	StickyReasoning                              ConversationMessageUpdateRequestType = "reasoning"
-	StickyUser                                   ConversationMessageUpdateRequestType = "user"
 )
 
 // The type of the message
 type ConversationMessageCreateRequestType string
 
 const (
-	IndecentActivity                             ConversationMessageCreateRequestType = "activity"
-	IndigoBackstory                              ConversationMessageCreateRequestType = "backstory"
-	IndigoBot                                    ConversationMessageCreateRequestType = "bot"
-	IndigoCheckpoint                             ConversationMessageCreateRequestType = "checkpoint"
-	IndigoContext                                ConversationMessageCreateRequestType = "context"
-	IndigoInstruction                            ConversationMessageCreateRequestType = "instruction"
-	IndigoReasoning                              ConversationMessageCreateRequestType = "reasoning"
-	IndigoUser                                   ConversationMessageCreateRequestType = "user"
+	AmbitiousActivity                            ConversationMessageCreateRequestType = "activity"
+	IndecentBackstory                            ConversationMessageCreateRequestType = "backstory"
+	IndecentBot                                  ConversationMessageCreateRequestType = "bot"
+	IndecentCheckpoint                           ConversationMessageCreateRequestType = "checkpoint"
+	IndecentContext                              ConversationMessageCreateRequestType = "context"
+	IndecentInstruction                          ConversationMessageCreateRequestType = "instruction"
+	IndecentReasoning                            ConversationMessageCreateRequestType = "reasoning"
+	IndecentUser                                 ConversationMessageCreateRequestType = "user"
 
 )
 
@@ -21769,114 +26797,157 @@ const (
 )
 
 // The type of the message
-type IndecentType string
-
-const (
-	HilariousActivity                                    IndecentType = "activity"
-	IndecentBackstory                                    IndecentType = "backstory"
-	IndecentBot                                          IndecentType = "bot"
-	IndecentCheckpoint                                   IndecentType = "checkpoint"
-	IndecentContext                                      IndecentType = "context"
-	IndecentInstruction                                  IndecentType = "instruction"
-	IndecentReasoning                                    IndecentType = "reasoning"
-	IndecentUser                                         IndecentType = "user"
-
-)
-
-// The schema type, must be "object"
 type HilariousType string
 
 const (
+	CunningActivity                                      HilariousType = "activity"
+	HilariousBackstory                                   HilariousType = "backstory"
+	HilariousBot                                         HilariousType = "bot"
+	HilariousCheckpoint                                  HilariousType = "checkpoint"
+	HilariousContext                                     HilariousType = "context"
+	HilariousInstruction                                 HilariousType = "instruction"
+	HilariousReasoning                                   HilariousType = "reasoning"
+	HilariousUser                                        HilariousType = "user"
 
-	TentacledObject                                                      HilariousType = "object"
 )
 
-// The schema type, must be "object"
+// The type of the message
 type AmbitiousType string
 
 const (
+	AmbitiousBackstory                                      AmbitiousType = "backstory"
+	AmbitiousBot                                            AmbitiousType = "bot"
+	AmbitiousCheckpoint                                     AmbitiousType = "checkpoint"
+	AmbitiousContext                                        AmbitiousType = "context"
+	AmbitiousInstruction                                    AmbitiousType = "instruction"
+	AmbitiousReasoning                                      AmbitiousType = "reasoning"
+	AmbitiousUser                                           AmbitiousType = "user"
+	MagentaActivity                                         AmbitiousType = "activity"
 
-	StickyObject                                                      AmbitiousType = "object"
 )
 
-// The type of the message
-type CunningType string
+// The type of event
+type ConversationMessageListStreamItemType string
 
 const (
-	AmbitiousActivity                                           CunningType = "activity"
-	HilariousBackstory                                          CunningType = "backstory"
-	HilariousBot                                                CunningType = "bot"
-	HilariousCheckpoint                                         CunningType = "checkpoint"
-	HilariousContext                                            CunningType = "context"
-	HilariousInstruction                                        CunningType = "instruction"
-	HilariousReasoning                                          CunningType = "reasoning"
-	HilariousUser                                               CunningType = "user"
+	BraggadociousItem                                   ConversationMessageListStreamItemType = "item"
 
 )
 
 // The schema type, must be "object"
-type MagentaType string
+type CunningType string
 
 const (
-	IndigoObject                                                   MagentaType = "object"
 
+	TentacledObject                                                      CunningType = "object"
 )
 
 // The type of the message
-type FriskyType string
+type MagentaType string
 
 const (
-	AmbitiousBackstory                                  FriskyType = "backstory"
-	AmbitiousBot                                        FriskyType = "bot"
-	AmbitiousCheckpoint                                 FriskyType = "checkpoint"
-	AmbitiousContext                                    FriskyType = "context"
-	AmbitiousInstruction                                FriskyType = "instruction"
-	AmbitiousReasoning                                  FriskyType = "reasoning"
-	AmbitiousUser                                       FriskyType = "user"
-	CunningActivity                                     FriskyType = "activity"
+	CunningBackstory                                                 MagentaType = "backstory"
+	CunningBot                                                       MagentaType = "bot"
+	CunningCheckpoint                                                MagentaType = "checkpoint"
+	CunningContext                                                   MagentaType = "context"
+	CunningInstruction                                               MagentaType = "instruction"
+	CunningReasoning                                                 MagentaType = "reasoning"
+	CunningUser                                                      MagentaType = "user"
+	FriskyActivity                                                   MagentaType = "activity"
 
 )
 
-// The reason why the completion ended
-type FluffyReason string
+// The type of event
+type ConversationMessageReceiveStreamItemType string
 
 const (
-	FluffyAbort                                   FluffyReason = "abort"
-	FluffyError                                   FluffyReason = "error"
-	FluffyIteration                               FluffyReason = "iteration"
-	FluffyLength                                  FluffyReason = "length"
-	FluffyStop                                    FluffyReason = "stop"
-	MagentaActivity                               FluffyReason = "activity"
+	FluffyCompleteBegin                                          ConversationMessageReceiveStreamItemType = "completeBegin"
+	FluffyCompleteEnd                                            ConversationMessageReceiveStreamItemType = "completeEnd"
+	FluffyReasoningToken                                         ConversationMessageReceiveStreamItemType = "reasoningToken"
+	FluffyResult                                                 ConversationMessageReceiveStreamItemType = "result"
+	FluffyToken                                                  ConversationMessageReceiveStreamItemType = "token"
+	FluffyUsage                                                  ConversationMessageReceiveStreamItemType = "usage"
+	FluffyWaitForChannelMessageBegin                             ConversationMessageReceiveStreamItemType = "waitForChannelMessageBegin"
+	FluffyWaitForChannelMessageEnd                               ConversationMessageReceiveStreamItemType = "waitForChannelMessageEnd"
+	IndigoError                                                  ConversationMessageReceiveStreamItemType = "error"
 
+
+
+
+
+
+
+
+
+
+
+	StickyAbort                                                  ConversationMessageReceiveStreamItemType = "abort"
+	TentacledMessage                                             ConversationMessageReceiveStreamItemType = "message"
+)
+
+// The schema type, must be "object"
+type FriskyType string
+
+const (
+
+	StickyObject                                                      FriskyType = "object"
 )
 
 // The type of the message
 type MischievousType string
 
 const (
-	CunningBackstory                                  MischievousType = "backstory"
-	CunningBot                                        MischievousType = "bot"
-	CunningCheckpoint                                 MischievousType = "checkpoint"
-	CunningContext                                    MischievousType = "context"
-	CunningInstruction                                MischievousType = "instruction"
-	CunningReasoning                                  MischievousType = "reasoning"
-	CunningUser                                       MischievousType = "user"
-	FriskyActivity                                    MischievousType = "activity"
+	MagentaBackstory                                              MischievousType = "backstory"
+	MagentaBot                                                    MischievousType = "bot"
+	MagentaCheckpoint                                             MischievousType = "checkpoint"
+	MagentaContext                                                MischievousType = "context"
+	MagentaInstruction                                            MischievousType = "instruction"
+	MagentaReasoning                                              MischievousType = "reasoning"
+	MagentaUser                                                   MischievousType = "user"
+	MischievousActivity                                           MischievousType = "activity"
 
+)
+
+// The type of event
+type ConversationMessageSendStreamItemType string
+
+const (
+	IndecentError                                             ConversationMessageSendStreamItemType = "error"
+	IndigoAbort                                               ConversationMessageSendStreamItemType = "abort"
+
+
+
+
+
+
+
+
+
+
+
+	StickyMessage                                             ConversationMessageSendStreamItemType = "message"
+	TentacledCompleteBegin                                    ConversationMessageSendStreamItemType = "completeBegin"
+	TentacledCompleteEnd                                      ConversationMessageSendStreamItemType = "completeEnd"
+	TentacledReasoningToken                                   ConversationMessageSendStreamItemType = "reasoningToken"
+	TentacledResult                                           ConversationMessageSendStreamItemType = "result"
+	TentacledToken                                            ConversationMessageSendStreamItemType = "token"
+	TentacledUsage                                            ConversationMessageSendStreamItemType = "usage"
+	TentacledWaitForChannelMessageBegin                       ConversationMessageSendStreamItemType = "waitForChannelMessageBegin"
+	TentacledWaitForChannelMessageEnd                         ConversationMessageSendStreamItemType = "waitForChannelMessageEnd"
 )
 
 // The type of the message
 type BraggadociousType string
 
 const (
-	MagentaBackstory                                   BraggadociousType = "backstory"
-	MagentaBot                                         BraggadociousType = "bot"
-	MagentaCheckpoint                                  BraggadociousType = "checkpoint"
-	MagentaContext                                     BraggadociousType = "context"
-	MagentaInstruction                                 BraggadociousType = "instruction"
-	MagentaReasoning                                   BraggadociousType = "reasoning"
-	MagentaUser                                        BraggadociousType = "user"
-	MischievousActivity                                BraggadociousType = "activity"
+	BraggadociousActivity                                       BraggadociousType = "activity"
+	FriskyBackstory                                             BraggadociousType = "backstory"
+	FriskyBot                                                   BraggadociousType = "bot"
+	FriskyCheckpoint                                            BraggadociousType = "checkpoint"
+	FriskyContext                                               BraggadociousType = "context"
+	FriskyInstruction                                           BraggadociousType = "instruction"
+	FriskyReasoning                                             BraggadociousType = "reasoning"
+	FriskyUser                                                  BraggadociousType = "user"
 
 )
 
@@ -21884,7 +26955,7 @@ const (
 type Type1 string
 
 const (
-	IndecentObject                                                 Type1 = "object"
+	IndigoObject                                                   Type1 = "object"
 
 )
 
@@ -21892,15 +26963,137 @@ const (
 type Type2 string
 
 const (
-	BraggadociousActivity                               Type2 = "activity"
-	FriskyBackstory                                     Type2 = "backstory"
-	FriskyBot                                           Type2 = "bot"
-	FriskyCheckpoint                                    Type2 = "checkpoint"
-	FriskyContext                                       Type2 = "context"
-	FriskyInstruction                                   Type2 = "instruction"
-	FriskyReasoning                                     Type2 = "reasoning"
-	FriskyUser                                          Type2 = "user"
+	Activity1                                           Type2 = "activity"
+	MischievousBackstory                                Type2 = "backstory"
+	MischievousBot                                      Type2 = "bot"
+	MischievousCheckpoint                               Type2 = "checkpoint"
+	MischievousContext                                  Type2 = "context"
+	MischievousInstruction                              Type2 = "instruction"
+	MischievousReasoning                                Type2 = "reasoning"
+	MischievousUser                                     Type2 = "user"
 
+)
+
+// The reason why the completion ended
+type TentacledReason string
+
+const (
+	Activity2                                     TentacledReason = "activity"
+	HilariousError                                TentacledReason = "error"
+	IndecentAbort                                 TentacledReason = "abort"
+
+	TentacledIteration                            TentacledReason = "iteration"
+	TentacledLength                               TentacledReason = "length"
+	TentacledStop                                 TentacledReason = "stop"
+)
+
+// The reason why the completion ended
+type StickyReason string
+
+const (
+	Activity3                                                 StickyReason = "activity"
+	AmbitiousError                                            StickyReason = "error"
+	HilariousAbort                                            StickyReason = "abort"
+
+	StickyIteration                                           StickyReason = "iteration"
+	StickyLength                                              StickyReason = "length"
+	StickyStop                                                StickyReason = "stop"
+)
+
+// The type of the message
+type Type3 string
+
+const (
+	Activity4                                                  Type3 = "activity"
+	BraggadociousBackstory                                     Type3 = "backstory"
+	BraggadociousBot                                           Type3 = "bot"
+	BraggadociousCheckpoint                                    Type3 = "checkpoint"
+	BraggadociousContext                                       Type3 = "context"
+	BraggadociousInstruction                                   Type3 = "instruction"
+	BraggadociousReasoning                                     Type3 = "reasoning"
+	BraggadociousUser                                          Type3 = "user"
+
+)
+
+// The type of event
+type ConversationCompleteStreamItemType string
+
+const (
+	AmbitiousAbort                                         ConversationCompleteStreamItemType = "abort"
+	CunningError                                           ConversationCompleteStreamItemType = "error"
+	IndigoMessage                                          ConversationCompleteStreamItemType = "message"
+
+
+
+
+
+
+
+
+
+
+
+	StickyCompleteBegin                                    ConversationCompleteStreamItemType = "completeBegin"
+	StickyCompleteEnd                                      ConversationCompleteStreamItemType = "completeEnd"
+	StickyReasoningToken                                   ConversationCompleteStreamItemType = "reasoningToken"
+	StickyResult                                           ConversationCompleteStreamItemType = "result"
+	StickyToken                                            ConversationCompleteStreamItemType = "token"
+	StickyUsage                                            ConversationCompleteStreamItemType = "usage"
+	StickyWaitForChannelMessageBegin                       ConversationCompleteStreamItemType = "waitForChannelMessageBegin"
+	StickyWaitForChannelMessageEnd                         ConversationCompleteStreamItemType = "waitForChannelMessageEnd"
+)
+
+// The type of the message
+type Type4 string
+
+const (
+	Activity5                                         Type4 = "activity"
+	Backstory1                                        Type4 = "backstory"
+	Bot1                                              Type4 = "bot"
+	Checkpoint1                                       Type4 = "checkpoint"
+	Context1                                          Type4 = "context"
+	Instruction1                                      Type4 = "instruction"
+
+	Reasoning1                                        Type4 = "reasoning"
+	User1                                             Type4 = "user"
+)
+
+// The type of the message
+type Type5 string
+
+const (
+	Activity6                                          Type5 = "activity"
+	Backstory2                                         Type5 = "backstory"
+	Bot2                                               Type5 = "bot"
+	Checkpoint2                                        Type5 = "checkpoint"
+	Context2                                           Type5 = "context"
+	Instruction2                                       Type5 = "instruction"
+
+	Reasoning2                                         Type5 = "reasoning"
+	User2                                              Type5 = "user"
+)
+
+// The schema type, must be "object"
+type Type6 string
+
+const (
+	IndecentObject                                                 Type6 = "object"
+
+)
+
+// The type of the message
+type Type7 string
+
+const (
+	Activity7                                           Type7 = "activity"
+	Backstory3                                          Type7 = "backstory"
+	Bot3                                                Type7 = "bot"
+	Checkpoint3                                         Type7 = "checkpoint"
+	Context3                                            Type7 = "context"
+	Instruction3                                        Type7 = "instruction"
+
+	Reasoning3                                          Type7 = "reasoning"
+	User3                                               Type7 = "user"
 )
 
 // The order of the paginated items
@@ -21909,6 +27102,14 @@ type ConversationsExportParamsOrder string
 const (
 	Asc1                                   ConversationsExportParamsOrder = "asc"
 	Desc1                                  ConversationsExportParamsOrder = "desc"
+
+)
+
+// The type of event
+type ConversationsExportStreamItemType string
+
+const (
+	Item1                                           ConversationsExportStreamItemType = "item"
 
 )
 
@@ -21921,13 +27122,21 @@ const (
 
 )
 
+// The type of event
+type ConversationListStreamItemType string
+
+const (
+	Item2                                        ConversationListStreamItemType = "item"
+
+)
+
 // The dataset visibility
 type DatasetFetchResponseVisibility string
 
 const (
-	CunningPrivate                         DatasetFetchResponseVisibility = "private"
-	CunningProtected                       DatasetFetchResponseVisibility = "protected"
-	CunningPublic                          DatasetFetchResponseVisibility = "public"
+	FriskyPrivate                          DatasetFetchResponseVisibility = "private"
+	FriskyProtected                        DatasetFetchResponseVisibility = "protected"
+	FriskyPublic                           DatasetFetchResponseVisibility = "public"
 
 )
 
@@ -21949,12 +27158,30 @@ const (
 )
 
 // The file visibility
-type TentacledVisibility string
+type IndigoVisibility string
 
 const (
-	MagentaPrivate                                     TentacledVisibility = "private"
-	MagentaProtected                                   TentacledVisibility = "protected"
-	MagentaPublic                                      TentacledVisibility = "public"
+	MischievousPrivate                                 IndigoVisibility = "private"
+	MischievousProtected                               IndigoVisibility = "protected"
+	MischievousPublic                                  IndigoVisibility = "public"
+
+)
+
+// The file visibility
+type IndecentVisibility string
+
+const (
+	BraggadociousPrivate                                  IndecentVisibility = "private"
+	BraggadociousProtected                                IndecentVisibility = "protected"
+	BraggadociousPublic                                   IndecentVisibility = "public"
+
+)
+
+// The type of event
+type DatasetFileListStreamItemType string
+
+const (
+	Item3                                       DatasetFileListStreamItemType = "item"
 
 )
 
@@ -21967,6 +27194,14 @@ const (
 
 )
 
+// The type of event
+type DatasetRecordsExportStreamItemType string
+
+const (
+	Item4                                            DatasetRecordsExportStreamItemType = "item"
+
+)
+
 // The order of the paginated items
 type DatasetRecordListParamsOrder string
 
@@ -21976,13 +27211,21 @@ const (
 
 )
 
+// The type of event
+type DatasetRecordListStreamItemType string
+
+const (
+	Item5                                         DatasetRecordListStreamItemType = "item"
+
+)
+
 // The dataset visibility
 type DatasetUpdateRequestVisibility string
 
 const (
-	FriskyPrivate                          DatasetUpdateRequestVisibility = "private"
-	FriskyProtected                        DatasetUpdateRequestVisibility = "protected"
-	FriskyPublic                           DatasetUpdateRequestVisibility = "public"
+	Private1                               DatasetUpdateRequestVisibility = "private"
+	Protected1                             DatasetUpdateRequestVisibility = "protected"
+	Public1                                DatasetUpdateRequestVisibility = "public"
 
 )
 
@@ -21990,9 +27233,9 @@ const (
 type DatasetCreateRequestVisibility string
 
 const (
-	MischievousPrivate                     DatasetCreateRequestVisibility = "private"
-	MischievousProtected                   DatasetCreateRequestVisibility = "protected"
-	MischievousPublic                      DatasetCreateRequestVisibility = "public"
+	Private2                               DatasetCreateRequestVisibility = "private"
+	Protected2                             DatasetCreateRequestVisibility = "protected"
+	Public2                                DatasetCreateRequestVisibility = "public"
 
 )
 
@@ -22006,12 +27249,30 @@ const (
 )
 
 // The dataset visibility
-type StickyVisibility string
+type HilariousVisibility string
 
 const (
-	BraggadociousPrivate                           StickyVisibility = "private"
-	BraggadociousProtected                         StickyVisibility = "protected"
-	BraggadociousPublic                            StickyVisibility = "public"
+	Private3                                       HilariousVisibility = "private"
+	Protected3                                     HilariousVisibility = "protected"
+	Public3                                        HilariousVisibility = "public"
+
+)
+
+// The dataset visibility
+type AmbitiousVisibility string
+
+const (
+	Private4                                          AmbitiousVisibility = "private"
+	Protected4                                        AmbitiousVisibility = "protected"
+	Public4                                           AmbitiousVisibility = "public"
+
+)
+
+// The type of event
+type DatasetListStreamItemType string
+
+const (
+	Item6                                   DatasetListStreamItemType = "item"
 
 )
 
@@ -22024,6 +27285,14 @@ const (
 
 )
 
+// The type of event
+type EventLogsExportStreamItemType string
+
+const (
+	Item7                                       EventLogsExportStreamItemType = "item"
+
+)
+
 // The order of the paginated items
 type EventLogListParamsOrder string
 
@@ -22033,13 +27302,29 @@ const (
 
 )
 
+// The type of event
+type EventLogListStreamItemType string
+
+const (
+	Item8                                    EventLogListStreamItemType = "item"
+
+)
+
+// The type of event
+type EventLogsSubscribeStreamItemType string
+
+const (
+	Item9                                          EventLogsSubscribeStreamItemType = "item"
+
+)
+
 // The file visibility
 type FileFetchResponseVisibility string
 
 const (
-	Private1                            FileFetchResponseVisibility = "private"
-	Protected1                          FileFetchResponseVisibility = "protected"
-	Public1                             FileFetchResponseVisibility = "public"
+	Private5                            FileFetchResponseVisibility = "private"
+	Protected5                          FileFetchResponseVisibility = "protected"
+	Public5                             FileFetchResponseVisibility = "public"
 
 )
 
@@ -22047,9 +27332,9 @@ const (
 type FileUpdateRequestVisibility string
 
 const (
-	Private2                            FileUpdateRequestVisibility = "private"
-	Protected2                          FileUpdateRequestVisibility = "protected"
-	Public2                             FileUpdateRequestVisibility = "public"
+	Private6                            FileUpdateRequestVisibility = "private"
+	Protected6                          FileUpdateRequestVisibility = "protected"
+	Public6                             FileUpdateRequestVisibility = "public"
 
 )
 
@@ -22057,9 +27342,9 @@ const (
 type FileCreateRequestVisibility string
 
 const (
-	Private3                            FileCreateRequestVisibility = "private"
-	Protected3                          FileCreateRequestVisibility = "protected"
-	Public3                             FileCreateRequestVisibility = "public"
+	Private7                            FileCreateRequestVisibility = "private"
+	Protected7                          FileCreateRequestVisibility = "protected"
+	Public7                             FileCreateRequestVisibility = "public"
 
 )
 
@@ -22073,12 +27358,30 @@ const (
 )
 
 // The file visibility
-type IndigoVisibility string
+type CunningVisibility string
 
 const (
-	Private4                                    IndigoVisibility = "private"
-	Protected4                                  IndigoVisibility = "protected"
-	Public4                                     IndigoVisibility = "public"
+	Private8                                    CunningVisibility = "private"
+	Protected8                                  CunningVisibility = "protected"
+	Public8                                     CunningVisibility = "public"
+
+)
+
+// The file visibility
+type MagentaVisibility string
+
+const (
+	Private9                                       MagentaVisibility = "private"
+	Protected9                                     MagentaVisibility = "protected"
+	Public9                                        MagentaVisibility = "public"
+
+)
+
+// The type of event
+type FileListStreamItemType string
+
+const (
+	Item10                               FileListStreamItemType = "item"
 
 )
 
@@ -22091,12 +27394,28 @@ const (
 
 )
 
+// The type of event
+type IntegrationDiscordListStreamItemType string
+
+const (
+	Item11                                             IntegrationDiscordListStreamItemType = "item"
+
+)
+
 // The order of the paginated items
 type EmailIntegrationListParamsOrder string
 
 const (
 	Asc11                                   EmailIntegrationListParamsOrder = "asc"
 	Desc11                                  EmailIntegrationListParamsOrder = "desc"
+
+)
+
+// The type of event
+type EmailIntegrationListStreamItemType string
+
+const (
+	Item12                                           EmailIntegrationListStreamItemType = "item"
 
 )
 
@@ -22127,12 +27446,28 @@ const (
 
 )
 
+// The type of event
+type IntegrationExtractListStreamItemType string
+
+const (
+	Item13                                             IntegrationExtractListStreamItemType = "item"
+
+)
+
 // The order of the paginated items
 type GooglechatIntegrationListParamsOrder string
 
 const (
 	Asc15                                        GooglechatIntegrationListParamsOrder = "asc"
 	Desc15                                       GooglechatIntegrationListParamsOrder = "desc"
+
+)
+
+// The type of event
+type GooglechatIntegrationListStreamItemType string
+
+const (
+	Item14                                                GooglechatIntegrationListStreamItemType = "item"
 
 )
 
@@ -22145,12 +27480,28 @@ const (
 
 )
 
+// The type of event
+type IntegrationInstagramListStreamItemType string
+
+const (
+	Item15                                               IntegrationInstagramListStreamItemType = "item"
+
+)
+
 // The order of the paginated items
 type IntegrationMCPServerListParamsOrder string
 
 const (
 	Asc17                                       IntegrationMCPServerListParamsOrder = "asc"
 	Desc17                                      IntegrationMCPServerListParamsOrder = "desc"
+
+)
+
+// The type of event
+type IntegrationMCPServerListStreamItemType string
+
+const (
+	Item16                                               IntegrationMCPServerListStreamItemType = "item"
 
 )
 
@@ -22163,6 +27514,14 @@ const (
 
 )
 
+// The type of event
+type IntegrationMessengerListStreamItemType string
+
+const (
+	Item17                                               IntegrationMessengerListStreamItemType = "item"
+
+)
+
 // The order of the paginated items
 type MicrosoftteamsIntegrationListParamsOrder string
 
@@ -22172,14 +27531,22 @@ const (
 
 )
 
+// The type of event
+type MicrosoftteamsIntegrationListStreamItemType string
+
+const (
+	Item18                                                    MicrosoftteamsIntegrationListStreamItemType = "item"
+
+)
+
 // The sync status of an integration
 type IntegrationNotionFetchResponseSyncStatus string
 
 const (
-	FluffyPending                                    IntegrationNotionFetchResponseSyncStatus = "pending"
+	MagentaError                                     IntegrationNotionFetchResponseSyncStatus = "error"
 	PurpleSynced                                     IntegrationNotionFetchResponseSyncStatus = "synced"
 
-	TentacledError                                   IntegrationNotionFetchResponseSyncStatus = "error"
+	TentacledPending                                 IntegrationNotionFetchResponseSyncStatus = "pending"
 )
 
 // The order of the paginated items
@@ -22196,19 +27563,37 @@ type PurpleSyncStatus string
 
 const (
 	FluffySynced                                             PurpleSyncStatus = "synced"
+	FriskyError                                              PurpleSyncStatus = "error"
 
-	StickyError                                              PurpleSyncStatus = "error"
-	TentacledPending                                         PurpleSyncStatus = "pending"
+	StickyPending                                            PurpleSyncStatus = "pending"
+)
+
+// The sync status of an integration
+type FluffySyncStatus string
+
+const (
+	IndigoPending                                               FluffySyncStatus = "pending"
+	MischievousError                                            FluffySyncStatus = "error"
+
+	TentacledSynced                                             FluffySyncStatus = "synced"
+)
+
+// The type of event
+type IntegrationNotionListStreamItemType string
+
+const (
+	Item19                                            IntegrationNotionListStreamItemType = "item"
+
 )
 
 // The sync status of an integration
 type IntegrationSitemapFetchResponseSyncStatus string
 
 const (
-	IndigoError                                       IntegrationSitemapFetchResponseSyncStatus = "error"
+	BraggadociousError                                IntegrationSitemapFetchResponseSyncStatus = "error"
+	IndecentPending                                   IntegrationSitemapFetchResponseSyncStatus = "pending"
 
-	StickyPending                                     IntegrationSitemapFetchResponseSyncStatus = "pending"
-	TentacledSynced                                   IntegrationSitemapFetchResponseSyncStatus = "synced"
+	StickySynced                                      IntegrationSitemapFetchResponseSyncStatus = "synced"
 )
 
 // The order of the paginated items
@@ -22221,21 +27606,72 @@ const (
 )
 
 // The sync status of an integration
-type FluffySyncStatus string
+type TentacledSyncStatus string
 
 const (
-	IndecentError                                             FluffySyncStatus = "error"
-	IndigoPending                                             FluffySyncStatus = "pending"
+	Error1                                                    TentacledSyncStatus = "error"
+	HilariousPending                                          TentacledSyncStatus = "pending"
+	IndigoSynced                                              TentacledSyncStatus = "synced"
 
-	StickySynced                                              FluffySyncStatus = "synced"
+)
+
+// The sync status of an integration
+type StickySyncStatus string
+
+const (
+	AmbitiousPending                                             StickySyncStatus = "pending"
+	Error2                                                       StickySyncStatus = "error"
+	IndecentSynced                                               StickySyncStatus = "synced"
+
+)
+
+// The type of event
+type IntegrationSitemapListStreamItemType string
+
+const (
+	Item20                                             IntegrationSitemapListStreamItemType = "item"
+
+)
+
+// Set to "json" to receive a JSON response
+type Format string
+
+const (
+	JSON                                         Format = "json"
+
+)
+
+// The order of the paginated items
+type SkillServerIntegrationListParamsOrder string
+
+const (
+	Asc22                                         SkillServerIntegrationListParamsOrder = "asc"
+	Desc22                                        SkillServerIntegrationListParamsOrder = "desc"
+
+)
+
+// The type of event
+type SkillServerIntegrationListStreamItemType string
+
+const (
+	Item21                                                 SkillServerIntegrationListStreamItemType = "item"
+
 )
 
 // The order of the paginated items
 type IntegrationSlackListParamsOrder string
 
 const (
-	Asc22                                   IntegrationSlackListParamsOrder = "asc"
-	Desc22                                  IntegrationSlackListParamsOrder = "desc"
+	Asc23                                   IntegrationSlackListParamsOrder = "asc"
+	Desc23                                  IntegrationSlackListParamsOrder = "desc"
+
+)
+
+// The type of event
+type IntegrationSlackListStreamItemType string
+
+const (
+	Item22                                           IntegrationSlackListStreamItemType = "item"
 
 )
 
@@ -22243,8 +27679,16 @@ const (
 type IntegrationSupportListParamsOrder string
 
 const (
-	Asc23                                     IntegrationSupportListParamsOrder = "asc"
-	Desc23                                    IntegrationSupportListParamsOrder = "desc"
+	Asc24                                     IntegrationSupportListParamsOrder = "asc"
+	Desc24                                    IntegrationSupportListParamsOrder = "desc"
+
+)
+
+// The type of event
+type IntegrationSupportListStreamItemType string
+
+const (
+	Item23                                             IntegrationSupportListStreamItemType = "item"
 
 )
 
@@ -22252,8 +27696,16 @@ const (
 type IntegrationTelegramListParamsOrder string
 
 const (
-	Asc24                                      IntegrationTelegramListParamsOrder = "asc"
-	Desc24                                     IntegrationTelegramListParamsOrder = "desc"
+	Asc25                                      IntegrationTelegramListParamsOrder = "asc"
+	Desc25                                     IntegrationTelegramListParamsOrder = "desc"
+
+)
+
+// The type of event
+type IntegrationTelegramListStreamItemType string
+
+const (
+	Item24                                              IntegrationTelegramListStreamItemType = "item"
 
 )
 
@@ -22261,8 +27713,16 @@ const (
 type TriggerIntegrationListParamsOrder string
 
 const (
-	Asc25                                     TriggerIntegrationListParamsOrder = "asc"
-	Desc25                                    TriggerIntegrationListParamsOrder = "desc"
+	Asc26                                     TriggerIntegrationListParamsOrder = "asc"
+	Desc26                                    TriggerIntegrationListParamsOrder = "desc"
+
+)
+
+// The type of event
+type TriggerIntegrationListStreamItemType string
+
+const (
+	Item25                                             TriggerIntegrationListStreamItemType = "item"
 
 )
 
@@ -22270,8 +27730,16 @@ const (
 type IntegrationTwilioListParamsOrder string
 
 const (
-	Asc26                                    IntegrationTwilioListParamsOrder = "asc"
-	Desc26                                   IntegrationTwilioListParamsOrder = "desc"
+	Asc27                                    IntegrationTwilioListParamsOrder = "asc"
+	Desc27                                   IntegrationTwilioListParamsOrder = "desc"
+
+)
+
+// The type of event
+type IntegrationTwilioListStreamItemType string
+
+const (
+	Item26                                            IntegrationTwilioListStreamItemType = "item"
 
 )
 
@@ -22279,8 +27747,16 @@ const (
 type IntegrationWhatsAppListParamsOrder string
 
 const (
-	Asc27                                      IntegrationWhatsAppListParamsOrder = "asc"
-	Desc27                                     IntegrationWhatsAppListParamsOrder = "desc"
+	Asc28                                      IntegrationWhatsAppListParamsOrder = "asc"
+	Desc28                                     IntegrationWhatsAppListParamsOrder = "desc"
+
+)
+
+// The type of event
+type IntegrationWhatsAppListStreamItemType string
+
+const (
+	Item27                                              IntegrationWhatsAppListStreamItemType = "item"
 
 )
 
@@ -22289,18 +27765,34 @@ type WidgetIntegrationFileAttachRequestType string
 
 const (
 	Bar                                            WidgetIntegrationFileAttachRequestType = "bar"
+	Bot4                                           WidgetIntegrationFileAttachRequestType = "bot"
 	Button                                         WidgetIntegrationFileAttachRequestType = "button"
-	MischievousBot                                 WidgetIntegrationFileAttachRequestType = "bot"
-	MischievousUser                                WidgetIntegrationFileAttachRequestType = "user"
 
+	User4                                          WidgetIntegrationFileAttachRequestType = "user"
 )
 
 // The order of the paginated items
 type IntegrationWidgetListParamsOrder string
 
 const (
-	Asc28                                    IntegrationWidgetListParamsOrder = "asc"
-	Desc28                                   IntegrationWidgetListParamsOrder = "desc"
+	Asc29                                    IntegrationWidgetListParamsOrder = "asc"
+	Desc29                                   IntegrationWidgetListParamsOrder = "desc"
+
+)
+
+// The type of event
+type IntegrationWidgetListStreamItemType string
+
+const (
+	Item28                                            IntegrationWidgetListStreamItemType = "item"
+
+)
+
+// The generated text
+type MagicFromPromptGenerateStreamItemType string
+
+const (
+	IndigoResult                                        MagicFromPromptGenerateStreamItemType = "result"
 
 )
 
@@ -22308,8 +27800,16 @@ const (
 type MagicPromptListParamsOrder string
 
 const (
-	Asc29                              MagicPromptListParamsOrder = "asc"
-	Desc29                             MagicPromptListParamsOrder = "desc"
+	Asc30                              MagicPromptListParamsOrder = "asc"
+	Desc30                             MagicPromptListParamsOrder = "desc"
+
+)
+
+// The type of event
+type MagicPromptListStreamItemType string
+
+const (
+	Item29                                      MagicPromptListStreamItemType = "item"
 
 )
 
@@ -22317,8 +27817,16 @@ const (
 type MemoriesExportParamsOrder string
 
 const (
-	Asc30                             MemoriesExportParamsOrder = "asc"
-	Desc30                            MemoriesExportParamsOrder = "desc"
+	Asc31                             MemoriesExportParamsOrder = "asc"
+	Desc31                            MemoriesExportParamsOrder = "desc"
+
+)
+
+// The type of event
+type MemoriesExportStreamItemType string
+
+const (
+	Item30                                     MemoriesExportStreamItemType = "item"
 
 )
 
@@ -22326,8 +27834,16 @@ const (
 type MemoryListParamsOrder string
 
 const (
-	Asc31                         MemoryListParamsOrder = "asc"
-	Desc31                        MemoryListParamsOrder = "desc"
+	Asc32                         MemoryListParamsOrder = "asc"
+	Desc32                        MemoryListParamsOrder = "desc"
+
+)
+
+// The type of event
+type MemoryListStreamItemType string
+
+const (
+	Item31                                 MemoryListStreamItemType = "item"
 
 )
 
@@ -22335,8 +27851,16 @@ const (
 type PartnerUserContextListParamsOrder string
 
 const (
-	Asc32                                     PartnerUserContextListParamsOrder = "asc"
-	Desc32                                    PartnerUserContextListParamsOrder = "desc"
+	Asc33                                     PartnerUserContextListParamsOrder = "asc"
+	Desc33                                    PartnerUserContextListParamsOrder = "desc"
+
+)
+
+// The type of event
+type PartnerUserContextListStreamItemType string
+
+const (
+	Item32                                             PartnerUserContextListStreamItemType = "item"
 
 )
 
@@ -22344,8 +27868,16 @@ const (
 type PartnerUserTokenListParamsOrder string
 
 const (
-	Asc33                                   PartnerUserTokenListParamsOrder = "asc"
-	Desc33                                  PartnerUserTokenListParamsOrder = "desc"
+	Asc34                                   PartnerUserTokenListParamsOrder = "asc"
+	Desc34                                  PartnerUserTokenListParamsOrder = "desc"
+
+)
+
+// The type of event
+type PartnerUserTokenListStreamItemType string
+
+const (
+	Item33                                           PartnerUserTokenListStreamItemType = "item"
 
 )
 
@@ -22353,8 +27885,16 @@ const (
 type PartnerUserListParamsOrder string
 
 const (
-	Asc34                              PartnerUserListParamsOrder = "asc"
-	Desc34                             PartnerUserListParamsOrder = "desc"
+	Asc35                              PartnerUserListParamsOrder = "asc"
+	Desc35                             PartnerUserListParamsOrder = "desc"
+
+)
+
+// The type of event
+type PartnerUserListStreamItemType string
+
+const (
+	Item34                                      PartnerUserListStreamItemType = "item"
 
 )
 
@@ -22362,24 +27902,40 @@ const (
 type PlatformAbilityListParamsOrder string
 
 const (
-	Asc35                                  PlatformAbilityListParamsOrder = "asc"
-	Desc35                                 PlatformAbilityListParamsOrder = "desc"
+	Asc36                                  PlatformAbilityListParamsOrder = "asc"
+	Desc36                                 PlatformAbilityListParamsOrder = "desc"
 
 )
 
 // The schema type, must be "object"
-type Type3 string
+type Type8 string
 
 const (
-	HilariousObject                                        Type3 = "object"
+	HilariousObject                                        Type8 = "object"
 
 )
 
 // The schema type, must be "object"
-type Type4 string
+type Type9 string
 
 const (
-	AmbitiousObject                                            Type4 = "object"
+	AmbitiousObject                                           Type9 = "object"
+
+)
+
+// The type of event
+type PlatformAbilityListStreamItemType string
+
+const (
+	Item35                                          PlatformAbilityListStreamItemType = "item"
+
+)
+
+// The schema type, must be "object"
+type Type10 string
+
+const (
+	CunningObject                                              Type10 = "object"
 
 )
 
@@ -22387,8 +27943,16 @@ const (
 type PlatformActionListParamsOrder string
 
 const (
-	Asc36                                 PlatformActionListParamsOrder = "asc"
-	Desc36                                PlatformActionListParamsOrder = "desc"
+	Asc37                                 PlatformActionListParamsOrder = "asc"
+	Desc37                                PlatformActionListParamsOrder = "desc"
+
+)
+
+// The type of event
+type PlatformActionListStreamItemType string
+
+const (
+	Item36                                         PlatformActionListStreamItemType = "item"
 
 )
 
@@ -22396,8 +27960,16 @@ const (
 type PlatformDocListParamsOrder string
 
 const (
-	Asc37                              PlatformDocListParamsOrder = "asc"
-	Desc37                             PlatformDocListParamsOrder = "desc"
+	Asc38                              PlatformDocListParamsOrder = "asc"
+	Desc38                             PlatformDocListParamsOrder = "desc"
+
+)
+
+// The type of event
+type PlatformDocListStreamItemType string
+
+const (
+	Item37                                      PlatformDocListStreamItemType = "item"
 
 )
 
@@ -22423,53 +27995,87 @@ const (
 type PlatformExampleListParamsOrder string
 
 const (
-	Asc38                                  PlatformExampleListParamsOrder = "asc"
-	Desc38                                 PlatformExampleListParamsOrder = "desc"
+	Asc39                                  PlatformExampleListParamsOrder = "asc"
+	Desc39                                 PlatformExampleListParamsOrder = "desc"
 
 )
 
 // The type of the example
-type Type5 string
+type Type11 string
 
 const (
-	FluffyBlueprint                                  Type5 = "blueprint"
-	FluffyDiscord                                    Type5 = "discord"
-	FluffyEmail                                      Type5 = "email"
-	FluffyMessenger                                  Type5 = "messenger"
-	FluffyProject                                    Type5 = "project"
-	FluffySlack                                      Type5 = "slack"
-	FluffyTelegram                                   Type5 = "telegram"
-	FluffyTrigger                                    Type5 = "trigger"
-	FluffyTwilio                                     Type5 = "twilio"
-	FluffyWhatsapp                                   Type5 = "whatsapp"
-	FluffyWidget                                     Type5 = "widget"
+	FluffyBlueprint                                  Type11 = "blueprint"
+	FluffyDiscord                                    Type11 = "discord"
+	FluffyEmail                                      Type11 = "email"
+	FluffyMessenger                                  Type11 = "messenger"
+	FluffyProject                                    Type11 = "project"
+	FluffySlack                                      Type11 = "slack"
+	FluffyTelegram                                   Type11 = "telegram"
+	FluffyTrigger                                    Type11 = "trigger"
+	FluffyTwilio                                     Type11 = "twilio"
+	FluffyWhatsapp                                   Type11 = "whatsapp"
+	FluffyWidget                                     Type11 = "widget"
 
 )
 
 // The type of the example
-type Type6 string
+type Type12 string
 
 const (
 
-	TentacledBlueprint                                  Type6 = "blueprint"
-	TentacledDiscord                                    Type6 = "discord"
-	TentacledEmail                                      Type6 = "email"
-	TentacledMessenger                                  Type6 = "messenger"
-	TentacledProject                                    Type6 = "project"
-	TentacledSlack                                      Type6 = "slack"
-	TentacledTelegram                                   Type6 = "telegram"
-	TentacledTrigger                                    Type6 = "trigger"
-	TentacledTwilio                                     Type6 = "twilio"
-	TentacledWhatsapp                                   Type6 = "whatsapp"
-	TentacledWidget                                     Type6 = "widget"
+	TentacledBlueprint                                  Type12 = "blueprint"
+	TentacledDiscord                                    Type12 = "discord"
+	TentacledEmail                                      Type12 = "email"
+	TentacledMessenger                                  Type12 = "messenger"
+	TentacledProject                                    Type12 = "project"
+	TentacledSlack                                      Type12 = "slack"
+	TentacledTelegram                                   Type12 = "telegram"
+	TentacledTrigger                                    Type12 = "trigger"
+	TentacledTwilio                                     Type12 = "twilio"
+	TentacledWhatsapp                                   Type12 = "whatsapp"
+	TentacledWidget                                     Type12 = "widget"
+)
+
+// The type of event
+type PlatformExampleListStreamItemType string
+
+const (
+	Item38                                          PlatformExampleListStreamItemType = "item"
+
+)
+
+// The type of the example
+type Type13 string
+
+const (
+
+	StickyBlueprint                                     Type13 = "blueprint"
+	StickyDiscord                                       Type13 = "discord"
+	StickyEmail                                         Type13 = "email"
+	StickyMessenger                                     Type13 = "messenger"
+	StickyProject                                       Type13 = "project"
+	StickySlack                                         Type13 = "slack"
+	StickyTelegram                                      Type13 = "telegram"
+	StickyTrigger                                       Type13 = "trigger"
+	StickyTwilio                                        Type13 = "twilio"
+	StickyWhatsapp                                      Type13 = "whatsapp"
+	StickyWidget                                        Type13 = "widget"
 )
 
 // The order of the paginated items
 type PlatformGuideListParamsOrder string
 
 const (
-	Asc39                                PlatformGuideListParamsOrder = "asc"
-	Desc39                               PlatformGuideListParamsOrder = "desc"
+	Asc40                                PlatformGuideListParamsOrder = "asc"
+	Desc40                               PlatformGuideListParamsOrder = "desc"
+
+)
+
+// The type of event
+type PlatformGuideListStreamItemType string
+
+const (
+	Item39                                        PlatformGuideListStreamItemType = "item"
 
 )
 
@@ -22477,8 +28083,16 @@ const (
 type PlatformManualListParamsOrder string
 
 const (
-	Asc40                                 PlatformManualListParamsOrder = "asc"
-	Desc40                                PlatformManualListParamsOrder = "desc"
+	Asc41                                 PlatformManualListParamsOrder = "asc"
+	Desc41                                PlatformManualListParamsOrder = "desc"
+
+)
+
+// The type of event
+type PlatformManualListStreamItemType string
+
+const (
+	Item40                                         PlatformManualListStreamItemType = "item"
 
 )
 
@@ -22486,8 +28100,16 @@ const (
 type PlatformModelListParamsOrder string
 
 const (
-	Asc41                                PlatformModelListParamsOrder = "asc"
-	Desc41                               PlatformModelListParamsOrder = "desc"
+	Asc42                                PlatformModelListParamsOrder = "asc"
+	Desc42                               PlatformModelListParamsOrder = "desc"
+
+)
+
+// The type of event
+type PlatformModelListStreamItemType string
+
+const (
+	Item41                                        PlatformModelListStreamItemType = "item"
 
 )
 
@@ -22495,31 +28117,8 @@ const (
 type PlatformSecretListParamsOrder string
 
 const (
-	Asc42                                 PlatformSecretListParamsOrder = "asc"
-	Desc42                                PlatformSecretListParamsOrder = "desc"
-
-)
-
-// The kind of the secret
-type PurpleKind string
-
-const (
-	PurplePersonal                                  PurpleKind = "personal"
-	PurpleShared                                    PurpleKind = "shared"
-
-)
-
-// The type of the secret
-type Type7 string
-
-const (
-	PurpleBasic                                     Type7 = "basic"
-	PurpleBearer                                    Type7 = "bearer"
-	PurpleJwt                                       Type7 = "jwt"
-	PurpleOauth                                     Type7 = "oauth"
-	PurplePlain                                     Type7 = "plain"
-	PurpleReference                                 Type7 = "reference"
-	PurpleTemplate                                  Type7 = "template"
+	Asc43                                 PlatformSecretListParamsOrder = "asc"
+	Desc43                                PlatformSecretListParamsOrder = "desc"
 
 )
 
@@ -22527,31 +28126,93 @@ const (
 type FluffyKind string
 
 const (
-	FluffyPersonal                                     FluffyKind = "personal"
-	FluffyShared                                       FluffyKind = "shared"
+	PurplePersonal                                  FluffyKind = "personal"
+	PurpleShared                                    FluffyKind = "shared"
 
 )
 
 // The type of the secret
-type Type8 string
+type Type14 string
 
 const (
-	FluffyBasic                                        Type8 = "basic"
-	FluffyBearer                                       Type8 = "bearer"
-	FluffyJwt                                          Type8 = "jwt"
-	FluffyOauth                                        Type8 = "oauth"
-	FluffyPlain                                        Type8 = "plain"
-	FluffyReference                                    Type8 = "reference"
-	FluffyTemplate                                     Type8 = "template"
+	PurpleBasic                                     Type14 = "basic"
+	PurpleBearer                                    Type14 = "bearer"
+	PurpleJwt                                       Type14 = "jwt"
+	PurpleOauth                                     Type14 = "oauth"
+	PurplePlain                                     Type14 = "plain"
+	PurpleReference                                 Type14 = "reference"
+	PurpleTemplate                                  Type14 = "template"
 
+)
+
+// The kind of the secret
+type TentacledKind string
+
+const (
+	FluffyPersonal                                     TentacledKind = "personal"
+	FluffyShared                                       TentacledKind = "shared"
+
+)
+
+// The type of the secret
+type Type15 string
+
+const (
+	FluffyBasic                                        Type15 = "basic"
+	FluffyBearer                                       Type15 = "bearer"
+	FluffyJwt                                          Type15 = "jwt"
+	FluffyOauth                                        Type15 = "oauth"
+	FluffyPlain                                        Type15 = "plain"
+	FluffyReference                                    Type15 = "reference"
+	FluffyTemplate                                     Type15 = "template"
+
+)
+
+// The type of event
+type PlatformSecretListStreamItemType string
+
+const (
+	Item42                                         PlatformSecretListStreamItemType = "item"
+
+)
+
+// The kind of the secret
+type StickyKind string
+
+const (
+
+	TentacledPersonal                                  StickyKind = "personal"
+	TentacledShared                                    StickyKind = "shared"
+)
+
+// The type of the secret
+type Type16 string
+
+const (
+
+	TentacledBasic                                     Type16 = "basic"
+	TentacledBearer                                    Type16 = "bearer"
+	TentacledJwt                                       Type16 = "jwt"
+	TentacledOauth                                     Type16 = "oauth"
+	TentacledPlain                                     Type16 = "plain"
+	TentacledReference                                 Type16 = "reference"
+	TentacledTemplate                                  Type16 = "template"
 )
 
 // The order of the paginated items
 type PlatformTutorialListParamsOrder string
 
 const (
-	Asc43                                   PlatformTutorialListParamsOrder = "asc"
-	Desc43                                  PlatformTutorialListParamsOrder = "desc"
+	Asc44                                   PlatformTutorialListParamsOrder = "asc"
+	Desc44                                  PlatformTutorialListParamsOrder = "desc"
+
+)
+
+// The type of event
+type PlatformTutorialListStreamItemType string
+
+const (
+	Item43                                           PlatformTutorialListStreamItemType = "item"
 
 )
 
@@ -22559,6 +28220,7 @@ const (
 type PolicyFetchResponseType string
 
 const (
+	IndigoUsage                     PolicyFetchResponseType = "usage"
 	PurpleRetention                 PolicyFetchResponseType = "retention"
 
 )
@@ -22568,6 +28230,7 @@ type PolicyUpdateRequestType string
 
 const (
 	FluffyRetention                 PolicyUpdateRequestType = "retention"
+	IndecentUsage                   PolicyUpdateRequestType = "usage"
 
 )
 
@@ -22575,6 +28238,7 @@ const (
 type PolicyCreateRequestType string
 
 const (
+	HilariousUsage                  PolicyCreateRequestType = "usage"
 
 	TentacledRetention              PolicyCreateRequestType = "retention"
 )
@@ -22583,25 +28247,51 @@ const (
 type PolicyListParamsOrder string
 
 const (
-	Asc44                         PolicyListParamsOrder = "asc"
-	Desc44                        PolicyListParamsOrder = "desc"
+	Asc45                         PolicyListParamsOrder = "asc"
+	Desc45                        PolicyListParamsOrder = "desc"
 
 )
 
 // The policy type
-type Type9 string
+type Type17 string
 
 const (
+	AmbitiousUsage                          Type17 = "usage"
 
-	StickyRetention                         Type9 = "retention"
+	StickyRetention                         Type17 = "retention"
+)
+
+// The policy type
+type Type18 string
+
+const (
+	CunningUsage                               Type18 = "usage"
+	IndigoRetention                            Type18 = "retention"
+
+)
+
+// The type of event
+type PolicyListStreamItemType string
+
+const (
+	Item44                                 PolicyListStreamItemType = "item"
+
 )
 
 // The order of the paginated items
 type PortalListParamsOrder string
 
 const (
-	Asc45                         PortalListParamsOrder = "asc"
-	Desc45                        PortalListParamsOrder = "desc"
+	Asc46                         PortalListParamsOrder = "asc"
+	Desc46                        PortalListParamsOrder = "desc"
+
+)
+
+// The type of event
+type PortalListStreamItemType string
+
+const (
+	Item45                                 PortalListStreamItemType = "item"
 
 )
 
@@ -22610,8 +28300,8 @@ type SecretFetchResponseKind string
 
 const (
 
-	TentacledPersonal               SecretFetchResponseKind = "personal"
-	TentacledShared                 SecretFetchResponseKind = "shared"
+	StickyPersonal                  SecretFetchResponseKind = "personal"
+	StickyShared                    SecretFetchResponseKind = "shared"
 )
 
 // The type of the secret
@@ -22619,22 +28309,22 @@ type SecretFetchResponseType string
 
 const (
 
-	TentacledBasic                  SecretFetchResponseType = "basic"
-	TentacledBearer                 SecretFetchResponseType = "bearer"
-	TentacledJwt                    SecretFetchResponseType = "jwt"
-	TentacledOauth                  SecretFetchResponseType = "oauth"
-	TentacledPlain                  SecretFetchResponseType = "plain"
-	TentacledReference              SecretFetchResponseType = "reference"
-	TentacledTemplate               SecretFetchResponseType = "template"
+	StickyBasic                     SecretFetchResponseType = "basic"
+	StickyBearer                    SecretFetchResponseType = "bearer"
+	StickyJwt                       SecretFetchResponseType = "jwt"
+	StickyOauth                     SecretFetchResponseType = "oauth"
+	StickyPlain                     SecretFetchResponseType = "plain"
+	StickyReference                 SecretFetchResponseType = "reference"
+	StickyTemplate                  SecretFetchResponseType = "template"
 )
 
 // The visibility of the secret
 type SecretFetchResponseVisibility string
 
 const (
-	Private5                              SecretFetchResponseVisibility = "private"
-	Protected5                            SecretFetchResponseVisibility = "protected"
-	Public5                               SecretFetchResponseVisibility = "public"
+	Private10                             SecretFetchResponseVisibility = "private"
+	Protected10                           SecretFetchResponseVisibility = "protected"
+	Public10                              SecretFetchResponseVisibility = "public"
 
 )
 
@@ -22642,40 +28332,40 @@ const (
 type SecretUpdateRequestKind string
 
 const (
+	IndigoPersonal                  SecretUpdateRequestKind = "personal"
+	IndigoShared                    SecretUpdateRequestKind = "shared"
 
-	StickyPersonal                  SecretUpdateRequestKind = "personal"
-	StickyShared                    SecretUpdateRequestKind = "shared"
 )
 
 // The type of the secret
 type SecretUpdateRequestType string
 
 const (
+	IndigoBasic                     SecretUpdateRequestType = "basic"
+	IndigoBearer                    SecretUpdateRequestType = "bearer"
+	IndigoJwt                       SecretUpdateRequestType = "jwt"
+	IndigoOauth                     SecretUpdateRequestType = "oauth"
+	IndigoPlain                     SecretUpdateRequestType = "plain"
+	IndigoReference                 SecretUpdateRequestType = "reference"
+	IndigoTemplate                  SecretUpdateRequestType = "template"
 
-	StickyBasic                     SecretUpdateRequestType = "basic"
-	StickyBearer                    SecretUpdateRequestType = "bearer"
-	StickyJwt                       SecretUpdateRequestType = "jwt"
-	StickyOauth                     SecretUpdateRequestType = "oauth"
-	StickyPlain                     SecretUpdateRequestType = "plain"
-	StickyReference                 SecretUpdateRequestType = "reference"
-	StickyTemplate                  SecretUpdateRequestType = "template"
 )
 
 // The visibility of the secret
 type SecretUpdateRequestVisibility string
 
 const (
-	Private6                              SecretUpdateRequestVisibility = "private"
-	Protected6                            SecretUpdateRequestVisibility = "protected"
-	Public6                               SecretUpdateRequestVisibility = "public"
+	Private11                             SecretUpdateRequestVisibility = "private"
+	Protected11                           SecretUpdateRequestVisibility = "protected"
+	Public11                              SecretUpdateRequestVisibility = "public"
 
 )
 
 // The type of action to take
-type Type10 string
+type Type19 string
 
 const (
-	FluffyAuthenticate                           Type10 = "authenticate"
+	FluffyAuthenticate                           Type19 = "authenticate"
 
 )
 
@@ -22692,8 +28382,8 @@ const (
 type SecretCreateRequestKind string
 
 const (
-	IndigoPersonal                  SecretCreateRequestKind = "personal"
-	IndigoShared                    SecretCreateRequestKind = "shared"
+	IndecentPersonal                SecretCreateRequestKind = "personal"
+	IndecentShared                  SecretCreateRequestKind = "shared"
 
 )
 
@@ -22701,13 +28391,13 @@ const (
 type SecretCreateRequestType string
 
 const (
-	IndigoBasic                     SecretCreateRequestType = "basic"
-	IndigoBearer                    SecretCreateRequestType = "bearer"
-	IndigoJwt                       SecretCreateRequestType = "jwt"
-	IndigoOauth                     SecretCreateRequestType = "oauth"
-	IndigoPlain                     SecretCreateRequestType = "plain"
-	IndigoReference                 SecretCreateRequestType = "reference"
-	IndigoTemplate                  SecretCreateRequestType = "template"
+	IndecentBasic                   SecretCreateRequestType = "basic"
+	IndecentBearer                  SecretCreateRequestType = "bearer"
+	IndecentJwt                     SecretCreateRequestType = "jwt"
+	IndecentOauth                   SecretCreateRequestType = "oauth"
+	IndecentPlain                   SecretCreateRequestType = "plain"
+	IndecentReference               SecretCreateRequestType = "reference"
+	IndecentTemplate                SecretCreateRequestType = "template"
 
 )
 
@@ -22715,9 +28405,9 @@ const (
 type SecretCreateRequestVisibility string
 
 const (
-	Private7                              SecretCreateRequestVisibility = "private"
-	Protected7                            SecretCreateRequestVisibility = "protected"
-	Public7                               SecretCreateRequestVisibility = "public"
+	Private12                             SecretCreateRequestVisibility = "private"
+	Protected12                           SecretCreateRequestVisibility = "protected"
+	Public12                              SecretCreateRequestVisibility = "public"
 
 )
 
@@ -22725,56 +28415,155 @@ const (
 type SecretListParamsOrder string
 
 const (
-	Asc46                         SecretListParamsOrder = "asc"
-	Desc46                        SecretListParamsOrder = "desc"
+	Asc47                         SecretListParamsOrder = "asc"
+	Desc47                        SecretListParamsOrder = "desc"
 
 )
 
 // The kind of the secret
-type TentacledKind string
+type IndigoKind string
 
 const (
-	IndecentPersonal                        TentacledKind = "personal"
-	IndecentShared                          TentacledKind = "shared"
+	HilariousPersonal                       IndigoKind = "personal"
+	HilariousShared                         IndigoKind = "shared"
 
 )
 
 // The type of the secret
-type Type11 string
+type Type20 string
 
 const (
-	IndecentBasic                           Type11 = "basic"
-	IndecentBearer                          Type11 = "bearer"
-	IndecentJwt                             Type11 = "jwt"
-	IndecentOauth                           Type11 = "oauth"
-	IndecentPlain                           Type11 = "plain"
-	IndecentReference                       Type11 = "reference"
-	IndecentTemplate                        Type11 = "template"
+	HilariousBasic                          Type20 = "basic"
+	HilariousBearer                         Type20 = "bearer"
+	HilariousJwt                            Type20 = "jwt"
+	HilariousOauth                          Type20 = "oauth"
+	HilariousPlain                          Type20 = "plain"
+	HilariousReference                      Type20 = "reference"
+	HilariousTemplate                       Type20 = "template"
 
 )
 
 // The visibility of the secret
-type IndecentVisibility string
+type FriskyVisibility string
 
 const (
-	Private8                                      IndecentVisibility = "private"
-	Protected8                                    IndecentVisibility = "protected"
-	Public8                                       IndecentVisibility = "public"
+	Private13                                     FriskyVisibility = "private"
+	Protected13                                   FriskyVisibility = "protected"
+	Public13                                      FriskyVisibility = "public"
+
+)
+
+// The kind of the secret
+type IndecentKind string
+
+const (
+	AmbitiousPersonal                          IndecentKind = "personal"
+	AmbitiousShared                            IndecentKind = "shared"
+
+)
+
+// The type of the secret
+type Type21 string
+
+const (
+	AmbitiousBasic                             Type21 = "basic"
+	AmbitiousBearer                            Type21 = "bearer"
+	AmbitiousJwt                               Type21 = "jwt"
+	AmbitiousOauth                             Type21 = "oauth"
+	AmbitiousPlain                             Type21 = "plain"
+	AmbitiousReference                         Type21 = "reference"
+	AmbitiousTemplate                          Type21 = "template"
+
+)
+
+// The visibility of the secret
+type MischievousVisibility string
+
+const (
+	Private14                                        MischievousVisibility = "private"
+	Protected14                                      MischievousVisibility = "protected"
+	Public14                                         MischievousVisibility = "public"
+
+)
+
+// The type of event
+type SecretListStreamItemType string
+
+const (
+	Item46                                 SecretListStreamItemType = "item"
 
 )
 
 // The type of the message
-type Type12 string
+type Type22 string
 
 const (
-	Activity1                                              Type12 = "activity"
-	BraggadociousBot                                       Type12 = "bot"
-	BraggadociousUser                                      Type12 = "user"
-	MischievousBackstory                                   Type12 = "backstory"
-	MischievousCheckpoint                                  Type12 = "checkpoint"
-	MischievousContext                                     Type12 = "context"
-	MischievousInstruction                                 Type12 = "instruction"
-	MischievousReasoning                                   Type12 = "reasoning"
+	Activity8                                              Type22 = "activity"
+	Backstory4                                             Type22 = "backstory"
+	Bot5                                                   Type22 = "bot"
+	Checkpoint4                                            Type22 = "checkpoint"
+	Context4                                               Type22 = "context"
+	Instruction4                                           Type22 = "instruction"
+
+	Reasoning4                                             Type22 = "reasoning"
+	User5                                                  Type22 = "user"
+)
+
+// The type of the message
+type Type23 string
+
+const (
+	Activity9                                                          Type23 = "activity"
+	Backstory5                                                         Type23 = "backstory"
+	Bot6                                                               Type23 = "bot"
+	Checkpoint5                                                        Type23 = "checkpoint"
+	Context5                                                           Type23 = "context"
+	Instruction5                                                       Type23 = "instruction"
+
+	Reasoning5                                                         Type23 = "reasoning"
+	User6                                                              Type23 = "user"
+)
+
+// The type of the message
+type Type24 string
+
+const (
+	Activity10                                                   Type24 = "activity"
+	Backstory6                                                   Type24 = "backstory"
+	Bot7                                                         Type24 = "bot"
+	Checkpoint6                                                  Type24 = "checkpoint"
+	Context6                                                     Type24 = "context"
+	Instruction6                                                 Type24 = "instruction"
+
+	Reasoning6                                                   Type24 = "reasoning"
+	User7                                                        Type24 = "user"
+)
+
+// The type of event
+type SkillsetAbilityExecuteStreamItemType string
+
+const (
+	CunningAbort                                             SkillsetAbilityExecuteStreamItemType = "abort"
+	Error3                                                   SkillsetAbilityExecuteStreamItemType = "error"
+	IndecentMessage                                          SkillsetAbilityExecuteStreamItemType = "message"
+	IndecentResult                                           SkillsetAbilityExecuteStreamItemType = "result"
+	IndigoCompleteBegin                                      SkillsetAbilityExecuteStreamItemType = "completeBegin"
+	IndigoCompleteEnd                                        SkillsetAbilityExecuteStreamItemType = "completeEnd"
+	IndigoReasoningToken                                     SkillsetAbilityExecuteStreamItemType = "reasoningToken"
+	IndigoToken                                              SkillsetAbilityExecuteStreamItemType = "token"
+	IndigoWaitForChannelMessageBegin                         SkillsetAbilityExecuteStreamItemType = "waitForChannelMessageBegin"
+	IndigoWaitForChannelMessageEnd                           SkillsetAbilityExecuteStreamItemType = "waitForChannelMessageEnd"
+	MagentaUsage                                             SkillsetAbilityExecuteStreamItemType = "usage"
+
+
+
+
+
+
+
+
+
+
 
 )
 
@@ -22782,8 +28571,16 @@ const (
 type SkillsetAbilitiesExportParamsOrder string
 
 const (
-	Asc47                                      SkillsetAbilitiesExportParamsOrder = "asc"
-	Desc47                                     SkillsetAbilitiesExportParamsOrder = "desc"
+	Asc48                                      SkillsetAbilitiesExportParamsOrder = "asc"
+	Desc48                                     SkillsetAbilitiesExportParamsOrder = "desc"
+
+)
+
+// The type of event
+type SkillsetAbilitiesExportStreamItemType string
+
+const (
+	Item47                                              SkillsetAbilitiesExportStreamItemType = "item"
 
 )
 
@@ -22791,8 +28588,16 @@ const (
 type SkillsetAbilityListParamsOrder string
 
 const (
-	Asc48                                  SkillsetAbilityListParamsOrder = "asc"
-	Desc48                                 SkillsetAbilityListParamsOrder = "desc"
+	Asc49                                  SkillsetAbilityListParamsOrder = "asc"
+	Desc49                                 SkillsetAbilityListParamsOrder = "desc"
+
+)
+
+// The type of event
+type SkillsetAbilityListStreamItemType string
+
+const (
+	Item48                                          SkillsetAbilityListStreamItemType = "item"
 
 )
 
@@ -22800,9 +28605,9 @@ const (
 type SkillsetFetchResponseVisibility string
 
 const (
-	Private9                                SkillsetFetchResponseVisibility = "private"
-	Protected9                              SkillsetFetchResponseVisibility = "protected"
-	Public9                                 SkillsetFetchResponseVisibility = "public"
+	Private15                               SkillsetFetchResponseVisibility = "private"
+	Protected15                             SkillsetFetchResponseVisibility = "protected"
+	Public15                                SkillsetFetchResponseVisibility = "public"
 
 )
 
@@ -22810,9 +28615,9 @@ const (
 type SkillsetUpdateRequestVisibility string
 
 const (
-	Private10                               SkillsetUpdateRequestVisibility = "private"
-	Protected10                             SkillsetUpdateRequestVisibility = "protected"
-	Public10                                SkillsetUpdateRequestVisibility = "public"
+	Private16                               SkillsetUpdateRequestVisibility = "private"
+	Protected16                             SkillsetUpdateRequestVisibility = "protected"
+	Public16                                SkillsetUpdateRequestVisibility = "public"
 
 )
 
@@ -22820,9 +28625,9 @@ const (
 type SkillsetCreateRequestVisibility string
 
 const (
-	Private11                               SkillsetCreateRequestVisibility = "private"
-	Protected11                             SkillsetCreateRequestVisibility = "protected"
-	Public11                                SkillsetCreateRequestVisibility = "public"
+	Private17                               SkillsetCreateRequestVisibility = "private"
+	Protected17                             SkillsetCreateRequestVisibility = "protected"
+	Public17                                SkillsetCreateRequestVisibility = "public"
 
 )
 
@@ -22830,18 +28635,53 @@ const (
 type SkillsetListParamsOrder string
 
 const (
-	Asc49                           SkillsetListParamsOrder = "asc"
-	Desc49                          SkillsetListParamsOrder = "desc"
+	Asc50                           SkillsetListParamsOrder = "asc"
+	Desc50                          SkillsetListParamsOrder = "desc"
 
 )
 
 // The skillset visibility
-type HilariousVisibility string
+type BraggadociousVisibility string
 
 const (
-	Private12                                       HilariousVisibility = "private"
-	Protected12                                     HilariousVisibility = "protected"
-	Public12                                        HilariousVisibility = "public"
+	Private18                                       BraggadociousVisibility = "private"
+	Protected18                                     BraggadociousVisibility = "protected"
+	Public18                                        BraggadociousVisibility = "public"
+
+)
+
+// The skillset visibility
+type Visibility1 string
+
+const (
+	Private19                                          Visibility1 = "private"
+	Protected19                                        Visibility1 = "protected"
+	Public19                                           Visibility1 = "public"
+
+)
+
+// The type of event
+type SkillsetListStreamItemType string
+
+const (
+	Item49                                   SkillsetListStreamItemType = "item"
+
+)
+
+// The order of the paginated items
+type SpaceSiteListParamsOrder string
+
+const (
+	Asc51                            SpaceSiteListParamsOrder = "asc"
+	Desc51                           SpaceSiteListParamsOrder = "desc"
+
+)
+
+// The type of event
+type SpaceSiteListStreamItemType string
+
+const (
+	Item50                                    SpaceSiteListStreamItemType = "item"
 
 )
 
@@ -22849,8 +28689,16 @@ const (
 type SpacesExportParamsOrder string
 
 const (
-	Asc50                           SpacesExportParamsOrder = "asc"
-	Desc50                          SpacesExportParamsOrder = "desc"
+	Asc52                           SpacesExportParamsOrder = "asc"
+	Desc52                          SpacesExportParamsOrder = "desc"
+
+)
+
+// The type of event
+type SpacesExportStreamItemType string
+
+const (
+	Item51                                   SpacesExportStreamItemType = "item"
 
 )
 
@@ -22858,8 +28706,16 @@ const (
 type SpaceListParamsOrder string
 
 const (
-	Asc51                        SpaceListParamsOrder = "asc"
-	Desc51                       SpaceListParamsOrder = "desc"
+	Asc53                        SpaceListParamsOrder = "asc"
+	Desc53                       SpaceListParamsOrder = "desc"
+
+)
+
+// The type of event
+type SpaceListStreamItemType string
+
+const (
+	Item52                                SpaceListStreamItemType = "item"
 
 )
 
@@ -22867,8 +28723,8 @@ const (
 type TaskExecutionListParamsOrder string
 
 const (
-	Asc52                                TaskExecutionListParamsOrder = "asc"
-	Desc52                               TaskExecutionListParamsOrder = "desc"
+	Asc54                                TaskExecutionListParamsOrder = "asc"
+	Desc54                               TaskExecutionListParamsOrder = "desc"
 
 )
 
@@ -22876,58 +28732,94 @@ const (
 type TaskExecutionListParamsStatus string
 
 const (
-	FluffyCanceled                        TaskExecutionListParamsStatus = "canceled"
-	FluffyIdle                            TaskExecutionListParamsStatus = "idle"
-	FluffyRunning                         TaskExecutionListParamsStatus = "running"
 
+	TentacledCanceled                     TaskExecutionListParamsStatus = "canceled"
+	TentacledIdle                         TaskExecutionListParamsStatus = "idle"
+	TentacledRunning                      TaskExecutionListParamsStatus = "running"
 )
 
 // The task execution outcome
-type FluffyOutcome string
+type TentacledOutcome string
 
 const (
-	FluffyFailure                                     FluffyOutcome = "failure"
-	FluffySuccess                                     FluffyOutcome = "success"
-	IndecentPending                                   FluffyOutcome = "pending"
+	CunningPending                                    TentacledOutcome = "pending"
 
+	TentacledFailure                                  TentacledOutcome = "failure"
+	TentacledSuccess                                  TentacledOutcome = "success"
 )
 
 // The task execution status
-type FluffyStatus string
+type TentacledStatus string
 
 const (
 
-	TentacledCanceled                                FluffyStatus = "canceled"
-	TentacledIdle                                    FluffyStatus = "idle"
-	TentacledRunning                                 FluffyStatus = "running"
+	StickyCanceled                                   TentacledStatus = "canceled"
+	StickyIdle                                       TentacledStatus = "idle"
+	StickyRunning                                    TentacledStatus = "running"
+)
+
+// The task execution outcome
+type StickyOutcome string
+
+const (
+	MagentaPending                                       StickyOutcome = "pending"
+
+	StickyFailure                                        StickyOutcome = "failure"
+	StickySuccess                                        StickyOutcome = "success"
+)
+
+// The task execution status
+type StickyStatus string
+
+const (
+	IndigoCanceled                                      StickyStatus = "canceled"
+	IndigoIdle                                          StickyStatus = "idle"
+	IndigoRunning                                       StickyStatus = "running"
+
+)
+
+// The type of event
+type TaskExecutionListStreamItemType string
+
+const (
+	Item53                                        TaskExecutionListStreamItemType = "item"
+
 )
 
 // The task execution outcome
 type TaskFetchResponseOutcome string
 
 const (
-	HilariousPending                 TaskFetchResponseOutcome = "pending"
+	FriskyPending                    TaskFetchResponseOutcome = "pending"
+	IndigoFailure                    TaskFetchResponseOutcome = "failure"
+	IndigoSuccess                    TaskFetchResponseOutcome = "success"
 
-	TentacledFailure                 TaskFetchResponseOutcome = "failure"
-	TentacledSuccess                 TaskFetchResponseOutcome = "success"
 )
 
 // The task execution status
 type TaskFetchResponseStatus string
 
 const (
+	IndecentCanceled                TaskFetchResponseStatus = "canceled"
+	IndecentIdle                    TaskFetchResponseStatus = "idle"
+	IndecentRunning                 TaskFetchResponseStatus = "running"
 
-	StickyCanceled                  TaskFetchResponseStatus = "canceled"
-	StickyIdle                      TaskFetchResponseStatus = "idle"
-	StickyRunning                   TaskFetchResponseStatus = "running"
 )
 
 // The order of the paginated items
 type TasksExportParamsOrder string
 
 const (
-	Asc53                          TasksExportParamsOrder = "asc"
-	Desc53                         TasksExportParamsOrder = "desc"
+	Asc55                          TasksExportParamsOrder = "asc"
+	Desc55                         TasksExportParamsOrder = "desc"
+
+)
+
+// The type of event
+type TasksExportStreamItemType string
+
+const (
+	Item54                                  TasksExportStreamItemType = "item"
 
 )
 
@@ -22935,8 +28827,8 @@ const (
 type TaskListParamsOrder string
 
 const (
-	Asc54                       TaskListParamsOrder = "asc"
-	Desc54                      TaskListParamsOrder = "desc"
+	Asc56                       TaskListParamsOrder = "asc"
+	Desc56                      TaskListParamsOrder = "desc"
 
 )
 
@@ -22944,29 +28836,57 @@ const (
 type TaskListParamsStatus string
 
 const (
-	IndigoCanceled               TaskListParamsStatus = "canceled"
-	IndigoIdle                   TaskListParamsStatus = "idle"
-	IndigoRunning                TaskListParamsStatus = "running"
+	HilariousCanceled            TaskListParamsStatus = "canceled"
+	HilariousIdle                TaskListParamsStatus = "idle"
+	HilariousRunning             TaskListParamsStatus = "running"
 
 )
 
 // The task execution outcome
-type TentacledOutcome string
+type IndigoOutcome string
 
 const (
-	AmbitiousPending                         TentacledOutcome = "pending"
+	IndecentFailure                          IndigoOutcome = "failure"
+	IndecentSuccess                          IndigoOutcome = "success"
+	MischievousPending                       IndigoOutcome = "pending"
 
-	StickyFailure                            TentacledOutcome = "failure"
-	StickySuccess                            TentacledOutcome = "success"
 )
 
 // The task execution status
-type TentacledStatus string
+type IndigoStatus string
 
 const (
-	IndecentCanceled                        TentacledStatus = "canceled"
-	IndecentIdle                            TentacledStatus = "idle"
-	IndecentRunning                         TentacledStatus = "running"
+	AmbitiousCanceled                       IndigoStatus = "canceled"
+	AmbitiousIdle                           IndigoStatus = "idle"
+	AmbitiousRunning                        IndigoStatus = "running"
+
+)
+
+// The task execution outcome
+type IndecentOutcome string
+
+const (
+	BraggadociousPending                        IndecentOutcome = "pending"
+	HilariousFailure                            IndecentOutcome = "failure"
+	HilariousSuccess                            IndecentOutcome = "success"
+
+)
+
+// The task execution status
+type IndecentStatus string
+
+const (
+	CunningCanceled                            IndecentStatus = "canceled"
+	CunningIdle                                IndecentStatus = "idle"
+	CunningRunning                             IndecentStatus = "running"
+
+)
+
+// The type of event
+type TaskListStreamItemType string
+
+const (
+	Item55                               TaskListStreamItemType = "item"
 
 )
 
@@ -22974,8 +28894,16 @@ const (
 type TeamListParamsOrder string
 
 const (
-	Asc55                       TeamListParamsOrder = "asc"
-	Desc55                      TeamListParamsOrder = "desc"
+	Asc57                       TeamListParamsOrder = "asc"
+	Desc57                      TeamListParamsOrder = "desc"
+
+)
+
+// The type of event
+type TeamListStreamItemType string
+
+const (
+	Item56                               TeamListStreamItemType = "item"
 
 )
 
@@ -22983,8 +28911,8 @@ const (
 type UsageRecordListParamsOrder string
 
 const (
-	Asc56                              UsageRecordListParamsOrder = "asc"
-	Desc56                             UsageRecordListParamsOrder = "desc"
+	Asc58                              UsageRecordListParamsOrder = "asc"
+	Desc58                             UsageRecordListParamsOrder = "desc"
 
 )
 
@@ -22992,15 +28920,15 @@ const (
 type MessageTypeEnum string
 
 const (
-	Activity2                MessageTypeEnum = "activity"
-	Bot1                     MessageTypeEnum = "bot"
-	BraggadociousBackstory   MessageTypeEnum = "backstory"
-	BraggadociousCheckpoint  MessageTypeEnum = "checkpoint"
-	BraggadociousContext     MessageTypeEnum = "context"
-	BraggadociousInstruction MessageTypeEnum = "instruction"
-	BraggadociousReasoning   MessageTypeEnum = "reasoning"
+	Activity11          MessageTypeEnum = "activity"
+	Backstory7          MessageTypeEnum = "backstory"
+	Bot8                MessageTypeEnum = "bot"
+	Checkpoint7         MessageTypeEnum = "checkpoint"
+	Context7            MessageTypeEnum = "context"
+	Instruction7        MessageTypeEnum = "instruction"
 
-	User1                    MessageTypeEnum = "user"
+	Reasoning7          MessageTypeEnum = "reasoning"
+	User8               MessageTypeEnum = "user"
 )
 
 // The type of the message
@@ -23182,13 +29110,13 @@ const (
 type CompleteEndReason string
 
 const (
-	Activity3                 CompleteEndReason = "activity"
-	HilariousError            CompleteEndReason = "error"
+	Activity12                CompleteEndReason = "activity"
+	Error4                    CompleteEndReason = "error"
+	IndigoIteration           CompleteEndReason = "iteration"
+	IndigoLength              CompleteEndReason = "length"
+	IndigoStop                CompleteEndReason = "stop"
+	MagentaAbort              CompleteEndReason = "abort"
 
-	TentacledAbort            CompleteEndReason = "abort"
-	TentacledIteration        CompleteEndReason = "iteration"
-	TentacledLength           CompleteEndReason = "length"
-	TentacledStop             CompleteEndReason = "stop"
 )
 
 // The policy type
@@ -23196,6 +29124,7 @@ type PolicyType string
 
 const (
 	PolicyTypeRetention PolicyType = "retention"
+	PolicyTypeUsage     PolicyType = "usage"
 
 )
 
@@ -23203,39 +29132,47 @@ const (
 type JSONSchemaObjectType string
 
 const (
-	CunningObject                JSONSchemaObjectType = "object"
+	MagentaObject                JSONSchemaObjectType = "object"
 
 )
 
 // The schema type, must be "object"
-type Type13 string
+type Type25 string
 
 const (
-	MagentaObject                                 Type13 = "object"
+	FriskyObject                                  Type25 = "object"
 
 )
 
 // The type of the message
-type DataType string
+type Type26 string
 
 const (
-	Activity4                                           DataType = "activity"
-	Backstory1                                          DataType = "backstory"
-	Bot2                                                DataType = "bot"
-	Checkpoint1                                         DataType = "checkpoint"
-	Context1                                            DataType = "context"
-	Instruction1                                        DataType = "instruction"
+	Activity13                                          Type26 = "activity"
+	Backstory8                                          Type26 = "backstory"
+	Bot9                                                Type26 = "bot"
+	Checkpoint8                                         Type26 = "checkpoint"
+	Context8                                            Type26 = "context"
+	Instruction8                                        Type26 = "instruction"
 
-	Reasoning1                                          DataType = "reasoning"
-	User2                                               DataType = "user"
+	Reasoning8                                          Type26 = "reasoning"
+	User9                                               Type26 = "user"
 )
 
 // The type of event
 type CompleteStreamingResponseItemType string
 
 const (
-	AmbitiousError                                  CompleteStreamingResponseItemType = "error"
-	CompleteBegin                                   CompleteStreamingResponseItemType = "completeBegin"
+	Error5                                          CompleteStreamingResponseItemType = "error"
+	FriskyAbort                                     CompleteStreamingResponseItemType = "abort"
+	FriskyUsage                                     CompleteStreamingResponseItemType = "usage"
+	HilariousMessage                                CompleteStreamingResponseItemType = "message"
+	IndecentCompleteBegin                           CompleteStreamingResponseItemType = "completeBegin"
+	IndecentCompleteEnd                             CompleteStreamingResponseItemType = "completeEnd"
+	IndecentReasoningToken                          CompleteStreamingResponseItemType = "reasoningToken"
+	IndecentToken                                   CompleteStreamingResponseItemType = "token"
+	IndecentWaitForChannelMessageBegin              CompleteStreamingResponseItemType = "waitForChannelMessageBegin"
+	IndecentWaitForChannelMessageEnd                CompleteStreamingResponseItemType = "waitForChannelMessageEnd"
 
 
 
@@ -23246,34 +29183,26 @@ const (
 
 
 
-	ReasoningToken                                  CompleteStreamingResponseItemType = "reasoningToken"
-	Token                                           CompleteStreamingResponseItemType = "token"
-	TypeAbort                                       CompleteStreamingResponseItemType = "abort"
-	TypeCompleteEnd                                 CompleteStreamingResponseItemType = "completeEnd"
-	TypeMessage                                     CompleteStreamingResponseItemType = "message"
-	TypeUsage                                       CompleteStreamingResponseItemType = "usage"
-	WaitForChannelMessageBegin                      CompleteStreamingResponseItemType = "waitForChannelMessageBegin"
-	WaitForChannelMessageEnd                        CompleteStreamingResponseItemType = "waitForChannelMessageEnd"
 )
 
 // The action kind
-type ActionKind string
+type HilariousKind string
 
 const (
-	Dataset                                                       ActionKind = "dataset"
-	Function                                                      ActionKind = "function"
+	FluffyDataset                                                 HilariousKind = "dataset"
+	FluffyFunction                                                HilariousKind = "function"
+	FluffySkillset                                                HilariousKind = "skillset"
 
 
-	Skillset                                                      ActionKind = "skillset"
 )
 
 // The type of event
 type TaskWorkflowStreamingResponseItemType string
 
 const (
-	CunningError                                        TaskWorkflowStreamingResponseItemType = "error"
-	OperationBegin                                      TaskWorkflowStreamingResponseItemType = "operationBegin"
-	OperationEnd                                        TaskWorkflowStreamingResponseItemType = "operationEnd"
+	Error6                                              TaskWorkflowStreamingResponseItemType = "error"
+	FluffyOperationBegin                                TaskWorkflowStreamingResponseItemType = "operationBegin"
+	FluffyOperationEnd                                  TaskWorkflowStreamingResponseItemType = "operationEnd"
 
 
 

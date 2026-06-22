@@ -38,6 +38,8 @@ type Client struct {
 	Email *EmailClient
 	// McpServer provides access to MCP server integration resources.
 	McpServer *McpServerClient
+	// SkillServer provides access to skill server integration resources.
+	SkillServer *SkillServerClient
 	// Microsoftteams provides access to Microsoft Teams integration resources.
 	Microsoftteams *MicrosoftteamsClient
 	// GoogleChat provides access to Google Chat integration resources.
@@ -63,6 +65,7 @@ func NewClient(httpClient *httpclient.Client) *Client {
 		Twilio:         NewTwilioClient(httpClient),
 		Email:          NewEmailClient(httpClient),
 		McpServer:      NewMcpServerClient(httpClient),
+		SkillServer:    NewSkillServerClient(httpClient),
 		Microsoftteams: NewMicrosoftteamsClient(httpClient),
 		GoogleChat:     NewGoogleChatClient(httpClient),
 	}

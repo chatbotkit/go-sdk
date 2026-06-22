@@ -16,6 +16,8 @@ type SpaceClient struct {
 	httpClient *httpclient.Client
 	// Storage provides access to space storage resources.
 	Storage *SpaceStorageClient
+	// Site provides access to space site resources.
+	Site *SpaceSiteClient
 }
 
 // NewSpaceClient creates a new SpaceClient.
@@ -23,6 +25,7 @@ func NewSpaceClient(httpClient *httpclient.Client) *SpaceClient {
 	return &SpaceClient{
 		httpClient: httpClient,
 		Storage:    NewSpaceStorageClient(httpClient),
+		Site:       NewSpaceSiteClient(httpClient),
 	}
 }
 
@@ -176,4 +179,73 @@ func encodeStoragePath(path string) string {
 		segments[index] = url.PathEscape(segment)
 	}
 	return strings.Join(segments, "/")
+}
+
+// SpaceSiteClient provides access to space site resources.
+type SpaceSiteClient struct {
+	httpClient *httpclient.Client
+}
+
+// NewSpaceSiteClient creates a new SpaceSiteClient.
+func NewSpaceSiteClient(httpClient *httpclient.Client) *SpaceSiteClient {
+	return &SpaceSiteClient{httpClient: httpClient}
+}
+
+// List retrieves a list of all sites in a space.
+func (c *SpaceSiteClient) List(ctx context.Context, spaceID string, opts *types.SpaceSiteListParams) (*types.SpaceSiteListResponse, error) {
+	path := fmt.Sprintf("/api/v1/space/%s/site/list", spaceID)
+	query := url.Values{}
+	if opts != nil {
+		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
+	}
+
+	var result types.SpaceSiteListResponse
+	if err := c.httpClient.Get(ctx, path, query, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Fetch retrieves a single space site by ID.
+func (c *SpaceSiteClient) Fetch(ctx context.Context, spaceID, siteID string) (*types.SpaceSiteFetchResponse, error) {
+	path := fmt.Sprintf("/api/v1/space/%s/site/%s/fetch", spaceID, siteID)
+
+	var result types.SpaceSiteFetchResponse
+	if err := c.httpClient.Get(ctx, path, nil, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Create creates a new space site.
+func (c *SpaceSiteClient) Create(ctx context.Context, spaceID string, req types.SpaceSiteCreateRequest) (*types.SpaceSiteCreateResponse, error) {
+	path := fmt.Sprintf("/api/v1/space/%s/site/create", spaceID)
+
+	var result types.SpaceSiteCreateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Update updates a space site.
+func (c *SpaceSiteClient) Update(ctx context.Context, spaceID, siteID string, req types.SpaceSiteUpdateRequest) (*types.SpaceSiteUpdateResponse, error) {
+	path := fmt.Sprintf("/api/v1/space/%s/site/%s/update", spaceID, siteID)
+
+	var result types.SpaceSiteUpdateResponse
+	if err := c.httpClient.Post(ctx, path, req, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Delete deletes a space site.
+func (c *SpaceSiteClient) Delete(ctx context.Context, spaceID, siteID string) (*types.SpaceSiteDeleteResponse, error) {
+	path := fmt.Sprintf("/api/v1/space/%s/site/%s/delete", spaceID, siteID)
+
+	var result types.SpaceSiteDeleteResponse
+	if err := c.httpClient.Post(ctx, path, types.SpaceSiteDeleteRequest{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
 }

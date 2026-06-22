@@ -2,8 +2,9 @@
 #
 # go-sdk is a library, not a binary - for a Go module the git tag *is* the
 # release (consumers fetch source via `go get`). This workflow therefore does
-# not build or publish artifacts; it only creates a GitHub Release with
-# auto-generated notes for the tag created by tag-release.yml.
+# not build or publish artifacts; it only creates a GitHub Release. The release
+# body is the matching section from CHANGELOG.md (curated notes), with the
+# auto-generated commit/PR list appended below it.
 #
 # Triggered by tag-release.yml (workflow_dispatch at the new tag) or by a
 # manually pushed `v*` tag.
@@ -27,7 +28,23 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Extract changelog section for this version
+        id: changelog
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          if [ -f CHANGELOG.md ]; then
+            awk -v ver="$VERSION" '
+              $0 ~ ("^## \\[" ver "\\]") { capture = 1; next }
+              capture && /^## \[/ { exit }
+              capture { print }
+            ' CHANGELOG.md > release-notes.md
+          fi
+          if [ ! -s release-notes.md ]; then
+            echo "Release v${VERSION}. See the full changelog in CHANGELOG.md." > release-notes.md
+          fi
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
+          body_path: release-notes.md
           generate_release_notes: true
