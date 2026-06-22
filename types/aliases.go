@@ -24,35 +24,35 @@ type CompleteMessageType = Type2
 
 const (
 	// CompleteMessageRoleUser marks a sent message authored by the end user.
-	CompleteMessageRoleUser = AmbitiousUser
+	CompleteMessageRoleUser = MischievousUser
 	// CompleteMessageRoleBot marks a sent message authored by the bot.
-	CompleteMessageRoleBot = AmbitiousBot
+	CompleteMessageRoleBot = MischievousBot
 )
 
 // --- Conversation message list item role ---
 
 // MessageItemType is the role of a message returned from a conversation message
 // listing.
-type MessageItemType = IndecentType
+type MessageItemType = HilariousType
 
 const (
 	// MessageItemRoleUser marks a listed message authored by the end user.
-	MessageItemRoleUser = IndecentUser
+	MessageItemRoleUser = HilariousUser
 	// MessageItemRoleBot marks a listed message authored by the bot.
-	MessageItemRoleBot = IndecentBot
+	MessageItemRoleBot = HilariousBot
 )
 
 // --- Conversation complete request (stateful) extensions ---
 
 type (
 	// CompleteDataset is an inline dataset on a conversation complete request.
-	CompleteDataset = IndecentDataset
+	CompleteDataset = AmbitiousDataset
 	// CompleteRecord is a record within a CompleteDataset.
 	CompleteRecord = IndecentRecord
 	// CompleteFeature is an inline feature on a conversation complete request.
 	CompleteFeature = IndecentFeature
 	// CompleteSkillset is an inline skillset on a conversation complete request.
-	CompleteSkillset = IndecentSkillset
+	CompleteSkillset = AmbitiousSkillset
 	// CompleteAbility is an ability within a CompleteSkillset.
 	CompleteAbility = IndecentAbility
 )
