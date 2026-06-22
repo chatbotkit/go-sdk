@@ -20,7 +20,7 @@ package types
 
 // CompleteMessageType is the role of a message sent in a conversation complete
 // request.
-type CompleteMessageType = FriskyType
+type CompleteMessageType = Type2
 
 const (
 	// CompleteMessageRoleUser marks a sent message authored by the end user.
@@ -65,7 +65,7 @@ type (
 	CompleteFunctionParameters = IndigoParameters
 	// CompleteFunctionResult is the result configuration of a function on a
 	// conversation complete request.
-	CompleteFunctionResult = IndigoResult
+	CompleteFunctionResult = FriskyResult
 )
 
 // CompleteFunctionParametersTypeObject is the "object" value of a function
@@ -77,7 +77,7 @@ const CompleteFunctionParametersTypeObject = IndigoObject
 type (
 	// MessageCompleteDataset is an inline dataset on a conversation message
 	// complete request.
-	MessageCompleteDataset = PurpleDataset
+	MessageCompleteDataset = TentacledDataset
 	// MessageCompleteRecord is a record within a MessageCompleteDataset.
 	MessageCompleteRecord = PurpleRecord
 	// MessageCompleteFeature is an inline feature on a conversation message
@@ -85,7 +85,7 @@ type (
 	MessageCompleteFeature = PurpleFeature
 	// MessageCompleteSkillset is an inline skillset on a conversation message
 	// complete request.
-	MessageCompleteSkillset = PurpleSkillset
+	MessageCompleteSkillset = TentacledSkillset
 	// MessageCompleteAbility is an ability within a MessageCompleteSkillset.
 	MessageCompleteAbility = PurpleAbility
 )
@@ -98,7 +98,7 @@ type (
 	MessageCompleteFunctionParameters = PurpleParameters
 	// MessageCompleteFunctionResult is the result configuration of a function
 	// on a conversation message complete request.
-	MessageCompleteFunctionResult = PurpleResult
+	MessageCompleteFunctionResult = HilariousResult
 )
 
 // MessageCompleteFunctionParametersTypeObject is the "object" value of a
