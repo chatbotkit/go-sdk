@@ -7,6 +7,15 @@ this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 For releases prior to `0.2.0`, see the auto-generated notes on the
 [GitHub Releases](https://github.com/chatbotkit/go-sdk/releases) page.
 
+## [0.3.0] - 2026-06-26
+
+### Added
+
+- `State` lifecycle field on the `Skillset` and `Ability` resources, backed by
+  the new `ResourceState` enum (`ResourceStateEnabled` / `ResourceStateDisabled`).
+  A skillset or ability can now be toggled off without deleting it. Available on
+  the create, update, fetch, and list types.
+
 ## [0.2.0] - 2026-06-22
 
 ### Added
