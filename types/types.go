@@ -463,6 +463,12 @@
 //    conversationAttachmentUploadResponse, err := UnmarshalConversationAttachmentUploadResponse(bytes)
 //    bytes, err = conversationAttachmentUploadResponse.Marshal()
 //
+//    conversationChannelSubscribeRequest, err := UnmarshalConversationChannelSubscribeRequest(bytes)
+//    bytes, err = conversationChannelSubscribeRequest.Marshal()
+//
+//    conversationChannelSubscribeStreamItem, err := UnmarshalConversationChannelSubscribeStreamItem(bytes)
+//    bytes, err = conversationChannelSubscribeStreamItem.Marshal()
+//
 //    conversationCompactParams, err := UnmarshalConversationCompactParams(bytes)
 //    bytes, err = conversationCompactParams.Marshal()
 //
@@ -1068,6 +1074,45 @@
 //
 //    integrationExtractListStreamItem, err := UnmarshalIntegrationExtractListStreamItem(bytes)
 //    bytes, err = integrationExtractListStreamItem.Marshal()
+//
+//    githubIntegrationDeleteParams, err := UnmarshalGithubIntegrationDeleteParams(bytes)
+//    bytes, err = githubIntegrationDeleteParams.Marshal()
+//
+//    githubIntegrationDeleteRequest, err := UnmarshalGithubIntegrationDeleteRequest(bytes)
+//    bytes, err = githubIntegrationDeleteRequest.Marshal()
+//
+//    githubIntegrationDeleteResponse, err := UnmarshalGithubIntegrationDeleteResponse(bytes)
+//    bytes, err = githubIntegrationDeleteResponse.Marshal()
+//
+//    githubIntegrationFetchParams, err := UnmarshalGithubIntegrationFetchParams(bytes)
+//    bytes, err = githubIntegrationFetchParams.Marshal()
+//
+//    githubIntegrationFetchResponse, err := UnmarshalGithubIntegrationFetchResponse(bytes)
+//    bytes, err = githubIntegrationFetchResponse.Marshal()
+//
+//    githubIntegrationSetupParams, err := UnmarshalGithubIntegrationSetupParams(bytes)
+//    bytes, err = githubIntegrationSetupParams.Marshal()
+//
+//    githubIntegrationUpdateParams, err := UnmarshalGithubIntegrationUpdateParams(bytes)
+//    bytes, err = githubIntegrationUpdateParams.Marshal()
+//
+//    githubIntegrationUpdateRequest, err := UnmarshalGithubIntegrationUpdateRequest(bytes)
+//    bytes, err = githubIntegrationUpdateRequest.Marshal()
+//
+//    githubIntegrationUpdateResponse, err := UnmarshalGithubIntegrationUpdateResponse(bytes)
+//    bytes, err = githubIntegrationUpdateResponse.Marshal()
+//
+//    githubIntegrationCreateRequest, err := UnmarshalGithubIntegrationCreateRequest(bytes)
+//    bytes, err = githubIntegrationCreateRequest.Marshal()
+//
+//    githubIntegrationCreateResponse, err := UnmarshalGithubIntegrationCreateResponse(bytes)
+//    bytes, err = githubIntegrationCreateResponse.Marshal()
+//
+//    githubIntegrationListParams, err := UnmarshalGithubIntegrationListParams(bytes)
+//    bytes, err = githubIntegrationListParams.Marshal()
+//
+//    githubIntegrationListResponse, err := UnmarshalGithubIntegrationListResponse(bytes)
+//    bytes, err = githubIntegrationListResponse.Marshal()
 //
 //    googlechatIntegrationDeleteParams, err := UnmarshalGooglechatIntegrationDeleteParams(bytes)
 //    bytes, err = googlechatIntegrationDeleteParams.Marshal()
@@ -2709,6 +2754,9 @@
 //
 //    skillsetVisibility, err := UnmarshalSkillsetVisibility(bytes)
 //    bytes, err = skillsetVisibility.Marshal()
+//
+//    resourceState, err := UnmarshalResourceState(bytes)
+//    bytes, err = resourceState.Marshal()
 //
 //    fileVisibility, err := UnmarshalFileVisibility(bytes)
 //    bytes, err = fileVisibility.Marshal()
@@ -4357,6 +4405,26 @@ func UnmarshalConversationAttachmentUploadResponse(data []byte) (ConversationAtt
 }
 
 func (r *ConversationAttachmentUploadResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalConversationChannelSubscribeRequest(data []byte) (ConversationChannelSubscribeRequest, error) {
+	var r ConversationChannelSubscribeRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationChannelSubscribeRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalConversationChannelSubscribeStreamItem(data []byte) (ConversationChannelSubscribeStreamItem, error) {
+	var r ConversationChannelSubscribeStreamItem
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ConversationChannelSubscribeStreamItem) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -6403,6 +6471,138 @@ func UnmarshalIntegrationExtractListStreamItem(data []byte) (IntegrationExtractL
 }
 
 func (r *IntegrationExtractListStreamItem) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGithubIntegrationDeleteParams(data []byte) (GithubIntegrationDeleteParams, error) {
+	var r GithubIntegrationDeleteParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationDeleteParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+type GithubIntegrationDeleteRequest map[string]interface{}
+
+func UnmarshalGithubIntegrationDeleteRequest(data []byte) (GithubIntegrationDeleteRequest, error) {
+	var r GithubIntegrationDeleteRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationDeleteRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGithubIntegrationDeleteResponse(data []byte) (GithubIntegrationDeleteResponse, error) {
+	var r GithubIntegrationDeleteResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationDeleteResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGithubIntegrationFetchParams(data []byte) (GithubIntegrationFetchParams, error) {
+	var r GithubIntegrationFetchParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationFetchParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGithubIntegrationFetchResponse(data []byte) (GithubIntegrationFetchResponse, error) {
+	var r GithubIntegrationFetchResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationFetchResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGithubIntegrationSetupParams(data []byte) (GithubIntegrationSetupParams, error) {
+	var r GithubIntegrationSetupParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationSetupParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGithubIntegrationUpdateParams(data []byte) (GithubIntegrationUpdateParams, error) {
+	var r GithubIntegrationUpdateParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationUpdateParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGithubIntegrationUpdateRequest(data []byte) (GithubIntegrationUpdateRequest, error) {
+	var r GithubIntegrationUpdateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationUpdateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGithubIntegrationUpdateResponse(data []byte) (GithubIntegrationUpdateResponse, error) {
+	var r GithubIntegrationUpdateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationUpdateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGithubIntegrationCreateRequest(data []byte) (GithubIntegrationCreateRequest, error) {
+	var r GithubIntegrationCreateRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationCreateRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGithubIntegrationCreateResponse(data []byte) (GithubIntegrationCreateResponse, error) {
+	var r GithubIntegrationCreateResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationCreateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGithubIntegrationListParams(data []byte) (GithubIntegrationListParams, error) {
+	var r GithubIntegrationListParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationListParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalGithubIntegrationListResponse(data []byte) (GithubIntegrationListResponse, error) {
+	var r GithubIntegrationListResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *GithubIntegrationListResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -11974,6 +12174,16 @@ func (r *SkillsetVisibility) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalResourceState(data []byte) (ResourceState, error) {
+	var r ResourceState
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ResourceState) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalFileVisibility(data []byte) (FileVisibility, error) {
 	var r FileVisibility
 	err := json.Unmarshal(data, &r)
@@ -14069,6 +14279,19 @@ type ConversationAttachmentUploadResponseUploadRequest struct {
 	Method                    string                 `json:"method"`
 	// The HTTP url to use                           
 	URL                       string                 `json:"url"`
+}
+
+type ConversationChannelSubscribeRequest struct {
+	// Number of recent monitor events to replay before following       
+	// live, so a console opening mid-conversation can catch up.        
+	HistoryLength                                                *int64 `json:"historyLength,omitempty"`
+}
+
+type ConversationChannelSubscribeStreamItem struct {
+	// The monitor event published to the channel                                           
+	Data                                         map[string]interface{}                     `json:"data"`
+	// The type of event                                                                    
+	Type                                         ConversationChannelSubscribeStreamItemType `json:"type"`
 }
 
 type ConversationCompactParams struct {
@@ -18035,6 +18258,143 @@ type IntegrationExtractListStreamItemData struct {
 	UpdatedAt                                          float64                `json:"updatedAt"`
 }
 
+type GithubIntegrationDeleteParams struct {
+	// The ID of the GitHub integration       
+	GithubIntegrationID                string `json:"githubIntegrationId"`
+}
+
+type GithubIntegrationDeleteResponse struct {
+	// The ID of the deleted GitHub integration       
+	ID                                         string `json:"id"`
+}
+
+type GithubIntegrationFetchParams struct {
+	// The ID of the GitHub integration to retrieve       
+	GithubIntegrationID                            string `json:"githubIntegrationId"`
+}
+
+// Blueprint properties
+type GithubIntegrationFetchResponse struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                          
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
+type GithubIntegrationSetupParams struct {
+	GithubIntegrationID string `json:"githubIntegrationId"`
+}
+
+type GithubIntegrationUpdateParams struct {
+	// The ID of the GitHub integration       
+	GithubIntegrationID                string `json:"githubIntegrationId"`
+}
+
+// A bot configuration that can be applied without a dedicated bot instance.
+type GithubIntegrationUpdateRequest struct {
+	// The unique alias for the instance                                   
+	Alias                                           *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                             
+	BlueprintID                                     *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                       
+	BotID                                           *string                `json:"botId,omitempty"`
+	// The associated description                                          
+	Description                                     *string                `json:"description,omitempty"`
+	// Meta data information                                               
+	Meta                                            map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                 
+	Name                                            *string                `json:"name,omitempty"`
+}
+
+type GithubIntegrationUpdateResponse struct {
+	// The ID of the GitHub Integration       
+	ID                                 string `json:"id"`
+}
+
+// A bot configuration that can be applied without a dedicated bot instance.
+type GithubIntegrationCreateRequest struct {
+	// The unique alias for the instance                                                        
+	Alias                                                                *string                `json:"alias,omitempty"`
+	// This integration's GitHub App id (signs the App JWT)                                     
+	AppID                                                                *string                `json:"appId,omitempty"`
+	// The ID of the blueprint                                                                  
+	BlueprintID                                                          *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                                            
+	BotID                                                                *string                `json:"botId,omitempty"`
+	// Whether to collect contacts                                                              
+	ContactCollection                                                    *bool                  `json:"contactCollection,omitempty"`
+	// The associated description                                                               
+	Description                                                          *string                `json:"description,omitempty"`
+	// Meta data information                                                                    
+	Meta                                                                 map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                      
+	Name                                                                 *string                `json:"name,omitempty"`
+	// This integration's GitHub App private key (PEM)                                          
+	PrivateKey                                                           *string                `json:"privateKey,omitempty"`
+	// The session duration for the GitHub integration                                          
+	SessionDuration                                                      *float64               `json:"sessionDuration,omitempty"`
+	// The GitHub App webhook secret used to validate x-hub-signature-256                       
+	WebhookSecret                                                        *string                `json:"webhookSecret,omitempty"`
+}
+
+type GithubIntegrationCreateResponse struct {
+	// The ID of the GitHub Integration       
+	ID                                 string `json:"id"`
+}
+
+type GithubIntegrationListParams struct {
+	// The cursor to use for pagination                                       
+	Cursor                                  *string                           `json:"cursor,omitempty"`
+	// Key-value pairs to filter by metadata                                  
+	Meta                                    map[string]string                 `json:"meta,omitempty"`
+	// The order of the paginated items                                       
+	Order                                   *GithubIntegrationListParamsOrder `json:"order,omitempty"`
+	// The number of items to retrieve                                        
+	Take                                    *int64                            `json:"take,omitempty"`
+}
+
+type GithubIntegrationListResponse struct {
+	// Cursor for fetching the next page                                    
+	Cursor                              string                              `json:"cursor"`
+	Items                               []GithubIntegrationListResponseItem `json:"items"`
+}
+
+// Blueprint properties
+type GithubIntegrationListResponseItem struct {
+	// The unique alias for the instance                                      
+	Alias                                              *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                
+	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot this configuration is using                          
+	BotID                                              *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                       
+	CreatedAt                                          float64                `json:"createdAt"`
+	// The associated description                                             
+	Description                                        *string                `json:"description,omitempty"`
+	// The instance ID                                                        
+	ID                                                 string                 `json:"id"`
+	// Meta data information                                                  
+	Meta                                               map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                    
+	Name                                               *string                `json:"name,omitempty"`
+	// The timestamp (ms) when the instance was updated                       
+	UpdatedAt                                          float64                `json:"updatedAt"`
+}
+
 type GooglechatIntegrationDeleteParams struct {
 	// The ID of the Google Chat integration       
 	GooglechatIntegrationID                 string `json:"googlechatIntegrationId"`
@@ -21884,6 +22244,7 @@ type PartnerUserContextFetchParams struct {
 type PartnerUserContextFetchResponse struct {
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	BotID                                              *string                `json:"botId,omitempty"`
+	ContactID                                          *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	DatasetID                                          *string                `json:"datasetId,omitempty"`
@@ -21946,6 +22307,7 @@ type PartnerUserContextCreateRequest struct {
 type PartnerUserContextCreateResponse struct {
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	BotID                                              *string                `json:"botId,omitempty"`
+	ContactID                                          *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	DatasetID                                          *string                `json:"datasetId,omitempty"`
@@ -21988,6 +22350,7 @@ type PartnerUserContextListResponse struct {
 type PartnerUserContextListResponseItem struct {
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	BotID                                              *string                `json:"botId,omitempty"`
+	ContactID                                          *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	DatasetID                                          *string                `json:"datasetId,omitempty"`
@@ -22016,6 +22379,7 @@ type PartnerUserContextListStreamItem struct {
 type PartnerUserContextListStreamItemData struct {
 	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
 	BotID                                              *string                `json:"botId,omitempty"`
+	ContactID                                          *string                `json:"contactId,omitempty"`
 	// The timestamp (ms) when the instance was created                       
 	CreatedAt                                          float64                `json:"createdAt"`
 	DatasetID                                          *string                `json:"datasetId,omitempty"`
@@ -24319,30 +24683,32 @@ type SkillsetAbilityFetchParams struct {
 
 // Blueprint properties
 type SkillsetAbilityFetchResponse struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot associated with the ability                          
-	BotID                                              *string                `json:"botId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        string                 `json:"description"`
-	// The ID of the file associated with the ability                         
-	FileID                                             *string                `json:"fileId,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// The instruction of the skillset ability                                
-	Instruction                                        string                 `json:"instruction"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               string                 `json:"name"`
-	// The ID of the secret associated with the ability                       
-	SecretID                                           *string                `json:"secretId,omitempty"`
-	// The ID of the space associated with the ability                        
-	SpaceID                                            *string                `json:"spaceId,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The ID of the blueprint                                                                                    
+	BlueprintID                                                                *string                            `json:"blueprintId,omitempty"`
+	// The ID of the bot associated with the ability                                                              
+	BotID                                                                      *string                            `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                                                           
+	CreatedAt                                                                  float64                            `json:"createdAt"`
+	// The associated description                                                                                 
+	Description                                                                string                             `json:"description"`
+	// The ID of the file associated with the ability                                                             
+	FileID                                                                     *string                            `json:"fileId,omitempty"`
+	// The instance ID                                                                                            
+	ID                                                                         string                             `json:"id"`
+	// The instruction of the skillset ability                                                                    
+	Instruction                                                                string                             `json:"instruction"`
+	// Meta data information                                                                                      
+	Meta                                                                       map[string]interface{}             `json:"meta,omitempty"`
+	// The associated name                                                                                        
+	Name                                                                       string                             `json:"name"`
+	// The ID of the secret associated with the ability                                                           
+	SecretID                                                                   *string                            `json:"secretId,omitempty"`
+	// The ID of the space associated with the ability                                                            
+	SpaceID                                                                    *string                            `json:"spaceId,omitempty"`
+	// The lifecycle state of a resource — toggle it on/off without deleting it                                   
+	State                                                                      *SkillsetAbilityFetchResponseState `json:"state,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                           
+	UpdatedAt                                                                  float64                            `json:"updatedAt"`
 }
 
 type SkillsetAbilityUpdateParams struct {
@@ -24352,24 +24718,26 @@ type SkillsetAbilityUpdateParams struct {
 
 // Blueprint properties
 type SkillsetAbilityUpdateRequest struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot associated with the ability                          
-	BotID                                              *string                `json:"botId,omitempty"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The ID of the file associated with the ability                         
-	FileID                                             *string                `json:"fileId,omitempty"`
-	// The text to update the ability with                                    
-	Instruction                                        *string                `json:"instruction,omitempty"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The ID of the secret associated with the ability                       
-	SecretID                                           *string                `json:"secretId,omitempty"`
-	// The ID of the space associated with the ability                        
-	SpaceID                                            *string                `json:"spaceId,omitempty"`
+	// The ID of the blueprint                                                                                    
+	BlueprintID                                                                *string                            `json:"blueprintId,omitempty"`
+	// The ID of the bot associated with the ability                                                              
+	BotID                                                                      *string                            `json:"botId,omitempty"`
+	// The associated description                                                                                 
+	Description                                                                *string                            `json:"description,omitempty"`
+	// The ID of the file associated with the ability                                                             
+	FileID                                                                     *string                            `json:"fileId,omitempty"`
+	// The text to update the ability with                                                                        
+	Instruction                                                                *string                            `json:"instruction,omitempty"`
+	// Meta data information                                                                                      
+	Meta                                                                       map[string]interface{}             `json:"meta,omitempty"`
+	// The associated name                                                                                        
+	Name                                                                       *string                            `json:"name,omitempty"`
+	// The ID of the secret associated with the ability                                                           
+	SecretID                                                                   *string                            `json:"secretId,omitempty"`
+	// The ID of the space associated with the ability                                                            
+	SpaceID                                                                    *string                            `json:"spaceId,omitempty"`
+	// The lifecycle state of a resource — toggle it on/off without deleting it                                   
+	State                                                                      *SkillsetAbilityUpdateRequestState `json:"state,omitempty"`
 }
 
 type SkillsetAbilityUpdateResponse struct {
@@ -24383,24 +24751,26 @@ type SkillsetAbilityCreateParams struct {
 
 // Blueprint properties
 type SkillsetAbilityCreateRequest struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot associated with the ability                          
-	BotID                                              *string                `json:"botId,omitempty"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The ID of the file associated with the ability                         
-	FileID                                             *string                `json:"fileId,omitempty"`
-	// The instruction of the ability                                         
-	Instruction                                        *string                `json:"instruction,omitempty"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The ID of the secret associated with the ability                       
-	SecretID                                           *string                `json:"secretId,omitempty"`
-	// The ID of the space associated with the ability                        
-	SpaceID                                            *string                `json:"spaceId,omitempty"`
+	// The ID of the blueprint                                                                                    
+	BlueprintID                                                                *string                            `json:"blueprintId,omitempty"`
+	// The ID of the bot associated with the ability                                                              
+	BotID                                                                      *string                            `json:"botId,omitempty"`
+	// The associated description                                                                                 
+	Description                                                                *string                            `json:"description,omitempty"`
+	// The ID of the file associated with the ability                                                             
+	FileID                                                                     *string                            `json:"fileId,omitempty"`
+	// The instruction of the ability                                                                             
+	Instruction                                                                *string                            `json:"instruction,omitempty"`
+	// Meta data information                                                                                      
+	Meta                                                                       map[string]interface{}             `json:"meta,omitempty"`
+	// The associated name                                                                                        
+	Name                                                                       *string                            `json:"name,omitempty"`
+	// The ID of the secret associated with the ability                                                           
+	SecretID                                                                   *string                            `json:"secretId,omitempty"`
+	// The ID of the space associated with the ability                                                            
+	SpaceID                                                                    *string                            `json:"spaceId,omitempty"`
+	// The lifecycle state of a resource — toggle it on/off without deleting it                                   
+	State                                                                      *SkillsetAbilityCreateRequestState `json:"state,omitempty"`
 }
 
 type SkillsetAbilityCreateResponse struct {
@@ -24505,29 +24875,31 @@ type SkillsetAbilityListResponse struct {
 
 // Blueprint properties
 type SkillsetAbilityListResponseItem struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot associated with the ability                          
-	BotID                                              *string                `json:"botId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        string                 `json:"description"`
-	// The ID of the file associated with the ability                         
-	FileID                                             *string                `json:"fileId,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	Instruction                                        string                 `json:"instruction"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               string                 `json:"name"`
-	// The ID of the secret associated with the ability                       
-	SecretID                                           *string                `json:"secretId,omitempty"`
-	// The ID of the space associated with the ability                        
-	SpaceID                                            *string                `json:"spaceId,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The ID of the blueprint                                                                        
+	BlueprintID                                                                *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot associated with the ability                                                  
+	BotID                                                                      *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                                               
+	CreatedAt                                                                  float64                `json:"createdAt"`
+	// The associated description                                                                     
+	Description                                                                string                 `json:"description"`
+	// The ID of the file associated with the ability                                                 
+	FileID                                                                     *string                `json:"fileId,omitempty"`
+	// The instance ID                                                                                
+	ID                                                                         string                 `json:"id"`
+	Instruction                                                                string                 `json:"instruction"`
+	// Meta data information                                                                          
+	Meta                                                                       map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                            
+	Name                                                                       string                 `json:"name"`
+	// The ID of the secret associated with the ability                                               
+	SecretID                                                                   *string                `json:"secretId,omitempty"`
+	// The ID of the space associated with the ability                                                
+	SpaceID                                                                    *string                `json:"spaceId,omitempty"`
+	// The lifecycle state of a resource — toggle it on/off without deleting it                       
+	State                                                                      *PurpleState           `json:"state,omitempty"`
+	// The timestamp (ms) when the instance was updated                                               
+	UpdatedAt                                                                  float64                `json:"updatedAt"`
 }
 
 type SkillsetAbilityListStreamItem struct {
@@ -24539,29 +24911,31 @@ type SkillsetAbilityListStreamItem struct {
 
 // Blueprint properties
 type SkillsetAbilityListStreamItemData struct {
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The ID of the bot associated with the ability                          
-	BotID                                              *string                `json:"botId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        string                 `json:"description"`
-	// The ID of the file associated with the ability                         
-	FileID                                             *string                `json:"fileId,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	Instruction                                        string                 `json:"instruction"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               string                 `json:"name"`
-	// The ID of the secret associated with the ability                       
-	SecretID                                           *string                `json:"secretId,omitempty"`
-	// The ID of the space associated with the ability                        
-	SpaceID                                            *string                `json:"spaceId,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
+	// The ID of the blueprint                                                                        
+	BlueprintID                                                                *string                `json:"blueprintId,omitempty"`
+	// The ID of the bot associated with the ability                                                  
+	BotID                                                                      *string                `json:"botId,omitempty"`
+	// The timestamp (ms) when the instance was created                                               
+	CreatedAt                                                                  float64                `json:"createdAt"`
+	// The associated description                                                                     
+	Description                                                                string                 `json:"description"`
+	// The ID of the file associated with the ability                                                 
+	FileID                                                                     *string                `json:"fileId,omitempty"`
+	// The instance ID                                                                                
+	ID                                                                         string                 `json:"id"`
+	Instruction                                                                string                 `json:"instruction"`
+	// Meta data information                                                                          
+	Meta                                                                       map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                            
+	Name                                                                       string                 `json:"name"`
+	// The ID of the secret associated with the ability                                               
+	SecretID                                                                   *string                `json:"secretId,omitempty"`
+	// The ID of the space associated with the ability                                                
+	SpaceID                                                                    *string                `json:"spaceId,omitempty"`
+	// The lifecycle state of a resource — toggle it on/off without deleting it                       
+	State                                                                      *FluffyState           `json:"state,omitempty"`
+	// The timestamp (ms) when the instance was updated                                               
+	UpdatedAt                                                                  float64                `json:"updatedAt"`
 }
 
 type SkillsetDeleteParams struct {
@@ -24581,24 +24955,26 @@ type SkillsetFetchParams struct {
 
 // Blueprint properties
 type SkillsetFetchResponse struct {
-	// The unique alias for the instance                                                
-	Alias                                              *string                          `json:"alias,omitempty"`
-	// The ID of the blueprint                                                          
-	BlueprintID                                        *string                          `json:"blueprintId,omitempty"`
-	// The timestamp (ms) when the instance was created                                 
-	CreatedAt                                          float64                          `json:"createdAt"`
-	// The associated description                                                       
-	Description                                        *string                          `json:"description,omitempty"`
-	// The instance ID                                                                  
-	ID                                                 string                           `json:"id"`
-	// Meta data information                                                            
-	Meta                                               map[string]interface{}           `json:"meta,omitempty"`
-	// The associated name                                                              
-	Name                                               *string                          `json:"name,omitempty"`
-	// The timestamp (ms) when the instance was updated                                 
-	UpdatedAt                                          float64                          `json:"updatedAt"`
-	// The skillset visibility                                                          
-	Visibility                                         *SkillsetFetchResponseVisibility `json:"visibility,omitempty"`
+	// The unique alias for the instance                                                                        
+	Alias                                                                      *string                          `json:"alias,omitempty"`
+	// The ID of the blueprint                                                                                  
+	BlueprintID                                                                *string                          `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                                                         
+	CreatedAt                                                                  float64                          `json:"createdAt"`
+	// The associated description                                                                               
+	Description                                                                *string                          `json:"description,omitempty"`
+	// The instance ID                                                                                          
+	ID                                                                         string                           `json:"id"`
+	// Meta data information                                                                                    
+	Meta                                                                       map[string]interface{}           `json:"meta,omitempty"`
+	// The associated name                                                                                      
+	Name                                                                       *string                          `json:"name,omitempty"`
+	// The lifecycle state of a resource — toggle it on/off without deleting it                                 
+	State                                                                      *SkillsetFetchResponseState      `json:"state,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                         
+	UpdatedAt                                                                  float64                          `json:"updatedAt"`
+	// The skillset visibility                                                                                  
+	Visibility                                                                 *SkillsetFetchResponseVisibility `json:"visibility,omitempty"`
 }
 
 type SkillsetUpdateParams struct {
@@ -24607,18 +24983,20 @@ type SkillsetUpdateParams struct {
 
 // Blueprint properties
 type SkillsetUpdateRequest struct {
-	// The unique alias for the instance                                 
-	Alias                               *string                          `json:"alias,omitempty"`
-	// The ID of the blueprint                                           
-	BlueprintID                         *string                          `json:"blueprintId,omitempty"`
-	// The associated description                                        
-	Description                         *string                          `json:"description,omitempty"`
-	// Meta data information                                             
-	Meta                                map[string]interface{}           `json:"meta,omitempty"`
-	// The associated name                                               
-	Name                                *string                          `json:"name,omitempty"`
-	// The skillset visibility                                           
-	Visibility                          *SkillsetUpdateRequestVisibility `json:"visibility,omitempty"`
+	// The unique alias for the instance                                                                        
+	Alias                                                                      *string                          `json:"alias,omitempty"`
+	// The ID of the blueprint                                                                                  
+	BlueprintID                                                                *string                          `json:"blueprintId,omitempty"`
+	// The associated description                                                                               
+	Description                                                                *string                          `json:"description,omitempty"`
+	// Meta data information                                                                                    
+	Meta                                                                       map[string]interface{}           `json:"meta,omitempty"`
+	// The associated name                                                                                      
+	Name                                                                       *string                          `json:"name,omitempty"`
+	// The lifecycle state of a resource — toggle it on/off without deleting it                                 
+	State                                                                      *SkillsetUpdateRequestState      `json:"state,omitempty"`
+	// The skillset visibility                                                                                  
+	Visibility                                                                 *SkillsetUpdateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type SkillsetUpdateResponse struct {
@@ -24628,18 +25006,20 @@ type SkillsetUpdateResponse struct {
 
 // Blueprint properties
 type SkillsetCreateRequest struct {
-	// The unique alias for the instance                                 
-	Alias                               *string                          `json:"alias,omitempty"`
-	// The ID of the blueprint                                           
-	BlueprintID                         *string                          `json:"blueprintId,omitempty"`
-	// The associated description                                        
-	Description                         *string                          `json:"description,omitempty"`
-	// Meta data information                                             
-	Meta                                map[string]interface{}           `json:"meta,omitempty"`
-	// The associated name                                               
-	Name                                *string                          `json:"name,omitempty"`
-	// The skillset visibility                                           
-	Visibility                          *SkillsetCreateRequestVisibility `json:"visibility,omitempty"`
+	// The unique alias for the instance                                                                        
+	Alias                                                                      *string                          `json:"alias,omitempty"`
+	// The ID of the blueprint                                                                                  
+	BlueprintID                                                                *string                          `json:"blueprintId,omitempty"`
+	// The associated description                                                                               
+	Description                                                                *string                          `json:"description,omitempty"`
+	// Meta data information                                                                                    
+	Meta                                                                       map[string]interface{}           `json:"meta,omitempty"`
+	// The associated name                                                                                      
+	Name                                                                       *string                          `json:"name,omitempty"`
+	// The lifecycle state of a resource — toggle it on/off without deleting it                                 
+	State                                                                      *SkillsetCreateRequestState      `json:"state,omitempty"`
+	// The skillset visibility                                                                                  
+	Visibility                                                                 *SkillsetCreateRequestVisibility `json:"visibility,omitempty"`
 }
 
 type SkillsetCreateResponse struct {
@@ -24666,24 +25046,26 @@ type SkillsetListResponse struct {
 
 // Blueprint properties
 type SkillsetListResponseItem struct {
-	// The unique alias for the instance                                        
-	Alias                                              *string                  `json:"alias,omitempty"`
-	// The ID of the blueprint                                                  
-	BlueprintID                                        *string                  `json:"blueprintId,omitempty"`
-	// The timestamp (ms) when the instance was created                         
-	CreatedAt                                          float64                  `json:"createdAt"`
-	// The associated description                                               
-	Description                                        *string                  `json:"description,omitempty"`
-	// The instance ID                                                          
-	ID                                                 string                   `json:"id"`
-	// Meta data information                                                    
-	Meta                                               map[string]interface{}   `json:"meta,omitempty"`
-	// The associated name                                                      
-	Name                                               *string                  `json:"name,omitempty"`
-	// The timestamp (ms) when the instance was updated                         
-	UpdatedAt                                          float64                  `json:"updatedAt"`
-	// The skillset visibility                                                  
-	Visibility                                         *BraggadociousVisibility `json:"visibility,omitempty"`
+	// The unique alias for the instance                                                                
+	Alias                                                                      *string                  `json:"alias,omitempty"`
+	// The ID of the blueprint                                                                          
+	BlueprintID                                                                *string                  `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                                                 
+	CreatedAt                                                                  float64                  `json:"createdAt"`
+	// The associated description                                                                       
+	Description                                                                *string                  `json:"description,omitempty"`
+	// The instance ID                                                                                  
+	ID                                                                         string                   `json:"id"`
+	// Meta data information                                                                            
+	Meta                                                                       map[string]interface{}   `json:"meta,omitempty"`
+	// The associated name                                                                              
+	Name                                                                       *string                  `json:"name,omitempty"`
+	// The lifecycle state of a resource — toggle it on/off without deleting it                         
+	State                                                                      *TentacledState          `json:"state,omitempty"`
+	// The timestamp (ms) when the instance was updated                                                 
+	UpdatedAt                                                                  float64                  `json:"updatedAt"`
+	// The skillset visibility                                                                          
+	Visibility                                                                 *BraggadociousVisibility `json:"visibility,omitempty"`
 }
 
 type SkillsetListStreamItem struct {
@@ -24695,24 +25077,26 @@ type SkillsetListStreamItem struct {
 
 // Blueprint properties
 type SkillsetListStreamItemData struct {
-	// The unique alias for the instance                                      
-	Alias                                              *string                `json:"alias,omitempty"`
-	// The ID of the blueprint                                                
-	BlueprintID                                        *string                `json:"blueprintId,omitempty"`
-	// The timestamp (ms) when the instance was created                       
-	CreatedAt                                          float64                `json:"createdAt"`
-	// The associated description                                             
-	Description                                        *string                `json:"description,omitempty"`
-	// The instance ID                                                        
-	ID                                                 string                 `json:"id"`
-	// Meta data information                                                  
-	Meta                                               map[string]interface{} `json:"meta,omitempty"`
-	// The associated name                                                    
-	Name                                               *string                `json:"name,omitempty"`
-	// The timestamp (ms) when the instance was updated                       
-	UpdatedAt                                          float64                `json:"updatedAt"`
-	// The skillset visibility                                                
-	Visibility                                         *Visibility1           `json:"visibility,omitempty"`
+	// The unique alias for the instance                                                              
+	Alias                                                                      *string                `json:"alias,omitempty"`
+	// The ID of the blueprint                                                                        
+	BlueprintID                                                                *string                `json:"blueprintId,omitempty"`
+	// The timestamp (ms) when the instance was created                                               
+	CreatedAt                                                                  float64                `json:"createdAt"`
+	// The associated description                                                                     
+	Description                                                                *string                `json:"description,omitempty"`
+	// The instance ID                                                                                
+	ID                                                                         string                 `json:"id"`
+	// Meta data information                                                                          
+	Meta                                                                       map[string]interface{} `json:"meta,omitempty"`
+	// The associated name                                                                            
+	Name                                                                       *string                `json:"name,omitempty"`
+	// The lifecycle state of a resource — toggle it on/off without deleting it                       
+	State                                                                      *StickyState           `json:"state,omitempty"`
+	// The timestamp (ms) when the instance was updated                                               
+	UpdatedAt                                                                  float64                `json:"updatedAt"`
+	// The skillset visibility                                                                        
+	Visibility                                                                 *Visibility1           `json:"visibility,omitempty"`
 }
 
 type SpaceDeleteParams struct {
@@ -25428,6 +25812,8 @@ type TaskUpdateRequest struct {
 	ContactID                                                                                  *string                `json:"contactId,omitempty"`
 	// The associated description                                                                                     
 	Description                                                                                *string                `json:"description,omitempty"`
+	// The maximum number of tool calls across the whole task run (0 or null for unbounded)                           
+	MaxCalls                                                                                   *float64               `json:"maxCalls,omitempty"`
 	// The maximum number of iterations per task execution                                                            
 	MaxIterations                                                                              *float64               `json:"maxIterations,omitempty"`
 	// The maximum time per task execution in milliseconds                                                            
@@ -25458,6 +25844,8 @@ type TaskCreateRequest struct {
 	ContactID                                                                                  *string                `json:"contactId,omitempty"`
 	// The associated description                                                                                     
 	Description                                                                                *string                `json:"description,omitempty"`
+	// The maximum number of tool calls across the whole task run (0 or null for unbounded)                           
+	MaxCalls                                                                                   *float64               `json:"maxCalls,omitempty"`
 	// The maximum number of iterations per task execution                                                            
 	MaxIterations                                                                              *float64               `json:"maxIterations,omitempty"`
 	// The maximum time per task execution in milliseconds                                                            
@@ -26657,6 +27045,14 @@ const (
 
 )
 
+// The type of event
+type ConversationChannelSubscribeStreamItemType string
+
+const (
+	FluffyMessage                                      ConversationChannelSubscribeStreamItemType = "message"
+
+)
+
 // The schema type, must be "object"
 type StickyType string
 
@@ -26710,7 +27106,6 @@ const (
 type ConversationMessageCompleteStreamItemType string
 
 const (
-	FluffyMessage                                                 ConversationMessageCompleteStreamItemType = "message"
 	PurpleCompleteBegin                                           ConversationMessageCompleteStreamItemType = "completeBegin"
 	PurpleCompleteEnd                                             ConversationMessageCompleteStreamItemType = "completeEnd"
 	PurpleReasoningToken                                          ConversationMessageCompleteStreamItemType = "reasoningToken"
@@ -26732,6 +27127,7 @@ const (
 
 	StickyError                                                   ConversationMessageCompleteStreamItemType = "error"
 	TentacledAbort                                                ConversationMessageCompleteStreamItemType = "abort"
+	TentacledMessage                                              ConversationMessageCompleteStreamItemType = "message"
 )
 
 // The schema type, must be "object"
@@ -26882,7 +27278,7 @@ const (
 
 
 	StickyAbort                                                  ConversationMessageReceiveStreamItemType = "abort"
-	TentacledMessage                                             ConversationMessageReceiveStreamItemType = "message"
+	StickyMessage                                                ConversationMessageReceiveStreamItemType = "message"
 )
 
 // The schema type, must be "object"
@@ -26914,6 +27310,7 @@ type ConversationMessageSendStreamItemType string
 const (
 	IndecentError                                             ConversationMessageSendStreamItemType = "error"
 	IndigoAbort                                               ConversationMessageSendStreamItemType = "abort"
+	IndigoMessage                                             ConversationMessageSendStreamItemType = "message"
 
 
 
@@ -26925,7 +27322,6 @@ const (
 
 
 
-	StickyMessage                                             ConversationMessageSendStreamItemType = "message"
 	TentacledCompleteBegin                                    ConversationMessageSendStreamItemType = "completeBegin"
 	TentacledCompleteEnd                                      ConversationMessageSendStreamItemType = "completeEnd"
 	TentacledReasoningToken                                   ConversationMessageSendStreamItemType = "reasoningToken"
@@ -27021,7 +27417,7 @@ type ConversationCompleteStreamItemType string
 const (
 	AmbitiousAbort                                         ConversationCompleteStreamItemType = "abort"
 	CunningError                                           ConversationCompleteStreamItemType = "error"
-	IndigoMessage                                          ConversationCompleteStreamItemType = "message"
+	IndecentMessage                                        ConversationCompleteStreamItemType = "message"
 
 
 
@@ -27455,11 +27851,20 @@ const (
 )
 
 // The order of the paginated items
+type GithubIntegrationListParamsOrder string
+
+const (
+	Asc15                                    GithubIntegrationListParamsOrder = "asc"
+	Desc15                                   GithubIntegrationListParamsOrder = "desc"
+
+)
+
+// The order of the paginated items
 type GooglechatIntegrationListParamsOrder string
 
 const (
-	Asc15                                        GooglechatIntegrationListParamsOrder = "asc"
-	Desc15                                       GooglechatIntegrationListParamsOrder = "desc"
+	Asc16                                        GooglechatIntegrationListParamsOrder = "asc"
+	Desc16                                       GooglechatIntegrationListParamsOrder = "desc"
 
 )
 
@@ -27475,8 +27880,8 @@ const (
 type IntegrationInstagramListParamsOrder string
 
 const (
-	Asc16                                       IntegrationInstagramListParamsOrder = "asc"
-	Desc16                                      IntegrationInstagramListParamsOrder = "desc"
+	Asc17                                       IntegrationInstagramListParamsOrder = "asc"
+	Desc17                                      IntegrationInstagramListParamsOrder = "desc"
 
 )
 
@@ -27492,8 +27897,8 @@ const (
 type IntegrationMCPServerListParamsOrder string
 
 const (
-	Asc17                                       IntegrationMCPServerListParamsOrder = "asc"
-	Desc17                                      IntegrationMCPServerListParamsOrder = "desc"
+	Asc18                                       IntegrationMCPServerListParamsOrder = "asc"
+	Desc18                                      IntegrationMCPServerListParamsOrder = "desc"
 
 )
 
@@ -27509,8 +27914,8 @@ const (
 type IntegrationMessengerListParamsOrder string
 
 const (
-	Asc18                                       IntegrationMessengerListParamsOrder = "asc"
-	Desc18                                      IntegrationMessengerListParamsOrder = "desc"
+	Asc19                                       IntegrationMessengerListParamsOrder = "asc"
+	Desc19                                      IntegrationMessengerListParamsOrder = "desc"
 
 )
 
@@ -27526,8 +27931,8 @@ const (
 type MicrosoftteamsIntegrationListParamsOrder string
 
 const (
-	Asc19                                            MicrosoftteamsIntegrationListParamsOrder = "asc"
-	Desc19                                           MicrosoftteamsIntegrationListParamsOrder = "desc"
+	Asc20                                            MicrosoftteamsIntegrationListParamsOrder = "asc"
+	Desc20                                           MicrosoftteamsIntegrationListParamsOrder = "desc"
 
 )
 
@@ -27553,8 +27958,8 @@ const (
 type IntegrationNotionListParamsOrder string
 
 const (
-	Asc20                                    IntegrationNotionListParamsOrder = "asc"
-	Desc20                                   IntegrationNotionListParamsOrder = "desc"
+	Asc21                                    IntegrationNotionListParamsOrder = "asc"
+	Desc21                                   IntegrationNotionListParamsOrder = "desc"
 
 )
 
@@ -27600,8 +28005,8 @@ const (
 type IntegrationSitemapListParamsOrder string
 
 const (
-	Asc21                                     IntegrationSitemapListParamsOrder = "asc"
-	Desc21                                    IntegrationSitemapListParamsOrder = "desc"
+	Asc22                                     IntegrationSitemapListParamsOrder = "asc"
+	Desc22                                    IntegrationSitemapListParamsOrder = "desc"
 
 )
 
@@ -27645,8 +28050,8 @@ const (
 type SkillServerIntegrationListParamsOrder string
 
 const (
-	Asc22                                         SkillServerIntegrationListParamsOrder = "asc"
-	Desc22                                        SkillServerIntegrationListParamsOrder = "desc"
+	Asc23                                         SkillServerIntegrationListParamsOrder = "asc"
+	Desc23                                        SkillServerIntegrationListParamsOrder = "desc"
 
 )
 
@@ -27662,8 +28067,8 @@ const (
 type IntegrationSlackListParamsOrder string
 
 const (
-	Asc23                                   IntegrationSlackListParamsOrder = "asc"
-	Desc23                                  IntegrationSlackListParamsOrder = "desc"
+	Asc24                                   IntegrationSlackListParamsOrder = "asc"
+	Desc24                                  IntegrationSlackListParamsOrder = "desc"
 
 )
 
@@ -27679,8 +28084,8 @@ const (
 type IntegrationSupportListParamsOrder string
 
 const (
-	Asc24                                     IntegrationSupportListParamsOrder = "asc"
-	Desc24                                    IntegrationSupportListParamsOrder = "desc"
+	Asc25                                     IntegrationSupportListParamsOrder = "asc"
+	Desc25                                    IntegrationSupportListParamsOrder = "desc"
 
 )
 
@@ -27696,8 +28101,8 @@ const (
 type IntegrationTelegramListParamsOrder string
 
 const (
-	Asc25                                      IntegrationTelegramListParamsOrder = "asc"
-	Desc25                                     IntegrationTelegramListParamsOrder = "desc"
+	Asc26                                      IntegrationTelegramListParamsOrder = "asc"
+	Desc26                                     IntegrationTelegramListParamsOrder = "desc"
 
 )
 
@@ -27713,8 +28118,8 @@ const (
 type TriggerIntegrationListParamsOrder string
 
 const (
-	Asc26                                     TriggerIntegrationListParamsOrder = "asc"
-	Desc26                                    TriggerIntegrationListParamsOrder = "desc"
+	Asc27                                     TriggerIntegrationListParamsOrder = "asc"
+	Desc27                                    TriggerIntegrationListParamsOrder = "desc"
 
 )
 
@@ -27730,8 +28135,8 @@ const (
 type IntegrationTwilioListParamsOrder string
 
 const (
-	Asc27                                    IntegrationTwilioListParamsOrder = "asc"
-	Desc27                                   IntegrationTwilioListParamsOrder = "desc"
+	Asc28                                    IntegrationTwilioListParamsOrder = "asc"
+	Desc28                                   IntegrationTwilioListParamsOrder = "desc"
 
 )
 
@@ -27747,8 +28152,8 @@ const (
 type IntegrationWhatsAppListParamsOrder string
 
 const (
-	Asc28                                      IntegrationWhatsAppListParamsOrder = "asc"
-	Desc28                                     IntegrationWhatsAppListParamsOrder = "desc"
+	Asc29                                      IntegrationWhatsAppListParamsOrder = "asc"
+	Desc29                                     IntegrationWhatsAppListParamsOrder = "desc"
 
 )
 
@@ -27775,8 +28180,8 @@ const (
 type IntegrationWidgetListParamsOrder string
 
 const (
-	Asc29                                    IntegrationWidgetListParamsOrder = "asc"
-	Desc29                                   IntegrationWidgetListParamsOrder = "desc"
+	Asc30                                    IntegrationWidgetListParamsOrder = "asc"
+	Desc30                                   IntegrationWidgetListParamsOrder = "desc"
 
 )
 
@@ -27800,8 +28205,8 @@ const (
 type MagicPromptListParamsOrder string
 
 const (
-	Asc30                              MagicPromptListParamsOrder = "asc"
-	Desc30                             MagicPromptListParamsOrder = "desc"
+	Asc31                              MagicPromptListParamsOrder = "asc"
+	Desc31                             MagicPromptListParamsOrder = "desc"
 
 )
 
@@ -27817,8 +28222,8 @@ const (
 type MemoriesExportParamsOrder string
 
 const (
-	Asc31                             MemoriesExportParamsOrder = "asc"
-	Desc31                            MemoriesExportParamsOrder = "desc"
+	Asc32                             MemoriesExportParamsOrder = "asc"
+	Desc32                            MemoriesExportParamsOrder = "desc"
 
 )
 
@@ -27834,8 +28239,8 @@ const (
 type MemoryListParamsOrder string
 
 const (
-	Asc32                         MemoryListParamsOrder = "asc"
-	Desc32                        MemoryListParamsOrder = "desc"
+	Asc33                         MemoryListParamsOrder = "asc"
+	Desc33                        MemoryListParamsOrder = "desc"
 
 )
 
@@ -27851,8 +28256,8 @@ const (
 type PartnerUserContextListParamsOrder string
 
 const (
-	Asc33                                     PartnerUserContextListParamsOrder = "asc"
-	Desc33                                    PartnerUserContextListParamsOrder = "desc"
+	Asc34                                     PartnerUserContextListParamsOrder = "asc"
+	Desc34                                    PartnerUserContextListParamsOrder = "desc"
 
 )
 
@@ -27868,8 +28273,8 @@ const (
 type PartnerUserTokenListParamsOrder string
 
 const (
-	Asc34                                   PartnerUserTokenListParamsOrder = "asc"
-	Desc34                                  PartnerUserTokenListParamsOrder = "desc"
+	Asc35                                   PartnerUserTokenListParamsOrder = "asc"
+	Desc35                                  PartnerUserTokenListParamsOrder = "desc"
 
 )
 
@@ -27885,8 +28290,8 @@ const (
 type PartnerUserListParamsOrder string
 
 const (
-	Asc35                              PartnerUserListParamsOrder = "asc"
-	Desc35                             PartnerUserListParamsOrder = "desc"
+	Asc36                              PartnerUserListParamsOrder = "asc"
+	Desc36                             PartnerUserListParamsOrder = "desc"
 
 )
 
@@ -27902,8 +28307,8 @@ const (
 type PlatformAbilityListParamsOrder string
 
 const (
-	Asc36                                  PlatformAbilityListParamsOrder = "asc"
-	Desc36                                 PlatformAbilityListParamsOrder = "desc"
+	Asc37                                  PlatformAbilityListParamsOrder = "asc"
+	Desc37                                 PlatformAbilityListParamsOrder = "desc"
 
 )
 
@@ -27943,8 +28348,8 @@ const (
 type PlatformActionListParamsOrder string
 
 const (
-	Asc37                                 PlatformActionListParamsOrder = "asc"
-	Desc37                                PlatformActionListParamsOrder = "desc"
+	Asc38                                 PlatformActionListParamsOrder = "asc"
+	Desc38                                PlatformActionListParamsOrder = "desc"
 
 )
 
@@ -27960,8 +28365,8 @@ const (
 type PlatformDocListParamsOrder string
 
 const (
-	Asc38                              PlatformDocListParamsOrder = "asc"
-	Desc38                             PlatformDocListParamsOrder = "desc"
+	Asc39                              PlatformDocListParamsOrder = "asc"
+	Desc39                             PlatformDocListParamsOrder = "desc"
 
 )
 
@@ -27995,8 +28400,8 @@ const (
 type PlatformExampleListParamsOrder string
 
 const (
-	Asc39                                  PlatformExampleListParamsOrder = "asc"
-	Desc39                                 PlatformExampleListParamsOrder = "desc"
+	Asc40                                  PlatformExampleListParamsOrder = "asc"
+	Desc40                                 PlatformExampleListParamsOrder = "desc"
 
 )
 
@@ -28066,8 +28471,8 @@ const (
 type PlatformGuideListParamsOrder string
 
 const (
-	Asc40                                PlatformGuideListParamsOrder = "asc"
-	Desc40                               PlatformGuideListParamsOrder = "desc"
+	Asc41                                PlatformGuideListParamsOrder = "asc"
+	Desc41                               PlatformGuideListParamsOrder = "desc"
 
 )
 
@@ -28083,8 +28488,8 @@ const (
 type PlatformManualListParamsOrder string
 
 const (
-	Asc41                                 PlatformManualListParamsOrder = "asc"
-	Desc41                                PlatformManualListParamsOrder = "desc"
+	Asc42                                 PlatformManualListParamsOrder = "asc"
+	Desc42                                PlatformManualListParamsOrder = "desc"
 
 )
 
@@ -28100,8 +28505,8 @@ const (
 type PlatformModelListParamsOrder string
 
 const (
-	Asc42                                PlatformModelListParamsOrder = "asc"
-	Desc42                               PlatformModelListParamsOrder = "desc"
+	Asc43                                PlatformModelListParamsOrder = "asc"
+	Desc43                               PlatformModelListParamsOrder = "desc"
 
 )
 
@@ -28117,8 +28522,8 @@ const (
 type PlatformSecretListParamsOrder string
 
 const (
-	Asc43                                 PlatformSecretListParamsOrder = "asc"
-	Desc43                                PlatformSecretListParamsOrder = "desc"
+	Asc44                                 PlatformSecretListParamsOrder = "asc"
+	Desc44                                PlatformSecretListParamsOrder = "desc"
 
 )
 
@@ -28203,8 +28608,8 @@ const (
 type PlatformTutorialListParamsOrder string
 
 const (
-	Asc44                                   PlatformTutorialListParamsOrder = "asc"
-	Desc44                                  PlatformTutorialListParamsOrder = "desc"
+	Asc45                                   PlatformTutorialListParamsOrder = "asc"
+	Desc45                                  PlatformTutorialListParamsOrder = "desc"
 
 )
 
@@ -28247,8 +28652,8 @@ const (
 type PolicyListParamsOrder string
 
 const (
-	Asc45                         PolicyListParamsOrder = "asc"
-	Desc45                        PolicyListParamsOrder = "desc"
+	Asc46                         PolicyListParamsOrder = "asc"
+	Desc46                        PolicyListParamsOrder = "desc"
 
 )
 
@@ -28282,8 +28687,8 @@ const (
 type PortalListParamsOrder string
 
 const (
-	Asc46                         PortalListParamsOrder = "asc"
-	Desc46                        PortalListParamsOrder = "desc"
+	Asc47                         PortalListParamsOrder = "asc"
+	Desc47                        PortalListParamsOrder = "desc"
 
 )
 
@@ -28415,8 +28820,8 @@ const (
 type SecretListParamsOrder string
 
 const (
-	Asc47                         SecretListParamsOrder = "asc"
-	Desc47                        SecretListParamsOrder = "desc"
+	Asc48                         SecretListParamsOrder = "asc"
+	Desc48                        SecretListParamsOrder = "desc"
 
 )
 
@@ -28545,7 +28950,7 @@ type SkillsetAbilityExecuteStreamItemType string
 const (
 	CunningAbort                                             SkillsetAbilityExecuteStreamItemType = "abort"
 	Error3                                                   SkillsetAbilityExecuteStreamItemType = "error"
-	IndecentMessage                                          SkillsetAbilityExecuteStreamItemType = "message"
+	HilariousMessage                                         SkillsetAbilityExecuteStreamItemType = "message"
 	IndecentResult                                           SkillsetAbilityExecuteStreamItemType = "result"
 	IndigoCompleteBegin                                      SkillsetAbilityExecuteStreamItemType = "completeBegin"
 	IndigoCompleteEnd                                        SkillsetAbilityExecuteStreamItemType = "completeEnd"
@@ -28567,12 +28972,39 @@ const (
 
 )
 
+// The lifecycle state of a resource — toggle it on/off without deleting it
+type SkillsetAbilityFetchResponseState string
+
+const (
+	PurpleDisabled                            SkillsetAbilityFetchResponseState = "disabled"
+	PurpleEnabled                             SkillsetAbilityFetchResponseState = "enabled"
+
+)
+
+// The lifecycle state of a resource — toggle it on/off without deleting it
+type SkillsetAbilityUpdateRequestState string
+
+const (
+	FluffyDisabled                            SkillsetAbilityUpdateRequestState = "disabled"
+	FluffyEnabled                             SkillsetAbilityUpdateRequestState = "enabled"
+
+)
+
+// The lifecycle state of a resource — toggle it on/off without deleting it
+type SkillsetAbilityCreateRequestState string
+
+const (
+
+	TentacledDisabled                         SkillsetAbilityCreateRequestState = "disabled"
+	TentacledEnabled                          SkillsetAbilityCreateRequestState = "enabled"
+)
+
 // The order of the paginated items
 type SkillsetAbilitiesExportParamsOrder string
 
 const (
-	Asc48                                      SkillsetAbilitiesExportParamsOrder = "asc"
-	Desc48                                     SkillsetAbilitiesExportParamsOrder = "desc"
+	Asc49                                      SkillsetAbilitiesExportParamsOrder = "asc"
+	Desc49                                     SkillsetAbilitiesExportParamsOrder = "desc"
 
 )
 
@@ -28588,8 +29020,26 @@ const (
 type SkillsetAbilityListParamsOrder string
 
 const (
-	Asc49                                  SkillsetAbilityListParamsOrder = "asc"
-	Desc49                                 SkillsetAbilityListParamsOrder = "desc"
+	Asc50                                  SkillsetAbilityListParamsOrder = "asc"
+	Desc50                                 SkillsetAbilityListParamsOrder = "desc"
+
+)
+
+// The lifecycle state of a resource — toggle it on/off without deleting it
+type PurpleState string
+
+const (
+
+	StickyDisabled                                    PurpleState = "disabled"
+	StickyEnabled                                     PurpleState = "enabled"
+)
+
+// The lifecycle state of a resource — toggle it on/off without deleting it
+type FluffyState string
+
+const (
+	IndigoDisabled                                       FluffyState = "disabled"
+	IndigoEnabled                                        FluffyState = "enabled"
 
 )
 
@@ -28598,6 +29048,15 @@ type SkillsetAbilityListStreamItemType string
 
 const (
 	Item48                                          SkillsetAbilityListStreamItemType = "item"
+
+)
+
+// The lifecycle state of a resource — toggle it on/off without deleting it
+type SkillsetFetchResponseState string
+
+const (
+	IndecentDisabled                   SkillsetFetchResponseState = "disabled"
+	IndecentEnabled                    SkillsetFetchResponseState = "enabled"
 
 )
 
@@ -28611,6 +29070,15 @@ const (
 
 )
 
+// The lifecycle state of a resource — toggle it on/off without deleting it
+type SkillsetUpdateRequestState string
+
+const (
+	HilariousDisabled                  SkillsetUpdateRequestState = "disabled"
+	HilariousEnabled                   SkillsetUpdateRequestState = "enabled"
+
+)
+
 // The skillset visibility
 type SkillsetUpdateRequestVisibility string
 
@@ -28618,6 +29086,15 @@ const (
 	Private16                               SkillsetUpdateRequestVisibility = "private"
 	Protected16                             SkillsetUpdateRequestVisibility = "protected"
 	Public16                                SkillsetUpdateRequestVisibility = "public"
+
+)
+
+// The lifecycle state of a resource — toggle it on/off without deleting it
+type SkillsetCreateRequestState string
+
+const (
+	AmbitiousDisabled                  SkillsetCreateRequestState = "disabled"
+	AmbitiousEnabled                   SkillsetCreateRequestState = "enabled"
 
 )
 
@@ -28635,8 +29112,17 @@ const (
 type SkillsetListParamsOrder string
 
 const (
-	Asc50                           SkillsetListParamsOrder = "asc"
-	Desc50                          SkillsetListParamsOrder = "desc"
+	Asc51                           SkillsetListParamsOrder = "asc"
+	Desc51                          SkillsetListParamsOrder = "desc"
+
+)
+
+// The lifecycle state of a resource — toggle it on/off without deleting it
+type TentacledState string
+
+const (
+	CunningDisabled                            TentacledState = "disabled"
+	CunningEnabled                             TentacledState = "enabled"
 
 )
 
@@ -28647,6 +29133,15 @@ const (
 	Private18                                       BraggadociousVisibility = "private"
 	Protected18                                     BraggadociousVisibility = "protected"
 	Public18                                        BraggadociousVisibility = "public"
+
+)
+
+// The lifecycle state of a resource — toggle it on/off without deleting it
+type StickyState string
+
+const (
+	MagentaDisabled                               StickyState = "disabled"
+	MagentaEnabled                                StickyState = "enabled"
 
 )
 
@@ -28672,8 +29167,8 @@ const (
 type SpaceSiteListParamsOrder string
 
 const (
-	Asc51                            SpaceSiteListParamsOrder = "asc"
-	Desc51                           SpaceSiteListParamsOrder = "desc"
+	Asc52                            SpaceSiteListParamsOrder = "asc"
+	Desc52                           SpaceSiteListParamsOrder = "desc"
 
 )
 
@@ -28689,8 +29184,8 @@ const (
 type SpacesExportParamsOrder string
 
 const (
-	Asc52                           SpacesExportParamsOrder = "asc"
-	Desc52                          SpacesExportParamsOrder = "desc"
+	Asc53                           SpacesExportParamsOrder = "asc"
+	Desc53                          SpacesExportParamsOrder = "desc"
 
 )
 
@@ -28706,8 +29201,8 @@ const (
 type SpaceListParamsOrder string
 
 const (
-	Asc53                        SpaceListParamsOrder = "asc"
-	Desc53                       SpaceListParamsOrder = "desc"
+	Asc54                        SpaceListParamsOrder = "asc"
+	Desc54                       SpaceListParamsOrder = "desc"
 
 )
 
@@ -28723,8 +29218,8 @@ const (
 type TaskExecutionListParamsOrder string
 
 const (
-	Asc54                                TaskExecutionListParamsOrder = "asc"
-	Desc54                               TaskExecutionListParamsOrder = "desc"
+	Asc55                                TaskExecutionListParamsOrder = "asc"
+	Desc55                               TaskExecutionListParamsOrder = "desc"
 
 )
 
@@ -28810,8 +29305,8 @@ const (
 type TasksExportParamsOrder string
 
 const (
-	Asc55                          TasksExportParamsOrder = "asc"
-	Desc55                         TasksExportParamsOrder = "desc"
+	Asc56                          TasksExportParamsOrder = "asc"
+	Desc56                         TasksExportParamsOrder = "desc"
 
 )
 
@@ -28827,8 +29322,8 @@ const (
 type TaskListParamsOrder string
 
 const (
-	Asc56                       TaskListParamsOrder = "asc"
-	Desc56                      TaskListParamsOrder = "desc"
+	Asc57                       TaskListParamsOrder = "asc"
+	Desc57                      TaskListParamsOrder = "desc"
 
 )
 
@@ -28894,8 +29389,8 @@ const (
 type TeamListParamsOrder string
 
 const (
-	Asc57                       TeamListParamsOrder = "asc"
-	Desc57                      TeamListParamsOrder = "desc"
+	Asc58                       TeamListParamsOrder = "asc"
+	Desc58                      TeamListParamsOrder = "desc"
 
 )
 
@@ -28911,8 +29406,8 @@ const (
 type UsageRecordListParamsOrder string
 
 const (
-	Asc58                              UsageRecordListParamsOrder = "asc"
-	Desc58                             UsageRecordListParamsOrder = "desc"
+	Asc59                              UsageRecordListParamsOrder = "asc"
+	Desc59                             UsageRecordListParamsOrder = "desc"
 
 )
 
@@ -29050,6 +29545,15 @@ const (
 	SkillsetVisibilityPublic    SkillsetVisibility = "public"
 )
 
+// The lifecycle state of a resource — toggle it on/off without deleting it
+type ResourceState string
+
+const (
+
+	ResourceStateDisabled ResourceState = "disabled"
+	ResourceStateEnabled  ResourceState = "enabled"
+)
+
 // The file visibility
 type FileVisibility string
 
@@ -29163,10 +29667,10 @@ const (
 type CompleteStreamingResponseItemType string
 
 const (
+	AmbitiousMessage                                CompleteStreamingResponseItemType = "message"
 	Error5                                          CompleteStreamingResponseItemType = "error"
 	FriskyAbort                                     CompleteStreamingResponseItemType = "abort"
 	FriskyUsage                                     CompleteStreamingResponseItemType = "usage"
-	HilariousMessage                                CompleteStreamingResponseItemType = "message"
 	IndecentCompleteBegin                           CompleteStreamingResponseItemType = "completeBegin"
 	IndecentCompleteEnd                             CompleteStreamingResponseItemType = "completeEnd"
 	IndecentReasoningToken                          CompleteStreamingResponseItemType = "reasoningToken"
