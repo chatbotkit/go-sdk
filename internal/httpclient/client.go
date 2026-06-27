@@ -202,6 +202,66 @@ func (c *Client) Do(ctx context.Context, opts RequestOptions, result interface{}
 	return nil
 }
 
+// DoRaw performs a request and returns the raw HTTP response without reading or
+// decoding the body and without treating a non-2xx status as an error. The
+// caller is responsible for closing resp.Body. It is intended for passthrough
+// endpoints such as the secret proxy.
+func (c *Client) DoRaw(ctx context.Context, opts RequestOptions) (*http.Response, error) {
+	u, err := url.Parse(c.BaseURL)
+	if err != nil {
+		return nil, fmt.Errorf("invalid base URL: %w", err)
+	}
+
+	u.Path = opts.Path
+	if opts.Query != nil {
+		u.RawQuery = opts.Query.Encode()
+	}
+
+	var body io.Reader
+	if opts.Body != nil {
+		data, err := json.Marshal(opts.Body)
+		if err != nil {
+			return nil, fmt.Errorf("failed to encode request body: %w", err)
+		}
+		body = bytes.NewReader(data)
+	}
+
+	method := opts.Method
+	if method == "" {
+		if opts.Body != nil {
+			method = http.MethodPost
+		} else {
+			method = http.MethodGet
+		}
+	}
+
+	req, err := http.NewRequestWithContext(ctx, method, u.String(), body)
+	if err != nil {
+		return nil, fmt.Errorf("failed to create request: %w", err)
+	}
+
+	if opts.Body != nil {
+		req.Header.Set("Content-Type", "application/json")
+	}
+	if c.Secret != "" {
+		req.Header.Set("Authorization", "Bearer "+c.Secret)
+	}
+	if c.RunAsUserID != "" {
+		req.Header.Set("X-RunAs-User-ID", c.RunAsUserID)
+	}
+	if c.Timezone != "" {
+		req.Header.Set("X-Timezone", c.Timezone)
+	}
+	for k, v := range c.Headers {
+		req.Header.Set(k, v)
+	}
+	for k, v := range opts.Headers {
+		req.Header.Set(k, v)
+	}
+
+	return c.HTTPClient.Do(req)
+}
+
 // Get performs a GET request.
 func (c *Client) Get(ctx context.Context, path string, query url.Values, result interface{}) error {
 	return c.Do(ctx, RequestOptions{
