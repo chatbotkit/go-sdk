@@ -3,6 +3,7 @@ package sdk
 import (
 	"context"
 	"fmt"
+	"net/http"
 	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -182,6 +183,30 @@ func (c *ContactSecretClient) Authenticate(ctx context.Context, contactID, secre
 		return nil, err
 	}
 	return &result, nil
+}
+
+// Mint mints a usable token from a contact's secret (owner-only; oauth/jwt only).
+func (c *ContactSecretClient) Mint(ctx context.Context, contactID, secretID string) (*types.ContactSecretMintResponse, error) {
+	path := fmt.Sprintf("/api/v1/contact/%s/secret/%s/mint", contactID, secretID)
+
+	var result types.ContactSecretMintResponse
+	if err := c.httpClient.Post(ctx, path, map[string]interface{}{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Proxy proxies a request through a contact's secret, injecting it server-side.
+// It returns the raw upstream HTTP response; a non-2xx status is returned, not
+// an error. The caller must close resp.Body.
+func (c *ContactSecretClient) Proxy(ctx context.Context, contactID, secretID string, req types.ContactSecretProxyRequest) (*http.Response, error) {
+	path := fmt.Sprintf("/api/v1/contact/%s/secret/%s/proxy", contactID, secretID)
+
+	return c.httpClient.DoRaw(ctx, httpclient.RequestOptions{
+		Method: http.MethodPost,
+		Path:   path,
+		Body:   req,
+	})
 }
 
 // ContactSpaceClient provides access to contact space resources.

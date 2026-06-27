@@ -3,6 +3,7 @@ package sdk
 import (
 	"context"
 	"fmt"
+	"net/http"
 	"net/url"
 
 	"github.com/chatbotkit/go-sdk/internal/httpclient"
@@ -109,4 +110,29 @@ func (c *SecretClient) Authenticate(ctx context.Context, secretID string) (*type
 		return nil, err
 	}
 	return &result, nil
+}
+
+// Mint mints a usable token from a secret (owner-only; oauth/jwt only).
+func (c *SecretClient) Mint(ctx context.Context, secretID string) (*types.SecretMintResponse, error) {
+	path := fmt.Sprintf("/api/v1/secret/%s/mint", secretID)
+
+	var result types.SecretMintResponse
+	if err := c.httpClient.Post(ctx, path, struct{}{}, &result); err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+// Proxy proxies a request through the secret, injecting it server-side. It
+// returns the raw upstream HTTP response; a non-2xx status (including
+// 409 authorization_required) is returned, not an error. The caller must close
+// resp.Body.
+func (c *SecretClient) Proxy(ctx context.Context, secretID string, req types.SecretProxyRequest) (*http.Response, error) {
+	path := fmt.Sprintf("/api/v1/secret/%s/proxy", secretID)
+
+	return c.httpClient.DoRaw(ctx, httpclient.RequestOptions{
+		Method: http.MethodPost,
+		Path:   path,
+		Body:   req,
+	})
 }

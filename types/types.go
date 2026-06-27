@@ -364,6 +364,18 @@
 //    contactSecretAuthenticateResponse, err := UnmarshalContactSecretAuthenticateResponse(bytes)
 //    bytes, err = contactSecretAuthenticateResponse.Marshal()
 //
+//    contactSecretMintParams, err := UnmarshalContactSecretMintParams(bytes)
+//    bytes, err = contactSecretMintParams.Marshal()
+//
+//    contactSecretMintResponse, err := UnmarshalContactSecretMintResponse(bytes)
+//    bytes, err = contactSecretMintResponse.Marshal()
+//
+//    contactSecretProxyParams, err := UnmarshalContactSecretProxyParams(bytes)
+//    bytes, err = contactSecretProxyParams.Marshal()
+//
+//    contactSecretProxyRequest, err := UnmarshalContactSecretProxyRequest(bytes)
+//    bytes, err = contactSecretProxyRequest.Marshal()
+//
 //    contactSecretRevokeParams, err := UnmarshalContactSecretRevokeParams(bytes)
 //    bytes, err = contactSecretRevokeParams.Marshal()
 //
@@ -2326,6 +2338,18 @@
 //    secretFetchResponse, err := UnmarshalSecretFetchResponse(bytes)
 //    bytes, err = secretFetchResponse.Marshal()
 //
+//    secretMintParams, err := UnmarshalSecretMintParams(bytes)
+//    bytes, err = secretMintParams.Marshal()
+//
+//    secretMintResponse, err := UnmarshalSecretMintResponse(bytes)
+//    bytes, err = secretMintResponse.Marshal()
+//
+//    secretProxyParams, err := UnmarshalSecretProxyParams(bytes)
+//    bytes, err = secretProxyParams.Marshal()
+//
+//    secretProxyRequest, err := UnmarshalSecretProxyRequest(bytes)
+//    bytes, err = secretProxyRequest.Marshal()
+//
 //    secretRevokeParams, err := UnmarshalSecretRevokeParams(bytes)
 //    bytes, err = secretRevokeParams.Marshal()
 //
@@ -4071,6 +4095,46 @@ func UnmarshalContactSecretAuthenticateResponse(data []byte) (ContactSecretAuthe
 }
 
 func (r *ContactSecretAuthenticateResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalContactSecretMintParams(data []byte) (ContactSecretMintParams, error) {
+	var r ContactSecretMintParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactSecretMintParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalContactSecretMintResponse(data []byte) (ContactSecretMintResponse, error) {
+	var r ContactSecretMintResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactSecretMintResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalContactSecretProxyParams(data []byte) (ContactSecretProxyParams, error) {
+	var r ContactSecretProxyParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactSecretProxyParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalContactSecretProxyRequest(data []byte) (ContactSecretProxyRequest, error) {
+	var r ContactSecretProxyRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *ContactSecretProxyRequest) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
@@ -10722,6 +10786,46 @@ func (r *SecretFetchResponse) Marshal() ([]byte, error) {
 	return json.Marshal(r)
 }
 
+func UnmarshalSecretMintParams(data []byte) (SecretMintParams, error) {
+	var r SecretMintParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SecretMintParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSecretMintResponse(data []byte) (SecretMintResponse, error) {
+	var r SecretMintResponse
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SecretMintResponse) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSecretProxyParams(data []byte) (SecretProxyParams, error) {
+	var r SecretProxyParams
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SecretProxyParams) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
+func UnmarshalSecretProxyRequest(data []byte) (SecretProxyRequest, error) {
+	var r SecretProxyRequest
+	err := json.Unmarshal(data, &r)
+	return r, err
+}
+
+func (r *SecretProxyRequest) Marshal() ([]byte, error) {
+	return json.Marshal(r)
+}
+
 func UnmarshalSecretRevokeParams(data []byte) (SecretRevokeParams, error) {
 	var r SecretRevokeParams
 	err := json.Unmarshal(data, &r)
@@ -13704,6 +13808,38 @@ type ContactSecretAuthenticateResponse struct {
 	ID                                     string `json:"id"`
 	// The URL to authenticate the secret         
 	URL                                    string `json:"url"`
+}
+
+type ContactSecretMintParams struct {
+	// The ID of the contact the secret belongs to       
+	ContactID                                     string `json:"contactId"`
+	// The ID of the secret to mint                      
+	SecretID                                      string `json:"secretId"`
+}
+
+type ContactSecretMintResponse struct {
+	// Token expiry as a unix timestamp in ms, or null         
+	ExpiresAt                                         *float64 `json:"expiresAt,omitempty"`
+	// The usable token to send to the provider                
+	Token                                             string   `json:"token"`
+}
+
+type ContactSecretProxyParams struct {
+	// The ID of the contact the secret belongs to       
+	ContactID                                     string `json:"contactId"`
+	// The ID of the secret to inject                    
+	SecretID                                      string `json:"secretId"`
+}
+
+type ContactSecretProxyRequest struct {
+	// The request body                                                
+	Body                                             *string           `json:"body,omitempty"`
+	// The request headers (may reference the secret)                  
+	Headers                                          map[string]string `json:"headers,omitempty"`
+	// The HTTP method                                                 
+	Method                                           *string           `json:"method,omitempty"`
+	// The destination URL                                             
+	URL                                              string            `json:"url"`
 }
 
 type ContactSecretRevokeParams struct {
@@ -24380,6 +24516,34 @@ type SecretFetchResponse struct {
 	UpdatedAt                                          float64                        `json:"updatedAt"`
 	// The visibility of the secret                                                   
 	Visibility                                         *SecretFetchResponseVisibility `json:"visibility,omitempty"`
+}
+
+type SecretMintParams struct {
+	// The ID of the secret to mint       
+	SecretID                       string `json:"secretId"`
+}
+
+type SecretMintResponse struct {
+	// Token expiry as a unix timestamp in ms, or null         
+	ExpiresAt                                         *float64 `json:"expiresAt,omitempty"`
+	// The usable token to send to the provider                
+	Token                                             string   `json:"token"`
+}
+
+type SecretProxyParams struct {
+	// The ID of the secret to inject       
+	SecretID                         string `json:"secretId"`
+}
+
+type SecretProxyRequest struct {
+	// The request body                                                
+	Body                                             *string           `json:"body,omitempty"`
+	// The request headers (may reference the secret)                  
+	Headers                                          map[string]string `json:"headers,omitempty"`
+	// The HTTP method                                                 
+	Method                                           *string           `json:"method,omitempty"`
+	// The destination URL                                             
+	URL                                              string            `json:"url"`
 }
 
 type SecretRevokeParams struct {

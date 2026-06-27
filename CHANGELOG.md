@@ -7,6 +7,19 @@ this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 For releases prior to `0.2.0`, see the auto-generated notes on the
 [GitHub Releases](https://github.com/chatbotkit/go-sdk/releases) page.
 
+## [0.4.0] - 2026-06-27
+
+### Added
+
+- Secret token minting and request proxying. `SecretClient.Mint` /
+  `ContactSecretClient.Mint` mint a usable token from a secret (`oauth`/`jwt`
+  secrets only; owner-only) and return `{ Token, ExpiresAt }`.
+  `SecretClient.Proxy` / `ContactSecretClient.Proxy` proxy a request through a
+  secret — the credential is injected server-side (it never leaves the platform)
+  and the raw upstream `*http.Response` is returned verbatim. A non-2xx status
+  (including `409 authorization_required`) is returned, not an error; the caller
+  closes `resp.Body`. Backed by the new internal `httpclient.DoRaw`.
+
 ## [0.3.0] - 2026-06-26
 
 ### Added
