@@ -124,13 +124,14 @@ func (c *SecretClient) Mint(ctx context.Context, secretID string) (*types.Secret
 }
 
 // Proxy proxies a request through the secret, injecting it server-side. It
-// returns the raw upstream HTTP response; a non-2xx status (including
-// 409 authorization_required) is returned, not an error. The caller must close
-// resp.Body.
+// returns the upstream HTTP response as-is (success or error). The one exception
+// is a CBK authorization_required signal, which is returned as an
+// *AuthorizationRequiredError carrying the URL the user must visit. The caller
+// must close resp.Body.
 func (c *SecretClient) Proxy(ctx context.Context, secretID string, req types.SecretProxyRequest) (*http.Response, error) {
 	path := fmt.Sprintf("/api/v1/secret/%s/proxy", secretID)
 
-	return c.httpClient.DoRaw(ctx, httpclient.RequestOptions{
+	return c.httpClient.DoProxy(ctx, httpclient.RequestOptions{
 		Method: http.MethodPost,
 		Path:   path,
 		Body:   req,

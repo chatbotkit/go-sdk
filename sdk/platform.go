@@ -15,13 +15,10 @@ type PlatformClient struct {
 	httpClient *httpclient.Client
 	Ability    *PlatformAbilityClient
 	Action     *PlatformActionClient
-	Doc        *PlatformDocClient
 	Example    *PlatformExampleClient
-	Manual     *PlatformManualClient
 	Model      *PlatformModelClient
 	Report     *PlatformReportClient
 	Secret     *PlatformSecretClient
-	Tutorial   *PlatformTutorialClient
 }
 
 // NewPlatformClient creates a new PlatformClient.
@@ -30,13 +27,10 @@ func NewPlatformClient(httpClient *httpclient.Client) *PlatformClient {
 		httpClient: httpClient,
 		Ability:    NewPlatformAbilityClient(httpClient),
 		Action:     NewPlatformActionClient(httpClient),
-		Doc:        NewPlatformDocClient(httpClient),
 		Example:    NewPlatformExampleClient(httpClient),
-		Manual:     NewPlatformManualClient(httpClient),
 		Model:      NewPlatformModelClient(httpClient),
 		Report:     NewPlatformReportClient(httpClient),
 		Secret:     NewPlatformSecretClient(httpClient),
-		Tutorial:   NewPlatformTutorialClient(httpClient),
 	}
 }
 
@@ -86,43 +80,6 @@ func (c *PlatformActionClient) List(ctx context.Context, opts *types.PlatformAct
 	return &result, nil
 }
 
-type PlatformDocClient struct{ httpClient *httpclient.Client }
-
-func NewPlatformDocClient(httpClient *httpclient.Client) *PlatformDocClient {
-	return &PlatformDocClient{httpClient: httpClient}
-}
-
-func (c *PlatformDocClient) List(ctx context.Context, opts *types.PlatformDocListParams) (*types.PlatformDocListResponse, error) {
-	query := url.Values{}
-	if opts != nil {
-		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
-	}
-
-	var result types.PlatformDocListResponse
-	if err := c.httpClient.Get(ctx, "/api/v1/platform/doc/list", query, &result); err != nil {
-		return nil, err
-	}
-	return &result, nil
-}
-
-func (c *PlatformDocClient) Search(ctx context.Context, req types.PlatformDocsSearchRequest) (*types.PlatformDocsSearchResponse, error) {
-	var result types.PlatformDocsSearchResponse
-	if err := c.httpClient.Post(ctx, "/api/v1/platform/doc/search", req, &result); err != nil {
-		return nil, err
-	}
-	return &result, nil
-}
-
-func (c *PlatformDocClient) Fetch(ctx context.Context, docID string) (*types.PlatformDocFetchResponse, error) {
-	path := fmt.Sprintf("/api/v1/platform/doc/%s/fetch", docID)
-
-	var result types.PlatformDocFetchResponse
-	if err := c.httpClient.Get(ctx, path, nil, &result); err != nil {
-		return nil, err
-	}
-	return &result, nil
-}
-
 type PlatformExampleClient struct{ httpClient *httpclient.Client }
 
 func NewPlatformExampleClient(httpClient *httpclient.Client) *PlatformExampleClient {
@@ -165,43 +122,6 @@ func (c *PlatformExampleClient) Clone(ctx context.Context, exampleID string) (*t
 
 	var result types.PlatformExampleCloneResponse
 	if err := c.httpClient.Post(ctx, path, types.PlatformExampleCloneRequest{}, &result); err != nil {
-		return nil, err
-	}
-	return &result, nil
-}
-
-type PlatformManualClient struct{ httpClient *httpclient.Client }
-
-func NewPlatformManualClient(httpClient *httpclient.Client) *PlatformManualClient {
-	return &PlatformManualClient{httpClient: httpClient}
-}
-
-func (c *PlatformManualClient) List(ctx context.Context, opts *types.PlatformManualListParams) (*types.PlatformManualListResponse, error) {
-	query := url.Values{}
-	if opts != nil {
-		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
-	}
-
-	var result types.PlatformManualListResponse
-	if err := c.httpClient.Get(ctx, "/api/v1/platform/manual/list", query, &result); err != nil {
-		return nil, err
-	}
-	return &result, nil
-}
-
-func (c *PlatformManualClient) Search(ctx context.Context, req types.PlatformManualsSearchRequest) (*types.PlatformManualsSearchResponse, error) {
-	var result types.PlatformManualsSearchResponse
-	if err := c.httpClient.Post(ctx, "/api/v1/platform/manual/search", req, &result); err != nil {
-		return nil, err
-	}
-	return &result, nil
-}
-
-func (c *PlatformManualClient) Fetch(ctx context.Context, manualID string) (*types.PlatformManualFetchResponse, error) {
-	path := fmt.Sprintf("/api/v1/platform/manual/%s/fetch", manualID)
-
-	var result types.PlatformManualFetchResponse
-	if err := c.httpClient.Get(ctx, path, nil, &result); err != nil {
 		return nil, err
 	}
 	return &result, nil
@@ -285,43 +205,6 @@ func (c *PlatformSecretClient) List(ctx context.Context, opts *types.PlatformSec
 func (c *PlatformSecretClient) Search(ctx context.Context, req types.PlatformSecretsSearchRequest) (*types.PlatformSecretsSearchResponse, error) {
 	var result types.PlatformSecretsSearchResponse
 	if err := c.httpClient.Post(ctx, "/api/v1/platform/secret/search", req, &result); err != nil {
-		return nil, err
-	}
-	return &result, nil
-}
-
-type PlatformTutorialClient struct{ httpClient *httpclient.Client }
-
-func NewPlatformTutorialClient(httpClient *httpclient.Client) *PlatformTutorialClient {
-	return &PlatformTutorialClient{httpClient: httpClient}
-}
-
-func (c *PlatformTutorialClient) List(ctx context.Context, opts *types.PlatformTutorialListParams) (*types.PlatformTutorialListResponse, error) {
-	query := url.Values{}
-	if opts != nil {
-		query = params.BuildListQuery(opts.Cursor, opts.Order, opts.Take, opts.Meta)
-	}
-
-	var result types.PlatformTutorialListResponse
-	if err := c.httpClient.Get(ctx, "/api/v1/platform/tutorial/list", query, &result); err != nil {
-		return nil, err
-	}
-	return &result, nil
-}
-
-func (c *PlatformTutorialClient) Search(ctx context.Context, req types.PlatformTutorialsSearchRequest) (*types.PlatformTutorialsSearchResponse, error) {
-	var result types.PlatformTutorialsSearchResponse
-	if err := c.httpClient.Post(ctx, "/api/v1/platform/tutorial/search", req, &result); err != nil {
-		return nil, err
-	}
-	return &result, nil
-}
-
-func (c *PlatformTutorialClient) Fetch(ctx context.Context, tutorialID string) (*types.PlatformTutorialFetchResponse, error) {
-	path := fmt.Sprintf("/api/v1/platform/tutorial/%s/fetch", tutorialID)
-
-	var result types.PlatformTutorialFetchResponse
-	if err := c.httpClient.Get(ctx, path, nil, &result); err != nil {
 		return nil, err
 	}
 	return &result, nil

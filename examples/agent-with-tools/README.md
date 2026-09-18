@@ -13,11 +13,11 @@ An interactive chatbot that registers custom tools the AI can call during a conv
 
 ```bash
 # Option 1: .env file
-echo 'CHATBOTKIT_API_SECRET=your-api-key' > .env
+echo 'CHATBOTKIT_API_TOKEN=your-api-token' > .env
 go run .
 
 # Option 2: environment variable
-export CHATBOTKIT_API_SECRET="your-api-key"
+export CHATBOTKIT_API_TOKEN="your-api-token"
 go run .
 ```
 

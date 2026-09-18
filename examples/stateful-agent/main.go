@@ -13,7 +13,7 @@
 //
 // Usage:
 //
-//	export CHATBOTKIT_API_SECRET="your-api-key"
+//	export CHATBOTKIT_API_TOKEN="your-api-token"
 //	go run ./examples/stateful-agent
 package main
 
@@ -31,14 +31,14 @@ import (
 func main() {
 	godotenv.Load()
 
-	apiSecret := os.Getenv("CHATBOTKIT_API_SECRET")
-	if apiSecret == "" {
-		fmt.Fprintln(os.Stderr, "Error: CHATBOTKIT_API_SECRET environment variable is not set")
+	apiToken := os.Getenv("CHATBOTKIT_API_TOKEN")
+	if apiToken == "" {
+		fmt.Fprintln(os.Stderr, "Error: CHATBOTKIT_API_TOKEN environment variable is not set")
 		os.Exit(1)
 	}
 
 	ctx := context.Background()
-	client := sdk.New(sdk.Options{Secret: apiSecret})
+	client := sdk.New(sdk.Options{Token: apiToken})
 
 	tools := agent.Tools{
 		"get_weather": {

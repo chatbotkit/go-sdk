@@ -20,7 +20,7 @@
 //
 // Usage:
 //
-//	export CHATBOTKIT_API_SECRET="your-api-key"
+//	export CHATBOTKIT_API_TOKEN="your-api-token"
 //	go run ./examples/stateless-agent
 package main
 
@@ -37,13 +37,13 @@ import (
 func main() {
 	godotenv.Load()
 
-	apiSecret := os.Getenv("CHATBOTKIT_API_SECRET")
-	if apiSecret == "" {
-		fmt.Fprintln(os.Stderr, "Error: CHATBOTKIT_API_SECRET environment variable is not set")
+	apiToken := os.Getenv("CHATBOTKIT_API_TOKEN")
+	if apiToken == "" {
+		fmt.Fprintln(os.Stderr, "Error: CHATBOTKIT_API_TOKEN environment variable is not set")
 		os.Exit(1)
 	}
 
-	client := sdk.New(sdk.Options{Secret: apiSecret})
+	client := sdk.New(sdk.Options{Token: apiToken})
 
 	// Define simple tools that the AI can call
 	tools := agent.Tools{

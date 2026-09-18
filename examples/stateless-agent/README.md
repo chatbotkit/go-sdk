@@ -21,7 +21,7 @@ Demonstrates manually driving `agent.CompleteWithTools` one iteration at a time,
 ## Usage
 
 ```bash
-export CHATBOTKIT_API_SECRET="your-api-key"
+export CHATBOTKIT_API_TOKEN="your-api-token"
 go run .
 ```
 

@@ -197,12 +197,15 @@ func (c *ContactSecretClient) Mint(ctx context.Context, contactID, secretID stri
 }
 
 // Proxy proxies a request through a contact's secret, injecting it server-side.
-// It returns the raw upstream HTTP response; a non-2xx status is returned, not
-// an error. The caller must close resp.Body.
+// It returns the upstream HTTP response as-is (success or error). The one
+// exception is a CBK authorization_required signal - common here, since the
+// contact may not have authenticated the secret yet - which is returned as an
+// *AuthorizationRequiredError carrying the URL the user must visit. The caller
+// must close resp.Body.
 func (c *ContactSecretClient) Proxy(ctx context.Context, contactID, secretID string, req types.ContactSecretProxyRequest) (*http.Response, error) {
 	path := fmt.Sprintf("/api/v1/contact/%s/secret/%s/proxy", contactID, secretID)
 
-	return c.httpClient.DoRaw(ctx, httpclient.RequestOptions{
+	return c.httpClient.DoProxy(ctx, httpclient.RequestOptions{
 		Method: http.MethodPost,
 		Path:   path,
 		Body:   req,

@@ -20,41 +20,41 @@ package types
 
 // CompleteMessageType is the role of a message sent in a conversation complete
 // request.
-type CompleteMessageType = Type2
+type CompleteMessageType = Type12
 
 const (
 	// CompleteMessageRoleUser marks a sent message authored by the end user.
-	CompleteMessageRoleUser = MischievousUser
+	CompleteMessageRoleUser = AmbitiousUser
 	// CompleteMessageRoleBot marks a sent message authored by the bot.
-	CompleteMessageRoleBot = MischievousBot
+	CompleteMessageRoleBot = AmbitiousBot
 )
 
 // --- Conversation message list item role ---
 
 // MessageItemType is the role of a message returned from a conversation message
 // listing.
-type MessageItemType = HilariousType
+type MessageItemType = Type22
 
 const (
 	// MessageItemRoleUser marks a listed message authored by the end user.
-	MessageItemRoleUser = HilariousUser
+	MessageItemRoleUser = User1
 	// MessageItemRoleBot marks a listed message authored by the bot.
-	MessageItemRoleBot = HilariousBot
+	MessageItemRoleBot = Bot1
 )
 
 // --- Conversation complete request (stateful) extensions ---
 
 type (
 	// CompleteDataset is an inline dataset on a conversation complete request.
-	CompleteDataset = AmbitiousDataset
+	CompleteDataset = StickyDataset
 	// CompleteRecord is a record within a CompleteDataset.
-	CompleteRecord = IndecentRecord
+	CompleteRecord = FluffyRecord
 	// CompleteFeature is an inline feature on a conversation complete request.
-	CompleteFeature = IndecentFeature
+	CompleteFeature = FluffyFeature
 	// CompleteSkillset is an inline skillset on a conversation complete request.
-	CompleteSkillset = AmbitiousSkillset
+	CompleteSkillset = StickySkillset
 	// CompleteAbility is an ability within a CompleteSkillset.
-	CompleteAbility = IndecentAbility
+	CompleteAbility = FluffyAbility
 )
 
 // --- Conversation complete request (stateful) functions ---
@@ -62,10 +62,10 @@ type (
 type (
 	// CompleteFunctionParameters is the JSON-schema parameters of a function on
 	// a conversation complete request.
-	CompleteFunctionParameters = IndigoParameters
+	CompleteFunctionParameters = FluffyParameters
 	// CompleteFunctionResult is the result configuration of a function on a
 	// conversation complete request.
-	CompleteFunctionResult = FriskyResult
+	CompleteFunctionResult = AmbitiousResult
 )
 
 // CompleteFunctionParametersTypeObject is the "object" value of a function
@@ -77,17 +77,17 @@ const CompleteFunctionParametersTypeObject = IndigoObject
 type (
 	// MessageCompleteDataset is an inline dataset on a conversation message
 	// complete request.
-	MessageCompleteDataset = TentacledDataset
+	MessageCompleteDataset = CunningDataset
 	// MessageCompleteRecord is a record within a MessageCompleteDataset.
-	MessageCompleteRecord = PurpleRecord
+	MessageCompleteRecord = HilariousRecord
 	// MessageCompleteFeature is an inline feature on a conversation message
 	// complete request.
-	MessageCompleteFeature = PurpleFeature
+	MessageCompleteFeature = HilariousFeature
 	// MessageCompleteSkillset is an inline skillset on a conversation message
 	// complete request.
-	MessageCompleteSkillset = TentacledSkillset
+	MessageCompleteSkillset = CunningSkillset
 	// MessageCompleteAbility is an ability within a MessageCompleteSkillset.
-	MessageCompleteAbility = PurpleAbility
+	MessageCompleteAbility = HilariousAbility
 )
 
 // --- Conversation message complete request (stateless) functions ---
@@ -95,12 +95,29 @@ type (
 type (
 	// MessageCompleteFunctionParameters is the JSON-schema parameters of a
 	// function on a conversation message complete request.
-	MessageCompleteFunctionParameters = PurpleParameters
+	MessageCompleteFunctionParameters = IndecentParameters
 	// MessageCompleteFunctionResult is the result configuration of a function
 	// on a conversation message complete request.
-	MessageCompleteFunctionResult = HilariousResult
+	MessageCompleteFunctionResult = MischievousResult
 )
 
 // MessageCompleteFunctionParametersTypeObject is the "object" value of a
 // function parameters schema type on a conversation message complete request.
-const MessageCompleteFunctionParametersTypeObject = PurpleObject
+const MessageCompleteFunctionParametersTypeObject = CunningObject
+
+// --- Decision question and answer kinds ---
+
+// DecisionQuestionKind is the type of a decision question and of its answer.
+type DecisionQuestionKind = QuestionType
+
+const (
+	// DecisionQuestionKindBoolean is a yes or no question.
+	DecisionQuestionKindBoolean = PurpleBoolean
+	// DecisionQuestionKindChoice is a choice between several named options.
+	DecisionQuestionKindChoice = PurpleChoice
+	// DecisionQuestionKindScore is a level on an ordered scale.
+	DecisionQuestionKindScore = PurpleScore
+)
+
+// DecisionCreateAnswer is an answer on a decision create response.
+type DecisionCreateAnswer = Answer

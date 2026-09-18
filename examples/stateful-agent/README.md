@@ -21,7 +21,7 @@ Demonstrates the same manually-driven `agent.CompleteWithTools` loop as the stat
 ## Usage
 
 ```bash
-export CHATBOTKIT_API_SECRET="your-api-key"
+export CHATBOTKIT_API_TOKEN="your-api-token"
 go run .
 ```
 

@@ -12,7 +12,7 @@ An autonomous agent that runs a task end-to-end without interactive input, using
 ## Usage
 
 ```bash
-export CHATBOTKIT_API_SECRET="your-api-key"
+export CHATBOTKIT_API_TOKEN="your-api-token"
 
 # Run with a custom task
 go run . "Create a file called hello.txt with the content 'Hello, World!'"

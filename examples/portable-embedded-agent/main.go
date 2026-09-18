@@ -87,7 +87,7 @@ func main() {
 	}
 	fmt.Println()
 
-	mintClient := sdk.New(sdk.Options{Secret: sessionMintToken})
+	mintClient := sdk.New(sdk.Options{Token: sessionMintToken})
 	session, err := createTemporarySession(ctx, mintClient, botID)
 	if err != nil {
 		exitf("failed to create temporary bot session: %v", err)
@@ -98,7 +98,7 @@ func main() {
 	fmt.Println("Expires:", formatMillis(session.ExpiresAt))
 	fmt.Println()
 
-	sessionClient := sdk.New(sdk.Options{Secret: session.Token})
+	sessionClient := sdk.New(sdk.Options{Token: session.Token})
 	if err := runPortableAgent(ctx, sessionClient, session.ConversationID, task, skillsFeature); err != nil {
 		exitf("agent failed: %v", err)
 	}
