@@ -5,7 +5,7 @@
 //
 // Example usage:
 //
-//	client := sdk.New(sdk.Options{Secret: "your-api-key"})
+//	client := sdk.New(sdk.Options{Token: "your-api-token"})
 //
 //	result, err := agent.Complete(ctx, client, agent.CompleteOptions{
 //		Model: "gpt-4o",
@@ -1302,11 +1302,12 @@ func convertMessageExtensions(extensions *types.ConversationCompleteRequestExten
 				converted.Abilities = make([]types.MessageCompleteAbility, 0, len(skillset.Abilities))
 				for _, ability := range skillset.Abilities {
 					converted.Abilities = append(converted.Abilities, types.MessageCompleteAbility{
-						Description: ability.Description,
-						Instruction: ability.Instruction,
-						Meta:        ability.Meta,
-						Name:        ability.Name,
-						SecretID:    ability.SecretID,
+						Description:    ability.Description,
+						Instruction:    ability.Instruction,
+						Meta:           ability.Meta,
+						Name:           ability.Name,
+						LinkedSecretID: ability.LinkedSecretID,
+						LinkedSpaceID:  ability.LinkedSpaceID,
 					})
 				}
 			}

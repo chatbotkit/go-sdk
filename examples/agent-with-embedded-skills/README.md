@@ -21,7 +21,7 @@ Add more skills by creating a new subdirectory under `skills/` with a `SKILL.md`
 ## Usage
 
 ```bash
-export CHATBOTKIT_API_SECRET="your-api-key"
+export CHATBOTKIT_API_TOKEN="your-api-token"
 
 # Run with a custom task
 go run . "Review this Go function: func add(a, b int) int { return a - b }"

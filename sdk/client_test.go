@@ -51,14 +51,14 @@ func TestNewClient(t *testing.T) {
 	if client.Memory == nil {
 		t.Error("expected non-nil Memory client")
 	}
-	if client.Partner == nil {
-		t.Error("expected non-nil Partner client")
+	if client.Decision == nil {
+		t.Error("expected non-nil Decision client")
 	}
-	if client.Partner.User == nil {
-		t.Error("expected non-nil Partner.User client")
+	if client.User == nil {
+		t.Error("expected non-nil User client")
 	}
-	if client.Partner.User.Token == nil {
-		t.Error("expected non-nil Partner.User.Token client")
+	if client.User.Token == nil {
+		t.Error("expected non-nil User.Token client")
 	}
 	if client.Platform == nil {
 		t.Error("expected non-nil Platform client")
@@ -71,15 +71,6 @@ func TestNewClient(t *testing.T) {
 	}
 	if client.Platform.Action == nil {
 		t.Error("expected non-nil Platform.Action client")
-	}
-	if client.Platform.Doc == nil {
-		t.Error("expected non-nil Platform.Doc client")
-	}
-	if client.Platform.Manual == nil {
-		t.Error("expected non-nil Platform.Manual client")
-	}
-	if client.Platform.Tutorial == nil {
-		t.Error("expected non-nil Platform.Tutorial client")
 	}
 	if client.Platform.Secret == nil {
 		t.Error("expected non-nil Platform.Secret client")

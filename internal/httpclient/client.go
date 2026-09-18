@@ -10,6 +10,7 @@ import (
 	"io"
 	"net/http"
 	"net/url"
+	"strings"
 	"time"
 )
 
@@ -96,6 +97,8 @@ type RequestOptions struct {
 type Error struct {
 	Message string `json:"message"`
 	Code    string `json:"code"`
+	// Status is the HTTP status code (0 if unknown).
+	Status int `json:"-"`
 }
 
 func (e *Error) Error() string {
@@ -105,15 +108,75 @@ func (e *Error) Error() string {
 	return e.Message
 }
 
+// AuthorizationRequiredError is returned when a secret or connection has not
+// been authenticated yet. URL is the address the user must visit to authorize.
+type AuthorizationRequiredError struct {
+	Message string
+	// URL is the address the user must visit to authorize.
+	URL string
+	// Status is the HTTP status code.
+	Status int
+}
+
+func (e *AuthorizationRequiredError) Error() string {
+	if e.URL != "" {
+		return fmt.Sprintf("%s (authorize at %s)", e.Message, e.URL)
+	}
+	return e.Message
+}
+
+// parseError converts a non-2xx response body into a typed error. A CBK
+// authorization_required signal becomes an *AuthorizationRequiredError carrying
+// the authorize URL; anything else becomes a generic *Error.
+func parseError(status int, body []byte) error {
+	var parsed struct {
+		Error   string `json:"error"`
+		Message string `json:"message"`
+		Code    string `json:"code"`
+		URL     string `json:"url"`
+	}
+
+	if err := json.Unmarshal(body, &parsed); err != nil {
+		return &Error{
+			Message: fmt.Sprintf("HTTP %d: %s", status, string(body)),
+			Code:    fmt.Sprintf("HTTP_%d", status),
+			Status:  status,
+		}
+	}
+
+	if parsed.Error == "authorization_required" {
+		return &AuthorizationRequiredError{
+			Message: parsed.Message,
+			URL:     parsed.URL,
+			Status:  status,
+		}
+	}
+
+	return &Error{Message: parsed.Message, Code: parsed.Code, Status: status}
+}
+
+// resolveURL joins a request path onto the base URL. Any path on the base URL
+// is kept as a prefix, so a platform served under a sub-path (for example
+// http://localhost:3000/cbk) is reachable.
+func (c *Client) resolveURL(path string) (*url.URL, error) {
+	u, err := url.Parse(c.BaseURL)
+	if err != nil {
+		return nil, fmt.Errorf("invalid base URL: %w", err)
+	}
+
+	u.Path = strings.TrimRight(u.Path, "/") + "/" + strings.TrimLeft(path, "/")
+
+	return u, nil
+}
+
 // Do executes an HTTP request and decodes the response.
 func (c *Client) Do(ctx context.Context, opts RequestOptions, result interface{}) error {
 	// Build URL
-	u, err := url.Parse(c.BaseURL)
+	u, err := c.resolveURL(opts.Path)
 	if err != nil {
-		return fmt.Errorf("invalid base URL: %w", err)
+		return err
 	}
 
-	u.Path = opts.Path
 	if opts.Query != nil {
 		u.RawQuery = opts.Query.Encode()
 	}
@@ -182,14 +245,7 @@ func (c *Client) Do(ctx context.Context, opts RequestOptions, result interface{}
 
 	// Check for errors
 	if resp.StatusCode >= 400 {
-		var apiErr Error
-		if err := json.Unmarshal(respBody, &apiErr); err != nil {
-			return &Error{
-				Message: fmt.Sprintf("HTTP %d: %s", resp.StatusCode, string(respBody)),
-				Code:    fmt.Sprintf("HTTP_%d", resp.StatusCode),
-			}
-		}
-		return &apiErr
+		return parseError(resp.StatusCode, respBody)
 	}
 
 	// Decode response
@@ -207,12 +263,11 @@ func (c *Client) Do(ctx context.Context, opts RequestOptions, result interface{}
 // caller is responsible for closing resp.Body. It is intended for passthrough
 // endpoints such as the secret proxy.
 func (c *Client) DoRaw(ctx context.Context, opts RequestOptions) (*http.Response, error) {
-	u, err := url.Parse(c.BaseURL)
+	u, err := c.resolveURL(opts.Path)
 	if err != nil {
-		return nil, fmt.Errorf("invalid base URL: %w", err)
+		return nil, err
 	}
 
-	u.Path = opts.Path
 	if opts.Query != nil {
 		u.RawQuery = opts.Query.Encode()
 	}
@@ -260,6 +315,58 @@ func (c *Client) DoRaw(ctx context.Context, opts RequestOptions) (*http.Response
 	}
 
 	return c.HTTPClient.Do(req)
+}
+
+// handleProxyResponse inspects a proxied response. Successful and non-JSON error
+// responses are returned untouched (streaming bodies preserved); a CBK
+// authorization_required signal becomes an *AuthorizationRequiredError, while a
+// genuine upstream error is returned as-is for the caller to handle.
+func handleProxyResponse(resp *http.Response) (*http.Response, error) {
+	if resp.StatusCode < 400 {
+		return resp, nil
+	}
+
+	if !strings.Contains(resp.Header.Get("Content-Type"), "application/json") {
+		return resp, nil
+	}
+
+	body, err := io.ReadAll(resp.Body)
+	resp.Body.Close()
+	if err != nil {
+		return resp, nil
+	}
+
+	// restore the consumed body so the caller can still read it
+	resp.Body = io.NopCloser(bytes.NewReader(body))
+
+	var parsed struct {
+		Error   string `json:"error"`
+		Message string `json:"message"`
+		URL     string `json:"url"`
+	}
+
+	if json.Unmarshal(body, &parsed) == nil && parsed.Error == "authorization_required" {
+		return nil, &AuthorizationRequiredError{
+			Message: parsed.Message,
+			URL:     parsed.URL,
+			Status:  resp.StatusCode,
+		}
+	}
+
+	return resp, nil
+}
+
+// DoProxy performs a passthrough request and surfaces CBK control responses.
+// Successful and upstream-error responses are returned as-is; an
+// authorization_required signal is returned as an *AuthorizationRequiredError.
+// The caller must close resp.Body when a response is returned.
+func (c *Client) DoProxy(ctx context.Context, opts RequestOptions) (*http.Response, error) {
+	resp, err := c.DoRaw(ctx, opts)
+	if err != nil {
+		return nil, err
+	}
+
+	return handleProxyResponse(resp)
 }
 
 // Get performs a GET request.
@@ -323,12 +430,11 @@ func (c *Client) Stream(ctx context.Context, opts StreamOptions) (<-chan StreamE
 		defer close(errs)
 
 		// Build URL
-		u, err := url.Parse(c.BaseURL)
+		u, err := c.resolveURL(opts.Path)
 		if err != nil {
-			errs <- fmt.Errorf("invalid base URL: %w", err)
+			errs <- err
 			return
 		}
-		u.Path = opts.Path
 
 		// Build request body
 		var body io.Reader

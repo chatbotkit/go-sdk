@@ -5,7 +5,7 @@ This directory contains example applications demonstrating how to use the ChatBo
 ## Prerequisites
 
 - Go 1.21 or later
-- A ChatBotKit API key (get one at [chatbotkit.com](https://chatbotkit.com))
+- A ChatBotKit API token (get one at [chatbotkit.com](https://chatbotkit.com))
 
 ## Examples
 
@@ -24,11 +24,11 @@ A simple interactive chatbot that demonstrates:
 cd examples/chatbot
 
 # Option 1: Use a .env file
-echo 'CHATBOTKIT_API_SECRET=your-api-key' > .env
+echo 'CHATBOTKIT_API_TOKEN=your-api-token' > .env
 go run main.go
 
 # Option 2: Use environment variable
-export CHATBOTKIT_API_SECRET="your-api-key"
+export CHATBOTKIT_API_TOKEN="your-api-token"
 go run main.go
 ```
 
@@ -61,8 +61,8 @@ An autonomous agent that completes tasks end-to-end without interactive input:
 ```bash
 cd examples/agent
 
-# Set your API key
-export CHATBOTKIT_API_SECRET="your-api-key"
+# Set your API token
+export CHATBOTKIT_API_TOKEN="your-api-token"
 
 # Run with a custom task
 go run main.go "Create a file called hello.txt with the content 'Hello, World!'"
@@ -115,11 +115,11 @@ An example demonstrating interactive chat with custom tool registration:
 cd examples/agent-with-tools
 
 # Option 1: Use a .env file
-echo 'CHATBOTKIT_API_SECRET=your-api-key' > .env
+echo 'CHATBOTKIT_API_TOKEN=your-api-token' > .env
 go run main.go
 
 # Option 2: Use environment variable
-export CHATBOTKIT_API_SECRET="your-api-key"
+export CHATBOTKIT_API_TOKEN="your-api-token"
 go run main.go
 ```
 
@@ -185,7 +185,7 @@ An autonomous agent that ships with skill definitions baked into the binary usin
 ```bash
 cd examples/agent-with-embedded-skills
 
-export CHATBOTKIT_API_SECRET="your-api-key"
+export CHATBOTKIT_API_TOKEN="your-api-token"
 
 # Run with a custom task
 go run . "Review this Go function: func add(a, b int) int { return a - b }"
@@ -233,8 +233,8 @@ Demonstrates how to manually drive `agent.CompleteWithTools`, giving you full co
 ```bash
 cd examples/stateless-agent
 
-# Set your API key
-export CHATBOTKIT_API_SECRET="your-api-key"
+# Set your API token
+export CHATBOTKIT_API_TOKEN="your-api-token"
 
 # Run the example
 go run main.go
@@ -285,8 +285,8 @@ Demonstrates the same manually-driven `agent.CompleteWithTools` pattern against 
 ```bash
 cd examples/stateful-agent
 
-# Set your API key
-export CHATBOTKIT_API_SECRET="your-api-key"
+# Set your API token
+export CHATBOTKIT_API_TOKEN="your-api-token"
 
 # Run the example
 go run main.go
@@ -316,7 +316,7 @@ for iterationCount < maxIterations {
 You can also run examples from the SDK root directory:
 
 ```bash
-export CHATBOTKIT_API_SECRET="your-api-key"
+export CHATBOTKIT_API_TOKEN="your-api-token"
 go run ./examples/chatbot
 go run ./examples/agent "Create a file called test.txt"
 go run ./examples/agent-with-tools
@@ -329,7 +329,7 @@ go run ./examples/stateful-agent
 
 | Variable                | Description             | Required |
 | ----------------------- | ----------------------- | -------- |
-| `CHATBOTKIT_API_SECRET` | Your ChatBotKit API key | Yes      |
+| `CHATBOTKIT_API_TOKEN` | Your ChatBotKit API token | Yes      |
 
 ## Creating Your Own Chatbot
 

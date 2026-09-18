@@ -1,6 +1,5 @@
-[![ChatBotKit](https://img.shields.io/badge/credits-ChatBotKit-blue.svg)](https://chatbotkit.com)
 [![CBK.AI](https://img.shields.io/badge/credits-CBK.AI-blue.svg)](https://cbk.ai)
-[![Email](https://img.shields.io/badge/Email-Support-blue?logo=mail.ru)](mailto:support@chatbotkit.com)
+[![Email](https://img.shields.io/badge/Email-Support-blue?logo=mail.ru)](mailto:support@cbk.ai)
 [![Discord](https://img.shields.io/badge/Discord-Support-blue?logo=discord)](https://go.cbk.ai/discord)
 [![Go Reference](https://pkg.go.dev/badge/github.com/chatbotkit/go-sdk.svg)](https://pkg.go.dev/github.com/chatbotkit/go-sdk)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/chatbotkit.svg?logo=twitter)](https://twitter.com/chatbotkit)
@@ -58,9 +57,9 @@ import (
 )
 
 func main() {
-	// Create a client with your API key
+	// Create a client with your API token
 	client := sdk.New(sdk.Options{
-		Secret: "your-api-key",
+		Token: "your-api-token",
 	})
 
 	// Run a simple conversation
@@ -95,7 +94,7 @@ The main `sdk` package provides access to all ChatBotKit API resources:
 
 ```go
 client := sdk.New(sdk.Options{
-	Secret:      "your-api-key",
+	Token:      "your-api-token",
 	BaseURL:     "https://api.chatbotkit.com", // optional
 	RunAsUserID: "user-id",                    // optional
 	Timezone:    "America/New_York",           // optional
@@ -132,7 +131,7 @@ client.Integration.McpServer     // MCP server integrations
 client.Integration.Microsoftteams        // Microsoft Teams integrations
 client.Integration.GoogleChat    // Google Chat integrations
 client.Memory                    // Memory management
-client.Partner                   // Partner operations
+client.User                      // User operations
 client.Platform                  // Platform content and catalogue access
 client.Policy                    // Policy management
 client.Portal                    // Portal management
@@ -565,7 +564,7 @@ var resp types.BotCreateResponse
 To regenerate the types from the latest API spec:
 
 ```bash
-cd sites/main
+cd platform/platform
 pnpm script:generate-api-types --output ../../sdks/go/types/types.go --package types
 ```
 

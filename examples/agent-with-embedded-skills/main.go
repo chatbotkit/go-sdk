@@ -11,7 +11,7 @@
 //
 // Usage:
 //
-//	export CHATBOTKIT_API_SECRET="your-api-key"
+//	export CHATBOTKIT_API_TOKEN="your-api-token"
 //	go run . "Review this Go function: func add(a, b int) int { return a - b }"
 //
 // Or run without arguments to use a default demo task:
@@ -41,9 +41,9 @@ var skillsFS embed.FS
 func main() {
 	godotenv.Load()
 
-	apiSecret := os.Getenv("CHATBOTKIT_API_SECRET")
-	if apiSecret == "" {
-		fmt.Fprintln(os.Stderr, "Error: CHATBOTKIT_API_SECRET environment variable is not set")
+	apiToken := os.Getenv("CHATBOTKIT_API_TOKEN")
+	if apiToken == "" {
+		fmt.Fprintln(os.Stderr, "Error: CHATBOTKIT_API_TOKEN environment variable is not set")
 		os.Exit(1)
 	}
 
@@ -82,7 +82,7 @@ fast compilation.`
 	}
 	fmt.Println()
 
-	client := sdk.New(sdk.Options{Secret: apiSecret})
+	client := sdk.New(sdk.Options{Token: apiToken})
 	ctx := context.Background()
 
 	tools := agent.DefaultTools()

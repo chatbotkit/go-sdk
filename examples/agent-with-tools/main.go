@@ -8,7 +8,7 @@
 //
 // Usage:
 //
-//	export CHATBOTKIT_API_SECRET="your-api-key"
+//	export CHATBOTKIT_API_TOKEN="your-api-token"
 //	go run main.go
 package main
 
@@ -30,16 +30,16 @@ func main() {
 	// Load .env file if present
 	godotenv.Load()
 
-	// Get API secret from environment variable
-	apiSecret := os.Getenv("CHATBOTKIT_API_SECRET")
-	if apiSecret == "" {
-		fmt.Fprintln(os.Stderr, "Error: CHATBOTKIT_API_SECRET environment variable is not set")
+	// Get API token from environment variable
+	apiToken := os.Getenv("CHATBOTKIT_API_TOKEN")
+	if apiToken == "" {
+		fmt.Fprintln(os.Stderr, "Error: CHATBOTKIT_API_TOKEN environment variable is not set")
 		os.Exit(1)
 	}
 
 	// Create a ChatBotKit client
 	client := sdk.New(sdk.Options{
-		Secret: apiSecret,
+		Token: apiToken,
 	})
 
 	// Create a context for API calls

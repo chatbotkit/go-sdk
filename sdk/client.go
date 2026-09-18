@@ -7,7 +7,7 @@
 // Example usage:
 //
 //	client := sdk.New(sdk.Options{
-//		Secret: "your-api-key",
+//		Token: "your-api-token",
 //	})
 //
 //	// List bots
@@ -24,9 +24,14 @@ import (
 
 // Options configures the ChatBotKit SDK client.
 type Options struct {
-	// Secret is the API token for authentication.
+	// Token is the API token for authentication.
+	Token string
+	// Secret is the former name of Token and is used when Token is empty.
+	//
+	// Deprecated: use Token.
 	Secret string
-	// BaseURL is an optional base URL override.
+	// BaseURL is an optional base URL override, e.g. http://localhost:3000 for
+	// a self-hosted platform. Plain http works and a path prefix is preserved.
 	BaseURL string
 	// RunAsUserID is an optional user ID to run as.
 	RunAsUserID string
@@ -61,10 +66,12 @@ type Client struct {
 	Graphql *GraphqlClient
 	// Integration provides access to integration resources.
 	Integration *integration.Client
+	// Decision provides access to decision models.
+	Decision *DecisionClient
 	// Memory provides access to memory resources.
 	Memory *MemoryClient
-	// Partner provides access to partner resources.
-	Partner *PartnerClient
+	// User provides access to user resources.
+	User *UserClient
 	// Platform provides access to platform resources.
 	Platform *PlatformClient
 	// Policy provides access to policy resources.
@@ -87,8 +94,13 @@ type Client struct {
 
 // New creates a new ChatBotKit SDK client.
 func New(opts Options) *Client {
+	token := opts.Token
+	if token == "" {
+		token = opts.Secret
+	}
+
 	httpClient := httpclient.NewClient(httpclient.ClientOptions{
-		Secret:      opts.Secret,
+		Secret:      token,
 		BaseURL:     opts.BaseURL,
 		RunAsUserID: opts.RunAsUserID,
 		Timezone:    opts.Timezone,
@@ -107,8 +119,9 @@ func New(opts Options) *Client {
 		Blueprint:    NewBlueprintClient(httpClient),
 		Graphql:      NewGraphqlClient(httpClient),
 		Integration:  integration.NewClient(httpClient),
+		Decision:     NewDecisionClient(httpClient),
 		Memory:       NewMemoryClient(httpClient),
-		Partner:      NewPartnerClient(httpClient),
+		User:         NewUserClient(httpClient),
 		Platform:     NewPlatformClient(httpClient),
 		Policy:       NewPolicyClient(httpClient),
 		Portal:       NewPortalClient(httpClient),
